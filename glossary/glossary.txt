@@ -1,0 +1,36 @@
+# Glossary in tab-separated format -*- coding: utf-8 -*-
+yes	iihia
+you're welcome	iihia
+okay	iihia	masculine or neutral
+affirmative iihia
+yes	naaka	(women only), Feminine
+Yes, it is correct	iihia, eelaamweekaneewiki
+Miami	Myaamia	Myaamia, Irenwee
+Language codes ISO	ISO 639-3	mia	ISO 639-3	mia
+ILDA	Welcome to the Myaamia-Peewaalia dictionary	https://mc.miamioh.edu/ilda-myaamia/dictionary
+no	moohci	moohci (part) No, not
+moohci aweeya | Nobody
+moohci, niiši neehi | No, I cannot
+moohci iilwiaani | I said no
+moohci noonki | Not now
+moohci | No, not
+not	moohci
+welcome	meentitohkaalilaanki	we (excl.) welcome you (pl)
+you're welcome	iihia
+
+One, 1	nkoti
+Two, 2	niišwi
+Three, 3 nihswi
+I am 30 years old	nihswi mateeni peepoonwiaani	Example Sentences
+One thousand, 1000	mataathswaahkwe
+Two hundred, 200	niišwaahkwe
+One hundred, 100	nkotwaahkwe
+Four, 4	niiwi
+Four, 4	niiwi
+Five, 5	yaalanwi
+Six, 6	kaakaathswi
+Seven, 7 swaahteethswi
+Eight, 8 palaani
+Nine, 9	nkotimeneehki
+Ten, 10	mataathswi
+Little Turtle,	Mihšihkinaahkwa	War chief of the Miami people Sagamore (chief)

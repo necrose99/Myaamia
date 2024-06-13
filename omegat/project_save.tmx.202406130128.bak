@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx11.dtd">
+<tmx version="1.1">
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="6.0.0_0_1bf1729c" segtype="sentence" srclang="en-US"/>
+  <body>
+<!-- Default translations -->
+    <tu>
+      <tuv lang="en-US">
+        <seg>&lt;title&gt;ILDA Dictionary&lt;/title&gt;
+	https://mc.miamioh.edu/ilda-myaamia/dictionary</seg>
+      </tuv>
+      <tuv lang="myaamia" changeid="black" changedate="20240613T062800Z" creationid="black" creationdate="20240613T062800Z">
+        <seg>[fuzzy]The Center seeks to "deepen Myaamia connections through research, education, and outreach."&lt;ref&gt;{{Cite web |title=Myaamia Center - Miami University |url=https://www.miamioh.edu/myaamia-center/ |url-status=live |archive-url=https://web.archive.org/web/20240316151522/https://miamioh.edu/myaamia-center/ |archive-date=Mar 16, 2024 |website=Miami University}}&lt;/ref&gt; It is directed by [[Daryl Baldwin]], who taught himself Miami from historic documents and studies held by the [[National Anthropological Archives|Smithsonian's National Anthropological Archives]], and has developed educational programs.&lt;ref&gt;{{cite news |last=Gugliotta |first=Guy |title=Smithsonian archives preserve lost and dying languages |newspaper=The Washington Post |access-date=2014-02-27 |date=2014-01-20 |url=https://www.washingtonpost.com/national/health-science/smithsonian-archives-preserve-lost-and-dying-languages/2014/01/17/2a2c3218-74a1-11e3-8b3f-b1666705ca3b_story.html}}&lt;/ref&gt; Baldwin's children were raised as native speakers of Miami.&lt;ref&gt;{{cite news |date=2014-05-26 |title=Breath of Life conference to help California Indians save endangered languages |url=http://www.imperialvalleynews.com/index.php/news/california-news/8908-breath-of-life-conference-to-help-california-indians-save-endangered-languages.html |url-status=deviated |archive-url=https://web.archive.org/web/20140601051637/http://www.imperialvalleynews.com/index.php/news/california-news/8908-breath-of-life-conference-to-help-california-indians-save-endangered-languages.html |archive-date=June 1, 2014 |access-date=2014-06-01 |work=Imperial Valley News}}&lt;/ref&gt; Center staff develop language and culture resources using material that is often from translated missionary documents.</seg>
+      </tuv>
+    </tu>
+<!-- Alternative translations -->
+  </body>
+</tmx>

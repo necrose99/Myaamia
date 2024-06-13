@@ -1,0 +1,17 @@
+6/13/24, 3:40 AM
+Project Statistics
+
+                 	Segments	Words	Characters (w/o spaces)	Characters (w/ spaces)	#Files	
+Total:           	     565	25198	                 171910	                184738	     4	
+Remaining:       	     564	25043	                 170740	                183310	     4	
+Unique:          	     393	21512	                 148666	                158625	     4	
+Unique Remaining:	     392	21357	                 147496	                157197	     4	
+
+
+Individual File Statistics:
+
+File Name                           	Total Segments	Remaining Segments	Unique Segments	Unique Remaining Segments	Total Words	Remaining Words	Unique Words	Unique Remaining Words	Total Characters (w/o spaces)	Remaining Characters (w/o spaces)	Unique Characters (w/o spaces)	Unique Remaining Characters (w/o spaces)	Total Characters (w/ spaces)	Remaining Characters (w/ spaces)	Unique Characters (w/ spaces)	Unique Remaining Characters (w/ spaces)	
+Miami-Illinois_language.UTF8        	           204	               203	            202	                      201	       4928	           4773	        4922	                  4767	                        31348	                            30178	                         31306	                                   30136	                       35442	                           34014	                        35398	                                  33970	
+Miami%E2%80%93Illinois_language.UTF8	           204	               204	             35	                       35	       4931	           4931	        1252	                  1252	                        31367	                            31367	                          8171	                                    8171	                       35472	                           35472	                         9409	                                   9409	
+Miami_people.UTF8                   	           156	               156	            155	                      155	       5339	           5339	        5338	                  5338	                        33316	                            33316	                         33310	                                   33310	                       37945	                           37945	                        37939	                                  37939	
+wordlist.10000.txt                  	             1	                 1	              1	                        1	      10000	          10000	       10000	                 10000	                        75879	                            75879	                         75879	                                   75879	                       75879	                           75879	                        75879	                                  75879	

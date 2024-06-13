@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx11.dtd">
+<tmx version="1.1">
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="6.0.0_0_1bf1729c" segtype="sentence" srclang="en-US"/>
+  <body>
+<!-- Default translations -->
+    <tu>
+      <tuv lang="en-US">
+        <seg>{{Short description|Algonquian language of the Midwestern US}}
+{{Infobox language
+| name             = Miami-Illinois
+| nativename       = {{Lang|mia|Myaamia}}, {{Lang|mia|Irenwee}}
+| pronunciation    = {{IPA|[mjɑːmia]|lang=mia}}
+| states           = [[United States]]
+| region           = [[Illinois]], [[Indiana]], [[Kansas]], [[Michigan]], [[Ohio]], [[Oklahoma]]
+| extinct          = mid-20th century
+| ref              = e18
+| revived          = a small number of users in revival program&lt;ref&gt;{{cite web|title=How the Miami Tribe got its language back|url=https://www.pri.org/stories/2016-10-14/how-miami-tribe-got-its-language-back|website=Public Radio International|archive-url=https://web.archive.org/web/20231214002843/https://theworld.org/stories/2016-10-14/how-miami-tribe-got-its-language-back|archive-date=December 14, 2023}}&lt;/ref&gt;
+| familycolor      = Algic
+| fam1             = [[Algic languages|Algic]]
+| fam2             = [[Algonquian languages|Algonquian]]
+| iso3             = mia
+| glotto           = miam1252
+| glottorefname    = Miami
+| map              = Lang Status 01-EX.svg
+| mapcaption       = {{center|{{small|Miami-Illinois is classified as Extinct by the [[UNESCO]] [[Atlas of the World's Languages in Danger]]}}}}&lt;ref&gt;{{cite report |title=Atlas of the World's Languages in Danger |publisher=UNESCO |edition=3rd |url=https://unesdoc.unesco.org/ark:/48223/pf0000187026 |date=2010 |page=11}}&lt;/ref&gt;
+}}</seg>
+      </tuv>
+      <tuv lang="mia" changeid="black" changedate="20240613T064754Z" creationid="black" creationdate="20240613T064754Z">
+        <seg>QUERY LENGTH LIMIT EXCEDEED. MAX ALLOWED QUERY : 500 CHARS</seg>
+      </tuv>
+    </tu>
+<!-- Alternative translations -->
+  </body>
+</tmx>

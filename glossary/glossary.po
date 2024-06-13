@@ -1,0 +1,5 @@
+#
+msgid ""
+msgstr ""
+"name: glossary.txt\n"
+"input_file_size: 1965\n"

@@ -1,0 +1,10 @@
+6/13/24, 3:30 AM
+            	Segments	Words	Characters (w/o spaces)	Characters (w/ spaces)	
+Repetitions:	       2	    6	                     42	                    44	
+Exact match:	       1	  155	                   1170	                  1428	
+95%-100%:   	       1	10000	                  75879	                 75879	
+85%-94%:    	       0	    0	                      0	                     0	
+75%-84%:    	       0	    0	                      0	                     0	
+50%-74%:    	       0	    0	                      0	                     0	
+No match:   	     201	 4767	                  30136	                 33970	
+Total:      	     205	14928	                 107227	                111321	
