@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx PUBLIC "-//LISA OSCAR:1998//DTD" "https://www.ttt.org/oscarStandards/tmx/tmx14.dtd">
+<!--
+ Loco xml export: TMX - Translation Memory eXchange
+ Project: Myaamia
+ Locales: en-US, mia
+ Exported by: Michael L.
+ Exported at: Fri, 14 Jun 2024 09:12:47 -0500
+-->
+<tmx version="1.4">
+    <header creationtool="Loco" creationtoolversion="1.0.28 20240611-1" segtype="sentence" o-tmf="" adminlang="en-US" srclang="en-US" datatype="plaintext" o-encoding="utf-8"> 
+        <note>Loco export of Myaamia</note> 
+        <prop type="x-loco-project">159248</prop> 
+    </header> 
+    <body> 
+        <tu tuid="Hello" datatype=""> 
+            <prop type="x-loco-asset">666ab9f4b9070f8443009f72</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Hello</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>Aya</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="yes" datatype="plaintext"> 
+            <prop type="x-loco-asset">666abe1bfb45269395027306</prop> 
+            <tuv xml:lang="en-US">
+                <seg>yes</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>iihia</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="youre-welcome" datatype="plaintext"> 
+            <prop type="x-loco-asset">666abe92915ef60d590661f2</prop> 
+            <note>
+                masculine or neutral 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>you're welcome</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>iihia</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="affirmative" datatype="plaintext"> 
+            <prop type="x-loco-asset">666abebff5a64430110de992</prop> 
+            <tuv xml:lang="en-US">
+                <seg>affirmative</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>iihia</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="yes-2" datatype="plaintext"> 
+            <prop type="x-loco-asset">666abeee231753541e0db752</prop> 
+            <note>
+                yes	naaka	(women only), Feminine 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>yes</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>naaka</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="okay" datatype="plaintext"> 
+            <prop type="x-loco-asset">666abf1c17a2238e4a0568c2</prop> 
+            <note>
+                okay	iihia	masculine or neutral 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>okay</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>iihia</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="No-not-no" datatype="plaintext"> 
+            <prop type="x-loco-asset">666abfc6f4c9fa7ff30a43a3</prop> 
+            <note>
+                no	moohci	moohci (part) No, not 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>no</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>moohci</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Nobody" datatype="plaintext"> 
+            <prop type="x-loco-asset">666ac04cbf7af4720a08cd15</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Nobody</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>moohci aweeya</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="No-I-cannot" datatype="plaintext"> 
+            <prop type="x-loco-asset">666ac0caab147993dc0cbce4</prop> 
+            <tuv xml:lang="en-US">
+                <seg>No, I cannot</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>moohci, niiši neehi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="I-said-no" datatype="plaintext"> 
+            <prop type="x-loco-asset">666ac1042836f281f108d803</prop> 
+            <tuv xml:lang="en-US">
+                <seg>I said no</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>moohci iilwiaani</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Not-now" datatype="plaintext"> 
+            <prop type="x-loco-asset">666ac1444fd057734e0e52f2</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Not now</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>moohci noonki</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="not" datatype="plaintext"> 
+            <prop type="x-loco-asset">666ac161eac3fe5ed7089b43</prop> 
+            <tuv xml:lang="en-US">
+                <seg>not</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>moohci</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="we-excl-welcome-you-pl-welcome" datatype="plaintext"> 
+            <prop type="x-loco-asset">666ac1d63be55344d3089613</prop> 
+            <note>
+                welcome	meentitohkaalilaanki	we (excl.) welcome you (pl) 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>welcome</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>meentitohkaalilaanki</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="One" datatype="plaintext"> 
+            <prop type="x-loco-asset">666ac23c3be55344d3089615</prop> 
+            <note>
+                1 or one Numerals 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>One, 1</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>nkoti</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Two" datatype="plaintext"> 
+            <prop type="x-loco-asset">666ac2988ebeb48425098e55</prop> 
+            <note>
+                Two, 2 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>two</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>niišwi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Three" datatype="plaintext"> 
+            <prop type="x-loco-asset">666ac2d60bf30dcddb0effd2</prop> 
+            <note>
+                Three, 3 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>Three,</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>nihswi</seg>
+            </tuv> 
+        </tu> 
+    </body>
+</tmx>
