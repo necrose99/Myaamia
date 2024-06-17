@@ -1,0 +1,457 @@
+# Loco Gettext template
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Myaamia\n"
+"Report-Msgid-Bugs-To: Michael L.\n"
+"POT-Creation-Date: 2024-06-17 12:16-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz\n"
+"X-Loco-Source-Locale: en-US\n"
+"X-Loco-Project-Id: 159248\n"
+"X-Loco-Api-Version: 1.0.28 20240611-1"
+
+#: loco:666ab9f4b9070f8443009f72
+msgid "Hello"
+msgstr ""
+
+#: loco:666abe1bfb45269395027306
+msgid "yes"
+msgstr ""
+
+#. masculine or neutral
+#: loco:666abe92915ef60d590661f2
+msgid "you're welcome"
+msgstr ""
+
+#: loco:666abebff5a64430110de992
+msgid "affirmative"
+msgstr ""
+
+#. yes	naaka	(women only), Feminine
+#: loco:666abeee231753541e0db752
+msgctxt "yes\tnaaka\t(women only), Feminine"
+msgid "yes"
+msgstr ""
+
+#. okay	iihia	masculine or neutral
+#: loco:666abf1c17a2238e4a0568c2
+msgid "okay"
+msgstr ""
+
+#. no	moohci	moohci (part) No, not
+#: loco:666abfc6f4c9fa7ff30a43a3
+msgctxt "No, not"
+msgid "no"
+msgstr ""
+
+#: loco:666ac04cbf7af4720a08cd15
+msgid "Nobody"
+msgstr ""
+
+#: loco:666ac0caab147993dc0cbce4
+msgid "No, I cannot"
+msgstr ""
+
+#: loco:666ac1042836f281f108d803
+msgid "I said no"
+msgstr ""
+
+#: loco:666ac1444fd057734e0e52f2
+msgid "Not now"
+msgstr ""
+
+#: loco:666ac161eac3fe5ed7089b43
+msgctxt "no or not"
+msgid "not"
+msgstr ""
+
+#. welcome	meentitohkaalilaanki	we (excl.) welcome you (pl)
+#: loco:666ac1d63be55344d3089613
+msgctxt "we (excl.) welcome you (pl)"
+msgid "welcome"
+msgstr ""
+
+#. 1 or one Numerals
+#: loco:666ac23c3be55344d3089615
+msgctxt "One or 1 "
+msgid "One, 1"
+msgstr ""
+
+#. Two, 2
+#: loco:666ac2988ebeb48425098e55
+msgctxt "Two, 2"
+msgid "two"
+msgstr ""
+
+#. Three, 3
+#: loco:666ac2d60bf30dcddb0effd2
+msgctxt "Three, 3"
+msgid "Three,"
+msgstr ""
+
+#: loco:666c519c8e4e6fb24802bf95
+msgctxt "Six , 6"
+msgid "Six"
+msgstr ""
+
+#. swaahteethswi
+#: loco:666cc3fd30fe4d541b086f42
+msgctxt "Seven, 7"
+msgid "Seven"
+msgstr ""
+
+#: loco:666cc4cd1a763c53c60286d2
+msgctxt "Eight, 8"
+msgid "Eight"
+msgstr ""
+
+#: loco:666cc5afce78e0b14602d6b2
+msgctxt "Ten, 10"
+msgid "Ten"
+msgstr ""
+
+#: loco:666cc5f70b3f539fa50940b2
+msgctxt "Eleven, 11"
+msgid "Eleven"
+msgstr ""
+
+#: loco:666cc634ce78e0b14602d6b4
+msgctxt "Twelve, 12"
+msgid "Twelve, 12"
+msgstr ""
+
+#: loco:666cc682fc3f79aa39084e12
+msgctxt "Thirteen, 13"
+msgid "Thirteen, 13"
+msgstr ""
+
+#: loco:666cc6cfd2a2e349b9072a62
+msgctxt "Fourteen, 14"
+msgid "Fourteen, 14"
+msgstr ""
+
+#: loco:666cc7aa6cb9f31d5d082902
+msgctxt "Fifteen, 15"
+msgid "Fifteen, 15"
+msgstr ""
+
+#: loco:666cc7dda1a2df3ce500d222
+msgctxt "Sixteen, 16"
+msgid "Sixteen, 16"
+msgstr ""
+
+#: loco:666cc81a8ce03c2da7018302
+msgctxt "Seventeen, 17"
+msgid "Seventeen, 17"
+msgstr ""
+
+#: loco:666cc8720607ea3c0f09e393
+msgctxt "Eighteen, 18"
+msgid "Eighteen, 18"
+msgstr ""
+
+#. akincikoona (num) numerals, numbers
+#: loco:666cc9249ff11b29ee0d3be2
+msgctxt "(num), numerals, numbers"
+msgid "numerals"
+msgstr ""
+
+#: loco:666cc9c075f9c786d300d762
+msgctxt "Nineteen, 19"
+msgid "Nineteen"
+msgstr ""
+
+#: loco:666cc9fa1ed554915d0259f2
+msgctxt "Twenty, 20"
+msgid "Twenty"
+msgstr ""
+
+#: loco:666ccddf9ae3b04c20002e42
+msgctxt "Twenty one, 21"
+msgid "Twenty one"
+msgstr ""
+
+#: loco:666cce6584bfc21db90c93b2
+msgctxt "Twenty two, 22"
+msgid "Twenty two,"
+msgstr ""
+
+#: loco:666ccee86836205ba9078b22
+msgctxt "Twenty three, 23"
+msgid "Twenty three, 23"
+msgstr ""
+
+#: loco:666ccff9fb4694f4780fff42
+msgctxt "Twenty four, 24"
+msgid "Twenty four, 24"
+msgstr ""
+
+#: loco:666cd039b8870e545e0a7ab2
+msgctxt "Twenty five, 25"
+msgid "Twenty five, 25"
+msgstr ""
+
+#: loco:666cd07ce9843e6f870dbf92
+msgctxt "Twenty six, 26"
+msgid "Twenty six, 26"
+msgstr ""
+
+#: loco:666cd0b155e9cd835907da02
+msgctxt "Twenty seven, 27"
+msgid "Twenty seven"
+msgstr ""
+
+#. niišwi mateeni palaanaasi
+#: loco:666cd120e9843e6f870dbf94
+msgctxt "Twenty eight, 28"
+msgid "Twenty eight, 28"
+msgstr ""
+
+#: loco:666cd1849634756d680890e2
+msgctxt "Twenty nine"
+msgid "Twenty nine, 29"
+msgstr ""
+
+#: loco:666cd1d52e3a065355042532
+msgctxt "Thirty, 30"
+msgid "Thirty"
+msgstr ""
+
+#: loco:666cd22fa81ae63278055e62
+msgctxt "Thirty five, 35"
+msgid "Thirty five, 35"
+msgstr ""
+
+#: loco:666cd2b8c7766e051302a552
+msgctxt "Forty, 40"
+msgid "Forty"
+msgstr ""
+
+#: loco:666cd31659ec34245c0a9c52
+msgctxt "Fifty, 50"
+msgid "Fifty, 50"
+msgstr ""
+
+#: loco:666cd35e36a198b1a3081ae2
+msgctxt "One hundred, 100"
+msgid "One hundred"
+msgstr ""
+
+#: loco:666cd3a3cddc6fad4d0bfa33
+msgctxt "Two hundred, 200"
+msgid "Two hundred, 200"
+msgstr ""
+
+#: loco:666cd476e4b5f53e2c006572
+msgctxt "One thousand, 1000"
+msgid "One thousand, 1000"
+msgstr ""
+
+#. https://aacimotaatiiyankwi.org/education/language/miami-language-online-resources/ Aacimotaatiiyankwi
+#: loco:666fb83090fe02956408ca42
+msgid "Miami Language’ Online Resources"
+msgstr ""
+
+#: loco:666fb9605b28acf5be0a22c2
+msgctxt "Miami Tribe"
+msgid "Miami"
+msgstr ""
+
+#. mahkihkiwa https://mc.miamioh.edu/mahkihkiwa/about
+#: loco:666fbaa531ef3b1f9e016652
+msgctxt "https://mc.miamioh.edu/mahkihkiwa/about  , online Databse"
+msgid "  Myaamia ETHNOBOTANICAL DATABASE"
+msgstr ""
+
+#: loco:666fbae13bce05e4600951c2
+msgid "Miami Tribe’s revitalization movement"
+msgstr ""
+
+#. aya! Welcome to Kaakisitoonkia!
+#. Kaakisitoonkia.com is the online portal of the Myaamia Heritage Museum & Archive, presenting archival and museum items related to Miami heritage.  Kaakisitoonkia is the myaamia word for "preserve objects, as in an archive."
+#: loco:666fbb53abff582ead077242
+msgctxt "Miami Tribe's Museum & Archive,https://www.kaakisitoonkia.com"
+msgid "Myaamia Heritage Museum & Archive"
+msgstr ""
+
+#. Corn the Food the plant etc..
+#: loco:666fbc3e34cf5114d3095f52
+msgctxt "corn,maze, (Genus: Zea ,Species:  mays) "
+msgid "corn"
+msgstr ""
+
+#. Scientific Name:  Fagus grandifolia Ehrh. "shashecomise, beech tree" 
+#. "beech, sha-sha-com-mindj" https://mc.miamioh.edu/mahkihkiwa/species/4589
+#: loco:666fbdab32b45c33930e5592
+msgctxt " American beech tree; Fagus grandifolia Ehrh."
+msgid "beech tree"
+msgstr ""
+
+#. American false pennyroyal / Hedeoma pulegioides (L.) Purs. / 
+#. https://mc.miamioh.edu/mahkihkiwa/species?entry_type=Species
+#: loco:666fbe7154bfb6ba1a017834
+msgctxt "American false pennyroyal / Hedeoma pulegioides (L.) Purs"
+msgid "false pennyroyal"
+msgstr ""
+
+#. American hazelnut / Corylus americana Walter / pahkiihteenhsaahkwi 
+#. mahkihkiwa
+#: loco:666fc0d0e2b180e42408fee2
+msgctxt "Hazelnut , Corylus americana Walter"
+msgid ""
+"hazelnut\n"
+msgstr ""
+
+#. Aya del Aya formal,  Aya  hello as well
+#: loco:666fc22a3f1a76db1a0abc02
+msgctxt "Aya, Aya del Aya"
+msgid "Welcome"
+msgstr ""
+
+#. American hophornbeam, ironwood / Ostrya virginiana (Mill) K.Koch / 
+#. https://mc.miamioh.edu/mahkihkiwa/species?entry_type=Species
+#: loco:666fc295193fba58a000f6c2
+msgctxt "American hophornbeam, ironwood , Ostrya virginiana (Mill) K.Koch"
+msgid "American hophornbeam"
+msgstr ""
+
+#. American Hornbeam, ironwood, musclewood / Carpinus caroliniana Walter / myaalwamiši
+#: loco:666fc76e8ff5618f140b7712
+msgctxt ""
+"American Hornbeam, Hornbeam, ironwood, musclewood Carpinus caroliniana "
+"Walter / "
+msgid "Hornbeam"
+msgstr ""
+
+#. American sycamore / Platanus occidentalis L.
+#: loco:6670348224c8c012c60a3332
+msgctxt "American sycamore,Platanus occidentalis L."
+msgid "sycamore "
+msgstr ""
+
+#: loco:6670377e279647fa640b7c52
+msgctxt "asparagus / Asparagus officinalis L."
+msgid "asparagus"
+msgstr ""
+
+#. Atlantic camas / Camassia scilloides (Raf.) Cory. Wild Hyacinth
+#: loco:667037d4b071a2fbca0c9d53
+msgctxt "Atlantic camas / Camassia scilloides (Raf.) Cory. , Wild Hyacinth"
+msgid "Atlantic camas"
+msgstr ""
+
+#. basswood, American linden / Tilia americana L.
+#: loco:66703876ae0a59ed7e0ccc04
+msgctxt "basswood, American linden / Tilia americana L."
+msgid "basswood"
+msgstr ""
+
+#. beet / Beta vulgaris L.
+#: loco:667038ee51c5b06b370d6422
+msgctxt "beet / Beta vulgaris L."
+msgid "beet"
+msgstr ""
+
+#. big bluestem grass / Andropogon gerardii L.
+#: loco:66703950693547fe650f06d2
+msgctxt "big bluestem grass / Andropogon gerardii L."
+msgid "big bluestem grass"
+msgstr ""
+
+#. black huckleberry / Gaylussacia baccata (Wangenh.) K. Koch
+#: loco:667039bdfdfeb5e82e0ef5b2
+msgctxt "black huckleberry, Gaylussacia baccata (Wangenh.) K. Koch"
+msgid "black huckleberry"
+msgstr ""
+
+#. black oak / Quercus velutina Lam.
+#: loco:66703a1584f7b783df01e9b2
+msgctxt "black oak,Quercus velutina Lam."
+msgid "black oak"
+msgstr ""
+
+#. black walnut tree / Juglans nigra L.
+#: loco:66703aaecf5b8d25eb0c7123
+msgctxt "black walnut tree, Juglans nigra L"
+msgid "black walnut tree"
+msgstr ""
+
+#. blue ash / Fraxinus quadrangulata Michx.
+#: loco:66703afacfba9a165905fa22
+msgctxt "blue ash ,Fraxinus quadrangulata Michx."
+msgid "blue ash"
+msgstr ""
+
+#. blueberry / Vaccinium sp. L.
+#: loco:66703bc3e4eae80eea055212
+msgctxt "blueberry,Vaccinium sp. L. "
+msgid "blueberry"
+msgstr ""
+
+#. boneset / Eupatorium perfoliatum L.
+#: loco:66703bf9c0e4ae9c4a0842a2
+msgctxt "boneset, Eupatorium perfoliatum L."
+msgid "boneset"
+msgstr ""
+
+#. box elder / Acer negundo L.
+#: loco:66703c5cae0806dce3054ad2
+msgctxt "box elder, Acer negundo L. šiihšiikweekihsi"
+msgid "box elder"
+msgstr ""
+
+#. bull thistle / Cirsium vulgare (Savi) Ten.
+#: loco:66703ce1c6b288127403b052
+msgctxt "bull thistle,Cirsium vulgare (Savi) Ten."
+msgid "bull thistle"
+msgstr ""
+
+#. bur oak / Quercus macrocarpa Michx.
+#: loco:66703d3356707b8a0d0703d2
+msgctxt "bur oak, Quercus macrocarpa Michx. "
+msgid "bur oak"
+msgstr ""
+
+#. butterfly milkweed / Asclepias tuberosa L.
+#: loco:66703d765cfe00ab64042e62
+msgctxt "butterfly milkweed , Asclepias tuberosa L."
+msgid "butterfly milkweed"
+msgstr ""
+
+#. butternut tree / Juglans cinerea L.
+#: loco:66703e07f715bb9a150de3b2
+msgctxt "butternut tree,Juglans cinerea L. "
+msgid "butternut tree"
+msgstr ""
+
+#. cabbage / Brasscia oleracea L.
+#: loco:66703e72b373211c27041262
+msgctxt "cabbage / Brasscia oleracea L. "
+msgid "cabbage"
+msgstr ""
+
+#. calamus root, sweetflag / Acorus calamus L.
+#: loco:66703eb2f5cb63691005cc12
+msgctxt "calamus root, sweetflag / Acorus calamus L."
+msgid "calamus root"
+msgstr ""
+
+#. canoe birch, paper birch / Betula papyrifera Marshall
+#: loco:66706d473b8efa5ae3080f02
+msgctxt "canoe birch, paper birch "
+msgid "paper birch "
+msgstr ""
+
+#. cattail / Typha latifolia L.
+#: loco:66706da5268c140d4d076542
+msgctxt "cattail,Typha latifolia L"
+msgid "cattail"
+msgstr ""

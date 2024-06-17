@@ -1,0 +1,23 @@
+{
+	"files": [
+		{
+			"id": "4187;1400",
+			"name": "glossary.txt",
+			"translations": [
+				{
+					"id": "_a7370162083402546046",
+					"meta": {
+						"key": "content"
+					},
+					"source": "# Glossary in tab-separated format -*- coding: utf-8 -*-\r\nyes\tiihia\r\nyou're welcome\tiihia\r\nokay\tiihia\tmasculine or neutral\r\naffirmative iihia\r\nyes\tnaaka\t(women only), Feminine\r\nYes, it is correct\tiihia, eelaamweekaneewiki\r\nMiami\tMyaamia\tMyaamia, Irenwee\r\nLanguage codes ISO\tISO 639-3\tmia\tISO 639-3\tmia\r\nILDA\tWelcome to the Myaamia-Peewaalia dictionary\thttps://mc.miamioh.edu/ilda-myaamia/dictionary\r\nno\tmoohci\tmoohci (part) No, not\nmoohci aweeya | Nobody\nmoohci, niiši neehi | No, I cannot\nmoohci iilwiaani | I said no\nmoohci noonki | Not now\nmoohci | No, not\r\nnot\tmoohci\r\nwelcome\tmeentitohkaalilaanki\twe (excl.) welcome you (pl)\r\nyou're welcome\tiihia\r\n",
+					"value": "# Glossary in tab-separated format -*- coding: utf-8 -*-\r\nyes\tiihia\r\nyou're welcome\tiihia\r\nokay\tiihia\tmasculine or neutral\r\naffirmative iihia\r\nyes\tnaaka\t(women only), Feminine\r\nYes, it is correct\tiihia, eelaamweekaneewiki\r\nMiami\tMyaamia\tMyaamia, Irenwee\r\nLanguage codes ISO\tISO 639-3\tmia\tISO 639-3\tmia\r\nILDA\tWelcome to the Myaamia-Peewaalia dictionary\thttps://mc.miamioh.edu/ilda-myaamia/dictionary\r\nno\tmoohci\tmoohci (part) No, not\nmoohci aweeya | Nobody\nmoohci, niiši neehi | No, I cannot\nmoohci iilwiaani | I said no\nmoohci noonki | Not now\nmoohci | No, not\r\nnot\tmoohci\r\nwelcome\tmeentitohkaalilaanki\twe (excl.) welcome you (pl)\r\nyou're welcome\tiihia\r\n"
+				}
+			]
+		}
+	],
+	"generator": "Localazy",
+	"projectId": "_a7370162603364877857",
+	"sourceLocale": "en",
+	"targetLocale": "myaamia",
+	"version": "1.0"
+}

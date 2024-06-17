@@ -1,0 +1,136 @@
+﻿// -*- Coding: UTF-8; -*-;
+//
+// Loco icu export: ICU Resource (Source)
+// Project: Myaamia
+// Locale: en-US, English (USA)
+// Exported by: Michael L.
+// Exported at: Mon, 17 Jun 2024 12:16:27 -0500
+en-US{ 
+    Hello { "Hello" } 
+    yes { "yes" } 
+    // masculine or neutral 
+    you're welcome { "you're welcome" } 
+    affirmative { "affirmative" } 
+    // yes	naaka	(women only), Feminine 
+    yes { "yes" } 
+    // okay	iihia	masculine or neutral 
+    okay { "okay" } 
+    // no	moohci	moohci (part) No, not 
+    no { "no" } 
+    Nobody { "Nobody" } 
+    "No, I cannot" { "No, I cannot" } 
+    I said no { "I said no" } 
+    Not now { "Not now" } 
+    not { "not" } 
+    // welcome	meentitohkaalilaanki	we (excl.) welcome you (pl) 
+    welcome { "welcome" } 
+    // 1 or one Numerals 
+    "One, 1" { "One, 1" } 
+    // Two, 2 
+    two { "two" } 
+    // Three, 3 
+    "Three," { "Three," } 
+    Six { "Six" } 
+    // swaahteethswi 
+    Seven { "Seven" } 
+    Eight { "Eight" } 
+    Ten { "Ten" } 
+    Eleven { "Eleven" } 
+    "Twelve, 12" { "Twelve, 12" } 
+    "Thirteen, 13" { "Thirteen, 13" } 
+    "Fourteen, 14" { "Fourteen, 14" } 
+    "Fifteen, 15" { "Fifteen, 15" } 
+    "Sixteen, 16" { "Sixteen, 16" } 
+    "Seventeen, 17" { "Seventeen, 17" } 
+    "Eighteen, 18" { "Eighteen, 18" } 
+    // akincikoona (num) numerals, numbers 
+    numerals { "numerals" } 
+    Nineteen { "Nineteen" } 
+    Twenty { "Twenty" } 
+    Twenty one { "Twenty one" } 
+    "Twenty two," { "Twenty two," } 
+    "Twenty three, 23" { "Twenty three, 23" } 
+    "Twenty four, 24" { "Twenty four, 24" } 
+    "Twenty five, 25" { "Twenty five, 25" } 
+    "Twenty six, 26" { "Twenty six, 26" } 
+    Twenty seven { "Twenty seven" } 
+    // niišwi mateeni palaanaasi 
+    "Twenty eight, 28" { "Twenty eight, 28" } 
+    "Twenty nine, 29" { "Twenty nine, 29" } 
+    Thirty { "Thirty" } 
+    "Thirty five, 35" { "Thirty five, 35" } 
+    Forty { "Forty" } 
+    "Fifty, 50" { "Fifty, 50" } 
+    One hundred { "One hundred" } 
+    "Two hundred, 200" { "Two hundred, 200" } 
+    "One thousand, 1000" { "One thousand, 1000" } 
+    // https://aacimotaatiiyankwi.org/education/language/miami-language-online-resources/ Aacimotaatiiyankwi 
+    Miami LanguageU+2019; Online Resources { "Miami Language’ Online Resources" } 
+    Miami { "Miami" } 
+    // mahkihkiwa https://mc.miamioh.edu/mahkihkiwa/about 
+      Myaamia ETHNOBOTANICAL DATABASE { "  Myaamia ETHNOBOTANICAL DATABASE" } 
+    Miami TribeU+2019;s revitalization movement { "Miami Tribe’s revitalization movement" } 
+    // aya! Welcome to Kaakisitoonkia!
+    // Kaakisitoonkia.com is the online portal of the Myaamia Heritage Museum & Archive, presenting archival and museum items related to Miami heritage.  Kaakisitoonkia is the myaamia word for "preserve objects, as in an archive." 
+    Myaamia Heritage Museum & Archive { "Myaamia Heritage Museum & Archive" } 
+    // Corn the Food the plant etc.. 
+    corn { "corn" } 
+    // Scientific Name:  Fagus grandifolia Ehrh. "shashecomise, beech tree" 
+    // "beech, sha-sha-com-mindj" https://mc.miamioh.edu/mahkihkiwa/species/4589 
+    beech tree { "beech tree" } 
+    // American false pennyroyal / Hedeoma pulegioides (L.) Purs. / 
+    // https://mc.miamioh.edu/mahkihkiwa/species?entry_type=Species 
+    false pennyroyal { "false pennyroyal" } 
+    // American hazelnut / Corylus americana Walter / pahkiihteenhsaahkwi 
+    // mahkihkiwa 
+    hazelnutU+000A; { "hazelnut\n"
+                      "" } 
+    // Aya del Aya formal,  Aya  hello as well 
+    Welcome { "Welcome" } 
+    // American hophornbeam, ironwood / Ostrya virginiana (Mill) K.Koch / 
+    // https://mc.miamioh.edu/mahkihkiwa/species?entry_type=Species 
+    American hophornbeam { "American hophornbeam" } 
+    // American Hornbeam, ironwood, musclewood / Carpinus caroliniana Walter / myaalwamiši 
+    Hornbeam { "Hornbeam" } 
+    // American sycamore / Platanus occidentalis L. 
+    sycamore  { "sycamore " } 
+    asparagus { "asparagus" } 
+    // Atlantic camas / Camassia scilloides (Raf.) Cory. Wild Hyacinth 
+    Atlantic camas { "Atlantic camas" } 
+    // basswood, American linden / Tilia americana L. 
+    basswood { "basswood" } 
+    // beet / Beta vulgaris L. 
+    beet { "beet" } 
+    // big bluestem grass / Andropogon gerardii L. 
+    big bluestem grass { "big bluestem grass" } 
+    // black huckleberry / Gaylussacia baccata (Wangenh.) K. Koch 
+    black huckleberry { "black huckleberry" } 
+    // black oak / Quercus velutina Lam. 
+    black oak { "black oak" } 
+    // black walnut tree / Juglans nigra L. 
+    black walnut tree { "black walnut tree" } 
+    // blue ash / Fraxinus quadrangulata Michx. 
+    blue ash { "blue ash" } 
+    // blueberry / Vaccinium sp. L. 
+    blueberry { "blueberry" } 
+    // boneset / Eupatorium perfoliatum L. 
+    boneset { "boneset" } 
+    // box elder / Acer negundo L. 
+    box elder { "box elder" } 
+    // bull thistle / Cirsium vulgare (Savi) Ten. 
+    bull thistle { "bull thistle" } 
+    // bur oak / Quercus macrocarpa Michx. 
+    bur oak { "bur oak" } 
+    // butterfly milkweed / Asclepias tuberosa L. 
+    butterfly milkweed { "butterfly milkweed" } 
+    // butternut tree / Juglans cinerea L. 
+    butternut tree { "butternut tree" } 
+    // cabbage / Brasscia oleracea L. 
+    cabbage { "cabbage" } 
+    // calamus root, sweetflag / Acorus calamus L. 
+    calamus root { "calamus root" } 
+    // canoe birch, paper birch / Betula papyrifera Marshall 
+    paper birch  { "paper birch " } 
+    // cattail / Typha latifolia L. 
+    cattail { "cattail" } 
+}
