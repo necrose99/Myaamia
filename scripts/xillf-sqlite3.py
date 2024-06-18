@@ -1,6 +1,7 @@
 #! /usr/bin/python3
 import lxml.etree as ET
 import sqlite3
+# This code is licensed under MIT license (see LICENSE.MD for details)
 
 # Connect to the SQLite database
 conn = sqlite3.connect('output.db')
