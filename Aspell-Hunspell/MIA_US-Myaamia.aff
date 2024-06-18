@@ -1,0 +1,109 @@
+# Aspell affix file for Myaamia (Mia) language
+# MIA_US-Myaamia.aff
+SET UTF-8
+# category native american languages 
+# ISO 639-3	mia
+# Glottolog	miam1252
+# ELP	Miami-Illinois
+# Built from scratch for MySpell/Hunspell. Released under MIT.
+
+# sources 
+#   1) https://en.wikipedia.org/wiki/Miami%E2%80%93Illinois_language;
+# https://mc.miamioh.edu/ilda-myaamia/dictionary 
+# other Myaamia souced tribal docs , trying to learn more... 
+# hand built TMX / json POT/GNU-Gettext  https://localise.biz/
+# waiting on libree hosting https://hosted.weblate.org/projects/Myaamia/ 
+
+# Revitalization Efforts , misc information 
+# Miami–Illinois (endonym: myaamia,[a] [mjɑːmia]),[4] also known as Irenwa or Irenwe, 
+# is an indigenous Algonquian language spoken in the United States, primarily in Illinois, Missouri, 
+# Indiana, western Ohio and adjacent areas along the Mississippi River by the Miami and 
+#Wea as well as the tribes of the Illinois Confederation, including the Kaskaskia, Peoria, 
+#Tamaroa, and possibly Mitchigamea. The Myaamia (Miami) Nation of Oklahoma and the 
+#Miami Nation of Indians of the State of Indiana (a nonprofit organization) still practice
+#and use their native heritage to teach young and old so they can keep their traditional language alive.
+#Miami–Illinois is an Algonquian language within the larger Algic family. 
+#It is usually described as a Central Algonquian language, but that grouping denotes a geographic rather than genetic affiliation. 
+#A thorough genetic classification of Central Algonquian languages has not yet been achieved, and so Miami–Illinois' closest relatives 
+#have not been conclusively established. Lexically, Miami–Illinois most closely resembles the Sauk–Fox–Kickapoo language; 
+#its phonology and morphology, however, are more reminiscent of Ojibwe–Potawatomi–Ottawa.
+
+
+TRY eaiomnrkwpšʼlhcyžxčtňs'áéíóúąę
+
+WORDCHARS '
+
+REP 5
+REP š sh
+REP ž zh
+REP č ch
+REP ň ny
+REP ʼ '
+
+PFX A Y 2
+PFX A 0 ki [^e]
+PFX A 0 ki- e
+
+PFX I Y 2
+PFX I 0 naa [^e] 
+PFX I 0 naa- e
+
+SFX V Y 2
+SFX V 0 hka [aio]
+SFX V e hka e
+
+CHECKCOMPOUND 2
+COMPOUNDMIN 2
+COMPOUNDRULE 2
+COMPOUNDRULE #*0{
+COMPOUNDRULE #*@}
+
+# Compounded numbers
+COMPOUNDMIN 1
+COMPOUNDRULE 2
+COMPOUNDRULE #*1[0-9]
+COMPOUNDRULE #*[2-9][0-9]*
+#
+# Base numbers (1-10) as stems (unchanged)
+STEM nkoti # One
+STEM niišwi # Two
+# ... other base numbers
+
+# Tens unit
+STEM mataathswi # Ten
+
+# Tens suffix rule (modify as needed)
+SFX_TENS <- BASE + "aasi"
+
+# Twenties (placeholder, needs further logic)
+# ... define rule(s) for twenties (e.g., "niišwi mateeni" + ones digit)
+
+# Fifties
+STEM yaalanwi # Fifty 
+
+# Hundreds
+STEM nkotwaahkwe # One Hundred
+STEM niišwaahkwe # Two Hundred
+STEM mataathswaahkwe # One Thousand
+
+# Example applications (update as needed)
+nkoti + SFX_TENS -> nkotimeneehki (Nine)
+mataathswi + SFX_TENS -> mataathswi -aasi (Eleven)
+
+# Apply tens unit (placeholder)
+# ... define logic to insert "mataathswi" before SFX_TENS for numbers above ten
+
+# Apply fifties, hundreds, and thousands (placeholder)
+# ... define rules to handle these numbers (likely as separate stems)
+
+# ... other affix rules
+
+SFX_AFFIRM <- BASE + "ki"  # Suffix for affirmative responses following "iihia"
+# ... other affix rules
+
+PFX_NEG <- moohci  # Negation prefix
+
+... # Rules for verb stems and aspectual suffixes
+# ... other affix rules
+
+PFX_FUTILE_NEG <- maakooci  # Negation prefix expressing futility
