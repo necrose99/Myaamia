@@ -18,27 +18,57 @@ import subprocess
 #
 ## for Microsoft Word dictionary.txt cp/copy to Myaamia.dic and enjoy.. 
 ## Aspell-Hunspell , Libree Office .dictionary.txt cp/copy to  Firefox-ext MIA_US-Myaamia.dic 
-### Aspell-Hunspell (MIA_US-Myaamia.aff ruleset linguistic ruleset needs further refinment)  likely feedback from linguists / ai to assit in inputing rulsets 
+### Aspell-Hunspell (MIA_US-Myaamia.aff ruleset linguistic ruleset needs further refinement)  likely feedback from linguists / ai to assist in inputting rulesets
 ### Google Chrome wants MIA_US-Myaamia.aff MIA_US-Myaamia.dic can use them raw.. 
 ### then a glossary/dictonary  file for TMX ie Weblate  , dictonary for spell checking or ai translation..
 ### Potawatami , Lakota or other languages have parralles 
 
-def read_dictionary_from_file(file_path):
-    with open(file_path, 'r', encoding='utf-8') as file:
-        dictionary_entries = [line.strip() for line in file.readlines()]
-    return dictionary_entries
 
-def save_dictionary_to_file(dictionary_entries, file_path):
+
+DEFAULT_HEADER = [
+    "### (c) 2011 Necrose99, Miami Nation, & Others.. et al.",
+    "### This code is licensed under MIT license (see LICENSE.MD for details)",
+    "### https://github.com/necrose99/Myaamia"
+]
+
+def read_dictionary_from_file(file_path):
+    dictionary_entries = []
+    header = []
+    header_found = False
+    with open(file_path, 'r', encoding='utf-8') as file:
+        lines = file.readlines()
+        for line in lines:
+            line = line.strip()
+            if line.startswith("###"):
+                header.append(line)
+                header_found = True
+            else:
+                if '###' in line:
+                    word, comment = line.split('###', 1)
+                    dictionary_entries.append((word.strip(), comment.strip()))
+                else:
+                    dictionary_entries.append((line.strip(), ''))
+    return header_found, header, dictionary_entries
+
+def save_dictionary_to_file(header_found, header, dictionary_entries, file_path):
     with open(file_path, 'w', encoding='utf-8') as file:
-        for entry in dictionary_entries:
-            file.write(f"{entry}\n")
+        if not header_found:
+            # Insert default header if missing
+            for line in DEFAULT_HEADER:
+                file.write(f"{line}\n")
+        else:
+            for line in header:
+                file.write(f"{line}\n")
+        for word, comment in dictionary_entries:
+            file.write(f"{word} ### {comment}\n")
 
 def initialize_database(db_path):
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS dictionary (
-        word TEXT PRIMARY KEY
+        word TEXT PRIMARY KEY,
+        comment TEXT
     )
     ''')
     conn.commit()
@@ -46,9 +76,9 @@ def initialize_database(db_path):
 
 def insert_entries_to_database(entries, conn):
     cursor = conn.cursor()
-    for entry in entries:
+    for word, comment in entries:
         try:
-            cursor.execute("INSERT INTO dictionary (word) VALUES (?)", (entry,))
+            cursor.execute("INSERT INTO dictionary (word, comment) VALUES (?, ?)", (word, comment))
         except sqlite3.IntegrityError:
             # Entry already exists, ignore duplicates
             pass
@@ -56,9 +86,9 @@ def insert_entries_to_database(entries, conn):
 
 def fetch_all_entries_from_database(conn):
     cursor = conn.cursor()
-    cursor.execute("SELECT word FROM dictionary")
+    cursor.execute("SELECT word, comment FROM dictionary")
     rows = cursor.fetchall()
-    return [row[0] for row in rows]
+    return [(row[0], row[1]) for row in rows]
 
 def export_sql_dump(db_path, sql_dump_path):
     try:
@@ -74,10 +104,10 @@ def main():
     sql_dump_file = 'dictionary.sql'
 
     # Step 1: Read dictionary from file
-    dictionary_entries = read_dictionary_from_file(input_file)
+    header_found, header, dictionary_entries = read_dictionary_from_file(input_file)
 
     # Step 2: Sort entries alphabetically
-    dictionary_entries.sort()
+    dictionary_entries.sort(key=lambda x: x[0])
 
     # Step 3: Initialize the database
     conn = initialize_database(db_file)
@@ -89,10 +119,10 @@ def main():
     all_entries = fetch_all_entries_from_database(conn)
 
     # Step 6: Sort the fetched entries alphabetically
-    all_entries.sort()
+    all_entries.sort(key=lambda x: x[0])
 
     # Step 7: Save the updated dictionary back to a new text file
-    save_dictionary_to_file(all_entries, output_file)
+    save_dictionary_to_file(header_found, header, all_entries, output_file)
 
     # Step 8: Export the database schema and data to an SQL file
     export_sql_dump(db_file, sql_dump_file)
