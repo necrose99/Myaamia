@@ -1,4 +1,5 @@
 # Aspell affix file for Myaamia (Mia) language
+# Miami-Illinois Affix Rules
 # MIA_US-Myaamia.aff
 SET UTF-8
 # category native american languages 
@@ -32,6 +33,112 @@ SET UTF-8
 TRY eaiomnrkwpšʼlhcyžxčtňs'áéíóúąę
 
 WORDCHARS '
+
+# Miami-Illinois Affix Rules
+
+# Consonants
+PFX c0 Y 1
+PFX c0 p .
+# (rest of consonant rules omitted for brevity)
+
+# Vowels
+PFX v0 Y 1
+PFX v0 i .
+# (rest of vowel rules omitted for brevity)
+
+# Suprasegmental Processes
+PFX s0 Y 1
+PFX s0 STRONG .
+PFX s1 Y 1 
+PFX s1 WEAK .
+PFX d0 Y 1
+PFX d0 DEVOICED .
+
+# Plurals
+SFX pl0 Y 1
+SFX pl0 aki . # Plural suffix -aki
+SFX pl1 Y 1
+SFX pl1 iki . # Plural suffix -iki
+SFX pl2 Y 1 
+SFX pl2 wa . # Plural suffix -wa
+
+# Plural Formation Rules
+# Rule 1: Add -aki to nouns ending in a consonant
+PFX r1 Y 1
+PFX r1 c[0-12] . 
+SFX r1 Y 1
+SFX r1 aki .
+
+# Rule 2: Add -iki to nouns ending in a short vowel
+PFX r2 Y 1
+PFX r2 v[0-3] . 
+SFX r2 Y 1
+SFX r2 iki .
+
+# Rule 3: Add -wa to nouns ending in a long vowel
+PFX r3 Y 1
+PFX r3 v[4-7] .
+SFX r3 Y 1
+SFX r3 wa .
+
+
+# Consonants
+PFX c0 Y 1
+PFX c0 p .
+PFX c1 Y 1 
+PFX c1 t .
+PFX c2 Y 1
+PFX c2 tʃ .
+PFX c3 Y 1
+PFX c3 k .
+PFX c4 Y 1
+PFX c4 ʔ .
+PFX c5 Y 1
+PFX c5 s .
+PFX c6 Y 1
+PFX c6 ʃ .
+PFX c7 Y 1
+PFX c7 m .
+PFX c8 Y 1
+PFX c8 n .
+PFX c9 Y 1
+PFX c9 w .
+PFX c10 Y 1
+PFX c10 l .
+PFX c11 Y 1
+PFX c11 j .
+PFX c12 Y 1
+PFX c12 h .
+
+# Vowels
+PFX v0 Y 1
+PFX v0 i .
+PFX v1 Y 1
+PFX v1 e .
+PFX v2 Y 1 
+PFX v2 a .
+PFX v3 Y 1
+PFX v3 o .
+PFX v4 Y 1
+PFX v4 iː .
+PFX v5 Y 1
+PFX v5 eː .
+PFX v6 Y 1
+PFX v6 aː .
+PFX v7 Y 1
+PFX v7 oː .
+
+# Suprasegmental Processes
+# Strong/Weak Syllables
+PFX s0 Y 1
+PFX s0 STRONG . 
+PFX s1 Y 1
+PFX s1 WEAK .
+
+# Vowel Devoicing
+PFX d0 Y 1
+PFX d0 DEVOICED .
+
 
 REP 5
 REP š sh
@@ -107,3 +214,173 @@ PFX_NEG <- moohci  # Negation prefix
 # ... other affix rules
 
 PFX_FUTILE_NEG <- maakooci  # Negation prefix expressing futility
+
+# Animate Nouns
+PFX a0 Y 1
+PFX a0 akima .
+PFX a1 Y 1
+PFX a1 eeteeshia .
+PFX a2 Y 1
+PFX a2 nahaankana .
+PFX a3 Y 1
+PFX a3 mikihkwa .
+PFX a4 Y 2
+PFX a4 naala . 
+PFX a5 Y 1
+PFX a5 alenia .
+PFX a6 Y 1
+PFX a6 manetoowa .
+PFX a7 Y 1
+PFX a7 lenipinsia .
+
+# Inanimate Nouns
+PFX i0 Y 2
+PFX i0 acihwki . 
+PFX i1 Y 1
+PFX i1 nipi .
+PFX i2 Y 1
+PFX i2 išiteehioni .
+PFX i3 Y 2
+PFX i3 waali .
+PFX i4 Y 1
+PFX i4 kaloosioni .
+PFX i5 Y 1
+PFX i5 waapimootayi .
+PFX i6 Y 1
+PFX i6 wiikiaami .
+PFX i7 Y 2
+PFX i7 waawi .
+
+# Unexpectedly Animate Nouns
+PFX u0 Y 1
+PFX u0 ahkihkwa . # drum
+PFX u1 Y 1 
+PFX u1 ahsapa . # star
+PFX u2 Y 1
+PFX u2 alaankwia . # rainbow
+PFX u3 Y 1
+PFX u3 manetwa . # falling snow
+PFX u4 Y 1
+PFX u4 moohswaya . # deer hide
+PFX u5 Y 1
+PFX u5 piiwia . # feather
+PFX u6 Y 1
+PFX u6 aankwahsakwa . # driftwood
+
+Prefixes for Ones:
+
+PFX o1 Y 1
+PFX o1 nkoti .
+PFX o2 Y 1
+PFX o2 niišwi .
+(Repeat for the rest of the ones digits)
+Prefixes for Tens:
+
+PFX t2 Y 1
+PFX t2 niišwi mateeni .
+PFX t3 Y 1
+PFX t3 nihswi mateeni .
+(Repeat for the rest of the tens digits)
+Prefixes for Hundreds:
+
+PFX h1 Y 1
+PFX h1 nkotwaahkwe .
+PFX h2 Y 1
+PFX h2 niišwaahkwe .
+(Repeat for the rest of the hundreds digits)
+Prefixes for Thousands:
+
+PFX th1 Y 1
+PFX th1 mataathswaahkwe .
+PFX th10 Y 1
+PFX th10 mataathswi mateeni .
+PFX th100 Y 1
+PFX th100 mataathswi waahkwe .
+PFX th1000 Y 1
+PFX th1000 mataathswi waahkwe mateeni .
+
+ossessive Affix Ruleset for Miami-Illinois
+
+Possessive Prefixes:
+
+PFX p1 Y 1
+PFX p1 ni- . (My)
+PFX p2 Y 1
+PFX p2 ki- . (Your)
+PFX p3 Y 1
+PFX p3 wi- . (His/Her)
+PFX p4 Y 1
+PFX p4 nwa- . (Our)
+PFX p5 Y 1
+PFX p5 kwa- . (Your (pl.))
+PFX p6 Y 1
+PFX p6 wi- . (Their)
+Possessive Stem Suffixes:
+
+SFX s1 Y 1
+SFX s1 -m . (Singular possessive suffix)
+SFX s2 Y 1
+SFX s2 -awi . (Plural possessive suffix)
+
+
+ni-nkoti-m (My one)
+ki-niišwi mateeni-awi (Your (pl.) twenty)
+wi-nkotwaahkwe-m (His/Her hundred)
+
+
+#Pronoun Affix Ruleset for Miami-Illinois
+
+# Independent Personal Pronouns:
+
+PFX ip1 Y 1
+PFX ip1 niila . (I, me)
+PFX ip2 Y 1
+PFX ip2 kiila . (You)
+PFX ip3 Y 1
+PFX ip3 awiila . (He, she, it)
+PFX ip4 Y 1
+PFX ip4 niiloona . (We, exclusive)
+PFX ip5 Y 1
+PFX ip5 kiiloona . (We, inclusive)
+PFX ip6 Y 1
+PFX ip6 kiilwa . (You, plural)
+PFX ip7 Y 1
+PFX ip7 awiilwa . (They)
+"Alone" Pronouns:
+
+PFX ap1 Y 1
+PFX ap1 niilaahka . (Alone, by myself)
+PFX ap2 Y 1
+PFX ap2 kiilaahka . (Alone, by yourself)
+PFX ap3 Y 1
+PFX ap3 awiilaahka . (Alone, by himself/herself/itself)
+PFX ap4 Y 1
+PFX ap4 niiloonaahka . (Alone, by ourselves, exclusive)
+PFX ap5 Y 1
+PFX ap5 kiiyoowe . (Alone, by yourselves, plural)
+PFX ap6 Y 1
+PFX ap6 awiiyoowe . (Alone, by themselves)
+Reflexive Pronouns:
+
+PFX rp1 Y 1
+PFX rp1 niiyawi . (Myself)
+PFX rp2 Y 1
+PFX rp2 kiiyawi . (Yourself)
+PFX rp3 Y 1
+PFX rp3 awiiyawi . (Himself/Herself/Itself)
+PFX rp4 Y 1
+PFX rp4 niiyoonaani . (Ourselves, exclusive)
+PFX rp5 Y 1
+PFX rp5 kiiyoonaani . (Ourselves, inclusive)
+PFX rp6 Y 1
+PFX rp6 kiiyoowe . (Yourselves, plural)
+Other Pronouns:
+
+PFX op1 Y 1
+PFX op1 aweena . (Who)
+PFX op2 Y 1
+PFX op2 keetwi . (What)
+PFX op3 Y 1
+PFX op3 aweeya . (Somebody)
+PFX op4 Y 1
+PFX op4 moohci aweeya . (Nobody)
