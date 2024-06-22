@@ -1,7 +1,6 @@
 #! /usr/bin/python3
-import sqlite3
-import os
-import subprocess
+
+#dictionary-src-sort.py
 
 # (c) 2011 Necrose99 ,Miami Nation ,   Others 
 # This code is licensed under MIT license (see LICENSE.MD for details)
@@ -24,12 +23,31 @@ import subprocess
 ### Potawatami , Lakota or other languages have parralles 
 
 
+import json
+import sqlite3
+import os
+import subprocess
+from translate.storage import tmx
 
 DEFAULT_HEADER = [
     "### (c) 2011 Necrose99, Miami Nation, & Others.. et al.",
     "### This code is licensed under MIT license (see LICENSE.MD for details)",
     "### https://github.com/necrose99/Myaamia"
 ]
+
+def tmx_to_dict(tmx_file):
+    tmx_data = tmx.tmxfile(tmx_file)
+    dictionary = {}
+    for unit in tmx_data.unit_iter():
+        source_text = unit.source.strip()
+        target_text = unit.target.strip()
+        if source_text and target_text:
+            dictionary[source_text] = target_text
+    return dictionary
+
+def save_dict_to_json(dictionary, output_file):
+    with open(output_file, 'w', encoding='utf-8') as f:
+        json.dump(dictionary, f, ensure_ascii=False, indent=4)
 
 def read_dictionary_from_file(file_path):
     dictionary_entries = []
@@ -53,7 +71,6 @@ def read_dictionary_from_file(file_path):
 def save_dictionary_to_file(header_found, header, dictionary_entries, file_path):
     with open(file_path, 'w', encoding='utf-8') as file:
         if not header_found:
-            # Insert default header if missing
             for line in DEFAULT_HEADER:
                 file.write(f"{line}\n")
         else:
@@ -80,7 +97,6 @@ def insert_entries_to_database(entries, conn):
         try:
             cursor.execute("INSERT INTO dictionary (word, comment) VALUES (?, ?)", (word, comment))
         except sqlite3.IntegrityError:
-            # Entry already exists, ignore duplicates
             pass
     conn.commit()
 
@@ -92,39 +108,45 @@ def fetch_all_entries_from_database(conn):
 
 def export_sql_dump(db_path, sql_dump_path):
     try:
-        # Use subprocess to call the sqlite3 command line tool
         subprocess.run(['sqlite3', db_path, '.dump'], stdout=open(sql_dump_path, 'w'), check=True)
     except Exception as e:
         print(f"An error occurred while exporting SQL dump: {e}")
 
 def main():
+    tmx_file = 'glossary.tmx'
+    output_json_file = 'glossary.json'
     input_file = 'dictionary.txt'
     db_file = 'dictionary.db'
     output_file = 'exported_dictionary.txt'
+    output_csv_file = 'exported_dictionary.csv'
     sql_dump_file = 'dictionary.sql'
 
-    # Step 1: Read dictionary from file
+    # Step 1: Convert TMX to dictionary and save as JSON
+    dictionary = tmx_to_dict(tmx_file)
+    save_dict_to_json(dictionary, output_json_file)
+
+    # Step 2: Read dictionary from file
     header_found, header, dictionary_entries = read_dictionary_from_file(input_file)
 
-    # Step 2: Sort entries alphabetically
+    # Step 3: Sort entries alphabetically
     dictionary_entries.sort(key=lambda x: x[0])
 
-    # Step 3: Initialize the database
+    # Step 4: Initialize the database
     conn = initialize_database(db_file)
 
-    # Step 4: Insert entries into the database
+    # Step 5: Insert entries into the database
     insert_entries_to_database(dictionary_entries, conn)
 
-    # Step 5: Fetch all unique entries from the database
+    # Step 6: Fetch all unique entries from the database
     all_entries = fetch_all_entries_from_database(conn)
 
-    # Step 6: Sort the fetched entries alphabetically
+    # Step 7: Sort the fetched entries alphabetically
     all_entries.sort(key=lambda x: x[0])
 
-    # Step 7: Save the updated dictionary back to a new text file
+    # Step 8: Save the updated dictionary back to a new text file
     save_dictionary_to_file(header_found, header, all_entries, output_file)
 
-    # Step 8: Export the database schema and data to an SQL file
+    # Step 9: Export the database schema and data to an SQL file
     export_sql_dump(db_file, sql_dump_file)
 
     # Close the database connection

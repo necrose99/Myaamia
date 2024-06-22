@@ -55,12 +55,10 @@ PFX d0 Y 1
 PFX d0 DEVOICED .
 
 # Plurals
-SFX pl0 Y 1
-SFX pl0 aki . # Plural suffix -aki
-SFX pl1 Y 1
-SFX pl1 iki . # Plural suffix -iki
-SFX pl2 Y 1 
-SFX pl2 wa . # Plural suffix -wa
+SFX PL Y 3
+SFX PL 0 aki [bcdfghjklmnpqrstvwxyz] # Consonant-ending
+SFX PL 0 iki [aeiou] # Short vowel-ending
+SFX PL 0 wa [aeiou:] # Long vowel-ending
 
 # Plural Formation Rules
 # Rule 1: Add -aki to nouns ending in a consonant
@@ -165,6 +163,13 @@ COMPOUNDRULE 2
 COMPOUNDRULE #*0{
 COMPOUNDRULE #*@}
 
+# Number prefixes
+PFX NUM Y 20
+PFX NUM 0 nkoti . # One
+PFX NUM 0 niišwi . # Two
+# ... (other numbers)
+PFX NUM 0 mataathswaahkwe . # Thousand
+
 # Compounded numbers
 COMPOUNDMIN 1
 COMPOUNDRULE 2
@@ -202,6 +207,7 @@ mataathswi + SFX_TENS -> mataathswi -aasi (Eleven)
 
 # Apply fifties, hundreds, and thousands (placeholder)
 # ... define rules to handle these numbers (likely as separate stems)
+
 
 # ... other affix rules
 
@@ -301,26 +307,18 @@ PFX th1000 mataathswi waahkwe mateeni .
 
 ossessive Affix Ruleset for Miami-Illinois
 
-Possessive Prefixes:
+# Possessives
+PFX POSS Y 6
+PFX POSS 0 ni- . # My
+PFX POSS 0 ki- . # Your
+PFX POSS 0 wi- . # His/Her
+PFX POSS 0 nwa- . # Our
+PFX POSS 0 kwa- . # Your (pl.)
+PFX POSS 0 wi- . # Their
 
-PFX p1 Y 1
-PFX p1 ni- . (My)
-PFX p2 Y 1
-PFX p2 ki- . (Your)
-PFX p3 Y 1
-PFX p3 wi- . (His/Her)
-PFX p4 Y 1
-PFX p4 nwa- . (Our)
-PFX p5 Y 1
-PFX p5 kwa- . (Your (pl.))
-PFX p6 Y 1
-PFX p6 wi- . (Their)
-Possessive Stem Suffixes:
-
-SFX s1 Y 1
-SFX s1 -m . (Singular possessive suffix)
-SFX s2 Y 1
-SFX s2 -awi . (Plural possessive suffix)
+SFX POSSSUF Y 2
+SFX POSSSUF 0 m . # Singular possessive
+SFX POSSSUF 0 awi . # Plural possessive
 
 
 ni-nkoti-m (My one)
@@ -332,20 +330,15 @@ wi-nkotwaahkwe-m (His/Her hundred)
 
 # Independent Personal Pronouns:
 
-PFX ip1 Y 1
-PFX ip1 niila . (I, me)
-PFX ip2 Y 1
-PFX ip2 kiila . (You)
-PFX ip3 Y 1
-PFX ip3 awiila . (He, she, it)
-PFX ip4 Y 1
-PFX ip4 niiloona . (We, exclusive)
-PFX ip5 Y 1
-PFX ip5 kiiloona . (We, inclusive)
-PFX ip6 Y 1
-PFX ip6 kiilwa . (You, plural)
-PFX ip7 Y 1
-PFX ip7 awiilwa . (They)
+# Pronouns
+PFX PRON Y 17
+PFX PRON 0 niila . # I, me
+PFX PRON 0 kiila . # You
+# ... (other pronouns)
+PFX PRON 0 aweena . # Who
+PFX PRON 0 keetwi . # What
+PFX PRON 0 aweeya . # Somebody
+PFX PRON 0 moohci_aweeya . # Nobody
 "Alone" Pronouns:
 
 PFX ap1 Y 1
@@ -384,3 +377,4 @@ PFX op3 Y 1
 PFX op3 aweeya . (Somebody)
 PFX op4 Y 1
 PFX op4 moohci aweeya . (Nobody)
+
