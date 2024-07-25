@@ -1,0 +1,1034 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+<header adminlang="en" srclang="en">
+</header>
+<body>
+
+<tu>
+<tuv xml:lang="en">
+<seg>aÅ¡iihkionam-</seg>
+</tuv>
+<tuv xml:lang="oj">
+<seg>aÅ¡iihkionam-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>mihÅ¡aa-</seg>
+</tuv>
+<tuv xml:lang="oj">
+<seg>mihÅ¡aa-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡aaÅ¡ihkwee-</seg>
+</tuv>
+<tuv xml:lang="oj">
+<seg>Å¡aaÅ¡ihkwee-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡aaÅ¡ihkaapantani-</seg>
+</tuv>
+<tuv xml:lang="oj">
+<seg>Å¡aaÅ¡ihkaapantani-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>aÅ¡aahÅ¡ikop-</seg>
+</tuv>
+<tuv xml:lang="oj">
+<seg>aÅ¡aahÅ¡ikop-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡</seg>
+</tuv>
+<tuv xml:lang="oj">
+<seg>Å¡</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>a</seg>
+</tuv>
+<tuv xml:lang="oj">
+<seg>a</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡aahkweehsi-</seg>
+</tuv>
+<tuv xml:lang="oj">
+<seg>Å¡aahkweehsi-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>aaÅ¡awi-</seg>
+</tuv>
+<tuv xml:lang="oj">
+<seg>aaÅ¡awi-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡aahtee-</seg>
+</tuv>
+<tuv xml:lang="oj">
+<seg>Å¡aahtee-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡aahÅ¡aakweehsi-</seg>
+</tuv>
+<tuv xml:lang="oj">
+<seg>Å¡aahÅ¡aakweehsi-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>ileeÅ¡i</seg>
+</tuv>
+<tuv xml:lang="oj">
+<seg>ileeÅ¡i</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>auto</seg>
+</tuv>
+<tuv xml:lang="oj">
+<seg>auto</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>k</seg>
+</tuv>
+<tuv xml:lang="oj">
+<seg>k</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>aaÅ¡awil-</seg>
+</tuv>
+<tuv xml:lang="oj">
+<seg>aaÅ¡awil-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>aÅ¡ihsay-</seg>
+</tuv>
+<tuv xml:lang="oj">
+<seg>aÅ¡ihsay-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡aah-</seg>
+</tuv>
+<tuv xml:lang="oj">
+<seg>Å¡aah-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>mihÅ¡ahkwat-</seg>
+</tuv>
+<tuv xml:lang="oj">
+<seg>mihÅ¡ahkwat-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>aaÅ¡awee-</seg>
+</tuv>
+<tuv xml:lang="oj">
+<seg>aaÅ¡awee-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡aaÅ¡aaÅ¡hkwi-</seg>
+</tuv>
+<tuv xml:lang="oj">
+<seg>Å¡aaÅ¡aaÅ¡hkwi-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Indianapolis</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>ceenkwihtanonki</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>aÅ¡iihkionam-</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>aÅ¡iihkionam-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Miami woman</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>myaamiihkwi-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>immediately, right away</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>šaawe</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>in exchange, reciprocally, across</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>aašawe</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Imagination</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>neemawiteeheeyon-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Microscope</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>meehšaapantaakan-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>In deep water</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>kinoonk-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>aahtee-</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>aahtee-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>inko</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>inko</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>mihÅ¡aa-</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>mihÅ¡aa-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>East, sunrise</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>East, sunrise</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Mississippi River</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Mississippi River</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Miami-Illinois</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Myaamia,Illinois</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡aaÅ¡ihkwee-</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Å¡aaÅ¡ihkwee-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Jump in the water</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>camonkihsaa</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Avenge him</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>alotam</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡aaÅ¡ihkaapantani-</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Å¡aaÅ¡ihkaapantani-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Infant, baby</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>piloohseens-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>aÅ¡aahÅ¡ikop-</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>aÅ¡aahÅ¡ikop-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Fort</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>niimihki</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Å¡</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>a</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>a</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>I, me</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>niila</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡aahkweehsi-</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Å¡aahkweehsi-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>just, also, recently, wait, hold on!</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>kiint-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>aaÅ¡awi-</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>aaÅ¡awi-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>imitate him, mimic him</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>alohtaw-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Jump down, fling oneself down</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>mahtapihsaa</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Instead of, only, rather than, except for</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>teehš-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>It is flooded</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>It is flooded</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Miami person</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>myaamia</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡aahtee-</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Å¡aahtee-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Friend (of the same sex)</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Friend (of the same sex)</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡aahÅ¡aakweehsi-</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Å¡aahÅ¡aakweehsi-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>ileeÅ¡i</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>ileeÅ¡i</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>auto</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>auto</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>k</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>k</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Warm oneself</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>awansi-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>aahteeleentam-</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>aahteeleentam-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>aaÅ¡awil-</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>aaÅ¡awil-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>aÅ¡ihsay-</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>aÅ¡ihsay-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>middle-aged, older man</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>nakaanakw-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡aah-</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Å¡aah-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>mihÅ¡ahkwat-</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>mihÅ¡ahkwat-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>ILDA Dictionary</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>ILDA Dictionary</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Thank you</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>neewe</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>University, college</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>mihši-nipwaantiikaan-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>aaÅ¡awee-</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>aaÅ¡awee-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Indian turnip, Jack-in-the-pulpit (Arisaema triphyllum)</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>wiihkapesi-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Painted terrapin turtle (Chrysemys spp.)</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>mihšihkinaahkw-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡aaÅ¡aaÅ¡hkwi-</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Å¡aaÅ¡aaÅ¡hkwi-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>I lift him up</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>ampen-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Illinois River</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>inohka asiipiomi</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>aÅ¡iihkionam-</seg>
+</tuv>
+<tuv xml:lang="chr">
+<seg>aÅ¡iihkionam-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>mihÅ¡aa-</seg>
+</tuv>
+<tuv xml:lang="chr">
+<seg>mihÅ¡aa-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡aaÅ¡ihkwee-</seg>
+</tuv>
+<tuv xml:lang="chr">
+<seg>Å¡aaÅ¡ihkwee-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡aaÅ¡ihkaapantani-</seg>
+</tuv>
+<tuv xml:lang="chr">
+<seg>Å¡aaÅ¡ihkaapantani-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>aÅ¡aahÅ¡ikop-</seg>
+</tuv>
+<tuv xml:lang="chr">
+<seg>aÅ¡aahÅ¡ikop-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡</seg>
+</tuv>
+<tuv xml:lang="chr">
+<seg>Å¡</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>a</seg>
+</tuv>
+<tuv xml:lang="chr">
+<seg>a</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡aahkweehsi-</seg>
+</tuv>
+<tuv xml:lang="chr">
+<seg>Å¡aahkweehsi-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>aaÅ¡awi-</seg>
+</tuv>
+<tuv xml:lang="chr">
+<seg>aaÅ¡awi-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡aahtee-</seg>
+</tuv>
+<tuv xml:lang="chr">
+<seg>Å¡aahtee-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡aahÅ¡aakweehsi-</seg>
+</tuv>
+<tuv xml:lang="chr">
+<seg>Å¡aahÅ¡aakweehsi-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>ileeÅ¡i</seg>
+</tuv>
+<tuv xml:lang="chr">
+<seg>ileeÅ¡i</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>auto</seg>
+</tuv>
+<tuv xml:lang="chr">
+<seg>auto</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>k</seg>
+</tuv>
+<tuv xml:lang="chr">
+<seg>k</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>aaÅ¡awil-</seg>
+</tuv>
+<tuv xml:lang="chr">
+<seg>aaÅ¡awil-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>aÅ¡ihsay-</seg>
+</tuv>
+<tuv xml:lang="chr">
+<seg>aÅ¡ihsay-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡aah-</seg>
+</tuv>
+<tuv xml:lang="chr">
+<seg>Å¡aah-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>mihÅ¡ahkwat-</seg>
+</tuv>
+<tuv xml:lang="chr">
+<seg>mihÅ¡ahkwat-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>aaÅ¡awee-</seg>
+</tuv>
+<tuv xml:lang="chr">
+<seg>aaÅ¡awee-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡aaÅ¡aaÅ¡hkwi-</seg>
+</tuv>
+<tuv xml:lang="chr">
+<seg>Å¡aaÅ¡aaÅ¡hkwi-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>aÅ¡iihkionam-</seg>
+</tuv>
+<tuv xml:lang="cr">
+<seg>aÅ¡iihkionam-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>mihÅ¡aa-</seg>
+</tuv>
+<tuv xml:lang="cr">
+<seg>mihÅ¡aa-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡aaÅ¡ihkwee-</seg>
+</tuv>
+<tuv xml:lang="cr">
+<seg>Å¡aaÅ¡ihkwee-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡aaÅ¡ihkaapantani-</seg>
+</tuv>
+<tuv xml:lang="cr">
+<seg>Å¡aaÅ¡ihkaapantani-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>aÅ¡aahÅ¡ikop-</seg>
+</tuv>
+<tuv xml:lang="cr">
+<seg>aÅ¡aahÅ¡ikop-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡</seg>
+</tuv>
+<tuv xml:lang="cr">
+<seg>Å¡</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>a</seg>
+</tuv>
+<tuv xml:lang="cr">
+<seg>a</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡aahkweehsi-</seg>
+</tuv>
+<tuv xml:lang="cr">
+<seg>Å¡aahkweehsi-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>aaÅ¡awi-</seg>
+</tuv>
+<tuv xml:lang="cr">
+<seg>aaÅ¡awi-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡aahtee-</seg>
+</tuv>
+<tuv xml:lang="cr">
+<seg>Å¡aahtee-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡aahÅ¡aakweehsi-</seg>
+</tuv>
+<tuv xml:lang="cr">
+<seg>Å¡aahÅ¡aakweehsi-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>ileeÅ¡i</seg>
+</tuv>
+<tuv xml:lang="cr">
+<seg>ileeÅ¡i</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>auto</seg>
+</tuv>
+<tuv xml:lang="cr">
+<seg>auto</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>k</seg>
+</tuv>
+<tuv xml:lang="cr">
+<seg>k</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>aaÅ¡awil-</seg>
+</tuv>
+<tuv xml:lang="cr">
+<seg>aaÅ¡awil-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>aÅ¡ihsay-</seg>
+</tuv>
+<tuv xml:lang="cr">
+<seg>aÅ¡ihsay-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡aah-</seg>
+</tuv>
+<tuv xml:lang="cr">
+<seg>Å¡aah-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>mihÅ¡ahkwat-</seg>
+</tuv>
+<tuv xml:lang="cr">
+<seg>mihÅ¡ahkwat-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>aaÅ¡awee-</seg>
+</tuv>
+<tuv xml:lang="cr">
+<seg>aaÅ¡awee-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Å¡aaÅ¡aaÅ¡hkwi-</seg>
+</tuv>
+<tuv xml:lang="cr">
+<seg>Å¡aaÅ¡aaÅ¡hkwi-</seg>
+</tuv>
+</tu>
+
+</body>
+</tmx>

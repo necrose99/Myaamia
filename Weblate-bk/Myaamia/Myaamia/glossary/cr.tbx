@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE martif PUBLIC "ISO 12200:1999A//DTD MARTIF core (DXFcdV04)//EN" "TBXcdv04.dtd">
+<martif type="TBX" xml:lang="en">
+    <martifHeader>
+        <fileDesc>
+            <sourceDesc>
+                <p>Translate Toolkit</p>
+            </sourceDesc>
+        </fileDesc>
+    </martifHeader>
+    <text>
+        <body>
+            <termEntry id="Myaamia ETHNOBOTANICAL DATABASE">
+                <langSet xml:lang="en"><tig><term>weeping willow (Salix babylonica)</term></tig></langSet>
+                <langSet xml:lang="cr"><tig><term></term></tig></langSet>
+                <note from="translator">Mahkihkiwa  mahkihkiwa https://mc.miamioh.edu/mahkihkiwa</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>cook it</term></tig></langSet>
+                <langSet xml:lang="cr"><tig><term>cook it</term></tig></langSet>
+                <descrip>aalimiihtoo- (It verb) cook it</descrip>
+            </termEntry>
+            <termEntry id="kaahkaahki-">
+                <langSet xml:lang="en"><tig><term>Katydid</term></tig></langSet>
+                <langSet xml:lang="cr"><tig><term></term></tig></langSet>
+                <note from="translator">kaahkaahki- (Special noun) Katydid (Tettigonia viridissima), Kaskaskia person, Katydid (Tettigonia viridissima), Kaskaskia person</note>
+            </termEntry>
+            <termEntry id="kaahkaahki-">
+                <langSet xml:lang="en"><tig><term>Kaskaskia people</term></tig></langSet>
+                <langSet xml:lang="cr"><tig><term></term></tig></langSet>
+                <note from="translator">kaahkaahkiaki	Katydids, Kaskaskia people</note>
+            </termEntry>
+            <termEntry id="kaahkilookii-">
+                <langSet xml:lang="en"><tig><term>Shave one's skin</term></tig></langSet>
+                <langSet xml:lang="cr"><tig><term></term></tig></langSet>
+                <note from="translator">kaahkilookii- (No-object Verb) Shave one's skin</note>
+            </termEntry>
+            <termEntry id="Glossary">
+                <langSet xml:lang="en"><tig><term>Glossary</term></tig></langSet>
+                <langSet xml:lang="cr"><tig><term></term></tig></langSet>
+                <note from="translator">kaloosiona | Words  wiintaakani | Book</note>
+            </termEntry>
+            <termEntry id="metadata">
+                <langSet xml:lang="en"><tig><term>glottolog : miam1252</term></tig></langSet>
+                <langSet xml:lang="cr"><tig><term></term></tig></langSet>
+                <note from="translator">https://glottolog.org/resource/languoid/id/miam1252,  glottolog : miam1252 metadata</note>
+            </termEntry>
+            <termEntry id="Language codes ISO&#9;ISO 639-3&#9;mia&#9;ISO 639-3&#9;mia">
+                <langSet xml:lang="en"><tig><term>Language codes ISO 639-3 mia, Miami</term></tig></langSet>
+                <langSet xml:lang="cr"><tig><term></term></tig></langSet>
+            </termEntry>
+            <termEntry id="ILDA Website">
+                <langSet xml:lang="en"><tig><term>Welcome to the Myaamia-Peewaalia dictionary</term></tig></langSet>
+                <langSet xml:lang="cr"><tig><term></term></tig></langSet>
+                <note from="translator">ILDA	Welcome to the Myaamia-Peewaalia dictionary	https://mc.miamioh.edu/ilda-myaamia/dictionary</note>
+            </termEntry>
+            <termEntry id="-aasi">
+                <langSet xml:lang="en"><tig><term>(10;s delimenter) </term></tig></langSet>
+                <langSet xml:lang="cr"><tig><term></term></tig></langSet>
+                <note from="translator">-aasi suffix ie 11  uses to denote tens</note>
+            </termEntry>
+            <termEntry id="-hkweekan-">
+                <langSet xml:lang="en"><tig><term>Neck</term></tig></langSet>
+                <langSet xml:lang="cr"><tig><term>Neck</term></tig></langSet>
+                <descrip>-hkweekan- (n.inan.dep) Neck</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>English</term></tig></langSet>
+                <langSet xml:lang="cr"><tig><term>English</term></tig></langSet>
+                <descrip>aakalaahšimaataweenki</descrip>
+            </termEntry>
+        </body>
+    </text>
+</martif>

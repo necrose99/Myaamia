@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Loco xml export: XLIFF 2.0
+ Project: Myaamia
+ Locale: en-US, English (USA)
+ Exported by: Michael L.
+ Exported at: Mon, 17 Jun 2024 12:14:49 -0500
+--><xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:2.0 http://docs.oasis-open.org/xliff/xliff-core/v2.0/os/schemas/xliff_core_2.0.xsd" xml:space="preserve" srcLang="en-US">
+  <file original="https://localise.biz/necrose99/myaamia" id="f1">
+    <notes>
+      <note category="tool-name">Loco</note>
+      <note category="tool-version">1.0.28 20240611-1</note>
+    </notes>
+    <unit id="loco:666ab9f4b9070f8443009f72" name="Hello">
+      <segment>
+        <source>Hello</source>
+      </segment>
+    </unit>
+    <unit id="loco:666abe1bfb45269395027306" name="yes">
+      <segment>
+        <source>yes</source>
+      </segment>
+    </unit>
+    <unit id="loco:666abe92915ef60d590661f2" name="you're welcome">
+      <notes>
+        <note>masculine or neutral</note>
+      </notes>
+      <segment>
+        <source>you're welcome</source>
+      </segment>
+    </unit>
+    <unit id="loco:666abebff5a64430110de992" name="affirmative">
+      <segment>
+        <source>affirmative</source>
+      </segment>
+    </unit>
+    <unit id="loco:666abeee231753541e0db752" name="yes">
+      <notes>
+        <note>yes	naaka	(women only), Feminine</note>
+      </notes>
+      <segment>
+        <source>yes</source>
+      </segment>
+    </unit>
+    <unit id="loco:666abf1c17a2238e4a0568c2" name="okay">
+      <notes>
+        <note>okay	iihia	masculine or neutral</note>
+      </notes>
+      <segment>
+        <source>okay</source>
+      </segment>
+    </unit>
+    <unit id="loco:666abfc6f4c9fa7ff30a43a3" name="no">
+      <notes>
+        <note>no	moohci	moohci (part) No, not</note>
+      </notes>
+      <segment>
+        <source>no</source>
+      </segment>
+    </unit>
+    <unit id="loco:666ac04cbf7af4720a08cd15" name="Nobody">
+      <segment>
+        <source>Nobody</source>
+      </segment>
+    </unit>
+    <unit id="loco:666ac0caab147993dc0cbce4" name="No, I cannot">
+      <segment>
+        <source>No, I cannot</source>
+      </segment>
+    </unit>
+    <unit id="loco:666ac1042836f281f108d803" name="I said no">
+      <segment>
+        <source>I said no</source>
+      </segment>
+    </unit>
+    <unit id="loco:666ac1444fd057734e0e52f2" name="Not now">
+      <segment>
+        <source>Not now</source>
+      </segment>
+    </unit>
+    <unit id="loco:666ac161eac3fe5ed7089b43" name="not">
+      <segment>
+        <source>not</source>
+      </segment>
+    </unit>
+    <unit id="loco:666ac1d63be55344d3089613" name="welcome">
+      <notes>
+        <note>welcome	meentitohkaalilaanki	we (excl.) welcome you (pl)</note>
+      </notes>
+      <segment>
+        <source>welcome</source>
+      </segment>
+    </unit>
+    <unit id="loco:666ac23c3be55344d3089615" name="One, 1">
+      <notes>
+        <note>1 or one Numerals</note>
+      </notes>
+      <segment>
+        <source>One, 1</source>
+      </segment>
+    </unit>
+    <unit id="loco:666ac2988ebeb48425098e55" name="two">
+      <notes>
+        <note>Two, 2</note>
+      </notes>
+      <segment>
+        <source>two</source>
+      </segment>
+    </unit>
+    <unit id="loco:666ac2d60bf30dcddb0effd2" name="Three,">
+      <notes>
+        <note>Three, 3</note>
+      </notes>
+      <segment>
+        <source>Three,</source>
+      </segment>
+    </unit>
+    <unit id="loco:666c519c8e4e6fb24802bf95" name="Six">
+      <segment>
+        <source>Six</source>
+      </segment>
+    </unit>
+    <unit id="loco:666cc3fd30fe4d541b086f42" name="Seven">
+      <notes>
+        <note>swaahteethswi</note>
+      </notes>
+      <segment>
+        <source>Seven</source>
+      </segment>
+    </unit>
+    <unit id="loco:666cc4cd1a763c53c60286d2" name="Eight">
+      <segment>
+        <source>Eight</source>
+      </segment>
+    </unit>
+    <unit id="loco:666cc5afce78e0b14602d6b2" name="Ten">
+      <segment>
+        <source>Ten</source>
+      </segment>
+    </unit>
+    <unit id="loco:666cc5f70b3f539fa50940b2" name="Eleven">
+      <segment>
+        <source>Eleven</source>
+      </segment>
+    </unit>
+    <unit id="loco:666cc634ce78e0b14602d6b4" name="Twelve, 12">
+      <segment>
+        <source>Twelve, 12</source>
+      </segment>
+    </unit>
+    <unit id="loco:666cc682fc3f79aa39084e12" name="Thirteen, 13">
+      <segment>
+        <source>Thirteen, 13</source>
+      </segment>
+    </unit>
+    <unit id="loco:666cc6cfd2a2e349b9072a62" name="Fourteen, 14">
+      <segment>
+        <source>Fourteen, 14</source>
+      </segment>
+    </unit>
+    <unit id="loco:666cc7aa6cb9f31d5d082902" name="Fifteen, 15">
+      <segment>
+        <source>Fifteen, 15</source>
+      </segment>
+    </unit>
+    <unit id="loco:666cc7dda1a2df3ce500d222" name="Sixteen, 16">
+      <segment>
+        <source>Sixteen, 16</source>
+      </segment>
+    </unit>
+    <unit id="loco:666cc81a8ce03c2da7018302" name="Seventeen, 17">
+      <segment>
+        <source>Seventeen, 17</source>
+      </segment>
+    </unit>
+    <unit id="loco:666cc8720607ea3c0f09e393" name="Eighteen, 18">
+      <segment>
+        <source>Eighteen, 18</source>
+      </segment>
+    </unit>
+    <unit id="loco:666cc9249ff11b29ee0d3be2" name="numerals">
+      <notes>
+        <note>akincikoona (num) numerals, numbers</note>
+      </notes>
+      <segment>
+        <source>numerals</source>
+      </segment>
+    </unit>
+    <unit id="loco:666cc9c075f9c786d300d762" name="Nineteen">
+      <segment>
+        <source>Nineteen</source>
+      </segment>
+    </unit>
+    <unit id="loco:666cc9fa1ed554915d0259f2" name="Twenty">
+      <segment>
+        <source>Twenty</source>
+      </segment>
+    </unit>
+    <unit id="loco:666ccddf9ae3b04c20002e42" name="Twenty one">
+      <segment>
+        <source>Twenty one</source>
+      </segment>
+    </unit>
+    <unit id="loco:666cce6584bfc21db90c93b2" name="Twenty two,">
+      <segment>
+        <source>Twenty two,</source>
+      </segment>
+    </unit>
+    <unit id="loco:666ccee86836205ba9078b22" name="Twenty three, 23">
+      <segment>
+        <source>Twenty three, 23</source>
+      </segment>
+    </unit>
+    <unit id="loco:666ccff9fb4694f4780fff42" name="Twenty four, 24">
+      <segment>
+        <source>Twenty four, 24</source>
+      </segment>
+    </unit>
+    <unit id="loco:666cd039b8870e545e0a7ab2" name="Twenty five, 25">
+      <segment>
+        <source>Twenty five, 25</source>
+      </segment>
+    </unit>
+    <unit id="loco:666cd07ce9843e6f870dbf92" name="Twenty six, 26">
+      <segment>
+        <source>Twenty six, 26</source>
+      </segment>
+    </unit>
+    <unit id="loco:666cd0b155e9cd835907da02" name="Twenty seven">
+      <segment>
+        <source>Twenty seven</source>
+      </segment>
+    </unit>
+    <unit id="loco:666cd120e9843e6f870dbf94" name="Twenty eight, 28">
+      <notes>
+        <note>niišwi mateeni palaanaasi</note>
+      </notes>
+      <segment>
+        <source>Twenty eight, 28</source>
+      </segment>
+    </unit>
+    <unit id="loco:666cd1849634756d680890e2" name="Twenty nine, 29">
+      <segment>
+        <source>Twenty nine, 29</source>
+      </segment>
+    </unit>
+    <unit id="loco:666cd1d52e3a065355042532" name="Thirty">
+      <segment>
+        <source>Thirty</source>
+      </segment>
+    </unit>
+    <unit id="loco:666cd22fa81ae63278055e62" name="Thirty five, 35">
+      <segment>
+        <source>Thirty five, 35</source>
+      </segment>
+    </unit>
+    <unit id="loco:666cd2b8c7766e051302a552" name="Forty">
+      <segment>
+        <source>Forty</source>
+      </segment>
+    </unit>
+    <unit id="loco:666cd31659ec34245c0a9c52" name="Fifty, 50">
+      <segment>
+        <source>Fifty, 50</source>
+      </segment>
+    </unit>
+    <unit id="loco:666cd35e36a198b1a3081ae2" name="One hundred">
+      <segment>
+        <source>One hundred</source>
+      </segment>
+    </unit>
+    <unit id="loco:666cd3a3cddc6fad4d0bfa33" name="Two hundred, 200">
+      <segment>
+        <source>Two hundred, 200</source>
+      </segment>
+    </unit>
+    <unit id="loco:666cd476e4b5f53e2c006572" name="One thousand, 1000">
+      <segment>
+        <source>One thousand, 1000</source>
+      </segment>
+    </unit>
+    <unit id="loco:666fb83090fe02956408ca42" name="Miami Language’ Online Resources">
+      <notes>
+        <note>https://aacimotaatiiyankwi.org/education/language/miami-language-online-resources/ Aacimotaatiiyankwi</note>
+      </notes>
+      <segment>
+        <source>Miami Language’ Online Resources</source>
+      </segment>
+    </unit>
+    <unit id="loco:666fb9605b28acf5be0a22c2" name="Miami">
+      <segment>
+        <source>Miami</source>
+      </segment>
+    </unit>
+    <unit id="loco:666fbaa531ef3b1f9e016652" name="  Myaamia ETHNOBOTANICAL DATABASE">
+      <notes>
+        <note>mahkihkiwa https://mc.miamioh.edu/mahkihkiwa/about</note>
+      </notes>
+      <segment>
+        <source>  Myaamia ETHNOBOTANICAL DATABASE</source>
+      </segment>
+    </unit>
+    <unit id="loco:666fbae13bce05e4600951c2" name="Miami Tribe’s revitalization movement">
+      <segment>
+        <source>Miami Tribe’s revitalization movement</source>
+      </segment>
+    </unit>
+    <unit id="loco:666fbb53abff582ead077242" name="Myaamia Heritage Museum &amp; Archive">
+      <notes>
+        <note>aya! Welcome to Kaakisitoonkia!</note>
+        <note>Kaakisitoonkia.com is the online portal of the Myaamia Heritage Museum &amp; Archive, presenting archival and museum items related to Miami heritage.  Kaakisitoonkia is the myaamia word for &quot;preserve objects, as in an archive.&quot;</note>
+      </notes>
+      <segment>
+        <source>Myaamia Heritage Museum &amp; Archive</source>
+      </segment>
+    </unit>
+    <unit id="loco:666fbc3e34cf5114d3095f52" name="corn">
+      <notes>
+        <note>Corn the Food the plant etc..</note>
+      </notes>
+      <segment>
+        <source>corn</source>
+      </segment>
+    </unit>
+    <unit id="loco:666fbdab32b45c33930e5592" name="beech tree">
+      <notes>
+        <note>Scientific Name:  Fagus grandifolia Ehrh. &quot;shashecomise, beech tree&quot; </note>
+        <note>&quot;beech, sha-sha-com-mindj&quot; https://mc.miamioh.edu/mahkihkiwa/species/4589</note>
+      </notes>
+      <segment>
+        <source>beech tree</source>
+      </segment>
+    </unit>
+    <unit id="loco:666fbe7154bfb6ba1a017834" name="false pennyroyal">
+      <notes>
+        <note>American false pennyroyal / Hedeoma pulegioides (L.) Purs. / </note>
+        <note>https://mc.miamioh.edu/mahkihkiwa/species?entry_type=Species</note>
+      </notes>
+      <segment>
+        <source>false pennyroyal</source>
+      </segment>
+    </unit>
+    <unit id="loco:666fc0d0e2b180e42408fee2" name="hazelnut
+">
+      <notes>
+        <note>American hazelnut / Corylus americana Walter / pahkiihteenhsaahkwi </note>
+        <note>mahkihkiwa</note>
+      </notes>
+      <segment>
+        <source>hazelnut
+</source>
+      </segment>
+    </unit>
+    <unit id="loco:666fc22a3f1a76db1a0abc02" name="Welcome">
+      <notes>
+        <note>Aya del Aya formal,  Aya  hello as well</note>
+      </notes>
+      <segment>
+        <source>Welcome</source>
+      </segment>
+    </unit>
+    <unit id="loco:666fc295193fba58a000f6c2" name="American hophornbeam">
+      <notes>
+        <note>American hophornbeam, ironwood / Ostrya virginiana (Mill) K.Koch / </note>
+        <note>https://mc.miamioh.edu/mahkihkiwa/species?entry_type=Species</note>
+      </notes>
+      <segment>
+        <source>American hophornbeam</source>
+      </segment>
+    </unit>
+    <unit id="loco:666fc76e8ff5618f140b7712" name="Hornbeam">
+      <notes>
+        <note>American Hornbeam, ironwood, musclewood / Carpinus caroliniana Walter / myaalwamiši</note>
+      </notes>
+      <segment>
+        <source>Hornbeam</source>
+      </segment>
+    </unit>
+    <unit id="loco:6670348224c8c012c60a3332" name="sycamore ">
+      <notes>
+        <note>American sycamore / Platanus occidentalis L.</note>
+      </notes>
+      <segment>
+        <source>sycamore </source>
+      </segment>
+    </unit>
+    <unit id="loco:6670377e279647fa640b7c52" name="asparagus">
+      <segment>
+        <source>asparagus</source>
+      </segment>
+    </unit>
+    <unit id="loco:667037d4b071a2fbca0c9d53" name="Atlantic camas">
+      <notes>
+        <note>Atlantic camas / Camassia scilloides (Raf.) Cory. Wild Hyacinth</note>
+      </notes>
+      <segment>
+        <source>Atlantic camas</source>
+      </segment>
+    </unit>
+    <unit id="loco:66703876ae0a59ed7e0ccc04" name="basswood">
+      <notes>
+        <note>basswood, American linden / Tilia americana L.</note>
+      </notes>
+      <segment>
+        <source>basswood</source>
+      </segment>
+    </unit>
+    <unit id="loco:667038ee51c5b06b370d6422" name="beet">
+      <notes>
+        <note>beet / Beta vulgaris L.</note>
+      </notes>
+      <segment>
+        <source>beet</source>
+      </segment>
+    </unit>
+    <unit id="loco:66703950693547fe650f06d2" name="big bluestem grass">
+      <notes>
+        <note>big bluestem grass / Andropogon gerardii L.</note>
+      </notes>
+      <segment>
+        <source>big bluestem grass</source>
+      </segment>
+    </unit>
+    <unit id="loco:667039bdfdfeb5e82e0ef5b2" name="black huckleberry">
+      <notes>
+        <note>black huckleberry / Gaylussacia baccata (Wangenh.) K. Koch</note>
+      </notes>
+      <segment>
+        <source>black huckleberry</source>
+      </segment>
+    </unit>
+    <unit id="loco:66703a1584f7b783df01e9b2" name="black oak">
+      <notes>
+        <note>black oak / Quercus velutina Lam.</note>
+      </notes>
+      <segment>
+        <source>black oak</source>
+      </segment>
+    </unit>
+    <unit id="loco:66703aaecf5b8d25eb0c7123" name="black walnut tree">
+      <notes>
+        <note>black walnut tree / Juglans nigra L.</note>
+      </notes>
+      <segment>
+        <source>black walnut tree</source>
+      </segment>
+    </unit>
+    <unit id="loco:66703afacfba9a165905fa22" name="blue ash">
+      <notes>
+        <note>blue ash / Fraxinus quadrangulata Michx.</note>
+      </notes>
+      <segment>
+        <source>blue ash</source>
+      </segment>
+    </unit>
+    <unit id="loco:66703bc3e4eae80eea055212" name="blueberry">
+      <notes>
+        <note>blueberry / Vaccinium sp. L.</note>
+      </notes>
+      <segment>
+        <source>blueberry</source>
+      </segment>
+    </unit>
+    <unit id="loco:66703bf9c0e4ae9c4a0842a2" name="boneset">
+      <notes>
+        <note>boneset / Eupatorium perfoliatum L.</note>
+      </notes>
+      <segment>
+        <source>boneset</source>
+      </segment>
+    </unit>
+    <unit id="loco:66703c5cae0806dce3054ad2" name="box elder">
+      <notes>
+        <note>box elder / Acer negundo L.</note>
+      </notes>
+      <segment>
+        <source>box elder</source>
+      </segment>
+    </unit>
+    <unit id="loco:66703ce1c6b288127403b052" name="bull thistle">
+      <notes>
+        <note>bull thistle / Cirsium vulgare (Savi) Ten.</note>
+      </notes>
+      <segment>
+        <source>bull thistle</source>
+      </segment>
+    </unit>
+    <unit id="loco:66703d3356707b8a0d0703d2" name="bur oak">
+      <notes>
+        <note>bur oak / Quercus macrocarpa Michx.</note>
+      </notes>
+      <segment>
+        <source>bur oak</source>
+      </segment>
+    </unit>
+    <unit id="loco:66703d765cfe00ab64042e62" name="butterfly milkweed">
+      <notes>
+        <note>butterfly milkweed / Asclepias tuberosa L.</note>
+      </notes>
+      <segment>
+        <source>butterfly milkweed</source>
+      </segment>
+    </unit>
+    <unit id="loco:66703e07f715bb9a150de3b2" name="butternut tree">
+      <notes>
+        <note>butternut tree / Juglans cinerea L.</note>
+      </notes>
+      <segment>
+        <source>butternut tree</source>
+      </segment>
+    </unit>
+    <unit id="loco:66703e72b373211c27041262" name="cabbage">
+      <notes>
+        <note>cabbage / Brasscia oleracea L.</note>
+      </notes>
+      <segment>
+        <source>cabbage</source>
+      </segment>
+    </unit>
+    <unit id="loco:66703eb2f5cb63691005cc12" name="calamus root">
+      <notes>
+        <note>calamus root, sweetflag / Acorus calamus L.</note>
+      </notes>
+      <segment>
+        <source>calamus root</source>
+      </segment>
+    </unit>
+    <unit id="loco:66706d473b8efa5ae3080f02" name="paper birch ">
+      <notes>
+        <note>canoe birch, paper birch / Betula papyrifera Marshall</note>
+      </notes>
+      <segment>
+        <source>paper birch </source>
+      </segment>
+    </unit>
+    <unit id="loco:66706da5268c140d4d076542" name="cattail">
+      <notes>
+        <note>cattail / Typha latifolia L.</note>
+      </notes>
+      <segment>
+        <source>cattail</source>
+      </segment>
+    </unit>
+  </file>
+</xliff>

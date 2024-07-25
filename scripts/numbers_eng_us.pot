@@ -1,0 +1,669 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: you@example.com\n"
+"POT-Creation-Date: 2023-07-03 12:00+0000\n"
+"PO-Revision-Date: 2023-07-03 12:00+0000\n"
+"Last-Translator: you <you@example.com>\n"
+"Language-Team: English <yourteam@example.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "1"
+msgstr "one"
+
+msgid "2"
+msgstr "two"
+
+msgid "3"
+msgstr "three"
+
+msgid "4"
+msgstr "four"
+
+msgid "5"
+msgstr "five"
+
+msgid "6"
+msgstr "six"
+
+msgid "7"
+msgstr "seven"
+
+msgid "8"
+msgstr "eight"
+
+msgid "9"
+msgstr "nine"
+
+msgid "10"
+msgstr "ten"
+
+msgid "11"
+msgstr "eleven"
+
+msgid "12"
+msgstr "twelve"
+
+msgid "13"
+msgstr "thirteen"
+
+msgid "14"
+msgstr "fourteen"
+
+msgid "15"
+msgstr "fifteen"
+
+msgid "16"
+msgstr "sixteen"
+
+msgid "17"
+msgstr "seventeen"
+
+msgid "18"
+msgstr "eighteen"
+
+msgid "19"
+msgstr "nineteen"
+
+msgid "20"
+msgstr "twenty"
+
+msgid "21"
+msgstr "twenty-one"
+
+msgid "22"
+msgstr "twenty-two"
+
+msgid "23"
+msgstr "twenty-three"
+
+msgid "24"
+msgstr "twenty-four"
+
+msgid "25"
+msgstr "twenty-five"
+
+msgid "26"
+msgstr "twenty-six"
+
+msgid "27"
+msgstr "twenty-seven"
+
+msgid "28"
+msgstr "twenty-eight"
+
+msgid "29"
+msgstr "twenty-nine"
+
+msgid "30"
+msgstr "thirty"
+
+msgid "31"
+msgstr "thirty-one"
+
+msgid "32"
+msgstr "thirty-two"
+
+msgid "33"
+msgstr "thirty-three"
+
+msgid "34"
+msgstr "thirty-four"
+
+msgid "35"
+msgstr "thirty-five"
+
+msgid "36"
+msgstr "thirty-six"
+
+msgid "37"
+msgstr "thirty-seven"
+
+msgid "38"
+msgstr "thirty-eight"
+
+msgid "39"
+msgstr "thirty-nine"
+
+msgid "40"
+msgstr "forty"
+
+msgid "41"
+msgstr "forty-one"
+
+msgid "42"
+msgstr "forty-two"
+
+msgid "43"
+msgstr "forty-three"
+
+msgid "44"
+msgstr "forty-four"
+
+msgid "45"
+msgstr "forty-five"
+
+msgid "46"
+msgstr "forty-six"
+
+msgid "47"
+msgstr "forty-seven"
+
+msgid "48"
+msgstr "forty-eight"
+
+msgid "49"
+msgstr "forty-nine"
+
+msgid "50"
+msgstr "fifty"
+
+msgid "51"
+msgstr "fifty-one"
+
+msgid "52"
+msgstr "fifty-two"
+
+msgid "53"
+msgstr "fifty-three"
+
+msgid "54"
+msgstr "fifty-four"
+
+msgid "55"
+msgstr "fifty-five"
+
+msgid "56"
+msgstr "fifty-six"
+
+msgid "57"
+msgstr "fifty-seven"
+
+msgid "58"
+msgstr "fifty-eight"
+
+msgid "59"
+msgstr "fifty-nine"
+
+msgid "60"
+msgstr "sixty"
+
+msgid "61"
+msgstr "sixty-one"
+
+msgid "62"
+msgstr "sixty-two"
+
+msgid "63"
+msgstr "sixty-three"
+
+msgid "64"
+msgstr "sixty-four"
+
+msgid "65"
+msgstr "sixty-five"
+
+msgid "66"
+msgstr "sixty-six"
+
+msgid "67"
+msgstr "sixty-seven"
+
+msgid "68"
+msgstr "sixty-eight"
+
+msgid "69"
+msgstr "sixty-nine"
+
+msgid "70"
+msgstr "seventy"
+
+msgid "71"
+msgstr "seventy-one"
+
+msgid "72"
+msgstr "seventy-two"
+
+msgid "73"
+msgstr "seventy-three"
+
+msgid "74"
+msgstr "seventy-four"
+
+msgid "75"
+msgstr "seventy-five"
+
+msgid "76"
+msgstr "seventy-six"
+
+msgid "77"
+msgstr "seventy-seven"
+
+msgid "78"
+msgstr "seventy-eight"
+
+msgid "79"
+msgstr "seventy-nine"
+
+msgid "80"
+msgstr "eighty"
+
+msgid "81"
+msgstr "eighty-one"
+
+msgid "82"
+msgstr "eighty-two"
+
+msgid "83"
+msgstr "eighty-three"
+
+msgid "84"
+msgstr "eighty-four"
+
+msgid "85"
+msgstr "eighty-five"
+
+msgid "86"
+msgstr "eighty-six"
+
+msgid "87"
+msgstr "eighty-seven"
+
+msgid "88"
+msgstr "eighty-eight"
+
+msgid "89"
+msgstr "eighty-nine"
+
+msgid "90"
+msgstr "ninety"
+
+msgid "91"
+msgstr "ninety-one"
+
+msgid "92"
+msgstr "ninety-two"
+
+msgid "93"
+msgstr "ninety-three"
+
+msgid "94"
+msgstr "ninety-four"
+
+msgid "95"
+msgstr "ninety-five"
+
+msgid "96"
+msgstr "ninety-six"
+
+msgid "97"
+msgstr "ninety-seven"
+
+msgid "98"
+msgstr "ninety-eight"
+
+msgid "99"
+msgstr "ninety-nine"
+
+msgid "100"
+msgstr "one hundred"
+
+msgid "200"
+msgstr "two hundred"
+
+msgid "300"
+msgstr "three hundred"
+
+msgid "400"
+msgstr "four hundred"
+
+msgid "500"
+msgstr "five hundred"
+
+msgid "600"
+msgstr "six hundred"
+
+msgid "700"
+msgstr "seven hundred"
+
+msgid "800"
+msgstr "eight hundred"
+
+msgid "900"
+msgstr "nine hundred"
+
+msgid "1000"
+msgstr "one thousand"
+
+msgid "2000"
+msgstr "two thousand"
+
+msgid "3000"
+msgstr "three thousand"
+
+msgid "4000"
+msgstr "four thousand"
+
+msgid "5000"
+msgstr "five thousand"
+
+msgid "6000"
+msgstr "six thousand"
+
+msgid "7000"
+msgstr "seven thousand"
+
+msgid "8000"
+msgstr "eight thousand"
+
+msgid "9000"
+msgstr "nine thousand"
+
+msgid "10000"
+msgstr "ten thousand"
+
+msgid "11000"
+msgstr "eleven thousand"
+
+msgid "12000"
+msgstr "twelve thousand"
+
+msgid "13000"
+msgstr "thirteen thousand"
+
+msgid "14000"
+msgstr "fourteen thousand"
+
+msgid "15000"
+msgstr "fifteen thousand"
+
+msgid "16000"
+msgstr "sixteen thousand"
+
+msgid "17000"
+msgstr "seventeen thousand"
+
+msgid "18000"
+msgstr "eighteen thousand"
+
+msgid "19000"
+msgstr "nineteen thousand"
+
+msgid "20000"
+msgstr "twenty thousand"
+
+msgid "21000"
+msgstr "twenty-one thousand"
+
+msgid "22000"
+msgstr "twenty-two thousand"
+
+msgid "23000"
+msgstr "twenty-three thousand"
+
+msgid "24000"
+msgstr "twenty-four thousand"
+
+msgid "25000"
+msgstr "twenty-five thousand"
+
+msgid "26000"
+msgstr "twenty-six thousand"
+
+msgid "27000"
+msgstr "twenty-seven thousand"
+
+msgid "28000"
+msgstr "twenty-eight thousand"
+
+msgid "29000"
+msgstr "twenty-nine thousand"
+
+msgid "30000"
+msgstr "thirty thousand"
+
+msgid "31000"
+msgstr "thirty-one thousand"
+
+msgid "32000"
+msgstr "thirty-two thousand"
+
+msgid "33000"
+msgstr "thirty-three thousand"
+
+msgid "34000"
+msgstr "thirty-four thousand"
+
+msgid "35000"
+msgstr "thirty-five thousand"
+
+msgid "36000"
+msgstr "thirty-six thousand"
+
+msgid "37000"
+msgstr "thirty-seven thousand"
+
+msgid "38000"
+msgstr "thirty-eight thousand"
+
+msgid "39000"
+msgstr "thirty-nine thousand"
+
+msgid "40000"
+msgstr "forty thousand"
+
+msgid "41000"
+msgstr "forty-one thousand"
+
+msgid "42000"
+msgstr "forty-two thousand"
+
+msgid "43000"
+msgstr "forty-three thousand"
+
+msgid "44000"
+msgstr "forty-four thousand"
+
+msgid "45000"
+msgstr "forty-five thousand"
+
+msgid "46000"
+msgstr "forty-six thousand"
+
+msgid "47000"
+msgstr "forty-seven thousand"
+
+msgid "48000"
+msgstr "forty-eight thousand"
+
+msgid "49000"
+msgstr "forty-nine thousand"
+
+msgid "50000"
+msgstr "fifty thousand"
+
+msgid "51000"
+msgstr "fifty-one thousand"
+
+msgid "52000"
+msgstr "fifty-two thousand"
+
+msgid "53000"
+msgstr "fifty-three thousand"
+
+msgid "54000"
+msgstr "fifty-four thousand"
+
+msgid "55000"
+msgstr "fifty-five thousand"
+
+msgid "56000"
+msgstr "fifty-six thousand"
+
+msgid "57000"
+msgstr "fifty-seven thousand"
+
+msgid "58000"
+msgstr "fifty-eight thousand"
+
+msgid "59000"
+msgstr "fifty-nine thousand"
+
+msgid "60000"
+msgstr "sixty thousand"
+
+msgid "61000"
+msgstr "sixty-one thousand"
+
+msgid "62000"
+msgstr "sixty-two thousand"
+
+msgid "63000"
+msgstr "sixty-three thousand"
+
+msgid "64000"
+msgstr "sixty-four thousand"
+
+msgid "65000"
+msgstr "sixty-five thousand"
+
+msgid "66000"
+msgstr "sixty-six thousand"
+
+msgid "67000"
+msgstr "sixty-seven thousand"
+
+msgid "68000"
+msgstr "sixty-eight thousand"
+
+msgid "69000"
+msgstr "sixty-nine thousand"
+
+msgid "70000"
+msgstr "seventy thousand"
+
+msgid "71000"
+msgstr "seventy-one thousand"
+
+msgid "72000"
+msgstr "seventy-two thousand"
+
+msgid "73000"
+msgstr "seventy-three thousand"
+
+msgid "74000"
+msgstr "seventy-four thousand"
+
+msgid "75000"
+msgstr "seventy-five thousand"
+
+msgid "76000"
+msgstr "seventy-six thousand"
+
+msgid "77000"
+msgstr "seventy-seven thousand"
+
+msgid "78000"
+msgstr "seventy-eight thousand"
+
+msgid "79000"
+msgstr "seventy-nine thousand"
+
+msgid "80000"
+msgstr "eighty thousand"
+
+msgid "81000"
+msgstr "eighty-one thousand"
+
+msgid "82000"
+msgstr "eighty-two thousand"
+
+msgid "83000"
+msgstr "eighty-three thousand"
+
+msgid "84000"
+msgstr "eighty-four thousand"
+
+msgid "85000"
+msgstr "eighty-five thousand"
+
+msgid "86000"
+msgstr "eighty-six thousand"
+
+msgid "87000"
+msgstr "eighty-seven thousand"
+
+msgid "88000"
+msgstr "eighty-eight thousand"
+
+msgid "89000"
+msgstr "eighty-nine thousand"
+
+msgid "90000"
+msgstr "ninety thousand"
+
+msgid "91000"
+msgstr "ninety-one thousand"
+
+msgid "92000"
+msgstr "ninety-two thousand"
+
+msgid "93000"
+msgstr "ninety-three thousand"
+
+msgid "94000"
+msgstr "ninety-four thousand"
+
+msgid "95000"
+msgstr "ninety-five thousand"
+
+msgid "96000"
+msgstr "ninety-six thousand"
+
+msgid "97000"
+msgstr "ninety-seven thousand"
+
+msgid "98000"
+msgstr "ninety-eight thousand"
+
+msgid "99000"
+msgstr "ninety-nine thousand"
+
+msgid "100000"
+msgstr "one hundred thousand"
+
+msgid "1000000"
+msgstr "one million"
+
+msgid "2000000"
+msgstr "two million"
+
+msgid "3000000"
+msgstr "three million"
+
+msgid "4000000"
+msgstr "four million"
+
+msgid "5000000"
+msgstr "five million"
+
+msgid "6000000"
+msgstr "six million"
+
+msgid "7000000"
+msgstr "seven million"
+
+msgid "8000000"
+msgstr "eight million"
+
+msgid "9000000"
+msgstr "nine million"
+
+msgid "10000000"
+msgstr "ten million"
+
+msgid "1000000000"
+msgstr "one billion"

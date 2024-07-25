@@ -1,0 +1,1759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.13.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>1</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>one</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>two</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>3</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>three</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>4</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>four</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>5</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>five</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>6</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>six</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>7</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>seven</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>8</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>eight</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>9</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>nine</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>10</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>ten</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>11</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>eleven</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>12</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>twelve</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>13</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>thirteen</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>14</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>fourteen</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>15</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>fifteen</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>16</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>sixteen</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>17</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>seventeen</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>18</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>eighteen</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>19</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>nineteen</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>20</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>twenty</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>21</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>twenty-one</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>22</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>twenty-two</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>23</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>twenty-three</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>24</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>twenty-four</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>25</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>twenty-five</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>26</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>twenty-six</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>27</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>twenty-seven</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>28</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>twenty-eight</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>29</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>twenty-nine</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>30</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>thirty</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>31</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>thirty-one</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>32</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>thirty-two</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>33</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>thirty-three</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>34</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>thirty-four</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>35</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>thirty-five</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>36</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>thirty-six</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>37</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>thirty-seven</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>38</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>thirty-eight</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>39</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>thirty-nine</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>40</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>forty</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>41</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>forty-one</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>42</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>forty-two</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>43</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>forty-three</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>44</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>forty-four</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>45</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>forty-five</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>46</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>forty-six</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>47</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>forty-seven</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>48</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>forty-eight</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>49</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>forty-nine</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>50</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>fifty</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>51</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>fifty-one</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>52</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>fifty-two</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>53</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>fifty-three</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>54</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>fifty-four</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>55</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>fifty-five</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>56</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>fifty-six</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>57</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>fifty-seven</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>58</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>fifty-eight</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>59</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>fifty-nine</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>60</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>sixty</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>61</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>sixty-one</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>62</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>sixty-two</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>63</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>sixty-three</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>64</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>sixty-four</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>65</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>sixty-five</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>66</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>sixty-six</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>67</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>sixty-seven</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>68</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>sixty-eight</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>69</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>sixty-nine</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>70</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>seventy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>71</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>seventy-one</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>72</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>seventy-two</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>73</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>seventy-three</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>74</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>seventy-four</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>75</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>seventy-five</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>76</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>seventy-six</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>77</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>seventy-seven</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>78</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>seventy-eight</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>79</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>seventy-nine</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>80</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>eighty</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>81</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>eighty-one</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>82</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>eighty-two</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>83</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>eighty-three</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>84</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>eighty-four</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>85</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>eighty-five</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>86</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>eighty-six</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>87</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>eighty-seven</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>88</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>eighty-eight</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>89</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>eighty-nine</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>90</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>ninety</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>91</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>ninety-one</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>92</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>ninety-two</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>93</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>ninety-three</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>94</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>ninety-four</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>95</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>ninety-five</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>96</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>ninety-six</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>97</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>ninety-seven</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>98</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>ninety-eight</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>99</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>ninety-nine</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>100</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>one hundred</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>200</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>two hundred</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>300</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>three hundred</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>400</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>four hundred</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>500</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>five hundred</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>600</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>six hundred</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>700</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>seven hundred</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>800</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>eight hundred</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>900</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>nine hundred</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>1000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>one thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>two thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>3000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>three thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>4000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>four thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>5000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>five thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>6000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>six thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>7000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>seven thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>8000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>eight thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>9000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>nine thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>10000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>ten thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>11000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>eleven thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>12000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>twelve thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>13000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>thirteen thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>14000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>fourteen thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>15000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>fifteen thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>16000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>sixteen thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>17000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>seventeen thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>18000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>eighteen thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>19000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>nineteen thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>20000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>twenty thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>21000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>twenty-one thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>22000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>twenty-two thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>23000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>twenty-three thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>24000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>twenty-four thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>25000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>twenty-five thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>26000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>twenty-six thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>27000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>twenty-seven thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>28000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>twenty-eight thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>29000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>twenty-nine thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>30000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>thirty thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>31000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>thirty-one thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>32000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>thirty-two thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>33000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>thirty-three thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>34000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>thirty-four thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>35000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>thirty-five thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>36000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>thirty-six thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>37000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>thirty-seven thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>38000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>thirty-eight thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>39000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>thirty-nine thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>40000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>forty thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>41000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>forty-one thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>42000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>forty-two thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>43000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>forty-three thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>44000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>forty-four thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>45000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>forty-five thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>46000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>forty-six thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>47000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>forty-seven thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>48000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>forty-eight thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>49000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>forty-nine thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>50000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>fifty thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>51000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>fifty-one thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>52000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>fifty-two thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>53000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>fifty-three thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>54000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>fifty-four thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>55000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>fifty-five thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>56000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>fifty-six thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>57000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>fifty-seven thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>58000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>fifty-eight thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>59000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>fifty-nine thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>60000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>sixty thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>61000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>sixty-one thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>62000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>sixty-two thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>63000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>sixty-three thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>64000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>sixty-four thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>65000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>sixty-five thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>66000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>sixty-six thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>67000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>sixty-seven thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>68000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>sixty-eight thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>69000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>sixty-nine thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>70000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>seventy thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>71000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>seventy-one thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>72000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>seventy-two thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>73000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>seventy-three thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>74000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>seventy-four thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>75000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>seventy-five thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>76000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>seventy-six thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>77000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>seventy-seven thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>78000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>seventy-eight thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>79000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>seventy-nine thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>80000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>eighty thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>81000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>eighty-one thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>82000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>eighty-two thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>83000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>eighty-three thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>84000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>eighty-four thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>85000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>eighty-five thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>86000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>eighty-six thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>87000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>eighty-seven thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>88000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>eighty-eight thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>89000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>eighty-nine thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>90000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>ninety thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>91000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>ninety-one thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>92000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>ninety-two thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>93000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>ninety-three thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>94000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>ninety-four thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>95000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>ninety-five thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>96000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>ninety-six thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>97000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>ninety-seven thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>98000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>ninety-eight thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>99000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>ninety-nine thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>100000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>one hundred thousand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>1000000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>one million</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2000000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>two million</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>3000000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>three million</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>4000000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>four million</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>5000000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>five million</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>6000000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>six million</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>7000000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>seven million</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>8000000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>eight million</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>9000000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>nine million</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>10000000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>ten million</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>1000000000</seg>
+      </tuv>
+      <tuv xml:lang="xx">
+        <seg>one billion</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

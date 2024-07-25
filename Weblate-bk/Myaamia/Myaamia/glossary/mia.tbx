@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE martif PUBLIC "ISO 12200:1999A//DTD MARTIF core (DXFcdV04)//EN" "TBXcdv04.dtd">
+<martif type="TBX" xml:lang="en">
+    <martifHeader>
+        <fileDesc>
+            <sourceDesc>
+                <p>Translate Toolkit</p>
+            </sourceDesc>
+        </fileDesc>
+    </martifHeader>
+    <text>
+        <body>
+            <termEntry id="Myaamia ETHNOBOTANICAL DATABASE">
+                <langSet xml:lang="en"><tig><term>weeping willow (Salix babylonica)</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>niipyaahkatw-</term></tig></langSet>
+                <note from="translator">Mahkihkiwa  mahkihkiwa https://mc.miamioh.edu/mahkihkiwa  niipyaahkatw- (Common noun) weeping willow (Salix babylonica) root prefix</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>East, sunrise</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>East, sunrise</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>From the east</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>From the east</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Warm oneself</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>awansi-</term></tig></langSet>
+                <note from="translator">(No-object Verb) to Warm oneself  [ Myaamia is pollysynthic]  [part of speach prefix ]</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Towards the east</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>awansaapiciši</term></tig></langSet>
+                <note from="translator">basic form of towards the east east  , with conjugation</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>cook it</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>cook it</term></tig></langSet>
+                <descrip>aalimiihtoo- (It verb) cook it</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>en,English language</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>en,English language</term></tig></langSet>
+                <note from="translator">aakalaahšimaataweenki | English language</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Miami</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Myaamia</term></tig></langSet>
+                <note from="translator">Miami / Myaamia Ethnolog , Miami Tribe etho group....</note>
+            </termEntry>
+            <termEntry id="yes, okay, affirmative, you're welcome">
+                <langSet xml:lang="en"><tig><term>yes, okay, affirmative, you're welcome</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>iihia</term></tig></langSet>
+                <note from="translator">iihia (interj) yes, okay, affirmative, you're welcome , Masculine / nuteral</note>
+            </termEntry>
+            <termEntry id="(interj)">
+                <langSet xml:lang="en"><tig><term>Yes,okay,, affirmative, you're welcome</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Yes,okay,, affirmative, you're welcome</term></tig></langSet>
+                <note from="translator">iihia (interj) yes, okay, affirmative, you're welcome</note>
+            </termEntry>
+            <termEntry id="interj, Feminine">
+                <langSet xml:lang="en"><tig><term>yes, ok, sure</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>naaka</term></tig></langSet>
+                <note from="translator">(interj) affirmation (women only), yes, ok, sure  Feminine</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Friend (of the same sex)</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Friend (of the same sex)</term></tig></langSet>
+                <note from="translator">-iihkaan- (n.an.dep) Friend (of the same sex)</note>
+                <descrip>Friend (of the same sex) -iihkaan- [ root stem ]</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Friend!</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>niihka</term></tig></langSet>
+                <note from="translator">niihka	Friend! (addressing form)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Hello friend</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Hello friend</term></tig></langSet>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Friends!</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Friends!</term></tig></langSet>
+                <note from="translator">niihkaaninka	Friends! (addressing form)</note>
+                <descrip>Friends! interjective form</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>My friend</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>niihkaana</term></tig></langSet>
+                <note from="translator">My friend , niihkaana , EX Aya niihkaana , ie hello my pal...</note>
+            </termEntry>
+            <termEntry id="kiint-">
+                <langSet xml:lang="en"><tig><term>just, also, recently, wait, hold on!</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>kiinte</term></tig></langSet>
+                <note from="translator">kiinte	just, also, recently, wait, hold on!( Example) kiinte! noonki pyaayaani	Hold on! I am coming now.</note>
+            </termEntry>
+            <termEntry id="kaahkaahki-">
+                <langSet xml:lang="en"><tig><term>Katydid</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>kaahkaahki-</term></tig></langSet>
+                <note from="translator">kaahkaahki- (Special noun) Katydid (Tettigonia viridissima), Kaskaskia person, Katydid (Tettigonia viridissima), Kaskaskia person , kaahkaahki- (root stem)</note>
+            </termEntry>
+            <termEntry id="kaahkaahki-">
+                <langSet xml:lang="en"><tig><term>Kaskaskia people</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>kaahkaahkiaki</term></tig></langSet>
+                <note from="translator">kaahkaahkiaki	Katydids, Kaskaskia people</note>
+            </termEntry>
+            <termEntry id="kaahkahw-">
+                <langSet xml:lang="en"><tig><term>Clean him (as of fish, game, etc)</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Clean him (as of fish, game, etc)</term></tig></langSet>
+                <note from="translator">kaahkahw- (Him verb) Clean him (as of fish, game, etc)</note>
+            </termEntry>
+            <termEntry id="kaahkahw-">
+                <langSet xml:lang="en"><tig><term>Clean him</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Clean him</term></tig></langSet>
+                <note from="translator">kaahkahw- (Him verb) Clean him (as of fish, game, etc)</note>
+            </termEntry>
+            <termEntry id="kaahkahw-">
+                <langSet xml:lang="en"><tig><term>I clean him ,or her (as of fish, game, etc)</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>I clean him ,or her (as of fish, game, etc)</term></tig></langSet>
+                <note from="translator">kaahkahwaki	I clean him / her (as of fish, game, etc) context cleaning of fish/game</note>
+            </termEntry>
+            <termEntry id="kaahkiihkw-1">
+                <langSet xml:lang="en"><tig><term>day</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>day</term></tig></langSet>
+                <note from="translator">Basic Forms Myaamia	English		 kaahkiihkwe	Day</note>
+            </termEntry>
+            <termEntry id="kaahkiihkw-">
+                <langSet xml:lang="en"><tig><term>Today</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>noonki kaahkiihkwe</term></tig></langSet>
+                <note from="translator">Example Sentences Myaamia	English		 noonki kaahkiihkwe	Today</note>
+            </termEntry>
+            <termEntry id="kaahkiihkw-">
+                <langSet xml:lang="en"><tig><term>day</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>day</term></tig></langSet>
+                <note from="translator">kaahkiihkw- (Adverb) day</note>
+            </termEntry>
+            <termEntry id="kaahkilookii-">
+                <langSet xml:lang="en"><tig><term>Shave one's skin</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>kaahkilookii-</term></tig></langSet>
+                <note from="translator">kaahkilookii- (No-object Verb) Shave one's skin (root stem)</note>
+            </termEntry>
+            <termEntry id="kaahkilookii-">
+                <langSet xml:lang="en"><tig><term>We shave our skin!</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>kaahkilookiaanki</term></tig></langSet>
+                <note from="translator">kaahkilookiaanki	We (excl.) shave our skin</note>
+            </termEntry>
+            <termEntry id="kaahkilookii-">
+                <langSet xml:lang="en"><tig><term>I shave my skin	</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>kaahkilookiaani	</term></tig></langSet>
+                <note from="translator">kaahkilookiaani	I shave my skin</note>
+            </termEntry>
+            <termEntry id="kaahkilookii-">
+                <langSet xml:lang="en"><tig><term>You shave your skin</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>kaahkilookiiyani</term></tig></langSet>
+                <note from="translator">kaahkilookiiyani You shave your skin</note>
+            </termEntry>
+            <termEntry id="kaahkilookii-1">
+                <langSet xml:lang="en"><tig><term>You shave your skin</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>kaahkilookiiyiikwi</term></tig></langSet>
+                <note from="translator">kaahkilookiiyiikwi :  You (pl.) shave your skin , plural form</note>
+            </termEntry>
+            <termEntry id="Glossary">
+                <langSet xml:lang="en"><tig><term>Glossary</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Glossary</term></tig></langSet>
+                <note from="translator">kaloosiona | Words  wiintaakani | Book</note>
+            </termEntry>
+            <termEntry id="moohci">
+                <langSet xml:lang="en"><tig><term>no,not</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>moohci</term></tig></langSet>
+                <note from="translator">moohci no or not</note>
+            </termEntry>
+            <termEntry id="moohkihsee-">
+                <langSet xml:lang="en"><tig><term>It comes to the surface quickly</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>It comes to the surface quickly</term></tig></langSet>
+                <note from="translator">moohkihsee- (Descriptive it verb) It comes to the surface quickly</note>
+            </termEntry>
+            <termEntry id="moohkihsee-2">
+                <langSet xml:lang="en"><tig><term>It comes to the surface quickly</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>moohkhseewi</term></tig></langSet>
+                <note from="translator">moohkhseewi	It comes to the surface quickly</note>
+            </termEntry>
+            <termEntry id="moohkihsee-1">
+                <langSet xml:lang="en"><tig><term>It comes to the surface quickly</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>moohkhseeki</term></tig></langSet>
+                <note from="translator">moohkhseeki	It comes to the surface quickly</note>
+            </termEntry>
+            <termEntry id="moohkihsen-">
+                <langSet xml:lang="en"><tig><term>It is flooded</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>moohkihsen-</term></tig></langSet>
+                <note from="translator">moohkihsen- (Descriptive it verb) It is flooded,  (root stem)</note>
+            </termEntry>
+            <termEntry id="moohkihsen-1">
+                <langSet xml:lang="en"><tig><term>It is flooded</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>moohkhsenki</term></tig></langSet>
+                <note from="translator">moohkhsenki	It is flooded</note>
+            </termEntry>
+            <termEntry id="moohkihsen-2">
+                <langSet xml:lang="en"><tig><term>It is flooded</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>moohkhsenwi</term></tig></langSet>
+                <note from="translator">moohkhsenwi	It is flooded</note>
+            </termEntry>
+            <termEntry id="moohkii-">
+                <langSet xml:lang="en"><tig><term>Surface, emerge</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>moohkii-</term></tig></langSet>
+                <note from="translator">moohkii- (No-object Verb) Surface, emerge (from water) (Root stem)</note>
+            </termEntry>
+            <termEntry id="moohkii-">
+                <langSet xml:lang="en"><tig><term>I emerged</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>moohkiaani</term></tig></langSet>
+                <note from="translator">moohkiaani  I emerged</note>
+            </termEntry>
+            <termEntry id="moohkii-">
+                <langSet xml:lang="en"><tig><term>You emerge</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>moohkiiyani</term></tig></langSet>
+                <note from="translator">moohkiiyani	You emerge</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>We emerge</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>moohkiiyankwi</term></tig></langSet>
+                <note from="translator">moohkiiyankwi	We  emerge  inclusive form  (incl.)</note>
+            </termEntry>
+            <termEntry id="moohkii-1">
+                <langSet xml:lang="en"><tig><term>You emerge</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>moohkiiyiikwi</term></tig></langSet>
+                <note from="translator">moohkiiyiikwi	You (pl.) emerge</note>
+            </termEntry>
+            <termEntry id="weeping willow tree (Salix babylonica)">
+                <langSet xml:lang="en"><tig><term>weeping willow</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>niipyaahkatwi</term></tig></langSet>
+                <note from="translator">sinular form</note>
+                <descrip>root suffix sinular/pluraral forms</descrip>
+            </termEntry>
+            <termEntry id="weeping willow trees">
+                <langSet xml:lang="en"><tig><term>weeping willow trees, weeping willows</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>niipyaahkatwa</term></tig></langSet>
+                <note from="translator">niipyaahkatwa	weeping willow trees , plural form</note>
+            </termEntry>
+            <termEntry id="shitface, slur">
+                <langSet xml:lang="en"><tig><term>shitface, People of Des Moines</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>shitface, People of Des Moines</term></tig></langSet>
+                <note from="translator">“mooyiinkweena”, lit. “shitface” , The city of Des Moines, Iowa, has its name’s origins in Miami-Illinois “mooyiinkweena”, lit. “shitface”, given by the Peoria tribe when asked by a missionary about the people who lived further up the river  The Etymology and History of the Placename “Des Moines” https://ans-names.pitt.edu/ans/article/view/2043</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>I said no</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>moohci noonk</term></tig></langSet>
+                <note from="translator">I said no moohci noonk</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>we welcome you!</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>meentitohkaalilaanki</term></tig></langSet>
+                <note from="translator">welcome	meentitohkaalilaanki	we (excl.) welcome you (pl)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Yes, it is correct</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>iihia, eelaamweekaneewiki</term></tig></langSet>
+                <note from="translator">iihia, eelaamweekaneewiki Yes, it is correct, Yes, it is True</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>you're welcome</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>iihia</term></tig></langSet>
+                <note from="translator">you're welcome,iihia yes,  Affirmative!</note>
+            </termEntry>
+            <termEntry id="moohci">
+                <langSet xml:lang="en"><tig><term>not</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>moohci</term></tig></langSet>
+                <note from="translator">moohci no or not</note>
+            </termEntry>
+            <termEntry id="moohci">
+                <langSet xml:lang="en"><tig><term>no</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>moohci</term></tig></langSet>
+                <note from="translator">no or not moohci</note>
+            </termEntry>
+            <termEntry id="nkoti 1">
+                <langSet xml:lang="en"><tig><term>1,one</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>nkoti</term></tig></langSet>
+                <note from="translator">nkoti 1</note>
+                <descrip>the nuber 1,,,</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Thank you</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>neewe</term></tig></langSet>
+                <note from="translator">neewe (interj) Thank you</note>
+            </termEntry>
+            <termEntry id="Myaamia">
+                <langSet xml:lang="en"><tig><term>Miami, Irenwee, Peoria</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Myaamia, Irenwe.Peoria</term></tig></langSet>
+                <note from="translator">Myaamia, Irenwe, Peoria Tribes or alternative Ethnic names of Miami–Illinois Algonquian language , and or related dialects</note>
+            </termEntry>
+            <termEntry id="neewe niihka&#9;Thank you friend (of the same sex)">
+                <langSet xml:lang="en"><tig><term>Thank you friend</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>neewe niihka</term></tig></langSet>
+                <note from="translator">neewe niihka Thank you friend ( often of the same gender / or coloquially)</note>
+            </termEntry>
+            <termEntry id="mihši neewe&#9;Thank you very much, big thanks">
+                <langSet xml:lang="en"><tig><term>Thank you very much, big thanks</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>mihši neewe</term></tig></langSet>
+                <note from="translator">Thanks Very much , mihši means big,many , great  mihsi-siipiiwi  = Mississippi River</note>
+            </termEntry>
+            <termEntry id="moohkii-">
+                <langSet xml:lang="en"><tig><term>We! emerge</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>moohkiaanki</term></tig></langSet>
+                <note from="translator">moohkiaanki	We ! (excl.) emerge</note>
+            </termEntry>
+            <termEntry id="niišwi 2">
+                <langSet xml:lang="en"><tig><term>2,two</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>niišwi</term></tig></langSet>
+                <note from="translator">2,two, niišwi</note>
+            </termEntry>
+            <termEntry id="awal-">
+                <langSet xml:lang="en"><tig><term>Take him along, lead him</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>awal-</term></tig></langSet>
+                <note from="translator">awal- (Him verb) Take him along, lead him awalaataawi | Let's take him along! (root stem)</note>
+            </termEntry>
+            <termEntry id="Let's take him along!">
+                <langSet xml:lang="en"><tig><term>Let's take him along!,lead him</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>awal-</term></tig></langSet>
+                <note from="translator">awal- root prefix , awalaataawi Let's take him along!,lead him</note>
+            </termEntry>
+            <termEntry id="Language codes ISO&#9;ISO 639-3&#9;mia&#9;ISO 639-3&#9;mia">
+                <langSet xml:lang="en"><tig><term>Language codes ISO 639-3 mia, Miami</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Language codes ISO 639-3 mia, Miami</term></tig></langSet>
+                <note from="translator">Language codes ISO 639-3	mia, Language code strings, metadata feilds</note>
+            </termEntry>
+            <termEntry id="metadata">
+                <langSet xml:lang="en"><tig><term>glottolog : miam1252</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>glottolog : miam1252</term></tig></langSet>
+                <note from="translator">https://glottolog.org/resource/languoid/id/miam1252,  glottolog : miam1252 metadata</note>
+            </termEntry>
+            <termEntry id="ILDA Website">
+                <langSet xml:lang="en"><tig><term>Welcome to the Myaamia-Peewaalia dictionary</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Welcome to the Myaamia-Peewaalia dictionary</term></tig></langSet>
+                <note from="translator">ILDA	Welcome to the Myaamia-Peewaalia dictionary	https://mc.miamioh.edu/ilda-myaamia/dictionary</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>English,En</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>aakalaahšimaataweenki</term></tig></langSet>
+                <note from="translator">English,or EN code</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>3,three</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>3,three</term></tig></langSet>
+                <note from="translator">akincikoona (num) numerals, numbers</note>
+            </termEntry>
+            <termEntry id="numbers">
+                <langSet xml:lang="en"><tig><term>5,five</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>5,five</term></tig></langSet>
+                <note from="translator">five</note>
+            </termEntry>
+            <termEntry id="numbers">
+                <langSet xml:lang="en"><tig><term>6,six</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>6,six</term></tig></langSet>
+                <note from="translator">6 numbers</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>It is flooded</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>It is flooded</term></tig></langSet>
+                <note from="translator">moohkihsen- (Descriptive it verb) It is flooded Basic Forms&#13;
+Myaamia	English		&#13;
+moohkhsenki	It is flooded&#13;
+moohkhsenwi	It is flooded</note>
+            </termEntry>
+            <termEntry id="-aasi">
+                <langSet xml:lang="en"><tig><term>(10;s delimenter) </term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>-aasi </term></tig></langSet>
+                <note from="translator">-aasi suffix  counter ie 11  uses to denote tens it mataathswi nkotaasi  10+1+aasi -i  (nkoti &gt; nkotaasi)</note>
+            </termEntry>
+            <termEntry id="akincikoona">
+                <langSet xml:lang="en"><tig><term>4,four</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>4,four</term></tig></langSet>
+                <note from="translator">numbers/akincikoona</note>
+            </termEntry>
+            <termEntry id="numbers">
+                <langSet xml:lang="en"><tig><term>7,seven</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>7,seven</term></tig></langSet>
+            </termEntry>
+            <termEntry id="akincikoona (num) numerals, numbers">
+                <langSet xml:lang="en"><tig><term>num, numerals, numbers</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>akincikoona</term></tig></langSet>
+                <note from="translator">akincikoona / num, numerals, numbers</note>
+            </termEntry>
+            <termEntry id="numbers">
+                <langSet xml:lang="en"><tig><term>8,Eight</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>8,Eight</term></tig></langSet>
+                <note from="translator">num</note>
+            </termEntry>
+            <termEntry id="numbers">
+                <langSet xml:lang="en"><tig><term>9,nine</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>9,nine</term></tig></langSet>
+                <note from="translator">num</note>
+            </termEntry>
+            <termEntry id="numbers">
+                <langSet xml:lang="en"><tig><term>10,ten</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>10,ten</term></tig></langSet>
+            </termEntry>
+            <termEntry id="numbers">
+                <langSet xml:lang="en"><tig><term>11,eleven</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>11,eleven</term></tig></langSet>
+                <note from="translator">mataathswi nkotaasi , -aasi nkoti&gt; nkotaasi  denotes a tens place counter</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>12</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>12</term></tig></langSet>
+                <note from="translator">12 , 10 2 plus -aasi , repetes like japanese numerics</note>
+                <descrip>mataathswi niišwaasi	Twelve, 12</descrip>
+            </termEntry>
+            <termEntry id="numbers">
+                <langSet xml:lang="en"><tig><term>20</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>20</term></tig></langSet>
+                <note from="translator">num</note>
+            </termEntry>
+            <termEntry id="numbers">
+                <langSet xml:lang="en"><tig><term>Thirty five, 35</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>nihswi mateeni yaalanwaasi</term></tig></langSet>
+                <note from="translator">3 , 10, 5 =35   +assi suffix for +over 10 , number 35</note>
+            </termEntry>
+            <termEntry id="numbers">
+                <langSet xml:lang="en"><tig><term>One hundred, 100</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>nkotwaahkwe</term></tig></langSet>
+                <note from="translator">100 nkotwaahkwe ,  nkoti minus i  +100 waahkwe delimiter =nkotwaahkwe</note>
+            </termEntry>
+            <termEntry id="ilekili-">
+                <langSet xml:lang="en"><tig><term>Be so big, so large, of a certain size</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Be so big, so large, of a certain size</term></tig></langSet>
+                <note from="translator">ilekili- (No-object Verb) Be so big, so large, of a certain size prefix</note>
+            </termEntry>
+            <termEntry id="iletii-">
+                <langSet xml:lang="en"><tig><term>Say to each other</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Say to each other</term></tig></langSet>
+                <note from="translator">iletii- (No-object Verb) Say to each other stem</note>
+            </termEntry>
+            <termEntry id="ampen-">
+                <langSet xml:lang="en"><tig><term>I lift him,I lift her up</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>I lift him,I lift her up</term></tig></langSet>
+                <note from="translator">eempinaki  basic form I lift him,I lift her up</note>
+            </termEntry>
+            <termEntry id="siipiiw">
+                <langSet xml:lang="en"><tig><term>River</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>siipiiw</term></tig></langSet>
+                <note from="translator">siipiiw- (Common noun) River</note>
+            </termEntry>
+            <termEntry id="neemawiteeheeyon-">
+                <langSet xml:lang="en"><tig><term>Imagination</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>neemawiteeheeyoni</term></tig></langSet>
+                <note from="translator">Basic Forms Myaamia	English		 neemawiteeheeyoni	Imagination</note>
+            </termEntry>
+            <termEntry id="alohtaw-">
+                <langSet xml:lang="en"><tig><term>I imitate, mimic him, mimic her</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>I imitate, mimic him, mimic her</term></tig></langSet>
+                <note from="translator">Basic Forms  eelohtawaki	I imitate, mimic him/her</note>
+            </termEntry>
+            <termEntry id="šaawe">
+                <langSet xml:lang="en"><tig><term>I will come right away.</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>šaawe kati pyaayaani</term></tig></langSet>
+                <note from="translator">Example Sentences :Myaamia/English		 šaawe kati pyaayaani	I will come right away.</note>
+            </termEntry>
+            <termEntry id="kinoonk-">
+                <langSet xml:lang="en"><tig><term>In deep water</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>kinoonke</term></tig></langSet>
+                <note from="translator">Basic Forms Myaamia	English		 kinoonke	In deep water</note>
+            </termEntry>
+            <termEntry id="kinoonk-">
+                <langSet xml:lang="en"><tig><term>She is in deep water</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>kinoonke eepici</term></tig></langSet>
+                <note from="translator">Example Sentences Myaamia	English		 kinoonke eepici	She is in deep water</note>
+            </termEntry>
+            <termEntry id="ceenkwihtanonki">
+                <langSet xml:lang="en"><tig><term>I am coming from Indianapolis</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>ceenkwhtanonkonci pyaayaani</term></tig></langSet>
+                <note from="translator">Example Sentences ceenkwhtanonkonci pyaayaani	I am coming from Indianapolis</note>
+            </termEntry>
+            <termEntry id="ceenkwihtanonki">
+                <langSet xml:lang="en"><tig><term>I am going to Indianapolis</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>ceenkwhtanonkiši iiyaayaani</term></tig></langSet>
+                <note from="translator">ceenkwhtanonkiši iiyaayaani	I am going to Indianapolis</note>
+            </termEntry>
+            <termEntry id="wiihkapesi-">
+                <langSet xml:lang="en"><tig><term>Indian turnip, Jack-in-the-pulpit </term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>wiihkapesia </term></tig></langSet>
+                <note from="translator">wiihkapesia	Indian turnip, Jack-in-the-pulpit (Arisaema triphyllum)</note>
+            </termEntry>
+            <termEntry id="wiihkapesi-">
+                <langSet xml:lang="en"><tig><term>Indian turnips, Jack-in-the-pulpits</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>wiihkapesiaki</term></tig></langSet>
+                <note from="translator">wiihkapesiaki	Indian turnips, Jack-in-the-pulpits , plural</note>
+            </termEntry>
+            <termEntry id="piloohseens-">
+                <langSet xml:lang="en"><tig><term>Infant, baby</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>piloohseensa</term></tig></langSet>
+                <note from="translator">piloohseensa	Infant, baby</note>
+            </termEntry>
+            <termEntry id="piloohseens-">
+                <langSet xml:lang="en"><tig><term>Infants, babies</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>piloohseensaki</term></tig></langSet>
+                <note from="translator">piloohseensaki	Infants, babies</note>
+            </termEntry>
+            <termEntry id="inko">
+                <langSet xml:lang="en"><tig><term>He won't come</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>He won't come</term></tig></langSet>
+                <note from="translator">inko (part) (Future negative) , He won't come</note>
+            </termEntry>
+            <termEntry id="inko">
+                <langSet xml:lang="en"><tig><term>He won't get up</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>He won't get up</term></tig></langSet>
+                <note from="translator">inko-hka peesikwiici	He won't get up</note>
+            </termEntry>
+            <termEntry id="teehš-">
+                <langSet xml:lang="en"><tig><term>Instead of, only, rather than, except for</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>teehši</term></tig></langSet>
+                <note from="translator">teehši	Instead of, only, rather than, except for</note>
+            </termEntry>
+            <termEntry id="teehš-">
+                <langSet xml:lang="en"><tig><term>I only have one</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>teehši nkoti</term></tig></langSet>
+                <note from="translator">Example Sentences Myaamia	English		teehši nkoti eehtwaani	I only have one</note>
+            </termEntry>
+            <termEntry id="inko">
+                <langSet xml:lang="en"><tig><term>I won't fail the test</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>inko-hka aalweeliaani kocihtamaakani</term></tig></langSet>
+                <note from="translator">inko-hka aalweeliaani kocihtamaakani	I won't fail the test</note>
+            </termEntry>
+            <termEntry id="teehš-">
+                <langSet xml:lang="en"><tig><term>Only I can do this</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>niilaahka teehši niiši iišileniaani</term></tig></langSet>
+                <note from="translator">Example Sentences Myaamia	English		 niilaahka teehši niiši iišileniaani	Only I can do this</note>
+            </termEntry>
+            <termEntry id="kiint-1">
+                <langSet xml:lang="en"><tig><term>just, also, recently, wait, hold on!</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>jkiint-</term></tig></langSet>
+                <note from="translator">kiint- (Adverb) just, also, recently, wait, hold on! (root stem)&#13;
+&#13;
+Basic Forms&#13;
+Myaamia	English		&#13;
+kiinte	just, also, recently, wait, hold on!	&#13;
+&#13;
+Example Sentences&#13;
+Myaamia	English		&#13;
+kiinte! noonki pyaayaani	Hold on! I am coming now.	&#13;
+kiinte eemamwiaani	I just woke up</note>
+            </termEntry>
+            <termEntry id="Example Sentences">
+                <langSet xml:lang="en"><tig><term>I just woke up</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>kiinte eemamwiaani</term></tig></langSet>
+                <note from="translator">kiinte eemamwiaani I just woke up</note>
+            </termEntry>
+            <termEntry id="Example Sentences">
+                <langSet xml:lang="en"><tig><term>Hold on! I am coming now</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>kiinte! noonki pyaayaani</term></tig></langSet>
+            </termEntry>
+            <termEntry id="-hkweekan-">
+                <langSet xml:lang="en"><tig><term>Neck</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Neck</term></tig></langSet>
+                <descrip>-hkweekan- (n.inan.dep) Neck</descrip>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Mississippi River</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Mississippi River</term></tig></langSet>
+                <note from="translator">mihsi-siipiiwi  = Mississippi River</note>
+            </termEntry>
+            <termEntry id="glossary">
+                <langSet xml:lang="en"><tig><term>glossary</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>glossary</term></tig></langSet>
+                <note from="translator">wiintaakani kaloosiona / words book</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>English</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>English</term></tig></langSet>
+                <descrip>aakalaahšimaataweenki</descrip>
+            </termEntry>
+            <termEntry id="ahkweehs-">
+                <langSet xml:lang="en"><tig><term>Young woman,maiden</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Young woman,maiden</term></tig></langSet>
+                <note from="translator">ahkweehs- (Special noun) Young woman (unmarried) root stem</note>
+            </termEntry>
+            <termEntry id="ahkweehs-1">
+                <langSet xml:lang="en"><tig><term>Young woman,maiden</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Young woman,maiden</term></tig></langSet>
+                <note from="translator">English		 ahkweehsa	Young woman (unmarried)	 ahkweehsaki	Young women (unmarried)</note>
+            </termEntry>
+            <termEntry id="ahkweehs-">
+                <langSet xml:lang="en"><tig><term>Young women,maiden</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Young women,maiden</term></tig></langSet>
+                <note from="translator">ahkweehsaki	Young women (unmarried)</note>
+            </termEntry>
+            <termEntry id="aahtee-">
+                <langSet xml:lang="en"><tig><term>It goes out of a fire, It goes out of or light</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>It goes out of a fire, It goes out of or light</term></tig></langSet>
+                <note from="translator">(Descriptive it verb) It goes out (of a fire or light)</note>
+            </termEntry>
+            <termEntry id="aahtee-">
+                <langSet xml:lang="en"><tig><term>It is extinguished, gone out</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>It is extinguished, gone out</term></tig></langSet>
+                <note from="translator">aahteeki	It is extinguished, gone out (as a fire or light)</note>
+            </termEntry>
+            <termEntry id="aathee-">
+                <langSet xml:lang="en"><tig><term>It is extinguished, gone out</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>It is extinguished, gone out</term></tig></langSet>
+                <note from="translator">aahteewi	It is extinguished, gone out</note>
+            </termEntry>
+            <termEntry id="aahtee-">
+                <langSet xml:lang="en"><tig><term>Is it out?</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Is it out?</term></tig></langSet>
+                <note from="translator">aahteewi-nko	Is it out?</note>
+            </termEntry>
+            <termEntry id="aahtee-">
+                <langSet xml:lang="en"><tig><term>That's it, it's over with, it's done</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>That's it, it's over with, it's done</term></tig></langSet>
+                <note from="translator">aahteeki	That's it, it's over with, it's done (metaphoric expression)</note>
+            </termEntry>
+            <termEntry id="aahtee-">
+                <langSet xml:lang="en"><tig><term>Its not over, still more to do, still an issue</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Its not over, still more to do, still an issue</term></tig></langSet>
+                <note from="translator">aahteehsiinoowi	Its not over, still more to do, still an issue (metaphoric expression)</note>
+            </termEntry>
+            <termEntry id="aahteeleentam-">
+                <langSet xml:lang="en"><tig><term>Turn off the light, extinguish it</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Turn off the light, extinguish it</term></tig></langSet>
+                <note from="translator">aahteeleentam- (It verb) Turn off the light, extinguish it</note>
+            </termEntry>
+            <termEntry id="ašiihkionam-">
+                <langSet xml:lang="en"><tig><term>Smear dirt on it</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Smear dirt on it</term></tig></langSet>
+                <note from="translator">ašiihkionam- (It verb) Smear dirt on it</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>I am Miami</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>I am Miami</term></tig></langSet>
+                <note from="translator">I am Miami  niila myaamia</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>The Miami people</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>The Miami people</term></tig></langSet>
+                <note from="translator">myaamiaki	The Miami people</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>We are Miami</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>We are Miami</term></tig></langSet>
+                <note from="translator">kiiloona myaamiaki	We (incl.) are Miami</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Miami homelands, the place of the Miamis</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Miami homelands, the place of the Miamis</term></tig></langSet>
+                <note from="translator">myaamionki	Miami homelands, the place of the Miamis</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>I am going to the Miami homelands (Oklahoma) next week</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>I am going to the Miami homelands (Oklahoma) next week</term></tig></langSet>
+                <note from="translator">myaamionki noošonke siipionki kati ayaayaani noohki swaahteethsokone	I am going to the Miami homelands (Oklahoma) next week</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Miami homelands along the Wabash River (Indiana)	</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Miami homelands along the Wabash River (Indiana)	</term></tig></langSet>
+                <note from="translator">myaamionki waapaahšiki siipionki	Miami homelands along the Wabash River (Indiana)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Miami homelands along the Marais des Cygnes River (Kansas)</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Miami homelands along the Marais des Cygnes River (Kansas)</term></tig></langSet>
+                <note from="translator">myaamionki waapankiaakamionki	Miami homelands along the Marais des Cygnes River (Kansas)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>Miami homelands along the Neosho River (Oklahoma)</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Miami homelands along the Neosho River (Oklahoma)</term></tig></langSet>
+                <note from="translator">myaamionki noošonke siipionki	Miami homelands along the Neosho River (Oklahoma)</note>
+            </termEntry>
+            <termEntry>
+                <langSet xml:lang="en"><tig><term>We are strong, we are resilient, we are Myaamia</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>We are strong, we are resilient, we are Myaamia</term></tig></langSet>
+                <note from="translator">šiinšiilaweeyankwi, peelakiihsaayankwi, kiiloona myaamiaki	We are strong, we are resilient, we are Myaamia</note>
+            </termEntry>
+            <termEntry id="myaamiihkwi-">
+                <langSet xml:lang="en"><tig><term>Miami woman</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Miami woman</term></tig></langSet>
+                <note from="translator">myaamiihkwi- (Special noun) Miami woman (root stem)</note>
+            </termEntry>
+            <termEntry id="nakaanakw-">
+                <langSet xml:lang="en"><tig><term>Middle-aged, older man</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Middle-aged, older man</term></tig></langSet>
+                <note from="translator">nakaanakw- (Special noun) middle-aged, older man, nakaanakwa	Middle-aged, older man</note>
+            </termEntry>
+            <termEntry id="myaamiihkwi-1">
+                <langSet xml:lang="en"><tig><term>Miami woman</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Miami woman</term></tig></langSet>
+                <note from="translator">myaamiihkwia	Miami woman</note>
+            </termEntry>
+            <termEntry id="myaamiihkwi-">
+                <langSet xml:lang="en"><tig><term>Miami women</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Miami women</term></tig></langSet>
+                <note from="translator">myaamiihkwiaki	Miami women</note>
+            </termEntry>
+            <termEntry id="meehšaapantaakan-">
+                <langSet xml:lang="en"><tig><term>Microscope</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Microscope</term></tig></langSet>
+                <note from="translator">meehšaapantaakani singular</note>
+            </termEntry>
+            <termEntry id="meehšaapantaakan-">
+                <langSet xml:lang="en"><tig><term>Microscopes</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Microscopes</term></tig></langSet>
+                <note from="translator">meehšaapantaakana	Microscopes plural</note>
+            </termEntry>
+            <termEntry id="nakaanakw-">
+                <langSet xml:lang="en"><tig><term>Middle-aged, older men</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Middle-aged, older men</term></tig></langSet>
+                <note from="translator">nakaanakwaki	Middle-aged, older men pl.</note>
+            </termEntry>
+            <termEntry id="mihšihkinaahkw-">
+                <langSet xml:lang="en"><tig><term>Painted terrapin turtle (Chrysemys spp.)</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Painted terrapin turtle (Chrysemys spp.)</term></tig></langSet>
+                <note from="translator">Painted terrapin turtle (Chrysemys spp.), Little Turtle</note>
+            </termEntry>
+            <termEntry id="mihšihkinaahkw-">
+                <langSet xml:lang="en"><tig><term>Painted terrapin turtles</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Painted terrapin turtles</term></tig></langSet>
+                <note from="translator">mihšihkinaahkwaki	Painted terrapin turtles plural</note>
+            </termEntry>
+            <termEntry id="mihši-nipwaantiikaan-">
+                <langSet xml:lang="en"><tig><term>University, college</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>University, college</term></tig></langSet>
+                <note from="translator">mihši-nipwaantiikaani	University, college</note>
+            </termEntry>
+            <termEntry id="mihši-nipwaantiikaan-">
+                <langSet xml:lang="en"><tig><term>Universities, colleges</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Universities, colleges</term></tig></langSet>
+                <note from="translator">mihši-nipwaantiikaana	Universities, colleges,  plural</note>
+            </termEntry>
+            <termEntry id="mihši-nipwaantiikaan-">
+                <langSet xml:lang="en"><tig><term>Miami University</term></tig></langSet>
+                <langSet xml:lang="mia"><tig><term>Miami University</term></tig></langSet>
+                <note from="translator">Example  myaamia mihši-nipwaantiikaani</note>
+            </termEntry>
+        </body>
+    </text>
+</martif>

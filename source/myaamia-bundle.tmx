@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx PUBLIC "-//LISA OSCAR:1998//DTD" "https://www.ttt.org/oscarStandards/tmx/tmx14.dtd">
+<!--
+ Loco xml export: TMX - Translation Memory eXchange
+ Project: Myaamia
+ Locales: en-US, mia
+ Exported by: Michael L.
+ Exported at: Mon, 17 Jun 2024 12:15:54 -0500
+-->
+<tmx version="1.4">
+    <header creationtool="Loco" creationtoolversion="1.0.28 20240611-1" segtype="sentence" o-tmf="" adminlang="en-US" srclang="en-US" datatype="plaintext" o-encoding="utf-8"> 
+        <note>Loco export of Myaamia</note> 
+        <prop type="x-loco-project">159248</prop> 
+    </header> 
+    <body> 
+        <tu tuid="Hello" datatype=""> 
+            <prop type="x-loco-asset">666ab9f4b9070f8443009f72</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Hello</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>Aya</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="yes" datatype="plaintext"> 
+            <prop type="x-loco-asset">666abe1bfb45269395027306</prop> 
+            <tuv xml:lang="en-US">
+                <seg>yes</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>iihia</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="you&#039;re welcome" datatype="plaintext"> 
+            <prop type="x-loco-asset">666abe92915ef60d590661f2</prop> 
+            <note>
+                masculine or neutral 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>you're welcome</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>iihia</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="affirmative" datatype="plaintext"> 
+            <prop type="x-loco-asset">666abebff5a64430110de992</prop> 
+            <tuv xml:lang="en-US">
+                <seg>affirmative</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>iihia</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="yes" datatype="plaintext"> 
+            <prop type="x-loco-asset">666abeee231753541e0db752</prop> 
+            <note>
+                yes	naaka	(women only), Feminine 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>yes</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>naaka</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="okay" datatype="plaintext"> 
+            <prop type="x-loco-asset">666abf1c17a2238e4a0568c2</prop> 
+            <note>
+                okay	iihia	masculine or neutral 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>okay</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>iihia</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="no" datatype="plaintext"> 
+            <prop type="x-loco-asset">666abfc6f4c9fa7ff30a43a3</prop> 
+            <note>
+                no	moohci	moohci (part) No, not 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>no</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>moohci</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Nobody" datatype="plaintext"> 
+            <prop type="x-loco-asset">666ac04cbf7af4720a08cd15</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Nobody</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>moohci aweeya</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="No, I cannot" datatype="plaintext"> 
+            <prop type="x-loco-asset">666ac0caab147993dc0cbce4</prop> 
+            <tuv xml:lang="en-US">
+                <seg>No, I cannot</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>moohci, niiši neehi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="I said no" datatype="plaintext"> 
+            <prop type="x-loco-asset">666ac1042836f281f108d803</prop> 
+            <tuv xml:lang="en-US">
+                <seg>I said no</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>moohci iilwiaani</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Not now" datatype="plaintext"> 
+            <prop type="x-loco-asset">666ac1444fd057734e0e52f2</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Not now</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>moohci noonki</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="not" datatype="plaintext"> 
+            <prop type="x-loco-asset">666ac161eac3fe5ed7089b43</prop> 
+            <tuv xml:lang="en-US">
+                <seg>not</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>moohci</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="welcome" datatype="plaintext"> 
+            <prop type="x-loco-asset">666ac1d63be55344d3089613</prop> 
+            <note>
+                welcome	meentitohkaalilaanki	we (excl.) welcome you (pl) 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>welcome</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>meentitohkaalilaanki</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="One, 1" datatype="plaintext"> 
+            <prop type="x-loco-asset">666ac23c3be55344d3089615</prop> 
+            <note>
+                1 or one Numerals 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>One, 1</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>nkoti</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="two" datatype="plaintext"> 
+            <prop type="x-loco-asset">666ac2988ebeb48425098e55</prop> 
+            <note>
+                Two, 2 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>two</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>niišwi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Three," datatype="plaintext"> 
+            <prop type="x-loco-asset">666ac2d60bf30dcddb0effd2</prop> 
+            <note>
+                Three, 3 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>Three,</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>nihswi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Six" datatype="plaintext"> 
+            <prop type="x-loco-asset">666c519c8e4e6fb24802bf95</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Six</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>kaakaathswi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Seven" datatype="plaintext"> 
+            <prop type="x-loco-asset">666cc3fd30fe4d541b086f42</prop> 
+            <note>
+                swaahteethswi 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>Seven</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>swaahteethswi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Eight" datatype="plaintext"> 
+            <prop type="x-loco-asset">666cc4cd1a763c53c60286d2</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Eight</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>palaani</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Ten" datatype="plaintext"> 
+            <prop type="x-loco-asset">666cc5afce78e0b14602d6b2</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Ten</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>mataathswi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Eleven" datatype="plaintext"> 
+            <prop type="x-loco-asset">666cc5f70b3f539fa50940b2</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Eleven</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>mataathswi nkotaasi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Twelve, 12" datatype="plaintext"> 
+            <prop type="x-loco-asset">666cc634ce78e0b14602d6b4</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Twelve, 12</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>mataathswi niišwaasi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Thirteen, 13" datatype="plaintext"> 
+            <prop type="x-loco-asset">666cc682fc3f79aa39084e12</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Thirteen, 13</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>mataathswi nihswaasi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Fourteen, 14" datatype="plaintext"> 
+            <prop type="x-loco-asset">666cc6cfd2a2e349b9072a62</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Fourteen, 14</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>mataathswi niiwaasi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Fifteen, 15" datatype="plaintext"> 
+            <prop type="x-loco-asset">666cc7aa6cb9f31d5d082902</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Fifteen, 15</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>mataathswi yaalanwaasi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Sixteen, 16" datatype="plaintext"> 
+            <prop type="x-loco-asset">666cc7dda1a2df3ce500d222</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Sixteen, 16</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>mataathswi kaakaathswaasi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Seventeen, 17" datatype="plaintext"> 
+            <prop type="x-loco-asset">666cc81a8ce03c2da7018302</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Seventeen, 17</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>mataathswi swaahteethswaasi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Eighteen, 18" datatype="plaintext"> 
+            <prop type="x-loco-asset">666cc8720607ea3c0f09e393</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Eighteen, 18</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>mataathswi palaanaasi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="numerals" datatype="plaintext"> 
+            <prop type="x-loco-asset">666cc9249ff11b29ee0d3be2</prop> 
+            <note>
+                akincikoona (num) numerals, numbers 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>numerals</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>akincikoona</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Nineteen" datatype="plaintext"> 
+            <prop type="x-loco-asset">666cc9c075f9c786d300d762</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Nineteen</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>mataathswi nkotimeneehkaasi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Twenty" datatype="plaintext"> 
+            <prop type="x-loco-asset">666cc9fa1ed554915d0259f2</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Twenty</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>niišwi mateeni</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Twenty one" datatype="plaintext"> 
+            <prop type="x-loco-asset">666ccddf9ae3b04c20002e42</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Twenty one</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>niišwi mateeni nkotaasi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Twenty two," datatype="plaintext"> 
+            <prop type="x-loco-asset">666cce6584bfc21db90c93b2</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Twenty two,</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>niišwi mateeni niišwaasi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Twenty three, 23" datatype="plaintext"> 
+            <prop type="x-loco-asset">666ccee86836205ba9078b22</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Twenty three, 23</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>niišwi mateeni nihswaasi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Twenty four, 24" datatype="plaintext"> 
+            <prop type="x-loco-asset">666ccff9fb4694f4780fff42</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Twenty four, 24</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>niišwi mateeni niiwaasi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Twenty five, 25" datatype="plaintext"> 
+            <prop type="x-loco-asset">666cd039b8870e545e0a7ab2</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Twenty five, 25</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>niišwi mateeni yaalanwaasi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Twenty six, 26" datatype="plaintext"> 
+            <prop type="x-loco-asset">666cd07ce9843e6f870dbf92</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Twenty six, 26</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>niišwi mateeni kaakaathswaasi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Twenty seven" datatype="plaintext"> 
+            <prop type="x-loco-asset">666cd0b155e9cd835907da02</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Twenty seven</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>niišwi mateeni swaahteethswaasi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Twenty eight, 28" datatype="plaintext"> 
+            <prop type="x-loco-asset">666cd120e9843e6f870dbf94</prop> 
+            <note>
+                niišwi mateeni palaanaasi 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>Twenty eight, 28</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>niišwi mateeni palaanaasi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Twenty nine, 29" datatype="plaintext"> 
+            <prop type="x-loco-asset">666cd1849634756d680890e2</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Twenty nine, 29</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>niišwi mateeni nkotimeneehkaasi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Thirty" datatype="plaintext"> 
+            <prop type="x-loco-asset">666cd1d52e3a065355042532</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Thirty</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>nihswi mateeni</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Thirty five, 35" datatype="plaintext"> 
+            <prop type="x-loco-asset">666cd22fa81ae63278055e62</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Thirty five, 35</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>nihswi mateeni yaalanwaasi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Forty" datatype="plaintext"> 
+            <prop type="x-loco-asset">666cd2b8c7766e051302a552</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Forty</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>niiwi mateeni</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Fifty, 50" datatype="plaintext"> 
+            <prop type="x-loco-asset">666cd31659ec34245c0a9c52</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Fifty, 50</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>yaalanwi mateeni</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="One hundred" datatype="plaintext"> 
+            <prop type="x-loco-asset">666cd35e36a198b1a3081ae2</prop> 
+            <tuv xml:lang="en-US">
+                <seg>One hundred</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>nkotwaahkwe</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Two hundred, 200" datatype="plaintext"> 
+            <prop type="x-loco-asset">666cd3a3cddc6fad4d0bfa33</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Two hundred, 200</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>niišwaahkwe</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="One thousand, 1000" datatype="plaintext"> 
+            <prop type="x-loco-asset">666cd476e4b5f53e2c006572</prop> 
+            <tuv xml:lang="en-US">
+                <seg>One thousand, 1000</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>mataathswaahkwe</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Miami Language’ Online Resources" datatype="plaintext"> 
+            <prop type="x-loco-asset">666fb83090fe02956408ca42</prop> 
+            <note>
+                https://aacimotaatiiyankwi.org/education/language/miami-language-online-resources/ Aacimotaatiiyankwi 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>Miami Language’ Online Resources</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>Myaamiaataweenki</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Miami" datatype="plaintext"> 
+            <prop type="x-loco-asset">666fb9605b28acf5be0a22c2</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Miami</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>Myaamia</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="  Myaamia ETHNOBOTANICAL DATABASE" datatype="plaintext"> 
+            <prop type="x-loco-asset">666fbaa531ef3b1f9e016652</prop> 
+            <note>
+                mahkihkiwa https://mc.miamioh.edu/mahkihkiwa/about 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>  Myaamia ETHNOBOTANICAL DATABASE</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>Mahkihkiwa</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Miami Tribe’s revitalization movement" datatype="plaintext"> 
+            <prop type="x-loco-asset">666fbae13bce05e4600951c2</prop> 
+            <tuv xml:lang="en-US">
+                <seg>Miami Tribe’s revitalization movement</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>Myaamiaki Eemamwiciki</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Myaamia Heritage Museum &amp; Archive" datatype="plaintext"> 
+            <prop type="x-loco-asset">666fbb53abff582ead077242</prop> 
+            <note>
+                aya! Welcome to Kaakisitoonkia!
+                Kaakisitoonkia.com is the online portal of the Myaamia Heritage Museum &amp; Archive, presenting archival and museum items related to Miami heritage.  Kaakisitoonkia is the myaamia word for "preserve objects, as in an archive." 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>Myaamia Heritage Museum &amp; Archive</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>Kaakisitoonkia</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="corn" datatype="plaintext"> 
+            <prop type="x-loco-asset">666fbc3e34cf5114d3095f52</prop> 
+            <note>
+                Corn the Food the plant etc.. 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>corn</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>Miincipi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="beech tree" datatype="plaintext"> 
+            <prop type="x-loco-asset">666fbdab32b45c33930e5592</prop> 
+            <note>
+                Scientific Name:  Fagus grandifolia Ehrh. "shashecomise, beech tree" 
+                "beech, sha-sha-com-mindj" https://mc.miamioh.edu/mahkihkiwa/species/4589 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>beech tree</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>šeešaakamiš</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="false pennyroyal" datatype="plaintext"> 
+            <prop type="x-loco-asset">666fbe7154bfb6ba1a017834</prop> 
+            <note>
+                American false pennyroyal / Hedeoma pulegioides (L.) Purs. / 
+                https://mc.miamioh.edu/mahkihkiwa/species?entry_type=Species 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>false pennyroyal</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>peecihsakahki</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="hazelnut&#10;" datatype="plaintext"> 
+            <prop type="x-loco-asset">666fc0d0e2b180e42408fee2</prop> 
+            <note>
+                American hazelnut / Corylus americana Walter / pahkiihteenhsaahkwi 
+                mahkihkiwa 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>hazelnut
+</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>pahkiihteenhsaahkwi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Welcome" datatype="plaintext"> 
+            <prop type="x-loco-asset">666fc22a3f1a76db1a0abc02</prop> 
+            <note>
+                Aya del Aya formal,  Aya  hello as well 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>Welcome</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>Aya</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="American hophornbeam" datatype="plaintext"> 
+            <prop type="x-loco-asset">666fc295193fba58a000f6c2</prop> 
+            <note>
+                American hophornbeam, ironwood / Ostrya virginiana (Mill) K.Koch / 
+                https://mc.miamioh.edu/mahkihkiwa/species?entry_type=Species 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>American hophornbeam</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>myaalwamiši</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Hornbeam" datatype="plaintext"> 
+            <prop type="x-loco-asset">666fc76e8ff5618f140b7712</prop> 
+            <note>
+                American Hornbeam, ironwood, musclewood / Carpinus caroliniana Walter / myaalwamiši 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>Hornbeam</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>myaalwamiši</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="sycamore " datatype="plaintext"> 
+            <prop type="x-loco-asset">6670348224c8c012c60a3332</prop> 
+            <note>
+                American sycamore / Platanus occidentalis L. 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>sycamore </seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>kaakhšaahkatw</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="asparagus" datatype="plaintext"> 
+            <prop type="x-loco-asset">6670377e279647fa640b7c52</prop> 
+            <tuv xml:lang="en-US">
+                <seg>asparagus</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>asparagus</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="Atlantic camas" datatype="plaintext"> 
+            <prop type="x-loco-asset">667037d4b071a2fbca0c9d53</prop> 
+            <note>
+                Atlantic camas / Camassia scilloides (Raf.) Cory. Wild Hyacinth 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>Atlantic camas</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>Atlantic camas</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="basswood" datatype="plaintext"> 
+            <prop type="x-loco-asset">66703876ae0a59ed7e0ccc04</prop> 
+            <note>
+                basswood, American linden / Tilia americana L. 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>basswood</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>wiikapimiši</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="beet" datatype="plaintext"> 
+            <prop type="x-loco-asset">667038ee51c5b06b370d6422</prop> 
+            <note>
+                beet / Beta vulgaris L. 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>beet</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>neehpikiciiphkiki</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="big bluestem grass" datatype="plaintext"> 
+            <prop type="x-loco-asset">66703950693547fe650f06d2</prop> 
+            <note>
+                big bluestem grass / Andropogon gerardii L. 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>big bluestem grass</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>big bluestem grass</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="black huckleberry" datatype="plaintext"> 
+            <prop type="x-loco-asset">667039bdfdfeb5e82e0ef5b2</prop> 
+            <note>
+                black huckleberry / Gaylussacia baccata (Wangenh.) K. Koch 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>black huckleberry</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>pinkomini</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="black oak" datatype="plaintext"> 
+            <prop type="x-loco-asset">66703a1584f7b783df01e9b2</prop> 
+            <note>
+                black oak / Quercus velutina Lam. 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>black oak</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>maamhkatiaahkatwi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="black walnut tree" datatype="plaintext"> 
+            <prop type="x-loco-asset">66703aaecf5b8d25eb0c7123</prop> 
+            <note>
+                black walnut tree / Juglans nigra L. 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>black walnut tree</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>aayoonseekaahkwi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="blue ash" datatype="plaintext"> 
+            <prop type="x-loco-asset">66703afacfba9a165905fa22</prop> 
+            <note>
+                blue ash / Fraxinus quadrangulata Michx. 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>blue ash</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>sakikansia</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="blueberry" datatype="plaintext"> 
+            <prop type="x-loco-asset">66703bc3e4eae80eea055212</prop> 
+            <note>
+                blueberry / Vaccinium sp. L. 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>blueberry</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>pinkomini</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="boneset" datatype="plaintext"> 
+            <prop type="x-loco-asset">66703bf9c0e4ae9c4a0842a2</prop> 
+            <note>
+                boneset / Eupatorium perfoliatum L. 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>boneset</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>boneset</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="box elder" datatype="plaintext"> 
+            <prop type="x-loco-asset">66703c5cae0806dce3054ad2</prop> 
+            <note>
+                box elder / Acer negundo L. 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>box elder</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>šiihšiikweekihsi</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="bull thistle" datatype="plaintext"> 
+            <prop type="x-loco-asset">66703ce1c6b288127403b052</prop> 
+            <note>
+                bull thistle / Cirsium vulgare (Savi) Ten. 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>bull thistle</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>bull thistle</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="bur oak" datatype="plaintext"> 
+            <prop type="x-loco-asset">66703d3356707b8a0d0703d2</prop> 
+            <note>
+                bur oak / Quercus macrocarpa Michx. 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>bur oak</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>mihšiinkweemiši</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="butterfly milkweed" datatype="plaintext"> 
+            <prop type="x-loco-asset">66703d765cfe00ab64042e62</prop> 
+            <note>
+                butterfly milkweed / Asclepias tuberosa L. 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>butterfly milkweed</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>alemontehsa</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="butternut tree" datatype="plaintext"> 
+            <prop type="x-loco-asset">66703e07f715bb9a150de3b2</prop> 
+            <note>
+                butternut tree / Juglans cinerea L. 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>butternut tree</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>kiinošiši</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="cabbage" datatype="plaintext"> 
+            <prop type="x-loco-asset">66703e72b373211c27041262</prop> 
+            <note>
+                cabbage / Brasscia oleracea L. 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>cabbage</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>waapinkopakahki</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="calamus root" datatype="plaintext"> 
+            <prop type="x-loco-asset">66703eb2f5cb63691005cc12</prop> 
+            <note>
+                calamus root, sweetflag / Acorus calamus L. 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>calamus root</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>calamus root</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="paper birch " datatype="plaintext"> 
+            <prop type="x-loco-asset">66706d473b8efa5ae3080f02</prop> 
+            <note>
+                canoe birch, paper birch / Betula papyrifera Marshall 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>paper birch </seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>wiikweehsimiši</seg>
+            </tuv> 
+        </tu> 
+        <tu tuid="cattail" datatype="plaintext"> 
+            <prop type="x-loco-asset">66706da5268c140d4d076542</prop> 
+            <note>
+                cattail / Typha latifolia L. 
+            </note> 
+            <tuv xml:lang="en-US">
+                <seg>cattail</seg>
+            </tuv> 
+            <tuv xml:lang="mia">
+                <seg>apahkwaya</seg>
+            </tuv> 
+        </tu> 
+    </body>
+</tmx>

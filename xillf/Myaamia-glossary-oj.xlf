@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.1" version="1.1">
+  <file original="NoName" source-language="en" datatype="plaintext" target-language="oj">
+    <body>
+      <trans-unit xml:space="preserve" id="Myaamia ETHNOBOTANICAL DATABASE" weblate-flags="terminology">
+        <source>weeping willow (Salix babylonica)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="Glossary" weblate-flags="terminology">
+        <source>Glossary</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="158b800e776c1fc5" weblate-flags="terminology">
+        <source>cook it</source>
+        <target></target>
+        <note from="developer">aalimiihtoo- (It verb) cook it</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="kaahkilookii-" weblate-flags="terminology">
+        <source>Shave one's skin</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="kaahkaahki-" weblate-flags="terminology">
+        <source>Katydid</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="kaahkaahki-" weblate-flags="terminology">
+        <source>Kaskaskia people</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="metadata" weblate-flags="terminology">
+        <source>glottolog : miam1252</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="Language codes ISO&#9;ISO 639-3&#9;mia&#9;ISO 639-3&#9;mia" weblate-flags="terminology">
+        <source>Language codes ISO 639-3 mia, Miami</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="ILDA Website" weblate-flags="terminology">
+        <source>Welcome to the Myaamia-Peewaalia dictionary</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="-aasi" weblate-flags="terminology">
+        <source>(10;s delimenter) </source>
+        <target></target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="47b3c596efea03e7" weblate-flags="terminology">
+        <source>English</source>
+        <target state="translated">English</target>
+        <note from="developer">aakalaahšimaataweenki</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="-hkweekan-" weblate-flags="terminology">
+        <source>Neck</source>
+        <target state="translated">Neck</target>
+        <note from="developer">-hkweekan- (n.inan.dep) Neck</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

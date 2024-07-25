@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.1" version="1.1">
+  <file original="NoName" source-language="en" datatype="plaintext" target-language="en">
+    <body>
+      <trans-unit xml:space="preserve" approved="no" id="Myaamia ETHNOBOTANICAL DATABASE" weblate-flags="read-only, terminology">
+        <source>weeping willow (Salix babylonica)</source>
+        <target state="translated">weeping willow (Salix babylonica)</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="34b6fc89fc79a3c2" weblate-flags="read-only">
+        <source>East, sunrise</source>
+        <target state="translated">East, sunrise</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="4b1588c5326e56ff" weblate-flags="read-only">
+        <source>From the east</source>
+        <target state="translated">From the east</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="cea49cb8a9835ba8" weblate-flags="read-only">
+        <source>Warm oneself</source>
+        <target state="translated">Warm oneself</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="87d7497770390c73" weblate-flags="read-only">
+        <source>Towards the east</source>
+        <target state="translated">Towards the east</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="158b800e776c1fc5" weblate-flags="read-only, terminology">
+        <source>cook it</source>
+        <target state="translated">cook it</target>
+        <note from="developer">aalimiihtoo- (It verb) cook it</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="e1c25cfb21486f72" weblate-flags="read-only">
+        <source>en,English language</source>
+        <target state="translated">en,English language</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="8a566c5f2012e08b" weblate-flags="read-only">
+        <source>Miami</source>
+        <target state="translated">Miami</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="yes, okay, affirmative, you're welcome" weblate-flags="read-only">
+        <source>yes, okay, affirmative, you're welcome</source>
+        <target state="translated">yes, okay, affirmative, you're welcome</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="(interj)" weblate-flags="read-only">
+        <source>Yes,okay,, affirmative, you're welcome</source>
+        <target state="translated">Yes,okay,, affirmative, you're welcome</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="interj, Feminine" weblate-flags="read-only">
+        <source>yes, ok, sure</source>
+        <target state="translated">yes, ok, sure</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="9f287328df896bc7" weblate-flags="read-only">
+        <source>Friend (of the same sex)</source>
+        <target state="translated">Friend (of the same sex)</target>
+        <note from="developer">Friend (of the same sex) -iihkaan- [ root stem ]</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="bdba2a079cf05103" weblate-flags="read-only">
+        <source>Friend!</source>
+        <target state="translated">Friend!</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="a530bd1b7f6f55d4" weblate-flags="read-only">
+        <source>Hello friend</source>
+        <target state="translated">Hello friend</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="6a19453503949ef6" weblate-flags="read-only">
+        <source>Friends!</source>
+        <target state="translated">Friends!</target>
+        <note from="developer">Friends! interjective form</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="e7970d357fa048b4" weblate-flags="read-only">
+        <source>My friend</source>
+        <target state="translated">My friend</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="kiint-" weblate-flags="read-only">
+        <source>just, also, recently, wait, hold on!</source>
+        <target state="translated">just, also, recently, wait, hold on!</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="kaahkaahki-" weblate-flags="read-only, terminology">
+        <source>Katydid</source>
+        <target state="translated">Katydid</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="kaahkaahki-" weblate-flags="read-only, terminology">
+        <source>Kaskaskia people</source>
+        <target state="translated">Kaskaskia people</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="kaahkahw-" weblate-flags="read-only">
+        <source>Clean him (as of fish, game, etc)</source>
+        <target state="translated">Clean him (as of fish, game, etc)</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="kaahkahw-" weblate-flags="read-only">
+        <source>Clean him</source>
+        <target state="translated">Clean him</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="kaahkahw-" weblate-flags="read-only">
+        <source>I clean him ,or her (as of fish, game, etc)</source>
+        <target state="translated">I clean him ,or her (as of fish, game, etc)</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="kaahkiihkw-1" weblate-flags="read-only">
+        <source>day</source>
+        <target state="translated">day</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="kaahkiihkw-" weblate-flags="read-only">
+        <source>Today</source>
+        <target state="translated">Today</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="kaahkiihkw-" weblate-flags="read-only">
+        <source>day</source>
+        <target state="translated">day</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="kaahkilookii-" weblate-flags="read-only, terminology">
+        <source>Shave one's skin</source>
+        <target state="translated">Shave one's skin</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="kaahkilookii-" weblate-flags="read-only">
+        <source>We shave our skin!</source>
+        <target state="translated">We shave our skin!</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="kaahkilookii-" weblate-flags="read-only">
+        <source>I shave my skin	</source>
+        <target state="translated">I shave my skin	</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="kaahkilookii-" weblate-flags="read-only">
+        <source>You shave your skin</source>
+        <target state="translated">You shave your skin</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="kaahkilookii-1" weblate-flags="read-only">
+        <source>You shave your skin</source>
+        <target state="translated">You shave your skin</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="Glossary" weblate-flags="read-only, terminology">
+        <source>Glossary</source>
+        <target state="translated">Glossary</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="moohci" weblate-flags="read-only">
+        <source>no,not</source>
+        <target state="translated">no,not</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="moohkihsee-" weblate-flags="read-only">
+        <source>It comes to the surface quickly</source>
+        <target state="translated">It comes to the surface quickly</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="moohkihsee-2" weblate-flags="read-only">
+        <source>It comes to the surface quickly</source>
+        <target state="translated">It comes to the surface quickly</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="moohkihsee-1" weblate-flags="read-only">
+        <source>It comes to the surface quickly</source>
+        <target state="translated">It comes to the surface quickly</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="moohkihsen-" weblate-flags="read-only">
+        <source>It is flooded</source>
+        <target state="translated">It is flooded</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="moohkihsen-1" weblate-flags="read-only">
+        <source>It is flooded</source>
+        <target state="translated">It is flooded</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="moohkihsen-2" weblate-flags="read-only">
+        <source>It is flooded</source>
+        <target state="translated">It is flooded</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="moohkii-" weblate-flags="read-only">
+        <source>Surface, emerge</source>
+        <target state="translated">Surface, emerge</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="moohkii-" weblate-flags="read-only">
+        <source>I emerged</source>
+        <target state="translated">I emerged</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="moohkii-" weblate-flags="read-only">
+        <source>You emerge</source>
+        <target state="translated">You emerge</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="33b1135555da67c2" weblate-flags="read-only">
+        <source>We emerge</source>
+        <target state="translated">We emerge</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="moohkii-1" weblate-flags="read-only">
+        <source>You emerge</source>
+        <target state="translated">You emerge</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="weeping willow tree (Salix babylonica)" weblate-flags="read-only, variant:&quot;weeping willow (Salix babylonica)&quot;">
+        <source>weeping willow</source>
+        <target state="translated">weeping willow</target>
+        <note from="developer">root suffix sinular/pluraral forms</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="weeping willow trees" weblate-flags="read-only, variant:&quot;weeping willow&quot;">
+        <source>weeping willow trees, weeping willows</source>
+        <target state="translated">weeping willow trees, weeping willows</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="shitface, slur" weblate-flags="read-only">
+        <source>shitface, People of Des Moines</source>
+        <target state="translated">shitface, People of Des Moines</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="b8366243408aaa43" weblate-flags="read-only">
+        <source>I said no</source>
+        <target state="translated">I said no</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="2aa4b3f8a05720cc" weblate-flags="read-only">
+        <source>we welcome you!</source>
+        <target state="translated">we welcome you!</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="5468ef84f675cffa" weblate-flags="read-only">
+        <source>Yes, it is correct</source>
+        <target state="translated">Yes, it is correct</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="6d5115e79c8be5a5" weblate-flags="read-only">
+        <source>you're welcome</source>
+        <target state="translated">you're welcome</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="moohci" weblate-flags="read-only">
+        <source>not</source>
+        <target state="translated">not</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="moohci" weblate-flags="read-only">
+        <source>no</source>
+        <target state="translated">no</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="nkoti 1" weblate-flags="read-only">
+        <source>1,one</source>
+        <target state="translated">1,one</target>
+        <note from="developer">the nuber 1,,,</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="e5d6a1ca3db4b50d" weblate-flags="read-only">
+        <source>Thank you</source>
+        <target state="translated">Thank you</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="Myaamia" weblate-flags="read-only">
+        <source>Miami, Irenwee, Peoria</source>
+        <target state="translated">Miami, Irenwee, Peoria</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="neewe niihka&#9;Thank you friend (of the same sex)" weblate-flags="read-only, variant:&quot;Thank you&quot;">
+        <source>Thank you friend</source>
+        <target state="translated">Thank you friend</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="mihši neewe&#9;Thank you very much, big thanks" weblate-flags="read-only, variant:&quot;Thank you friend&quot;">
+        <source>Thank you very much, big thanks</source>
+        <target state="translated">Thank you very much, big thanks</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="moohkii-" weblate-flags="read-only">
+        <source>We! emerge</source>
+        <target state="translated">We! emerge</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="niišwi 2" weblate-flags="read-only">
+        <source>2,two</source>
+        <target state="translated">2,two</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="awal-" weblate-flags="read-only">
+        <source>Take him along, lead him</source>
+        <target state="translated">Take him along, lead him</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="Let's take him along!" weblate-flags="read-only, variant:&quot;Take him along, lead him&quot;">
+        <source>Let's take him along!,lead him</source>
+        <target state="translated">Let's take him along!,lead him</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="Language codes ISO&#9;ISO 639-3&#9;mia&#9;ISO 639-3&#9;mia" weblate-flags="read-only, terminology">
+        <source>Language codes ISO 639-3 mia, Miami</source>
+        <target state="translated">Language codes ISO 639-3 mia, Miami</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="metadata" weblate-flags="read-only, terminology">
+        <source>glottolog : miam1252</source>
+        <target state="translated">glottolog : miam1252</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="ILDA Website" weblate-flags="read-only, terminology">
+        <source>Welcome to the Myaamia-Peewaalia dictionary</source>
+        <target state="translated">Welcome to the Myaamia-Peewaalia dictionary</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="93a2fae70047a3d2" weblate-flags="read-only">
+        <source>English,En</source>
+        <target state="translated">English,En</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="9a2e227675790154" weblate-flags="read-only">
+        <source>3,three</source>
+        <target state="translated">3,three</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="numbers" weblate-flags="read-only">
+        <source>5,five</source>
+        <target state="translated">5,five</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="numbers" weblate-flags="read-only">
+        <source>6,six</source>
+        <target state="translated">6,six</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="8ffaa849115777f4" weblate-flags="read-only">
+        <source>It is flooded</source>
+        <target state="translated">It is flooded</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="-aasi" weblate-flags="read-only, terminology">
+        <source>(10;s delimenter) </source>
+        <target state="translated">(10;s delimenter) </target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="akincikoona" weblate-flags="read-only">
+        <source>4,four</source>
+        <target state="translated">4,four</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="numbers" weblate-flags="read-only">
+        <source>7,seven</source>
+        <target state="translated">7,seven</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="akincikoona (num) numerals, numbers" weblate-flags="read-only">
+        <source>num, numerals, numbers</source>
+        <target state="translated">num, numerals, numbers</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="numbers" weblate-flags="read-only">
+        <source>8,Eight</source>
+        <target state="translated">8,Eight</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="numbers" weblate-flags="read-only">
+        <source>9,nine</source>
+        <target state="translated">9,nine</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="numbers" weblate-flags="read-only">
+        <source>10,ten</source>
+        <target state="translated">10,ten</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="numbers" weblate-flags="read-only">
+        <source>11,eleven</source>
+        <target state="translated">11,eleven</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="05ce2c3201034a35" weblate-flags="read-only">
+        <source>12</source>
+        <target state="translated">12</target>
+        <note from="developer">mataathswi niišwaasi	Twelve, 12</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="numbers" weblate-flags="read-only">
+        <source>20</source>
+        <target state="translated">20</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="numbers" weblate-flags="read-only">
+        <source>Thirty five, 35</source>
+        <target state="translated">Thirty five, 35</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="numbers" weblate-flags="read-only">
+        <source>One hundred, 100</source>
+        <target state="translated">One hundred, 100</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="ilekili-" weblate-flags="read-only">
+        <source>Be so big, so large, of a certain size</source>
+        <target state="translated">Be so big, so large, of a certain size</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="iletii-" weblate-flags="read-only">
+        <source>Say to each other</source>
+        <target state="translated">Say to each other</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="ampen-" weblate-flags="read-only">
+        <source>I lift him,I lift her up</source>
+        <target state="translated">I lift him,I lift her up</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="siipiiw" weblate-flags="read-only">
+        <source>River</source>
+        <target state="translated">River</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="neemawiteeheeyon-" weblate-flags="read-only">
+        <source>Imagination</source>
+        <target state="translated">Imagination</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="alohtaw-" weblate-flags="read-only">
+        <source>I imitate, mimic him, mimic her</source>
+        <target state="translated">I imitate, mimic him, mimic her</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="šaawe" weblate-flags="read-only">
+        <source>I will come right away.</source>
+        <target state="translated">I will come right away.</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="kinoonk-" weblate-flags="read-only">
+        <source>In deep water</source>
+        <target state="translated">In deep water</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="kinoonk-" weblate-flags="read-only">
+        <source>She is in deep water</source>
+        <target state="translated">She is in deep water</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="ceenkwihtanonki" weblate-flags="read-only">
+        <source>I am going to Indianapolis</source>
+        <target state="translated">I am going to Indianapolis</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="ceenkwihtanonki" weblate-flags="read-only">
+        <source>I am coming from Indianapolis</source>
+        <target state="translated">I am coming from Indianapolis</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="wiihkapesi-" weblate-flags="read-only">
+        <source>Indian turnip, Jack-in-the-pulpit </source>
+        <target state="translated">Indian turnip, Jack-in-the-pulpit </target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="wiihkapesi-" weblate-flags="read-only">
+        <source>Indian turnips, Jack-in-the-pulpits</source>
+        <target state="translated">Indian turnips, Jack-in-the-pulpits</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="piloohseens-" weblate-flags="read-only">
+        <source>Infant, baby</source>
+        <target state="translated">Infant, baby</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="piloohseens-" weblate-flags="read-only">
+        <source>Infants, babies</source>
+        <target state="translated">Infants, babies</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="inko" weblate-flags="read-only">
+        <source>He won't come</source>
+        <target state="translated">He won't come</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="inko" weblate-flags="read-only">
+        <source>He won't get up</source>
+        <target state="translated">He won't get up</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="inko" weblate-flags="read-only">
+        <source>I won't fail the test</source>
+        <target state="translated">I won't fail the test</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="teehš-" weblate-flags="read-only">
+        <source>Instead of, only, rather than, except for</source>
+        <target state="translated">Instead of, only, rather than, except for</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="teehš-" weblate-flags="read-only">
+        <source>Only I can do this</source>
+        <target state="translated">Only I can do this</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="teehš-" weblate-flags="read-only">
+        <source>I only have one</source>
+        <target state="translated">I only have one</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="kiint-1" weblate-flags="read-only, variant:&quot;just, also, recently, wait, hold on!&quot;">
+        <source>just, also, recently, wait, hold on!</source>
+        <target state="translated">just, also, recently, wait, hold on!</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="Example Sentences" weblate-flags="read-only, variant:&quot;just, also, recently, wait, hold on!&quot;">
+        <source>I just woke up</source>
+        <target state="translated">I just woke up</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="Example Sentences" weblate-flags="read-only, variant:&quot;I just woke up&quot;">
+        <source>Hold on! I am coming now</source>
+        <target state="translated">Hold on! I am coming now</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="46020e2107a5ee95" weblate-flags="read-only">
+        <source>Mississippi River</source>
+        <target state="translated">Mississippi River</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="glossary" weblate-flags="read-only">
+        <source>glossary</source>
+        <target state="translated">glossary</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="47b3c596efea03e7" weblate-flags="read-only, terminology">
+        <source>English</source>
+        <target state="translated">English</target>
+        <note from="developer">aakalaahšimaataweenki</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="ahkweehs-" weblate-flags="read-only">
+        <source>Young woman,maiden</source>
+        <target state="translated">Young woman,maiden</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="ahkweehs-1" weblate-flags="read-only">
+        <source>Young woman,maiden</source>
+        <target state="translated">Young woman,maiden</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="ahkweehs-" weblate-flags="read-only">
+        <source>Young women,maiden</source>
+        <target state="translated">Young women,maiden</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="aahtee-" weblate-flags="read-only">
+        <source>It goes out of a fire, It goes out of or light</source>
+        <target state="translated">It goes out of a fire, It goes out of or light</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="aahtee-" weblate-flags="read-only">
+        <source>It is extinguished, gone out</source>
+        <target state="translated">It is extinguished, gone out</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="aathee-" weblate-flags="read-only">
+        <source>It is extinguished, gone out</source>
+        <target state="translated">It is extinguished, gone out</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="aahtee-" weblate-flags="read-only">
+        <source>Is it out?</source>
+        <target state="translated">Is it out?</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="aahtee-" weblate-flags="read-only">
+        <source>That's it, it's over with, it's done</source>
+        <target state="translated">That's it, it's over with, it's done</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="aahtee-" weblate-flags="read-only">
+        <source>Its not over, still more to do, still an issue</source>
+        <target state="translated">Its not over, still more to do, still an issue</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="aahteeleentam-" weblate-flags="read-only">
+        <source>Turn off the light, extinguish it</source>
+        <target state="translated">Turn off the light, extinguish it</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="ašiihkionam-" weblate-flags="read-only">
+        <source>Smear dirt on it</source>
+        <target state="translated">Smear dirt on it</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="-hkweekan-" weblate-flags="read-only, terminology">
+        <source>Neck</source>
+        <target state="translated">Neck</target>
+        <note from="developer">-hkweekan- (n.inan.dep) Neck</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="cc25813363e074f1" weblate-flags="read-only">
+        <source>I am Miami</source>
+        <target state="translated">I am Miami</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="8724898c31121b13" weblate-flags="read-only">
+        <source>The Miami people</source>
+        <target state="translated">The Miami people</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="fc59f44c4068332f" weblate-flags="read-only">
+        <source>We are Miami</source>
+        <target state="translated">We are Miami</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="c0d262b7cb430922" weblate-flags="read-only">
+        <source>Miami homelands, the place of the Miamis</source>
+        <target state="translated">Miami homelands, the place of the Miamis</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="48a27395bd5a8819" weblate-flags="read-only">
+        <source>Miami homelands along the Wabash River (Indiana)	</source>
+        <target state="translated">Miami homelands along the Wabash River (Indiana)	</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="2f09c34f2f15d089" weblate-flags="read-only">
+        <source>Miami homelands along the Marais des Cygnes River (Kansas)</source>
+        <target state="translated">Miami homelands along the Marais des Cygnes River (Kansas)</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="3b182dae6fe16567" weblate-flags="read-only">
+        <source>Miami homelands along the Neosho River (Oklahoma)</source>
+        <target state="translated">Miami homelands along the Neosho River (Oklahoma)</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="8ced62e90dc72957" weblate-flags="read-only">
+        <source>We are strong, we are resilient, we are Myaamia</source>
+        <target state="translated">We are strong, we are resilient, we are Myaamia</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="3cedeb92849b28be" weblate-flags="read-only">
+        <source>I am going to the Miami homelands (Oklahoma) next week</source>
+        <target state="translated">I am going to the Miami homelands (Oklahoma) next week</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="myaamiihkwi-" weblate-flags="read-only">
+        <source>Miami woman</source>
+        <target state="translated">Miami woman</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="myaamiihkwi-1" weblate-flags="read-only">
+        <source>Miami woman</source>
+        <target state="translated">Miami woman</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="myaamiihkwi-" weblate-flags="read-only">
+        <source>Miami women</source>
+        <target state="translated">Miami women</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="meehšaapantaakan-" weblate-flags="read-only">
+        <source>Microscope</source>
+        <target state="translated">Microscope</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="meehšaapantaakan-" weblate-flags="read-only">
+        <source>Microscopes</source>
+        <target state="translated">Microscopes</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="nakaanakw-" weblate-flags="read-only">
+        <source>Middle-aged, older man</source>
+        <target state="translated">Middle-aged, older man</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="nakaanakw-" weblate-flags="read-only">
+        <source>Middle-aged, older men</source>
+        <target state="translated">Middle-aged, older men</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="mihšihkinaahkw-" weblate-flags="read-only">
+        <source>Painted terrapin turtle (Chrysemys spp.)</source>
+        <target state="translated">Painted terrapin turtle (Chrysemys spp.)</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="mihšihkinaahkw-" weblate-flags="read-only">
+        <source>Painted terrapin turtles</source>
+        <target state="translated">Painted terrapin turtles</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="mihši-nipwaantiikaan-" weblate-flags="read-only">
+        <source>University, college</source>
+        <target state="translated">University, college</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="mihši-nipwaantiikaan-" weblate-flags="read-only">
+        <source>Universities, colleges</source>
+        <target state="translated">Universities, colleges</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" approved="no" id="mihši-nipwaantiikaan-" weblate-flags="read-only">
+        <source>Miami University</source>
+        <target state="translated">Miami University</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

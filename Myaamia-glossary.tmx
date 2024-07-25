@@ -1,0 +1,1349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+<header adminlang="en" srclang="en">
+</header>
+<body>
+
+<tu>
+<tuv xml:lang="en">
+<seg>cook it</seg>
+</tuv>
+<tuv xml:lang="chr">
+<seg>cook it</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>English</seg>
+</tuv>
+<tuv xml:lang="chr">
+<seg>English</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Neck</seg>
+</tuv>
+<tuv xml:lang="chr">
+<seg>Neck</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>English</seg>
+</tuv>
+<tuv xml:lang="oj">
+<seg>English</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Neck</seg>
+</tuv>
+<tuv xml:lang="oj">
+<seg>Neck</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>cook it</seg>
+</tuv>
+<tuv xml:lang="cr">
+<seg>cook it</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>English</seg>
+</tuv>
+<tuv xml:lang="cr">
+<seg>English</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Neck</seg>
+</tuv>
+<tuv xml:lang="cr">
+<seg>Neck</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Miami University</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Miami University</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>I emerged</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>moohkiaani</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>12</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>12</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>glottolog : miam1252</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>glottolog : miam1252</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Glossary</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Glossary</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>1,one</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>nkoti</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>shitface, People of Des Moines</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>shitface, People of Des Moines</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Microscopes</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Microscopes</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Thank you friend</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>neewe niihka</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Its not over, still more to do, still an issue</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Its not over, still more to do, still an issue</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>cook it</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>cook it</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>yes, ok, sure</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>naaka</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Take him along, lead him</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>awal-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Shave one&#x27;s skin</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>kaahkilookii-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>You shave your skin</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>kaahkilookiiyiikwi</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>I am going to Indianapolis</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>ceenkwhtanonkiši iiyaayaani</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>20</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>20</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>University, college</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>University, college</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>It is flooded</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>moohkhsenwi</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>we welcome you!</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>meentitohkaalilaanki</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Let&#x27;s take him along!,lead him</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>awal-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Young woman,maiden</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Young woman,maiden</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>It goes out of a fire, It goes out of or light</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>It goes out of a fire, It goes out of or light</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Miami woman</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Miami woman</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>You shave your skin</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>kaahkilookiiyani</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Miami homelands along the Marais des Cygnes River (Kansas)</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Miami homelands along the Marais des Cygnes River (Kansas)</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>We emerge</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>moohkiiyankwi</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>East, sunrise</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>East, sunrise</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>(10;s delimenter) </seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>-aasi </seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>I am coming from Indianapolis</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>ceenkwhtanonkonci pyaayaani</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Miami homelands along the Neosho River (Oklahoma)</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Miami homelands along the Neosho River (Oklahoma)</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Indian turnips, Jack-in-the-pulpits</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>wiihkapesiaki</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>I am going to the Miami homelands (Oklahoma) next week</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>I am going to the Miami homelands (Oklahoma) next week</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>10,ten</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>10,ten</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>yes, okay, affirmative, you&#x27;re welcome</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>iihia</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Young women,maiden</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Young women,maiden</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>4,four</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>4,four</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>That&#x27;s it, it&#x27;s over with, it&#x27;s done</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>That&#x27;s it, it&#x27;s over with, it&#x27;s done</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Mississippi River</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Mississippi River</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>day</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>day</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>English</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>English</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Miami homelands along the Wabash River (Indiana)	</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Miami homelands along the Wabash River (Indiana)	</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Infants, babies</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>piloohseensaki</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>From the east</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>From the east</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>I shave my skin	</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>kaahkilookiaani	</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Is it out?</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Is it out?</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Welcome to the Myaamia-Peewaalia dictionary</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Welcome to the Myaamia-Peewaalia dictionary</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Smear dirt on it</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Smear dirt on it</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Painted terrapin turtle (Chrysemys spp.)</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Painted terrapin turtle (Chrysemys spp.)</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>6,six</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>6,six</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Yes, it is correct</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>iihia, eelaamweekaneewiki</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Middle-aged, older man</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Middle-aged, older man</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Surface, emerge</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>moohkii-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>weeping willow (Salix babylonica)</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>niipyaahkatw-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>We shave our skin!</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>kaahkilookiaanki</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Say to each other</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Say to each other</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>7,seven</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>7,seven</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Clean him (as of fish, game, etc)</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Clean him (as of fish, game, etc)</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>In deep water</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>kinoonke</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Infant, baby</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>piloohseensa</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Miami woman</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Miami woman</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Middle-aged, older men</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Middle-aged, older men</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>just, also, recently, wait, hold on!</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>jkiint-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>It is flooded</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>moohkihsen-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Friends!</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Friends!</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>He won&#x27;t get up</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>He won&#x27;t get up</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>you&#x27;re welcome</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>iihia</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>no</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>moohci</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>One hundred, 100</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>nkotwaahkwe</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Young woman,maiden</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Young woman,maiden</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Instead of, only, rather than, except for</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>teehši</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Language codes ISO 639-3 mia, Miami</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Language codes ISO 639-3 mia, Miami</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>5,five</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>5,five</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>no,not</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>moohci</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>num, numerals, numbers</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>akincikoona</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>day</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>day</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>The Miami people</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>The Miami people</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>It is extinguished, gone out</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>It is extinguished, gone out</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Neck</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Neck</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Towards the east</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>awansaapiciši</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>I only have one</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>teehši nkoti</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Miami</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Myaamia</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>We are strong, we are resilient, we are Myaamia</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>We are strong, we are resilient, we are Myaamia</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>You emerge</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>moohkiiyani</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>It is flooded</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>It is flooded</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Kaskaskia people</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>kaahkaahkiaki</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Imagination</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>neemawiteeheeyoni</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>English,En</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>aakalaahšimaataweenki</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>11,eleven</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>11,eleven</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Hold on! I am coming now</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>kiinte! noonki pyaayaani</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>You emerge</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>moohkiiyiikwi</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Be so big, so large, of a certain size</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Be so big, so large, of a certain size</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>It comes to the surface quickly</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>moohkhseeki</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>3,three</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>3,three</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>8,Eight</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>8,Eight</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Microscope</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Microscope</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>River</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>siipiiw</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Friend (of the same sex)</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Friend (of the same sex)</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>It is extinguished, gone out</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>It is extinguished, gone out</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>I clean him ,or her (as of fish, game, etc)</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>I clean him ,or her (as of fish, game, etc)</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Hello friend</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Hello friend</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>It is flooded</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>moohkhsenki</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Turn off the light, extinguish it</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Turn off the light, extinguish it</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>It comes to the surface quickly</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>moohkhseewi</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Painted terrapin turtles</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Painted terrapin turtles</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>We! emerge</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>moohkiaanki</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>I just woke up</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>kiinte eemamwiaani</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Universities, colleges</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Universities, colleges</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>I said no</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>moohci noonk</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Thirty five, 35</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>nihswi mateeni yaalanwaasi</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Only I can do this</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>niilaahka teehši niiši iišileniaani</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Friend!</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>niihka</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Indian turnip, Jack-in-the-pulpit </seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>wiihkapesia </seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Miami homelands, the place of the Miamis</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Miami homelands, the place of the Miamis</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Katydid</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>kaahkaahki-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>2,two</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>niišwi</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>I imitate, mimic him, mimic her</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>I imitate, mimic him, mimic her</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>just, also, recently, wait, hold on!</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>kiinte</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>I am Miami</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>I am Miami</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Miami, Irenwee, Peoria</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Myaamia, Irenwe.Peoria</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Today</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>noonki kaahkiihkwe</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Warm oneself</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>awansi-</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Thank you very much, big thanks</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>mihši neewe</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>It comes to the surface quickly</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>It comes to the surface quickly</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>9,nine</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>9,nine</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Clean him</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Clean him</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>glossary</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>glossary</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>en,English language</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>en,English language</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>I will come right away.</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>šaawe kati pyaayaani</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>weeping willow trees, weeping willows</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>niipyaahkatwa</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Thank you</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>neewe</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>My friend</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>niihkaana</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Miami women</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Miami women</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>I lift him,I lift her up</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>I lift him,I lift her up</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>Yes,okay,, affirmative, you&#x27;re welcome</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>Yes,okay,, affirmative, you&#x27;re welcome</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>I won&#x27;t fail the test</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>inko-hka aalweeliaani kocihtamaakani</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>He won&#x27;t come</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>He won&#x27;t come</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>We are Miami</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>We are Miami</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>She is in deep water</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>kinoonke eepici</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>weeping willow</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>niipyaahkatwi</seg>
+</tuv>
+</tu>
+
+<tu>
+<tuv xml:lang="en">
+<seg>not</seg>
+</tuv>
+<tuv xml:lang="mia">
+<seg>moohci</seg>
+</tuv>
+</tu>
+
+</body>
+</tmx>
