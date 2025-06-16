@@ -1414,3 +1414,11 @@ CREATE TABLE IF NOT EXISTS translations (
     FOREIGN KEY (gemini_request_id) REFERENCES gemini_requests(request_id)
     -- Consider FK to your local TMX segment ID if you prefer to decouple `translations` from `segments`
 );
+INSERT OR IGNORE INTO languages (iso_639_3_code, bcp_47_tag, language_name_en, language_family, notes) VALUES
+('en', 'en-US', 'English', 'Indo-European', 'US English locale for BCP 47 compliance.'),
+('mia', 'mia-US', 'Myaamia', 'Algic', 'Myaamia language, primarily US usage.'),
+('pot', 'pot-US', 'Potawatomi', 'Algic', 'Potawatomi language, primarily US usage (Michigan/Northern Indiana).'),
+('kic', 'kic-US', 'Kickapoo', 'Algic', 'Kickapoo language, primarily US usage.'),
+('sac', 'sac-US', 'Meskwaki', 'Algic', 'Meskwaki (Fox, Sauk) language, primarily US usage.'),
+('ciw', 'ciw-US', 'Chippewa', 'Algic', 'Chippewa (Ojibwe) language, specifically US usage.'), -- Use 'ciw' for US Ojibwe dialects
+('crk', 'crk-US', 'Plains Cree', 'Algic', 'Plains Cree language, primarily US usage/border regions.'); -- Example Cree dialect for US
