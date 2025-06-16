@@ -1191,3 +1191,226 @@ BEGIN
     SET total_requests = total_requests + 1, last_used = CURRENT_TIMESTAMP 
     WHERE model_name = NEW.model_name;
 END;
+CREATE TABLE CopilotMetadata (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    query TEXT NOT NULL,
+    response TEXT NOT NULL,
+    confidence_score REAL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE AzureTranslateMetadata (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    original_text TEXT NOT NULL,
+    translated_text TEXT NOT NULL,
+    source_language TEXT NOT NULL,
+    target_language TEXT NOT NULL,
+    translation_confidence REAL,
+    request_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Core Translation Memory (TMX-like) Tables
+CREATE TABLE IF NOT EXISTS languages (
+    lang_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    iso_639_3_code TEXT NOT NULL UNIQUE, -- e.g., 'en', 'mia', 'pot'
+    bcp_47_tag TEXT UNIQUE,             -- e.g., 'en-US', 'mia-US', 'pot-us'
+    language_name_en TEXT NOT NULL,     -- English name: e.g., 'English', 'Miami-Illinois'
+    language_family TEXT,               -- e.g., 'Algic', 'Algonquian'
+    notes TEXT
+);
+
+CREATE TABLE IF NOT EXISTS segments (
+    segment_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    source_language_code TEXT NOT NULL, -- FK to languages.iso_639_3_code
+    target_language_code TEXT NOT NULL, -- FK to languages.iso_639_3_code
+    source_text TEXT NOT NULL,
+    target_text TEXT,
+    creation_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+    last_modified_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+    quality_score REAL,                 -- e.g., 0.0 to 1.0 or 0 to 100
+    translation_origin TEXT,            -- e.g., 'human', 'ollama_rag', 'google_translate', 'gemini'
+    tmx_guid TEXT UNIQUE,               -- For TMX export/import round-tripping
+    FOREIGN KEY (source_language_code) REFERENCES languages(iso_639_3_code),
+    FOREIGN KEY (target_language_code) REFERENCES languages(iso_639_3_code)
+);
+
+CREATE TABLE IF NOT EXISTS tmx_files (
+    tmx_file_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    file_name TEXT NOT NULL,
+    upload_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+    status TEXT,                        -- e.g., 'imported', 'exported', 'error'
+    source_locale TEXT,                 -- BCP 47 tag for TMX header
+    target_locale TEXT,                 -- BCP 47 tag for TMX header
+    version TEXT                        -- TMX version (e.g., '1.4')
+);
+
+-- RAG and Ollama Specific Tables
+CREATE TABLE IF NOT EXISTS documents (
+    document_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    document_name TEXT NOT NULL,
+    document_path TEXT,                 -- Path to original file
+    document_type TEXT,                 -- e.g., 'text', 'pdf', 'webpage', 'glossary'
+    ingestion_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+    source_language TEXT NOT NULL,      -- ISO 639-3 code
+    notes TEXT
+);
+
+CREATE TABLE IF NOT EXISTS document_chunks (
+    chunk_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    document_id INTEGER NOT NULL,
+    chunk_text TEXT NOT NULL,
+    embedding BLOB,                     -- Store raw bytes of the embedding vector
+    start_char_offset INTEGER,
+    end_char_offset INTEGER,
+    language_code TEXT NOT NULL,        -- ISO 639-3 code
+    FOREIGN KEY (document_id) REFERENCES documents(document_id),
+    FOREIGN KEY (language_code) REFERENCES languages(iso_639_3_code)
+);
+
+CREATE TABLE IF NOT EXISTS ollama_interactions (
+    interaction_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    prompt_text TEXT NOT NULL,
+    response_text TEXT NOT NULL,
+    model_name TEXT NOT NULL,
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+    retrieved_chunk_ids TEXT,           -- Comma-separated list of chunk_id
+    temperature REAL,
+    top_p REAL,
+    seed INTEGER
+);
+
+-- Linguistic Data Tables
+CREATE TABLE IF NOT EXISTS lexicon (
+    lex_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    language_code TEXT NOT NULL,        -- FK to languages.iso_639_3_code
+    word TEXT NOT NULL COLLATE NOCASE,  -- Case-insensitive comparison for words
+    phonetic_transcription TEXT,        -- e.g., IPA, Americanist
+    part_of_speech TEXT,                -- e.g., 'N', 'V', 'Adj'
+    definition_en TEXT,                 -- English definition
+    notes TEXT,
+    entry_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+    last_update DATETIME DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE(language_code, word),
+    FOREIGN KEY (language_code) REFERENCES languages(iso_639_3_code)
+);
+
+CREATE TABLE IF NOT EXISTS etymology (
+    etym_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    source_lex_id INTEGER NOT NULL,     -- FK to lexicon.lex_id (e.g., original word)
+    related_lex_id INTEGER NOT NULL,    -- FK to lexicon.lex_id (e.g., cognate in another language)
+    relationship_type TEXT,             -- e.g., 'cognate', 'loanword', 'derivation'
+    etymological_notes TEXT,
+    FOREIGN KEY (source_lex_id) REFERENCES lexicon(lex_id),
+    FOREIGN KEY (related_lex_id) REFERENCES lexicon(lex_id)
+);
+
+CREATE TABLE IF NOT EXISTS spelling_rules (
+    rule_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    language_code TEXT NOT NULL,        -- FK to languages.iso_639_3_code
+    rule_type TEXT NOT NULL,            -- e.g., 'affix', 'compound', 'pronunciation'
+    rule_definition TEXT NOT NULL,      -- The rule itself (e.g., pattern, description)
+    example_words TEXT,                 -- Comma-separated examples
+    notes TEXT,
+    FOREIGN KEY (language_code) REFERENCES languages(iso_639_3_code)
+);
+
+-- Optional: For API output if needed, but TMX export is generally preferred
+CREATE TABLE IF NOT EXISTS api_export_ready_translations (
+    export_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    original_segment_id INTEGER NOT NULL,
+    api_source_text TEXT NOT NULL,
+    api_target_text TEXT,
+    api_source_lang TEXT NOT NULL,
+    api_target_lang TEXT NOT NULL,
+    detected_source_lang TEXT,
+    api_service_used TEXT,
+    api_response_metadata TEXT, -- JSON blob of full API response or relevant parts
+    export_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (original_segment_id) REFERENCES segments(segment_id)
+);
+
+CREATE TABLE IF NOT EXISTS api_logs (
+    log_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    api_service TEXT NOT NULL,         -- e.g., 'gemini', 'google_translate'
+    endpoint TEXT,                     -- e.g., '/v1/models/gemini-pro:generateContent', '/language/translate/v2'
+    request_timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+    response_timestamp DATETIME,
+    request_payload TEXT,              -- The JSON sent to the API
+    response_payload TEXT,             -- The JSON received from the API
+    http_status_code INTEGER,
+    error_message TEXT,                -- Any error message if the call failed
+    duration_ms INTEGER,               -- Milliseconds for the API call
+    user_id INTEGER,                   -- Optional: if linking to a user in your system
+    session_id TEXT,                   -- Optional: if tracking user sessions
+    notes TEXT
+);
+
+CREATE TABLE IF NOT EXISTS translations (
+    translation_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    log_id INTEGER,                     -- FK to api_logs.log_id if this translation came from an API call
+    source_language TEXT NOT NULL,      -- ISO 639-1 or BCP-47 (e.g., 'en', 'en-US')
+    target_language TEXT NOT NULL,      -- ISO 639-1 or BCP-47 (e.g., 'es', 'es-MX')
+    original_text TEXT NOT NULL,
+    translated_text TEXT,
+    translation_method TEXT,            -- e.g., 'google_translate_api', 'gemini_api', 'cached', 'manual'
+    confidence_score REAL,              -- For services that provide it (e.g., Google Translate sometimes gives detection confidence)
+    characters_billed INTEGER,          -- Characters sent/received, useful for billing tracking
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (log_id) REFERENCES api_logs(log_id)
+);
+
+CREATE TABLE IF NOT EXISTS gemini_interactions (
+    gemini_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    log_id INTEGER,                     -- FK to api_logs.log_id
+    model_name TEXT NOT NULL,           -- e.g., 'gemini-pro', 'gemini-1.5-flash'
+    input_prompt TEXT NOT NULL,         -- The primary prompt sent to Gemini
+    response_text TEXT,                 -- The main generated response
+    generation_settings TEXT,           -- JSON string of settings (e.g., temperature, top_k, top_p, max_output_tokens)
+    safety_ratings TEXT,                -- JSON string of safety ratings from Gemini's response
+    usage_metadata TEXT,                -- JSON string for token counts (input, output, total)
+    finish_reason TEXT,                 -- e.g., 'STOP', 'MAX_TOKENS', 'SAFETY', 'RECITATION'
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (log_id) REFERENCES api_logs(log_id)
+);
+
+CREATE TABLE IF NOT EXISTS google_translate_glossaries (
+    glossary_id TEXT PRIMARY KEY,       -- Google's unique ID for the glossary (e.g., projects/PROJECT_NUMBER/locations/LOCATION/glossaries/GLOSSARY_ID)
+    display_name TEXT NOT NULL,
+    source_language TEXT NOT NULL,
+    target_language TEXT NOT NULL,
+    creation_timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+    last_update_timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+    entry_count INTEGER,                -- Number of terms in the glossary
+    notes TEXT
+);
+
+CREATE TABLE IF NOT EXISTS google_translate_terms (
+    term_entry_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    glossary_id TEXT NOT NULL,          -- FK to google_translate_glossaries.glossary_id
+    source_term TEXT NOT NULL,
+    target_term TEXT NOT NULL,
+    notes TEXT,
+    FOREIGN KEY (glossary_id) REFERENCES google_translate_glossaries(glossary_id)
+);
+
+-- Revised or central translation record
+CREATE TABLE IF NOT EXISTS translations (
+    translation_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    source_language_code TEXT NOT NULL, -- e.g., 'en-US', 'mia'
+    target_language_code TEXT NOT NULL, -- e.g., 'mia', 'en-US'
+    source_text TEXT NOT NULL,
+    translated_text TEXT,
+    translation_origin TEXT NOT NULL,   -- e.g., 'human', 'ollama_rag', 'google_translate', 'gemini'
+    translation_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+    last_modified_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+    quality_score REAL,                 -- Human or AI confidence score
+
+    -- Links to specific API interactions or TMX data
+    google_translate_request_id INTEGER, -- FK to google_translate_requests.request_id
+    gemini_request_id INTEGER,           -- FK to gemini_requests.request_id
+    tmx_segment_id_ref TEXT,             -- For referencing original TMX segments, or a specific local segment ID if you keep a `local_tmx_segments` table
+
+    FOREIGN KEY (google_translate_request_id) REFERENCES google_translate_requests(request_id),
+    FOREIGN KEY (gemini_request_id) REFERENCES gemini_requests(request_id)
+    -- Consider FK to your local TMX segment ID if you prefer to decouple `translations` from `segments`
+);
