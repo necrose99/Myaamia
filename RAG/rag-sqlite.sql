@@ -1,40 +1,1193 @@
--- Main Entries Table
+-- WikiLang Compliant Miami-Illinois Language Database Schema
+-- ISO 639-3: mia, Glottolog: miam1252
+-- Supports RAGLite embeddings and Claude.ai metadata
+
+-- =======================
+-- CORE LANGUAGE TABLES
+-- =======================
+
+-- Main Lexical Entries Table (WikiLang compliant)
 CREATE TABLE IF NOT EXISTS entries (
-    id INTEGER PRIMARY KEY,
-    myaamia_word TEXT NOT NULL,
-    english_definition TEXT,
-    french_definition TEXT,
-    part_of_speech TEXT,
-    root_form TEXT,
-    ipa TEXT
-);
-
--- RAGLite Embeddings Table
-CREATE VIRTUAL TABLE IF NOT EXISTS embeddings USING vec0(
-    document TEXT PRIMARY KEY,
-    embedding FLOAT[1024]
-);
-
--- Affix Rules Table
-CREATE TABLE IF NOT EXISTS affix_rules (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    affix TEXT NOT NULL,
-    description TEXT
+    -- Core entry data
+    headword TEXT NOT NULL, -- Main Miami-Illinois form
+    normalized_form TEXT, -- Standardized orthography
+    pos TEXT, -- Part of speech (noun, verb, particle, etc.)
+    
+    -- Definitions in related languages
+    english_definition TEXT,
+    french_definition TEXT, -- Historical French sources
+    sauk_definition TEXT, -- ISO: sac, related Algonquian
+    kickapoo_definition TEXT, -- ISO: kic, Glottolog: kick1244
+    potawatomi_definition TEXT, -- ISO: pot, Glottolog: pota1247
+    
+    -- Linguistic data
+    ipa_transcription TEXT, -- IPA pronunciation
+    stress_pattern TEXT, -- Stress marking
+    syllable_count INTEGER,
+    
+    -- Morphological data
+    root_form TEXT,
+    stem_class TEXT, -- Animate/inanimate, verb class, etc.
+    inflection_class TEXT,
+    
+    -- Metadata
+    frequency_rank INTEGER,
+    attestation_level TEXT CHECK (attestation_level IN ('well-attested', 'limited', 'reconstructed', 'unverified')),
+    semantic_domain TEXT, -- Cultural/semantic category
+    register TEXT, -- Formal, colloquial, ceremonial, etc.
+    
+    -- Timestamps
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    
+    -- WikiLang compliance
+    wikidata_id TEXT, -- Q-number if available
+    status TEXT DEFAULT 'active' CHECK (status IN ('active', 'deprecated', 'variant'))
 );
 
--- Translation Memory (TMX) Table
+-- =======================
+-- ETYMOLOGY TABLES
+-- =======================
+
+-- Etymology Sources and Reconstructions
+CREATE TABLE IF NOT EXISTS etymologies (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    entry_id INTEGER NOT NULL,
+    
+    -- Proto-form data
+    proto_form TEXT, -- Proto-Algonquian reconstruction
+    proto_language TEXT, -- PA, PAC, etc.
+    reconstruction_confidence TEXT CHECK (reconstruction_confidence IN ('certain', 'probable', 'possible', 'speculative')),
+    
+    -- Historical development
+    sound_changes TEXT, -- Documented sound changes
+    semantic_development TEXT, -- Meaning changes over time
+    
+    -- Cognates in related languages
+    ojibwe_cognate TEXT,
+    ottawa_cognate TEXT,
+    cree_cognate TEXT,
+    menominee_cognate TEXT,
+    
+    -- Sources
+    etymology_source_id INTEGER,
+    notes TEXT,
+    
+    FOREIGN KEY (entry_id) REFERENCES entries(id),
+    FOREIGN KEY (etymology_source_id) REFERENCES sources(id)
+);
+
+-- Derivational Morphology
+CREATE TABLE IF NOT EXISTS derivations (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    derived_entry_id INTEGER NOT NULL,
+    base_entry_id INTEGER,
+    
+    -- Derivation process
+    derivation_type TEXT, -- prefixation, suffixation, compounding, etc.
+    affix_used TEXT,
+    semantic_change TEXT,
+    productivity TEXT CHECK (productivity IN ('productive', 'semi-productive', 'lexicalized')),
+    
+    -- Historical notes
+    historical_notes TEXT,
+    
+    FOREIGN KEY (derived_entry_id) REFERENCES entries(id),
+    FOREIGN KEY (base_entry_id) REFERENCES entries(id)
+);
+
+-- =======================
+-- PHONOLOGY TABLES
+-- =======================
+
+-- Phoneme Inventory
+CREATE TABLE IF NOT EXISTS phonemes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    
+    -- Phoneme representation
+    ipa_symbol TEXT NOT NULL UNIQUE,
+    native_orthography TEXT, -- How written in Miami-Illinois
+    phoneme_type TEXT CHECK (phoneme_type IN ('vowel', 'consonant', 'tone', 'stress')),
+    
+    -- Articulatory features (for consonants)
+    manner TEXT, -- stop, fricative, nasal, etc.
+    place TEXT, -- bilabial, alveolar, etc.
+    voicing TEXT CHECK (voicing IN ('voiced', 'voiceless', 'n/a')),
+    
+    -- Vowel features
+    height TEXT, -- high, mid, low
+    backness TEXT, -- front, central, back
+    roundness TEXT CHECK (roundness IN ('rounded', 'unrounded', 'n/a')),
+    length TEXT CHECK (length IN ('short', 'long', 'n/a')),
+    
+    -- Phonological status
+    phonemic_status TEXT CHECK (phonemic_status IN ('phoneme', 'allophone', 'marginal')),
+    frequency TEXT CHECK (frequency IN ('common', 'uncommon', 'rare')),
+    
+    -- Notes
+    allophone_description TEXT,
+    distribution_notes TEXT,
+    historical_development TEXT
+);
+
+-- Phonological Processes
+CREATE TABLE IF NOT EXISTS phonological_processes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    
+    -- Process description
+    process_name TEXT NOT NULL,
+    process_type TEXT, -- assimilation, deletion, insertion, etc.
+    input_context TEXT, -- Phonological environment
+    output_result TEXT,
+    
+    -- Conditions
+    morphological_context TEXT, -- Where it applies
+    lexical_exceptions TEXT,
+    obligatory BOOLEAN DEFAULT TRUE,
+    
+    -- Examples
+    example_input TEXT,
+    example_output TEXT,
+    
+    -- Documentation
+    source_id INTEGER,
+    notes TEXT,
+    
+    FOREIGN KEY (source_id) REFERENCES sources(id)
+);
+
+-- Syllable Structure
+CREATE TABLE IF NOT EXISTS syllable_patterns (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    entry_id INTEGER NOT NULL,
+    
+    -- Syllable breakdown
+    syllable_structure TEXT, -- CV, CVC, etc.
+    syllable_boundaries TEXT, -- With dots or hyphens
+    stress_assignment TEXT,
+    
+    -- Phonotactic constraints
+    onset_clusters TEXT,
+    coda_restrictions TEXT,
+    
+    FOREIGN KEY (entry_id) REFERENCES entries(id)
+);
+
+-- =======================
+-- BIBLIOGRAPHIC TABLES
+-- =======================
+
+-- Sources and References
+CREATE TABLE IF NOT EXISTS sources (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    
+    -- Basic bibliographic info
+    title TEXT NOT NULL,
+    author TEXT,
+    editor TEXT,
+    publication_year INTEGER,
+    publisher TEXT,
+    publication_place TEXT,
+    
+    -- Source details
+    source_type TEXT CHECK (source_type IN ('book', 'article', 'thesis', 'manuscript', 'dictionary', 'grammar', 'fieldwork', 'archive', 'oral')),
+    pages TEXT, -- Page range or total pages
+    volume TEXT,
+    issue TEXT,
+    
+    -- Digital identifiers
+    isbn TEXT,
+    doi TEXT,
+    url TEXT,
+    archive_location TEXT,
+    
+    -- Language documentation specifics
+    consultant_info TEXT, -- Speaker information
+    recording_date TEXT,
+    fieldwork_location TEXT,
+    
+    -- Quality and reliability
+    reliability_rating INTEGER CHECK (reliability_rating BETWEEN 1 AND 5),
+    peer_reviewed BOOLEAN DEFAULT FALSE,
+    primary_source BOOLEAN DEFAULT FALSE,
+    
+    -- Notes
+    notes TEXT,
+    abstract TEXT,
+    
+    -- Metadata
+    added_by TEXT,
+    added_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Entry-Source Links (many-to-many)
+CREATE TABLE IF NOT EXISTS entry_sources (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    entry_id INTEGER NOT NULL,
+    source_id INTEGER NOT NULL,
+    
+    -- Specific citation info
+    page_reference TEXT,
+    confidence_level TEXT CHECK (confidence_level IN ('certain', 'probable', 'questionable')),
+    notes TEXT,
+    
+    FOREIGN KEY (entry_id) REFERENCES entries(id),
+    FOREIGN KEY (source_id) REFERENCES sources(id),
+    UNIQUE(entry_id, source_id)
+);
+
+-- =======================
+-- MORPHOLOGY TABLES
+-- =======================
+
+-- Affix and Morpheme Inventory
+CREATE TABLE IF NOT EXISTS morphemes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    
+    -- Morpheme form
+    morpheme_form TEXT NOT NULL,
+    allomorphs TEXT, -- JSON array of variant forms
+    morpheme_type TEXT CHECK (morpheme_type IN ('root', 'prefix', 'suffix', 'infix', 'circumfix', 'clitic')),
+    
+    -- Semantic/grammatical function
+    grammatical_function TEXT,
+    semantic_meaning TEXT,
+    
+    -- Morphological properties
+    productivity TEXT CHECK (productivity IN ('productive', 'semi-productive', 'lexicalized')),
+    selectional_restrictions TEXT,
+    ordering_constraints TEXT,
+    
+    -- Phonological effects
+    phonological_changes TEXT, -- Changes it causes to stem
+    stress_effects TEXT,
+    
+    -- Historical data
+    etymology TEXT,
+    cognates TEXT,
+    
+    -- Examples
+    example_forms TEXT -- JSON array of examples
+);
+
+-- Inflectional Paradigms
+CREATE TABLE IF NOT EXISTS inflection_paradigms (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    paradigm_name TEXT NOT NULL,
+    pos TEXT NOT NULL,
+    
+    -- Paradigm structure
+    dimensions TEXT, -- JSON: person, number, tense, etc.
+    paradigm_data TEXT, -- JSON: complete paradigm table
+    
+    -- Morphophonological notes
+    stem_changes TEXT,
+    irregular_forms TEXT,
+    
+    -- Usage notes
+    frequency TEXT,
+    register_restrictions TEXT,
+    
+    -- Documentation
+    source_id INTEGER,
+    examples TEXT, -- JSON array
+    
+    FOREIGN KEY (source_id) REFERENCES sources(id)
+);
+
+-- =======================
+-- RAGLITE INTEGRATION
+-- =======================
+
+-- RAGLite Vector Embeddings
+CREATE VIRTUAL TABLE IF NOT EXISTS embeddings USING vec0(
+    document_id TEXT PRIMARY KEY,
+    embedding FLOAT[1024],
+    document_type TEXT, -- 'entry', 'etymology', 'example', etc.
+    content_hash TEXT,
+    metadata TEXT -- JSON metadata
+);
+
+-- Document Chunks for RAG
+CREATE TABLE IF NOT EXISTS document_chunks (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    
+    -- Document reference
+    source_table TEXT NOT NULL, -- Which table the content comes from
+    source_id INTEGER NOT NULL, -- ID in that table
+    
+    -- Chunk data
+    chunk_text TEXT NOT NULL,
+    chunk_type TEXT, -- definition, etymology, example, etc.
+    chunk_size INTEGER,
+    
+    -- Embedding reference
+    embedding_id TEXT,
+    
+    -- Indexing
+    keywords TEXT, -- Space-separated keywords
+    semantic_tags TEXT, -- JSON array of semantic tags
+    
+    -- Metadata
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    
+    FOREIGN KEY (embedding_id) REFERENCES embeddings(document_id)
+);
+
+-- =======================
+-- CLAUDE.AI METADATA
+-- =======================
+
+-- Claude.ai Processing Metadata
+CREATE TABLE IF NOT EXISTS claude_metadata (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    
+    -- Model information
+    model_name TEXT NOT NULL DEFAULT 'claude-sonnet-4',
+    model_version TEXT,
+    api_version TEXT,
+    
+    -- Processing session
+    session_id TEXT,
+    processing_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    
+    -- Task metadata
+    task_type TEXT, -- 'entry_generation', 'etymology_analysis', 'translation', etc.
+    input_data TEXT, -- JSON of input parameters
+    output_data TEXT, -- JSON of results
+    
+    -- Quality metrics
+    confidence_score REAL,
+    processing_time_ms INTEGER,
+    token_count INTEGER,
+    
+    -- Validation
+    human_reviewed BOOLEAN DEFAULT FALSE,
+    validation_status TEXT CHECK (validation_status IN ('pending', 'approved', 'rejected', 'needs_revision')),
+    reviewer_notes TEXT,
+    
+    -- Links to affected records
+    affected_tables TEXT, -- JSON array of table names
+    affected_ids TEXT -- JSON array of record IDs
+);
+
+-- AI-Generated Content Tracking
+CREATE TABLE IF NOT EXISTS ai_contributions (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    
+    -- Content reference
+    table_name TEXT NOT NULL,
+    record_id INTEGER NOT NULL,
+    field_name TEXT NOT NULL,
+    
+    -- AI metadata
+    ai_model TEXT NOT NULL,
+    generation_prompt TEXT,
+    generation_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    
+    -- Content versioning
+    original_content TEXT,
+    ai_content TEXT,
+    final_content TEXT, -- After human review
+    
+    -- Quality assessment
+    human_approved BOOLEAN DEFAULT FALSE,
+    quality_score REAL,
+    reviewer_id TEXT,
+    review_notes TEXT
+);
+
+-- =======================
+-- TRANSLATION MEMORY
+-- =======================
+
+-- Enhanced Translation Memory (TMX compatible)
 CREATE TABLE IF NOT EXISTS translation_memory (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
+    
+    -- Source and target
     source_text TEXT NOT NULL,
     target_text TEXT NOT NULL,
-    source_lang TEXT NOT NULL,
-    target_lang TEXT NOT NULL
+    source_lang TEXT NOT NULL, -- ISO 639-3 codes
+    target_lang TEXT NOT NULL,
+    
+    -- Context and metadata
+    domain TEXT, -- Semantic domain
+    register TEXT, -- Formal/informal/ceremonial
+    context TEXT, -- Surrounding text or situation
+    
+    -- Quality and provenance
+    translation_quality TEXT CHECK (translation_quality IN ('excellent', 'good', 'acceptable', 'poor')),
+    translator_id TEXT,
+    translation_method TEXT, -- human, ai-assisted, machine
+    
+    -- Usage tracking
+    usage_count INTEGER DEFAULT 0,
+    last_used TIMESTAMP,
+    
+    -- Links
+    entry_id INTEGER, -- Link to main entry if applicable
+    source_id INTEGER, -- Bibliographic source
+    
+    -- Timestamps
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    
+    FOREIGN KEY (entry_id) REFERENCES entries(id),
+    FOREIGN KEY (source_id) REFERENCES sources(id)
 );
 
--- OML Metadata Table
+-- =======================
+-- SEMANTIC NETWORKS
+-- =======================
+
+-- Semantic Relations between Entries
+CREATE TABLE IF NOT EXISTS semantic_relations (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    
+    -- Related entries
+    entry1_id INTEGER NOT NULL,
+    entry2_id INTEGER NOT NULL,
+    
+    -- Relation type
+    relation_type TEXT NOT NULL, -- synonym, antonym, hypernym, meronym, etc.
+    relation_strength REAL CHECK (relation_strength BETWEEN 0.0 AND 1.0),
+    
+    -- Directionality
+    bidirectional BOOLEAN DEFAULT TRUE,
+    
+    -- Context
+    semantic_domain TEXT,
+    cultural_context TEXT,
+    
+    -- Source
+    source_id INTEGER,
+    confidence TEXT CHECK (confidence IN ('high', 'medium', 'low')),
+    
+    FOREIGN KEY (entry1_id) REFERENCES entries(id),
+    FOREIGN KEY (entry2_id) REFERENCES entries(id),
+    FOREIGN KEY (source_id) REFERENCES sources(id)
+);
+
+-- =======================
+-- USAGE EXAMPLES
+-- =======================
+
+-- Example Sentences and Usage
+CREATE TABLE IF NOT EXISTS usage_examples (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    entry_id INTEGER NOT NULL,
+    
+    -- Example content
+    miami_text TEXT NOT NULL,
+    english_translation TEXT,
+    french_translation TEXT,
+    
+    -- Linguistic analysis
+    morpheme_breakdown TEXT,
+    grammatical_analysis TEXT,
+    
+    -- Context
+    context_type TEXT, -- conversation, narrative, ceremonial, etc.
+    speaker_info TEXT,
+    elicitation_context TEXT,
+    
+    -- Source
+    source_id INTEGER,
+    audio_file_path TEXT,
+    
+    -- Metadata
+    difficulty_level INTEGER CHECK (difficulty_level BETWEEN 1 AND 5),
+    pedagogical_notes TEXT,
+    
+    FOREIGN KEY (entry_id) REFERENCES entries(id),
+    FOREIGN KEY (source_id) REFERENCES sources(id)
+);
+
+-- =======================
+-- INDEXES FOR PERFORMANCE
+-- =======================
+
+-- Core indexes
+CREATE INDEX IF NOT EXISTS idx_entries_headword ON entries(headword);
+CREATE INDEX IF NOT EXISTS idx_entries_pos ON entries(pos);
+CREATE INDEX IF NOT EXISTS idx_entries_status ON entries(status);
+
+-- Etymology indexes
+CREATE INDEX IF NOT EXISTS idx_etymologies_entry ON etymologies(entry_id);
+CREATE INDEX IF NOT EXISTS idx_etymologies_proto ON etymologies(proto_language);
+
+-- Phoneme indexes
+CREATE INDEX IF NOT EXISTS idx_phonemes_ipa ON phonemes(ipa_symbol);
+CREATE INDEX IF NOT EXISTS idx_phonemes_type ON phonemes(phoneme_type);
+
+-- Source indexes
+CREATE INDEX IF NOT EXISTS idx_sources_type ON sources(source_type);
+CREATE INDEX IF NOT EXISTS idx_sources_year ON sources(publication_year);
+CREATE INDEX IF NOT EXISTS idx_entry_sources_entry ON entry_sources(entry_id);
+CREATE INDEX IF NOT EXISTS idx_entry_sources_source ON entry_sources(source_id);
+
+-- RAGLite indexes
+CREATE INDEX IF NOT EXISTS idx_chunks_type ON document_chunks(chunk_type);
+CREATE INDEX IF NOT EXISTS idx_chunks_source ON document_chunks(source_table, source_id);
+
+-- Claude metadata indexes
+CREATE INDEX IF NOT EXISTS idx_claude_session ON claude_metadata(session_id);
+CREATE INDEX IF NOT EXISTS idx_claude_task ON claude_metadata(task_type);
+CREATE INDEX IF NOT EXISTS idx_ai_contributions_table ON ai_contributions(table_name, record_id);
+
+-- Translation memory indexes
+CREATE INDEX IF NOT EXISTS idx_tm_source_lang ON translation_memory(source_lang);
+CREATE INDEX IF NOT EXISTS idx_tm_target_lang ON translation_memory(target_lang);
+CREATE INDEX IF NOT EXISTS idx_tm_domain ON translation_memory(domain);
+
+-- Semantic relation indexes
+CREATE INDEX IF NOT EXISTS idx_semantic_entry1 ON semantic_relations(entry1_id);
+CREATE INDEX IF NOT EXISTS idx_semantic_entry2 ON semantic_relations(entry2_id);
+CREATE INDEX IF NOT EXISTS idx_semantic_type ON semantic_relations(relation_type);
+
+-- Usage example indexes
+CREATE INDEX IF NOT EXISTS idx_examples_entry ON usage_examples(entry_id);
+CREATE INDEX IF NOT EXISTS idx_examples_type ON usage_examples(context_type);
+
+-- =======================
+-- VIEWS FOR COMMON QUERIES
+-- =======================
+
+-- Complete entry view with all related data
+CREATE VIEW IF NOT EXISTS complete_entries AS
+SELECT 
+    e.*,
+    GROUP_CONCAT(DISTINCT s.title) as sources,
+    GROUP_CONCAT(DISTINCT et.proto_form) as proto_forms,
+    COUNT(DISTINCT ue.id) as example_count
+FROM entries e
+LEFT JOIN entry_sources es ON e.id = es.entry_id
+LEFT JOIN sources s ON es.source_id = s.id
+LEFT JOIN etymologies et ON e.id = et.entry_id
+LEFT JOIN usage_examples ue ON e.id = ue.entry_id
+GROUP BY e.id;
+
+-- Phoneme inventory view
+CREATE VIEW IF NOT EXISTS phoneme_inventory AS
+SELECT 
+    phoneme_type,
+    COUNT(*) as count,
+    GROUP_CONCAT(ipa_symbol, ', ') as symbols
+FROM phonemes 
+WHERE phonemic_status = 'phoneme'
+GROUP BY phoneme_type;
+
+-- =======================
+-- LOCAL AI MODEL INTEGRATION
+-- =======================
+
+-- Ollama Models Configuration
+CREATE TABLE IF NOT EXISTS ollama_models (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    
+    -- Model identification
+    model_name TEXT NOT NULL UNIQUE, -- llama3.2, mistral, qwen2.5, etc.
+    model_tag TEXT, -- latest, 7b, 13b, etc.
+    model_family TEXT, -- llama, mistral, qwen, etc.
+    model_size TEXT, -- 7B, 13B, 70B, etc.
+    
+    -- Capabilities
+    supports_miami_illinois BOOLEAN DEFAULT FALSE,
+    supports_translation BOOLEAN DEFAULT TRUE,
+    supports_embeddings BOOLEAN DEFAULT FALSE,
+    context_length INTEGER, -- Token context window
+    
+    -- Performance metrics
+    tokens_per_second REAL,
+    memory_usage_gb REAL,
+    gpu_memory_required_gb REAL,
+    
+    -- Hardware compatibility
+    requires_gpu BOOLEAN DEFAULT FALSE,
+    supports_nvidia BOOLEAN DEFAULT TRUE,
+    supports_axelera BOOLEAN DEFAULT FALSE,
+    min_ram_gb INTEGER DEFAULT 8,
+    
+    -- Model status
+    is_installed BOOLEAN DEFAULT FALSE,
+    is_active BOOLEAN DEFAULT FALSE,
+    installation_path TEXT,
+    last_used TIMESTAMP,
+    
+    -- Configuration
+    temperature REAL DEFAULT 0.7,
+    top_p REAL DEFAULT 0.9,
+    top_k INTEGER DEFAULT 40,
+    custom_params TEXT, -- JSON of additional parameters
+    
+    -- Performance tracking
+    total_requests INTEGER DEFAULT 0,
+    avg_response_time_ms REAL,
+    success_rate REAL,
+    
+    -- Metadata
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- OML (Open Model Library) Metadata for Public Publishing
 CREATE TABLE IF NOT EXISTS oml_metadata (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
+    
+    -- Model identification
     model_name TEXT NOT NULL,
-    version TEXT,
-    last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    model_version TEXT NOT NULL,
+    model_type TEXT CHECK (model_type IN ('language_model', 'translation_model', 'embedding_model', 'classification_model')),
+    
+    -- Miami-Illinois specific
+    training_data_size INTEGER, -- Number of Miami-Illinois examples
+    vocabulary_size INTEGER,
+    coverage_percentage REAL, -- Percentage of Miami-Illinois vocabulary covered
+    
+    -- Model metadata
+    architecture TEXT, -- transformer, lstm, etc.
+    parameter_count BIGINT,
+    training_steps INTEGER,
+    training_duration_hours REAL,
+    
+    -- Performance metrics
+    bleu_score REAL, -- For translation models
+    perplexity REAL, -- For language models
+    accuracy REAL, -- For classification
+    f1_score REAL,
+    
+    -- Dataset information
+    training_dataset_id TEXT,
+    validation_dataset_id TEXT,
+    test_dataset_id TEXT,
+    
+    -- Licensing and publication
+    license TEXT DEFAULT 'CC-BY-SA-4.0',
+    is_public BOOLEAN DEFAULT FALSE,
+    huggingface_repo TEXT, -- Repository name on HF
+    model_card_url TEXT,
+    
+    -- Technical details
+    required_libraries TEXT, -- JSON array
+    inference_framework TEXT, -- pytorch, tensorflow, onnx
+    quantization_type TEXT, -- int8, int4, fp16, etc.
+    
+    -- Collaboration
+    contributors TEXT, -- JSON array of contributor names
+    acknowledgments TEXT,
+    funding_sources TEXT,
+    
+    -- Timestamps
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    published_at TIMESTAMP
 );
+
+-- Hardware Configuration and Performance
+CREATE TABLE IF NOT EXISTS hardware_config (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    
+    -- System identification
+    system_name TEXT NOT NULL,
+    hostname TEXT,
+    
+    -- GPU Configuration
+    gpu_count INTEGER DEFAULT 0,
+    gpu_models TEXT, -- JSON array of GPU model names
+    total_gpu_memory_gb REAL,
+    nvidia_driver_version TEXT,
+    cuda_version TEXT,
+    
+    -- Axelera AI Configuration
+    axelera_chips INTEGER DEFAULT 0,
+    axelera_model TEXT, -- M.2 accelerator model
+    axelera_memory_gb REAL,
+    axelera_driver_version TEXT,
+    
+    -- System specs
+    cpu_model TEXT,
+    cpu_cores INTEGER,
+    system_ram_gb REAL,
+    storage_type TEXT, -- SSD, NVMe, etc.
+    
+    -- Performance benchmarks
+    inference_benchmark_score REAL,
+    training_benchmark_score REAL,
+    memory_bandwidth_gbps REAL,
+    
+    -- Status
+    is_active BOOLEAN DEFAULT TRUE,
+    last_benchmark_date TIMESTAMP,
+    
+    -- Notes
+    configuration_notes TEXT,
+    optimization_flags TEXT,
+    
+    FOREIGN KEY (id) REFERENCES ollama_models(id)
+);
+
+-- =======================
+-- WEBLATE INTEGRATION
+-- =======================
+
+-- Weblate Projects and Components
+CREATE TABLE IF NOT EXISTS weblate_projects (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    
+    -- Project identification
+    weblate_project_id TEXT NOT NULL UNIQUE,
+    project_name TEXT NOT NULL,
+    project_slug TEXT NOT NULL,
+    
+    -- Language configuration
+    source_language TEXT DEFAULT 'en', -- ISO 639-1
+    target_languages TEXT, -- JSON array of target languages
+    
+    -- Component mapping
+    component_name TEXT,
+    component_slug TEXT,
+    file_format TEXT, -- po, json, xliff, etc.
+    
+    -- Integration settings
+    repository_url TEXT,
+    branch_name TEXT DEFAULT 'main',
+    file_mask TEXT, -- File pattern for translations
+    
+    -- Workflow configuration
+    auto_accept_suggestions BOOLEAN DEFAULT FALSE,
+    require_review BOOLEAN DEFAULT TRUE,
+    enable_machine_translation BOOLEAN DEFAULT TRUE,
+    
+    -- Status
+    is_active BOOLEAN DEFAULT TRUE,
+    last_sync TIMESTAMP,
+    sync_status TEXT CHECK (sync_status IN ('success', 'pending', 'failed')),
+    
+    -- Statistics
+    total_strings INTEGER DEFAULT 0,
+    translated_strings INTEGER DEFAULT 0,
+    approved_strings INTEGER DEFAULT 0,
+    
+    -- Metadata
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Translation Workflow States
+CREATE TABLE IF NOT EXISTS translation_workflow (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    
+    -- Source reference
+    entry_id INTEGER,
+    translation_memory_id INTEGER,
+    
+    -- Weblate integration
+    weblate_unit_id TEXT,
+    weblate_project_id INTEGER,
+    
+    -- Translation states
+    source_text TEXT NOT NULL,
+    current_translation TEXT,
+    
+    -- Workflow status
+    workflow_state TEXT CHECK (workflow_state IN ('new', 'needs_editing', 'translated', 'reviewed', 'approved', 'rejected')) DEFAULT 'new',
+    priority TEXT CHECK (priority IN ('low', 'normal', 'high', 'urgent')) DEFAULT 'normal',
+    
+    -- Assignment
+    assigned_translator TEXT,
+    assigned_reviewer TEXT,
+    
+    -- Quality metrics
+    translation_confidence REAL,
+    fuzzy_match_score REAL,
+    machine_translation_score REAL,
+    
+    -- Timestamps
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    translated_at TIMESTAMP,
+    reviewed_at TIMESTAMP,
+    approved_at TIMESTAMP,
+    
+    -- Comments and notes
+    translator_notes TEXT,
+    reviewer_notes TEXT,
+    context_notes TEXT,
+    
+    FOREIGN KEY (entry_id) REFERENCES entries(id),
+    FOREIGN KEY (translation_memory_id) REFERENCES translation_memory(id),
+    FOREIGN KEY (weblate_project_id) REFERENCES weblate_projects(id)
+);
+
+-- =======================
+-- ENHANCED SPELLING RULES
+-- =======================
+
+-- Comprehensive Affix Rules (Miami-Illinois Spelling System)
+CREATE TABLE IF NOT EXISTS affix_rules (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    
+    -- Rule identification
+    rule_name TEXT NOT NULL,
+    rule_type TEXT CHECK (rule_type IN ('prefix', 'suffix', 'infix', 'stem_change', 'phonological')) NOT NULL,
+    rule_category TEXT, -- inflection, derivation, phonological, etc.
+    
+    -- Affix details
+    affix_form TEXT, -- The actual affix
+    allomorphs TEXT, -- JSON array of variant forms
+    orthographic_variants TEXT, -- Different spelling representations
+    
+    -- Phonological context
+    phonological_environment TEXT, -- Where the rule applies
+    preceding_context TEXT, -- What comes before
+    following_context TEXT, -- What comes after
+    
+    -- Morphological conditions
+    applies_to_pos TEXT, -- Part of speech it applies to
+    stem_class_restrictions TEXT, -- Animate/inanimate, etc.
+    semantic_restrictions TEXT,
+    
+    -- Rule operation
+    input_pattern TEXT, -- Regex pattern for input
+    output_pattern TEXT, -- Replacement pattern
+    deletion_pattern TEXT, -- What to delete
+    insertion_pattern TEXT, -- What to insert
+    
+    -- Aspell/Hunspell compatibility
+    aspell_flag TEXT, -- Single character flag
+    hunspell_flag TEXT, -- Hunspell flag code
+    aspell_conditions TEXT, -- Aspell condition string
+    hunspell_conditions TEXT, -- Hunspell condition string
+    
+    -- Rule properties
+    productivity TEXT CHECK (productivity IN ('productive', 'semi-productive', 'irregular', 'suppletive')) DEFAULT 'productive',
+    frequency TEXT CHECK (frequency IN ('common', 'uncommon', 'rare', 'archaic')) DEFAULT 'common',
+    obligatory BOOLEAN DEFAULT TRUE,
+    
+    -- Exceptions and notes
+    exceptions TEXT, -- JSON array of exception words
+    irregular_forms TEXT, -- JSON array of irregular applications
+    historical_notes TEXT,
+    usage_notes TEXT,
+    
+    -- Examples
+    example_base_forms TEXT, -- JSON array of base forms
+    example_inflected_forms TEXT, -- JSON array of resulting forms
+    example_sentences TEXT, -- JSON array of usage examples
+    
+    -- Ordering and priority
+    rule_order INTEGER, -- Order of application
+    priority INTEGER DEFAULT 50, -- Higher numbers = higher priority
+    conflicts_with TEXT, -- JSON array of conflicting rule IDs
+    
+    -- Source and validation
+    source_id INTEGER,
+    confidence_level TEXT CHECK (confidence_level IN ('certain', 'probable', 'tentative', 'experimental')) DEFAULT 'probable',
+    validation_status TEXT CHECK (validation_status IN ('validated', 'needs_testing', 'deprecated')) DEFAULT 'needs_testing',
+    
+    -- Statistics
+    corpus_frequency INTEGER DEFAULT 0,
+    accuracy_rate REAL, -- Success rate in spell checking
+    false_positive_rate REAL,
+    
+    -- Metadata
+    created_by TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    
+    FOREIGN KEY (source_id) REFERENCES sources(id)
+);
+
+-- Spell Check Results and Corrections
+CREATE TABLE IF NOT EXISTS spell_check_log (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    
+    -- Input text
+    original_text TEXT NOT NULL,
+    corrected_text TEXT,
+    
+    -- Spell checking details
+    words_checked INTEGER,
+    errors_found INTEGER,
+    corrections_applied INTEGER,
+    
+    -- Rules applied
+    rules_triggered TEXT, -- JSON array of rule IDs that fired
+    suggestions_generated TEXT, -- JSON array of suggestions
+    
+    -- User interaction
+    user_accepted_corrections TEXT, -- JSON array of accepted suggestions
+    user_rejected_corrections TEXT, -- JSON array of rejected suggestions
+    user_custom_corrections TEXT, -- JSON array of user's own corrections
+    
+    -- Performance metrics
+    processing_time_ms INTEGER,
+    confidence_scores TEXT, -- JSON array of confidence per suggestion
+    
+    -- Context
+    context_type TEXT, -- document_type, user_input, etc.
+    user_id TEXT,
+    session_id TEXT,
+    
+    -- Feedback for improvement
+    feedback_provided BOOLEAN DEFAULT FALSE,
+    feedback_text TEXT,
+    correction_quality_rating INTEGER CHECK (correction_quality_rating BETWEEN 1 AND 5),
+    
+    -- Timestamps
+    checked_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Morphological Analysis Cache
+CREATE TABLE IF NOT EXISTS morphological_analysis (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    
+    -- Word form
+    surface_form TEXT NOT NULL UNIQUE,
+    normalized_form TEXT,
+    
+    -- Analysis results
+    morphemes TEXT, -- JSON array of morpheme breakdown
+    pos_tags TEXT, -- JSON array of possible POS tags
+    grammatical_features TEXT, -- JSON of features (person, number, etc.)
+    
+    -- Possible analyses (for ambiguous forms)
+    analyses TEXT, -- JSON array of all possible analyses
+    preferred_analysis INTEGER, -- Index of preferred analysis
+    
+    -- Generation rules
+    generation_rules TEXT, -- JSON array of rules used to generate this form
+    base_form_id INTEGER, -- Link to entries table if available
+    
+    -- Validation
+    human_verified BOOLEAN DEFAULT FALSE,
+    confidence_score REAL,
+    ambiguity_score REAL, -- How many analyses are possible
+    
+    -- Usage statistics
+    frequency_rank INTEGER,
+    corpus_count INTEGER DEFAULT 0,
+    last_seen TIMESTAMP,
+    
+    -- Cache metadata
+    analysis_version TEXT, -- Version of analyzer used
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    
+    FOREIGN KEY (base_form_id) REFERENCES entries(id)
+);
+
+-- =======================
+-- EXPORT AND INTEGRATION
+-- =======================
+
+-- Export Configurations
+CREATE TABLE IF NOT EXISTS export_configs (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    
+    -- Export target
+    export_name TEXT NOT NULL,
+    export_type TEXT CHECK (export_type IN ('claude_ai', 'huggingface', 'libretranslate', 'open_dataset', 'tmx', 'po', 'json', 'xml')) NOT NULL,
+    
+    -- Target platform settings
+    platform_url TEXT,
+    api_endpoint TEXT,
+    authentication_method TEXT, -- api_key, oauth, basic_auth
+    credentials_id TEXT, -- Reference to secure credential storage
+    
+    -- Export filters
+    include_tables TEXT, -- JSON array of table names to include
+    exclude_tables TEXT, -- JSON array of table names to exclude
+    data_filters TEXT, -- JSON of WHERE clause conditions
+    quality_threshold REAL, -- Minimum quality score for inclusion
+    
+    -- Format settings
+    output_format TEXT, -- Specific format configuration
+    encoding TEXT DEFAULT 'UTF-8',
+    compression TEXT, -- none, gzip, zip
+    
+    -- Scheduling
+    export_schedule TEXT, -- Cron-like schedule expression
+    auto_export BOOLEAN DEFAULT FALSE,
+    last_export TIMESTAMP,
+    next_export TIMESTAMP,
+    
+    -- Validation
+    validate_before_export BOOLEAN DEFAULT TRUE,
+    validation_rules TEXT, -- JSON array of validation checks
+    
+    -- Statistics
+    total_exports INTEGER DEFAULT 0,
+    successful_exports INTEGER DEFAULT 0,
+    last_export_size_mb REAL,
+    
+    -- Metadata
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Export History and Logs
+CREATE TABLE IF NOT EXISTS export_history (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    
+    -- Export reference
+    export_config_id INTEGER NOT NULL,
+    
+    -- Export details
+    export_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    export_status TEXT CHECK (export_status IN ('started', 'in_progress', 'completed', 'failed', 'cancelled')) DEFAULT 'started',
+    
+    -- Data exported
+    records_exported INTEGER DEFAULT 0,
+    tables_exported TEXT, -- JSON array of exported table names
+    export_file_path TEXT,
+    export_file_size_mb REAL,
+    
+    -- Performance
+    processing_time_seconds REAL,
+    validation_time_seconds REAL,
+    upload_time_seconds REAL,
+    
+    -- Results
+    validation_results TEXT, -- JSON of validation check results
+    error_messages TEXT, -- JSON array of any errors
+    warnings TEXT, -- JSON array of warnings
+    
+    -- Target platform response
+    platform_response TEXT, -- Response from target platform
+    external_id TEXT, -- ID assigned by external platform
+    public_url TEXT, -- Public URL if applicable
+    
+    -- Quality metrics
+    data_quality_score REAL,
+    completeness_percentage REAL,
+    
+    FOREIGN KEY (export_config_id) REFERENCES export_configs(id)
+);
+
+-- LibreTranslate Integration
+CREATE TABLE IF NOT EXISTS libretranslate_config (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    
+    -- Server configuration
+    server_url TEXT NOT NULL DEFAULT 'http://localhost:5000',
+    api_key TEXT,
+    
+    -- Language support
+    supported_languages TEXT, -- JSON array of supported language codes
+    miami_illinois_supported BOOLEAN DEFAULT FALSE,
+    custom_model_path TEXT, -- Path to custom Miami-Illinois model
+    
+    -- Translation settings
+    default_source_lang TEXT DEFAULT 'mia',
+    default_target_lang TEXT DEFAULT 'en',
+    confidence_threshold REAL DEFAULT 0.7,
+    
+    -- Performance settings
+    batch_size INTEGER DEFAULT 10,
+    timeout_seconds INTEGER DEFAULT 30,
+    max_retries INTEGER DEFAULT 3,
+    
+    -- Quality control
+    enable_quality_estimation BOOLEAN DEFAULT TRUE,
+    enable_post_editing BOOLEAN DEFAULT TRUE,
+    
+    -- Status
+    is_active BOOLEAN DEFAULT TRUE,
+    last_health_check TIMESTAMP,
+    health_status TEXT CHECK (health_status IN ('healthy', 'degraded', 'unavailable')),
+    
+    -- Statistics
+    total_translations INTEGER DEFAULT 0,
+    successful_translations INTEGER DEFAULT 0,
+    avg_response_time_ms REAL,
+    
+    -- Metadata
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- =======================
+-- ADDITIONAL INDEXES
+-- =======================
+
+-- Ollama and hardware indexes
+CREATE INDEX IF NOT EXISTS idx_ollama_family ON ollama_models(model_family);
+CREATE INDEX IF NOT EXISTS idx_ollama_active ON ollama_models(is_active);
+CREATE INDEX IF NOT EXISTS idx_hardware_gpu ON hardware_config(gpu_count);
+
+-- Weblate indexes
+CREATE INDEX IF NOT EXISTS idx_weblate_project ON weblate_projects(weblate_project_id);
+CREATE INDEX IF NOT EXISTS idx_workflow_state ON translation_workflow(workflow_state);
+CREATE INDEX IF NOT EXISTS idx_workflow_priority ON translation_workflow(priority);
+
+-- Spelling rule indexes
+CREATE INDEX IF NOT EXISTS idx_affix_type ON affix_rules(rule_type);
+CREATE INDEX IF NOT EXISTS idx_affix_pos ON affix_rules(applies_to_pos);
+CREATE INDEX IF NOT EXISTS idx_affix_productivity ON affix_rules(productivity);
+CREATE INDEX IF NOT EXISTS idx_affix_order ON affix_rules(rule_order);
+CREATE INDEX IF NOT EXISTS idx_morph_surface ON morphological_analysis(surface_form);
+CREATE INDEX IF NOT EXISTS idx_spell_check_date ON spell_check_log(checked_at);
+
+-- Export indexes
+CREATE INDEX IF NOT EXISTS idx_export_type ON export_configs(export_type);
+CREATE INDEX IF NOT EXISTS idx_export_schedule ON export_configs(auto_export, next_export);
+CREATE INDEX IF NOT EXISTS idx_export_history_config ON export_history(export_config_id);
+CREATE INDEX IF NOT EXISTS idx_export_history_status ON export_history(export_status);
+
+-- LibreTranslate indexes
+CREATE INDEX IF NOT EXISTS idx_libretranslate_active ON libretranslate_config(is_active);
+
+-- =======================
+-- TRIGGERS FOR DATA INTEGRITY
+-- =======================
+
+-- Update timestamps
+CREATE TRIGGER IF NOT EXISTS update_entries_timestamp 
+AFTER UPDATE ON entries
+BEGIN
+    UPDATE entries SET updated_at = CURRENT_TIMESTAMP WHERE id = NEW.id;
+END;
+
+CREATE TRIGGER IF NOT EXISTS update_tm_timestamp 
+AFTER UPDATE ON translation_memory
+BEGIN
+    UPDATE translation_memory SET updated_at = CURRENT_TIMESTAMP WHERE id = NEW.id;
+END;
+
+CREATE TRIGGER IF NOT EXISTS update_ollama_timestamp 
+AFTER UPDATE ON ollama_models
+BEGIN
+    UPDATE ollama_models SET updated_at = CURRENT_TIMESTAMP WHERE id = NEW.id;
+END;
+
+CREATE TRIGGER IF NOT EXISTS update_affix_timestamp 
+AFTER UPDATE ON affix_rules
+BEGIN
+    UPDATE affix_rules SET updated_at = CURRENT_TIMESTAMP WHERE id = NEW.id;
+END;
+
+CREATE TRIGGER IF NOT EXISTS update_morph_timestamp 
+AFTER UPDATE ON morphological_analysis
+BEGIN
+    UPDATE morphological_analysis SET updated_at = CURRENT_TIMESTAMP WHERE id = NEW.id;
+END;
+
+-- Increment usage count in translation memory
+CREATE TRIGGER IF NOT EXISTS increment_tm_usage
+AFTER INSERT ON translation_memory
+BEGIN
+    UPDATE translation_memory 
+    SET usage_count = usage_count + 1, last_used = CURRENT_TIMESTAMP 
+    WHERE id = NEW.id;
+END;
+
+-- Update model usage statistics
+CREATE TRIGGER IF NOT EXISTS update_ollama_stats
+AFTER INSERT ON claude_metadata
+BEGIN
+    UPDATE ollama_models 
+    SET total_requests = total_requests + 1, last_used = CURRENT_TIMESTAMP 
+    WHERE model_name = NEW.model_name;
+END;
