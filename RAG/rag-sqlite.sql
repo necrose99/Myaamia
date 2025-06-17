@@ -1422,3 +1422,18 @@ INSERT OR IGNORE INTO languages (iso_639_3_code, bcp_47_tag, language_name_en, l
 ('sac', 'sac-US', 'Meskwaki', 'Algic', 'Meskwaki (Fox, Sauk) language, primarily US usage.'),
 ('ciw', 'ciw-US', 'Chippewa', 'Algic', 'Chippewa (Ojibwe) language, specifically US usage.'), -- Use 'ciw' for US Ojibwe dialects
 ('crk', 'crk-US', 'Plains Cree', 'Algic', 'Plains Cree language, primarily US usage/border regions.'); -- Example Cree dialect for US
+
+
+-- Translation pairs (aligned for ChatGPT or TMX export)
+CREATE TABLE IF NOT EXISTS translations (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    source_lang TEXT NOT NULL,
+    target_lang TEXT NOT NULL,
+    source_text TEXT NOT NULL,
+    target_text TEXT NOT NULL,
+    alignment_note TEXT,         -- e.g. exact, inferred, gloss, etc.
+    domain TEXT,                 -- e.g. ceremonial, conversational, botanical
+    context TEXT,                -- optional free text or usage info
+    source_ref TEXT,             -- shortref to corpus_sources
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
