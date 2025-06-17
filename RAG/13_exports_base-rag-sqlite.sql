@@ -1,4 +1,4 @@
-13_exports_base-rag-sqlite.sql
+--13_exports_base-rag-sqlite.sql
 -- Output export tables and views for TMX, GPT, HuggingFace JSONL etc.
 CREATE TABLE IF NOT EXISTS translations (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
