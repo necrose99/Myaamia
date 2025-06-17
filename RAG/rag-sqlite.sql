@@ -236,36 +236,7 @@ CREATE TABLE IF NOT EXISTS document_chunks (
     FOREIGN KEY (embedding_id) REFERENCES embeddings(document_id)
 );
 
--- =======================
--- CLAUDE.AI METADATA
--- =======================
 
-
--- AI-Generated Content Tracking
-CREATE TABLE IF NOT EXISTS ai_contributions (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    
-    -- Content reference
-    table_name TEXT NOT NULL,
-    record_id INTEGER NOT NULL,
-    field_name TEXT NOT NULL,
-    
-    -- AI metadata
-    ai_model TEXT NOT NULL,
-    generation_prompt TEXT,
-    generation_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    
-    -- Content versioning
-    original_content TEXT,
-    ai_content TEXT,
-    final_content TEXT, -- After human review
-    
-    -- Quality assessment
-    human_approved BOOLEAN DEFAULT FALSE,
-    quality_score REAL,
-    reviewer_id TEXT,
-    review_notes TEXT
-);
 
 -- =======================
 -- TRANSLATION MEMORY
