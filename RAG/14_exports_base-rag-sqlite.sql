@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS export_configs (
     
     -- Export target
     export_name TEXT NOT NULL,
-    export_type TEXT CHECK (export_type IN ('claude_ai', 'huggingface', 'libretranslate', 'open_dataset', 'tmx', 'po', 'json', 'xml')) NOT NULL,
+    export_type TEXT CHECK (export_type IN ('claude_ai', 'huggingface', 'libretranslate', 'open_dataset', 'tmx', 'po', 'json', 'xml' 'aff' 'dic' )) NOT NULL,
     
     -- Target platform settings
     platform_url TEXT,
