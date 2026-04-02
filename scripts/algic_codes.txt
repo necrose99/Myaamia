@@ -1,0 +1,24 @@
+pa:Proto-Algonquian
+mia:Myaamia
+pot:Potawatomi
+oji:Ojibwe
+cre:Cree
+atj:Atikamekw
+skw:Skwxwu7mesh
+sac:Meskwaki (Fox)
+kic:Kickapoo
+sha:Shawnee
+arp:Arapaho
+ats:Gros Ventre
+chy:Cheyenne
+bla:Blackfoot
+mic:Mi'kmaq
+abe:Abenaki
+mal:Maliseet-Passamaquoddy
+moo:Mohegan-Pequot
+ntc:Nanticoke
+poh:Powhatan
+mun:Munsee
+unm:Unami
+wiy:Wiyot
+yur:Yurok
