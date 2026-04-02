@@ -378,3 +378,14 @@ PFX op3 aweeya . (Somebody)
 PFX op4 Y 1
 PFX op4 moohci aweeya . (Nobody)
 
+# Define Number Flags
+# N = Ones, T = Tens, H = Hundreds
+COMPOUNDRULE 3
+COMPOUNDRULE (H)(T)(N)
+COMPOUNDRULE (H)(N)
+COMPOUNDRULE (T)(N)
+
+# Example Entries in MIA_US-Myaamia.dic:
+# nkotwaahkwe/H
+# niišwi_mateeni/T
+# yaalanwi/N
