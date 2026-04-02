@@ -3,55 +3,65 @@ import glob
 import os
 import datetime
 
-def concatenate_tmx(input_folder, output_file):
-    # 1. Setup Master TMX Root
+def merge_tmx_shards(input_folder, output_file):
+    # 1. Setup Master TMX Structure
     master_tmx = ET.Element("tmx", version="1.4")
     header = ET.SubElement(master_tmx, "header", {
-        "creationtool": "Algic-Concatenator",
-        "creationtoolversion": "1.0",
+        "creationtool": "Algic-Merge-Master",
+        "creationtoolversion": "2.0",
         "segtype": "phrase",
         "adminlang": "en-US",
         "srclang": "en-US",
-        "datatype": "PlainText",
-        "creationdate": datetime.datetime.now().strftime("%Y%m%dT%H%M%SZ")
+        "datatype": "PlainText"
     })
     body = ET.SubElement(master_tmx, "body")
 
-    # 2. Track UIDs to prevent duplicates
-    seen_tuids = set()
-    total_files = 0
+    # 2. Storage for Merging: { "English Segment": TU_Element }
+    master_map = {}
 
-    # 3. Iterate through all .tmx files in the folder
+    # Namespace handling
+    ns = {'xml': 'http://www.w3.org/XML/1998/namespace'}
+
     for tmx_file in glob.glob(os.path.join(input_folder, "*.tmx")):
         if os.path.abspath(tmx_file) == os.path.abspath(output_file):
             continue
             
-        print(f"📦 Processing {tmx_file}...")
+        print(f"🔗 Merging shard: {tmx_file}")
         tree = ET.parse(tmx_file)
-        root = tree.getroot()
         
-        for tu in root.findall(".//tu"):
-            tuid = tu.get("tuid")
+        for tu in tree.findall(".//tu"):
+            # Find the English Source segment to use as a Key
+            en_seg_el = tu.find(".//tuv[@xml:lang='en-US']/seg", ns)
+            if en_seg_el is None or not en_seg_el.text:
+                continue
             
-            # If TUID is missing or duplicate, generate a unique one
-            if not tuid or tuid in seen_tuids:
-                tuid = f"gen_{datetime.datetime.now().microsecond}_{len(seen_tuids)}"
-                tu.set("tuid", tuid)
-            
-            seen_tuids.add(tuid)
-            body.append(tu)
-        
-        total_files += 1
+            en_key = en_seg_el.text.strip()
 
-    # 4. Write Master File
+            if en_key not in master_map:
+                # First time seeing this concept, add the whole TU
+                new_tu = ET.Element("tu", tuid=f"alg_{len(master_map):05d}")
+                # Copy existing TUVs
+                for tuv in tu.findall("tuv"):
+                    new_tu.append(tuv)
+                master_map[en_key] = new_tu
+                body.append(new_tu)
+            else:
+                # Concept exists, merge new language variants (TUVs) into it
+                existing_tu = master_map[en_key]
+                existing_langs = [tuv.get(f"{{{ns['xml']}}}lang") for tuv in existing_tu.findall("tuv")]
+                
+                for tuv in tu.findall("tuv"):
+                    lang = tuv.get(f"{{{ns['xml']}}}lang")
+                    if lang not in existing_langs:
+                        existing_tu.append(tuv)
+
+    # 3. Save the Master TMX
     tree = ET.ElementTree(master_tmx)
-    ET.indent(tree, space="  ", level=0) # Pretty print
+    ET.indent(tree, space="  ", level=0)
     tree.write(output_file, encoding="utf-8", xml_declaration=True)
     
-    print(f"\n✅ Concatenation Complete!")
-    print(f"📁 Merged {total_files} files into {output_file}")
-    print(f"🔢 Total Translation Units: {len(seen_tuids)}")
+    print(f"\n✅ Master Merge Complete: {output_file}")
+    print(f"📊 Total Unique Concepts (Rows): {len(master_map)}")
 
 if __name__ == "__main__":
-    # Create an 'imports' folder and dump your TMX files there
-    concatenate_tmx('imports/', 'Algic_Master.tmx')
+    merge_tmx_shards('imports/', 'Algic_Master.tmx')
