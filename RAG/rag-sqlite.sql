@@ -1095,3 +1095,31 @@ CREATE TABLE IF NOT EXISTS translations (
     source_ref TEXT,             -- shortref to corpus_sources
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+import sqlite3
+
+def latin_to_notes_migration(db_path):
+    conn = sqlite3.connect(db_path)
+    cur = conn.cursor()
+    
+    # 1. Update notes to include Latin if it's currently in a separate 'scientific' column
+    # This prevents the AI from 'hallucinating' Latin as a Myaamia word.
+    cur.execute("""
+        UPDATE TranslationUnits 
+        SET notes = notes || ' | Latin: ' || scientific_name
+        WHERE scientific_name IS NOT NULL;
+    """)
+    
+    # 2. Identify entries for Little Turtle's home (Briarpatch/Eel River)
+    # Using 'Kineepikomeehkwa' as the filter for the Soil layer.
+    cur.execute("""
+        UPDATE TranslationUnits
+        SET notes = notes || ' [LOC: Eel River / Mihšihkinaahkwa Home]'
+        WHERE mia_text LIKE '%kineepiko%';
+    """)
+    
+    conn.commit()
+    print("✅ Latin migrated to Notes. Geo-tags applied to Eel River shards.")
+
+if __name__ == "__main__":
+    latin_to_notes_migration('tmxdb.sqlite')
