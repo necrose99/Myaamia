@@ -2,22 +2,19 @@ import xml.etree.ElementTree as ET
 from xml.dom import minidom
 import datetime
 
-def generate_algic_tmx(wordlist_path, codes_path, output_tmx):
-    # 1. Load Language Codes
-    langs = {}
-    with open(codes_path, 'r') as f:
-        for line in f:
-            if ':' in line:
-                code, name = line.strip().split(':')
-                langs[code] = name
+# The list of Algic ISO/Gothenburg codes
+algic_codes = [
+    "bft", "arp", "ats", "chy", "men", "cre", "csw", "crj", "atj", 
+    "pot", "oji", "otw", "ciw", "mia", "sac", "kic", "sha", "mic", 
+    "abe", "aaq", "mal", "moo", "mua", "unm", "alg-x-proto"
+]
 
-    # 2. Create TMX Root
+def create_empty_algic_tmx(output_file, num_entries=10):
     tmx = ET.Element("tmx", version="1.4")
     header = ET.SubElement(tmx, "header", {
-        "creationtool": "Ollama-Algic-Bot",
+        "creationtool": "Ollama-Dispatcher-Bot",
         "creationtoolversion": "1.0",
         "segtype": "phrase",
-        "o-tmf": "Myaamia-RAG",
         "adminlang": "en",
         "srclang": "en",
         "datatype": "PlainText",
@@ -25,37 +22,23 @@ def generate_algic_tmx(wordlist_path, codes_path, output_tmx):
     })
     body = ET.SubElement(tmx, "body")
 
-    # 3. Process Wordlist (Assuming: English \t Myaamia)
-    with open(wordlist_path, 'r') as f:
-        for i, line in enumerate(f):
-            parts = line.strip().split('\t')
-            if len(parts) < 2: continue
-            
-            eng_val, mia_val = parts[0], parts[1]
-            
-            # Create Translation Unit (TU)
-            tu = ET.SubElement(body, "tu", tuid=f"idx_{i:04d}")
-            
-            # English Variant
-            tuv_en = ET.SubElement(tu, "tuv", {"xml:lang": "en"})
-            ET.SubElement(tuv_en, "seg").text = eng_val
-            
-            # Myaamia Variant (Target Weight 1)
-            tuv_mia = ET.SubElement(tu, "tuv", {"xml:lang": "mia"})
-            ET.SubElement(tuv_mia, "seg").text = mia_val
+    for i in range(num_entries):
+        tu = ET.SubElement(body, "tu", tuid=f"algic_unit_{i:04d}")
+        
+        # Source Language (English)
+        tuv_en = ET.SubElement(tu, "tuv", {"xml:lang": "en"})
+        ET.SubElement(tuv_en, "seg").text = f"[Source Text {i}]"
+        
+        # All Algic Targets (Empty for Weblate/Ollama to fill)
+        for code in algic_codes:
+            tuv = ET.SubElement(tu, "tuv", {"xml:lang": code})
+            ET.SubElement(tuv, "seg").text = ""
 
-            # 4. Generate Skeleton for remaining Algic Cousins
-            for code in langs:
-                if code not in ['en', 'mia']:
-                    tuv_cousin = ET.SubElement(tu, "tuv", {"xml:lang": code})
-                    # Leaves an empty segment for Ollama to fill during idle time
-                    ET.SubElement(tuv_cousin, "seg").text = ""
-
-    # 5. Pretty Print and Save
+    # Pretty print for GitHub/Git readability
     xml_str = minidom.parseString(ET.tostring(tmx)).toprettyxml(indent="  ")
-    with open(output_tmx, "w", encoding="utf-8") as f:
+    with open(output_file, "w", encoding="utf-8") as f:
         f.write(xml_str)
 
 if __name__ == "__main__":
-    generate_algic_tmx('Word-List-Dictionary-ILDA.txt', 'algic_codes.txt', 'Algic.tmx')
-    print("🚀 Algic.tmx generated with 45+ language variants.")
+    create_empty_algic_tmx("Algic_Skeleton.tmx", num_entries=50)
+    print("✅ Created Algic.tmx with 25 codes (expandable to 45). Ready for Weblate.")
