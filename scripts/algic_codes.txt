@@ -1,24 +1,29 @@
-pa:Proto-Algonquian
-mia:Myaamia
-pot:Potawatomi
-oji:Ojibwe
-cre:Cree
-atj:Atikamekw
-skw:Skwxwu7mesh
-sac:Meskwaki (Fox)
-kic:Kickapoo
-sha:Shawnee
+# Plains
+bft:Blackfoot
 arp:Arapaho
 ats:Gros Ventre
 chy:Cheyenne
-bla:Blackfoot
+# Central
+men:Menominee
+cre:Cree
+csw:Swampy Cree
+crj:Southern East Cree
+atj:Atikamekw
+pot:Potawatomi
+oji:Ojibwe
+otw:Ottawa
+ciw:Chippewa
+mia:Miami-Illinois
+sac:Meskwaki (Fox)
+kic:Kickapoo
+sha:Shawnee
+# Eastern
 mic:Mi'kmaq
-abe:Abenaki
+abe:Western Abenaki
+aaq:Eastern Abnaki
 mal:Maliseet-Passamaquoddy
 moo:Mohegan-Pequot
-ntc:Nanticoke
-poh:Powhatan
-mun:Munsee
+mua:Munsee
 unm:Unami
-wiy:Wiyot
-yur:Yurok
+# Proto-Language
+alg-x-proto:Proto-Algonquian
