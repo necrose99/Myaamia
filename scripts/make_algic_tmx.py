@@ -1,44 +1,63 @@
+# Unified Algic Language Codes (ISO 639-3 + Atlas/Gothenburg variants)
+algic_array = [
+    # Reconstructed / Proto
+    "alg-x-proto", # Proto-Algonquian (PA)
+    
+    # Plains Branch
+    "bla", "arp", "ats", "chy", "bft",
+    
+    # Central Branch (Great Lakes / Shield)
+    "men", "cre", "csw", "crj", "atj", "nsk", "moos", "crm", 
+    "pot", "oji", "otw", "ciw", "alq", "ojb", "ojg", "ojs", 
+    "mia", "sac", "kic", "sha",
+    
+    # Eastern Branch (Maritime / New England / Atlantic)
+    "mic", "abe", "aaq", "mal", "moo", "mua", "unm", "wamp",
+    "mas", "nrn", "qpi", "nnt", "pow", "pmk", "psk", "mjy",
+    
+    # Ritwan (California "Cousins")
+    "wiy", "yur",
+    
+    # External Reference
+    "en-US"
+]
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 import datetime
 
-# The list of Algic ISO/Gothenburg codes
-algic_codes = [
-    "bft", "arp", "ats", "chy", "men", "cre", "csw", "crj", "atj", 
-    "pot", "oji", "otw", "ciw", "mia", "sac", "kic", "sha", "mic", 
-    "abe", "aaq", "mal", "moo", "mua", "unm", "alg-x-proto"
-]
-
-def create_empty_algic_tmx(output_file, num_entries=10):
+def make_algic_tmx_skeleton(filename, entries=10):
+    # Setup TMX Structure
     tmx = ET.Element("tmx", version="1.4")
     header = ET.SubElement(tmx, "header", {
-        "creationtool": "Ollama-Dispatcher-Bot",
-        "creationtoolversion": "1.0",
+        "creationtool": "Ollama-Dispatcher",
+        "creationtoolversion": "2.0",
         "segtype": "phrase",
-        "adminlang": "en",
-        "srclang": "en",
+        "adminlang": "en-US",
+        "srclang": "en-US",
         "datatype": "PlainText",
         "creationdate": datetime.datetime.now().strftime("%Y%m%dT%H%M%SZ")
     })
     body = ET.SubElement(tmx, "body")
 
-    for i in range(num_entries):
-        tu = ET.SubElement(body, "tu", tuid=f"algic_unit_{i:04d}")
+    # Generate Skeleton Units
+    for i in range(entries):
+        tu = ET.SubElement(body, "tu", tuid=f"alg_unit_{i:04d}")
         
-        # Source Language (English)
-        tuv_en = ET.SubElement(tu, "tuv", {"xml:lang": "en"})
-        ET.SubElement(tuv_en, "seg").text = f"[Source Text {i}]"
+        # English Source Segment
+        tuv_en = ET.SubElement(tu, "tuv", {"xml:lang": "en-US"})
+        ET.SubElement(tuv_en, "seg").text = f"[Placeholder {i}]"
         
-        # All Algic Targets (Empty for Weblate/Ollama to fill)
-        for code in algic_codes:
-            tuv = ET.SubElement(tu, "tuv", {"xml:lang": code})
-            ET.SubElement(tuv, "seg").text = ""
+        # Populate all 45+ Algic Variants
+        for code in algic_array:
+            if code != "en-US":
+                tuv = ET.SubElement(tu, "tuv", {"xml:lang": code})
+                ET.SubElement(tuv, "seg").text = "" # Empty for Ollama/Weblate
 
-    # Pretty print for GitHub/Git readability
+    # Write to File
     xml_str = minidom.parseString(ET.tostring(tmx)).toprettyxml(indent="  ")
-    with open(output_file, "w", encoding="utf-8") as f:
+    with open(filename, "w", encoding="utf-8") as f:
         f.write(xml_str)
 
 if __name__ == "__main__":
-    create_empty_algic_tmx("Algic_Skeleton.tmx", num_entries=50)
-    print("✅ Created Algic.tmx with 25 codes (expandable to 45). Ready for Weblate.")
+    make_algic_tmx_skeleton("Algic.tmx", entries=100)
+    print("✅ Algic.tmx with 45+ variants created. Ready for GitHub/Weblate.")
