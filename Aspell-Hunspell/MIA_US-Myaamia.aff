@@ -1,4 +1,4 @@
-# Aspell affix file for Myaamia (Mia) language
+9# Aspell affix file for Myaamia (Mia) language
 # Miami-Illinois Affix Rules
 # MIA_US-Myaamia.aff
 SET UTF-8
@@ -389,3 +389,9 @@ COMPOUNDRULE (T)(N)
 # nkotwaahkwe/H
 # niišwi_mateeni/T
 # yaalanwi/N
+# Suffix for numbers 11-19 (the "added" marker)
+SFX N1 Y 1
+SFX N1 0 aasi .
+
+# In your .dic file:
+# mataathswi/N1  # This allows "mataathswi" to combine with the ones
