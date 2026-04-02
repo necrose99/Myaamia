@@ -72,28 +72,47 @@ def insertTUs(db_con, nodes, count, totalcount):
 
                     if 'x-ppl:' in propname:
                         cur.execute("INSERT INTO Perplexity VALUES(?, ?, ?)", (tuid, propname, propvalue))
-                    elif 'x-ALS:Source File' in propname:
-                        # print >> sys.stderr, '\t' + propname + ':\t\t' + propvalue
-                        matches = re.search(r'(?<=\\)(\d+)(?=\\)', propvalue)
-                        if matches is not None and sourcefile is None:
-                            sourcefile = matches.group(0)
-                            fname = ntpath.basename(propvalue)
-                            cur.execute("INSERT INTO Properties VALUES(?, ?, ?)", (tuid, 'tms_id', sourcefile))
-                            cur.execute("INSERT INTO Properties VALUES(?, ?, ?)", (tuid, 'source_file', fname))
-                            cur.execute("INSERT INTO Properties VALUES(?, ?, ?)", (tuid, propname, propvalue))
-                            # print >> sys.stderr, 'Filename: ' + fname
-                            # print >> sys.stderr, matches.group(0)
-                    else:
-                        # print >> sys.stderr, '\t' + propname + ':\t\t' + propvalue
-                        cur.execute("INSERT INTO Properties VALUES(?, ?, ?)", (tuid, propname, propvalue))
-                node.clear()
-            root.clear()
-    # except ParseError:
-    except Exception as e:
-        print e
-        db_con.commit()
-    del nodes
+    def insertTUs(db_con, nodes, count, totalcount, import_id):
+    cur = db_con.cursor()
+    
+    # Define the languages we actually care about in our SQL columns
+    # This replaces the 'srclang' and 'tgtlang' hardcoding
+    target_columns = ['en', 'mia', 'sac', 'mesk', 'pot']
 
+    try:
+        for e, node in nodes:
+            if e == 'end' and node.tag == 'tu':
+                # Initialize a dictionary for this row
+                row_data = {lang: None for lang in target_columns}
+                orig_tuid = node.attrib.get('tuid', 0)
+
+                # Loop through EVERY translation variant in the TU
+                for tuv in node.findall('tuv'):
+                    # Get the lang (e.g., 'mia' or 'en-US')
+                    full_lang = tuv.attrib['{http://www.w3.org/XML/1998/namespace}lang']
+                    
+                    # Normalize lang codes (e.g., 'en-US' -> 'en')
+                    lang_key = full_lang.split('-')[0].lower()
+                    
+                    seg_node = tuv.find('seg')
+                    if seg_node is not None and seg_node.text:
+                        if lang_key in row_data:
+                            row_data[lang_key] = seg_node.text
+
+                # Build the dynamic SQL Insert
+                # This ensures your Sauk (sac) and Myaamia (mia) end up in the same record
+                cur.execute("""
+                    INSERT INTO TranslationUnits (orig_tuid, en_text, mia_text, sac_text, mesk_text, pot_text, import_id)
+                    VALUES (?, ?, ?, ?, ?, ?, ?)
+                """, (orig_tuid, row_data['en'], row_data['mia'], row_data['sac'], row_data['mesk'], row_data['pot'], import_id))
+                
+                count += 1
+                totalcount += 1
+                node.clear()
+    except Exception as e:
+        print(f"Error: {e}")
+        db_con.commit()
+    
     return count, totalcount
 
 if __name__ == '__main__':
