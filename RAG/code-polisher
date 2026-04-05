@@ -1,0 +1,31 @@
+import subprocess
+import requests
+import os
+
+def polish_script(filename):
+    # Step 1: Mechanical Polish with Ruff
+    print(f"--- Polishing {filename} with Ruff ---")
+    subprocess.run(["ruff", "check", "--fix", filename])
+    subprocess.run(["ruff", "format", filename])
+
+    # Step 2: Architectural Suggestion via Ollama
+    with open(filename, 'r') as f:
+        code = f.read()
+
+    prompt = f"Analyze this Python script for logic errors and suggest 3 PEP-8 improvements:\n\n{code}"
+    res = requests.post("http://code-critic:11434/api/generate", 
+                        json={"model": "deepseek-coder", "prompt": prompt, "stream": False})
+    
+    suggestion = res.json().get('response')
+    print(f"--- Ollama Suggestions ---\n{suggestion}")
+
+    # Step 3: Suggest Git Branch
+    branch_name = f"refactor/{filename.split('.')[0]}-cleanup"
+    print(f"--- Suggested Git Action ---")
+    print(f"git checkout -b {branch_name}")
+
+if __name__ == "__main__":
+    # Scan /app/scripts for hackish files
+    for script in os.listdir("/app/scripts"):
+        if script.endswith(".py"):
+            polish_script(f"/app/scripts/{script}")
