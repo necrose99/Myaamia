@@ -1,0 +1,5 @@
+Host Configuration for Passthrough:
+On your Alma 9 host, you must "hide" the RTX 2070 and the Metis card from the host kernel so they can be assigned to the "Ollama-PC" VM.
+​Identify IDs: Run lspci -nn | grep -i nvidia and look for the [10de:XXXX] ID.
+​GRUB Config: Edit /etc/default/grub to include intel_iommu=on (or amd_iommu=on) and pci-stub.ids=10de:XXXX,XXXX:XXXX (for the Metis).
+​OpenNebula Node: In the OpenNebula Sunstone dashboard, go to Infrastructure > Hosts, select your node, and ensure the PCI devices are listed as "Available."
