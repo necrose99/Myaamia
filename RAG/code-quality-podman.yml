@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  # 1. Intelligence Layer: RTX 2070 / Ollama
+  code-critic:
+    image: ollama/ollama:latest
+    container_name: code-critic-ollama
+    devices:
+      - "nvidia.com/gpu=all" # Access the RTX 2070
+    volumes:
+      - ollama_models:/root/.ollama:Z
+    environment:
+      - OLLAMA_HOST=0.0.0.0
+    restart: always
+
+  # 2. Polishing Layer: Static Analysis & Refactoring
+  code-polisher:
+    image: almalinux:9-minimal
+    container_name: code-polisher-bot
+    volumes:
+      - /home/ollama/data/scripts:/app/scripts:Z
+      - /home/ollama/data/git_repos:/app/repos:Z
+    environment:
+      - OLLAMA_URL=http://code-critic:11434
+    working_dir: /app
+    entrypoint: ["/bin/bash", "-c", "microdnf install -y python3 python3-pip git && pip3 install ruff requests && tail -f /dev/null"]
+    restart: always
+
+volumes:
+  ollama_models:
