@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  # 1. Ollama: Handles the LLM (Mistral/Llama) using the RTX 2070
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama-service
+    devices:
+      - "nvidia.com/gpu=all" # CDI device for the 2070
+    volumes:
+      - ollama_data:/root/.ollama:Z
+    environment:
+      - OLLAMA_HOST=0.0.0.0
+    restart: always
+
+  # 2. Voyager-Worker: Brute force crunching via Axelera Metis
+  voyager-cruncher:
+    image: axelera/voyager-sdk:latest
+    container_name: voyager-worker
+    devices:
+      - "/dev/axelera0:/dev/axelera0" # Passthrough the Metis card
+    volumes:
+      - ./xslt_scripts:/app/xslt:Z
+      - ./linguistic_data:/app/data:Z
+    command: ["python3", "/app/crunch_tmx.py"]
+    restart: on-failure
+
+  # 3. Moltbook-Agent: The "brain" that binds everything together
+  moltbook-agent:
+    build: 
+      context: .
+      dockerfile: Dockerfile.agent
+    container_name: moltbook-bot
+    depends_on:
+      - ollama
+      - voyager-cruncher
+    volumes:
+      - ./db:/app/db:Z # Persistent SQLite-vec database
+      - ./config:/app/config:Z
+    environment:
+      - MOLTBOOK_API_KEY=${MOLTBOOK_API_KEY}
+      - OLLAMA_BASE_URL=http://ollama:11434
+    restart: always
+
+volumes:
+  ollama_data:
