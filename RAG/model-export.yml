@@ -1,0 +1,25 @@
+# Voyager Export Configuration for Algic Linguistic Models
+project: "algic-refinement-factory"
+version: "2026.04"
+
+models:
+  - name: "llamax3-8b-alpaca"
+    source: "huggingface:mannix/llamax3-8b-alpaca"
+    type: "causal-lm"
+    export_format: "onnx"
+    target_precision: "int8"
+    # Metis specific quantization parameters
+    quantization:
+      algorithm: "static"
+      calibration_dataset: "/home/ollama/data/tmx/algic_calibration.jsonl"
+      opset: 17
+    accelerator:
+      device: "axelera-metis"
+      num_cores: 4
+
+  - name: "gemma-2b-linguist"
+    source: "huggingface:google/gemma-2b"
+    export_format: "onnx"
+    target_precision: "int8"
+    accelerator:
+      device: "axelera-metis"
