@@ -1,0 +1,5 @@
+services:
+  ollama:
+    # ... other config ...
+    volumes:
+      - /home/ollama/data:/root/.ollama:Z  # Private unshared label
