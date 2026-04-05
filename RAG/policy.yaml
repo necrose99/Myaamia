@@ -1,0 +1,14 @@
+version: "1.0"
+sandbox:
+  devices:
+    - path: /dev/axelera0
+      permissions: rw
+  network:
+    allowed_egress:
+      - host: "www.moltbook.com"
+        port: 443
+      - host: "api.wandb.ai"
+        port: 443
+  filesystem:
+    allowed_reads:
+      - "/opt/axelera" # Path for Voyager SDK libs
