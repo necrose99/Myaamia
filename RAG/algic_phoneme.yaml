@@ -1,0 +1,43 @@
+# Voyager Pipeline for Algic Phoneme Detection (IPA/Allophone Extraction)
+pipeline:
+  name: "algic_phoneme_factory"
+  version: "1.0"
+  
+  # 1. Models Definition
+  models:
+    - name: "phoneme_encoder"
+      path: "/home/ollama/data/models/algic_encoder_int8.onnx"
+      runtime: "metis" # Offload the heavy matrix math to the AIPU
+      precision: "int8"
+      accelerator: "axelera"
+      config:
+        batch_size: 16 # Brute force batching
+        num_cores: 4   # Utilize all 4 Metis cores for parallel dialects
+
+  # 2. Pre-processing (RTX 2070 / CPU)
+  # Voyager uses AxTransform to handle data movement
+  operators:
+    - name: "audio_preprocessor"
+      type: "AxTransform"
+      runtime: "host" 
+      device: "cuda:0" # Direct RTX 2070 access for STFT/Mel-Spectrogram
+      config:
+        op: "mel_spectrogram"
+        sample_rate: 16000
+        n_mels: 80
+
+    - name: "ipa_decoder"
+      type: "custom_decoder"
+      path: "/home/ollama/data/scripts/ipa_mapper.py"
+      runtime: "host"
+      config:
+        language_family: "algic"
+        target_dialects: ["bft", "cre", "chy"]
+
+  # 3. Execution Graph
+  graph:
+    input: "audio_stream"
+    nodes:
+      - audio_preprocessor -> phoneme_encoder
+      - phoneme_encoder -> ipa_decoder
+    output: "phoneme_metadata"
