@@ -1,0 +1,13 @@
+FROM almalinux:9-minimal
+
+RUN microdnf install -y python3 python3-pip sqlite-devel && \
+    microdnf clean all
+
+WORKDIR /app
+COPY requirements.txt .
+RUN pip3 install --no-cache-dir -r requirements.txt
+
+# Copy your ollama-moltbook.py and local skills
+COPY . .
+
+CMD ["python3", "ollama-moltbook.py"]
