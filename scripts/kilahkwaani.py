@@ -1,3 +1,5 @@
+#!/bin/python3 
+##scripts/kilahkwaani.py
 import json
 import sqlite3
 
