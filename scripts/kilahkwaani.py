@@ -1,3 +1,5 @@
+# /bin/python3/env
+#kilahkwaani.py
 import json
 
 def generate_web_manifest(tmx_data, lexicon_db, output_json):
@@ -29,3 +31,13 @@ def generate_web_manifest(tmx_data, lexicon_db, output_json):
         json.dump(manifest, jf, indent=2, ensure_ascii=False)
     
     print(f"[!] Web Manifest created: {output_json}")
+# The "Makišiweelo" Gender Filter
+gender_rules = {
+    "iihia": "male",
+    "iiia": "male",
+    "naaka": "female"
+}
+
+def get_voice_profile(myaamia_word):
+    word_clean = myaamia_word.lower().strip('-')
+    return gender_rules.get(word_clean, "neutral") 
