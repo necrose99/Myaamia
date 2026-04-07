@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header
+    creationtool="ILDA-MHTML-Extractor"
+    creationtoolversion="1.0"
+    datatype="plaintext"
+    segtype="phrase"
+    adminlang="en-US"
+    srclang="mia"
+    creationdate="20240614T120814Z"
+    o-tmf="ILDA Miami-Illinois Dictionary"
+  >
+    <prop type="x-source-url">https://mc.miamioh.edu/ilda-myaamia/dictionary/entries</prop>
+    <prop type="x-language-family">Central Algonquian</prop>
+    <prop type="x-stem-root">aacimwi-</prop>
+    <prop type="x-stem-convention">In Miami-Illinois (and Algonquian generally), a trailing hyphen on a form (e.g. aacimwi-) marks it as a STEM — a bound form requiring inflectional suffixes. Bare forms without hyphen (e.g. aacimwahki) are uninflected words or particles. mia-lang seg values follow ILDA stem notation: $word- = stem, $word = uninflected word.</prop>
+    <prop type="x-note">Stem cluster: aacim- 'speak/tell/narrate'. Entries extracted from ILDA browse index snapshot (2024-06-14). Full entry pages (morphology, audio, examples) require direct ILDA access.</prop>
+    <prop type="x-stem-convention">In Miami-Illinois (and Algonquian generally), a trailing hyphen on a form (e.g. aacimwi-) denotes a STEM — a bound form requiring inflectional suffixes. Bare stems without hyphen (e.g. aacimwahki) are uninflected words or particles. The mia-lang seg values follow ILDA stem notation: $word- = stem. Do not treat hyphened forms as citation/dictionary headwords.</prop>
+  </header>
+  <body>
+
+    <!-- ============================================================
+         STEM CLUSTER: aacim- / aacimw- / aacimwi-
+         Semantic domain: speech, narration, council, communication
+         ============================================================ -->
+
+    <tu tuid="ilda-13" srclang="mia">
+      <prop type="x-ilda-id">13</prop>
+      <prop type="x-ilda-url">https://mc.miamioh.edu/ilda-myaamia/dictionary/entries/13</prop>
+      <prop type="x-pos">VTA</prop>
+      <prop type="x-stem-root">aacim-</prop>
+      <prop type="x-form-type">stem</prop>
+      <tuv xml:lang="mia">
+        <seg>aacim-</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Talk about him; say things about him</seg>
+      </tuv>
+    </tu>
+
+    <tu tuid="ilda-3858" srclang="mia">
+      <prop type="x-ilda-id">3858</prop>
+      <prop type="x-ilda-url">https://mc.miamioh.edu/ilda-myaamia/dictionary/entries/3858</prop>
+      <prop type="x-pos">NA</prop>
+      <prop type="x-stem-root">aacimwi-</prop>
+      <prop type="x-form-type">stem</prop>
+      <tuv xml:lang="mia">
+        <seg>aacimon-</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Speaker; presenter</seg>
+      </tuv>
+    </tu>
+
+    <tu tuid="ilda-6853" srclang="mia">
+      <prop type="x-ilda-id">6853</prop>
+      <prop type="x-ilda-url">https://mc.miamioh.edu/ilda-myaamia/dictionary/entries/6853</prop>
+      <prop type="x-pos">NI</prop>
+      <prop type="x-stem-root">aacimwi-</prop>
+      <prop type="x-form-type">stem</prop>
+      <tuv xml:lang="mia">
+        <seg>aacimoon-</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Historical narrative</seg>
+      </tuv>
+    </tu>
+
+    <tu tuid="ilda-2928" srclang="mia">
+      <prop type="x-ilda-id">2928</prop>
+      <prop type="x-ilda-url">https://mc.miamioh.edu/ilda-myaamia/dictionary/entries/2928</prop>
+      <prop type="x-pos">NA</prop>
+      <prop type="x-stem-root">aacimwi-</prop>
+      <prop type="x-form-type">stem</prop>
+      <tuv xml:lang="mia">
+        <seg>aacimw-</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Council person; elected tribal official</seg>
+      </tuv>
+    </tu>
+
+    <tu tuid="ilda-1803" srclang="mia">
+      <prop type="x-ilda-id">1803</prop>
+      <prop type="x-ilda-url">https://mc.miamioh.edu/ilda-myaamia/dictionary/entries/1803</prop>
+      <prop type="x-pos">VAI</prop>
+      <prop type="x-stem-root">aacimwi-</prop>
+      <prop type="x-form-type">stem</prop>
+      <tuv xml:lang="mia">
+        <seg>aacimwaapii-</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Talk on the phone; be on the internet</seg>
+      </tuv>
+    </tu>
+
+    <tu tuid="ilda-9134" srclang="mia">
+      <prop type="x-ilda-id">9134</prop>
+      <prop type="x-ilda-url">https://mc.miamioh.edu/ilda-myaamia/dictionary/entries/9134</prop>
+      <prop type="x-pos">NI</prop>
+      <prop type="x-stem-root">aacimwi-</prop>
+      <prop type="x-form-type">word</prop>
+      <tuv xml:lang="mia">
+        <seg>aacimwahki</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Land of stories</seg>
+      </tuv>
+    </tu>
+
+    <tu tuid="ilda-5298" srclang="mia">
+      <prop type="x-ilda-id">5298</prop>
+      <prop type="x-ilda-url">https://mc.miamioh.edu/ilda-myaamia/dictionary/entries/5298</prop>
+      <prop type="x-pos">NI</prop>
+      <prop type="x-stem-root">aacimwi-</prop>
+      <prop type="x-form-type">stem</prop>
+      <tuv xml:lang="mia">
+        <seg>aacimweekaan-</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Council house</seg>
+      </tuv>
+    </tu>
+
+    <tu tuid="ilda-1808" srclang="mia">
+      <prop type="x-ilda-id">1808</prop>
+      <prop type="x-ilda-url">https://mc.miamioh.edu/ilda-myaamia/dictionary/entries/1808</prop>
+      <prop type="x-pos">VAI</prop>
+      <prop type="x-stem-root">aacimwi-</prop>
+      <prop type="x-form-type">stem</prop>
+      <tuv xml:lang="mia">
+        <seg>aacimwi-</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Hold council; have a council meeting; relate a story</seg>
+      </tuv>
+    </tu>
+
+    <tu tuid="ilda-8638" srclang="mia">
+      <prop type="x-ilda-id">8638</prop>
+      <prop type="x-ilda-url">https://mc.miamioh.edu/ilda-myaamia/dictionary/entries/8638</prop>
+      <prop type="x-pos">VTA</prop>
+      <prop type="x-stem-root">aacimwi-</prop>
+      <prop type="x-form-type">stem</prop>
+      <tuv xml:lang="mia">
+        <seg>aacimwihtaw-</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Advise him; speak to him about it</seg>
+      </tuv>
+    </tu>
+
+    <!-- ============================================================
+         RELATED: aacimoon- / storyteller / winter-story cluster
+         Semantically adjacent to aacimwi- (narrative domain)
+         ============================================================ -->
+
+    <tu tuid="ilda-6793" srclang="mia">
+      <prop type="x-ilda-id">6793</prop>
+      <prop type="x-ilda-url">https://mc.miamioh.edu/ilda-myaamia/dictionary/entries/6793</prop>
+      <prop type="x-pos">NA</prop>
+      <prop type="x-semantic-note">Storyteller role; cf. aacimwi- cluster</prop>
+      <prop type="x-form-type">word</prop>
+      <tuv xml:lang="mia">
+        <seg>aayaalhsoohkia</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Storyteller</seg>
+      </tuv>
+    </tu>
+
+    <tu tuid="ilda-6733" srclang="mia">
+      <prop type="x-ilda-id">6733</prop>
+      <prop type="x-ilda-url">https://mc.miamioh.edu/ilda-myaamia/dictionary/entries/6733</prop>
+      <prop type="x-pos">NI</prop>
+      <prop type="x-semantic-note">Winter story genre; cf. aacimoon- historical narrative</prop>
+      <prop type="x-form-type">stem</prop>
+      <tuv xml:lang="mia">
+        <seg>aalhsoohkaan-</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>A winter story</seg>
+      </tuv>
+    </tu>
+
+    <tu tuid="ilda-6703" srclang="mia">
+      <prop type="x-ilda-id">6703</prop>
+      <prop type="x-ilda-url">https://mc.miamioh.edu/ilda-myaamia/dictionary/entries/6703</prop>
+      <prop type="x-pos">VAI</prop>
+      <prop type="x-semantic-note">VAI form; winter story telling verb</prop>
+      <prop type="x-form-type">stem</prop>
+      <tuv xml:lang="mia">
+        <seg>aalhsoohkii-</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Tell a winter story</seg>
+      </tuv>
+    </tu>
+
+    <tu tuid="ilda-6798" srclang="mia">
+      <prop type="x-ilda-id">6798</prop>
+      <prop type="x-ilda-url">https://mc.miamioh.edu/ilda-myaamia/dictionary/entries/6798</prop>
+      <prop type="x-pos">VTA</prop>
+      <prop type="x-semantic-note">VTA ditransitive; tell winter story to someone</prop>
+      <prop type="x-form-type">stem</prop>
+      <tuv xml:lang="mia">
+        <seg>aalhsoohkaw-</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Tell a winter story to him</seg>
+      </tuv>
+    </tu>
+
+    <tu tuid="ilda-6803" srclang="mia">
+      <prop type="x-ilda-id">6803</prop>
+      <prop type="x-ilda-url">https://mc.miamioh.edu/ilda-myaamia/dictionary/entries/6803</prop>
+      <prop type="x-pos">VTA</prop>
+      <prop type="x-semantic-note">VTA animate object; tell winter story about animate referent</prop>
+      <prop type="x-form-type">stem</prop>
+      <tuv xml:lang="mia">
+        <seg>aalhsoohkaal-</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Tell a winter story about him</seg>
+      </tuv>
+    </tu>
+
+    <tu tuid="ilda-6808" srclang="mia">
+      <prop type="x-ilda-id">6808</prop>
+      <prop type="x-ilda-url">https://mc.miamioh.edu/ilda-myaamia/dictionary/entries/6808</prop>
+      <prop type="x-pos">VTI</prop>
+      <prop type="x-semantic-note">VTI inanimate object; tell winter story about inanimate referent</prop>
+      <prop type="x-form-type">stem</prop>
+      <tuv xml:lang="mia">
+        <seg>aalhsoohkaatam-</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Tell a winter story about it</seg>
+      </tuv>
+    </tu>
+
+    <!-- ============================================================
+         RELATED: aatotam- discourse / discussion cluster
+         ============================================================ -->
+
+    <tu tuid="ilda-1288" srclang="mia">
+      <prop type="x-ilda-id">1288</prop>
+      <prop type="x-ilda-url">https://mc.miamioh.edu/ilda-myaamia/dictionary/entries/1288</prop>
+      <prop type="x-pos">VTI</prop>
+      <prop type="x-semantic-note">VTI; discourse/deliberation verb adjacent to council speech domain</prop>
+      <prop type="x-form-type">stem</prop>
+      <tuv xml:lang="mia">
+        <seg>aatotam-</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Talk about it; discuss it; debate it; give an account of something</seg>
+      </tuv>
+    </tu>
+
+    <tu tuid="ilda-9894" srclang="mia">
+      <prop type="x-ilda-id">9894</prop>
+      <prop type="x-ilda-url">https://mc.miamioh.edu/ilda-myaamia/dictionary/entries/9894</prop>
+      <prop type="x-pos">VAI</prop>
+      <prop type="x-semantic-note">Reciprocal form; mutual deliberation</prop>
+      <prop type="x-form-type">stem</prop>
+      <tuv xml:lang="mia">
+        <seg>aatotamaatii-</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Talk with each other about it</seg>
+      </tuv>
+    </tu>
+
+    <!-- ============================================================
+         COMMUNICATION TECHNOLOGY (aacimwaapii- derivations)
+         ============================================================ -->
+
+    <tu tuid="ilda-7588" srclang="mia">
+      <prop type="x-ilda-id">7588</prop>
+      <prop type="x-ilda-url">https://mc.miamioh.edu/ilda-myaamia/dictionary/entries/7588</prop>
+      <prop type="x-pos">NI</prop>
+      <prop type="x-semantic-note">Neologism; derived from aacimwaapii- 'talk via sight/wire'</prop>
+      <prop type="x-form-type">stem</prop>
+      <tuv xml:lang="mia">
+        <seg>aayaacimwaakan-</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Phone</seg>
+      </tuv>
+    </tu>
+
+    <tu tuid="ilda-7593" srclang="mia">
+      <prop type="x-ilda-id">7593</prop>
+      <prop type="x-ilda-url">https://mc.miamioh.edu/ilda-myaamia/dictionary/entries/7593</prop>
+      <prop type="x-pos">NI</prop>
+      <prop type="x-semantic-note">Diminutive neologism; cell phone</prop>
+      <prop type="x-form-type">stem</prop>
+      <tuv xml:lang="mia">
+        <seg>aayaacimwaakaanhs-</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Cell phone</seg>
+      </tuv>
+    </tu>
+
+  </body>
+</tmx>
