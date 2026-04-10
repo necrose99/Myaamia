@@ -1,0 +1,8 @@
+# XSLT Linguistics Suite — Python dependencies
+saxonche>=12.0          # XSLT 2.0/3.0 processor (Saxon HE)
+generateDS>=2.44        # XSD → Python data bindings
+libretranslatepy>=2.1   # LibreTranslate REST API client
+wlc>=1.17               # Weblate REST API client
+anthropic>=0.25         # Claude AI API
+requests>=2.31          # HTTP client (used by adapters)
+xmlschema>=3.0          # XSD validation (optional)

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lift xmlns:its="http://www.w3.org/2005/11/its"
+      version="0.13"
+      producer="eaf-to-lift.xsl"
+      its:version="1.0"><?ITS-rules translate="no": pronunciation, note[@type='morph-segmentation'],
+        note[@type='psychoacoustic'], note[@type='etym']
+      ?>
+   <entry id="e_tww_ama%20maka%20buru_d7e40">
+      <lexical-unit>
+         <form lang="tww">
+            <text>ama maka buru</text>
+         </form>
+      </lexical-unit>
+      <pronunciation>
+         <form lang="tww-fonipa">
+            <text its:translate="no">ˈa.ma ˈma.ka ˈbu.ɾu</text>
+         </form>
+      </pronunciation>
+      <note type="morph-segmentation" its:translate="no">ama  maka  bur-u</note>
+      <sense id="s_d7e40">
+         <gloss lang="en">
+            <text>dog eat eat-NPST</text>
+         </gloss>
+         <gloss lang="en">
+            <text>The dog is eating.</text>
+         </gloss>
+         <gloss lang="fr">
+            <text>Le chien mange.</text>
+         </gloss>
+         <example>
+            <form lang="tww">
+               <text>ama maka buru</text>
+            </form>
+            <translation type="Frame sentence">
+               <form lang="en">
+                  <text>The dog is eating.</text>
+               </form>
+            </translation>
+            <translation type="Frame sentence">
+               <form lang="fr">
+                  <text>Le chien mange.</text>
+               </form>
+            </translation>
+         </example>
+      </sense>
+      <note type="etym" its:translate="no">**ama [proto-tww] "dog"</note>
+   </entry>
+   <entry id="e_tww_ama-ki%20misi-ki%20wara-turu_d7e46">
+      <lexical-unit>
+         <form lang="tww">
+            <text>ama-ki misi-ki wara-turu</text>
+         </form>
+      </lexical-unit>
+      <pronunciation>
+         <form lang="tww-fonipa">
+            <text its:translate="no">ˈa.ma.ki ˈmi.si.ki ˈwa.ɾa.tu.ɾu</text>
+         </form>
+      </pronunciation>
+      <note type="morph-segmentation" its:translate="no">ama-ki  misi-ki  war-a-tur-u</note>
+      <sense id="s_d7e46">
+         <gloss lang="en">
+            <text>dog-ERG cat-ABS see-PST-CAUS-NPST</text>
+         </gloss>
+         <gloss lang="en">
+            <text>The dog made the cat see (it).</text>
+         </gloss>
+         <gloss lang="fr">
+            <text>Le chien a fait voir au chat.</text>
+         </gloss>
+         <example>
+            <form lang="tww">
+               <text>ama-ki misi-ki wara-turu</text>
+            </form>
+            <translation type="Frame sentence">
+               <form lang="en">
+                  <text>The dog made the cat see (it).</text>
+               </form>
+            </translation>
+            <translation type="Frame sentence">
+               <form lang="fr">
+                  <text>Le chien a fait voir au chat.</text>
+               </form>
+            </translation>
+         </example>
+      </sense>
+   </entry>
+   <entry id="e_tww_misi%20tara%20nuku_d7e43">
+      <lexical-unit>
+         <form lang="tww">
+            <text>misi tara nuku</text>
+         </form>
+      </lexical-unit>
+      <pronunciation>
+         <form lang="tww-fonipa">
+            <text its:translate="no">ˈmi.si ˈta.ɾa ˈnu.ku</text>
+         </form>
+      </pronunciation>
+      <note type="morph-segmentation" its:translate="no">misi  tar-a  nuk-u</note>
+      <sense id="s_d7e43">
+         <gloss lang="en">
+            <text>cat sleep-PST sleep-NPST</text>
+         </gloss>
+         <gloss lang="en">
+            <text>The cat sleeps.</text>
+         </gloss>
+         <gloss lang="fr">
+            <text>Le chat dort.</text>
+         </gloss>
+         <example>
+            <form lang="tww">
+               <text>misi tara nuku</text>
+            </form>
+            <translation type="Frame sentence">
+               <form lang="en">
+                  <text>The cat sleeps.</text>
+               </form>
+            </translation>
+            <translation type="Frame sentence">
+               <form lang="fr">
+                  <text>Le chat dort.</text>
+               </form>
+            </translation>
+         </example>
+      </sense>
+      <note type="etym" its:translate="no">*misi [proto-tww] "small animal"</note>
+   </entry>
+</lift>

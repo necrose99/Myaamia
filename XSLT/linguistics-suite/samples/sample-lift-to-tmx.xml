@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmx xmlns:its="http://www.w3.org/2005/11/its" version="1.4">
+   <header creationtool="lift-to-tmx.xsl"
+           creationtoolversion="1.0"
+           datatype="PlainText"
+           segtype="sentence"
+           adminlang="en"
+           srclang="tww"
+           creationdate="2026-04-03T11:29:01.146101Z">
+      <note xml:lang="en">
+          ITS rule: grammatical-info nodes are translate="no"
+        </note>
+      <note xml:lang="en">
+          ITS rule: semantic-domain nodes are translate="no"
+        </note>
+      <prop type="x-lift-version">0.13</prop>
+      <prop type="x-lift-producer">sample-fixture</prop>
+   </header>
+   <body>
+      <tu tuid="dog_001.s1.gloss.en"
+          datatype="PlainText"
+          creationdate="2026-04-03T11:29:01.146101Z">
+         <prop type="x-its-translate-no">grammatical-info</prop>
+         <prop type="x-grammatical-info">n</prop>
+         <prop type="x-its-translate-no">semantic-domain</prop>
+         <prop type="x-semantic-domain">1.6.1 Types of animals</prop>
+         <prop type="x-lift-relation-type">antonym</prop>
+         <prop type="x-lift-relation-ref">cat_001</prop>
+         <prop type="x-lift-entry-id">dog_001</prop>
+         <prop type="x-lift-sense-id">dog_001.s1</prop>
+         <prop type="x-lift-morph-type">stem</prop>
+         <tuv xml:lang="tww">
+            <seg>ama</seg>
+         </tuv>
+         <tuv xml:lang="en">
+            <seg>dog</seg>
+         </tuv>
+      </tu>
+      <tu tuid="dog_001.s1.gloss.fr"
+          datatype="PlainText"
+          creationdate="2026-04-03T11:29:01.146101Z">
+         <prop type="x-its-translate-no">grammatical-info</prop>
+         <prop type="x-grammatical-info">n</prop>
+         <prop type="x-its-translate-no">semantic-domain</prop>
+         <prop type="x-semantic-domain">1.6.1 Types of animals</prop>
+         <prop type="x-lift-relation-type">antonym</prop>
+         <prop type="x-lift-relation-ref">cat_001</prop>
+         <prop type="x-lift-entry-id">dog_001</prop>
+         <prop type="x-lift-sense-id">dog_001.s1</prop>
+         <prop type="x-lift-morph-type">stem</prop>
+         <tuv xml:lang="tww">
+            <seg>ama</seg>
+         </tuv>
+         <tuv xml:lang="fr">
+            <seg>chien</seg>
+         </tuv>
+      </tu>
+      <tu tuid="dog_001.s1.definition.en"
+          datatype="PlainText"
+          creationdate="2026-04-03T11:29:01.146101Z">
+         <prop type="x-lift-entry-id">dog_001</prop>
+         <prop type="x-lift-sense-id">dog_001.s1</prop>
+         <prop type="x-tu-restype">definition</prop>
+         <prop type="x-grammatical-info">n</prop>
+         <tuv xml:lang="tww">
+            <seg>ama</seg>
+         </tuv>
+         <tuv xml:lang="en">
+            <seg>A domesticated carnivorous mammal kept as a pet or for work.</seg>
+         </tuv>
+      </tu>
+      <tu tuid="dog_001.s1.definition.fr"
+          datatype="PlainText"
+          creationdate="2026-04-03T11:29:01.146101Z">
+         <prop type="x-lift-entry-id">dog_001</prop>
+         <prop type="x-lift-sense-id">dog_001.s1</prop>
+         <prop type="x-tu-restype">definition</prop>
+         <prop type="x-grammatical-info">n</prop>
+         <tuv xml:lang="tww">
+            <seg>ama</seg>
+         </tuv>
+         <tuv xml:lang="fr">
+            <seg>Mammifère carnivore domestiqué, tenu comme animal de compagnie ou de travail.</seg>
+         </tuv>
+      </tu>
+      <tu tuid="dog_001.s1.example.1"
+          datatype="PlainText"
+          segtype="sentence"
+          creationdate="2026-04-03T11:29:01.146101Z">
+         <prop type="x-lift-entry-id">dog_001</prop>
+         <prop type="x-tu-restype">example</prop>
+         <tuv xml:lang="tww">
+            <seg>Ama maka buru.</seg>
+         </tuv>
+         <tuv xml:lang="en">
+            <seg>The dog is eating.</seg>
+         </tuv>
+         <tuv xml:lang="fr">
+            <seg>Le chien mange.</seg>
+         </tuv>
+      </tu>
+      <tu tuid="dog_001.s2.gloss.en"
+          datatype="PlainText"
+          creationdate="2026-04-03T11:29:01.146101Z">
+         <prop type="x-its-translate-no">grammatical-info</prop>
+         <prop type="x-grammatical-info">v</prop>
+         <prop type="x-lift-relation-type">antonym</prop>
+         <prop type="x-lift-relation-ref">cat_001</prop>
+         <prop type="x-lift-entry-id">dog_001</prop>
+         <prop type="x-lift-sense-id">dog_001.s2</prop>
+         <prop type="x-lift-morph-type">stem</prop>
+         <tuv xml:lang="tww">
+            <seg>ama</seg>
+         </tuv>
+         <tuv xml:lang="en">
+            <seg>to follow faithfully</seg>
+         </tuv>
+      </tu>
+      <tu tuid="dog_001.s2.gloss.fr"
+          datatype="PlainText"
+          creationdate="2026-04-03T11:29:01.146101Z">
+         <prop type="x-its-translate-no">grammatical-info</prop>
+         <prop type="x-grammatical-info">v</prop>
+         <prop type="x-lift-relation-type">antonym</prop>
+         <prop type="x-lift-relation-ref">cat_001</prop>
+         <prop type="x-lift-entry-id">dog_001</prop>
+         <prop type="x-lift-sense-id">dog_001.s2</prop>
+         <prop type="x-lift-morph-type">stem</prop>
+         <tuv xml:lang="tww">
+            <seg>ama</seg>
+         </tuv>
+         <tuv xml:lang="fr">
+            <seg>suivre fidèlement</seg>
+         </tuv>
+      </tu>
+      <tu tuid="cat_001.s1.gloss.en"
+          datatype="PlainText"
+          creationdate="2026-04-03T11:29:01.146101Z">
+         <prop type="x-its-translate-no">grammatical-info</prop>
+         <prop type="x-grammatical-info">n</prop>
+         <prop type="x-its-translate-no">semantic-domain</prop>
+         <prop type="x-semantic-domain">1.6.1 Types of animals</prop>
+         <prop type="x-lift-relation-type">antonym</prop>
+         <prop type="x-lift-relation-ref">dog_001</prop>
+         <prop type="x-lift-relation-type">synonym</prop>
+         <prop type="x-lift-relation-ref">misi_alt_001</prop>
+         <prop type="x-lift-entry-id">cat_001</prop>
+         <prop type="x-lift-sense-id">cat_001.s1</prop>
+         <prop type="x-lift-morph-type">stem</prop>
+         <tuv xml:lang="tww">
+            <seg>misi</seg>
+         </tuv>
+         <tuv xml:lang="en">
+            <seg>cat</seg>
+         </tuv>
+      </tu>
+      <tu tuid="cat_001.s1.gloss.fr"
+          datatype="PlainText"
+          creationdate="2026-04-03T11:29:01.146101Z">
+         <prop type="x-its-translate-no">grammatical-info</prop>
+         <prop type="x-grammatical-info">n</prop>
+         <prop type="x-its-translate-no">semantic-domain</prop>
+         <prop type="x-semantic-domain">1.6.1 Types of animals</prop>
+         <prop type="x-lift-relation-type">antonym</prop>
+         <prop type="x-lift-relation-ref">dog_001</prop>
+         <prop type="x-lift-relation-type">synonym</prop>
+         <prop type="x-lift-relation-ref">misi_alt_001</prop>
+         <prop type="x-lift-entry-id">cat_001</prop>
+         <prop type="x-lift-sense-id">cat_001.s1</prop>
+         <prop type="x-lift-morph-type">stem</prop>
+         <tuv xml:lang="tww">
+            <seg>misi</seg>
+         </tuv>
+         <tuv xml:lang="fr">
+            <seg>chat</seg>
+         </tuv>
+      </tu>
+      <tu tuid="cat_001.s1.definition.en"
+          datatype="PlainText"
+          creationdate="2026-04-03T11:29:01.146101Z">
+         <prop type="x-lift-entry-id">cat_001</prop>
+         <prop type="x-lift-sense-id">cat_001.s1</prop>
+         <prop type="x-tu-restype">definition</prop>
+         <prop type="x-grammatical-info">n</prop>
+         <tuv xml:lang="tww">
+            <seg>misi</seg>
+         </tuv>
+         <tuv xml:lang="en">
+            <seg>A small domesticated feline mammal.</seg>
+         </tuv>
+      </tu>
+      <tu tuid="cat_001.s1.example.1"
+          datatype="PlainText"
+          segtype="sentence"
+          creationdate="2026-04-03T11:29:01.146101Z">
+         <prop type="x-lift-entry-id">cat_001</prop>
+         <prop type="x-tu-restype">example</prop>
+         <tuv xml:lang="tww">
+            <seg>Misi tara nuku.</seg>
+         </tuv>
+         <tuv xml:lang="en">
+            <seg>The cat sleeps.</seg>
+         </tuv>
+      </tu>
+   </body>
+</tmx>

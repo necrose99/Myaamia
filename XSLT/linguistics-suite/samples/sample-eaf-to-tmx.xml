@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmx xmlns:its="http://www.w3.org/2005/11/its" version="1.4">
+   <header creationtool="eaf-to-tmx.xsl"
+           creationtoolversion="1.0"
+           datatype="PlainText"
+           segtype="sentence"
+           adminlang="en"
+           srclang="tww"
+           creationdate="2026-04-03T22:11:36.979778Z">
+      <note xml:lang="en">
+          EAF source: tww_session01.wav</note>
+      <note xml:lang="en">
+          ITS: ipa, gloss, morph, etymology, psychoacoustic tiers are translate="no"
+        </note>
+      <prop type="x-media-url">tww_session01.wav</prop>
+      <prop type="x-eaf-format">3.0</prop>
+      <prop type="x-olac-type">http://www.language-archives.org/REC/type.html#primary_text</prop>
+   </header>
+   <body>
+      <tu tuid="a1.en"
+          datatype="PlainText"
+          creationdate="2026-04-03T22:11:36.979778Z">
+         <prop type="x-speaker">SP1</prop>
+         <prop type="x-eaf-time-start">0</prop>
+         <prop type="x-eaf-time-end">1800</prop>
+         <prop type="x-eaf-ann-id">a1</prop>
+         <prop type="x-its-no-translate">ipa</prop>
+         <prop type="x-ipa">ˈa.ma ˈma.ka ˈbu.ɾu</prop>
+         <prop type="x-its-no-translate">morph</prop>
+         <prop type="x-morph">ama  maka  bur-u</prop>
+         <prop type="x-its-no-translate">gloss</prop>
+         <prop type="x-gloss">dog  eat  eat-NPST</prop>
+         <prop type="x-its-no-translate">etymology</prop>
+         <prop type="x-etymology">{"langCode":"proto-tww","text":"*ama","reconstructed":true,"translation":"dog"}</prop>
+         <prop type="x-its-no-translate">psychoacoustic</prop>
+         <prop type="x-psychoacoustic">F0_mean=180Hz; intensity=72dB; VOT=+25ms; aspiration=no</prop>
+         <tuv xml:lang="tww">
+            <seg>ama maka buru</seg>
+         </tuv>
+         <tuv xml:lang="en">
+            <seg>The dog is eating.</seg>
+         </tuv>
+      </tu>
+      <tu tuid="a1.fr"
+          datatype="PlainText"
+          creationdate="2026-04-03T22:11:36.979778Z">
+         <prop type="x-speaker">SP1</prop>
+         <prop type="x-eaf-time-start">0</prop>
+         <prop type="x-eaf-time-end">1800</prop>
+         <prop type="x-eaf-ann-id">a1</prop>
+         <prop type="x-its-no-translate">ipa</prop>
+         <prop type="x-ipa">ˈa.ma ˈma.ka ˈbu.ɾu</prop>
+         <prop type="x-its-no-translate">morph</prop>
+         <prop type="x-morph">ama  maka  bur-u</prop>
+         <prop type="x-its-no-translate">gloss</prop>
+         <prop type="x-gloss">dog  eat  eat-NPST</prop>
+         <prop type="x-its-no-translate">etymology</prop>
+         <prop type="x-etymology">{"langCode":"proto-tww","text":"*ama","reconstructed":true,"translation":"dog"}</prop>
+         <prop type="x-its-no-translate">psychoacoustic</prop>
+         <prop type="x-psychoacoustic">F0_mean=180Hz; intensity=72dB; VOT=+25ms; aspiration=no</prop>
+         <tuv xml:lang="tww">
+            <seg>ama maka buru</seg>
+         </tuv>
+         <tuv xml:lang="fr">
+            <seg>Le chien mange.</seg>
+         </tuv>
+      </tu>
+      <tu tuid="a2.en"
+          datatype="PlainText"
+          creationdate="2026-04-03T22:11:36.979778Z">
+         <prop type="x-speaker">SP1</prop>
+         <prop type="x-eaf-time-start">2100</prop>
+         <prop type="x-eaf-time-end">3600</prop>
+         <prop type="x-eaf-ann-id">a2</prop>
+         <prop type="x-its-no-translate">ipa</prop>
+         <prop type="x-ipa">ˈmi.si ˈta.ɾa ˈnu.ku</prop>
+         <prop type="x-its-no-translate">morph</prop>
+         <prop type="x-morph">misi  tar-a  nuk-u</prop>
+         <prop type="x-its-no-translate">gloss</prop>
+         <prop type="x-gloss">cat  sleep-PST  sleep-NPST</prop>
+         <prop type="x-its-no-translate">etymology</prop>
+         <prop type="x-etymology">{"langCode":"proto-tww","text":"*misi","reconstructed":false,"translation":"small animal"}</prop>
+         <prop type="x-its-no-translate">psychoacoustic</prop>
+         <prop type="x-psychoacoustic">F0_mean=162Hz; intensity=68dB; VOT=+18ms; aspiration=no</prop>
+         <tuv xml:lang="tww">
+            <seg>misi tara nuku</seg>
+         </tuv>
+         <tuv xml:lang="en">
+            <seg>The cat sleeps.</seg>
+         </tuv>
+      </tu>
+      <tu tuid="a2.fr"
+          datatype="PlainText"
+          creationdate="2026-04-03T22:11:36.979778Z">
+         <prop type="x-speaker">SP1</prop>
+         <prop type="x-eaf-time-start">2100</prop>
+         <prop type="x-eaf-time-end">3600</prop>
+         <prop type="x-eaf-ann-id">a2</prop>
+         <prop type="x-its-no-translate">ipa</prop>
+         <prop type="x-ipa">ˈmi.si ˈta.ɾa ˈnu.ku</prop>
+         <prop type="x-its-no-translate">morph</prop>
+         <prop type="x-morph">misi  tar-a  nuk-u</prop>
+         <prop type="x-its-no-translate">gloss</prop>
+         <prop type="x-gloss">cat  sleep-PST  sleep-NPST</prop>
+         <prop type="x-its-no-translate">etymology</prop>
+         <prop type="x-etymology">{"langCode":"proto-tww","text":"*misi","reconstructed":false,"translation":"small animal"}</prop>
+         <prop type="x-its-no-translate">psychoacoustic</prop>
+         <prop type="x-psychoacoustic">F0_mean=162Hz; intensity=68dB; VOT=+18ms; aspiration=no</prop>
+         <tuv xml:lang="tww">
+            <seg>misi tara nuku</seg>
+         </tuv>
+         <tuv xml:lang="fr">
+            <seg>Le chat dort.</seg>
+         </tuv>
+      </tu>
+      <tu tuid="a3.en"
+          datatype="PlainText"
+          creationdate="2026-04-03T22:11:36.979778Z">
+         <prop type="x-speaker">SP1</prop>
+         <prop type="x-eaf-time-start">4000</prop>
+         <prop type="x-eaf-time-end">6200</prop>
+         <prop type="x-eaf-ann-id">a3</prop>
+         <prop type="x-its-no-translate">ipa</prop>
+         <prop type="x-ipa">ˈa.ma.ki ˈmi.si.ki ˈwa.ɾa.tu.ɾu</prop>
+         <prop type="x-its-no-translate">morph</prop>
+         <prop type="x-morph">ama-ki  misi-ki  war-a-tur-u</prop>
+         <prop type="x-its-no-translate">gloss</prop>
+         <prop type="x-gloss">dog-ERG  cat-ABS  see-PST-CAUS-NPST</prop>
+         <tuv xml:lang="tww">
+            <seg>ama-ki misi-ki wara-turu</seg>
+         </tuv>
+         <tuv xml:lang="en">
+            <seg>The dog made the cat see (it).</seg>
+         </tuv>
+      </tu>
+      <tu tuid="a3.fr"
+          datatype="PlainText"
+          creationdate="2026-04-03T22:11:36.979778Z">
+         <prop type="x-speaker">SP1</prop>
+         <prop type="x-eaf-time-start">4000</prop>
+         <prop type="x-eaf-time-end">6200</prop>
+         <prop type="x-eaf-ann-id">a3</prop>
+         <prop type="x-its-no-translate">ipa</prop>
+         <prop type="x-ipa">ˈa.ma.ki ˈmi.si.ki ˈwa.ɾa.tu.ɾu</prop>
+         <prop type="x-its-no-translate">morph</prop>
+         <prop type="x-morph">ama-ki  misi-ki  war-a-tur-u</prop>
+         <prop type="x-its-no-translate">gloss</prop>
+         <prop type="x-gloss">dog-ERG  cat-ABS  see-PST-CAUS-NPST</prop>
+         <tuv xml:lang="tww">
+            <seg>ama-ki misi-ki wara-turu</seg>
+         </tuv>
+         <tuv xml:lang="fr">
+            <seg>Le chien a fait voir au chat.</seg>
+         </tuv>
+      </tu>
+   </body>
+</tmx>

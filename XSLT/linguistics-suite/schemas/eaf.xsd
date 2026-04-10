@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- EAF 3.0 XSD — synthesised from MPI Nijmegen / CLARIN EAFv3.0 specification -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="unqualified">
+
+  <xs:element name="ANNOTATION_DOCUMENT">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="HEADER"/>
+        <xs:element ref="TIME_ORDER"/>
+        <xs:element ref="TIER"           minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="LINGUISTIC_TYPE" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="LOCALE"         minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="LANGUAGE"       minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="CONSTRAINT"     minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="CONTROLLED_VOCABULARY" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="LEXICON_REF"    minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="EXTERNAL_REF"   minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="AUTHOR"  type="xs:string" use="required"/>
+      <xs:attribute name="DATE"    type="xs:string" use="required"/>
+      <xs:attribute name="FORMAT"  type="xs:string" use="required"/>
+      <xs:attribute name="VERSION" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="HEADER">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="MEDIA_DESCRIPTOR"       minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="LINKED_FILE_DESCRIPTOR" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="PROPERTY"               minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="MEDIA_FILE"  type="xs:string" use="required"/>
+      <xs:attribute name="TIME_UNITS"  type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="MEDIA_DESCRIPTOR">
+    <xs:complexType>
+      <xs:attribute name="MEDIA_URL"          type="xs:string" use="required"/>
+      <xs:attribute name="MIME_TYPE"          type="xs:string" use="required"/>
+      <xs:attribute name="RELATIVE_MEDIA_URL" type="xs:string"/>
+      <xs:attribute name="TIME_ORIGIN"        type="xs:long"/>
+      <xs:attribute name="EXTRACTED_FROM"     type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="LINKED_FILE_DESCRIPTOR">
+    <xs:complexType>
+      <xs:attribute name="LINK_URL"          type="xs:string" use="required"/>
+      <xs:attribute name="RELATIVE_LINK_URL" type="xs:string"/>
+      <xs:attribute name="MIME_TYPE"         type="xs:string" use="required"/>
+      <xs:attribute name="TIME_ORIGIN"       type="xs:long"/>
+      <xs:attribute name="ASSOCIATED_WITH"   type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="PROPERTY">
+    <xs:complexType mixed="true">
+      <xs:attribute name="NAME" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="TIME_ORDER">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="TIME_SLOT" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="TIME_SLOT">
+    <xs:complexType>
+      <xs:attribute name="TIME_SLOT_ID" type="xs:ID"      use="required"/>
+      <xs:attribute name="TIME_VALUE"   type="xs:long"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="TIER">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ANNOTATION" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="TIER_ID"              type="xs:string"  use="required"/>
+      <xs:attribute name="PARTICIPANT"          type="xs:string"/>
+      <xs:attribute name="ANNOTATOR"            type="xs:string"/>
+      <xs:attribute name="LINGUISTIC_TYPE_REF"  type="xs:string"  use="required"/>
+      <xs:attribute name="DEFAULT_LOCALE"       type="xs:string"/>
+      <xs:attribute name="PARENT_REF"           type="xs:string"/>
+      <xs:attribute name="LANG_REF"             type="xs:string"/>
+      <xs:attribute name="EXT_REF"              type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="ANNOTATION">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element ref="ALIGNABLE_ANNOTATION"/>
+        <xs:element ref="REF_ANNOTATION"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="ALIGNABLE_ANNOTATION">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ANNOTATION_VALUE"/>
+        <xs:element ref="ANNOTATION_ATTRIBUTE" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="ANNOTATION_ID"   type="xs:ID"     use="required"/>
+      <xs:attribute name="TIME_SLOT_REF1"  type="xs:IDREF"  use="required"/>
+      <xs:attribute name="TIME_SLOT_REF2"  type="xs:IDREF"  use="required"/>
+      <xs:attribute name="SVG_REF"         type="xs:string"/>
+      <xs:attribute name="EXT_REF"         type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="REF_ANNOTATION">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ANNOTATION_VALUE"/>
+        <xs:element ref="ANNOTATION_ATTRIBUTE" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="ANNOTATION_ID"  type="xs:ID"     use="required"/>
+      <xs:attribute name="ANNOTATION_REF" type="xs:IDREF"  use="required"/>
+      <xs:attribute name="CVE_REF"        type="xs:string"/>
+      <xs:attribute name="EXT_REF"        type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="ANNOTATION_VALUE" type="xs:string"/>
+  <xs:element name="ANNOTATION_ATTRIBUTE">
+    <xs:complexType>
+      <xs:attribute name="NAME"  type="xs:string" use="required"/>
+      <xs:attribute name="VALUE" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="LINGUISTIC_TYPE">
+    <xs:complexType>
+      <xs:attribute name="LINGUISTIC_TYPE_ID"   type="xs:string"  use="required"/>
+      <xs:attribute name="TIME_ALIGNABLE"        type="xs:boolean" use="required"/>
+      <xs:attribute name="CONSTRAINTS"           type="xs:string"/>
+      <xs:attribute name="GRAPHIC_REFERENCES"    type="xs:boolean" use="required"/>
+      <xs:attribute name="CONTROLLED_VOCABULARY_REF" type="xs:string"/>
+      <xs:attribute name="EXT_REF"               type="xs:string"/>
+      <xs:attribute name="LEXICON_REF"           type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="CONSTRAINT">
+    <xs:complexType>
+      <xs:attribute name="DESCRIPTION" type="xs:string"/>
+      <xs:attribute name="STEREOTYPE"  type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="CONTROLLED_VOCABULARY">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="DESCRIPTION" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType mixed="true">
+            <xs:attribute name="LANG_REF" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CV_ENTRY_ML" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CVE_VALUE" maxOccurs="unbounded">
+                <xs:complexType mixed="true">
+                  <xs:attribute name="DESCRIPTION" type="xs:string"/>
+                  <xs:attribute name="LANG_REF"    type="xs:string" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="CVE_ID"   type="xs:string" use="required"/>
+            <xs:attribute name="EXT_REF"  type="xs:string"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="CV_ID"    type="xs:string" use="required"/>
+      <xs:attribute name="EXT_REF"  type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="LOCALE">
+    <xs:complexType>
+      <xs:attribute name="LANGUAGE_CODE" type="xs:string" use="required"/>
+      <xs:attribute name="COUNTRY_CODE"  type="xs:string"/>
+      <xs:attribute name="VARIANT"       type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="LANGUAGE">
+    <xs:complexType>
+      <xs:attribute name="LANG_ID"    type="xs:string" use="required"/>
+      <xs:attribute name="LANG_DEF"   type="xs:string"/>
+      <xs:attribute name="LANG_LABEL" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="LEXICON_REF">
+    <xs:complexType>
+      <xs:attribute name="LRID"         type="xs:string" use="required"/>
+      <xs:attribute name="NAME"         type="xs:string" use="required"/>
+      <xs:attribute name="TYPE"         type="xs:string" use="required"/>
+      <xs:attribute name="URL"          type="xs:string" use="required"/>
+      <xs:attribute name="LEXICON_ID"   type="xs:string" use="required"/>
+      <xs:attribute name="LEXICON_NAME" type="xs:string" use="required"/>
+      <xs:attribute name="DATCAT_ID"    type="xs:string"/>
+      <xs:attribute name="DATCAT_NAME"  type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="EXTERNAL_REF">
+    <xs:complexType>
+      <xs:attribute name="EXT_REF_ID" type="xs:string" use="required"/>
+      <xs:attribute name="TYPE"       type="xs:string" use="required"/>
+      <xs:attribute name="VALUE"      type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

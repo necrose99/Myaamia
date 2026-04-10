@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2"
+       xmlns:its="http://www.w3.org/2005/11/its"
+       version="1.2"
+       its:version="1.0">
+   <its:rules version="1.0">
+      <its:translateRule selector="//note[@type='ipa']" translate="no"/>
+      <its:translateRule selector="//note[@type='gloss']" translate="no"/>
+      <its:translateRule selector="//note[@type='morph']" translate="no"/>
+      <its:translateRule selector="//note[@type='etymology']" translate="no"/>
+      <its:translateRule selector="//note[@type='psychoacoustic']" translate="no"/>
+      <its:withinTextRule selector="//ph" withinText="yes"/>
+   </its:rules>
+   <file original="ref@SP1.a1"
+         source-language="tww"
+         target-language="en"
+         datatype="eaf"
+         its:version="1.0">
+      <header>
+         <tool tool-id="eaf-to-xliff" tool-name="eaf-to-xliff.xsl"/>
+         <note>EAF utterance-id: U1</note>
+         <note>speaker: SP1</note>
+         <note its:translate="no">time-start-ms: 0</note>
+         <note its:translate="no">time-end-ms: 1800</note>
+         <note type="psychoacoustic" its:translate="no">F0_mean=180Hz; intensity=72dB; VOT=+25ms; aspiration=no</note>
+         <note its:translate="no">OLAC-type: http://www.language-archives.org/REC/type.html#primary_text</note>
+      </header>
+      <body>
+         <trans-unit id="a1.utt" resname="utterance">
+            <source xml:lang="tww">ama maka buru</source>
+            <target xml:lang="en">The dog is eating.</target>
+            <note type="ipa" its:translate="no">ˈa.ma ˈma.ka ˈbu.ɾu</note>
+            <note type="morph" its:translate="no">ama  maka  bur-u</note>
+            <note type="gloss" its:translate="no">dog  eat  eat-NPST</note>
+            <note type="etymology" its:translate="no">{"langCode":"proto-tww","text":"*ama","reconstructed":true,"translation":"dog"}</note>
+            <context-group name="time-alignment" purpose="location">
+               <context context-type="x-eaf-time-start">0</context>
+               <context context-type="x-eaf-time-end">1800</context>
+            </context-group>
+         </trans-unit>
+         <trans-unit id="a1.trans.fr" resname="translation">
+            <source xml:lang="tww">ama maka buru</source>
+            <target xml:lang="fr">Le chien mange.</target>
+         </trans-unit>
+      </body>
+   </file>
+   <file original="ref@SP1.a2"
+         source-language="tww"
+         target-language="en"
+         datatype="eaf"
+         its:version="1.0">
+      <header>
+         <tool tool-id="eaf-to-xliff" tool-name="eaf-to-xliff.xsl"/>
+         <note>EAF utterance-id: U2</note>
+         <note>speaker: SP1</note>
+         <note its:translate="no">time-start-ms: 2100</note>
+         <note its:translate="no">time-end-ms: 3600</note>
+         <note type="psychoacoustic" its:translate="no">F0_mean=162Hz; intensity=68dB; VOT=+18ms; aspiration=no</note>
+         <note its:translate="no">OLAC-type: http://www.language-archives.org/REC/type.html#primary_text</note>
+      </header>
+      <body>
+         <trans-unit id="a2.utt" resname="utterance">
+            <source xml:lang="tww">misi tara nuku</source>
+            <target xml:lang="en">The cat sleeps.</target>
+            <note type="ipa" its:translate="no">ˈmi.si ˈta.ɾa ˈnu.ku</note>
+            <note type="morph" its:translate="no">misi  tar-a  nuk-u</note>
+            <note type="gloss" its:translate="no">cat  sleep-PST  sleep-NPST</note>
+            <note type="etymology" its:translate="no">{"langCode":"proto-tww","text":"*misi","reconstructed":false,"translation":"small animal"}</note>
+            <context-group name="time-alignment" purpose="location">
+               <context context-type="x-eaf-time-start">2100</context>
+               <context context-type="x-eaf-time-end">3600</context>
+            </context-group>
+         </trans-unit>
+         <trans-unit id="a2.trans.fr" resname="translation">
+            <source xml:lang="tww">misi tara nuku</source>
+            <target xml:lang="fr">Le chat dort.</target>
+         </trans-unit>
+      </body>
+   </file>
+   <file original="ref@SP1.a3"
+         source-language="tww"
+         target-language="en"
+         datatype="eaf"
+         its:version="1.0">
+      <header>
+         <tool tool-id="eaf-to-xliff" tool-name="eaf-to-xliff.xsl"/>
+         <note>EAF utterance-id: U3</note>
+         <note>speaker: SP1</note>
+         <note its:translate="no">time-start-ms: 4000</note>
+         <note its:translate="no">time-end-ms: 6200</note>
+         <note its:translate="no">OLAC-type: http://www.language-archives.org/REC/type.html#primary_text</note>
+      </header>
+      <body>
+         <trans-unit id="a3.utt" resname="utterance">
+            <source xml:lang="tww">ama-ki misi-ki wara-turu</source>
+            <target xml:lang="en">The dog made the cat see (it).</target>
+            <note type="ipa" its:translate="no">ˈa.ma.ki ˈmi.si.ki ˈwa.ɾa.tu.ɾu</note>
+            <note type="morph" its:translate="no">ama-ki  misi-ki  war-a-tur-u</note>
+            <note type="gloss" its:translate="no">dog-ERG  cat-ABS  see-PST-CAUS-NPST</note>
+            <context-group name="time-alignment" purpose="location">
+               <context context-type="x-eaf-time-start">4000</context>
+               <context context-type="x-eaf-time-end">6200</context>
+            </context-group>
+         </trans-unit>
+         <trans-unit id="a3.trans.fr" resname="translation">
+            <source xml:lang="tww">ama-ki misi-ki wara-turu</source>
+            <target xml:lang="fr">Le chien a fait voir au chat.</target>
+         </trans-unit>
+      </body>
+   </file>
+   <file original="psych@SP1.a24"
+         source-language="tww"
+         target-language="en"
+         datatype="eaf"
+         its:version="1.0">
+      <header>
+         <tool tool-id="eaf-to-xliff" tool-name="eaf-to-xliff.xsl"/>
+         <note>EAF utterance-id: F0_mean=180Hz; intensity=72dB; VOT=+25ms; aspiration=no</note>
+         <note>speaker: SP1</note>
+         <note its:translate="no">time-start-ms: 0</note>
+         <note its:translate="no">time-end-ms: 1800</note>
+         <note type="psychoacoustic" its:translate="no">F0_mean=180Hz; intensity=72dB; VOT=+25ms; aspiration=no</note>
+         <note its:translate="no">OLAC-type: http://www.language-archives.org/REC/type.html#primary_text</note>
+      </header>
+      <body>
+         <trans-unit id="a24.utt" resname="utterance">
+            <source xml:lang="tww">F0_mean=180Hz; intensity=72dB; VOT=+25ms; aspiration=no</source>
+            <context-group name="time-alignment" purpose="location">
+               <context context-type="x-eaf-time-start">0</context>
+               <context context-type="x-eaf-time-end">1800</context>
+            </context-group>
+         </trans-unit>
+      </body>
+   </file>
+   <file original="psych@SP1.a25"
+         source-language="tww"
+         target-language="en"
+         datatype="eaf"
+         its:version="1.0">
+      <header>
+         <tool tool-id="eaf-to-xliff" tool-name="eaf-to-xliff.xsl"/>
+         <note>EAF utterance-id: F0_mean=162Hz; intensity=68dB; VOT=+18ms; aspiration=no</note>
+         <note>speaker: SP1</note>
+         <note its:translate="no">time-start-ms: 2100</note>
+         <note its:translate="no">time-end-ms: 3600</note>
+         <note type="psychoacoustic" its:translate="no">F0_mean=162Hz; intensity=68dB; VOT=+18ms; aspiration=no</note>
+         <note its:translate="no">OLAC-type: http://www.language-archives.org/REC/type.html#primary_text</note>
+      </header>
+      <body>
+         <trans-unit id="a25.utt" resname="utterance">
+            <source xml:lang="tww">F0_mean=162Hz; intensity=68dB; VOT=+18ms; aspiration=no</source>
+            <context-group name="time-alignment" purpose="location">
+               <context context-type="x-eaf-time-start">2100</context>
+               <context context-type="x-eaf-time-end">3600</context>
+            </context-group>
+         </trans-unit>
+      </body>
+   </file>
+</xliff>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  sample.eaf  —  ELAN Annotation Format v2.8 / EAFv3.0 compatible
+  Multi-tier fieldwork transcript fixture.
+
+  Tiers modeled:
+    ref@SP1          — utterance reference numbers (root, time-alignable)
+    orth@SP1         — orthographic transcription (child of ref, Symbolic_Subdivision)
+    ipa@SP1          — IPA phonetic transcription (child of orth, Symbolic_Association)
+    morph@SP1        — morpheme segmentation (child of orth, Symbolic_Subdivision)
+    gloss@SP1        — morpheme glosses (child of morph, Symbolic_Subdivision)
+    trans-en@SP1     — free English translation (child of ref, Symbolic_Association)
+    etym@SP1         — etymological notes (child of orth, Symbolic_Association)
+
+  Media: fictional tww-language recording (Tuwari, BCP-47 tww)
+  IPA notation follows ExMARaLDA IPA.xml / Unicode IPA block U+0250–U+02AF
+-->
+<ANNOTATION_DOCUMENT
+  AUTHOR=""
+  DATE="2026-04-03T09:00:00+00:00"
+  FORMAT="3.0"
+  VERSION="3.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv3.0.xsd">
+
+  <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
+    <MEDIA_DESCRIPTOR
+      MEDIA_URL="file:///data/recordings/tww_session01.wav"
+      MIME_TYPE="audio/x-wav"
+      RELATIVE_MEDIA_URL="tww_session01.wav"
+      TIME_ORIGIN="0"/>
+    <MEDIA_DESCRIPTOR
+      MEDIA_URL="file:///data/recordings/tww_session01.mp4"
+      MIME_TYPE="video/mp4"
+      RELATIVE_MEDIA_URL="tww_session01.mp4"
+      TIME_ORIGIN="0"/>
+    <PROPERTY NAME="URN">urn:nl-mpi-tools-elan-eaf:tww-session01-2026</PROPERTY>
+    <PROPERTY NAME="lastUsedAnnotationId">28</PROPERTY>
+    <PROPERTY NAME="language">tww</PROPERTY>
+    <PROPERTY NAME="OLAC-type">http://www.language-archives.org/REC/type.html#primary_text</PROPERTY>
+  </HEADER>
+
+  <!-- ============================================================
+       TIME ORDER — all timecodes in milliseconds
+       ============================================================ -->
+  <TIME_ORDER>
+    <!-- Utterance 1: "ama maka buru" (the dog is eating) -->
+    <TIME_SLOT TIME_SLOT_ID="ts1"  TIME_VALUE="0"/>
+    <TIME_SLOT TIME_SLOT_ID="ts2"  TIME_VALUE="1800"/>
+    <!-- Utterance 2: "misi tara nuku" (the cat sleeps) -->
+    <TIME_SLOT TIME_SLOT_ID="ts3"  TIME_VALUE="2100"/>
+    <TIME_SLOT TIME_SLOT_ID="ts4"  TIME_VALUE="3600"/>
+    <!-- Utterance 3: multi-word example for gloss/morph tiers -->
+    <TIME_SLOT TIME_SLOT_ID="ts5"  TIME_VALUE="4000"/>
+    <TIME_SLOT TIME_SLOT_ID="ts6"  TIME_VALUE="6200"/>
+  </TIME_ORDER>
+
+  <!-- ============================================================
+       TIERS
+       ============================================================ -->
+
+  <!-- ROOT TIER: utterance reference numbers, time-alignable -->
+  <TIER LINGUISTIC_TYPE_REF="ref-type"
+        PARTICIPANT="SP1"
+        TIER_ID="ref@SP1">
+    <ANNOTATION>
+      <ALIGNABLE_ANNOTATION ANNOTATION_ID="a1"
+                            TIME_SLOT_REF1="ts1"
+                            TIME_SLOT_REF2="ts2">
+        <ANNOTATION_VALUE>U1</ANNOTATION_VALUE>
+      </ALIGNABLE_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <ALIGNABLE_ANNOTATION ANNOTATION_ID="a2"
+                            TIME_SLOT_REF1="ts3"
+                            TIME_SLOT_REF2="ts4">
+        <ANNOTATION_VALUE>U2</ANNOTATION_VALUE>
+      </ALIGNABLE_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <ALIGNABLE_ANNOTATION ANNOTATION_ID="a3"
+                            TIME_SLOT_REF1="ts5"
+                            TIME_SLOT_REF2="ts6">
+        <ANNOTATION_VALUE>U3</ANNOTATION_VALUE>
+      </ALIGNABLE_ANNOTATION>
+    </ANNOTATION>
+  </TIER>
+
+  <!-- ORTHOGRAPHIC TIER: Symbolic_Subdivision of ref -->
+  <TIER LINGUISTIC_TYPE_REF="orth-type"
+        PARENT_REF="ref@SP1"
+        PARTICIPANT="SP1"
+        TIER_ID="orth@SP1">
+    <ANNOTATION>
+      <REF_ANNOTATION ANNOTATION_ID="a4" ANNOTATION_REF="a1">
+        <ANNOTATION_VALUE>ama maka buru</ANNOTATION_VALUE>
+      </REF_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <REF_ANNOTATION ANNOTATION_ID="a5" ANNOTATION_REF="a2">
+        <ANNOTATION_VALUE>misi tara nuku</ANNOTATION_VALUE>
+      </REF_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <REF_ANNOTATION ANNOTATION_ID="a6" ANNOTATION_REF="a3">
+        <ANNOTATION_VALUE>ama-ki misi-ki wara-turu</ANNOTATION_VALUE>
+      </REF_ANNOTATION>
+    </ANNOTATION>
+  </TIER>
+
+  <!-- IPA PHONETIC TIER: Symbolic_Association with orth -->
+  <!-- IPA uses Unicode IPA block; ExMARaLDA IPA.xml convention -->
+  <TIER LINGUISTIC_TYPE_REF="ipa-type"
+        PARENT_REF="orth@SP1"
+        PARTICIPANT="SP1"
+        TIER_ID="ipa@SP1">
+    <ANNOTATION>
+      <REF_ANNOTATION ANNOTATION_ID="a7" ANNOTATION_REF="a4">
+        <!-- IPA: ˈa.ma ˈma.ka ˈbu.ɾu -->
+        <ANNOTATION_VALUE>ˈa.ma ˈma.ka ˈbu.ɾu</ANNOTATION_VALUE>
+      </REF_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <REF_ANNOTATION ANNOTATION_ID="a8" ANNOTATION_REF="a5">
+        <!-- IPA: ˈmi.si ˈta.ɾa ˈnu.ku -->
+        <ANNOTATION_VALUE>ˈmi.si ˈta.ɾa ˈnu.ku</ANNOTATION_VALUE>
+      </REF_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <REF_ANNOTATION ANNOTATION_ID="a9" ANNOTATION_REF="a6">
+        <ANNOTATION_VALUE>ˈa.ma.ki ˈmi.si.ki ˈwa.ɾa.tu.ɾu</ANNOTATION_VALUE>
+      </REF_ANNOTATION>
+    </ANNOTATION>
+  </TIER>
+
+  <!-- MORPHEME SEGMENTATION TIER: Symbolic_Subdivision of orth -->
+  <TIER LINGUISTIC_TYPE_REF="morph-type"
+        PARENT_REF="orth@SP1"
+        PARTICIPANT="SP1"
+        TIER_ID="morph@SP1">
+    <ANNOTATION>
+      <REF_ANNOTATION ANNOTATION_ID="a10" ANNOTATION_REF="a4">
+        <ANNOTATION_VALUE>ama  maka  bur-u</ANNOTATION_VALUE>
+      </REF_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <REF_ANNOTATION ANNOTATION_ID="a11" ANNOTATION_REF="a5">
+        <ANNOTATION_VALUE>misi  tar-a  nuk-u</ANNOTATION_VALUE>
+      </REF_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <REF_ANNOTATION ANNOTATION_ID="a12" ANNOTATION_REF="a6">
+        <ANNOTATION_VALUE>ama-ki  misi-ki  war-a-tur-u</ANNOTATION_VALUE>
+      </REF_ANNOTATION>
+    </ANNOTATION>
+  </TIER>
+
+  <!-- INTERLINEAR GLOSS TIER: Symbolic_Subdivision of morph -->
+  <TIER LINGUISTIC_TYPE_REF="gloss-type"
+        PARENT_REF="morph@SP1"
+        PARTICIPANT="SP1"
+        TIER_ID="gloss@SP1">
+    <ANNOTATION>
+      <REF_ANNOTATION ANNOTATION_ID="a13" ANNOTATION_REF="a10">
+        <!-- Leipzig Glossing Rules style -->
+        <ANNOTATION_VALUE>dog  eat  eat-NPST</ANNOTATION_VALUE>
+      </REF_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <REF_ANNOTATION ANNOTATION_ID="a14" ANNOTATION_REF="a11">
+        <ANNOTATION_VALUE>cat  sleep-PST  sleep-NPST</ANNOTATION_VALUE>
+      </REF_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <REF_ANNOTATION ANNOTATION_ID="a15" ANNOTATION_REF="a12">
+        <ANNOTATION_VALUE>dog-ERG  cat-ABS  see-PST-CAUS-NPST</ANNOTATION_VALUE>
+      </REF_ANNOTATION>
+    </ANNOTATION>
+  </TIER>
+
+  <!-- FREE TRANSLATION TIER: Symbolic_Association with ref -->
+  <TIER LINGUISTIC_TYPE_REF="trans-type"
+        PARENT_REF="ref@SP1"
+        PARTICIPANT="SP1"
+        TIER_ID="trans-en@SP1">
+    <ANNOTATION>
+      <REF_ANNOTATION ANNOTATION_ID="a16" ANNOTATION_REF="a1">
+        <ANNOTATION_VALUE>The dog is eating.</ANNOTATION_VALUE>
+      </REF_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <REF_ANNOTATION ANNOTATION_ID="a17" ANNOTATION_REF="a2">
+        <ANNOTATION_VALUE>The cat sleeps.</ANNOTATION_VALUE>
+      </REF_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <REF_ANNOTATION ANNOTATION_ID="a18" ANNOTATION_REF="a3">
+        <ANNOTATION_VALUE>The dog made the cat see (it).</ANNOTATION_VALUE>
+      </REF_ANNOTATION>
+    </ANNOTATION>
+  </TIER>
+
+  <!-- FRENCH TRANSLATION TIER -->
+  <TIER LINGUISTIC_TYPE_REF="trans-type"
+        PARENT_REF="ref@SP1"
+        PARTICIPANT="SP1"
+        TIER_ID="trans-fr@SP1">
+    <ANNOTATION>
+      <REF_ANNOTATION ANNOTATION_ID="a19" ANNOTATION_REF="a1">
+        <ANNOTATION_VALUE>Le chien mange.</ANNOTATION_VALUE>
+      </REF_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <REF_ANNOTATION ANNOTATION_ID="a20" ANNOTATION_REF="a2">
+        <ANNOTATION_VALUE>Le chat dort.</ANNOTATION_VALUE>
+      </REF_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <REF_ANNOTATION ANNOTATION_ID="a21" ANNOTATION_REF="a3">
+        <ANNOTATION_VALUE>Le chien a fait voir au chat.</ANNOTATION_VALUE>
+      </REF_ANNOTATION>
+    </ANNOTATION>
+  </TIER>
+
+  <!-- ETYMOLOGY TIER: Symbolic_Association with orth -->
+  <!-- Encoded following DMLex etymonUnit conventions (OASIS) -->
+  <TIER LINGUISTIC_TYPE_REF="etym-type"
+        PARENT_REF="orth@SP1"
+        PARTICIPANT="SP1"
+        TIER_ID="etym@SP1">
+    <ANNOTATION>
+      <REF_ANNOTATION ANNOTATION_ID="a22" ANNOTATION_REF="a4">
+        <!-- etym JSON-like: langCode + etymon text + reconstructed flag -->
+        <ANNOTATION_VALUE>{"langCode":"proto-tww","text":"*ama","reconstructed":true,"translation":"dog"}</ANNOTATION_VALUE>
+      </REF_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <REF_ANNOTATION ANNOTATION_ID="a23" ANNOTATION_REF="a5">
+        <ANNOTATION_VALUE>{"langCode":"proto-tww","text":"*misi","reconstructed":false,"translation":"small animal"}</ANNOTATION_VALUE>
+      </REF_ANNOTATION>
+    </ANNOTATION>
+  </TIER>
+
+  <!-- NOTES / PSYCHOACOUSTIC TIER: Included_In time-alignable -->
+  <TIER LINGUISTIC_TYPE_REF="note-type"
+        PARTICIPANT="SP1"
+        TIER_ID="psych@SP1">
+    <ANNOTATION>
+      <ALIGNABLE_ANNOTATION ANNOTATION_ID="a24"
+                            TIME_SLOT_REF1="ts1"
+                            TIME_SLOT_REF2="ts2">
+        <ANNOTATION_VALUE>F0_mean=180Hz; intensity=72dB; VOT=+25ms; aspiration=no</ANNOTATION_VALUE>
+      </ALIGNABLE_ANNOTATION>
+    </ANNOTATION>
+    <ANNOTATION>
+      <ALIGNABLE_ANNOTATION ANNOTATION_ID="a25"
+                            TIME_SLOT_REF1="ts3"
+                            TIME_SLOT_REF2="ts4">
+        <ANNOTATION_VALUE>F0_mean=162Hz; intensity=68dB; VOT=+18ms; aspiration=no</ANNOTATION_VALUE>
+      </ALIGNABLE_ANNOTATION>
+    </ANNOTATION>
+  </TIER>
+
+  <!-- ============================================================
+       LINGUISTIC TYPES
+       ============================================================ -->
+  <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false"
+                   LINGUISTIC_TYPE_ID="ref-type"
+                   TIME_ALIGNABLE="true"/>
+
+  <LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Subdivision"
+                   GRAPHIC_REFERENCES="false"
+                   LINGUISTIC_TYPE_ID="orth-type"
+                   TIME_ALIGNABLE="false"/>
+
+  <LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Association"
+                   GRAPHIC_REFERENCES="false"
+                   LINGUISTIC_TYPE_ID="ipa-type"
+                   TIME_ALIGNABLE="false"/>
+
+  <LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Subdivision"
+                   GRAPHIC_REFERENCES="false"
+                   LINGUISTIC_TYPE_ID="morph-type"
+                   TIME_ALIGNABLE="false"/>
+
+  <LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Subdivision"
+                   GRAPHIC_REFERENCES="false"
+                   LINGUISTIC_TYPE_ID="gloss-type"
+                   TIME_ALIGNABLE="false"/>
+
+  <LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Association"
+                   GRAPHIC_REFERENCES="false"
+                   LINGUISTIC_TYPE_ID="trans-type"
+                   TIME_ALIGNABLE="false"/>
+
+  <LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Association"
+                   GRAPHIC_REFERENCES="false"
+                   LINGUISTIC_TYPE_ID="etym-type"
+                   TIME_ALIGNABLE="false"/>
+
+  <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false"
+                   LINGUISTIC_TYPE_ID="note-type"
+                   TIME_ALIGNABLE="true"/>
+
+  <!-- ============================================================
+       CONSTRAINTS
+       ============================================================ -->
+  <CONSTRAINT DESCRIPTION="Time subdivision of parent annotation's time interval, no time gaps allowed within this interval"
+              STEREOTYPE="Time_Subdivision"/>
+  <CONSTRAINT DESCRIPTION="Symbolic subdivision of a parent annotation. Annotations referring to the same parent are ordered"
+              STEREOTYPE="Symbolic_Subdivision"/>
+  <CONSTRAINT DESCRIPTION="1-1 association with a parent annotation"
+              STEREOTYPE="Symbolic_Association"/>
+  <CONSTRAINT DESCRIPTION="Time alignable annotations within the parent annotation's time interval, gaps are allowed"
+              STEREOTYPE="Included_In"/>
+
+  <!-- ============================================================
+       LANGUAGES
+       ============================================================ -->
+  <LANGUAGE LANG_DEF="http://cdb.iso.org/lg/CDB-00132468-001"
+            LANG_ID="tww"
+            LANG_LABEL="Tuwari (fictional)"/>
+  <LANGUAGE LANG_DEF="http://cdb.iso.org/lg/CDB-00130975-001"
+            LANG_ID="en"
+            LANG_LABEL="English"/>
+  <LANGUAGE LANG_DEF="http://cdb.iso.org/lg/CDB-00130988-001"
+            LANG_ID="fr"
+            LANG_LABEL="French"/>
+
+</ANNOTATION_DOCUMENT>

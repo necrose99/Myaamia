@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cree Syllabics Transliterator — nêhiyawêwin</title>
+<style>
+  /* ── Variables ─────────────────────────────────────── */
+  :root {
+    --bg:          #0e0f11;
+    --surface:     #16181c;
+    --surface2:    #1e2128;
+    --border:      #2a2d35;
+    --accent:      #c8a96e;   /* warm ochre — earth tone */
+    --accent2:     #7eb8a4;   /* sage green — land */
+    --text:        #e8e4dc;
+    --text-muted:  #7a7870;
+    --sro-color:   #c8a96e;
+    --ipa-color:   #7eb8a4;
+    --tip-bg:      #1a1c21;
+    --tip-border:  #c8a96e;
+    --highlight:   rgba(200, 169, 110, 0.12);
+    --font-main:   'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    --font-mono:   'Courier New', Courier, monospace;
+    --font-ui:     Georgia, 'Times New Roman', serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-main);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* ── Header ────────────────────────────────────────── */
+  header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: var(--accent);
+    letter-spacing: 0.04em;
+  }
+
+  header .subtitle {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
+  /* ── Controls bar ──────────────────────────────────── */
+  .controls {
+    background: var(--surface2);
+    border-bottom: 1px solid var(--border);
+    padding: 0.8rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .control-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+  }
+
+  .control-group label { cursor: pointer; }
+
+  .toggle {
+    appearance: none;
+    width: 36px; height: 20px;
+    background: var(--border);
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.2s;
+  }
+  .toggle:checked { background: var(--accent); }
+  .toggle::after {
+    content: '';
+    position: absolute;
+    width: 14px; height: 14px;
+    background: white;
+    border-radius: 50%;
+    top: 3px; left: 3px;
+    transition: left 0.2s;
+  }
+  .toggle:checked::after { left: 19px; }
+
+  select {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.82rem;
+    cursor: pointer;
+  }
+
+  /* ── Main layout ───────────────────────────────────── */
+  main {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 0;
+    min-height: calc(100vh - 120px);
+  }
+
+  /* ── Text panel ────────────────────────────────────── */
+  .text-panel {
+    padding: 2rem;
+    border-right: 1px solid var(--border);
+  }
+
+  .panel-title {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+  }
+
+  textarea {
+    width: 100%;
+    min-height: 120px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-family: var(--font-main);
+    font-size: 1.4rem;
+    line-height: 1.8;
+    padding: 1rem;
+    border-radius: 6px;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  textarea:focus { border-color: var(--accent); }
+  textarea::placeholder { color: var(--text-muted); font-style: italic; }
+
+  /* ── Rendered output ───────────────────────────────── */
+  .output-area {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 2.6;
+    word-spacing: 0.1em;
+    /* Leave room for tooltips above */
+    padding-top: 0.5rem;
+  }
+
+  /* ── Core syllabic span ────────────────────────────── */
+  .syl {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+    transition: color 0.15s;
+    /* furigana-style: ruby annotation above */
+  }
+
+  /* Furigana-style annotation above each character */
+  .syl-ruby {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    cursor: help;
+  }
+
+  .syl-anno {
+    font-size: 0.52rem;
+    line-height: 1;
+    margin-bottom: 1px;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: opacity 0.2s;
+  }
+
+  .syl-anno .anno-sro {
+    color: var(--sro-color);
+    font-family: var(--font-mono);
+    font-weight: bold;
+  }
+
+  .syl-anno .anno-ipa {
+    color: var(--ipa-color);
+    font-family: var(--font-mono);
+    font-size: 0.46rem;
+  }
+
+  .anno-hidden .syl-anno { opacity: 0; }
+  .anno-sro-only .anno-ipa { display: none; }
+  .anno-ipa-only .anno-sro { display: none; }
+
+  .syl-char {
+    display: block;
+    transition: color 0.15s, background 0.15s;
+    padding: 0 1px;
+    border-radius: 2px;
+  }
+
+  .syl-ruby:hover .syl-char {
+    color: var(--accent);
+    background: var(--highlight);
+  }
+
+  /* ── Hover tooltip (rich detail) ───────────────────── */
+  .syl-ruby:hover::after {
+    content: attr(data-tip);
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--tip-bg);
+    border: 1px solid var(--tip-border);
+    border-radius: 6px;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.78rem;
+    font-family: var(--font-mono);
+    color: var(--text);
+    white-space: pre;
+    z-index: 100;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    pointer-events: none;
+    line-height: 1.6;
+  }
+
+  /* Arrow on tooltip */
+  .syl-ruby:hover::before {
+    content: '';
+    position: absolute;
+    bottom: calc(100% + 2px);
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: var(--tip-border);
+    z-index: 101;
+  }
+
+  /* ── Space between words ───────────────────────────── */
+  .syl-space { display: inline-block; width: 0.4em; }
+
+  /* ── Non-syllabic characters ───────────────────────── */
+  .syl-plain { color: var(--text-muted); }
+
+  /* ── Sidebar ───────────────────────────────────────── */
+  .sidebar {
+    padding: 1.5rem;
+    overflow-y: auto;
+  }
+
+  .sidebar section {
+    margin-bottom: 1.5rem;
+  }
+
+  .sidebar h3 {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* ── Reference chart ───────────────────────────────── */
+  .chart {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3px;
+    font-size: 0.72rem;
+  }
+
+  .chart-cell {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 4px 3px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+  }
+
+  .chart-cell:hover {
+    border-color: var(--accent);
+    background: var(--highlight);
+  }
+
+  .chart-syl {
+    font-size: 1rem;
+    display: block;
+    color: var(--text);
+  }
+
+  .chart-sro {
+    font-size: 0.62rem;
+    color: var(--sro-color);
+    font-family: var(--font-mono);
+    display: block;
+  }
+
+  .chart-ipa {
+    font-size: 0.58rem;
+    color: var(--ipa-color);
+    font-family: var(--font-mono);
+    display: block;
+  }
+
+  /* ── Sample texts ──────────────────────────────────── */
+  .sample-btn {
+    display: block;
+    width: 100%;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+    font-family: var(--font-main);
+    font-size: 0.82rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    transition: border-color 0.15s, background 0.15s;
+  }
+
+  .sample-btn:hover {
+    border-color: var(--accent);
+    background: var(--highlight);
+  }
+
+  .sample-syl {
+    font-size: 1rem;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  .sample-en {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    font-style: italic;
+  }
+
+  /* ── Legend ────────────────────────────────────────── */
+  .legend {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 0.76rem;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .legend-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* ── Transliteration output strip ─────────────────── */
+  .translit-strip {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+  }
+
+  .translit-row {
+    display: flex;
+    gap: 0.5rem;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+
+  .translit-label {
+    font-size: 0.68rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    width: 30px;
+    flex-shrink: 0;
+  }
+
+  .translit-sro  { color: var(--sro-color); }
+  .translit-ipa  { color: var(--ipa-color); margin-top: 4px; }
+
+  /* ── Copy button ───────────────────────────────────── */
+  .copy-btn {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    padding: 2px 8px;
+    font-size: 0.7rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .copy-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ── Scrollbar styling ─────────────────────────────── */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+  /* ── Responsive ────────────────────────────────────── */
+  @media (max-width: 768px) {
+    main { grid-template-columns: 1fr; }
+    .sidebar { border-top: 1px solid var(--border); }
+    header { padding: 1rem; }
+    .controls { padding: 0.6rem 1rem; }
+    .text-panel { padding: 1rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>ᐊᓂᐦᔑᓂᓂᐤ Syllabics Transliterator</h1>
+  <span class="subtitle">Cree · Ojibwe · Oji-Cree — hover any character</span>
+</header>
+
+<div class="controls">
+  <div class="control-group">
+    <input type="checkbox" id="toggleAnno" class="toggle" checked>
+    <label for="toggleAnno">Show annotations</label>
+  </div>
+  <div class="control-group">
+    <select id="annoMode">
+      <option value="both">SRO + IPA</option>
+      <option value="sro">SRO only</option>
+      <option value="ipa">IPA only</option>
+    </select>
+  </div>
+  <div class="control-group">
+    <select id="dialect">
+      <option value="plains">Plains Cree</option>
+      <option value="swampy">Swampy Cree</option>
+      <option value="moose">Moose Cree</option>
+      <option value="ojibwe">Ojibwe</option>
+      <option value="oji_cree">Oji-Cree</option>
+    </select>
+    <label>dialect</label>
+  </div>
+  <div class="control-group" style="margin-left:auto">
+    <span style="font-size:0.75rem; color:var(--text-muted)">
+      ↑ hover chars for detail
+    </span>
+  </div>
+</div>
+
+<main>
+  <!-- ── Left: text input + rendered output ── -->
+  <div class="text-panel">
+    <div class="panel-title">Input — paste or type syllabics</div>
+    <textarea id="input"
+      placeholder="ᐊᓂᐦᔑᓂᓂᐤ ᐁᑲ ᑭᒥᐊᐧᐨ…"
+      spellcheck="false"></textarea>
+
+    <div class="panel-title" style="margin-top:1.5rem">
+      Annotated output
+      <span id="charCount" style="color:var(--text-muted); font-size:0.7rem; margin-left:0.5rem"></span>
+    </div>
+    <div id="output" class="output-area" aria-live="polite"></div>
+
+    <!-- Transliteration strip -->
+    <div id="translitStrip" class="translit-strip" style="display:none">
+      <div class="translit-row">
+        <span class="translit-label">SRO</span>
+        <span id="sroOut" class="translit-sro"></span>
+        <button class="copy-btn" onclick="copyText('sro')">copy</button>
+      </div>
+      <div class="translit-row" style="margin-top:6px">
+        <span class="translit-label">IPA</span>
+        <span id="ipaOut" class="translit-ipa"></span>
+        <button class="copy-btn" onclick="copyText('ipa')">copy</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Right: sidebar ── -->
+  <div class="sidebar">
+
+    <section>
+      <h3>Sample texts</h3>
+      <button class="sample-btn" onclick="loadSample(0)">
+        <span class="sample-syl">ᑕᓀᐦᐃᑭᓱᐊᐧᐠ</span>
+        <span class="sample-en">Plains Cree: "They are alive"</span>
+      </button>
+      <button class="sample-btn" onclick="loadSample(1)">
+        <span class="sample-syl">ᐊᓂᐦᔑᓂᓂᐤ</span>
+        <span class="sample-en">Ojibwe: "Anishinabe person"</span>
+      </button>
+      <button class="sample-btn" onclick="loadSample(2)">
+        <span class="sample-syl">ᓂᔭ ᓂᒥᔪᐊᐧᐣ</span>
+        <span class="sample-en">Plains Cree: "I am singing"</span>
+      </button>
+      <button class="sample-btn" onclick="loadSample(3)">
+        <span class="sample-syl">ᑭᐦᒋ ᑲᑭᓯᐠ</span>
+        <span class="sample-en">Cree: "The great sky"</span>
+      </button>
+      <button class="sample-btn" onclick="loadSample(4)">
+        <span class="sample-syl">ᒥᓯᐌ ᐃᔑᓈᑯᓯᐊᐧᐠ</span>
+        <span class="sample-en">Cree: "They all look like that"</span>
+      </button>
+    </section>
+
+    <section>
+      <h3>Quick reference — vowel series</h3>
+      <div class="chart" id="refChart"></div>
+    </section>
+
+    <section>
+      <h3>Legend</h3>
+      <div class="legend">
+        <div class="legend-item">
+          <div class="legend-dot" style="background:var(--sro-color)"></div>
+          <span>SRO — Standard Roman Orthography</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:var(--ipa-color)"></div>
+          <span>IPA — International Phonetic Alphabet</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:var(--border)"></div>
+          <span>Hover any syllabic for full detail</span>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<script>
+// ── Syllabics mapping ──────────────────────────────────────────────────────
+const SYLLABICS = {
+  'ᐁ':{ sro:'ê',  ipa:'eː',  cat:'vowel', notes:'long e / ê' },
+  'ᐃ':{ sro:'i',  ipa:'i',   cat:'vowel', notes:'short i' },
+  'ᐄ':{ sro:'î',  ipa:'iː',  cat:'vowel', notes:'long î' },
+  'ᐅ':{ sro:'o',  ipa:'o',   cat:'vowel', notes:'short o' },
+  'ᐆ':{ sro:'ô',  ipa:'oː',  cat:'vowel', notes:'long ô' },
+  'ᐊ':{ sro:'a',  ipa:'a',   cat:'vowel', notes:'short a' },
+  'ᐋ':{ sro:'â',  ipa:'aː',  cat:'vowel', notes:'long â' },
+  // p
+  'ᐯ':{ sro:'pê', ipa:'peː', cat:'p' }, 'ᐱ':{ sro:'pi',  ipa:'pi',  cat:'p' },
+  'ᐲ':{ sro:'pî', ipa:'piː', cat:'p' }, 'ᐳ':{ sro:'po',  ipa:'po',  cat:'p' },
+  'ᐴ':{ sro:'pô', ipa:'poː', cat:'p' }, 'ᐸ':{ sro:'pa',  ipa:'pa',  cat:'p' },
+  'ᐹ':{ sro:'pâ', ipa:'paː', cat:'p' }, 'ᑊ':{ sro:'p',   ipa:'p',   cat:'p', notes:'final' },
+  // t
+  'ᑌ':{ sro:'tê', ipa:'teː', cat:'t' }, 'ᑎ':{ sro:'ti',  ipa:'ti',  cat:'t' },
+  'ᑏ':{ sro:'tî', ipa:'tiː', cat:'t' }, 'ᑐ':{ sro:'to',  ipa:'to',  cat:'t' },
+  'ᑑ':{ sro:'tô', ipa:'toː', cat:'t' }, 'ᑕ':{ sro:'ta',  ipa:'ta',  cat:'t' },
+  'ᑖ':{ sro:'tâ', ipa:'taː', cat:'t' }, 'ᑦ':{ sro:'t',   ipa:'t',   cat:'t', notes:'final' },
+  // k
+  'ᑫ':{ sro:'kê', ipa:'keː', cat:'k' }, 'ᑭ':{ sro:'ki',  ipa:'ki',  cat:'k' },
+  'ᑮ':{ sro:'kî', ipa:'kiː', cat:'k' }, 'ᑯ':{ sro:'ko',  ipa:'ko',  cat:'k' },
+  'ᑰ':{ sro:'kô', ipa:'koː', cat:'k' }, 'ᑲ':{ sro:'ka',  ipa:'ka',  cat:'k' },
+  'ᑳ':{ sro:'kâ', ipa:'kaː', cat:'k' }, 'ᒃ':{ sro:'k',   ipa:'k',   cat:'k', notes:'final' },
+  // c
+  'ᒉ':{ sro:'cê', ipa:'tʃeː',cat:'c' }, 'ᒋ':{ sro:'ci',  ipa:'tʃi', cat:'c' },
+  'ᒌ':{ sro:'cî', ipa:'tʃiː',cat:'c' }, 'ᒍ':{ sro:'co',  ipa:'tʃo', cat:'c' },
+  'ᒎ':{ sro:'cô', ipa:'tʃoː',cat:'c' }, 'ᒐ':{ sro:'ca',  ipa:'tʃa', cat:'c' },
+  'ᒑ':{ sro:'câ', ipa:'tʃaː',cat:'c' }, 'ᒡ':{ sro:'c',   ipa:'tʃ',  cat:'c', notes:'final' },
+  // m
+  'ᒣ':{ sro:'mê', ipa:'meː', cat:'m' }, 'ᒥ':{ sro:'mi',  ipa:'mi',  cat:'m' },
+  'ᒦ':{ sro:'mî', ipa:'miː', cat:'m' }, 'ᒧ':{ sro:'mo',  ipa:'mo',  cat:'m' },
+  'ᒨ':{ sro:'mô', ipa:'moː', cat:'m' }, 'ᒪ':{ sro:'ma',  ipa:'ma',  cat:'m' },
+  'ᒫ':{ sro:'mâ', ipa:'maː', cat:'m' }, 'ᒻ':{ sro:'m',   ipa:'m',   cat:'m', notes:'final' },
+  // n
+  'ᓀ':{ sro:'nê', ipa:'neː', cat:'n' }, 'ᓂ':{ sro:'ni',  ipa:'ni',  cat:'n' },
+  'ᓃ':{ sro:'nî', ipa:'niː', cat:'n' }, 'ᓄ':{ sro:'no',  ipa:'no',  cat:'n' },
+  'ᓅ':{ sro:'nô', ipa:'noː', cat:'n' }, 'ᓇ':{ sro:'na',  ipa:'na',  cat:'n' },
+  'ᓈ':{ sro:'nâ', ipa:'naː', cat:'n' }, 'ᓐ':{ sro:'n',   ipa:'n',   cat:'n', notes:'final' },
+  // s
+  'ᓭ':{ sro:'sê', ipa:'seː', cat:'s' }, 'ᓯ':{ sro:'si',  ipa:'si',  cat:'s' },
+  'ᓰ':{ sro:'sî', ipa:'siː', cat:'s' }, 'ᓱ':{ sro:'so',  ipa:'so',  cat:'s' },
+  'ᓲ':{ sro:'sô', ipa:'soː', cat:'s' }, 'ᓴ':{ sro:'sa',  ipa:'sa',  cat:'s' },
+  'ᓵ':{ sro:'sâ', ipa:'saː', cat:'s' }, 'ᔅ':{ sro:'s',   ipa:'s',   cat:'s', notes:'final' },
+  // y
+  'ᔦ':{ sro:'yê', ipa:'jeː', cat:'y' }, 'ᔨ':{ sro:'yi',  ipa:'ji',  cat:'y' },
+  'ᔩ':{ sro:'yî', ipa:'jiː', cat:'y' }, 'ᔪ':{ sro:'yo',  ipa:'jo',  cat:'y' },
+  'ᔫ':{ sro:'yô', ipa:'joː', cat:'y' }, 'ᔭ':{ sro:'ya',  ipa:'ja',  cat:'y' },
+  'ᔮ':{ sro:'yâ', ipa:'jaː', cat:'y' }, 'ᔾ':{ sro:'y',   ipa:'j',   cat:'y', notes:'final' },
+  // w
+  'ᐍ':{ sro:'wê', ipa:'weː', cat:'w' }, 'ᐏ':{ sro:'wi',  ipa:'wi',  cat:'w' },
+  'ᐑ':{ sro:'wî', ipa:'wiː', cat:'w' }, 'ᐓ':{ sro:'wo',  ipa:'wo',  cat:'w' },
+  'ᐕ':{ sro:'wô', ipa:'woː', cat:'w' }, 'ᐘ':{ sro:'wa',  ipa:'wa',  cat:'w' },
+  'ᐚ':{ sro:'wâ', ipa:'waː', cat:'w' }, 'ᐤ':{ sro:'w',   ipa:'w',   cat:'w', notes:'final w' },
+  // h / specials
+  'ᐦ':{ sro:'h',  ipa:'h',   cat:'h', notes:'h / aspirate' },
+  'ᐧ':{ sro:'w',  ipa:'ʷ',   cat:'w', notes:'w-dot modifier' },
+  // l (Moose Cree)
+  'ᓕ':{ sro:'le', ipa:'leː', cat:'l', notes:'Moose Cree' },
+  'ᓗ':{ sro:'lo', ipa:'lo',  cat:'l', notes:'Moose Cree' },
+  'ᓚ':{ sro:'la', ipa:'la',  cat:'l', notes:'Moose Cree' },
+  'ᓪ':{ sro:'l',  ipa:'l',   cat:'l', notes:'Moose Cree final' },
+  // r (Eastern)
+  'ᕃ':{ sro:'re', ipa:'ɾeː', cat:'r', notes:'East Cree' },
+  'ᕆ':{ sro:'ri', ipa:'ɾi',  cat:'r', notes:'East Cree' },
+  'ᕋ':{ sro:'ra', ipa:'ɾa',  cat:'r', notes:'East Cree' },
+  'ᕐ':{ sro:'r',  ipa:'ɾ',   cat:'r', notes:'East Cree final' },
+  // punctuation
+  '᙮':{ sro:'.',  ipa:'.',   cat:'punct', notes:'syllabics full stop' },
+  '᐀':{ sro:'-',  ipa:'-',   cat:'punct', notes:'syllabics hyphen' },
+};
+
+const SAMPLES = [
+  'ᑕᓀᐦᐃᑭᓱᐊᐧᐠ',
+  'ᐊᓂᐦᔑᓂᓂᐤ',
+  'ᓂᔭ ᓂᒥᔪᐊᐧᐣ',
+  'ᑭᐦᒋ ᑲᑭᓯᐠ',
+  'ᒥᓯᐌ ᐃᔑᓈᑯᓯᐊᐧᐠ',
+];
+
+// ── State ──────────────────────────────────────────────────────────────────
+let showAnno   = true;
+let annoMode   = 'both';   // 'both' | 'sro' | 'ipa'
+
+// ── DOM refs ───────────────────────────────────────────────────────────────
+const inputEl      = document.getElementById('input');
+const outputEl     = document.getElementById('output');
+const sroOut       = document.getElementById('sroOut');
+const ipaOut       = document.getElementById('ipaOut');
+const strip        = document.getElementById('translitStrip');
+const charCount    = document.getElementById('charCount');
+const toggleAnno   = document.getElementById('toggleAnno');
+const annoModeEl   = document.getElementById('annoMode');
+const refChart     = document.getElementById('refChart');
+
+// ── Build output ───────────────────────────────────────────────────────────
+function buildOutput(text) {
+  if (!text.trim()) {
+    outputEl.innerHTML = '';
+    strip.style.display = 'none';
+    charCount.textContent = '';
+    return;
+  }
+
+  const chars = [...text];   // proper Unicode char iteration
+  let html    = '';
+  let sroFull = '';
+  let ipaFull = '';
+  let sylCount = 0;
+
+  for (const ch of chars) {
+    if (ch === ' ' || ch === '\u00A0') {
+      html    += '<span class="syl-space"> </span>';
+      sroFull += ' ';
+      ipaFull += ' ';
+      continue;
+    }
+    if (ch === '\n') {
+      html += '<br>';
+      continue;
+    }
+
+    const data = SYLLABICS[ch];
+    if (!data) {
+      // Non-syllabic character — render plainly
+      html += `<span class="syl-plain">${ch}</span>`;
+      sroFull += ch;
+      ipaFull += ch;
+      continue;
+    }
+
+    sylCount++;
+    sroFull += data.sro;
+    ipaFull += data.ipa;
+
+    // Build tooltip text (shown on hover via CSS attr)
+    const tipLines = [
+      `char   ${ch}`,
+      `sro    ${data.sro}`,
+      `ipa    [${data.ipa}]`,
+      data.cat ? `type   ${data.cat === 'vowel' ? 'vowel' : data.cat + ' series'}` : '',
+      data.notes ? `note   ${data.notes}` : '',
+    ].filter(Boolean).join('\n');
+
+    // Annotation above character (furigana style)
+    const annoHtml = `
+      <span class="syl-anno">
+        <span class="anno-sro">${escHtml(data.sro)}</span>
+        <span class="anno-ipa">[${escHtml(data.ipa)}]</span>
+      </span>`;
+
+    html += `<span class="syl-ruby" data-tip="${escAttr(tipLines)}"
+                  aria-label="${escAttr(data.sro)} [${escAttr(data.ipa)}]"
+                  role="img">
+               ${annoHtml}
+               <span class="syl-char">${ch}</span>
+             </span>`;
+  }
+
+  outputEl.innerHTML = html;
+  applyAnnoState();
+
+  // Update translit strip
+  sroOut.textContent = sroFull;
+  ipaOut.textContent = '[' + ipaFull + ']';
+  strip.style.display = sylCount > 0 ? 'block' : 'none';
+  charCount.textContent = `${sylCount} syllabic${sylCount !== 1 ? 's' : ''}`;
+}
+
+function applyAnnoState() {
+  const cls = showAnno
+    ? (annoMode === 'sro' ? 'anno-sro-only'
+      : annoMode === 'ipa' ? 'anno-ipa-only'
+      : '')
+    : 'anno-hidden';
+  outputEl.className = 'output-area ' + cls;
+}
+
+// ── Reference chart ────────────────────────────────────────────────────────
+function buildRefChart() {
+  // Show just the vowel series as quick reference
+  const vowels = ['ᐊ','ᐃ','ᐅ','ᐁ','ᐋ','ᐄ','ᐆ'];
+  const firstOfSeries = [
+    ['ᐸ','ᐱ','ᐳ','ᐯ'],  // p
+    ['ᑕ','ᑎ','ᑐ','ᑌ'],  // t
+    ['ᑲ','ᑭ','ᑯ','ᑫ'],  // k
+    ['ᒐ','ᒋ','ᒍ','ᒉ'],  // c
+    ['ᒪ','ᒥ','ᒧ','ᒣ'],  // m
+    ['ᓇ','ᓂ','ᓄ','ᓀ'],  // n
+    ['ᓴ','ᓯ','ᓱ','ᓭ'],  // s
+    ['ᔭ','ᔨ','ᔪ','ᔦ'],  // y
+  ];
+
+  let html = '';
+  for (const row of firstOfSeries) {
+    for (const ch of row) {
+      const d = SYLLABICS[ch];
+      if (!d) continue;
+      html += `<div class="chart-cell" title="${d.sro} [${d.ipa}]"
+                    onclick="insertChar('${ch}')">
+                 <span class="chart-syl">${ch}</span>
+                 <span class="chart-sro">${d.sro}</span>
+                 <span class="chart-ipa">[${d.ipa}]</span>
+               </div>`;
+    }
+  }
+  refChart.innerHTML = html;
+}
+
+// ── Utilities ──────────────────────────────────────────────────────────────
+function escHtml(s) {
+  return String(s)
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;');
+}
+function escAttr(s) {
+  return String(s)
+    .replace(/&/g,'&amp;').replace(/"/g,'&quot;')
+    .replace(/'/g,'&#39;');
+}
+
+function insertChar(ch) {
+  const start = inputEl.selectionStart;
+  const end   = inputEl.selectionEnd;
+  const val   = inputEl.value;
+  inputEl.value = val.slice(0, start) + ch + val.slice(end);
+  inputEl.selectionStart = inputEl.selectionEnd = start + ch.length;
+  inputEl.dispatchEvent(new Event('input'));
+  inputEl.focus();
+}
+
+function loadSample(idx) {
+  inputEl.value = SAMPLES[idx];
+  inputEl.dispatchEvent(new Event('input'));
+}
+
+function copyText(type) {
+  const text = type === 'sro'
+    ? sroOut.textContent
+    : ipaOut.textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = event.target;
+    const orig = btn.textContent;
+    btn.textContent = 'copied!';
+    setTimeout(() => btn.textContent = orig, 1500);
+  });
+}
+
+// ── Event listeners ────────────────────────────────────────────────────────
+inputEl.addEventListener('input', () => buildOutput(inputEl.value));
+
+toggleAnno.addEventListener('change', () => {
+  showAnno = toggleAnno.checked;
+  applyAnnoState();
+});
+
+annoModeEl.addEventListener('change', () => {
+  annoMode = annoModeEl.value;
+  applyAnnoState();
+});
+
+// ── Init ───────────────────────────────────────────────────────────────────
+buildRefChart();
+// Load first sample on start
+loadSample(0);
+</script>
+</body>
+</html>
