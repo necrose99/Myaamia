@@ -1,12 +1,55 @@
-import lxml.etree as ET
-import spacy
-from datetime import datetime
+import sys
+import os
+import glob
+from dataclasses import dataclass, field
+from typing import List, Optional, Any
+import xml.etree.ElementTree as ET
+from saxonche import PySaxonProcessor
 
-# Load SpaCy for POS tagging on English glosses
-nlp = spacy.load("en_core_web_sm")
+# --- Dataclasses for XSLT Structure Analysis ---
+
+@dataclass
+class XslTemplate:
+    [span_5](start_span)[span_6](start_span)"""Represents a template match or named template in the XSLT[span_5](end_span)[span_6](end_span)."""
+    match: Optional[str] = None
+    name: Optional[str] = None
+    content: List[Any] = field(default_factory=list)
+
+    @classmethod
+    def from_xml(cls, elem: ET.Element, ns: dict) -> 'XslTemplate':
+        return cls(
+            match=elem.get('match'),
+            name=elem.get('name')
+        )
+
+@dataclass
+class XslStylesheet:
+    [span_7](start_span)[span_8](start_span)"""Represents the root XSL stylesheet and its global parameters[span_7](end_span)[span_8](end_span)."""
+    version: str = "2.0"
+    params: dict = field(default_factory=dict)
+    templates: List[XslTemplate] = field(default_factory=list)
+
+    @classmethod
+    def from_xml(cls, root_elem: ET.Element) -> 'XslStylesheet':
+        ns = {'xsl': 'http://www.w3.org/1999/XSL/Transform'}
+        instance = cls(version=root_elem.get('version', '2.0'))
+        
+        # [span_9](start_span)Map parameters like lift-version and source-lang[span_9](end_span)
+        for param in root_elem.findall('xsl:param', ns):
+            name = param.get('name')
+            select = param.get('select')
+            instance.params[name] = select
+            
+        # [span_10](start_span)[span_11](start_span)Map templates for entry and sense reconstruction[span_10](end_span)[span_11](end_span)
+        for template in root_elem.findall('xsl:template', ns):
+            instance.templates.append(XslTemplate.from_xml(template, ns))
+            
+        return instance
+
+# --- Transformation Logic ---
 
 # Your "Order of Battle" for Algic Languages
-algic_array = [
+ALGIC_ARRAY = [
     "alg-x-proto", "bla", "arp", "ats", "chy", "bft",
     "men", "cre", "csw", "crj", "atj", "nsk", "moos", "crm", 
     "pot", "oji", "otw", "ciw", "alq", "ojb", "ojg", "ojs", 
@@ -15,64 +58,45 @@ algic_array = [
     "pow", "pmk", "psk", "mjy", "wiy", "yur", "en-US", "Latin", "es_mx", "fr"
 ]
 
-def parse_any_tmx(tmx_file):
-    ns = {'xml': 'http://www.w3.org/XML/1998/namespace'}
-    tree = ET.parse(tmx_file)
-    root = tree.getroot()
-    entries = []
-
-    for tu in root.xpath(".//tu"):
-        # Anchor: Extract Latin from Prop if it exists
-        latin_prop = tu.xpath("./prop[@type='scientific_name']/text()")
-        latin = latin_prop[0] if latin_prop else "Incertae sedis"
-
-        # Dictionary to hold found signals
-        signals = {}
-        for tuv in tu.xpath("./tuv"):
-            lang = tuv.get(f"{{{ns['xml']}}}lang")
-            seg = tuv.find("seg").text
-            if lang in algic_array and seg:
-                signals[lang] = seg.strip()
-
-        if signals:
-            signals['scientific_anchor'] = latin
-            entries.append(signals)
-            
-    return entries
-
-def create_sfm_entry(item):
-    # Priority 1: Myaamia as Lexeme. Priority 2: English as Gloss.
-    lex = item.get('mia') or item.get('sac') or "UNIDENTIFIED"
-    gloss = item.get('en-US') or item.get('en') or "No Gloss"
-    latin = item.get('scientific_anchor')
-
-    # POS Tagging via SpaCy
-    doc = nlp(gloss)
-    pos = doc[0].pos_ if gloss != "No Gloss" else "N"
-
-    # Standard Format Markers for FLEx
-    entry = [f"\\lx {lex}", f"\\ps {pos}", f"\\ge {gloss}"]
+def run_lift_transformation(tmx_file, xsl_file):
+    """
+    [span_12](start_span)Uses SaxonC-HE to apply XSLT 2.0 grouping logic[span_12](end_span).
+    [span_13](start_span)[span_14](start_span)Reconstructs LIFT hierarchy from flat TMX TUs[span_13](end_span)[span_14](end_span).
+    """
+    output_lift = tmx_file.replace('.tmx', '.lift')
     
-    # Add Latin as a specific note
-    if latin != "Incertae sedis":
-        entry.append(f"\\nt Latin: {latin}")
+    with PySaxonProcessor(license=False) as proc:
+        xsltproc = proc.new_xslt30_processor()
+        
+        # [span_15](start_span)Compile XSLT to support <xsl:for-each-group>[span_15](end_span)
+        executable = xsltproc.compile_xslt_from_file(xsl_file)
+        
+        # Parse source TMX
+        source = proc.parse_xml(xml_file_name=tmx_file)
+        
+        # [span_16](start_span)[span_17](start_span)Apply transformation to rebuild entry/sense hierarchy[span_16](end_span)[span_17](end_span)
+        result = executable.transform_to_string(xdm_node=source)
+        
+        with open(output_lift, 'w', encoding='utf-8') as f:
+            f.write(result)
+            
+    print(f"✅ Transmogrified {tmx_file} into {output_lift}")
 
-    # Add other Algic cognates found in the TMX as custom markers
-    for lang, text in item.items():
-        if lang not in ['mia', 'en-US', 'en', 'scientific_anchor']:
-            entry.append(f"\\cf {lang}: {text}") # \cf is cross-reference in FLEx
+# --- Main Execution ---
 
-    entry.append(f"\\dt {datetime.now().strftime('%d/%m/%y')}")
-    return "\n".join(entry) + "\n"
-
-def run_conversion(input_tmx, output_sfm):
-    data = parse_any_tmx(input_tmx)
-    with open(output_sfm, 'w', encoding='utf-8') as f:
-        for entry in data:
-            f.write(create_sfm_entry(entry) + "\n")
-    print(f"✅ Processed {len(data)} entries into {output_sfm}")
-
-# Main execution loop
 if __name__ == "__main__":
-    # You can now point this at ANY TMX shard in your rack
-    run_conversion('Mia-botanical.tmx', 'Mia-botanical.sfm')
+    # Ensure tmx-to-lift.xsl is in the same directory
+    XSL_PATH = "tmx-to-lift.xsl"
+    
+    # Handle Windows/PowerShell wildcard expansion
+    args = sys.argv[1:] if len(sys.argv) > 1 else ["*.tmx"]
+    files = []
+    for arg in args:
+        files.extend(glob.glob(arg))
+        
+    if not files:
+        print("❌ No TMX files found. Check your directory or file names.")
+    else:
+        for f in files:
+            if os.path.exists(f):
+                run_lift_transformation(f, XSL_PATH)
