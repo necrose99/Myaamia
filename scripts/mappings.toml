@@ -1,0 +1,12 @@
+[orthography]
+# Handle the Kickapoo Split
+[orthography.kic_mx]
+"þ" = "th"
+"Þ" = "Th"
+"s" = "z" # Example if Mexican Kickapoo uses Spanish 'z'
+
+[orthography.kic_us]
+"þ" = "th" # If Oklahoma prefers digraphs over thorns
+
+[orthography.mia]
+"sh" = "š" # If you want to map back to linguistic carons for specific builds
