@@ -17,6 +17,7 @@ mia:Miami-Illinois
 sac:Meskwaki (Fox)
 kic:Kickapoo
 sha:Shawnee
+#sjw:Shawnee
 # Eastern
 mic:Mi'kmaq
 abe:Western Abenaki
