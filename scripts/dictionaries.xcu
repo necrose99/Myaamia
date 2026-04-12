@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<node xmlns:ns0="http://openoffice.org/2001/registry" ns0:package="org.openoffice.Office" ns0:name="Linguistic">
+  <node ns0:name="ServiceManager">
+    <node ns0:name="Dictionaries"/>
+  </node>
+</node>

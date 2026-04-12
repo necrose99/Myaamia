@@ -1,0 +1,2685 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tmx version="1.4">
+  <header creationtool="Algic-Master-Merge" datatype="PlainText" segtype="phrase" srclang="en" creationdate="20260410T211050Z" />
+  <body>
+    <tu tuid="alg_000000">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 0]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000001">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 1]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000002">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 2]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000003">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 3]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000004">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 4]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000005">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 5]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000006">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 6]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000007">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 7]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000008">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 8]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000009">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 9]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000010">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 10]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000011">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 11]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000012">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 12]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000013">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 13]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000014">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 14]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000015">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 15]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000016">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 16]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000017">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 17]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000018">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 18]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000019">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 19]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000020">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 20]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000021">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 21]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000022">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 22]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000023">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 23]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000024">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 24]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000025">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 25]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000026">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 26]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000027">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 27]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000028">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 28]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000029">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 29]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000030">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 30]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000031">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 31]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000032">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 32]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000033">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 33]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000034">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 34]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000035">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 35]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000036">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 36]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000037">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 37]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000038">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 38]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000039">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 39]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000040">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 40]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000041">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 41]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000042">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 42]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000043">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 43]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000044">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 44]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000045">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 45]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000046">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 46]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000047">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 47]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000048">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 48]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000049">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 49]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000050">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 50]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000051">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 51]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000052">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 52]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000053">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 53]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000054">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 54]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000055">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 55]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000056">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 56]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000057">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 57]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000058">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 58]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000059">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 59]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000060">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 60]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000061">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 61]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000062">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 62]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000063">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 63]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000064">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 64]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000065">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 65]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000066">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 66]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000067">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 67]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000068">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 68]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000069">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 69]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000070">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 70]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000071">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 71]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000072">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 72]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000073">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 73]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000074">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 74]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000075">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 75]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000076">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 76]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000077">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 77]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000078">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 78]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000079">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 79]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000080">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 80]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000081">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 81]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000082">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 82]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000083">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 83]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000084">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 84]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000085">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 85]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000086">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 86]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000087">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 87]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000088">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 88]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000089">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 89]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000090">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 90]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000091">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 91]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000092">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 92]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000093">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 93]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000094">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 94]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000095">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 95]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000096">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 96]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000097">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 97]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000098">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 98]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000099">
+      <tuv xml:lang="en-us">
+        <seg>[Placeholder 99]</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000100">
+      <tuv xml:lang="en">
+        <seg>Indianapolis</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>ceenkwihtanonki</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000101">
+      <tuv xml:lang="en">
+        <seg>aÅ¡iihkionam-</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>aÅ¡iihkionam-</seg>
+      </tuv>
+      <tuv xml:lang="oj">
+        <seg>aÅ¡iihkionam-</seg>
+      </tuv>
+      <tuv xml:lang="chr">
+        <seg>aÅ¡iihkionam-</seg>
+      </tuv>
+      <tuv xml:lang="cr">
+        <seg>aÅ¡iihkionam-</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000102">
+      <tuv xml:lang="en">
+        <seg>Miami woman</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Miami woman</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000103">
+      <tuv xml:lang="en">
+        <seg>immediately, right away</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>šaawe</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000104">
+      <tuv xml:lang="en">
+        <seg>in exchange, reciprocally, across</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>aašawe</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000105">
+      <tuv xml:lang="en">
+        <seg>Imagination</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>neemawiteeheeyoni</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000106">
+      <tuv xml:lang="en">
+        <seg>Microscope</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Microscope</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000107">
+      <tuv xml:lang="en">
+        <seg>In deep water</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>kinoonke</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000108">
+      <tuv xml:lang="en">
+        <seg>aahtee-</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>aahtee-</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000109">
+      <tuv xml:lang="en">
+        <seg>inko</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>inko</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000110">
+      <tuv xml:lang="en">
+        <seg>mihÅ¡aa-</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>mihÅ¡aa-</seg>
+      </tuv>
+      <tuv xml:lang="oj">
+        <seg>mihÅ¡aa-</seg>
+      </tuv>
+      <tuv xml:lang="chr">
+        <seg>mihÅ¡aa-</seg>
+      </tuv>
+      <tuv xml:lang="cr">
+        <seg>mihÅ¡aa-</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000111">
+      <tuv xml:lang="en">
+        <seg>East, sunrise</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>East, sunrise</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000112">
+      <tuv xml:lang="en">
+        <seg>Mississippi River</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Mississippi River</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000113">
+      <tuv xml:lang="en">
+        <seg>Miami-Illinois</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Myaamia,Illinois</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000114">
+      <tuv xml:lang="en">
+        <seg>Å¡aaÅ¡ihkwee-</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Å¡aaÅ¡ihkwee-</seg>
+      </tuv>
+      <tuv xml:lang="oj">
+        <seg>Å¡aaÅ¡ihkwee-</seg>
+      </tuv>
+      <tuv xml:lang="chr">
+        <seg>Å¡aaÅ¡ihkwee-</seg>
+      </tuv>
+      <tuv xml:lang="cr">
+        <seg>Å¡aaÅ¡ihkwee-</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000115">
+      <tuv xml:lang="en">
+        <seg>Jump in the water</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>camonkihsaa</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000116">
+      <tuv xml:lang="en">
+        <seg>Avenge him</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>alotam</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000117">
+      <tuv xml:lang="en">
+        <seg>Å¡aaÅ¡ihkaapantani-</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Å¡aaÅ¡ihkaapantani-</seg>
+      </tuv>
+      <tuv xml:lang="oj">
+        <seg>Å¡aaÅ¡ihkaapantani-</seg>
+      </tuv>
+      <tuv xml:lang="chr">
+        <seg>Å¡aaÅ¡ihkaapantani-</seg>
+      </tuv>
+      <tuv xml:lang="cr">
+        <seg>Å¡aaÅ¡ihkaapantani-</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000118">
+      <tuv xml:lang="en">
+        <seg>Infant, baby</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>piloohseensa</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000119">
+      <tuv xml:lang="en">
+        <seg>aÅ¡aahÅ¡ikop-</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>aÅ¡aahÅ¡ikop-</seg>
+      </tuv>
+      <tuv xml:lang="oj">
+        <seg>aÅ¡aahÅ¡ikop-</seg>
+      </tuv>
+      <tuv xml:lang="chr">
+        <seg>aÅ¡aahÅ¡ikop-</seg>
+      </tuv>
+      <tuv xml:lang="cr">
+        <seg>aÅ¡aahÅ¡ikop-</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000120">
+      <tuv xml:lang="en">
+        <seg>Fort</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>niimihki</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000121">
+      <tuv xml:lang="en">
+        <seg>Å¡</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Å¡</seg>
+      </tuv>
+      <tuv xml:lang="oj">
+        <seg>Å¡</seg>
+      </tuv>
+      <tuv xml:lang="chr">
+        <seg>Å¡</seg>
+      </tuv>
+      <tuv xml:lang="cr">
+        <seg>Å¡</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000122">
+      <tuv xml:lang="en">
+        <seg>a</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>a</seg>
+      </tuv>
+      <tuv xml:lang="oj">
+        <seg>a</seg>
+      </tuv>
+      <tuv xml:lang="chr">
+        <seg>a</seg>
+      </tuv>
+      <tuv xml:lang="cr">
+        <seg>a</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000123">
+      <tuv xml:lang="en">
+        <seg>I, me</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>niila</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000124">
+      <tuv xml:lang="en">
+        <seg>Å¡aahkweehsi-</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Å¡aahkweehsi-</seg>
+      </tuv>
+      <tuv xml:lang="oj">
+        <seg>Å¡aahkweehsi-</seg>
+      </tuv>
+      <tuv xml:lang="chr">
+        <seg>Å¡aahkweehsi-</seg>
+      </tuv>
+      <tuv xml:lang="cr">
+        <seg>Å¡aahkweehsi-</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000125">
+      <tuv xml:lang="en">
+        <seg>just, also, recently, wait, hold on!</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>kiinte</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000126">
+      <tuv xml:lang="en">
+        <seg>aaÅ¡awi-</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>aaÅ¡awi-</seg>
+      </tuv>
+      <tuv xml:lang="oj">
+        <seg>aaÅ¡awi-</seg>
+      </tuv>
+      <tuv xml:lang="chr">
+        <seg>aaÅ¡awi-</seg>
+      </tuv>
+      <tuv xml:lang="cr">
+        <seg>aaÅ¡awi-</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000127">
+      <tuv xml:lang="en">
+        <seg>imitate him, mimic him</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>alohtaw-</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000128">
+      <tuv xml:lang="en">
+        <seg>Jump down, fling oneself down</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>mahtapihsaa</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000129">
+      <tuv xml:lang="en">
+        <seg>Instead of, only, rather than, except for</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>teehši</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000130">
+      <tuv xml:lang="en">
+        <seg>It is flooded</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>moohkhsenki</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000131">
+      <tuv xml:lang="en">
+        <seg>Miami person</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>myaamia</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000132">
+      <tuv xml:lang="en">
+        <seg>Å¡aahtee-</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Å¡aahtee-</seg>
+      </tuv>
+      <tuv xml:lang="oj">
+        <seg>Å¡aahtee-</seg>
+      </tuv>
+      <tuv xml:lang="chr">
+        <seg>Å¡aahtee-</seg>
+      </tuv>
+      <tuv xml:lang="cr">
+        <seg>Å¡aahtee-</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000133">
+      <tuv xml:lang="en">
+        <seg>Friend (of the same sex)</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Friend (of the same sex)</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000134">
+      <tuv xml:lang="en">
+        <seg>Å¡aahÅ¡aakweehsi-</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Å¡aahÅ¡aakweehsi-</seg>
+      </tuv>
+      <tuv xml:lang="oj">
+        <seg>Å¡aahÅ¡aakweehsi-</seg>
+      </tuv>
+      <tuv xml:lang="chr">
+        <seg>Å¡aahÅ¡aakweehsi-</seg>
+      </tuv>
+      <tuv xml:lang="cr">
+        <seg>Å¡aahÅ¡aakweehsi-</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000135">
+      <tuv xml:lang="en">
+        <seg>ileeÅ¡i</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>ileeÅ¡i</seg>
+      </tuv>
+      <tuv xml:lang="oj">
+        <seg>ileeÅ¡i</seg>
+      </tuv>
+      <tuv xml:lang="chr">
+        <seg>ileeÅ¡i</seg>
+      </tuv>
+      <tuv xml:lang="cr">
+        <seg>ileeÅ¡i</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000136">
+      <tuv xml:lang="en">
+        <seg>auto</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>auto</seg>
+      </tuv>
+      <tuv xml:lang="oj">
+        <seg>auto</seg>
+      </tuv>
+      <tuv xml:lang="chr">
+        <seg>auto</seg>
+      </tuv>
+      <tuv xml:lang="cr">
+        <seg>auto</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000137">
+      <tuv xml:lang="en">
+        <seg>k</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>k</seg>
+      </tuv>
+      <tuv xml:lang="oj">
+        <seg>k</seg>
+      </tuv>
+      <tuv xml:lang="chr">
+        <seg>k</seg>
+      </tuv>
+      <tuv xml:lang="cr">
+        <seg>k</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000138">
+      <tuv xml:lang="en">
+        <seg>Warm oneself</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>awansi-</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000139">
+      <tuv xml:lang="en">
+        <seg>aahteeleentam-</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>aahteeleentam-</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000140">
+      <tuv xml:lang="en">
+        <seg>aaÅ¡awil-</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>aaÅ¡awil-</seg>
+      </tuv>
+      <tuv xml:lang="oj">
+        <seg>aaÅ¡awil-</seg>
+      </tuv>
+      <tuv xml:lang="chr">
+        <seg>aaÅ¡awil-</seg>
+      </tuv>
+      <tuv xml:lang="cr">
+        <seg>aaÅ¡awil-</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000141">
+      <tuv xml:lang="en">
+        <seg>aÅ¡ihsay-</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>aÅ¡ihsay-</seg>
+      </tuv>
+      <tuv xml:lang="oj">
+        <seg>aÅ¡ihsay-</seg>
+      </tuv>
+      <tuv xml:lang="chr">
+        <seg>aÅ¡ihsay-</seg>
+      </tuv>
+      <tuv xml:lang="cr">
+        <seg>aÅ¡ihsay-</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000142">
+      <tuv xml:lang="en">
+        <seg>middle-aged, older man</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>nakaanakw-</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000143">
+      <tuv xml:lang="en">
+        <seg>Å¡aah-</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Å¡aah-</seg>
+      </tuv>
+      <tuv xml:lang="oj">
+        <seg>Å¡aah-</seg>
+      </tuv>
+      <tuv xml:lang="chr">
+        <seg>Å¡aah-</seg>
+      </tuv>
+      <tuv xml:lang="cr">
+        <seg>Å¡aah-</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000144">
+      <tuv xml:lang="en">
+        <seg>mihÅ¡ahkwat-</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>mihÅ¡ahkwat-</seg>
+      </tuv>
+      <tuv xml:lang="oj">
+        <seg>mihÅ¡ahkwat-</seg>
+      </tuv>
+      <tuv xml:lang="chr">
+        <seg>mihÅ¡ahkwat-</seg>
+      </tuv>
+      <tuv xml:lang="cr">
+        <seg>mihÅ¡ahkwat-</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000145">
+      <tuv xml:lang="en">
+        <seg>ILDA Dictionary</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>ILDA Dictionary</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000146">
+      <tuv xml:lang="en">
+        <seg>Thank you</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>neewe</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000147">
+      <tuv xml:lang="en">
+        <seg>University, college</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>University, college</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000148">
+      <tuv xml:lang="en">
+        <seg>aaÅ¡awee-</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>aaÅ¡awee-</seg>
+      </tuv>
+      <tuv xml:lang="oj">
+        <seg>aaÅ¡awee-</seg>
+      </tuv>
+      <tuv xml:lang="chr">
+        <seg>aaÅ¡awee-</seg>
+      </tuv>
+      <tuv xml:lang="cr">
+        <seg>aaÅ¡awee-</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000149">
+      <tuv xml:lang="en">
+        <seg>Indian turnip, Jack-in-the-pulpit (Arisaema triphyllum)</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>wiihkapesi-</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000150">
+      <tuv xml:lang="en">
+        <seg>Painted terrapin turtle (Chrysemys spp.)</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Painted terrapin turtle (Chrysemys spp.)</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000151">
+      <tuv xml:lang="en">
+        <seg>Å¡aaÅ¡aaÅ¡hkwi-</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Å¡aaÅ¡aaÅ¡hkwi-</seg>
+      </tuv>
+      <tuv xml:lang="oj">
+        <seg>Å¡aaÅ¡aaÅ¡hkwi-</seg>
+      </tuv>
+      <tuv xml:lang="chr">
+        <seg>Å¡aaÅ¡aaÅ¡hkwi-</seg>
+      </tuv>
+      <tuv xml:lang="cr">
+        <seg>Å¡aaÅ¡aaÅ¡hkwi-</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000152">
+      <tuv xml:lang="en">
+        <seg>I lift him up</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>ampen-</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000153">
+      <tuv xml:lang="en">
+        <seg>Illinois River</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>inohka asiipiomi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000154">
+      <tuv xml:lang="en">
+        <seg>Miami University</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Miami University</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000155">
+      <tuv xml:lang="en">
+        <seg>I emerged</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>moohkiaani</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000156">
+      <tuv xml:lang="en">
+        <seg>12</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>12</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000157">
+      <tuv xml:lang="en">
+        <seg>glottolog : miam1252</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>glottolog : miam1252</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000158">
+      <tuv xml:lang="en">
+        <seg>Glossary</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Glossary</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000159">
+      <tuv xml:lang="en">
+        <seg>1,one</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>nkoti</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000160">
+      <tuv xml:lang="en">
+        <seg>shitface, People of Des Moines</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>shitface, People of Des Moines</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000161">
+      <tuv xml:lang="en">
+        <seg>Microscopes</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Microscopes</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000162">
+      <tuv xml:lang="en">
+        <seg>Thank you friend</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>neewe niihka</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000163">
+      <tuv xml:lang="en">
+        <seg>Its not over, still more to do, still an issue</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Its not over, still more to do, still an issue</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000164">
+      <tuv xml:lang="en">
+        <seg>cook it</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>cook it</seg>
+      </tuv>
+      <tuv xml:lang="chr">
+        <seg>cook it</seg>
+      </tuv>
+      <tuv xml:lang="cr">
+        <seg>cook it</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000165">
+      <tuv xml:lang="en">
+        <seg>yes, ok, sure</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>naaka</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000166">
+      <tuv xml:lang="en">
+        <seg>Take him along, lead him</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>awal-</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000167">
+      <tuv xml:lang="en">
+        <seg>Shave one's skin</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>kaahkilookii-</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000168">
+      <tuv xml:lang="en">
+        <seg>You shave your skin</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>kaahkilookiiyani</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000169">
+      <tuv xml:lang="en">
+        <seg>I am going to Indianapolis</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>ceenkwhtanonkiši iiyaayaani</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000170">
+      <tuv xml:lang="en">
+        <seg>20</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>20</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000171">
+      <tuv xml:lang="en">
+        <seg>we welcome you!</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>meentitohkaalilaanki</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000172">
+      <tuv xml:lang="en">
+        <seg>Let's take him along!,lead him</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>awal-</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000173">
+      <tuv xml:lang="en">
+        <seg>Young woman,maiden</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Young woman,maiden</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000174">
+      <tuv xml:lang="en">
+        <seg>It goes out of a fire, It goes out of or light</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>It goes out of a fire, It goes out of or light</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000175">
+      <tuv xml:lang="en">
+        <seg>Miami homelands along the Marais des Cygnes River (Kansas)</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Miami homelands along the Marais des Cygnes River (Kansas)</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000176">
+      <tuv xml:lang="en">
+        <seg>We emerge</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>moohkiiyankwi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000177">
+      <tuv xml:lang="en">
+        <seg>(10;s delimenter)</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>-aasi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000178">
+      <tuv xml:lang="en">
+        <seg>I am coming from Indianapolis</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>ceenkwhtanonkonci pyaayaani</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000179">
+      <tuv xml:lang="en">
+        <seg>Miami homelands along the Neosho River (Oklahoma)</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Miami homelands along the Neosho River (Oklahoma)</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000180">
+      <tuv xml:lang="en">
+        <seg>Indian turnips, Jack-in-the-pulpits</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>wiihkapesiaki</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000181">
+      <tuv xml:lang="en">
+        <seg>I am going to the Miami homelands (Oklahoma) next week</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>I am going to the Miami homelands (Oklahoma) next week</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000182">
+      <tuv xml:lang="en">
+        <seg>10,ten</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>10,ten</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000183">
+      <tuv xml:lang="en">
+        <seg>yes, okay, affirmative, you're welcome</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>iihia</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000184">
+      <tuv xml:lang="en">
+        <seg>Young women,maiden</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Young women,maiden</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000185">
+      <tuv xml:lang="en">
+        <seg>4,four</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>4,four</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000186">
+      <tuv xml:lang="en">
+        <seg>That's it, it's over with, it's done</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>That's it, it's over with, it's done</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000187">
+      <tuv xml:lang="en">
+        <seg>day</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>day</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000188">
+      <tuv xml:lang="en">
+        <seg>English</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>English</seg>
+      </tuv>
+      <tuv xml:lang="oj">
+        <seg>English</seg>
+      </tuv>
+      <tuv xml:lang="chr">
+        <seg>English</seg>
+      </tuv>
+      <tuv xml:lang="cr">
+        <seg>English</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000189">
+      <tuv xml:lang="en">
+        <seg>Miami homelands along the Wabash River (Indiana)</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Miami homelands along the Wabash River (Indiana)</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000190">
+      <tuv xml:lang="en">
+        <seg>Infants, babies</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>piloohseensaki</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000191">
+      <tuv xml:lang="en">
+        <seg>From the east</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>From the east</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000192">
+      <tuv xml:lang="en">
+        <seg>I shave my skin</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>kaahkilookiaani</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000193">
+      <tuv xml:lang="en">
+        <seg>Is it out?</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Is it out?</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000194">
+      <tuv xml:lang="en">
+        <seg>Welcome to the Myaamia-Peewaalia dictionary</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Welcome to the Myaamia-Peewaalia dictionary</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000195">
+      <tuv xml:lang="en">
+        <seg>Smear dirt on it</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Smear dirt on it</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000196">
+      <tuv xml:lang="en">
+        <seg>6,six</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>6,six</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000197">
+      <tuv xml:lang="en">
+        <seg>Yes, it is correct</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>iihia, eelaamweekaneewiki</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000198">
+      <tuv xml:lang="en">
+        <seg>Middle-aged, older man</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Middle-aged, older man</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000199">
+      <tuv xml:lang="en">
+        <seg>Surface, emerge</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>moohkii-</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000200">
+      <tuv xml:lang="en">
+        <seg>weeping willow (Salix babylonica)</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>niipyaahkatw-</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000201">
+      <tuv xml:lang="en">
+        <seg>We shave our skin!</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>kaahkilookiaanki</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000202">
+      <tuv xml:lang="en">
+        <seg>Say to each other</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Say to each other</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000203">
+      <tuv xml:lang="en">
+        <seg>7,seven</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>7,seven</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000204">
+      <tuv xml:lang="en">
+        <seg>Clean him (as of fish, game, etc)</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Clean him (as of fish, game, etc)</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000205">
+      <tuv xml:lang="en">
+        <seg>Middle-aged, older men</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Middle-aged, older men</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000206">
+      <tuv xml:lang="en">
+        <seg>Friends!</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Friends!</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000207">
+      <tuv xml:lang="en">
+        <seg>He won't get up</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>He won't get up</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000208">
+      <tuv xml:lang="en">
+        <seg>you're welcome</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>iihia</seg>
+      </tuv>
+      <tuv xml:lang="en-us">
+        <seg>you're welcome</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000209">
+      <tuv xml:lang="en">
+        <seg>no</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>moohci</seg>
+      </tuv>
+      <tuv xml:lang="en-us">
+        <seg>no</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000210">
+      <tuv xml:lang="en">
+        <seg>One hundred, 100</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>nkotwaahkwe</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000211">
+      <tuv xml:lang="en">
+        <seg>Language codes ISO 639-3 mia, Miami</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Language codes ISO 639-3 mia, Miami</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000212">
+      <tuv xml:lang="en">
+        <seg>5,five</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>5,five</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000213">
+      <tuv xml:lang="en">
+        <seg>no,not</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>moohci</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000214">
+      <tuv xml:lang="en">
+        <seg>num, numerals, numbers</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>akincikoona</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000215">
+      <tuv xml:lang="en">
+        <seg>The Miami people</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>The Miami people</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000216">
+      <tuv xml:lang="en">
+        <seg>It is extinguished, gone out</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>It is extinguished, gone out</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000217">
+      <tuv xml:lang="en">
+        <seg>Neck</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Neck</seg>
+      </tuv>
+      <tuv xml:lang="oj">
+        <seg>Neck</seg>
+      </tuv>
+      <tuv xml:lang="chr">
+        <seg>Neck</seg>
+      </tuv>
+      <tuv xml:lang="cr">
+        <seg>Neck</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000218">
+      <tuv xml:lang="en">
+        <seg>Towards the east</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>awansaapiciši</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000219">
+      <tuv xml:lang="en">
+        <seg>I only have one</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>teehši nkoti</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000220">
+      <tuv xml:lang="en">
+        <seg>Miami</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Myaamia</seg>
+      </tuv>
+      <tuv xml:lang="en-us">
+        <seg>Miami</seg>
+      </tuv>
+      <tuv xml:lang="chr">
+        <seg>ᎠᏯᏙᎸᎢ</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000221">
+      <tuv xml:lang="en">
+        <seg>We are strong, we are resilient, we are Myaamia</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>We are strong, we are resilient, we are Myaamia</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000222">
+      <tuv xml:lang="en">
+        <seg>You emerge</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>moohkiiyiikwi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000223">
+      <tuv xml:lang="en">
+        <seg>Kaskaskia people</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>kaahkaahkiaki</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000224">
+      <tuv xml:lang="en">
+        <seg>English,En</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>aakalaahšimaataweenki</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000225">
+      <tuv xml:lang="en">
+        <seg>11,eleven</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>11,eleven</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000226">
+      <tuv xml:lang="en">
+        <seg>Hold on! I am coming now</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>kiinte! noonki pyaayaani</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000227">
+      <tuv xml:lang="en">
+        <seg>Be so big, so large, of a certain size</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Be so big, so large, of a certain size</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000228">
+      <tuv xml:lang="en">
+        <seg>It comes to the surface quickly</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>It comes to the surface quickly</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000229">
+      <tuv xml:lang="en">
+        <seg>3,three</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>3,three</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000230">
+      <tuv xml:lang="en">
+        <seg>8,Eight</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>8,Eight</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000231">
+      <tuv xml:lang="en">
+        <seg>River</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>siipiiw</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000232">
+      <tuv xml:lang="en">
+        <seg>I clean him ,or her (as of fish, game, etc)</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>I clean him ,or her (as of fish, game, etc)</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000233">
+      <tuv xml:lang="en">
+        <seg>Hello friend</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Hello friend</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000234">
+      <tuv xml:lang="en">
+        <seg>Turn off the light, extinguish it</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Turn off the light, extinguish it</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000235">
+      <tuv xml:lang="en">
+        <seg>Painted terrapin turtles</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Painted terrapin turtles</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000236">
+      <tuv xml:lang="en">
+        <seg>We! emerge</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>moohkiaanki</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000237">
+      <tuv xml:lang="en">
+        <seg>I just woke up</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>kiinte eemamwiaani</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000238">
+      <tuv xml:lang="en">
+        <seg>Universities, colleges</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Universities, colleges</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000239">
+      <tuv xml:lang="en">
+        <seg>I said no</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>moohci noonk</seg>
+      </tuv>
+      <tuv xml:lang="en-us">
+        <seg>I said no</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000240">
+      <tuv xml:lang="en">
+        <seg>Thirty five, 35</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>nihswi mateeni yaalanwaasi</seg>
+      </tuv>
+      <tuv xml:lang="en-us">
+        <seg>Thirty five, 35</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000241">
+      <tuv xml:lang="en">
+        <seg>Only I can do this</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>niilaahka teehši niiši iišileniaani</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000242">
+      <tuv xml:lang="en">
+        <seg>Friend!</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>niihka</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000243">
+      <tuv xml:lang="en">
+        <seg>Indian turnip, Jack-in-the-pulpit</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>wiihkapesia</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000244">
+      <tuv xml:lang="en">
+        <seg>Miami homelands, the place of the Miamis</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Miami homelands, the place of the Miamis</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000245">
+      <tuv xml:lang="en">
+        <seg>Katydid</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>kaahkaahki-</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000246">
+      <tuv xml:lang="en">
+        <seg>2,two</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>niišwi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000247">
+      <tuv xml:lang="en">
+        <seg>I imitate, mimic him, mimic her</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>I imitate, mimic him, mimic her</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000248">
+      <tuv xml:lang="en">
+        <seg>I am Miami</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>I am Miami</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000249">
+      <tuv xml:lang="en">
+        <seg>Miami, Irenwee, Peoria</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Myaamia, Irenwe.Peoria</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000250">
+      <tuv xml:lang="en">
+        <seg>Today</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>noonki kaahkiihkwe</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000251">
+      <tuv xml:lang="en">
+        <seg>Thank you very much, big thanks</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>mihši neewe</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000252">
+      <tuv xml:lang="en">
+        <seg>9,nine</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>9,nine</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000253">
+      <tuv xml:lang="en">
+        <seg>Clean him</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Clean him</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000254">
+      <tuv xml:lang="en">
+        <seg>glossary</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>glossary</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000255">
+      <tuv xml:lang="en">
+        <seg>en,English language</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>en,English language</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000256">
+      <tuv xml:lang="en">
+        <seg>I will come right away.</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>šaawe kati pyaayaani</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000257">
+      <tuv xml:lang="en">
+        <seg>weeping willow trees, weeping willows</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>niipyaahkatwa</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000258">
+      <tuv xml:lang="en">
+        <seg>My friend</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>niihkaana</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000259">
+      <tuv xml:lang="en">
+        <seg>Miami women</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Miami women</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000260">
+      <tuv xml:lang="en">
+        <seg>I lift him,I lift her up</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>I lift him,I lift her up</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000261">
+      <tuv xml:lang="en">
+        <seg>Yes,okay,, affirmative, you're welcome</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Yes,okay,, affirmative, you're welcome</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000262">
+      <tuv xml:lang="en">
+        <seg>I won't fail the test</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>inko-hka aalweeliaani kocihtamaakani</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000263">
+      <tuv xml:lang="en">
+        <seg>He won't come</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>He won't come</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000264">
+      <tuv xml:lang="en">
+        <seg>We are Miami</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>We are Miami</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000265">
+      <tuv xml:lang="en">
+        <seg>She is in deep water</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>kinoonke eepici</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000266">
+      <tuv xml:lang="en">
+        <seg>weeping willow</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>niipyaahkatwi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000267">
+      <tuv xml:lang="en">
+        <seg>not</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>moohci</seg>
+      </tuv>
+      <tuv xml:lang="en-us">
+        <seg>not</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000268">
+      <tuv xml:lang="en-us">
+        <seg>Hello</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Aya</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000269">
+      <tuv xml:lang="en-us">
+        <seg>yes</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>naaka</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000270">
+      <tuv xml:lang="en-us">
+        <seg>affirmative</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>iihia</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000271">
+      <tuv xml:lang="en-us">
+        <seg>okay</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>iihia</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000272">
+      <tuv xml:lang="en-us">
+        <seg>Nobody</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>moohci aweeya</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000273">
+      <tuv xml:lang="en-us">
+        <seg>No, I cannot</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>moohci, niiši neehi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000274">
+      <tuv xml:lang="en-us">
+        <seg>Not now</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>moohci noonki</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000275">
+      <tuv xml:lang="en-us">
+        <seg>welcome</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>meentitohkaalilaanki</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000276">
+      <tuv xml:lang="en-us">
+        <seg>One, 1</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>nkoti</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000277">
+      <tuv xml:lang="en-us">
+        <seg>two</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>niišwi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000278">
+      <tuv xml:lang="en-us">
+        <seg>Three,</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>nihswi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000279">
+      <tuv xml:lang="en-us">
+        <seg>Six</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>kaakaathswi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000280">
+      <tuv xml:lang="en-us">
+        <seg>Seven</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>swaahteethswi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000281">
+      <tuv xml:lang="en-us">
+        <seg>Eight</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>palaani</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000282">
+      <tuv xml:lang="en-us">
+        <seg>Ten</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>mataathswi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000283">
+      <tuv xml:lang="en-us">
+        <seg>Eleven</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>mataathswi nkotaasi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000284">
+      <tuv xml:lang="en-us">
+        <seg>Twelve, 12</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>mataathswi niišwaasi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000285">
+      <tuv xml:lang="en-us">
+        <seg>Thirteen, 13</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>mataathswi nihswaasi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000286">
+      <tuv xml:lang="en-us">
+        <seg>Fourteen, 14</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>mataathswi niiwaasi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000287">
+      <tuv xml:lang="en-us">
+        <seg>Fifteen, 15</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>mataathswi yaalanwaasi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000288">
+      <tuv xml:lang="en-us">
+        <seg>Sixteen, 16</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>mataathswi kaakaathswaasi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000289">
+      <tuv xml:lang="en-us">
+        <seg>Seventeen, 17</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>mataathswi swaahteethswaasi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000290">
+      <tuv xml:lang="en-us">
+        <seg>Eighteen, 18</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>mataathswi palaanaasi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000291">
+      <tuv xml:lang="en-us">
+        <seg>numerals</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>akincikoona</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000292">
+      <tuv xml:lang="en-us">
+        <seg>Nineteen</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>mataathswi nkotimeneehkaasi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000293">
+      <tuv xml:lang="en-us">
+        <seg>Twenty</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>niišwi mateeni</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000294">
+      <tuv xml:lang="en-us">
+        <seg>Twenty one</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>niišwi mateeni nkotaasi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000295">
+      <tuv xml:lang="en-us">
+        <seg>Twenty two,</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>niišwi mateeni niišwaasi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000296">
+      <tuv xml:lang="en-us">
+        <seg>Twenty three, 23</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>niišwi mateeni nihswaasi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000297">
+      <tuv xml:lang="en-us">
+        <seg>Twenty four, 24</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>niišwi mateeni niiwaasi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000298">
+      <tuv xml:lang="en-us">
+        <seg>Twenty five, 25</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>niišwi mateeni yaalanwaasi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000299">
+      <tuv xml:lang="en-us">
+        <seg>Twenty six, 26</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>niišwi mateeni kaakaathswaasi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000300">
+      <tuv xml:lang="en-us">
+        <seg>Twenty seven</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>niišwi mateeni swaahteethswaasi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000301">
+      <tuv xml:lang="en-us">
+        <seg>Twenty eight, 28</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>niišwi mateeni palaanaasi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000302">
+      <tuv xml:lang="en-us">
+        <seg>Twenty nine, 29</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>niišwi mateeni nkotimeneehkaasi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000303">
+      <tuv xml:lang="en-us">
+        <seg>Thirty</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>nihswi mateeni</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000304">
+      <tuv xml:lang="en-us">
+        <seg>Forty</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>niiwi mateeni</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000305">
+      <tuv xml:lang="en-us">
+        <seg>Fifty, 50</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>yaalanwi mateeni</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000306">
+      <tuv xml:lang="en-us">
+        <seg>One hundred</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>nkotwaahkwe</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000307">
+      <tuv xml:lang="en-us">
+        <seg>Two hundred, 200</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>niišwaahkwe</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000308">
+      <tuv xml:lang="en-us">
+        <seg>One thousand, 1000</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>mataathswaahkwe</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000309">
+      <tuv xml:lang="en-us">
+        <seg>Miami Language’ Online Resources</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Myaamiaataweenki</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000310">
+      <tuv xml:lang="en-us">
+        <seg>Myaamia ETHNOBOTANICAL DATABASE</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Mahkihkiwa</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000311">
+      <tuv xml:lang="en-us">
+        <seg>Miami Tribe’s revitalization movement</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Myaamiaki Eemamwiciki</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000312">
+      <tuv xml:lang="en-us">
+        <seg>Myaamia Heritage Museum &amp; Archive</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Kaakisitoonkia</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000313">
+      <tuv xml:lang="en-us">
+        <seg>corn</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Miincipi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000314">
+      <tuv xml:lang="en-us">
+        <seg>beech tree</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>šeešaakamiš</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000315">
+      <tuv xml:lang="en-us">
+        <seg>false pennyroyal</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>peecihsakahki</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000316">
+      <tuv xml:lang="en-us">
+        <seg>hazelnut</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>pahkiihteenhsaahkwi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000317">
+      <tuv xml:lang="en-us">
+        <seg>Welcome</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Aya</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000318">
+      <tuv xml:lang="en-us">
+        <seg>American hophornbeam</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>myaalwamiši</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000319">
+      <tuv xml:lang="en-us">
+        <seg>Hornbeam</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>myaalwamiši</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000320">
+      <tuv xml:lang="en-us">
+        <seg>sycamore</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>kaakhšaahkatw</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000321">
+      <tuv xml:lang="en-us">
+        <seg>asparagus</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>asparagus</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000322">
+      <tuv xml:lang="en-us">
+        <seg>Atlantic camas</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>Atlantic camas</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000323">
+      <tuv xml:lang="en-us">
+        <seg>basswood</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>wiikapimiši</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000324">
+      <tuv xml:lang="en-us">
+        <seg>beet</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>neehpikiciiphkiki</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000325">
+      <tuv xml:lang="en-us">
+        <seg>big bluestem grass</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>big bluestem grass</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000326">
+      <tuv xml:lang="en-us">
+        <seg>black huckleberry</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>pinkomini</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000327">
+      <tuv xml:lang="en-us">
+        <seg>black oak</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>maamhkatiaahkatwi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000328">
+      <tuv xml:lang="en-us">
+        <seg>black walnut tree</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>aayoonseekaahkwi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000329">
+      <tuv xml:lang="en-us">
+        <seg>blue ash</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>sakikansia</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000330">
+      <tuv xml:lang="en-us">
+        <seg>blueberry</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>pinkomini</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000331">
+      <tuv xml:lang="en-us">
+        <seg>boneset</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>boneset</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000332">
+      <tuv xml:lang="en-us">
+        <seg>box elder</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>šiihšiikweekihsi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000333">
+      <tuv xml:lang="en-us">
+        <seg>bull thistle</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>bull thistle</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000334">
+      <tuv xml:lang="en-us">
+        <seg>bur oak</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>mihšiinkweemiši</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000335">
+      <tuv xml:lang="en-us">
+        <seg>butterfly milkweed</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>alemontehsa</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000336">
+      <tuv xml:lang="en-us">
+        <seg>butternut tree</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>kiinošiši</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000337">
+      <tuv xml:lang="en-us">
+        <seg>cabbage</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>waapinkopakahki</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000338">
+      <tuv xml:lang="en-us">
+        <seg>calamus root</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>calamus root</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000339">
+      <tuv xml:lang="en-us">
+        <seg>paper birch</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>wiikweehsimiši</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000340">
+      <tuv xml:lang="en-us">
+        <seg>cattail</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>apahkwaya</seg>
+      </tuv>
+    </tu>
+    <tu tuid="alg_000341">
+      <tuv xml:lang="en-us">
+        <seg>{{Short description|Algonquian language of the Midwestern US}}
+{{Infobox language
+| name             = Miami-Illinois
+| nativename       = {{Lang|mia|Myaamia}}, {{Lang|mia|Irenwee}}
+| pronunciation    = {{IPA|[mjɑːmia]|lang=mia}}
+| states           = [[United States]]
+| region           = [[Illinois]], [[Indiana]], [[Kansas]], [[Michigan]], [[Ohio]], [[Oklahoma]]
+| extinct          = mid-20th century
+| ref              = e18
+| revived          = a small number of users in revival program&lt;ref&gt;{{cite web|title=How the Miami Tribe got its language back|url=https://www.pri.org/stories/2016-10-14/how-miami-tribe-got-its-language-back|website=Public Radio International|archive-url=https://web.archive.org/web/20231214002843/https://theworld.org/stories/2016-10-14/how-miami-tribe-got-its-language-back|archive-date=December 14, 2023}}&lt;/ref&gt;
+| familycolor      = Algic
+| fam1             = [[Algic languages|Algic]]
+| fam2             = [[Algonquian languages|Algonquian]]
+| iso3             = mia
+| glotto           = miam1252
+| glottorefname    = Miami
+| map              = Lang Status 01-EX.svg
+| mapcaption       = {{center|{{small|Miami-Illinois is classified as Extinct by the [[UNESCO]] [[Atlas of the World's Languages in Danger]]}}}}&lt;ref&gt;{{cite report |title=Atlas of the World's Languages in Danger |publisher=UNESCO |edition=3rd |url=https://unesdoc.unesco.org/ark:/48223/pf0000187026 |date=2010 |page=11}}&lt;/ref&gt;
+}}</seg>
+      </tuv>
+      <tuv xml:lang="mia">
+        <seg>MyaamiaQUERY LENGTH LIMIT EXCEDEED. MAX ALLOWED QUERY : 500 CHARS</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

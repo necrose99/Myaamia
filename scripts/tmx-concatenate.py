@@ -1,74 +1,81 @@
 import xml.etree.ElementTree as ET
 import glob
 import os
-from datetime import datetime
+from datetime import datetime, timezone
 
-def master_tmx_merge(input_dir, output_file):
-    # 1. Initialize the Master TMX Structure
-    now = datetime.now().strftime("%Y%m%dT%H%M%SZ")
+def repair_encoding(text):
+    """Simple fix for common UTF-8 to Windows-1252 artifacts."""
+    if not text: return ""
+    # Add common repairs here if you see specific artifacts
+    repairs = {
+        "Å¡": "š",
+        "Å": "ą", 
+        "ii": "ii", # placeholder for logic if needed
+    }
+    for bad, good in repairs.items():
+        text = text.replace(bad, good)
+    return text
+
+def final_unified_merge():
+    output_file = 'Algic_Unified_Master.tmx'
+    ET.register_namespace('xml', "http://www.w3.org/XML/1998/namespace")
+    
     root = ET.Element("tmx", version="1.4")
     header = ET.SubElement(root, "header", {
-        "creationtool": "Algic-Master-Merge",
-        "creationtoolversion": "2.0",
-        "segtype": "phrase",
-        "adminlang": "en-US",
-        "srclang": "en-US",
+        "creationtool": "Algic-Unified-Merger",
         "datatype": "PlainText",
-        "creationdate": now
+        "segtype": "phrase",
+        "srclang": "en-US",
+        "creationdate": datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     })
     body = ET.SubElement(root, "body")
 
-    # 2. Concept Map: { "English Segment": TU_Element }
-    # This deduplicates by concept rather than just smashing files together.
-    master_map = {}
-    ns = {'xml': 'http://www.w3.org/XML/1998/namespace'}
+    master_data = {}
+    files = [f for f in glob.glob("*.tmx") if f != output_file]
 
-    # 3. Process every TMX in the shard directory
-    tmx_files = glob.glob(os.path.join(input_dir, "*.tmx"))
-    print(f"🧹 Cleaning and merging {len(tmx_files)} shards...")
-
-    for file_path in tmx_files:
+    for file_path in files:
         try:
             tree = ET.parse(file_path)
-            shard_root = tree.getroot()
-            
-            for tu in shard_root.findall(".//tu"):
-                # Find the English reference (The Key)
-                en_tuv = tu.find("./tuv[@xml:lang='en-US']", ns)
-                if en_tuv is None:
-                    # Fallback: check for 'en' or other English variants
-                    en_tuv = tu.find("./tuv[@xml:lang='en']", ns)
-                
-                if en_tuv is not None:
-                    en_seg = en_tuv.find("seg").text.strip()
+            for tu in tree.findall(".//tu"):
+                temp_langs = {}
+                for tuv in tu.findall(".//tuv"):
+                    # Extract lang and normalize specifically to en-US
+                    lang_attr = [v for k, v in tuv.attrib.items() if k.endswith('lang')][0].lower()
+                    norm_lang = 'en-US' if lang_attr.startswith('en') else lang_attr
                     
-                    if en_seg not in master_map:
-                        # New Concept: Create the "Master Row"
-                        new_tu = ET.Element("tu", tuid=f"alg_{len(master_map):06d}")
-                        for tuv in tu.findall("tuv"):
-                            new_tu.append(tuv)
-                        master_map[en_seg] = new_tu
-                        body.append(new_tu)
-                    else:
-                        # Existing Concept: Merge unique language columns (tuv)
-                        existing_tu = master_map[en_seg]
-                        existing_langs = [t.get(f"{{{ns['xml']}}}lang") for t in existing_tu.findall("tuv")]
-                        
-                        for tuv in tu.findall("tuv"):
-                            lang = tuv.get(f"{{{ns['xml']}}}lang")
-                            if lang not in existing_langs:
-                                existing_tu.append(tuv)
-        except Exception as e:
-            print(f"⚠️ Skipping broken shard {file_path}: {e}")
+                    seg_node = tuv.find(".//seg")
+                    if seg_node is not None and seg_node.text:
+                        clean_text = repair_encoding(seg_node.text.strip())
+                        if clean_text:
+                            temp_langs[norm_lang] = clean_text
 
-    # 4. Final Polish: Indentation and Writing
+                # Use en-US as key, or fallback to the first available lang (for scientific/arcane)
+                primary_key = temp_langs.get('en-US') or next(iter(temp_langs.values()), None)
+
+                # Skip placeholders or empty units
+                if not primary_key or "[Placeholder" in primary_key:
+                    continue
+
+                if primary_key not in master_data:
+                    master_data[primary_key] = {}
+                
+                master_data[primary_key].update(temp_langs)
+
+        except Exception as e:
+            print(f"❌ Error in {file_path}: {e}")
+
+    # Rebuild sorted XML
+    for i, (concept, translations) in enumerate(sorted(master_data.items())):
+        tu_node = ET.SubElement(body, "tu", tuid=f"alg_{i:06d}")
+        for lang, text in translations.items():
+            tuv_node = ET.SubElement(tu_node, "tuv")
+            tuv_node.set("{http://www.w3.org/XML/1998/namespace}lang", lang)
+            ET.SubElement(tuv_node, "seg").text = text
+
     tree = ET.ElementTree(root)
-    ET.indent(tree, space="  ", level=0)
+    ET.indent(tree, space="  ")
     tree.write(output_file, encoding="utf-8", xml_declaration=True)
-    
-    print(f"✅ DONE. Master file '{output_file}' is ready for SQL import.")
-    print(f"📊 Unique Algic Concepts: {len(master_map)}")
+    print(f"✅ Successfully merged {len(master_data)} concepts into {output_file}")
 
 if __name__ == "__main__":
-    # Put all your 'numbers.tmx', 'sauk_workbook.tmx', 'omniglot.tmx' here
-    master_tmx_merge('shards/', 'Algic_Master_Final.tmx')
+    final_unified_merge()
