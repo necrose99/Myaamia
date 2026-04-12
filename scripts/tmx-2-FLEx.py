@@ -1,6 +1,7 @@
 import sys
 import os
 import glob
+<<<<<<< Updated upstream
 from dataclasses import dataclass, field
 from typing import List, Optional, Any
 import xml.etree.ElementTree as ET
@@ -50,24 +51,35 @@ class XslStylesheet:
 
 # Your "Order of Battle" for Algic Languages
 ALGIC_ARRAY = [
+=======
+from datetime import datetime
+from saxonche import PySaxonProcessor
+
+# Your Order of Battle for filtering
+algic_array = [
+>>>>>>> Stashed changes
     "alg-x-proto", "bla", "arp", "ats", "chy", "bft",
     "men", "cre", "csw", "crj", "atj", "nsk", "moos", "crm", 
     "pot", "oji", "otw", "ciw", "alq", "ojb", "ojg", "ojs", 
-    "mia", "sac", "kic", "sha", "mic", "abe", "aaq", "mal", 
+    "mia", "sac", "kic_us", "kic_mx", "sha", "mic", "abe", "aaq", "mal", 
     "moo", "mua", "unm", "wamp", "mas", "nrn", "qpi", "nnt", 
     "pow", "pmk", "psk", "mjy", "wiy", "yur", "en-US", "Latin", "es_mx", "fr"
 ]
 
 def run_lift_transformation(tmx_file, xsl_file):
+<<<<<<< Updated upstream
     """
     [span_12](start_span)Uses SaxonC-HE to apply XSLT 2.0 grouping logic[span_12](end_span).
     [span_13](start_span)[span_14](start_span)Reconstructs LIFT hierarchy from flat TMX TUs[span_13](end_span)[span_14](end_span).
     """
+=======
+>>>>>>> Stashed changes
     output_lift = tmx_file.replace('.tmx', '.lift')
     
     with PySaxonProcessor(license=False) as proc:
         xsltproc = proc.new_xslt30_processor()
         
+<<<<<<< Updated upstream
         # [span_15](start_span)Compile XSLT to support <xsl:for-each-group>[span_15](end_span)
         executable = xsltproc.compile_xslt_from_file(xsl_file)
         
@@ -75,6 +87,15 @@ def run_lift_transformation(tmx_file, xsl_file):
         source = proc.parse_xml(xml_file_name=tmx_file)
         
         # [span_16](start_span)[span_17](start_span)Apply transformation to rebuild entry/sense hierarchy[span_16](end_span)[span_17](end_span)
+=======
+        # Compile your XSLT (supports XSLT 2.0 grouping)
+        executable = xsltproc.compile_xslt_from_file(xsl_file)
+        
+        # Set the source TMX
+        source = proc.parse_xml(xml_file_name=tmx_file)
+        
+        # Apply transformation to rebuild LIFT hierarchy
+>>>>>>> Stashed changes
         result = executable.transform_to_string(xdm_node=source)
         
         with open(output_lift, 'w', encoding='utf-8') as f:
@@ -82,6 +103,7 @@ def run_lift_transformation(tmx_file, xsl_file):
             
     print(f"✅ Transmogrified {tmx_file} into {output_lift}")
 
+<<<<<<< Updated upstream
 # --- Main Execution ---
 
 if __name__ == "__main__":
@@ -89,14 +111,26 @@ if __name__ == "__main__":
     XSL_PATH = "tmx-to-lift.xsl"
     
     # Handle Windows/PowerShell wildcard expansion
+=======
+if __name__ == "__main__":
+    XSL_PATH = "tmx-to-lift.xsl"
+    
+    # Handle Windows wildcard expansion
+>>>>>>> Stashed changes
     args = sys.argv[1:] if len(sys.argv) > 1 else ["*.tmx"]
     files = []
     for arg in args:
         files.extend(glob.glob(arg))
         
+<<<<<<< Updated upstream
     if not files:
         print("❌ No TMX files found. Check your directory or file names.")
     else:
         for f in files:
             if os.path.exists(f):
                 run_lift_transformation(f, XSL_PATH)
+=======
+    for f in files:
+        if os.path.exists(f):
+            run_lift_transformation(f, XSL_PATH)
+>>>>>>> Stashed changes
