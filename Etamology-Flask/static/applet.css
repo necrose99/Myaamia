@@ -1,0 +1,16 @@
+.script-comparison {
+    display: flex;
+    gap: 1rem;
+    background: #fdf6e3; /* Parchment color */
+    padding: 5px;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+.mode span:first-child {
+    display: block;
+    font-size: 0.6em;
+    color: #b58900;
+    font-weight: bold;
+}
+.cree { font-family: 'Noto Sans Canadian Aboriginal', sans-serif; font-size: 1.2em; }
+.glas { font-family: 'Catrinity', serif; font-size: 1.2em; color: #5d4037; }
