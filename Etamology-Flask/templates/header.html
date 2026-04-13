@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algic Etymology Applet v3</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Canadian+Aboriginal:wght@400;700&display=swap');
+        
+        /* Local Catrinity for GLAS (Archives) */
+        @font-face {
+            font-family: 'Catrinity';
+            src: url('/static/Catrinity.otf') format('opentype');
+            font-display: swap;
+        }
+
+        :root {
+            --parchment: #fdf6e3;
+            --archival-brown: #5d4037;
+            --cree-blue: #0d47a1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eee;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Side-by-Side Comparison Styling */
+        .script-comparison {
+            display: flex;
+            gap: 1.5rem;
+            background: var(--parchment);
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+            border-left: 4px solid var(--archival-brown);
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+        }
+
+        .mode {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mode-label {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #888;
+            margin-bottom: 4px;
+        }
+
+        /* High-fidelity script rendering */
+        .cree-text {
+            font-family: 'Noto Sans Canadian Aboriginal', sans-serif;
+            font-size: 1.3rem;
+            color: var(--cree-blue);
+        }
+
+        .glas-text {
+            font-family: 'Catrinity', serif;
+            font-size: 1.3rem;
+            color: var(--archival-brown);
+        }
+
+        .hw { font-weight: bold; font-size: 1.4rem; }
+    </style>
+</head>
+<body>
