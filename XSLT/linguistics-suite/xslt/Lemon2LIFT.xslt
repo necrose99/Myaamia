@@ -5,6 +5,9 @@
     xmlns:dcr="http://www.isocat.org/ns/dcr.rdf#"
     exclude-result-prefixes="#all">
 <xsl:template match="ontolex:LexicalEntry">
+<xs:schema>
+<xs:include schemaLocation="https://raw.githubusercontent.com/necrose99/Myaamia/refs/heads/master/XSLT/linguistics-suite/schemas/lift.xsd"/>  
+<xs:schema/>
     <entry id="{substring-after(@rdf:about, 'lex:')}">
         <lexical-unit>
             <form lang="{ontolex:canonicalForm/ontolex:Form/ontolex:writtenRep/@xml:lang}">
