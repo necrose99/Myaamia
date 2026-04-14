@@ -8,6 +8,9 @@
     xmlns:ontolex="http://www.w3.org/ns/lemon/ontolex#"
     xmlns:dcr="http://www.isocat.org/ns/dcr.rdf#"
     exclude-result-prefixes="#all">
+<xs:schema>
+<xs:include schemaLocation="https://raw.githubusercontent.com/necrose99/Myaamia/refs/heads/master/XSLT/linguistics-suite/schemas/lift.xsd"/>  
+<xs:schema/>
 
     <xsl:output method="xml" indent="yes"/>
 
