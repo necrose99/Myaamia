@@ -1,0 +1,80 @@
+
+<!--=====================================================================
+Created via the Lexical Import process: 04/13/2026 18:04:17
+===================================================================== -->
+<sfmMapping version="6.1">
+
+<!--=====================================================================
+Global Settings
+===================================================================== -->
+<settings>
+<meaning app="fw.sil.org"/>
+</settings>
+
+<!--=====================================================================
+Import Options
+===================================================================== -->
+<options>
+<option id="chkCreateMissingLinks" type="Checkbox" checked="False"/>
+</options>
+
+<!--=====================================================================
+Language Definitions
+===================================================================== -->
+<languages>
+<langDef id="National" xml:lang="ignore"/>
+<langDef id="Regional" xml:lang="ignore"/>
+<langDef id="Vernacular" xml:lang="mia"/>
+<langDef id="English" xml:lang="en"/>
+</languages>
+
+<!--=====================================================================
+Level Hierarchy
+===================================================================== -->
+<hierarchy>
+<level name="Entry" partOf="records" beginFields="lx" additionalFields="dt"/>
+<level name="Etymology" partOf="Entry Subentry" beginFields="ignore"/>
+<level name="Example" partOf="Sense" beginFields="ignore"/>
+<level name="ExampleTranslation" partOf="Example" beginFields="ignore"/>
+<level name="ExtendedNote" partOf="Sense" beginFields="ignore"/>
+<level name="ExtendedNoteExample" partOf="ExtendedNote" beginFields="ignore"/>
+<level name="ExtendedNoteExampleTranslation" partOf="ExtendedNoteExample" beginFields="ignore"/>
+<level name="Function" partOf="Entry Subentry Sense" beginFields="ignore"/>
+<level name="Picture" partOf="Sense" beginFields="ignore"/>
+<level name="Pronunciation" partOf="Entry Subentry" beginFields="ignore"/>
+<level name="SemanticDomain" partOf="Sense" beginFields="ignore"/>
+<level name="Sense" partOf="Entry Subentry" beginFields="ge ps"/>
+<level name="Subentry" partOf="Entry" beginFields="ignore"/>
+<level name="Variant" partOf="Entry Subentry Sense" beginFields="ignore"/>
+</hierarchy>
+
+<!--=====================================================================
+Field Descriptions
+===================================================================== -->
+<fieldDescriptions>
+<field sfm="lx" name="Lexeme Form" type="string" lang="Vernacular" >
+<meaning app="fw.sil.org" id="lex"/>
+</field>
+<field sfm="ps" name="Category (Part Of Speech)" type="string" lang="English" abbr="True" >
+<meaning app="fw.sil.org" id="pos"/>
+</field>
+<field sfm="ge" name="Gloss" type="string" lang="English" >
+<meaning app="fw.sil.org" id="glos"/>
+</field>
+<field sfm="dt" name="Date Modified" type="date" lang="English" >
+<meaning app="fw.sil.org" id="mod"/>
+</field>
+</fieldDescriptions>
+
+<!--=====================================================================
+In Field Markers
+===================================================================== -->
+<inFieldMarkers>
+</inFieldMarkers>
+
+<!--=====================================================================
+Custom Field Descriptions
+===================================================================== -->
+<CustomFieldDescriptions>
+</CustomFieldDescriptions>
+</sfmMapping>
