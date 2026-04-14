@@ -8,9 +8,14 @@
     xmlns:ontolex="http://www.w3.org/ns/lemon/ontolex#"
     xmlns:dcr="http://www.isocat.org/ns/dcr.rdf#"
     exclude-result-prefixes="#all">
-xsl:stylesheet version="3.0" 
+<xsl:stylesheet version="3.0" 
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:lift="http://www.sillsdev.org/lift-standard"
+    exclude-result-prefixes="#all">
+
+    <xsl:template match="ontolex:LexicalEntry">
+        <entry id="{@rdf:about}" xmlns="http://www.sillsdev.org/lift-standard">
+            
     exclude-result-prefixes="#all">
 
     <xsl:template match="ontolex:LexicalEntry">
