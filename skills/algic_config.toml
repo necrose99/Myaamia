@@ -1,0 +1,55 @@
+[language.myaamia]
+iso = "mia"
+script = "latin"
+special_chars = ["š", "ə", "θ", "·"]
+normalization = "NFC"
+
+[language.cree]
+iso = "cre"
+script = "syllabics"
+range = "U+1400..U+167F" # Unified Canadian Aboriginal Syllabics
+encoding_safety = "utf-8-sig"
+
+[scraping.follies]
+replace_mojibake = true
+enforce_utf8 = true
+deduplication_mode = "semantic" # Uses sqlite-rag to check if meaning exists
+
+[language.cree_plains]
+iso = "crk"
+preferred_script = "latin" # SRO (Standard Roman Orthography)
+dialect_marker = "y" # e.g., 'kiya' (you)
+orthography_rules = "SRO-macron" # Handles ā, ī, ō
+
+[language.cree_swampy]
+iso = "cwd"
+preferred_script = "syllabics"
+dialect_marker = "n" # e.g., 'kina' (you)
+syllabic_subset = "West-Cree" # Specific shapes for Swampy
+
+[language.cree_woods]
+iso = "cwd"
+dialect_marker = "th" # ð/θ sounds
+
+[language.myaamia]
+iso = "mia"
+standard = "MC" # Myaamia Center / Mid-Atlantic style
+
+[orthography.characters]
+special = ["š", "θ"]
+vowels_short = ["a", "e", "i", "o"]
+vowels_long = ["aa", "ee", "ii", "oo"]
+
+[repairs.mojibake]
+"Å¡" = "š"
+"Ã«" = "ë"
+"Å" = "š" # Catch-all for aggressive poaching
+
+[rules]
+preserve_stems = true # Keep trailing hyphens like ašaahšikop-
+enforce_nfc = true    # Ensure š is U+0161, not s + accent
+[language.sauk]
+iso = "sac"
+special_chars = ["θ", "š"]
+vowel_style = "mixed" # Some use doubled, some use macrons (ā)
+
