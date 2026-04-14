@@ -1,0 +1,11 @@
+server.modules += ( "mod_proxy" )
+
+$HTTP["host"] =~ "example.com" {
+    proxy.server = ( "" => ( ( "host" => "127.0.0.1", "port" => "5000" ) ) )
+}
+
+$SERVER["socket"] == ":443" {
+    ssl.engine = "enable"
+    ssl.pemfile = "/etc/lighttpd/ssl/example.com.pem"
+    proxy.server = ( "" => ( ( "host" => "127.0.0.1", "port" => "5000" ) ) )
+}
