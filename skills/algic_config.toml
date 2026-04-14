@@ -1,0 +1,32 @@
+[language.myaamia]
+iso = "mia"
+script = "latin"
+special_chars = ["š", "ə", "θ", "·"]
+normalization = "NFC"
+
+[language.cree]
+iso = "cre"
+script = "syllabics"
+range = "U+1400..U+167F" # Unified Canadian Aboriginal Syllabics
+encoding_safety = "utf-8-sig"
+
+[scraping.follies]
+replace_mojibake = true
+enforce_utf8 = true
+deduplication_mode = "semantic" # Uses sqlite-rag to check if meaning exists
+
+[language.cree_plains]
+iso = "crk"
+preferred_script = "latin" # SRO (Standard Roman Orthography)
+dialect_marker = "y" # e.g., 'kiya' (you)
+orthography_rules = "SRO-macron" # Handles ā, ī, ō
+
+[language.cree_swampy]
+iso = "cwd"
+preferred_script = "syllabics"
+dialect_marker = "n" # e.g., 'kina' (you)
+syllabic_subset = "West-Cree" # Specific shapes for Swampy
+
+[language.cree_woods]
+iso = "cwd"
+dialect_marker = "th" # ð/θ sounds
