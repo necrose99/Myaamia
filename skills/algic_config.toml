@@ -30,3 +30,26 @@ syllabic_subset = "West-Cree" # Specific shapes for Swampy
 [language.cree_woods]
 iso = "cwd"
 dialect_marker = "th" # ð/θ sounds
+
+[language.myaamia]
+iso = "mia"
+standard = "MC" # Myaamia Center / Mid-Atlantic style
+
+[orthography.characters]
+special = ["š", "θ"]
+vowels_short = ["a", "e", "i", "o"]
+vowels_long = ["aa", "ee", "ii", "oo"]
+
+[repairs.mojibake]
+"Å¡" = "š"
+"Ã«" = "ë"
+"Å" = "š" # Catch-all for aggressive poaching
+
+[rules]
+preserve_stems = true # Keep trailing hyphens like ašaahšikop-
+enforce_nfc = true    # Ensure š is U+0161, not s + accent
+[language.sauk]
+iso = "sac"
+special_chars = ["θ", "š"]
+vowel_style = "mixed" # Some use doubled, some use macrons (ā)
+
