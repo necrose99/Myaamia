@@ -9,6 +9,7 @@ and now LEMON/OntoLex-Lemon RDF export for semantic publishing.
 import requests
 import xml.etree.ElementTree as ET
 import sqlite3
+import sqlite-zstd
 import json
 import uuid
 import subprocess
@@ -36,7 +37,7 @@ class OLACImporter:
             "men": "Menominee", "cre": "Cree", "csw": "Swampy Cree", "crj": "Southern East Cree",
             "atj": "Atikamekw", "pot": "Potawatomi", "oji": "Ojibwe", "otw": "Ottawa",
             "ciw": "Chippewa", "mia": "Miami-Illinois (Myaamia)", "sac": "Meskwaki (Fox)",
-            "kic": "Kickapoo (US)", "sha": "Shawnee",
+            "kic": "Kickapoo (US)", "kic_mx": "Kickapoo (MX)", "sha": "Shawnee",
             # Eastern
             "mic": "Mi'kmaq", "abe": "Western Abenaki", "aaq": "Eastern Abnaki",
             "mal": "Maliseet-Passamaquoddy", "moo": "Mohegan-Pequot", "mua": "Munsee", "unm": "Unami",

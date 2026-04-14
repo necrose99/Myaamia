@@ -1,6 +1,5 @@
 import re
 import sqlite3
-import sqlite-zstd
 import lxml.etree as ET
 from xml.sax.saxutils import escape
 

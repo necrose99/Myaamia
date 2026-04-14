@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XLIFF 1.2 Strict XSD — reproduced from OASIS XLIFF TC specification -->
+<xsd:schema xmlns:xlf="urn:oasis:names:tc:xliff:document:1.2"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified"
+            targetNamespace="urn:oasis:names:tc:xliff:document:1.2">
+
+  <!-- Simple extension type for x-* values -->
+  <xsd:simpleType name="XTend">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="x-[^\s]+"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="AttrType_Version">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="1.2"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!-- Root element -->
+  <xsd:element name="xliff">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="xlf:file" maxOccurs="unbounded"/>
+      </xsd:sequence>
+      <xsd:attribute name="version" type="xlf:AttrType_Version" use="required"/>
+      <xsd:anyAttribute namespace="##other" processContents="lax"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="file">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="xlf:header" minOccurs="0"/>
+        <xsd:element ref="xlf:body"/>
+      </xsd:sequence>
+      <xsd:attribute name="original"         type="xsd:string"  use="required"/>
+      <xsd:attribute name="source-language"  type="xsd:string"  use="required"/>
+      <xsd:attribute name="target-language"  type="xsd:string"/>
+      <xsd:attribute name="datatype"         type="xsd:string"  use="required"/>
+      <xsd:attribute name="tool-id"          type="xsd:string"/>
+      <xsd:attribute name="date"             type="xsd:string"/>
+      <xsd:attribute name="category"         type="xsd:string"/>
+      <xsd:anyAttribute namespace="##other"  processContents="lax"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="header">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="xlf:skl"          minOccurs="0"/>
+        <xsd:element ref="xlf:phase-group"  minOccurs="0"/>
+        <xsd:element ref="xlf:glossary"     minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element ref="xlf:reference"    minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element ref="xlf:count-group"  minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element ref="xlf:tool"         minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element ref="xlf:note"         minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element ref="xlf:prop-group"   minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+      <xsd:anyAttribute namespace="##other" processContents="lax"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="body">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:choice minOccurs="0" maxOccurs="unbounded">
+          <xsd:element ref="xlf:trans-unit"/>
+          <xsd:element ref="xlf:bin-unit"/>
+          <xsd:element ref="xlf:group"/>
+        </xsd:choice>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="group">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="xlf:note"         minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element ref="xlf:prop-group"   minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element ref="xlf:count-group"  minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:choice minOccurs="0" maxOccurs="unbounded">
+          <xsd:element ref="xlf:trans-unit"/>
+          <xsd:element ref="xlf:bin-unit"/>
+          <xsd:element ref="xlf:group"/>
+        </xsd:choice>
+      </xsd:sequence>
+      <xsd:attribute name="id"         type="xsd:string"/>
+      <xsd:attribute name="resname"    type="xsd:string"/>
+      <xsd:attribute name="restype"    type="xsd:string"/>
+      <xsd:attribute name="translate"  type="xsd:string"/>
+      <xsd:attribute name="xml:lang"   type="xsd:language"/>
+      <xsd:anyAttribute namespace="##other" processContents="lax"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="trans-unit">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="xlf:source"/>
+        <xsd:element ref="xlf:target"        minOccurs="0"/>
+        <xsd:element ref="xlf:context-group" minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element ref="xlf:count-group"   minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element ref="xlf:note"          minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element ref="xlf:prop-group"    minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element ref="xlf:alt-trans"     minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+      <xsd:attribute name="id"       type="xsd:string"  use="required"/>
+      <xsd:attribute name="resname"  type="xsd:string"/>
+      <xsd:attribute name="restype"  type="xsd:string"/>
+      <xsd:attribute name="translate" type="xsd:string"/>
+      <xsd:attribute name="xml:space" type="xsd:string"/>
+      <xsd:anyAttribute namespace="##other" processContents="lax"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="source">
+    <xsd:complexType mixed="true">
+      <xsd:sequence>
+        <xsd:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+      <xsd:attribute name="xml:lang" type="xsd:language"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="target">
+    <xsd:complexType mixed="true">
+      <xsd:sequence>
+        <xsd:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+      <xsd:attribute name="xml:lang" type="xsd:language"/>
+      <xsd:attribute name="state"    type="xsd:string"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="alt-trans">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="xlf:source" minOccurs="0"/>
+        <xsd:element ref="xlf:target"/>
+        <xsd:element ref="xlf:note"   minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+      <xsd:attribute name="match-quality" type="xsd:string"/>
+      <xsd:attribute name="origin"        type="xsd:string"/>
+      <xsd:anyAttribute namespace="##other" processContents="lax"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="note">
+    <xsd:complexType mixed="true">
+      <xsd:attribute name="from"       type="xsd:string"/>
+      <xsd:attribute name="annotates"  type="xsd:string"/>
+      <xsd:attribute name="priority"   type="xsd:string"/>
+      <xsd:anyAttribute namespace="##other" processContents="lax"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="context-group">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="xlf:context" maxOccurs="unbounded"/>
+      </xsd:sequence>
+      <xsd:attribute name="name"    type="xsd:string" use="required"/>
+      <xsd:attribute name="purpose" type="xsd:string"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="context">
+    <xsd:complexType mixed="true">
+      <xsd:attribute name="context-type" type="xsd:string" use="required"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="count-group">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="xlf:count" maxOccurs="unbounded"/>
+      </xsd:sequence>
+      <xsd:attribute name="name" type="xsd:string" use="required"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="count">
+    <xsd:complexType mixed="true">
+      <xsd:attribute name="count-type" type="xsd:string"/>
+      <xsd:attribute name="unit"       type="xsd:string"/>
+      <xsd:attribute name="phase-name" type="xsd:string"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="prop-group">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="xlf:prop" maxOccurs="unbounded"/>
+      </xsd:sequence>
+      <xsd:attribute name="name" type="xsd:string" use="required"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="prop">
+    <xsd:complexType mixed="true">
+      <xsd:attribute name="prop-type" type="xsd:string" use="required"/>
+      <xsd:attribute name="xml:lang"  type="xsd:language"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="tool">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+      <xsd:attribute name="tool-id"      type="xsd:string" use="required"/>
+      <xsd:attribute name="tool-name"    type="xsd:string" use="required"/>
+      <xsd:attribute name="tool-version" type="xsd:string"/>
+      <xsd:attribute name="tool-company" type="xsd:string"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="phase-group">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="xlf:phase" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="phase">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="xlf:note" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+      <xsd:attribute name="phase-name"  type="xsd:string" use="required"/>
+      <xsd:attribute name="process-name" type="xsd:string" use="required"/>
+      <xsd:attribute name="tool-id"     type="xsd:string"/>
+      <xsd:attribute name="date"        type="xsd:string"/>
+      <xsd:attribute name="contact-name" type="xsd:string"/>
+      <xsd:attribute name="contact-email" type="xsd:string"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="skl">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="internal-file" type="xsd:string"/>
+        <xsd:element name="external-file">
+          <xsd:complexType>
+            <xsd:attribute name="uid"  type="xsd:string"/>
+            <xsd:attribute name="href" type="xsd:string" use="required"/>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="glossary">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="internal-file" type="xsd:string"/>
+        <xsd:element name="external-file">
+          <xsd:complexType>
+            <xsd:attribute name="uid"  type="xsd:string"/>
+            <xsd:attribute name="href" type="xsd:string" use="required"/>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="reference">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="internal-file" type="xsd:string"/>
+        <xsd:element name="external-file">
+          <xsd:complexType>
+            <xsd:attribute name="uid"  type="xsd:string"/>
+            <xsd:attribute name="href" type="xsd:string" use="required"/>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="bin-unit">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="bin-source">
+          <xsd:complexType>
+            <xsd:choice>
+              <xsd:element name="internal-file" type="xsd:string"/>
+              <xsd:element name="external-file">
+                <xsd:complexType>
+                  <xsd:attribute name="uid"  type="xsd:string"/>
+                  <xsd:attribute name="href" type="xsd:string" use="required"/>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:choice>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="bin-target" minOccurs="0">
+          <xsd:complexType>
+            <xsd:choice>
+              <xsd:element name="internal-file" type="xsd:string"/>
+              <xsd:element name="external-file">
+                <xsd:complexType>
+                  <xsd:attribute name="uid"  type="xsd:string"/>
+                  <xsd:attribute name="href" type="xsd:string" use="required"/>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:choice>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element ref="xlf:note" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+      <xsd:attribute name="id"       type="xsd:string" use="required"/>
+      <xsd:attribute name="restype"  type="xsd:string" use="required"/>
+      <xsd:attribute name="mime-type" type="xsd:string" use="required"/>
+    </xsd:complexType>
+  </xsd:element>
+
+</xsd:schema>
