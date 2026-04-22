@@ -1,0 +1,2202 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tmx version="1.4">
+  <header creationtool="Algic-PDF-Mender" segtype="phrase" adminlang="en-US" srclang="en-US" datatype="PlainText"/>
+  <body>
+    <tu tuid="sac_1_0">
+      <tuv xml:lang="en-US">
+        <seg>p an.</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>ahkwâwishimêwa
+fill u</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_1_1">
+      <tuv xml:lang="en-US">
+        <seg>snarl;</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>âhkwâpitêwishimowa</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_1_2">
+      <tuv xml:lang="en-US">
+        <seg>atwrap</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>ahkwichipîthehkâhi
+co ahpahôni
+(woman’s) hair</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_1_7">
+      <tuv xml:lang="en-US">
+        <seg>I’m P</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>netahpenîtho
+Potato clan;</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_1_8">
+      <tuv xml:lang="en-US">
+        <seg>) potm</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>ahpenya ahpenyêki
+(pl.: akikwâha
+phleg</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_3_11">
+      <tuv xml:lang="en-US">
+        <seg>TIONA</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>22 A C D
+ONCISE IC</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_3_12">
+      <tuv xml:lang="en-US">
+        <seg>an.</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>akimêwa
+count</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_3_13">
+      <tuv xml:lang="en-US">
+        <seg>inan.</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>akitamwa
+count</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_3_14">
+      <tuv xml:lang="en-US">
+        <seg>nthook</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>akitâthowa
+cou akôchikani
+pot</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_3_22">
+      <tuv xml:lang="en-US">
+        <seg>(châhi) k âkwi mâne êkôhmuch</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>âkwi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_4_27">
+      <tuv xml:lang="en-US">
+        <seg>23
+E</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>S L
+OF THE AUK ANGUAG</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_4_28">
+      <tuv xml:lang="en-US">
+        <seg>be a netamehk memberwitho
+I’</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>amehkwithowa</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_4_30">
+      <tuv xml:lang="en-US">
+        <seg>be alert, qu âmi- ick to reatâni
+uld;</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>amêthiwa</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_4_32">
+      <tuv xml:lang="en-US">
+        <seg>ow woulnd it?</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>âmishimehkamâni?
+h get there?, how could I fi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_4_34">
+      <tuv xml:lang="en-US">
+        <seg>ahtôwacancer</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>amokwîweni
+cancer; amokwîweni
+(s)he has</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_4_38">
+      <tuv xml:lang="en-US">
+        <seg>dish, bowwathi</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>anâkani nâkani
+(or ) anâkowe â
+yesterday;</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_6_42">
+      <tuv xml:lang="en-US">
+        <seg>’t worry!</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>ânemitêhêhkani!
+don</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_6_43">
+      <tuv xml:lang="en-US">
+        <seg>25
+E</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>S L
+OF THE AUK ANGUAG</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_6_44">
+      <tuv xml:lang="en-US">
+        <seg>American,</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>Anenôtêwa
+a Native</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_6_45">
+      <tuv xml:lang="en-US">
+        <seg>a dip; takho</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>anenwîwa
+bathe, take Anêpahôha
+an Arapa</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_6_47">
+      <tuv xml:lang="en-US">
+        <seg>, record inite</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>anepyêhamwa
+write anepyêhâthowa
+wr</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_6_50">
+      <tuv xml:lang="en-US">
+        <seg>ay, way ofet lost!;</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>anika
+away, further aw anika’hâno!
+get out!, g</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_6_52">
+      <tuv xml:lang="en-US">
+        <seg>âhi
+) waycan’t</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>anikâ’nâhi nikô’n
+(or ashkachi-
+be impatient to,</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_11_66">
+      <tuv xml:lang="en-US">
+        <seg>(pl. :</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>athâwochêpihki</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_11_67">
+      <tuv xml:lang="en-US">
+        <seg>carrotmoccasin</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>athâwochêpihkyêni
+) athayimahkethêhi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_11_71">
+      <tuv xml:lang="en-US">
+        <seg>hi?
+can y</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kekashkathemi
+help!;</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_11_72">
+      <tuv xml:lang="en-US">
+        <seg>!
+please h</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kîhathemihi
+help me?;</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_11_73">
+      <tuv xml:lang="en-US">
+        <seg>’ll help y</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kîhathemihene
+me!; I</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_11_74">
+      <tuv xml:lang="en-US">
+        <seg>ARY</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>30 A C D
+ONCISE ICTION</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_11_75">
+      <tuv xml:lang="en-US">
+        <seg>out, lendi
+) rock, s</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>athemihiwêwa
+help atheni athenyên
+(pl.:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_14_86">
+      <tuv xml:lang="en-US">
+        <seg>3</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>S L 3
+OF THE AUK ANGUAGE</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_14_87">
+      <tuv xml:lang="en-US">
+        <seg>lyall nose</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>châki châki-
+, all, complete chakikomêwa
+have a sm</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_19_90">
+      <tuv xml:lang="en-US">
+        <seg>ANGUA</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>S L
+OF THE AUK</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_19_91">
+      <tuv xml:lang="en-US">
+        <seg>befored)</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>êyêhpwâwi- Conjunctive moo</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_19_93">
+      <tuv xml:lang="en-US">
+        <seg>mkay</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>êyênîha
+possu haw
+all right, o</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_19_96">
+      <tuv xml:lang="en-US">
+        <seg>upperkâta</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>-hkâhki
+chest, -hkâchi -h
+(pl.:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_19_100">
+      <tuv xml:lang="en-US">
+        <seg>(p -ht
+l.:</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>-htawakayi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_19_101">
+      <tuv xml:lang="en-US">
+        <seg>what</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>hwa? wa?
+(or )</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_20_102">
+      <tuv xml:lang="en-US">
+        <seg>ICTIONARY</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>38 A C D
+ONCISE</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_20_103">
+      <tuv xml:lang="en-US">
+        <seg>sses dismayeg.) go the</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>î!
+oh no! (expre ihêwa â/ê
+( ; irr</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_20_106">
+      <tuv xml:lang="en-US">
+        <seg>owîh
+iend;</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kîhkâna
+your fr</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_20_107">
+      <tuv xml:lang="en-US">
+        <seg>nîhkâne!</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>his/her friend(s);</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_20_108">
+      <tuv xml:lang="en-US">
+        <seg>y friends!</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>nîhkânetike!
+m</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_20_109">
+      <tuv xml:lang="en-US">
+        <seg>thatihkwê
+an;</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>ihketowa
+say ihkwêwa
+wom</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_20_111">
+      <tuv xml:lang="en-US">
+        <seg>ladies!</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>ihkwêwetike!
+)</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_20_112">
+      <tuv xml:lang="en-US">
+        <seg>nîki
+e; my</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>-îki
+house, hom</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_20_113">
+      <tuv xml:lang="en-US">
+        <seg>/her home;</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>owîki
+home; his</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_20_114">
+      <tuv xml:lang="en-US">
+        <seg>e (an.); (s)</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>îna
+that, that on</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_20_115">
+      <tuv xml:lang="en-US">
+        <seg>who’s that?</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>châh îna?
+(so)</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_20_116">
+      <tuv xml:lang="en-US">
+        <seg>e</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>înâhi
+over ther</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_21_117">
+      <tuv xml:lang="en-US">
+        <seg>ANGUAGE</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>S L
+OF THE AUK</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_21_118">
+      <tuv xml:lang="en-US">
+        <seg>ost that (aetâthwi</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>inakimowa
+c kâshôhêha m</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_21_123">
+      <tuv xml:lang="en-US">
+        <seg>(it)’s that color;</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>inâtêwi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_21_124">
+      <tuv xml:lang="en-US">
+        <seg>what colorthat color</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>owînethani? inâthowa
+be</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_21_128">
+      <tuv xml:lang="en-US">
+        <seg>her brainhair, hea</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>owînêtepi
+his/ -înethani
+(pl.)</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_21_131">
+      <tuv xml:lang="en-US">
+        <seg>(single nînethi ) hair, strao
+r strand;</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>-înethi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_22_133">
+      <tuv xml:lang="en-US">
+        <seg>andsent, gone</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>his/her hair str inêtwa
+be ab</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_22_135">
+      <tuv xml:lang="en-US">
+        <seg>D
+ICTIONARY</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>40 A C
+ONCISE</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_22_136">
+      <tuv xml:lang="en-US">
+        <seg>say to, tellishi!
+tell him</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>inêwa n/sh
+( ) wîhpîtikêch</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_22_139">
+      <tuv xml:lang="en-US">
+        <seg>that’s it!, thaose ones (an</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>îni! înê!
+(or ) îniki
+those, th</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_22_142">
+      <tuv xml:lang="en-US">
+        <seg>e
+I think soat that time,</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>îni mêkwêh îninâhi
+then,</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_22_144">
+      <tuv xml:lang="en-US">
+        <seg>ose ones (inîni tathwê
+r</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>înini
+those, th îni tathwi
+(o</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_22_148">
+      <tuv xml:lang="en-US">
+        <seg>châh ênownâh
+y ___?;</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>___? tâni
+(or how do you sa</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_23_150">
+      <tuv xml:lang="en-US">
+        <seg>in!</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>inowêno!
+say it aga</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_23_151">
+      <tuv xml:lang="en-US">
+        <seg>i
+) tooow</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>-îpichi -îpitan
+(pl.: -îpikani
+bone marr</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_23_153">
+      <tuv xml:lang="en-US">
+        <seg>UAGE</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>S L
+OF THE AUK ANG</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_23_154">
+      <tuv xml:lang="en-US">
+        <seg>way;</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>ishawiwa
+act that</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_23_155">
+      <tuv xml:lang="en-US">
+        <seg>re yoîn ês</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>keteshawi?
+what a what are you up to?;</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_23_158">
+      <tuv xml:lang="en-US">
+        <seg>not upp</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>êshawiyânini
+I’m -îshehkwayi
+scal</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_27_167">
+      <tuv xml:lang="en-US">
+        <seg>ave yoonesel</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kîhkâshkahone
+I’ll sh kâshkahowa
+shave (</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_27_171">
+      <tuv xml:lang="en-US">
+        <seg>ar an.</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kâshkehtawêwa
+he</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_27_172">
+      <tuv xml:lang="en-US">
+        <seg>before</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kashki-
+can (put right</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_27_173">
+      <tuv xml:lang="en-US">
+        <seg>45
+E</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>S L
+OF THE AUK ANGUAG</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_27_174">
+      <tuv xml:lang="en-US">
+        <seg>buy, eshkih</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kashkihêwa
+acquire, nenatawêneta kîhka</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_27_177">
+      <tuv xml:lang="en-US">
+        <seg>inan.;</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>inan.; acquire, buy, earn</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_27_178">
+      <tuv xml:lang="en-US">
+        <seg>shkihive mo</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>nenatawêneta wîhka kâta
+not (with Prohibit</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_29_187">
+      <tuv xml:lang="en-US">
+        <seg>47
+E</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>S L
+OF THE AUK ANGUAG</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_29_188">
+      <tuv xml:lang="en-US">
+        <seg>it’s a tornado;</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kehchiwâyâthowa kehchiwâyâthowa</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_29_190">
+      <tuv xml:lang="en-US">
+        <seg>yêwairst wor</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kehchiwâyâthowa p kêhi
+and, but (follows f</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_32_199">
+      <tuv xml:lang="en-US">
+        <seg>pil, studentenâmi-</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kêkyêhkimâthochiki
+) pu kekyêhtenâmi kekyêht
+,</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_32_201">
+      <tuv xml:lang="en-US">
+        <seg>thout a</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>really, definitely, for sure, wi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_32_202">
+      <tuv xml:lang="en-US">
+        <seg>be dim kekyêpeshêwa kep -witted, stupieshêwa
+) be</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kekyêpâtethiwa</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_33_207">
+      <tuv xml:lang="en-US">
+        <seg>enâchslowly</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kenâchi kenâchi- k
+, slowly; kîhthâkiwâtowe
+please speak</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_33_211">
+      <tuv xml:lang="en-US">
+        <seg>cough,</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kenîkitêhêwa
+cough; have a</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_33_212">
+      <tuv xml:lang="en-US">
+        <seg>a ticklâchî</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kenîkikotâkanwa -/e)
+( have Kêtôha Kanakan
+(or</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_37_214">
+      <tuv xml:lang="en-US">
+        <seg>ARY</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>54 A C D
+ONCISE ICTION</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_37_215">
+      <tuv xml:lang="en-US">
+        <seg>(it) say ketômikatwi? s, mees it</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>ketômikatwi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_37_221">
+      <tuv xml:lang="en-US">
+        <seg>nê
+orpeaki</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>neki!
+mother’s sister; ( kî’hkâ!
+oh no! (male s</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_37_225">
+      <tuv xml:lang="en-US">
+        <seg>be full Kîkâpôwa (fromo</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kîhpochêwa</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_42_232">
+      <tuv xml:lang="en-US">
+        <seg>.</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kôkenêwa
+wash an</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_42_233">
+      <tuv xml:lang="en-US">
+        <seg>was</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kôkenikêwa
+do the</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_42_234">
+      <tuv xml:lang="en-US">
+        <seg>) wayour</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kôkinechêwa â/ê
+( kôkinechâno!
+wash</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_42_237">
+      <tuv xml:lang="en-US">
+        <seg>AGE</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>S L
+OF THE AUK ANGU</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_42_238">
+      <tuv xml:lang="en-US">
+        <seg>g, bul</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>konwâshkêha
+fro</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_42_239">
+      <tuv xml:lang="en-US">
+        <seg>(Oklbe bo</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>Koshineki
+Cushing koshkwâtethiwa</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_42_243">
+      <tuv xml:lang="en-US">
+        <seg>yeare
+)</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kotakawahîne
+last nîkâni kotakawahîn</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_42_245">
+      <tuv xml:lang="en-US">
+        <seg>inan</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kotaki
+another, other</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_42_246">
+      <tuv xml:lang="en-US">
+        <seg>) beekot</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kothekwanwa -/e
+( takâwi k
+overweight;</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_43_251">
+      <tuv xml:lang="en-US">
+        <seg>-dicbe s</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kothikêwa
+play bowl-and kwahkwâpitanekowa</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_43_255">
+      <tuv xml:lang="en-US">
+        <seg>out,</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kwâshkwithahowa
+get</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_43_256">
+      <tuv xml:lang="en-US">
+        <seg>or, loyou;</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kwînomêwa
+miss; pine f kekwînomene
+an.; I miss</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_43_258">
+      <tuv xml:lang="en-US">
+        <seg>iss yitho
+I’m</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kekwînomenepena
+we m nemahwêw
+Wolf clan;</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_47_260">
+      <tuv xml:lang="en-US">
+        <seg>/e
+) have apotbelly</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>makânaketonwa -
+( makechêwa
+have a</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_47_263">
+      <tuv xml:lang="en-US">
+        <seg>g;</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kemakekine
+you’re bi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_47_264">
+      <tuv xml:lang="en-US">
+        <seg>gg ears</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>makekinôki
+they’re bi makeshêwa
+have bi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_47_267">
+      <tuv xml:lang="en-US">
+        <seg>( i.e. have been overly we -/e
+) haveaned (sai</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>makinehpetonwa</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_47_270">
+      <tuv xml:lang="en-US">
+        <seg>ARY</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>64 A C D
+ONCISE ICTION</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_47_271">
+      <tuv xml:lang="en-US">
+        <seg>ê
+) be growp</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>makinehpyêwa â/
+( mâkohkwayi
+hat, ca</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_53_278">
+      <tuv xml:lang="en-US">
+        <seg>; beam;</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>mehtekwi
+tree; wood; stick</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_53_279">
+      <tuv xml:lang="en-US">
+        <seg>bowlo, colli</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>mehtekwinâkani
+wooden mehteshkamwa
+bump int</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_53_283">
+      <tuv xml:lang="en-US">
+        <seg>kiwêwen</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>mehtôchi meko âkwi pêh kehkênetakini Thâkiwâto</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_55_287">
+      <tuv xml:lang="en-US">
+        <seg>71
+E</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>S L
+OF THE AUK ANGUAG</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_55_288">
+      <tuv xml:lang="en-US">
+        <seg>ashamed,</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>mêneshitêhêwa
+be</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_55_289">
+      <tuv xml:lang="en-US">
+        <seg>it’s sp ring</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>menôhkamîwi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_55_290">
+      <tuv xml:lang="en-US">
+        <seg>;</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>menowa
+have a drink</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_55_291">
+      <tuv xml:lang="en-US">
+        <seg>êkôhi?</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kashkimenohkâha k</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_55_292">
+      <tuv xml:lang="en-US">
+        <seg>o drink?</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>could I have something t</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_55_293">
+      <tuv xml:lang="en-US">
+        <seg>be a fair deal,</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>menwakimowa</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_55_294">
+      <tuv xml:lang="en-US">
+        <seg>(it)’s a fair deal,</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>menwakitêwi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_55_295">
+      <tuv xml:lang="en-US">
+        <seg>od eyesigood vision</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>menwâpiwa
+have go nemenwâpi
+I’ve got g</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_65_316">
+      <tuv xml:lang="en-US">
+        <seg>ht on timenâhkachi</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kwîyena nâhinâhi
+rig nâhkachi
+again; and;</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_65_319">
+      <tuv xml:lang="en-US">
+        <seg>81
+E</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>S L
+OF THE AUK ANGUAG</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_65_320">
+      <tuv xml:lang="en-US">
+        <seg>pwa!</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>nâhkachi kîhnêwone</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_65_321">
+      <tuv xml:lang="en-US">
+        <seg>n)</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>(to more than one perso</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_65_322">
+      <tuv xml:lang="en-US">
+        <seg>all (of timeay</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>nahkani-
+throughout, nahkanikîshekwi
+all d</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_66_326">
+      <tuv xml:lang="en-US">
+        <seg>leave, afollow</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>nakanêwa n/sh
+( ) nâkanêwa n/sh
+( )</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_66_330">
+      <tuv xml:lang="en-US">
+        <seg>, guts; ee, stop</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>-nakeshi
+intestines nakeshkêwa
+brak</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_66_335">
+      <tuv xml:lang="en-US">
+        <seg>NARY</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>82 A C D
+ONCISE ICTIO</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_66_336">
+      <tuv xml:lang="en-US">
+        <seg>(as of a vehicle or ma stop; stchine)</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>nakithachikêwa</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_66_338">
+      <tuv xml:lang="en-US">
+        <seg>an. (a</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>nakithahêwa
+stop</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_66_339">
+      <tuv xml:lang="en-US">
+        <seg>, leave,</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>nâkwêwa â/ê
+( ) go</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_67_340">
+      <tuv xml:lang="en-US">
+        <seg>toen</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>nîhnâkwâpena
+we’ve got including the person(s) spok</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_67_344">
+      <tuv xml:lang="en-US">
+        <seg>waon</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>nâkwâno!
+spoken to); go a namachîneki
+to the left,</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_67_354">
+      <tuv xml:lang="en-US">
+        <seg>83</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>S L
+OF THE AUK ANGUAGE</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_67_355">
+      <tuv xml:lang="en-US">
+        <seg>e,</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>nanâhikwêhikêwa
+driv</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_72_356">
+      <tuv xml:lang="en-US">
+        <seg>7</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>S L 8
+OF THE AUK ANGUAGE</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_72_357">
+      <tuv xml:lang="en-US">
+        <seg>roosterd an.;</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>neniwipakahâhkwâha nenohtawêwa
+understan</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_72_359">
+      <tuv xml:lang="en-US">
+        <seg>you;</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kenenohtône
+I understand</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_72_360">
+      <tuv xml:lang="en-US">
+        <seg>’t undeo you</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>âkwi nenohtônânini
+I don kenenohtawi?
+stand you; d</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_72_363">
+      <tuv xml:lang="en-US">
+        <seg>i
+) cowld</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>nenothwa nenothôk
+(pl.: nepachiwa
+be cold, get co</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_74_367">
+      <tuv xml:lang="en-US">
+        <seg>, in thirdhundred</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>nêthônameki
+third nethwâhkwe
+three</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_74_370">
+      <tuv xml:lang="en-US">
+        <seg>89
+AGE</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>S L
+OF THE AUK ANGU</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_74_371">
+      <tuv xml:lang="en-US">
+        <seg>ee yearshree an.</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>nethwawahîne
+thr nethwihêwa
+have t</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_74_373">
+      <tuv xml:lang="en-US">
+        <seg>pôtweou later</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>nêwêwa ka
+see an.; kîhnêwone
+I’ll see y</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_74_377">
+      <tuv xml:lang="en-US">
+        <seg>nenîchchildren</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>-nîchânetha
+child; mâhaki
+these are my</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_74_380">
+      <tuv xml:lang="en-US">
+        <seg>nâhi
+) wt year</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>nikâ’nâhi nikô’
+(or nîkânawahîne
+nex</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_80_383">
+      <tuv xml:lang="en-US">
+        <seg>!, what a pity!</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>ôhwâ! yôhwâ!
+(or ) man</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_80_384">
+      <tuv xml:lang="en-US">
+        <seg>ration, oref</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>(expresses tiredness, exaspe okimâwa
+chief, tribal chi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_80_389">
+      <tuv xml:lang="en-US">
+        <seg>95</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>S L
+OF THE AUK ANGUAGE</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_80_390">
+      <tuv xml:lang="en-US">
+        <seg>nôshithemaani
+his/her</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>-ôshithema
+grandchild; ôshithem
+my grandchild;</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_80_393">
+      <tuv xml:lang="en-US">
+        <seg>( of a female:) b</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>oshkashîhkwêwiwa</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_80_394">
+      <tuv xml:lang="en-US">
+        <seg>;</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>a Shkasha; be a Republican</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_80_395">
+      <tuv xml:lang="en-US">
+        <seg>a Shkashale:) be a</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>netoshkashîhkwêwi
+I’m oshkashîwiwa
+(of a ma</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_84_399">
+      <tuv xml:lang="en-US">
+        <seg>kâgive</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>pakithâhkwiwa
+give up; pakithâhkwihkani!
+don’t</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_84_406">
+      <tuv xml:lang="en-US">
+        <seg>99</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>S L
+OF THE AUK ANGUAGE</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_84_407">
+      <tuv xml:lang="en-US">
+        <seg>kâtt!</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>panenamwa
+drop inan.; panenâhkani!
+don’t drop i</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_86_409">
+      <tuv xml:lang="en-US">
+        <seg>(it) forks pehchimêwa (referringo an. (for</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>pâthikithenwi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_86_412">
+      <tuv xml:lang="en-US">
+        <seg>(for what I said to you )</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>sorry</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_86_413">
+      <tuv xml:lang="en-US">
+        <seg>rry to an.</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>pehchitôtawêwa
+say so</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_86_414">
+      <tuv xml:lang="en-US">
+        <seg>itôtôneyou)</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kepehch
+something done); I’m sorry (for what I did to</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_86_416">
+      <tuv xml:lang="en-US">
+        <seg>ery; veryspeaking)</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>pêhki pêhki meko
+(or ) v pêhkî’hkâ!
+oh no! (male</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_86_418">
+      <tuv xml:lang="en-US">
+        <seg>101</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>S L
+OF THE AUK ANGUAGE</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_86_419">
+      <tuv xml:lang="en-US">
+        <seg>ht gravykep
+ng;</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>pêhkikeshânâpowi
+lig pehtowêwa
+be wro</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_88_421">
+      <tuv xml:lang="en-US">
+        <seg>ehtowêky, hazy</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kep
+you’re wrong (pl.: pekeshêwi
+it’s smo</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_88_429">
+      <tuv xml:lang="en-US">
+        <seg>o!
+comeive</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>pemâkwapin
+group; pemâtethiwa
+be al</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_88_433">
+      <tuv xml:lang="en-US">
+        <seg>care of inre of an.</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>pemenamwa
+take pemenêwa
+take ca</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_90_435">
+      <tuv xml:lang="en-US">
+        <seg>ve lost on</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>pepeshkwitepêwa
+ha</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_90_436">
+      <tuv xml:lang="en-US">
+        <seg>Y</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>104 A C D
+ONCISE ICTIONAR</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_90_437">
+      <tuv xml:lang="en-US">
+        <seg>Orientalovershoe</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>Pêpîwinîkwâhichiki
+) an pepônwimahkethêhi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_90_443">
+      <tuv xml:lang="en-US">
+        <seg>be cut peshikwâchimowa estraightf</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>peshikâchikiwa</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_90_446">
+      <tuv xml:lang="en-US">
+        <seg>elling it aânet</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>nepeshikwâchimo
+I’m t netâhe! net
+daughter(s); (or</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_102_450">
+      <tuv xml:lang="en-US">
+        <seg>be inagon</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>tanwâchipemâtethiwa tâpyâna atâpyâna
+(or ) w</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_102_452">
+      <tuv xml:lang="en-US">
+        <seg>, breeyears</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>tâthiyâni
+diapers; loincloth tathwawahîne
+that many</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_103_456">
+      <tuv xml:lang="en-US">
+        <seg>wakihildren</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>nekotwâshika netathwihâ nenîchânethaki
+I have six c</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_103_460">
+      <tuv xml:lang="en-US">
+        <seg>(s)he’si ayô</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>nekoti tathwipepônwêwa tawânahi tawânah
+if only;</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_103_462">
+      <tuv xml:lang="en-US">
+        <seg>!</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>awiyane!
+wish you were here</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_103_463">
+      <tuv xml:lang="en-US">
+        <seg>hope shorse;</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>tawânahi kêhtena
+I sure -taya -tayêki
+(pl.: ) pet, dog,</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_103_465">
+      <tuv xml:lang="en-US">
+        <seg>her pet(</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>netaya otayêni
+my pet; his/</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_103_466">
+      <tuv xml:lang="en-US">
+        <seg>cold mpêhki</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>têhkyâki miniki
+ice cream; tepânêwa n/sh
+( ) love an.;</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_103_469">
+      <tuv xml:lang="en-US">
+        <seg>7</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>S L 11
+OF THE AUK ANGUAGE</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_103_470">
+      <tuv xml:lang="en-US">
+        <seg>;</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>ketepâshi?
+do you love me?</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_104_471">
+      <tuv xml:lang="en-US">
+        <seg>(s)he loves pêh
+me;</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>netepânekwa</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_104_472">
+      <tuv xml:lang="en-US">
+        <seg>er a lot;</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>netepânâwa
+I love him/h</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_104_473">
+      <tuv xml:lang="en-US">
+        <seg>doesn’tnwi-</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>pashi tepâshichini
+(s)he tepehkîwi me
+it’s night;</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_104_475">
+      <tuv xml:lang="en-US">
+        <seg>it’s a beautiful n ight;</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>tepehkîwi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_104_476">
+      <tuv xml:lang="en-US">
+        <seg>it’s the mi kîshinâwitepeh ddle ofkîwi
+it’s</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>nâwitepehkîwi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_104_481">
+      <tuv xml:lang="en-US">
+        <seg>(number of years old); êhtêpeshkamani! wikenwbirthday!;</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>men</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_104_483">
+      <tuv xml:lang="en-US">
+        <seg>awahîneturned 40</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>înoki nyêwâpitaki tathw êhtêpeshkamâni
+today I</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_104_485">
+      <tuv xml:lang="en-US">
+        <seg>that’s) en</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>têpi têpi- têpi!
+, enough; (</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_104_486">
+      <tuv xml:lang="en-US">
+        <seg>Y</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>118 A C D
+ONCISE ICTIONAR</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_104_487">
+      <tuv xml:lang="en-US">
+        <seg>the gratitks; I’m</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>têpihêwa
+please an., earn ketêpihi
+of an.; than</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_105_492">
+      <tuv xml:lang="en-US">
+        <seg>rhave h</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>I’m grateful to him/he têpikîhpochêwa</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_105_497">
+      <tuv xml:lang="en-US">
+        <seg>(of anâkani</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>têpitathwi
+enough têpitathwi thîweht</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_105_506">
+      <tuv xml:lang="en-US">
+        <seg>AGE</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>S L
+OF THE AUK ANGU</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_106_507">
+      <tuv xml:lang="en-US">
+        <seg>bicycle,</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>têtepithâha
+wheel, tire;</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_106_508">
+      <tuv xml:lang="en-US">
+        <seg>adachey</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>têwehkwêwa
+have a he thakâki
+finally; just barel</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_106_516">
+      <tuv xml:lang="en-US">
+        <seg>.;</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>thakipotamwa
+bite inan</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_106_517">
+      <tuv xml:lang="en-US">
+        <seg>it my</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>nethakipota nînaniwi
+I b</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_106_518">
+      <tuv xml:lang="en-US">
+        <seg>Y</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>120 A C D
+ONCISE ICTIONAR</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_107_519">
+      <tuv xml:lang="en-US">
+        <seg>a Saf Okl</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>Thâkîwa Othâkîwa
+(or ) member of the Sac &amp; Fox o</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_107_522">
+      <tuv xml:lang="en-US">
+        <seg>Sauk;</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>thâkiwâtowêwa
+speak</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_107_523">
+      <tuv xml:lang="en-US">
+        <seg>speakwe?
+c</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kethâkiwâtowe?
+do you kenahithâkiwâto
+Sauk?;</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_107_527">
+      <tuv xml:lang="en-US">
+        <seg>n’t spek, the</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>thâkiwâtowêyânini
+I do Thâkiwâtowêweni
+Sau</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_107_530">
+      <tuv xml:lang="en-US">
+        <seg>ri);</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>Oklahoma or of the Missou</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_107_531">
+      <tuv xml:lang="en-US">
+        <seg>uk (or,</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>nethâkîwipena
+we’re Sa</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_107_532">
+      <tuv xml:lang="en-US">
+        <seg>to:</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>including the person talked</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_112_533">
+      <tuv xml:lang="en-US">
+        <seg>an. (achiw</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>wâkithahêwa
+turn wâkîwa nama
+turn;</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_112_535">
+      <tuv xml:lang="en-US">
+        <seg>!
+take</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>mayâwiwâkîno
+left!;</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_112_536">
+      <tuv xml:lang="en-US">
+        <seg>GE</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>S L
+OF THE AUK ANGUA</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_112_537">
+      <tuv xml:lang="en-US">
+        <seg>be ahith</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>wâkoshêhithowa newâkoshê
+Fox clan;</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_112_545">
+      <tuv xml:lang="en-US">
+        <seg>îhkedid y</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>newan
+of one’s mind; kewanîhke?
+I forgot;</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_113_551">
+      <tuv xml:lang="en-US">
+        <seg>, oloo</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>wâpamêwa
+watch wâpamôni
+mirror,</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_113_553">
+      <tuv xml:lang="en-US">
+        <seg>ION</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>126 A C D
+ONCISE ICT</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_113_554">
+      <tuv xml:lang="en-US">
+        <seg>Delabe</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>Wâpanahkîha
+a wâpânehkwêwa</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_113_557">
+      <tuv xml:lang="en-US">
+        <seg>h, oht,</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>wâpatamwa
+watc wâpâtêwi
+(it)’s lig</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_113_559">
+      <tuv xml:lang="en-US">
+        <seg>h
+)</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>wâpatônêwa n/s
+(</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_113_560">
+      <tuv xml:lang="en-US">
+        <seg>be lig ht,</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>wâpâthowa</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_113_561">
+      <tuv xml:lang="en-US">
+        <seg>it’s fl wâpeshkethiwa urrybe</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>wâpehpowi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_115_568">
+      <tuv xml:lang="en-US">
+        <seg>ARY</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>128 A C D
+ONCISE ICTION</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_115_569">
+      <tuv xml:lang="en-US">
+        <seg>be mis</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>wâwaneshkâhiwa</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_115_570">
+      <tuv xml:lang="en-US">
+        <seg>) eggbolts</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>wâwani owâwani
+(or wâwâthêtonôki
+(pl.)</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_115_573">
+      <tuv xml:lang="en-US">
+        <seg>; mesâkatô</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>wâwiyâkatôhi
+things mêmekenano wâwiy</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_115_576">
+      <tuv xml:lang="en-US">
+        <seg>an.;</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>wâwiyâmêwa
+thank</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_116_577">
+      <tuv xml:lang="en-US">
+        <seg>o onewa!</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>kewâwiyâmene!
+thanks! (t kewâwiyâmenep
+person);</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_116_579">
+      <tuv xml:lang="en-US">
+        <seg>(to more than one per son)</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>thanks!</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_116_580">
+      <tuv xml:lang="en-US">
+        <seg>used if aou want to</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>wê! ô!
+(or ) oh!, hey! (often thought occurs to you, or if y</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_116_583">
+      <tuv xml:lang="en-US">
+        <seg>(femalethe north, to</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>wê! wî!
+(or ) gosh!, oh my! wêchikethîyâki
+north, in</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_116_585">
+      <tuv xml:lang="en-US">
+        <seg>29</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>S L 1
+OF THE AUK ANGUAGE</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_116_586">
+      <tuv xml:lang="en-US">
+        <seg>h, in the west,</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>wêchinâwahkwêki
+sout wêchipakishimoki
+west,</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_116_588">
+      <tuv xml:lang="en-US">
+        <seg>it’s wonderful; wêchitawi!</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>wêchitawi</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_116_589">
+      <tuv xml:lang="en-US">
+        <seg>east, to theturn on</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>wêchiwâpaki
+east, in the wêpwêwêkihêwa</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_118_594">
+      <tuv xml:lang="en-US">
+        <seg>Puebloeast, t</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>Wêtahpahônîha
+a wêtapaki
+east, in the</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_118_597">
+      <tuv xml:lang="en-US">
+        <seg>be b wêwenetwi eautiful</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>wêwenethiwa</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_118_599">
+      <tuv xml:lang="en-US">
+        <seg>, headd</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>wêwêpenôni
+roach</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_118_600">
+      <tuv xml:lang="en-US">
+        <seg>1
+GE</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>S L
+OF THE AUK ANGUA</seg>
+      </tuv>
+    </tu>
+    <tu tuid="sac_118_601">
+      <tuv xml:lang="en-US">
+        <seg>ment agmpany</seg>
+      </tuv>
+      <tuv xml:lang="sac">
+        <seg>wêyôthêha
+govern wîchi-
+together, in co</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

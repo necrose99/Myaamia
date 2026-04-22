@@ -1,0 +1,617 @@
+[
+  {
+    "file": "aacim-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "aacim"
+  },
+  {
+    "file": "aahsantee-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "aahsantee"
+  },
+  {
+    "file": "aahtee-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "aahtee"
+  },
+  {
+    "file": "aalahkwat-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "aalahkwat"
+  },
+  {
+    "file": "aalimat-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "aalimat"
+  },
+  {
+    "file": "aalimat-_04c37523f57aed41942b915b4385386996731e64.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "aalimat"
+  },
+  {
+    "file": "acipwi-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "acipwi"
+  },
+  {
+    "file": "ahkaapat-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "ahkaapat"
+  },
+  {
+    "file": "ahs-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "ahs"
+  },
+  {
+    "file": "ahs-_13445d5cb768c06c641e7e78924924abde26e5dd.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "ahs"
+  },
+  {
+    "file": "ahs-_1ac04891df1f249608ce027260235dca94256a13.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "ahs"
+  },
+  {
+    "file": "ahs-_1eb26accac3ef22c3d3d95d947476a30ca9aec0c.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "ahs"
+  },
+  {
+    "file": "ahs-_1ee8a30e5ab4313cc5978e7792e17a03c8d94c8c.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "ahs"
+  },
+  {
+    "file": "ahtel-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "ahtel"
+  },
+  {
+    "file": "akwenkohs-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "akwenkohs"
+  },
+  {
+    "file": "aloohw-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "aloohw"
+  },
+  {
+    "file": "amw-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "amw"
+  },
+  {
+    "file": "aneh-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "aneh"
+  },
+  {
+    "file": "awan-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "awan"
+  },
+  {
+    "file": "el-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "el"
+  },
+  {
+    "file": "el-_007f4810ea627655d22c2fb0873ccc100e2d9cf8.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "el"
+  },
+  {
+    "file": "el-_028361bbd0b2934f4ee0444069c5e88ccc9a2eb3.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "el"
+  },
+  {
+    "file": "el-_02f72e742e36487491a5e1ee152881f97ec9b98a.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "el"
+  },
+  {
+    "file": "el-_03bc2494771b3def1300705efd4e051b31ac7418.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "el"
+  },
+  {
+    "file": "el-_071d300c71fa5810e269d66d3dfe8d32dd078046.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "el"
+  },
+  {
+    "file": "el-_0c87d2967da568227f7a6902015e1bb5f34f62c0.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "el"
+  },
+  {
+    "file": "el-_0df512e3350e6274d1004d342a1fcec1678fe1a1.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "el"
+  },
+  {
+    "file": "el-_101e300b004b38567eca80b5567a5f7ab5452772.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "el"
+  },
+  {
+    "file": "el-_123cc0d9afe9f571fb8ade0c5d3db1903d0bf9f7.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "el"
+  },
+  {
+    "file": "el-_12dbdc2f52e9f9fb557278a87f569ca083be1c41.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "el"
+  },
+  {
+    "file": "el-_1584560e98b6b2d5bcd42b3c9ac15f33f05edd39.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "el"
+  },
+  {
+    "file": "el-_1782326ed5d0b9b00e82c8f88b3bb5f22966db32.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "el"
+  },
+  {
+    "file": "el-_17c662b42eef7218fd7dceb69735757089afa44f.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "el"
+  },
+  {
+    "file": "el-_1a64464e69910e7be9efafda5761512eb59e3503.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "el"
+  },
+  {
+    "file": "el-_1a9b960cbc66813be87647a7fc8c3c37f8c2c70a.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "el"
+  },
+  {
+    "file": "el-_1ea4e283683d566747250cbdb53418f7ae7a63bc.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "el"
+  },
+  {
+    "file": "elaw-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "elaw"
+  },
+  {
+    "file": "ihkipakin-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "ihkipakin"
+  },
+  {
+    "file": "kalaakalaal-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "kalaakalaal"
+  },
+  {
+    "file": "kalaakalaal-_14fa8af94aabd55a36dc444f03eb3c7d1f937b66.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "kalaakalaal"
+  },
+  {
+    "file": "kapeehšin-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "kapeehšin"
+  },
+  {
+    "file": "kihkiinkweehšim-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "kihkiinkweehšim"
+  },
+  {
+    "file": "kiiweeliinkwee-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "kiiweeliinkwee"
+  },
+  {
+    "file": "kiiweeliinkwee-_0d0f6e0257ab0063e9c4a68d98dc8290cd6229c7.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "kiiweeliinkwee"
+  },
+  {
+    "file": "kitahw-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "kitahw"
+  },
+  {
+    "file": "maaciih-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "maaciih"
+  },
+  {
+    "file": "mahkateehsam-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "mahkateehsam"
+  },
+  {
+    "file": "makil-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "makil"
+  },
+  {
+    "file": "mehkaw-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "mehkaw"
+  },
+  {
+    "file": "metem-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "metem"
+  },
+  {
+    "file": "naataw-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "naataw"
+  },
+  {
+    "file": "nehs-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "nehs"
+  },
+  {
+    "file": "nepil-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "nepil"
+  },
+  {
+    "file": "niim-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "niim"
+  },
+  {
+    "file": "noontiohsee-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "noontiohsee"
+  },
+  {
+    "file": "oonsaawee-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "oonsaawee"
+  },
+  {
+    "file": "paahpihtoo-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "paahpihtoo"
+  },
+  {
+    "file": "pootawee-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "pootawee"
+  },
+  {
+    "file": "saakiiwee-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "saakiiwee"
+  },
+  {
+    "file": "saakiiwee-_0230307484f35f3cf96058e9faffa276abf4e42b.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "saakiiwee"
+  },
+  {
+    "file": "saakiiweeyonk-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "saakiiweeyonk"
+  },
+  {
+    "file": "sakipitee-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "sakipitee"
+  },
+  {
+    "file": "sakipitee-_0212422fb7fc767388927e27a4851ec257453e12.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "sakipitee"
+  },
+  {
+    "file": "sakipitee-_10e33c390e69931b5505f716d77534c4bb0f59ea.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "sakipitee"
+  },
+  {
+    "file": "sakipitee-_19764742efb435332152ce3edce9baa9454dab52.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "sakipitee"
+  },
+  {
+    "file": "tepehkii-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "tepehkii"
+  },
+  {
+    "file": "toopalameekin-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "toopalameekin"
+  },
+  {
+    "file": "toopalameekin-_0e48ba33e3d20d3c98993cd870ba35a5ea2a7842.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "toopalameekin"
+  },
+  {
+    "file": "waahsaaphtee-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waahsaaphtee"
+  },
+  {
+    "file": "waahsaaphtee-_1dcbb2e183e489cab2490b94d2642ccfa17f158f.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waahsaaphtee"
+  },
+  {
+    "file": "waalihtan-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waalihtan"
+  },
+  {
+    "file": "waalihtan-_05a014d96d90e66eea9d87e14acdc01cdf86c249.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waalihtan"
+  },
+  {
+    "file": "waalihtan-_081d805b8d49c3853ec790e41d6aba3bf992b4ba.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waalihtan"
+  },
+  {
+    "file": "waalihtan-_0dd0e04ce8cfae2f4ee86b5a20b0413737cf4940.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waalihtan"
+  },
+  {
+    "file": "waalihtan-_13502f78c75a0ef887a7159159bb1f4d8c2d5784.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waalihtan"
+  },
+  {
+    "file": "waalihtan-_13711d9fd719a323f778238f31a9d7bd99bb04f8.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waalihtan"
+  },
+  {
+    "file": "waalinaakan-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waalinaakan"
+  },
+  {
+    "file": "waapan-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapan"
+  },
+  {
+    "file": "waapan-_08f0b1291b9389581a4e9533ad9ba96de9893fba.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapan"
+  },
+  {
+    "file": "waapan-_0c4e2958c2ba79ddf3ea7f15fceed844906a8a8e.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapan"
+  },
+  {
+    "file": "waapan-_0ce4929378a806eaa69e2757b39144267ef68597.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapan"
+  },
+  {
+    "file": "waapan-_0ceae3d1a196347a4d42f1b34cf42b812e9bb9d8.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapan"
+  },
+  {
+    "file": "waapan-_0f59fbbf5c944d3627a386221e0fb00d7f6da475.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapan"
+  },
+  {
+    "file": "waapan-_106efb1609b61969349ef3cd47686b9f8bf76a20.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapan"
+  },
+  {
+    "file": "waapan-_11921406d0792c319c9fa5581ed13ed53a5e55f4.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapan"
+  },
+  {
+    "file": "waapan-_11b9444cec230d85196f5c0dec34f81f7421dba9.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapan"
+  },
+  {
+    "file": "waapan-_12e88a3ff5fe7b005277cd55c8ab8eaf73b5964f.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapan"
+  },
+  {
+    "file": "waapan-_12f15aa3d1869d518dcab89668b29c09aa348cd0.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapan"
+  },
+  {
+    "file": "waapan-_13f4007a025883390904c2aedb9fe10800366968.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapan"
+  },
+  {
+    "file": "waapan-_155bd5638b84dc052b8dedd8726da34328d00926.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapan"
+  },
+  {
+    "file": "waapan-_15e4320c068adf9f6e9d96c611b6cfe50ad4aabb.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapan"
+  },
+  {
+    "file": "waapan-_18681ef590724cb8cf12ef6567f522e53507863d.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapan"
+  },
+  {
+    "file": "waapi-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapi"
+  },
+  {
+    "file": "waapi-_00a3a8d49e4148eb485a0bfcd26c9d280cec7182.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapi"
+  },
+  {
+    "file": "waapi-_01682fcb4e8800db3bfa34efb0b3b8a2bb9dc944.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapi"
+  },
+  {
+    "file": "waapi-_05498402313a56a253685ea021ec394d045e96d2.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapi"
+  },
+  {
+    "file": "waapi-_05f0633284c0507f6544b52f6600e5c123cb5f3a.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapi"
+  },
+  {
+    "file": "waapi-_07e5b05b3aa9804cdda873213e997c5a3f6ff4b5.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapi"
+  },
+  {
+    "file": "waapi-_08f462a91d43350899bd30aff022245044adf63e.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapi"
+  },
+  {
+    "file": "waapi-_0aeae46f6d59182398c833a10183388613c55a4c.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapi"
+  },
+  {
+    "file": "waapi-_0d3c1d25efcd759ce1b46b533554986d6b0a88fe.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapi"
+  },
+  {
+    "file": "waapi-_0d7184e33efa32db0833bd6ee022c9bc0088b5c4.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapi"
+  },
+  {
+    "file": "waapi-_0e391547f6ced7484c0b61cbcd731c96c5ebc2ea.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapi"
+  },
+  {
+    "file": "waapi-_0e6987a2e26dd53ddce953a699bab0473f92fc10.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapi"
+  },
+  {
+    "file": "waapi-_0f24fe7b4eedaa59a91fd25924998a0038132089.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapi"
+  },
+  {
+    "file": "waapi-_164cacdbd44d3358b863b13eccda1c2a67ce02f7.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapi"
+  },
+  {
+    "file": "waapi-_179daa852eef79fe20670d18ae7364ae880ca2ed.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapi"
+  },
+  {
+    "file": "waapi-_19c0f4ce41354da5c40405c554d96ca05f2591a8.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapi"
+  },
+  {
+    "file": "waapi-_1a67385f5c298b17df6638259b2202e565955e8b.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapi"
+  },
+  {
+    "file": "waapi-_1ef8a894635115387595b2e1488cafdc0d19422b.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapi"
+  },
+  {
+    "file": "waapikoonahki-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapikoonahki"
+  },
+  {
+    "file": "waapikoonahki-_03dd1330376f8bbb015dc48aedb31cf0203a0b16.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waapikoonahki"
+  },
+  {
+    "file": "waawaapinkwaahkat-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waawaapinkwaahkat"
+  },
+  {
+    "file": "waawaapinkwaahkat-_08e387e0238e4b21a9c701097d661d25b1372384.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waawaapinkwaahkat"
+  },
+  {
+    "file": "waawaapinkwaahkat-_12788c0927ace05eba91ffa3e125b0254ffab11f.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "waawaapinkwaahkat"
+  },
+  {
+    "file": "wiihkapan-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "wiihkapan"
+  },
+  {
+    "file": "wiihkapan-_09e5fcd4ee0a5b84ca7fadf9fbc3ccf6a31fc93f.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "wiihkapan"
+  },
+  {
+    "file": "wiihkapan-_0e6f159c9e2103b69951e56cb584f3f62c956a11.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "wiihkapan"
+  },
+  {
+    "file": "wiihswakintee-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "wiihswakintee"
+  },
+  {
+    "file": "wiikway-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "wiikway"
+  },
+  {
+    "file": "wiinkimyaakan-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "wiinkimyaakan"
+  },
+  {
+    "file": "wiinkimyaakan-_0a76ab644a25d2bd4783b2fe418f3cd29dfa1469.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "wiinkimyaakan"
+  },
+  {
+    "file": "wiipinkweekin-.mp3",
+    "origin_url": "Myaamia Gold",
+    "stem": "wiipinkweekin"
+  }
+]

@@ -1,3 +1,9 @@
 C:\Users\black\Dropbox\PC (2)\Documents\GitHub\Myaamia\node_modules
 /node_modules
 /.repositories
+./models/Meta-Llama-3-8B-Instruct-Q4_K_M.gguf
+./corpus_media
+./webcorpus
+*.mp3
+*.pyc
+/webcorpus

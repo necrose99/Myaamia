@@ -28,3 +28,15 @@ mua:Munsee
 unm:Unami
 # Proto-Language
 alg-x-proto:Proto-Algonquian
+# western 
+yur:yurok
+wiy:Wiyot
+#### Lost/Unattested/Uncertain Algonquian Remnant Languages:
+bue:Beothuk
+etc:Etchemin
+xloLoup A #  Mots loups 
+xlb:Loup B
+crr: Lumbee (Croatan, Pamlico)
+pim:Powhatan (Virginia Algonkian)
+qyp: Naugatuck/Quiripi/Unquachog
+
