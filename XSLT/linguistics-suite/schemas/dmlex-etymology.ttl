@@ -1,0 +1,143 @@
+## The ontology for DMLex - Etymology module
+## Author: John P. McCrae
+
+@prefix dmlex: <https://docs.oasis-open.org/lexidma/dmlex/v1.0/schemas/RDF/dmlex.ttl#> .
+@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+################################################################################
+## Etymology Module
+
+dmlex:etymology a owl:ObjectProperty ;
+  rdfs:label "Etymology"@en ;
+  rdfs:domain dmlex:Entry ;
+  rdfs:range dmlex:Etymology .
+
+dmlex:Etymology a owl:Class ;
+  rdfs:comment "Represents a chain of historical derivations of a word."@en ;
+  rdfs:label "Etymology"@en ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty dmlex:description ;
+    owl:maxCardinality 1 ] , [
+    a owl:Restriction ;
+    owl:onProperty dmlex:listingOrder ;
+    owl:cardinality 1 ] .
+
+dmlex:etymon a owl:ObjectProperty ;
+  rdfs:label "Etymon"@en ;
+  rdfs:domain dmlex:Etymology ;
+  rdfs:range dmlex:Etymon .
+
+dmlex:Etymon a owl:Class ;
+  rdfs:comment "Represents one stage (of possibly several) in the etymological history of the headword."@en ;
+  rdfs:label "Etymon"@en ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty dmlex:when ;
+    owl:maxCardinality 1 ] , [
+    a owl:Restriction ;
+    owl:onProperty dmlex:type ;
+    owl:maxCardinality 1 ] , [
+    a owl:Restriction ;
+    owl:onProperty dmlex:note ;
+    owl:maxCardinality 1 ] , [
+    a owl:Restriction ;
+    owl:onProperty dmlex:etymonUnit ;
+    owl:minCardinality 1 ] , [
+     a owl:Restriction ;
+    owl:onProperty dmlex:listingOrder ;
+    owl:cardinality 1 ] .
+
+dmlex:when a owl:DatatypeProperty ;
+  rdfs:label "When"@en ;
+  rdfs:domain dmlex:Etymon ;
+  rdfs:range xsd:string .
+
+dmlex:note a owl:DatatypeProperty ;
+  rdfs:label "Note"@en ;
+  rdfs:domain dmlex:Etymon ;
+  rdfs:range xsd:string . 
+
+dmlex:etymonUnit a owl:ObjectProperty ;
+  rdfs:label "Etymon Unit"@en ;
+  rdfs:domain dmlex:Etymon ;
+  rdfs:range dmlex:EtymonUnit .
+
+dmlex:translation a owl:DatatypeProperty ;
+  rdfs:label "Translation"@en ;
+  rdfs:domain dmlex:HasTranslation ;
+  rdfs:range xsd:string .
+
+dmlex:Etymon rdfs:subClassOf dmlex:HasTranslation .
+dmlex:EtymonUnit rdfs:subClassOf dmlex:HasTranslation .
+
+dmlex:EtymonUnit a owl:Class ;
+  rdfs:comment "Represents a form (typically a word) which is the etymological origin of the headword, or another etymologically related form"@en ;
+  rdfs:label "Etymon Unit"@en ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty dmlex:language ;
+    owl:cardinality 1 ] , [
+    a owl:Restriction ;
+    owl:onProperty dmlex:text ;
+    owl:cardinality 1 ] , [
+    a owl:Restriction ;
+    owl:onProperty dmlex:reconstructed ;
+    owl:maxCardinality 1 ] , [
+    a owl:Restriction ;
+    owl:onProperty dmlex:translation ;
+    owl:maxCardinality 1 ] , [
+    a owl:Restriction ;
+    owl:onProperty dmlex:listingOrder ;
+    owl:cardinality 1 ] .
+
+dmlex:reconstructed a owl:DatatypeProperty ;
+  rdfs:label "Reconstructed"@en ;
+  rdfs:domain dmlex:EtymonUnit ;
+  rdfs:range xsd:boolean .
+
+dmlex:etymonType a owl:ObjectProperty ;
+  rdfs:label "Etymon Type"@en ;
+  rdfs:domain dmlex:LexicographicResource ;
+  rdfs:range dmlex:EtymonType .
+
+dmlex:EtymonType a owl:Class ;
+  rdfs:comment "Represents one of possible values for the type of etymon."@en ;
+  rdfs:label "Etymon Type"@en ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty dmlex:type ;
+    owl:cardinality 1 ] , [
+    a owl:Restriction ;
+    owl:onProperty dmlex:description ;
+    owl:maxCardinality 1 ] .
+
+dmlex:etymonLanguage a owl:ObjectProperty ;
+  rdfs:label "Etymon Language"@en ;
+  rdfs:domain dmlex:LexicographicResource ;
+  rdfs:range dmlex:EtymonLanguage .
+
+dmlex:EtymonLanguage a owl:Class ;
+  rdfs:comment "Represents one of several allowed values for the language property of etymonUnit objects."@en ;
+  rdfs:label "Etymon Language"@en ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty dmlex:langCode ;
+    owl:cardinality 1 ] , [
+    a owl:Restriction ;
+    owl:onProperty dmlex:displayName ;
+    owl:maxCardinality 1 ] .
+
+dmlex:displayName a owl:ObjectProperty ;
+  rdfs:label "Display Name"@en ;
+  rdfs:domain dmlex:EtymonLanguage ;
+  rdfs:range xsd:string .
+
+
+dmlex:EtymonLanguage rdfs:subClassOf dmlex:HasSameAs .
+dmlex:EtymonType rdfs:subClassOf dmlex:HasSameAs .
