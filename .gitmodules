@@ -1,0 +1,3 @@
+[submodule "data_shards"]
+	path = data_shards
+	url = https://github.com/necrose99/Myaamia-data.git
