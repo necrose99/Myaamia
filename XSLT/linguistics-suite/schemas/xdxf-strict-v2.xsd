@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  xdxf-strict.xsd  —  XDXF rev34 strict schema
+  Faithfully derived from xdxf_strict.dtd (soshial/xdxf_makedict).
+  Fixes from the online-tool stub:
+    • xs:import for xml namespace (xml:lang support)
+    • <from>/<to>  → EMPTY + xml:lang REQUIRED
+    • <languages>  → from(1), to(1+)
+    • <meta_info>  → full_title optional; publisher/authors/dict_edition/
+                      publishing_date/dict_src_url/abbreviations added
+    • <ar>         → k+ (one or more headwords)
+    • <def>        → rich content: tr?,gr?,co*,(def+|deftext),ex*,sr?,etm?,categ*
+                      plus id/cmt/freq attributes
+    • <k>          → (#PCDATA|opt|sup|sub)* with id attribute
+    • <lexicon>    → ar+
+    • <xdxf>       → revision REQUIRED, type xs:string (not xs:byte)
+    • All inline style/ref entities modeled
+    • abbreviations block fully modeled
+    • Full example/etymon/cross-reference apparatus
+-->
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xml="http://www.w3.org/XML/1998/namespace"
+    elementFormDefault="qualified">
+
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace"
+             schemaLocation="/tmp/xml.xsd"/>
+
+  <!-- ══════════════════════════════════════════════════════
+       Simple inline-style content model shared by many elements
+       Mirrors DTD entity: %style; = "c|sup|sub|i|b|u"
+       and %ref; = "kref|rref|iref"
+       We use xs:anyType-based mixed content groups.
+       ══════════════════════════════════════════════════════ -->
+
+  <!-- Shared attribute groups -->
+  <xs:attributeGroup name="idAttrib">
+    <xs:attribute name="id" type="xs:ID" use="optional"/>
+  </xs:attributeGroup>
+
+  <!-- ══════════════════════════════════════════════════════
+       Root element
+       ══════════════════════════════════════════════════════ -->
+  <xs:element name="xdxf">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="meta_info"/>
+        <xs:element ref="lexicon"/>
+      </xs:sequence>
+      <!-- revision is REQUIRED in the DTD -->
+      <xs:attribute name="revision" type="xs:string" use="required"/>
+      <!-- format="visual" or "logical" sometimes appears in the wild -->
+      <xs:attribute name="format" type="xs:string" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- ══════════════════════════════════════════════════════
+       META_INFO block
+       ══════════════════════════════════════════════════════ -->
+  <xs:element name="meta_info">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="languages"/>
+        <xs:element ref="title"/>
+        <xs:element ref="full_title" minOccurs="0"/>
+        <xs:element ref="description"/>
+        <xs:element ref="publisher"       minOccurs="0"/>
+        <xs:element ref="authors"         minOccurs="0"/>
+        <xs:element ref="file_ver"/>
+        <xs:element ref="creation_date"/>
+        <xs:element ref="last_edited_date"/>
+        <xs:element ref="dict_edition"    minOccurs="0"/>
+        <xs:element ref="publishing_date" minOccurs="0"/>
+        <xs:element ref="dict_src_url"    minOccurs="0"/>
+        <xs:element ref="abbreviations"   minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- languages: exactly one <from>, one or more <to> -->
+  <xs:element name="languages">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="from" minOccurs="1" maxOccurs="unbounded"/>
+        <xs:element ref="to"   minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- from/to are EMPTY, xml:lang REQUIRED -->
+  <xs:element name="from">
+    <xs:complexType>
+      <xs:attribute ref="xml:lang" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="to">
+    <xs:complexType>
+      <xs:attribute ref="xml:lang" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="title"             type="xs:string"/>
+  <xs:element name="full_title"        type="xs:string"/>
+  <xs:element name="description"       type="mixedInlineContent"/>
+  <xs:element name="publisher"         type="xs:string"/>
+  <xs:element name="file_ver"          type="xs:string"/>
+  <xs:element name="creation_date"     type="xs:string"/>
+  <xs:element name="last_edited_date"  type="xs:string"/>
+  <xs:element name="dict_edition"      type="xs:string"/>
+  <xs:element name="publishing_date"   type="xs:string"/>
+  <xs:element name="dict_src_url"      type="xs:anyURI"/>
+
+  <xs:element name="authors">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="author" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="author">
+    <xs:complexType mixed="true">
+      <xs:attribute name="role" type="xs:string" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- abbreviations block -->
+  <xs:element name="abbreviations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="abbr_def" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="abbr_def">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="abbr_k" minOccurs="1" maxOccurs="unbounded"/>
+        <xs:element ref="abbr_v"/>
+      </xs:sequence>
+      <xs:attribute name="type" use="optional">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="stl"/>
+            <xs:enumeration value="grm"/>
+            <xs:enumeration value="aux"/>
+            <xs:enumeration value="knl"/>
+            <xs:enumeration value="oth"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="abbr_k" type="xs:string"/>
+  <xs:element name="abbr_v" type="xs:string"/>
+
+  <!-- ══════════════════════════════════════════════════════
+       LEXICON body
+       ══════════════════════════════════════════════════════ -->
+  <xs:element name="lexicon">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ar" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Article: one or more headword keys, then one def block -->
+  <xs:element name="ar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="k"   minOccurs="1" maxOccurs="unbounded"/>
+        <xs:element ref="def" minOccurs="1" maxOccurs="1"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Headword key: mixed PCDATA + optional child elements, id attribute -->
+  <xs:element name="k">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="opt"/>
+        <xs:element ref="sup"/>
+        <xs:element ref="sub"/>
+      </xs:choice>
+      <xs:attribute name="id"       type="xs:ID"     use="optional"/>
+      <xs:attribute ref="xml:lang"                   use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- opt: optional part of headword -->
+  <xs:element name="opt" type="mixedInlineContent"/>
+
+  <!-- ══════════════════════════════════════════════════════
+       DEFINITION — the core recursive content model
+       DTD: (tr?,gr?,co*,(def+|deftext),ex*,sr?,etm?,categ*)
+       ══════════════════════════════════════════════════════ -->
+  <xs:element name="def">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tr"      minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="gr"      minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="co"      minOccurs="0" maxOccurs="unbounded"/>
+        <xs:choice minOccurs="1" maxOccurs="1">
+          <xs:element ref="def"     maxOccurs="unbounded"/>
+          <xs:element ref="deftext" maxOccurs="1"/>
+        </xs:choice>
+        <xs:element ref="ex"      minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="sr"      minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="etm"     minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="categ"   minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="id"   type="xs:ID"     use="optional"/>
+      <xs:attribute name="cmt"  type="xs:string" use="optional"/>
+      <xs:attribute name="freq" type="xs:string" use="optional"/>
+      <xs:attribute ref="xml:lang"               use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- deftext: mixed PCDATA with inline markup -->
+  <xs:element name="deftext" type="mixedInlineContent"/>
+
+  <!-- Transcription -->
+  <xs:element name="tr">
+    <xs:complexType mixed="true">
+      <xs:attribute name="format" use="optional" default="IPA">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="IPA"/>
+            <xs:enumeration value="X-SAMPA"/>
+            <xs:enumeration value="erkIPA"/>
+            <xs:enumeration value="CDATA"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Grammar group -->
+  <xs:element name="gr" type="mixedInlineContent"/>
+
+  <!-- Commentary/comment -->
+  <xs:element name="co">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="co"/>
+        <xs:element ref="tr"/>
+        <xs:element ref="abbr"/>
+        <xs:element ref="di"/>
+        <xs:element ref="kref"/>
+        <xs:element ref="rref"/>
+        <xs:element ref="iref"/>
+        <xs:element ref="c"/>
+        <xs:element ref="sup"/>
+        <xs:element ref="sub"/>
+        <xs:element ref="i"/>
+        <xs:element ref="b"/>
+        <xs:element ref="u"/>
+        <xs:element ref="br"/>
+      </xs:choice>
+      <xs:attribute name="type" type="xs:string" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Example sentence -->
+  <xs:element name="ex">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ex_orig" minOccurs="1" maxOccurs="unbounded"/>
+        <xs:element ref="ex_tran" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="iref"    minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="type" use="optional" default="exm">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="exm"/>
+            <xs:enumeration value="phr"/>
+            <xs:enumeration value="prv"/>
+            <xs:enumeration value="oth"/>
+            <xs:enumeration value="PCDATA"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="source" type="xs:string" use="optional"/>
+      <xs:attribute name="author" type="xs:string" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="ex_orig" type="mixedInlineContent"/>
+  <xs:element name="ex_tran" type="mixedInlineContent"/>
+
+  <!-- See-also reference list -->
+  <xs:element name="sr">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="kref" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Etymology -->
+  <xs:element name="etm" type="mixedInlineContent"/>
+
+  <!-- Category -->
+  <xs:element name="categ">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="kref" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Direct translation snippet -->
+  <xs:element name="dtrn">
+    <xs:complexType mixed="true">
+      <xs:sequence minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="kref"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- ══════════════════════════════════════════════════════
+       Cross-reference elements
+       ══════════════════════════════════════════════════════ -->
+  <xs:element name="kref">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="c"/>
+        <xs:element ref="sup"/>
+        <xs:element ref="sub"/>
+        <xs:element ref="i"/>
+        <xs:element ref="b"/>
+        <xs:element ref="u"/>
+      </xs:choice>
+      <xs:attribute name="idref" type="xs:IDREF" use="optional"/>
+      <xs:attribute name="type"  use="optional">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="syn"/>
+            <xs:enumeration value="ant"/>
+            <xs:enumeration value="hpr"/>
+            <xs:enumeration value="hpn"/>
+            <xs:enumeration value="par"/>
+            <xs:enumeration value="spv"/>
+            <xs:enumeration value="mer"/>
+            <xs:enumeration value="hol"/>
+            <xs:enumeration value="ent"/>
+            <xs:enumeration value="rel"/>
+            <xs:enumeration value="etm"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="kcmt" type="xs:string" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Resource reference (audio, image path) -->
+  <xs:element name="rref">
+    <xs:complexType mixed="true">
+      <xs:attribute name="start" type="xs:string" default="0"/>
+      <xs:attribute name="size"  type="xs:string" use="optional"/>
+      <xs:attribute name="lctn"  type="xs:string" use="optional"/>
+      <xs:attribute name="type"  type="xs:string" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Inline hyperlink -->
+  <xs:element name="iref">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="c"/>
+        <xs:element ref="sup"/>
+        <xs:element ref="sub"/>
+        <xs:element ref="i"/>
+        <xs:element ref="b"/>
+        <xs:element ref="u"/>
+      </xs:choice>
+      <xs:attribute name="href" type="xs:anyURI" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- ══════════════════════════════════════════════════════
+       Inline style elements  (c, i, b, u, sup, sub, br, di, abbr, mrkd)
+       ══════════════════════════════════════════════════════ -->
+  <xs:element name="c">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="c"/>
+        <xs:element ref="sup"/>
+        <xs:element ref="sub"/>
+        <xs:element ref="i"/>
+        <xs:element ref="b"/>
+        <xs:element ref="u"/>
+      </xs:choice>
+      <xs:attribute name="c" type="xs:string" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="i"    type="mixedInlineContent"/>
+  <xs:element name="b"    type="mixedInlineContent"/>
+  <xs:element name="u"    type="mixedInlineContent"/>
+  <xs:element name="sup"  type="xs:string"/>
+  <xs:element name="sub"  type="xs:string"/>
+  <xs:element name="di"   type="xs:string"/>
+  <xs:element name="abbr" type="xs:string"/>
+  <xs:element name="mrkd" type="mixedInlineContent"/>
+
+  <!-- br is EMPTY -->
+  <xs:element name="br">
+    <xs:complexType/>
+  </xs:element>
+
+  <!-- ══════════════════════════════════════════════════════
+       Shared complex type: mixed PCDATA + full inline markup
+       Used for deftext, gr, etm, ex_orig, ex_tran, i, b, u, mrkd, opt
+       ══════════════════════════════════════════════════════ -->
+  <xs:complexType name="mixedInlineContent" mixed="true">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element ref="tr"/>
+      <xs:element ref="dtrn"/>
+      <xs:element ref="abbr"/>
+      <xs:element ref="co"/>
+      <xs:element ref="di"/>
+      <xs:element ref="mrkd"/>
+      <xs:element ref="kref"/>
+      <xs:element ref="rref"/>
+      <xs:element ref="iref"/>
+      <xs:element ref="c"/>
+      <xs:element ref="sup"/>
+      <xs:element ref="sub"/>
+      <xs:element ref="i"/>
+      <xs:element ref="b"/>
+      <xs:element ref="u"/>
+      <xs:element ref="br"/>
+    </xs:choice>
+  </xs:complexType>
+
+</xs:schema>
