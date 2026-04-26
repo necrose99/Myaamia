@@ -3,8 +3,26 @@ import os
 
 # Your 'Order of Battle' from the rack
 algic_array = [
-    "mia", "sac", "kic", "sha", "pot", "oji", "otw", "ciw", 
-    "alq", "ojb", "cre", "men", "unm", "del", "bla", "arp"
+    # Reconstructed / Proto
+    "alg-x-proto", # Proto-Algonquian (PA)
+    
+    # Plains Branch
+    "bla", "arp", "ats", "chy", "bft",
+    
+    # Central Branch (Great Lakes / Shield)
+    "men", "cre", "csw", "crj", "atj", "nsk", "moos", "crm", 
+    "pot", "oji", "otw", "ciw", "alq", "ojb", "ojg", "ojs", 
+    "mia", "sac", "kic_us", kic_mx","sha",
+    
+    # Eastern Branch (Maritime / New England / Atlantic)
+    "mic", "abe", "aaq", "mal", "moo", "mua", "unm", "wamp",
+    "mas", "nrn", "qpi", "nnt", "pow", "pmk", "psk", "mjy",
+    
+    # Ritwan (California "Cousins")
+    "wiy", "yur",
+    
+    # External Reference
+    "en-US" "la" "fr" "es_mx" # latin for genis sp etc... 
 ]
 
 def generate_xcu(dictionary_dir, output_file="dictionaries.xcu"):

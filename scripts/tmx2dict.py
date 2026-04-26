@@ -1,127 +1,77 @@
 import xml.etree.ElementTree as ET
+from pathlib import Path
 
-def tmx_to_hunspell(tmx_input, dic_output, lang_code='mia'):
-    tree = ET.parse(tmx_input)
-    root = tree.getroot()
-    
-    entries = []
-    
-    for tu in root.findall(".//tu"):
-        eng_text = ""
-        mia_text = ""
-        flags = ""
-        
-        # 1. Extract English (Comment) and Myaamia (Word)
-        for tuv in tu.findall("tuv"):
-            lang = tuv.get("{http://www.w3.org/XML/1998/namespace}lang")
-            seg = tuv.find("seg").text
-            if lang == "en-US":
-                eng_text = seg
-            elif lang == lang_code:
-                mia_text = seg
-        
-        # 2. Predictive Flagging (The "Linguistic Logic")
-        # Example: If it's a number, give it the 'N' flag
-        if any(char.isdigit() for char in eng_text):
-            flags = "/N"
-        # Example: If it ends in 'a' or 'wa', it's likely an Animate Noun
-        elif mia_text.endswith(('a', 'wa')):
-            flags = "/AN" 
+# The 'Rack' Configuration
+ALGIC_ARRAY = [
+    "alg-x-proto", "bla", "arp", "ats", "chy", "bft", "men", "cre", "csw", 
+    "crj", "atj", "nsk", "moos", "crm", "pot", "oji", "otw", "ciw", "alq", 
+    "ojb", "ojg", "ojs", "mia", "sac", "kic_us", "kic_mx", "sha", "mic", 
+    "abe", "aaq", "mal", "moo", "mua", "unm", "wamp", "mas", "nrn", "qpi", 
+    "nnt", "pow", "pmk", "psk", "mjy", "wiy", "yur"
+]
 
-        if mia_text:
-            entries.append(f"{mia_text}{flags} #{eng_text}")
+# Output Directory
+EXPORT_BASE = Path("./Myaamia/Aspell-Hunspell")
+TMX_SOURCE = Path("./data_shards/tmx")
 
-    # 3. Write .dic file with Hunspell Header
-    with open(dic_output, 'w', encoding='utf-8') as f:
-        f.write(f"{len(entries)}\n")
-        for entry in entries:
-            f.write(f"{entry}\n")
+def create_affix_shell(lang_code, path):
+    """Writes a basic .aff shell if it doesn't exist."""
+    aff_content = f"SET UTF-8\nTITLE {lang_code.upper()} Affix Rules\n\nREP 4\nREP š sh\nREP ž zh\nREP č ch\nREP ʼ '\n"
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(aff_content)
 
-    print(f"✅ Created {dic_output} with {len(entries)} commented entries.")
+def unified_algic_dump():
+    """Iterates through the rack, deduplicates, sorts, and bakes."""
+    EXPORT_BASE.mkdir(parents=True, exist_ok=True)
 
-if __name__ == "__main__":
-    tmx_to_hunspell('Algic.tmx', 'MIA_US-Myaamia.dic')
-
-
-
-import xml.etree.ElementTree as ET
-import datetime
-
-def tmx_to_hunspell_dict(tmx_input, dic_output, target_lang='mia'):
-    try:
-        tree = ET.parse(tmx_input)
-        root = tree.getroot()
-    except Exception as e:
-        print(f"Error parsing TMX: {e}")
-        return
-
-    entries = []
-    
-    # Namespace handling for xml:lang
-    ns = {'xml': 'http://www.w3.org/XML/1998/namespace'}
-
-    for tu in root.findall(".//tu"):
-        eng_text = ""
-        target_text = ""
-        context_note = ""
-        
-        # 1. Extract Context Note (Sociolinguistic Metadata)
-        note_el = tu.find("note")
-        if note_el is not None:
-            context_note = note_el.text.strip()
-
-        # 2. Extract Segments
-        for tuv in tu.findall("tuv"):
-            lang = tuv.get(f"{{{ns['xml']}}}lang")
-            seg_el = tuv.find("seg")
-            if seg_el is None or seg_el.text is None:
-                continue
-                
-            if lang == "en-US":
-                eng_text = seg_el.text.strip()
-            elif lang == target_lang:
-                target_text = seg_el.text.strip()
-
-        if not target_text:
+    for lang in ALGIC_ARRAY:
+        tmx_file = TMX_SOURCE / f"Algic-{lang}.tmx"
+        if not tmx_file.exists():
             continue
 
-        # 3. Apply Flag Logic (Predictive Analytics)
-        flags = ""
-        # Rule: If it's a number (akincikoona), apply the /N flag
-        if "num" in context_note.lower() or any(char.isdigit() for char in eng_text):
-            flags = "/N"
+        print(f"🛰️  Processing: {lang}")
         
-        # 4. Construct Comment with Register Info
-        comment = eng_text
-        if "women" in context_note.lower() or "feminine" in context_note.lower():
-            comment += " [FEMININE REGISTER]"
-        elif "affirm" in context_note.lower():
-            comment += " [AFFIRMATIVE]"
+        entries = set() # Use a set for automatic deduplication
+        ns = {'xml': 'http://www.w3.org/XML/1998/namespace'}
 
-        entries.append(f"{target_text}{flags} #{comment}")
+        try:
+            tree = ET.parse(tmx_file)
+            root = tree.getroot()
+            
+            for tu in root.findall(".//tu"):
+                # Extract English and Target
+                eng = tu.find(f".//tuv[@{{{ns['xml']}}}lang='en-US']/seg")
+                target = tu.find(f".//tuv[@{{{ns['xml']}}}lang='{lang}']/seg")
+                note = tu.find("note")
+                
+                if target is not None and target.text:
+                    word = target.text.strip()
+                    trans = eng.text.strip() if eng is not None else "undocumented"
+                    comment = f"#{trans}"
+                    
+                    # Optional: Add metadata from notes to the comment
+                    if note is not None and note.text:
+                        comment += f" [{note.text.strip()}]"
+                    
+                    entries.add(f"{word} {comment}")
 
-    # 5. Write .dic with Hunspell Count Header
-    with open(dic_output, 'w', encoding='utf-8') as f:
-        f.write(f"{len(entries)}\n")
-        for entry in entries:
-            f.write(f"{entry}\n")
+            # --- DUMP DICTIONARY ---
+            sorted_entries = sorted(list(entries)) # Alphabetical dump
+            dic_path = EXPORT_BASE / f"{lang}.dic"
+            with open(dic_path, "w", encoding="utf-8") as f:
+                f.write(f"{len(sorted_entries)}\n")
+                for e in sorted_entries:
+                    f.write(f"{e}\n")
 
-    print(f"🚀 Created {dic_output} with {len(entries)} entries at {datetime.datetime.now()}")
+            # --- DUMP AFFIX SHELL ---
+            aff_path = EXPORT_BASE / f"{lang}.aff"
+            if not aff_path.exists():
+                create_affix_shell(lang, aff_path)
+
+            print(f"✅ Baked {lang}: {len(sorted_entries)} entries.")
+
+        except Exception as e:
+            print(f"❌ Error in {lang} seam: {e}")
 
 if __name__ == "__main__":
-    # Point this to your Algic.tmx
-    tmx_to_hunspell_dict('Algic.tmx', 'MIA_US-Myaamia.dic')
-def get_comment_with_meta(tu):
-    eng = tu.find("tuv[@xml:lang='en-US']/seg").text
-    note = tu.find("note").text if tu.find("note") is not None else ""
-    
-    if "women" in note.lower():
-        return f"#{eng} [FEMININE REGISTER]"
-    return f"#{eng}"
-  def get_hunspell_flag(mia_word, pos_tag):
-    if pos_tag == "PART":
-        return ""  # No flags for particles like iihia
-    elif mia_word.endswith("aki"):
-        return "/PL" # Plural flag
-    return ""
-
+    unified_algic_dump()

@@ -215,7 +215,10 @@
       <tuv xml:lang="sac">
         <seg/>
       </tuv>
-      <tuv xml:lang="kic">
+      <tuv xml:lang="kic_us">
+        <seg/>
+		  </tuv>
+      <tuv xml:lang="kic_mx">
         <seg/>
       </tuv>
       <tuv xml:lang="sha">

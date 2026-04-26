@@ -19,7 +19,7 @@ algic_array = [
     "wiy", "yur",
     
     # External Reference
-    "en-US"
+    "en-US" "la" "fr" "es_mx" # latin for genis sp etc... 
 ]
 import xml.etree.ElementTree as ET
 from xml.dom import minidom

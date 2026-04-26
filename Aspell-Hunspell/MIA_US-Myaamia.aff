@@ -395,3 +395,51 @@ SFX N1 0 aasi .
 
 # In your .dic file:
 # mataathswi/N1  # This allows "mataathswi" to combine with the ones
+SET UTF-8
+TITLE Myaamia (Miami-Illinois) Affix Rules
+# ISO 639-3: mia | Built for Myaamia Nation Revitalization
+WORDCHARS 'ʼ-
+
+# Replacement rules for orthographic variations
+REP 6
+REP š sh
+REP ž zh
+REP č ch
+REP ň ny
+REP ʼ '
+REP sh š
+
+# --- PLURALIZATION (Nouns) ---
+# Nouns are categorized by Animacy and Ending
+SFX PL Y 3
+SFX PL 0 aki [^aeiou]   # Consonant-ending: Animate (e.g., lenia -> leniaki)
+SFX PL 0 iki [aeiou]    # Short vowel-ending
+SFX PL 0 wa [aeiou]     # Long vowel/special endings
+
+# --- POSSESSIVE PREFIXES ---
+# These attach to the beginning of noun roots
+PFX P Y 6
+PFX P 0 ni- .           # 1st Person (My)
+PFX P 0 ki- .           # 2nd Person (Your)
+PFX P 0 wi- .           # 3rd Person (His/Her)
+PFX P 0 nwa- .          # 1st Plural (Our)
+PFX P 0 kwa- .          # 2nd Plural (Your pl.)
+PFX P 0 wi- .           # 3rd Plural (Their)
+
+# --- NUMBER SYSTEM (The "11-19" Logic) ---
+# Flag 'N1' handles the "added" marker for teen numbers
+SFX N1 Y 1
+SFX N1 0 aasi .          # mataathswi + aasi = mataathswiaasi (11-ish context)
+
+# --- NEGATION & ASPECT ---
+PFX NEG Y 2
+PFX NEG 0 moohci- .     # Standard Negation
+PFX NEG 0 maakooci- .   # Futile Negation
+
+# --- COMPOUNDING RULES ---
+# Allows combining Hundreds (H), Tens (T), and Ones (O)
+COMPOUNDMIN 2
+COMPOUNDRULE 3
+COMPOUNDRULE (H)(T)(O)
+COMPOUNDRULE (H)(O)
+COMPOUNDRULE (T)(O)
