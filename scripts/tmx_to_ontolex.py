@@ -139,17 +139,53 @@ def parse_tmx_to_ontolex(tmx_content):
 
     ttl_lines = [
         "@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .",
+        "@prefix lime:     <http://www.w3.org/ns/lemon/lime#> .",
         "@prefix lexinfo:  <http://www.lexinfo.net/ontology/3.0/lexinfo#> .",
         "@prefix morph:    <http://www.w3.org/ns/lemon/morph#> .",
         "@prefix alg:      <http://example.org/algic-vocab#> .",
         "@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .",
         "@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .",
         "@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .",
+        "@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .",
+        "@prefix dcterms:  <http://purl.org/dc/terms/> .",
+        "# NOTE: mc.miamioh.edu does not serve RDF/linked data, so entry URIs",
+        "# stay under ex: (this repo's own namespace). mia: identifies the",
+        "# LANGUAGE/dataset itself, not individual entries, to avoid implying",
+        "# false dereferenceability at the Center's domain.",
+        "@prefix mia:      <https://mc.miamioh.edu/ilda-myaamia/> .",
         "@prefix ex:       <http://example.org/mia-lexicon#> .",
+        "",
+        "# --- Language / lexicon dataset metadata (OntoLex-Lemon lime module) ---",
+        "mia:language a lime:Language ;",
+        '    lime:iso639P3PCode "mia" ;',
+        '    rdfs:label "Miami-Illinois (Myaamia / Irenwa)"@en ;',
+        "    alg:glottocode <https://glottolog.org/resource/languoid/id/miam1252> ;",
+        "    alg:languageFamily alg:CentralAlgonquian .",
+        "",
+        "mia:lexicon a lime:Lexicon ;",
+        '    dcterms:title "Miami-Illinois ILDA Browse-Index Lexicon"@en ;',
+        "    lime:language mia:language ;",
+        "    dcterms:source <https://mc.miamioh.edu/ilda-myaamia/dictionary/entries> ;",
+        '    dcterms:description "Derived from ilda_full.tmx, a browse-index snapshot (headwords + glosses only)"@en .',
+        "",
+        "# --- Language family classification (SKOS broader chain) ---",
+        "# 'Central Algonquian' is a traditional AREAL grouping, not a confirmed",
+        "# genetic subgroup within Algonquian — flagged here rather than",
+        "# asserted as settled genetic classification.",
+        "alg:Algic a skos:Concept ;",
+        '    skos:prefLabel "Algic"@en .',
+        "alg:Algonquian a skos:Concept ;",
+        '    skos:prefLabel "Algonquian"@en ;',
+        "    skos:broader alg:Algic .",
+        "alg:CentralAlgonquian a skos:Concept ;",
+        '    skos:prefLabel "Central Algonquian"@en ;',
+        "    skos:broader alg:Algonquian ;",
+        '    rdfs:comment "Areal/geographic grouping, not an established genetic subgroup"@en .',
         "",
     ]
 
     seen_ids = set()
+    entry_ids = []
 
     for tu in soup.find_all("tu"):
         props = {p.get("type"): p.get_text(strip=True) for p in tu.find_all("prop")}
@@ -175,6 +211,7 @@ def parse_tmx_to_ontolex(tmx_content):
             n += 1
             safe_id = f"{base_id}_{n}"
         seen_ids.add(safe_id)
+        entry_ids.append(safe_id)
 
         clean_gloss, speaker, animacy, matched = extract_gloss_annotations(en_text)
         pos_uri, pos_is_heuristic = detect_pos_fallback(clean_gloss, form_type)
@@ -213,6 +250,12 @@ def parse_tmx_to_ontolex(tmx_content):
         if ilda_url:
             ttl_lines.append(f"    rdfs:seeAlso <{ilda_url}> ;")
         ttl_lines.append("    rdfs:isDefinedBy <http://myaamiadictionary.org> .")
+        ttl_lines.append("")
+
+    if entry_ids:
+        ttl_lines.append("# --- Lexicon -> entry links (lime:entry) ---")
+        for eid in entry_ids:
+            ttl_lines.append(f"mia:lexicon lime:entry ex:{eid} .")
         ttl_lines.append("")
 
     return "\n".join(ttl_lines)
