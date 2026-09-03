@@ -71,6 +71,14 @@ def decompose(n):
         "ones": n % 10
     }
 
+def apply_suffix(base_word: str, suffix: str) -> str:
+    """Handles morphophonemic structural sandhi vowel dropping."""
+    if base_word.endswith("wi"):
+        return base_word[:-2] + "waasi" if suffix == "aasi" else base_word[:-2] + suffix
+    elif base_word.endswith("i"):
+        return base_word[:-1] + suffix
+    return base_word + suffix
+
 # -----------------------------
 # Generator (engine builds numbers)
 # -----------------------------
@@ -93,24 +101,25 @@ def construct_number(n: int) -> str:
     if d["hundreds"] > 0:
         parts.append(HUNDREDS[d["hundreds"]])
 
-    # teens
+    # teens tracking (10-19)
     if d["tens"] == 1:
         if d["ones"] == 0:
             parts.append(RULES["teen_prefix"])
         else:
-            parts.append(join_parts(
-                RULES["teen_prefix"],
-                ONES[d["ones"]] + RULES["teen_suffix"]
-            ))
+            comp_unit = apply_suffix(ONES[d["ones"]], RULES["teen_suffix"])
+            parts.append(join_parts(RULES["teen_prefix"], comp_unit))
         return join_parts(*parts)
 
-    # tens
+    # tens multipliers (20-99)
     if d["tens"] >= 2:
         parts.append(TENS[d["tens"]])
 
-    # ones
+    # ones remainders (appends -aasi if attached to tens matrix)
     if d["ones"] > 0:
-        parts.append(ONES[d["ones"]])
+        if d["tens"] >= 2:
+            parts.append(apply_suffix(ONES[d["ones"]], RULES["teen_suffix"]))
+        else:
+            parts.append(ONES[d["ones"]])
 
     return join_parts(*parts)
 
@@ -140,24 +149,23 @@ def generate_base_entries():
 
 
 def create_base_tmx(entries, output_file):
-    tmx = ['<tmx version="1.4"><body>']
+    tmx = ['<tmx version="1.4"><body>\n']
 
     for place, val, form in entries:
         seg = saxutils.escape(form)
-
         tmx.append(
-            f'<tu tuid="{place}_{val}" datatype="number">'
-            f'<prop type="value">{val}</prop>'
-            f'<prop type="place">{place}</prop>'
-            f'<tuv xml:lang="mia"><seg>{seg}</seg></tuv>'
-            f'</tu>'
+            f'  <tu tuid="{place}_{val}" datatype="number">\n'
+            f'    <prop type="value">{val}</prop>\n'
+            f'    <prop type="place">{place}</prop>\n'
+            f'    <tuv xml:lang="mia"><seg>{seg}</seg></tuv>\n'
+            f'  </tu>\n'
         )
 
     # optional rule hints
     tmx.append(
-        '<tu tuid="rule_teen" datatype="number-rule">'
-        f'<prop type="pattern">10 + ones + {RULES["teen_suffix"]}</prop>'
-        '</tu>'
+        '  <tu tuid="rule_teen" datatype="number-rule">\n'
+        f'    <prop type="pattern">10 + ones + {RULES["teen_suffix"]}</prop>\n'
+        '  </tu>\n'
     )
 
     tmx.append('</body></tmx>')
@@ -167,7 +175,7 @@ def create_base_tmx(entries, output_file):
 
 
 # -----------------------------
-# EXPANDED TMX (optional)
+# EXPANDED TMX (Completed File Matrix)
 # -----------------------------
 
 def generate_full_entries(max_n=1000):
@@ -178,4 +186,37 @@ def generate_full_entries(max_n=1000):
 
 
 def create_full_tmx(entries, output_file):
-    tmx
+    """Outputs a fully completed, sequential training corpus target file."""
+    tmx = ['<tmx version="1.4"><body>\n']
+    
+    for val, form in entries:
+        seg = saxutils.escape(form)
+        tmx.append(
+            f'  <tu tuid="full_{val}" datatype="number">\n'
+            f'    <prop type="value">{val}</prop>\n'
+            f'    <tuv xml:lang="mia"><seg>{seg}</seg></tuv>\n'
+            f'    <tuv xml:lang="en"><seg>{val}</seg></tuv>\n'
+            f'  </tu>\n'
+        )
+        
+    tmx.append('</body></tmx>')
+    
+    with open(output_file, "w", encoding="utf-8") as f:
+        f.write("".join(tmx))
+
+if __name__ == "__main__":
+    print("[*] Compiling core rules and executing morphophonemic checks...")
+    
+    # Run structural tests to certify output validity
+    assert construct_number(10) == "mataathswi"
+    assert construct_number(11) == "mataathswi nkotiaasi"
+    assert construct_number(25) == "niišwi mateeni yaalanwaasi"
+    assert construct_number(28) == "niišwi mateeni palaanaasi"
+    
+    base_data = generate_base_entries()
+    create_base_tmx(base_data, "base_numbers.tmx")
+    
+    full_data = generate_full_entries(1000)
+    create_full_tmx(full_data, "expanded_numbers.tmx")
+    
+    print("[+] TMX generator targets compiled successfully with zero syntax loopholes.")
