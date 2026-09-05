@@ -40,7 +40,7 @@ msgstr "nkotimeneehki"
 
 #. Context: 10
 msgid "10"
-msgstr "mataathswi moochiaasi"
+msgstr "mataathswi "
 
 #. Context: 11
 msgid "11"
@@ -440,7 +440,7 @@ msgstr "nkotwaahkwe nkotimeneehki"
 
 #. Context: 110
 msgid "110"
-msgstr "nkotwaahkwe mataathswi moochiaasi"
+msgstr "nkotwaahkwe mataathswi "
 
 #. Context: 111
 msgid "111"
@@ -840,7 +840,7 @@ msgstr "niišwaahkwe nkotimeneehki"
 
 #. Context: 210
 msgid "210"
-msgstr "niišwaahkwe mataathswi moochiaasi"
+msgstr "niišwaahkwe mataathswi "
 
 #. Context: 211
 msgid "211"
@@ -1240,7 +1240,7 @@ msgstr "nihswaahkwe nkotimeneehki"
 
 #. Context: 310
 msgid "310"
-msgstr "nihswaahkwe mataathswi moochiaasi"
+msgstr "nihswaahkwe mataathswi "
 
 #. Context: 311
 msgid "311"
@@ -1640,7 +1640,7 @@ msgstr "niiwaahkwe nkotimeneehki"
 
 #. Context: 410
 msgid "410"
-msgstr "niiwaahkwe mataathswi moochiaasi"
+msgstr "niiwaahkwe mataathswi "
 
 #. Context: 411
 msgid "411"
@@ -2040,7 +2040,7 @@ msgstr "yaalanwaahkwe nkotimeneehki"
 
 #. Context: 510
 msgid "510"
-msgstr "yaalanwaahkwe mataathswi moochiaasi"
+msgstr "yaalanwaahkwe mataathswi "
 
 #. Context: 511
 msgid "511"
@@ -2440,7 +2440,7 @@ msgstr "kaakaathswaahkwe nkotimeneehki"
 
 #. Context: 610
 msgid "610"
-msgstr "kaakaathswaahkwe mataathswi moochiaasi"
+msgstr "kaakaathswaahkwe mataathswi "
 
 #. Context: 611
 msgid "611"
@@ -2840,7 +2840,7 @@ msgstr "swaahteethswaahkwe nkotimeneehki"
 
 #. Context: 710
 msgid "710"
-msgstr "swaahteethswaahkwe mataathswi moochiaasi"
+msgstr "swaahteethswaahkwe mataathswi "
 
 #. Context: 711
 msgid "711"
@@ -3240,7 +3240,7 @@ msgstr "palaanwaahkwe nkotimeneehki"
 
 #. Context: 810
 msgid "810"
-msgstr "palaanwaahkwe mataathswi moochiaasi"
+msgstr "palaanwaahkwe mataathswi "
 
 #. Context: 811
 msgid "811"
@@ -3640,7 +3640,7 @@ msgstr "nkotimeneehkwaahkwe nkotimeneehki"
 
 #. Context: 910
 msgid "910"
-msgstr "nkotimeneehkwaahkwe mataathswi moochiaasi"
+msgstr "nkotimeneehkwaahkwe mataathswi "
 
 #. Context: 911
 msgid "911"
@@ -4040,7 +4040,7 @@ msgstr "mataathswaahkwe nkotimeneehki"
 
 #. Context: 1010
 msgid "1010"
-msgstr "mataathswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe mataathswi "
 
 #. Context: 1011
 msgid "1011"
@@ -4440,7 +4440,7 @@ msgstr "mataathswaahkwe nkotwaahkwe nkotimeneehki"
 
 #. Context: 1110
 msgid "1110"
-msgstr "mataathswaahkwe nkotwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe nkotwaahkwe mataathswi "
 
 #. Context: 1111
 msgid "1111"
@@ -4840,7 +4840,7 @@ msgstr "mataathswaahkwe niišwaahkwe nkotimeneehki"
 
 #. Context: 1210
 msgid "1210"
-msgstr "mataathswaahkwe niišwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe niišwaahkwe mataathswi "
 
 #. Context: 1211
 msgid "1211"
@@ -5240,7 +5240,7 @@ msgstr "mataathswaahkwe nihswaahkwe nkotimeneehki"
 
 #. Context: 1310
 msgid "1310"
-msgstr "mataathswaahkwe nihswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe nihswaahkwe mataathswi "
 
 #. Context: 1311
 msgid "1311"
@@ -5640,7 +5640,7 @@ msgstr "mataathswaahkwe niiwaahkwe nkotimeneehki"
 
 #. Context: 1410
 msgid "1410"
-msgstr "mataathswaahkwe niiwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe niiwaahkwe mataathswi "
 
 #. Context: 1411
 msgid "1411"
@@ -6040,7 +6040,7 @@ msgstr "mataathswaahkwe yaalanwaahkwe nkotimeneehki"
 
 #. Context: 1510
 msgid "1510"
-msgstr "mataathswaahkwe yaalanwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe yaalanwaahkwe mataathswi "
 
 #. Context: 1511
 msgid "1511"
@@ -6440,7 +6440,7 @@ msgstr "mataathswaahkwe kaakaathswaahkwe nkotimeneehki"
 
 #. Context: 1610
 msgid "1610"
-msgstr "mataathswaahkwe kaakaathswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe kaakaathswaahkwe mataathswi "
 
 #. Context: 1611
 msgid "1611"
@@ -6840,7 +6840,7 @@ msgstr "mataathswaahkwe swaahteethswaahkwe nkotimeneehki"
 
 #. Context: 1710
 msgid "1710"
-msgstr "mataathswaahkwe swaahteethswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe swaahteethswaahkwe mataathswi "
 
 #. Context: 1711
 msgid "1711"
@@ -7244,7 +7244,7 @@ msgstr "mataathswaahkwe palaanwaahkwe nkotimeneehki"
 
 #. Context: 1810
 msgid "1810"
-msgstr "mataathswaahkwe palaanwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe palaanwaahkwe mataathswi "
 
 #. Context: 1811
 msgid "1811"
@@ -7644,7 +7644,7 @@ msgstr "mataathswaahkwe nkotimeneehkwaahkwe nkotimeneehki"
 
 #. Context: 1910
 msgid "1910"
-msgstr "mataathswaahkwe nkotimeneehkwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe nkotimeneehkwaahkwe mataathswi "
 
 #. Context: 1911
 msgid "1911"
@@ -8048,7 +8048,7 @@ msgstr "mataathswaahkwe nkotimeneehki"
 
 #. Context: 2010
 msgid "2010"
-msgstr "mataathswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe mataathswi "
 
 #. Context: 2011
 msgid "2011"
@@ -8448,7 +8448,7 @@ msgstr "mataathswaahkwe nkotwaahkwe nkotimeneehki"
 
 #. Context: 2110
 msgid "2110"
-msgstr "mataathswaahkwe nkotwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe nkotwaahkwe mataathswi "
 
 #. Context: 2111
 msgid "2111"
@@ -8848,7 +8848,7 @@ msgstr "mataathswaahkwe niišwaahkwe nkotimeneehki"
 
 #. Context: 2210
 msgid "2210"
-msgstr "mataathswaahkwe niišwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe niišwaahkwe mataathswi "
 
 #. Context: 2211
 msgid "2211"
@@ -9248,7 +9248,7 @@ msgstr "mataathswaahkwe nihswaahkwe nkotimeneehki"
 
 #. Context: 2310
 msgid "2310"
-msgstr "mataathswaahkwe nihswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe nihswaahkwe mataathswi "
 
 #. Context: 2311
 msgid "2311"
@@ -9648,7 +9648,7 @@ msgstr "mataathswaahkwe niiwaahkwe nkotimeneehki"
 
 #. Context: 2410
 msgid "2410"
-msgstr "mataathswaahkwe niiwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe niiwaahkwe mataathswi "
 
 #. Context: 2411
 msgid "2411"
@@ -10048,7 +10048,7 @@ msgstr "mataathswaahkwe yaalanwaahkwe nkotimeneehki"
 
 #. Context: 2510
 msgid "2510"
-msgstr "mataathswaahkwe yaalanwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe yaalanwaahkwe mataathswi "
 
 #. Context: 2511
 msgid "2511"
@@ -10448,7 +10448,7 @@ msgstr "mataathswaahkwe kaakaathswaahkwe nkotimeneehki"
 
 #. Context: 2610
 msgid "2610"
-msgstr "mataathswaahkwe kaakaathswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe kaakaathswaahkwe mataathswi "
 
 #. Context: 2611
 msgid "2611"
@@ -10848,7 +10848,7 @@ msgstr "mataathswaahkwe swaahteethswaahkwe nkotimeneehki"
 
 #. Context: 2710
 msgid "2710"
-msgstr "mataathswaahkwe swaahteethswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe swaahteethswaahkwe mataathswi "
 
 #. Context: 2711
 msgid "2711"
@@ -11252,7 +11252,7 @@ msgstr "mataathswaahkwe palaanwaahkwe nkotimeneehki"
 
 #. Context: 2810
 msgid "2810"
-msgstr "mataathswaahkwe palaanwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe palaanwaahkwe mataathswi "
 
 #. Context: 2811
 msgid "2811"
@@ -11652,7 +11652,7 @@ msgstr "mataathswaahkwe nkotimeneehkwaahkwe nkotimeneehki"
 
 #. Context: 2910
 msgid "2910"
-msgstr "mataathswaahkwe nkotimeneehkwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe nkotimeneehkwaahkwe mataathswi "
 
 #. Context: 2911
 msgid "2911"
@@ -12056,7 +12056,7 @@ msgstr "mataathswaahkwe nkotimeneehki"
 
 #. Context: 3010
 msgid "3010"
-msgstr "mataathswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe mataathswi "
 
 #. Context: 3011
 msgid "3011"
@@ -12456,7 +12456,7 @@ msgstr "mataathswaahkwe nkotwaahkwe nkotimeneehki"
 
 #. Context: 3110
 msgid "3110"
-msgstr "mataathswaahkwe nkotwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe nkotwaahkwe mataathswi "
 
 #. Context: 3111
 msgid "3111"
@@ -12856,7 +12856,7 @@ msgstr "mataathswaahkwe niišwaahkwe nkotimeneehki"
 
 #. Context: 3210
 msgid "3210"
-msgstr "mataathswaahkwe niišwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe niišwaahkwe mataathswi "
 
 #. Context: 3211
 msgid "3211"
@@ -13256,7 +13256,7 @@ msgstr "mataathswaahkwe nihswaahkwe nkotimeneehki"
 
 #. Context: 3310
 msgid "3310"
-msgstr "mataathswaahkwe nihswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe nihswaahkwe mataathswi "
 
 #. Context: 3311
 msgid "3311"
@@ -13656,7 +13656,7 @@ msgstr "mataathswaahkwe niiwaahkwe nkotimeneehki"
 
 #. Context: 3410
 msgid "3410"
-msgstr "mataathswaahkwe niiwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe niiwaahkwe mataathswi "
 
 #. Context: 3411
 msgid "3411"
@@ -14056,7 +14056,7 @@ msgstr "mataathswaahkwe yaalanwaahkwe nkotimeneehki"
 
 #. Context: 3510
 msgid "3510"
-msgstr "mataathswaahkwe yaalanwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe yaalanwaahkwe mataathswi "
 
 #. Context: 3511
 msgid "3511"
@@ -14456,7 +14456,7 @@ msgstr "mataathswaahkwe kaakaathswaahkwe nkotimeneehki"
 
 #. Context: 3610
 msgid "3610"
-msgstr "mataathswaahkwe kaakaathswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe kaakaathswaahkwe mataathswi "
 
 #. Context: 3611
 msgid "3611"
@@ -14856,7 +14856,7 @@ msgstr "mataathswaahkwe swaahteethswaahkwe nkotimeneehki"
 
 #. Context: 3710
 msgid "3710"
-msgstr "mataathswaahkwe swaahteethswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe swaahteethswaahkwe mataathswi "
 
 #. Context: 3711
 msgid "3711"
@@ -15260,7 +15260,7 @@ msgstr "mataathswaahkwe palaanwaahkwe nkotimeneehki"
 
 #. Context: 3810
 msgid "3810"
-msgstr "mataathswaahkwe palaanwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe palaanwaahkwe mataathswi "
 
 #. Context: 3811
 msgid "3811"
@@ -15660,7 +15660,7 @@ msgstr "mataathswaahkwe nkotimeneehkwaahkwe nkotimeneehki"
 
 #. Context: 3910
 msgid "3910"
-msgstr "mataathswaahkwe nkotimeneehkwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe nkotimeneehkwaahkwe mataathswi "
 
 #. Context: 3911
 msgid "3911"
@@ -16064,7 +16064,7 @@ msgstr "mataathswaahkwe nkotimeneehki"
 
 #. Context: 4010
 msgid "4010"
-msgstr "mataathswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe mataathswi "
 
 #. Context: 4011
 msgid "4011"
@@ -16464,7 +16464,7 @@ msgstr "mataathswaahkwe nkotwaahkwe nkotimeneehki"
 
 #. Context: 4110
 msgid "4110"
-msgstr "mataathswaahkwe nkotwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe nkotwaahkwe mataathswi "
 
 #. Context: 4111
 msgid "4111"
@@ -16864,7 +16864,7 @@ msgstr "mataathswaahkwe niišwaahkwe nkotimeneehki"
 
 #. Context: 4210
 msgid "4210"
-msgstr "mataathswaahkwe niišwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe niišwaahkwe mataathswi "
 
 #. Context: 4211
 msgid "4211"
@@ -17264,7 +17264,7 @@ msgstr "mataathswaahkwe nihswaahkwe nkotimeneehki"
 
 #. Context: 4310
 msgid "4310"
-msgstr "mataathswaahkwe nihswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe nihswaahkwe mataathswi "
 
 #. Context: 4311
 msgid "4311"
@@ -17664,7 +17664,7 @@ msgstr "mataathswaahkwe niiwaahkwe nkotimeneehki"
 
 #. Context: 4410
 msgid "4410"
-msgstr "mataathswaahkwe niiwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe niiwaahkwe mataathswi "
 
 #. Context: 4411
 msgid "4411"
@@ -18064,7 +18064,7 @@ msgstr "mataathswaahkwe yaalanwaahkwe nkotimeneehki"
 
 #. Context: 4510
 msgid "4510"
-msgstr "mataathswaahkwe yaalanwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe yaalanwaahkwe mataathswi "
 
 #. Context: 4511
 msgid "4511"
@@ -18464,7 +18464,7 @@ msgstr "mataathswaahkwe kaakaathswaahkwe nkotimeneehki"
 
 #. Context: 4610
 msgid "4610"
-msgstr "mataathswaahkwe kaakaathswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe kaakaathswaahkwe mataathswi "
 
 #. Context: 4611
 msgid "4611"
@@ -18864,7 +18864,7 @@ msgstr "mataathswaahkwe swaahteethswaahkwe nkotimeneehki"
 
 #. Context: 4710
 msgid "4710"
-msgstr "mataathswaahkwe swaahteethswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe swaahteethswaahkwe mataathswi "
 
 #. Context: 4711
 msgid "4711"
@@ -19268,7 +19268,7 @@ msgstr "mataathswaahkwe palaanwaahkwe nkotimeneehki"
 
 #. Context: 4810
 msgid "4810"
-msgstr "mataathswaahkwe palaanwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe palaanwaahkwe mataathswi "
 
 #. Context: 4811
 msgid "4811"
@@ -19668,7 +19668,7 @@ msgstr "mataathswaahkwe nkotimeneehkwaahkwe nkotimeneehki"
 
 #. Context: 4910
 msgid "4910"
-msgstr "mataathswaahkwe nkotimeneehkwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe nkotimeneehkwaahkwe mataathswi "
 
 #. Context: 4911
 msgid "4911"
@@ -20072,7 +20072,7 @@ msgstr "mataathswaahkwe nkotimeneehki"
 
 #. Context: 5010
 msgid "5010"
-msgstr "mataathswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe mataathswi "
 
 #. Context: 5011
 msgid "5011"
@@ -20472,7 +20472,7 @@ msgstr "mataathswaahkwe nkotwaahkwe nkotimeneehki"
 
 #. Context: 5110
 msgid "5110"
-msgstr "mataathswaahkwe nkotwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe nkotwaahkwe mataathswi "
 
 #. Context: 5111
 msgid "5111"
@@ -20872,7 +20872,7 @@ msgstr "mataathswaahkwe niišwaahkwe nkotimeneehki"
 
 #. Context: 5210
 msgid "5210"
-msgstr "mataathswaahkwe niišwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe niišwaahkwe mataathswi "
 
 #. Context: 5211
 msgid "5211"
@@ -21272,7 +21272,7 @@ msgstr "mataathswaahkwe nihswaahkwe nkotimeneehki"
 
 #. Context: 5310
 msgid "5310"
-msgstr "mataathswaahkwe nihswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe nihswaahkwe mataathswi "
 
 #. Context: 5311
 msgid "5311"
@@ -21672,7 +21672,7 @@ msgstr "mataathswaahkwe niiwaahkwe nkotimeneehki"
 
 #. Context: 5410
 msgid "5410"
-msgstr "mataathswaahkwe niiwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe niiwaahkwe mataathswi "
 
 #. Context: 5411
 msgid "5411"
@@ -22072,7 +22072,7 @@ msgstr "mataathswaahkwe yaalanwaahkwe nkotimeneehki"
 
 #. Context: 5510
 msgid "5510"
-msgstr "mataathswaahkwe yaalanwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe yaalanwaahkwe mataathswi "
 
 #. Context: 5511
 msgid "5511"
@@ -22472,7 +22472,7 @@ msgstr "mataathswaahkwe kaakaathswaahkwe nkotimeneehki"
 
 #. Context: 5610
 msgid "5610"
-msgstr "mataathswaahkwe kaakaathswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe kaakaathswaahkwe mataathswi "
 
 #. Context: 5611
 msgid "5611"
@@ -22872,7 +22872,7 @@ msgstr "mataathswaahkwe swaahteethswaahkwe nkotimeneehki"
 
 #. Context: 5710
 msgid "5710"
-msgstr "mataathswaahkwe swaahteethswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe swaahteethswaahkwe mataathswi "
 
 #. Context: 5711
 msgid "5711"
@@ -23276,7 +23276,7 @@ msgstr "mataathswaahkwe palaanwaahkwe nkotimeneehki"
 
 #. Context: 5810
 msgid "5810"
-msgstr "mataathswaahkwe palaanwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe palaanwaahkwe mataathswi "
 
 #. Context: 5811
 msgid "5811"
@@ -23676,7 +23676,7 @@ msgstr "mataathswaahkwe nkotimeneehkwaahkwe nkotimeneehki"
 
 #. Context: 5910
 msgid "5910"
-msgstr "mataathswaahkwe nkotimeneehkwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe nkotimeneehkwaahkwe mataathswi "
 
 #. Context: 5911
 msgid "5911"
@@ -24080,7 +24080,7 @@ msgstr "mataathswaahkwe nkotimeneehki"
 
 #. Context: 6010
 msgid "6010"
-msgstr "mataathswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe mataathswi "
 
 #. Context: 6011
 msgid "6011"
@@ -24480,7 +24480,7 @@ msgstr "mataathswaahkwe nkotwaahkwe nkotimeneehki"
 
 #. Context: 6110
 msgid "6110"
-msgstr "mataathswaahkwe nkotwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe nkotwaahkwe mataathswi "
 
 #. Context: 6111
 msgid "6111"
@@ -24880,7 +24880,7 @@ msgstr "mataathswaahkwe niišwaahkwe nkotimeneehki"
 
 #. Context: 6210
 msgid "6210"
-msgstr "mataathswaahkwe niišwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe niišwaahkwe mataathswi "
 
 #. Context: 6211
 msgid "6211"
@@ -25280,7 +25280,7 @@ msgstr "mataathswaahkwe nihswaahkwe nkotimeneehki"
 
 #. Context: 6310
 msgid "6310"
-msgstr "mataathswaahkwe nihswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe nihswaahkwe mataathswi "
 
 #. Context: 6311
 msgid "6311"
@@ -25680,7 +25680,7 @@ msgstr "mataathswaahkwe niiwaahkwe nkotimeneehki"
 
 #. Context: 6410
 msgid "6410"
-msgstr "mataathswaahkwe niiwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe niiwaahkwe mataathswi "
 
 #. Context: 6411
 msgid "6411"
@@ -26080,7 +26080,7 @@ msgstr "mataathswaahkwe yaalanwaahkwe nkotimeneehki"
 
 #. Context: 6510
 msgid "6510"
-msgstr "mataathswaahkwe yaalanwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe yaalanwaahkwe mataathswi "
 
 #. Context: 6511
 msgid "6511"
@@ -26480,7 +26480,7 @@ msgstr "mataathswaahkwe kaakaathswaahkwe nkotimeneehki"
 
 #. Context: 6610
 msgid "6610"
-msgstr "mataathswaahkwe kaakaathswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe kaakaathswaahkwe mataathswi "
 
 #. Context: 6611
 msgid "6611"
@@ -26880,7 +26880,7 @@ msgstr "mataathswaahkwe swaahteethswaahkwe nkotimeneehki"
 
 #. Context: 6710
 msgid "6710"
-msgstr "mataathswaahkwe swaahteethswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe swaahteethswaahkwe mataathswi "
 
 #. Context: 6711
 msgid "6711"
@@ -27284,7 +27284,7 @@ msgstr "mataathswaahkwe palaanwaahkwe nkotimeneehki"
 
 #. Context: 6810
 msgid "6810"
-msgstr "mataathswaahkwe palaanwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe palaanwaahkwe mataathswi "
 
 #. Context: 6811
 msgid "6811"
@@ -27684,7 +27684,7 @@ msgstr "mataathswaahkwe nkotimeneehkwaahkwe nkotimeneehki"
 
 #. Context: 6910
 msgid "6910"
-msgstr "mataathswaahkwe nkotimeneehkwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe nkotimeneehkwaahkwe mataathswi "
 
 #. Context: 6911
 msgid "6911"
@@ -28088,7 +28088,7 @@ msgstr "mataathswaahkwe nkotimeneehki"
 
 #. Context: 7010
 msgid "7010"
-msgstr "mataathswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe mataathswi "
 
 #. Context: 7011
 msgid "7011"
@@ -28488,7 +28488,7 @@ msgstr "mataathswaahkwe nkotwaahkwe nkotimeneehki"
 
 #. Context: 7110
 msgid "7110"
-msgstr "mataathswaahkwe nkotwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe nkotwaahkwe mataathswi "
 
 #. Context: 7111
 msgid "7111"
@@ -28888,7 +28888,7 @@ msgstr "mataathswaahkwe niišwaahkwe nkotimeneehki"
 
 #. Context: 7210
 msgid "7210"
-msgstr "mataathswaahkwe niišwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe niišwaahkwe mataathswi "
 
 #. Context: 7211
 msgid "7211"
@@ -29288,7 +29288,7 @@ msgstr "mataathswaahkwe nihswaahkwe nkotimeneehki"
 
 #. Context: 7310
 msgid "7310"
-msgstr "mataathswaahkwe nihswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe nihswaahkwe mataathswi "
 
 #. Context: 7311
 msgid "7311"
@@ -29688,7 +29688,7 @@ msgstr "mataathswaahkwe niiwaahkwe nkotimeneehki"
 
 #. Context: 7410
 msgid "7410"
-msgstr "mataathswaahkwe niiwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe niiwaahkwe mataathswi "
 
 #. Context: 7411
 msgid "7411"
@@ -30088,7 +30088,7 @@ msgstr "mataathswaahkwe yaalanwaahkwe nkotimeneehki"
 
 #. Context: 7510
 msgid "7510"
-msgstr "mataathswaahkwe yaalanwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe yaalanwaahkwe mataathswi "
 
 #. Context: 7511
 msgid "7511"
@@ -30488,7 +30488,7 @@ msgstr "mataathswaahkwe kaakaathswaahkwe nkotimeneehki"
 
 #. Context: 7610
 msgid "7610"
-msgstr "mataathswaahkwe kaakaathswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe kaakaathswaahkwe mataathswi "
 
 #. Context: 7611
 msgid "7611"
@@ -30888,7 +30888,7 @@ msgstr "mataathswaahkwe swaahteethswaahkwe nkotimeneehki"
 
 #. Context: 7710
 msgid "7710"
-msgstr "mataathswaahkwe swaahteethswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe swaahteethswaahkwe mataathswi "
 
 #. Context: 7711
 msgid "7711"
@@ -31292,7 +31292,7 @@ msgstr "mataathswaahkwe palaanwaahkwe nkotimeneehki"
 
 #. Context: 7810
 msgid "7810"
-msgstr "mataathswaahkwe palaanwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe palaanwaahkwe mataathswi "
 
 #. Context: 7811
 msgid "7811"
@@ -31692,7 +31692,7 @@ msgstr "mataathswaahkwe nkotimeneehkwaahkwe nkotimeneehki"
 
 #. Context: 7910
 msgid "7910"
-msgstr "mataathswaahkwe nkotimeneehkwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe nkotimeneehkwaahkwe mataathswi "
 
 #. Context: 7911
 msgid "7911"
@@ -32096,7 +32096,7 @@ msgstr "mataathswaahkwe nkotimeneehki"
 
 #. Context: 8010
 msgid "8010"
-msgstr "mataathswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe mataathswi "
 
 #. Context: 8011
 msgid "8011"
@@ -32496,7 +32496,7 @@ msgstr "mataathswaahkwe nkotwaahkwe nkotimeneehki"
 
 #. Context: 8110
 msgid "8110"
-msgstr "mataathswaahkwe nkotwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe nkotwaahkwe mataathswi "
 
 #. Context: 8111
 msgid "8111"
@@ -32896,7 +32896,7 @@ msgstr "mataathswaahkwe niišwaahkwe nkotimeneehki"
 
 #. Context: 8210
 msgid "8210"
-msgstr "mataathswaahkwe niišwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe niišwaahkwe mataathswi "
 
 #. Context: 8211
 msgid "8211"
@@ -33296,7 +33296,7 @@ msgstr "mataathswaahkwe nihswaahkwe nkotimeneehki"
 
 #. Context: 8310
 msgid "8310"
-msgstr "mataathswaahkwe nihswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe nihswaahkwe mataathswi "
 
 #. Context: 8311
 msgid "8311"
@@ -33696,7 +33696,7 @@ msgstr "mataathswaahkwe niiwaahkwe nkotimeneehki"
 
 #. Context: 8410
 msgid "8410"
-msgstr "mataathswaahkwe niiwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe niiwaahkwe mataathswi "
 
 #. Context: 8411
 msgid "8411"
@@ -34096,7 +34096,7 @@ msgstr "mataathswaahkwe yaalanwaahkwe nkotimeneehki"
 
 #. Context: 8510
 msgid "8510"
-msgstr "mataathswaahkwe yaalanwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe yaalanwaahkwe mataathswi "
 
 #. Context: 8511
 msgid "8511"
@@ -34496,7 +34496,7 @@ msgstr "mataathswaahkwe kaakaathswaahkwe nkotimeneehki"
 
 #. Context: 8610
 msgid "8610"
-msgstr "mataathswaahkwe kaakaathswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe kaakaathswaahkwe mataathswi "
 
 #. Context: 8611
 msgid "8611"
@@ -34896,7 +34896,7 @@ msgstr "mataathswaahkwe swaahteethswaahkwe nkotimeneehki"
 
 #. Context: 8710
 msgid "8710"
-msgstr "mataathswaahkwe swaahteethswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe swaahteethswaahkwe mataathswi "
 
 #. Context: 8711
 msgid "8711"
@@ -35300,7 +35300,7 @@ msgstr "mataathswaahkwe palaanwaahkwe nkotimeneehki"
 
 #. Context: 8810
 msgid "8810"
-msgstr "mataathswaahkwe palaanwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe palaanwaahkwe mataathswi "
 
 #. Context: 8811
 msgid "8811"
@@ -35700,7 +35700,7 @@ msgstr "mataathswaahkwe nkotimeneehkwaahkwe nkotimeneehki"
 
 #. Context: 8910
 msgid "8910"
-msgstr "mataathswaahkwe nkotimeneehkwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe nkotimeneehkwaahkwe mataathswi "
 
 #. Context: 8911
 msgid "8911"
@@ -36104,7 +36104,7 @@ msgstr "mataathswaahkwe nkotimeneehki"
 
 #. Context: 9010
 msgid "9010"
-msgstr "mataathswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe mataathswi "
 
 #. Context: 9011
 msgid "9011"
@@ -36504,7 +36504,7 @@ msgstr "mataathswaahkwe nkotwaahkwe nkotimeneehki"
 
 #. Context: 9110
 msgid "9110"
-msgstr "mataathswaahkwe nkotwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe nkotwaahkwe mataathswi "
 
 #. Context: 9111
 msgid "9111"
@@ -36904,7 +36904,7 @@ msgstr "mataathswaahkwe niišwaahkwe nkotimeneehki"
 
 #. Context: 9210
 msgid "9210"
-msgstr "mataathswaahkwe niišwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe niišwaahkwe mataathswi "
 
 #. Context: 9211
 msgid "9211"
@@ -37304,7 +37304,7 @@ msgstr "mataathswaahkwe nihswaahkwe nkotimeneehki"
 
 #. Context: 9310
 msgid "9310"
-msgstr "mataathswaahkwe nihswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe nihswaahkwe mataathswi "
 
 #. Context: 9311
 msgid "9311"
@@ -37704,7 +37704,7 @@ msgstr "mataathswaahkwe niiwaahkwe nkotimeneehki"
 
 #. Context: 9410
 msgid "9410"
-msgstr "mataathswaahkwe niiwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe niiwaahkwe mataathswi "
 
 #. Context: 9411
 msgid "9411"
@@ -38104,7 +38104,7 @@ msgstr "mataathswaahkwe yaalanwaahkwe nkotimeneehki"
 
 #. Context: 9510
 msgid "9510"
-msgstr "mataathswaahkwe yaalanwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe yaalanwaahkwe mataathswi "
 
 #. Context: 9511
 msgid "9511"
@@ -38504,7 +38504,7 @@ msgstr "mataathswaahkwe kaakaathswaahkwe nkotimeneehki"
 
 #. Context: 9610
 msgid "9610"
-msgstr "mataathswaahkwe kaakaathswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe kaakaathswaahkwe mataathswi "
 
 #. Context: 9611
 msgid "9611"
@@ -38904,7 +38904,7 @@ msgstr "mataathswaahkwe swaahteethswaahkwe nkotimeneehki"
 
 #. Context: 9710
 msgid "9710"
-msgstr "mataathswaahkwe swaahteethswaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe swaahteethswaahkwe mataathswi "
 
 #. Context: 9711
 msgid "9711"
@@ -39308,7 +39308,7 @@ msgstr "mataathswaahkwe palaanwaahkwe nkotimeneehki"
 
 #. Context: 9810
 msgid "9810"
-msgstr "mataathswaahkwe palaanwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe palaanwaahkwe mataathswi "
 
 #. Context: 9811
 msgid "9811"
@@ -39708,7 +39708,7 @@ msgstr "mataathswaahkwe nkotimeneehkwaahkwe nkotimeneehki"
 
 #. Context: 9910
 msgid "9910"
-msgstr "mataathswaahkwe nkotimeneehkwaahkwe mataathswi moochiaasi"
+msgstr "mataathswaahkwe nkotimeneehkwaahkwe mataathswi "
 
 #. Context: 9911
 msgid "9911"

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:identifier opf:scheme="calibre" id="calibre_id">2</dc:identifier>
+        <dc:identifier opf:scheme="uuid" id="uuid_id">565290cf-2d37-4503-aefc-754f5901dafe</dc:identifier>
+        <dc:title>Illinois and Miami Vocabulary and Lord's Prayer</dc:title>
+        <dc:creator opf:file-as="Anonymous" opf:role="aut">Anonymous</dc:creator>
+        <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (9.14.0) [https://calibre-ebook.com]</dc:contributor>
+        <dc:date>2019-09-15T21:05:07+00:00</dc:date>
+        <dc:description>9 p. ; 26 cm
+Caption title</dc:description>
+        <dc:publisher>John G. Shea</dc:publisher>
+        <dc:identifier opf:scheme="ISBN">9783337747398</dc:identifier>
+        <dc:identifier opf:scheme="GOOGLE">Dgw_zQEACAAJ</dc:identifier>
+        <dc:identifier opf:scheme="ACCESS URL">http://archive.org/details/illinoismiamivo00</dc:identifier>
+        <dc:identifier opf:scheme="ARK">ark:/13960/t2g80rq8t</dc:identifier>
+        <dc:language>eng</dc:language>
+        <dc:language>mia</dc:language>
+        <dc:subject>etc</dc:subject>
+        <dc:subject>Illinois language -- Texts</dc:subject>
+        <dc:subject>Illinois language</dc:subject>
+        <dc:subject>vocabularies</dc:subject>
+        <dc:subject>Illinois language -- Glossaries</dc:subject>
+        <dc:subject>Miami language (Ind. and Okla.)</dc:subject>
+        <dc:subject>Miami language (Ind. and Okla.) -- Texts</dc:subject>
+        <dc:subject>Texts</dc:subject>
+        <dc:subject>Miami language (Ind. and Okla.) -- Glossaries</dc:subject>
+        <dc:subject>Glossaries</dc:subject>
+        <dc:subject>oclc:31285279</dc:subject>
+        <dc:subject>doi:10.5479/sil.502673.39088008046138</dc:subject>
+        <meta name="calibre:timestamp" content="2026-04-19T22:22:15+00:00"/>
+        <meta name="calibre:title_sort" content="Illinois and Miami Vocabulary and Lord's Prayer"/>
+    </metadata>
+    <guide>
+        <reference type="cover" title="Cover" href="Illinois and Miami Vocabulary and Lord's Prayer - Anonymous.jpg"/>
+    </guide>
+</package>
