@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="MyaamiaAligner" creationtoolversion="1.0" datatype="PlainText" segtype="sentence" adminlang="en-US" srclang="fr" o-tmf="ABC"/>
+  <body>
+  <tu tuid="mya_phrase_001" datatype="sentence">
+  <!-- Book Provenance Link References mapped from your OPF -->
+  <prop type="x-source-title">Illinois and Miami Vocabulary and Lord's Prayer</prop>
+  <prop type="x-source-author">Anonymous (Compiled by John G. Shea)</prop>
+  <prop type="x-source-date">1891 (Digital Core Archive: 2019-09-15)</prop>
+  <prop type="x-source-publisher">John G. Shea</prop>
+  <prop type="x-source-uuid">565290cf-2d37-4503-aefc-754f5901dafe</prop>
+  
+  <!-- Online Verification Catalog Records -->
+  <prop type="x-oclc">31285279</prop>
+  <prop type="x-doi">10.5479/sil.502673.39088008046138</prop>
+  <prop type="x-ark">ark:/13960/t2g80rq8t</prop>
+  <prop type="x-source-url">http://archive.org</prop>
+    <tu tuid="mya_phrase_001" datatype="sentence">
+      <prop type="x-context">Historic Missions Corpus (1891)</prop>
+      <tuv xml:lang="fr"><seg>Je m'en vais dormir</seg></tuv>
+      <tuv xml:lang="en"><seg>I am going to sleep</seg></tuv>
+      <tuv xml:lang="mia"><seg>neessa-cata</seg></tuv>
+    </tu>
+    <tu tuid="mya_phrase_002" datatype="sentence">
+      <prop type="x-context">Historic Missions Corpus (1891)</prop>
+      <tuv xml:lang="fr"><seg>Allons ensemble à la chasse</seg></tuv>
+      <tuv xml:lang="en"><seg>let us go hunting together</seg></tuv>
+      <tuv xml:lang="mia"><seg>mamaOUÉNATON AMAOÙÎKA</seg></tuv>
+    </tu>
+    <tu tuid="mya_phrase_003" datatype="sentence">
+      <prop type="x-context">Historic Missions Corpus (1891)</prop>
+      <tuv xml:lang="fr"><seg>Dînons ensemble</seg></tuv>
+      <tuv xml:lang="en"><seg>let us dine together</seg></tuv>
+      <tuv xml:lang="mia"><seg>mamaoué micitaoui</seg></tuv>
+    </tu>
+    <tu tuid="mya_phrase_004" datatype="sentence">
+      <prop type="x-context">Historic Missions Corpus (1891)</prop>
+      <tuv xml:lang="fr"><seg>Pourrais-je rester chez vous cette nuit ?</seg></tuv>
+      <tuv xml:lang="en"><seg>May I stay with you to-night ?</seg></tuv>
+      <tuv xml:lang="mia"><seg>Ouahi nine pacata inoki</seg></tuv>
+    </tu>
+    <tu tuid="mya_phrase_005" datatype="sentence">
+      <prop type="x-context">Historic Missions Corpus (1891)</prop>
+      <tuv xml:lang="fr"><seg>Combien voulez vous de cela ?</seg></tuv>
+      <tuv xml:lang="en"><seg>How much of this do you wish ?</seg></tuv>
+      <tuv xml:lang="mia"><seg>TAMI TASSU CATAMEHMANA</seg></tuv>
+    </tu>
+    <tu tuid="mya_phrase_006" datatype="sentence">
+      <prop type="x-context">Historic Missions Corpus (1891)</prop>
+      <tuv xml:lang="fr"><seg>C'est trop cher</seg></tuv>
+      <tuv xml:lang="en"><seg>It is too dear</seg></tuv>
+      <tuv xml:lang="mia"><seg>Ouissa kinantotah</seg></tuv>
+    </tu>
+    <tu tuid="mya_phrase_007" datatype="sentence">
+      <prop type="x-context">Historic Missions Corpus (1891)</prop>
+      <tuv xml:lang="fr"><seg>Tu es avare</seg></tuv>
+      <tuv xml:lang="en"><seg>you are stingy</seg></tuv>
+      <tuv xml:lang="mia"><seg>Issoukiré</seg></tuv>
+    </tu>
+    <tu tuid="mya_phrase_008" datatype="sentence">
+      <prop type="x-context">Historic Missions Corpus (1891)</prop>
+      <tuv xml:lang="fr"><seg>Je vous remercie</seg></tuv>
+      <tuv xml:lang="en"><seg>I thank you</seg></tuv>
+      <tuv xml:lang="mia"><seg>Ouaouahinou ckitacam</seg></tuv>
+    </tu>
+    <tu tuid="mya_phrase_009" datatype="sentence">
+      <prop type="x-context">Historic Missions Corpus (1891)</prop>
+      <tuv xml:lang="fr"><seg>Va-t-en</seg></tuv>
+      <tuv xml:lang="en"><seg>get out</seg></tuv>
+      <tuv xml:lang="mia"><seg>man-ciarou r</seg></tuv>
+    </tu>
+    <tu tuid="mya_phrase_010" datatype="sentence">
+      <prop type="x-context">Historic Missions Corpus (1891)</prop>
+      <tuv xml:lang="fr"><seg>Tous les hommes mourront</seg></tuv>
+      <tuv xml:lang="en"><seg>All men will die</seg></tuv>
+      <tuv xml:lang="mia"><seg>Ceheki kiné ESSEMINA</seg></tuv>
+    </tu>
+    <tu tuid="mya_phrase_011" datatype="sentence">
+      <prop type="x-context">Historic Missions Corpus (1891)</prop>
+      <tuv xml:lang="fr"><seg>Connais-tu le bon Dieu ?</seg></tuv>
+      <tuv xml:lang="en"><seg>Dost thou know God ?</seg></tuv>
+      <tuv xml:lang="mia"><seg>Enkoh kisseMANETOU RETAMA</seg></tuv>
+    </tu>
+    <tu tuid="mya_phrase_012" datatype="sentence">
+      <prop type="x-context">Historic Missions Corpus (1891)</prop>
+      <tuv xml:lang="fr"><seg>Je ne le connais pas</seg></tuv>
+      <tuv xml:lang="en"><seg>I do not know him</seg></tuv>
+      <tuv xml:lang="mia"><seg>Enkikken reTANSON</seg></tuv>
+    </tu>
+    <tu tuid="mya_phrase_013" datatype="sentence">
+      <prop type="x-context">Historic Missions Corpus (1891)</prop>
+      <tuv xml:lang="fr"><seg>Je le connais</seg></tuv>
+      <tuv xml:lang="en"><seg>I know him</seg></tuv>
+      <tuv xml:lang="mia"><seg>h ! h ! enkikken retan</seg></tuv>
+    </tu>
+    <tu tuid="mya_phrase_014" datatype="sentence">
+      <prop type="x-context">Historic Missions Corpus (1891)</prop>
+      <tuv xml:lang="fr"><seg>Etes-vous de la prière ?</seg></tuv>
+      <tuv xml:lang="en"><seg>Do you belong to the prayer ?</seg></tuv>
+      <tuv xml:lang="mia"><seg>Encouh kirà narneak</seg></tuv>
+    </tu>
+    <tu tuid="mya_phrase_015" datatype="sentence">
+      <prop type="x-context">Historic Missions Corpus (1891)</prop>
+      <tuv xml:lang="fr"><seg>Pourquoi ne pries-tu pas Dieu ?</seg></tuv>
+      <tuv xml:lang="en"><seg>Why dost thou not pray to God?</seg></tuv>
+      <tuv xml:lang="mia"><seg>KEKOANÉ ONCIANAMEA SEON</seg></tuv>
+    </tu>
+    <tu tuid="mya_phrase_016" datatype="sentence">
+      <prop type="x-context">Historic Missions Corpus (1891)</prop>
+      <tuv xml:lang="fr"><seg>Etes-vous baptisé ?</seg></tuv>
+      <tuv xml:lang="en"><seg>Are you baptised?</seg></tuv>
+      <tuv xml:lang="mia"><seg>Enkou sa separekok</seg></tuv>
+    </tu>
+    <tu tuid="mya_phrase_017" datatype="sentence">
+      <prop type="x-context">Historic Missions Corpus (1891)</prop>
+      <tuv xml:lang="fr"><seg>Mais c'est inutile, parce qu'il ne prie pas Dieu</seg></tuv>
+      <tuv xml:lang="en"><seg>But it is useless because he does not pray to God</seg></tuv>
+      <tuv xml:lang="mia"><seg>h ! h ! sa separekok</seg></tuv>
+    </tu>
+    <tu tuid="mya_phrase_018" datatype="sentence">
+      <prop type="x-context">Historic Missions Corpus (1891)</prop>
+      <tuv xml:lang="fr"><seg>Ne pensez-vous pas à la mort?</seg></tuv>
+      <tuv xml:lang="en"><seg>Do you not think of death?</seg></tuv>
+      <tuv xml:lang="mia"><seg>NEPÉ AN KI REPOASSÈ</seg></tuv>
+    </tu>
+    <tu tuid="mya_phrase_019" datatype="sentence">
+      <prop type="x-context">Historic Missions Corpus (1891)</prop>
+      <tuv xml:lang="fr"><seg>Il ne faut point s'enivrer</seg></tuv>
+      <tuv xml:lang="en"><seg>You must not get drunk</seg></tuv>
+      <tuv xml:lang="mia"><seg>kataki onske bi keko</seg></tuv>
+    </tu>
+    <tu tuid="mya_phrase_020" datatype="sentence">
+      <prop type="x-context">Historic Missions Corpus (1891)</prop>
+      <tuv xml:lang="fr"><seg>Je suis blanc, rouge, jaune</seg></tuv>
+      <tuv xml:lang="en"><seg>I am white, red, yellow</seg></tuv>
+      <tuv xml:lang="mia"><seg>Nivoa BISSÉ, MISKOI, NASSAROAK</seg></tuv>
+    </tu>
+    <tu tuid="mya_phrase_021" datatype="sentence">
+      <prop type="x-context">Historic Missions Corpus (1891)</prop>
+      <tuv xml:lang="fr"><seg>Je suis noir, bleu, vert</seg></tuv>
+      <tuv xml:lang="en"><seg>I am black, blue, green</seg></tuv>
+      <tuv xml:lang="mia"><seg>mac ate ossi, OSKIPAKIA</seg></tuv>
+    </tu>
+    <tu tuid="mya_phrase_022" datatype="sentence">
+      <prop type="x-context">Historic Missions Corpus (1891)</prop>
+      <tuv xml:lang="fr"><seg>Notre père faites nous la charité</seg></tuv>
+      <tuv xml:lang="en"><seg>Our father do us the charity</seg></tuv>
+      <tuv xml:lang="mia"><seg>Kissemenetou kittïminaouero</seg></tuv>
+    </tu>
+    <tu tuid="mya_phrase_023" datatype="sentence">
+      <prop type="x-context">Historic Missions Corpus (1891)</prop>
+      <tuv xml:lang="fr"><seg>Qu'as tu a vendre?</seg></tuv>
+      <tuv xml:lang="en"><seg>What have you to sell</seg></tuv>
+      <tuv xml:lang="mia"><seg>keckoneia etaVOEIAN</seg></tuv>
+    </tu>
+    <tu tuid="mya_phrase_024" datatype="sentence">
+      <prop type="x-context">Historic Missions Corpus (1891)</prop>
+      <tuv xml:lang="fr"><seg>Une paire de souliers</seg></tuv>
+      <tuv xml:lang="en"><seg>a pair of shoes</seg></tuv>
+      <tuv xml:lang="mia"><seg>makisinon kitatamiré</seg></tuv>
+    </tu>
+    <tu tuid="mya_phrase_025" datatype="sentence">
+      <prop type="x-context">Historic Missions Corpus (1891)</prop>
+      <tuv xml:lang="fr"><seg>Il ne m'a rien donné</seg></tuv>
+      <tuv xml:lang="en"><seg>he has given me nothing</seg></tuv>
+      <tuv xml:lang="mia"><seg>nimiri cossi ouikikou</seg></tuv>
+    </tu>
+  </body>
+</tmx>
