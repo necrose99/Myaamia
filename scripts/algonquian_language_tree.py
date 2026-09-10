@@ -32,7 +32,7 @@ ALGONQUIAN_FAMILY = {
                     "mia": {"name": "Miami-Illinois", "type": "language", "note": "⭐ YOUR FOCUS"},
                     "sac": {"name": "Meskwaki (Fox)", "type": "language", "note": "⭐ YOUR FOCUS"},
                     "kic": {"name": "Kickapoo", "type": "language"},
-                    "sha": {"name": "Shawnee", "type": "language"},
+                    "sjw": {"name": "Shawnee", "type": "language"},
                 }
             },
             # Eastern Branch
