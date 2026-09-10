@@ -11,7 +11,7 @@ set shell := ["bash", "-euo", "pipefail", "-c"]
 venv_dir      := env_var_or_default("WEBLATE_VENV", env_var("HOME") + "/weblate-env")
 admin_email   := env_var_or_default("WEBLATE_ADMIN_EMAIL", "changeme@")
 algic_codes_url := "https://github.com/necrose99/Myaamia/blob/master/scripts/algic_codes.txt
-"
+https://raw.githubusercontent.com/necrose99/Myaamia/refs/heads/master/Weblate.machinery.base/add_algic_languages.py"
 
 default:
     just --list
