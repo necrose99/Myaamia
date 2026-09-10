@@ -1,9 +1,28 @@
 https://lemon-model.net/index.html
+https://www.w3.org/TR/rdf-sparql-query/ subset of rdf
+ttl or rdf xml 
+https://github.com/necrose99/Myaamia/XSLT... area has xslt to transmogrification of formats... 
 
+
+https://github.com/necrose99/Myaamia/ tmx ttl 
 
 https://protege.stanford.edu/ gui for newer language tools
 
 https://vocbench.uniroma2.it/  gui for.ttl files also...
+
+these support Ttl turtle files made from TMX and ilda-myaamia dictionary... online in html...  html to tmx xillf etc...
+
+these contain  verbs etc ... in ttl format... 
+eventually morphines ie single plural ... the grammatical DNA of a language... 
+ttl rdf is easily python3  manipulated for data science pipelines... 
+
+and nls models... createation... grows more and more accurate with better formatting and tagging ttl or lift formats are definitely for linguists and or datascince or ai modeling..
+
+thiers an official ILDA app... but NLS Models like libretranslate Argos 
+Firefox Google Microsoft uses some simular... if they could bake smaller models into android or IOS iihia.... ok powerful.... 
+
+
+some of SIL tools are older....  serviceable ... if not slightly challenging sometimes cumbersome to use... 
 
 
 SIL Global addresses the lack of formal ontological models for language-related
