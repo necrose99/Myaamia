@@ -1,4 +1,5 @@
 https://lemon-model.net/index.html
+
 https://www.w3.org/TR/rdf-sparql-query/ subset of rdf
 ttl or rdf xml 
 https://github.com/necrose99/Myaamia/XSLT... area has xslt to transmogrification of formats... 
