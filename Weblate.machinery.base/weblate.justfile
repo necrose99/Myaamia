@@ -10,7 +10,8 @@ set shell := ["bash", "-euo", "pipefail", "-c"]
 
 venv_dir      := env_var_or_default("WEBLATE_VENV", env_var("HOME") + "/weblate-env")
 admin_email   := env_var_or_default("WEBLATE_ADMIN_EMAIL", "changeme@")
-algic_codes_url := "https://github.com/necrose99/Myaamia/blob/master/scripts/algic_codes.txt"
+algic_codes_url := "https://github.com/necrose99/Myaamia/blob/master/scripts/algic_codes.txt
+"
 
 default:
     just --list
@@ -77,8 +78,7 @@ fetch-algic-codes:
 # NOTE: scripts/add_algic_languages.py is a placeholder — point this at
 # whichever python3 hack script actually reads algic_codes.txt and calls
 # into Django's language model / Weblate's language management commands.
-patch-algic-codes: fetch-algic-codes
-    {{venv_dir}}/bin/python scripts/add_algic_languages.py algic_codes.txt
+python3 add_algic_languages.py algic_codes.txt --settings /path/to/settings.py
 
 # 9. Restart the Weblate/Django service — adjust to however you actually run it
 restart:
