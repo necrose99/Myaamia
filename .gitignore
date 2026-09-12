@@ -7,3 +7,14 @@ C:\Users\black\Dropbox\PC (2)\Documents\GitHub\Myaamia\node_modules
 *.mp3
 *.pyc
 /webcorpus
+*.pt
+*.onnx_data
+/models/Ministral-3B-Instruct/onnx
+*.onnx
+*.pt
+*.argosmodel
+*.pyc
+*.safetensors
+*.bin
+*.pt
+
