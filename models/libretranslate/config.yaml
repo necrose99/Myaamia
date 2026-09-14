@@ -1,0 +1,33 @@
+save_data: split_data/example
+src_vocab: split_data/example.vocab.src
+tgt_vocab: split_data/example.vocab.tgt
+
+data:
+  corpus_1:
+    path_src: split_data/src-train.txt
+    path_tgt: split_data/tgt-train.txt
+  valid:
+    path_src: split_data/src-val.txt
+    path_tgt: split_data/tgt-val.txt
+
+src_vocab_size: 4000
+tgt_vocab_size: 4000
+
+# Explicit Transformer architecture definitions
+encoder_type: transformer
+decoder_type: transformer
+position_encoding: true
+
+# Corrected parameter keys for OpenNMT-py alignment
+layers: 4
+heads: 8
+rnn_size: 512
+word_vec_size: 512
+transformer_ff: 2048
+
+save_model: model_transformer
+save_checkpoint_steps: 1000
+train_steps: 5000
+valid_steps: 1000
+world_size: 1
+gpu_ranks: []

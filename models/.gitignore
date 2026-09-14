@@ -1,0 +1,14 @@
+# Ignore all raw model files across your project directories
+*.onnx
+*.pt
+*.argosmodel
+*.safetensors
+*.bin
+*.chk
+
+# Keep your code repository clean by ignoring the entire download workspace
+models/Ministral-3B-Instruct/
+
+# Explicitly allow your custom fine-tuned or tracking files if needed later
+!models/Ministral-3B-Instruct/onnx/miami-illinois.onnx
+!models/Ministral-3B-Instruct/onnx/miami-illinois.gguf
