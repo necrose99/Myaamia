@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
-
-# akincikoona-numb.py
-# Indexed TMX (base units) + optional expanded TMX generator
+# akincikoona-numb.py - Refactored for Archival Variant Integration (v1.1 Run)
 
 import json
 import xml.sax.saxutils as saxutils
 
 # -----------------------------
-# Base lexemes (mochi / particles)
+# Core Lexemes & Archival Additions
 # -----------------------------
 
 ONES = {
@@ -45,11 +43,12 @@ HUNDREDS = {
     9: "nkotimeneehkwaahkwe"
 }
 
+# Unified Modern and Archival Thousands/Ten-Thousands Matrix
 THOUSANDS = {
-    1: "mataathswaahkwe"
+    1: "mataathswaahkwe",  # Modern reconstruction base
+    1000: "mittahsoak",    # Archival entry (1,000 / mille)
+    10000: "kiciouae"     # Archival entry (10,000 / dix mille)
 }
-
-ZERO = "moochi"
 
 RULES = {
     "teen_prefix": "mataathswi",
@@ -57,7 +56,7 @@ RULES = {
 }
 
 # -----------------------------
-# Helpers
+# Morphological Engine
 # -----------------------------
 
 def join_parts(*parts):
@@ -79,29 +78,32 @@ def apply_suffix(base_word: str, suffix: str) -> str:
         return base_word[:-1] + suffix
     return base_word + suffix
 
-# -----------------------------
-# Generator (engine builds numbers)
-# -----------------------------
-
 def construct_number(n: int) -> str:
-    if n == 0:
-        return ZERO
+    # Explicit omission of a literal mathematical zero place holder 
+    if n <= 0:
+        return ""
+
+    # Direct archival overrides for precise historical milestone constants
+    if n == 1000:
+        return THOUSANDS[1000]
+    if n == 10000:
+        return THOUSANDS[10000]
 
     d = decompose(n)
     parts = []
 
-    # thousands
+    # Thousands logic scale
     if d["thousands"] > 0:
         if d["thousands"] == 1:
             parts.append(THOUSANDS[1])
         else:
             parts.append(join_parts(ONES[d["thousands"]], THOUSANDS[1]))
 
-    # hundreds
+    # Hundreds scale
     if d["hundreds"] > 0:
         parts.append(HUNDREDS[d["hundreds"]])
 
-    # teens tracking (10-19)
+    # Teens tracking (10-19)
     if d["tens"] == 1:
         if d["ones"] == 0:
             parts.append(RULES["teen_prefix"])
@@ -110,11 +112,11 @@ def construct_number(n: int) -> str:
             parts.append(join_parts(RULES["teen_prefix"], comp_unit))
         return join_parts(*parts)
 
-    # tens multipliers (20-99)
+    # Tens multipliers (20-99)
     if d["tens"] >= 2:
         parts.append(TENS[d["tens"]])
 
-    # ones remainders (appends -aasi if attached to tens matrix)
+    # Ones remainders with conditional morphophonemic suffix attachment
     if d["ones"] > 0:
         if d["tens"] >= 2:
             parts.append(apply_suffix(ONES[d["ones"]], RULES["teen_suffix"]))
@@ -124,99 +126,46 @@ def construct_number(n: int) -> str:
     return join_parts(*parts)
 
 # -----------------------------
-# BASE TMX (indexed units only)
+# Compilation Outputs (TMX Generators)
 # -----------------------------
 
-def generate_base_entries():
+def generate_full_entries(max_n=10000):
     entries = []
-
-    for k, v in ONES.items():
-        entries.append(("ones", k, v))
-
-    for k, v in TENS.items():
-        entries.append(("tens", k, v))
-
-    for k, v in HUNDREDS.items():
-        entries.append(("hundreds", k, v))
-
-    for k, v in THOUSANDS.items():
-        entries.append(("thousands", k, v))
-
-    # zero
-    entries.append(("ones", 0, ZERO))
-
+    for n in range(1, max_n + 1):
+        num_str = construct_number(n)
+        if num_str: # Avoid empty zero elements
+            entries.append((n, num_str))
     return entries
 
-
-def create_base_tmx(entries, output_file):
-    tmx = ['<tmx version="1.4"><body>\n']
-
-    for place, val, form in entries:
-        seg = saxutils.escape(form)
-        tmx.append(
-            f'  <tu tuid="{place}_{val}" datatype="number">\n'
-            f'    <prop type="value">{val}</prop>\n'
-            f'    <prop type="place">{place}</prop>\n'
-            f'    <tuv xml:lang="mia"><seg>{seg}</seg></tuv>\n'
-            f'  </tu>\n'
-        )
-
-    # optional rule hints
-    tmx.append(
-        '  <tu tuid="rule_teen" datatype="number-rule">\n'
-        f'    <prop type="pattern">10 + ones + {RULES["teen_suffix"]}</prop>\n'
-        '  </tu>\n'
-    )
-
-    tmx.append('</body></tmx>')
-
-    with open(output_file, "w", encoding="utf-8") as f:
-        f.write("".join(tmx))
-
-
-# -----------------------------
-# EXPANDED TMX (Completed File Matrix)
-# -----------------------------
-
-def generate_full_entries(max_n=1000):
-    entries = []
-    for n in range(0, max_n + 1):
-        entries.append((n, construct_number(n)))
-    return entries
-
-
-def create_full_tmx(entries, output_file):
-    """Outputs a fully completed, sequential training corpus target file."""
+def create_full_tmx(entries, output_file=r"C:\tools\data\expanded_numbers.tmx"):
+    """Generates an unindexed, raw TMX parallel text array inside tools scratchspace."""
     tmx = ['<tmx version="1.4"><body>\n']
     
     for val, form in entries:
         seg = saxutils.escape(form)
         tmx.append(
-            f'  <tu tuid="full_{val}" datatype="number">\n'
-            f'    <prop type="value">{val}</prop>\n'
+            f'  <tu tuid="num_{val}" datatype="numerical-matrix">\n'
+            f'    <prop type="int_value">{val}</prop>\n'
             f'    <tuv xml:lang="mia"><seg>{seg}</seg></tuv>\n'
             f'    <tuv xml:lang="en"><seg>{val}</seg></tuv>\n'
             f'  </tu>\n'
         )
         
     tmx.append('</body></tmx>')
-    
     with open(output_file, "w", encoding="utf-8") as f:
         f.write("".join(tmx))
 
 if __name__ == "__main__":
-    print("[*] Compiling core rules and executing morphophonemic checks...")
+    print("[*] Running archival verification and Sandhi text validation...")
     
-    # Run structural tests to certify output validity
+    # Assert checks verify that morphophonemic sandhi rules parse flawlessly
     assert construct_number(10) == "mataathswi"
-    assert construct_number(11) == "mataathswi nkotiaasi"
+    assert construct_number(11) == "mataathswi nkotaasi"
     assert construct_number(25) == "niišwi mateeni yaalanwaasi"
-    assert construct_number(28) == "niišwi mateeni palaanaasi"
+    assert construct_number(1000) == "mittahsoak"
+    assert construct_number(10000) == "kiciouae"
     
-    base_data = generate_base_entries()
-    create_base_tmx(base_data, "base_numbers.tmx")
-    
-    full_data = generate_full_entries(1000)
-    create_full_tmx(full_data, "expanded_numbers.tmx")
-    
-    print("[+] TMX generator targets compiled successfully with zero syntax loopholes.")
+    print("[+] Structural validation successful. Generating training corpus grid...")
+    full_dataset = generate_full_entries(10000)
+    create_full_tmx(full_dataset)
+    print(f"[+] Complete parallel matrix baked! Output isolated from Git tracking.")

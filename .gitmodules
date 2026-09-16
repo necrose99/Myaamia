@@ -1,3 +1,9 @@
 [submodule "data_shards"]
 	path = data_shards
 	url = https://github.com/necrose99/Myaamia-data.git
+[submodule "algic_ibus"]
+	path = algic_ibus
+	url = https://github.com/necrose99/algic_ibus
+[submodule "windows_algic_ime"]
+	path = windows_algic_ime
+	url = https://github.com/necrose99/windows_algic_ime

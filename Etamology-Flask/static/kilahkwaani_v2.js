@@ -77,7 +77,7 @@ const Kilahkwaani = (() => {
       female:  { lang: 'it-IT', pitch: 1.05, rate: 0.78, voiceHint: null },
       neutral: { lang: 'it-IT', pitch: 0.90, rate: 0.80, voiceHint: null },
     },
-    sha: {
+    sjw: {
       male:    { lang: 'it-IT', pitch: 0.82, rate: 0.83, voiceHint: null },
       female:  { lang: 'it-IT', pitch: 1.10, rate: 0.81, voiceHint: null },
       neutral: { lang: 'it-IT', pitch: 0.96, rate: 0.83, voiceHint: null },
@@ -315,7 +315,7 @@ const Kilahkwaani = (() => {
   /**
    * Speak a word in the given language.
    * @param {string} text      — orthographic form (any script)
-   * @param {string} lang      — ISO 639-3 code: mia, kic, pot, sac, cre, sha
+   * @param {string} lang      — ISO 639-3 code: mia, kic, pot, sac, cre, sjw
    * @param {string} [gender]  — 'male' | 'female' | 'neutral'
    * @param {string} [ipa]     — pre-computed IPA (skip conversion if provided)
    */

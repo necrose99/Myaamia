@@ -289,7 +289,7 @@ msgid "corn"
 msgstr ""
 
 #. Scientific Name:  Fagus grandifolia Ehrh. "shashecomise, beech tree" 
-#. "beech, sha-sha-com-mindj" https://mc.miamioh.edu/mahkihkiwa/species/4589
+#. "beech, sjw-sjw-com-mindj" https://mc.miamioh.edu/mahkihkiwa/species/4589
 #: loco:666fbdab32b45c33930e5592
 msgctxt " American beech tree; Fagus grandifolia Ehrh."
 msgid "beech tree"

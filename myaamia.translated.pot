@@ -1,0 +1,677 @@
+# Loco Gettext template
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Myaamia\n"
+"Report-Msgid-Bugs-To: you@example.com\n"
+"POT-Creation-Date: 2023-07-03 12:00+0000\n"
+"PO-Revision-Date: 2026-09-15 22:21-0500\n"
+"Last-Translator: \n"
+"Language-Team: https://mc.miamioh.edu/ilda-myaamia/dictionary\n"
+"Language: mia\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.9\n"
+"X-Loco-Source-Locale: en-US\n"
+"X-Loco-Project-Id: 159248\n"
+"X-Loco-Api-Version: 1.0.28 20240611-1\n"
+"X-Poedit-Flags-xgettext: --add-comments\n"
+
+msgid "1"
+msgstr ""
+
+msgid "2"
+msgstr ""
+
+msgid "3"
+msgstr ""
+
+msgid "4"
+msgstr ""
+
+msgid "5"
+msgstr ""
+
+msgid "6"
+msgstr ""
+
+msgid "7"
+msgstr ""
+
+msgid "8"
+msgstr ""
+
+msgid "9"
+msgstr ""
+
+msgid "10"
+msgstr ""
+
+msgid "11"
+msgstr ""
+
+msgid "12"
+msgstr ""
+
+msgid "13"
+msgstr ""
+
+msgid "14"
+msgstr ""
+
+msgid "15"
+msgstr ""
+
+msgid "16"
+msgstr ""
+
+msgid "17"
+msgstr ""
+
+msgid "18"
+msgstr ""
+
+msgid "19"
+msgstr ""
+
+msgid "20"
+msgstr ""
+
+msgid "21"
+msgstr ""
+
+msgid "22"
+msgstr ""
+
+msgid "23"
+msgstr ""
+
+msgid "24"
+msgstr ""
+
+msgid "25"
+msgstr ""
+
+msgid "26"
+msgstr ""
+
+msgid "27"
+msgstr ""
+
+msgid "28"
+msgstr ""
+
+msgid "29"
+msgstr ""
+
+msgid "30"
+msgstr ""
+
+msgid "31"
+msgstr ""
+
+msgid "32"
+msgstr ""
+
+msgid "33"
+msgstr ""
+
+msgid "34"
+msgstr ""
+
+msgid "35"
+msgstr ""
+
+msgid "36"
+msgstr ""
+
+msgid "37"
+msgstr ""
+
+msgid "38"
+msgstr ""
+
+msgid "39"
+msgstr ""
+
+msgid "40"
+msgstr ""
+
+msgid "41"
+msgstr ""
+
+msgid "42"
+msgstr ""
+
+msgid "43"
+msgstr ""
+
+msgid "44"
+msgstr ""
+
+msgid "45"
+msgstr ""
+
+msgid "46"
+msgstr ""
+
+msgid "47"
+msgstr ""
+
+msgid "48"
+msgstr ""
+
+msgid "49"
+msgstr ""
+
+msgid "50"
+msgstr ""
+
+msgid "51"
+msgstr ""
+
+msgid "52"
+msgstr ""
+
+msgid "53"
+msgstr ""
+
+msgid "54"
+msgstr ""
+
+msgid "55"
+msgstr ""
+
+msgid "56"
+msgstr ""
+
+msgid "57"
+msgstr ""
+
+msgid "58"
+msgstr ""
+
+msgid "59"
+msgstr ""
+
+msgid "60"
+msgstr ""
+
+msgid "61"
+msgstr ""
+
+msgid "62"
+msgstr ""
+
+msgid "63"
+msgstr ""
+
+msgid "64"
+msgstr ""
+
+msgid "65"
+msgstr ""
+
+msgid "66"
+msgstr ""
+
+msgid "67"
+msgstr ""
+
+msgid "68"
+msgstr ""
+
+msgid "69"
+msgstr ""
+
+msgid "70"
+msgstr ""
+
+msgid "71"
+msgstr ""
+
+msgid "72"
+msgstr ""
+
+msgid "73"
+msgstr ""
+
+msgid "74"
+msgstr ""
+
+msgid "75"
+msgstr ""
+
+msgid "76"
+msgstr ""
+
+msgid "77"
+msgstr ""
+
+msgid "78"
+msgstr ""
+
+msgid "79"
+msgstr ""
+
+msgid "80"
+msgstr ""
+
+msgid "81"
+msgstr ""
+
+msgid "82"
+msgstr ""
+
+msgid "83"
+msgstr ""
+
+msgid "84"
+msgstr ""
+
+msgid "85"
+msgstr ""
+
+msgid "86"
+msgstr ""
+
+msgid "87"
+msgstr ""
+
+msgid "88"
+msgstr ""
+
+msgid "89"
+msgstr ""
+
+msgid "90"
+msgstr ""
+
+msgid "91"
+msgstr ""
+
+msgid "92"
+msgstr ""
+
+msgid "93"
+msgstr ""
+
+msgid "94"
+msgstr ""
+
+msgid "95"
+msgstr ""
+
+msgid "96"
+msgstr ""
+
+msgid "97"
+msgstr ""
+
+msgid "98"
+msgstr ""
+
+msgid "99"
+msgstr ""
+
+msgid "100"
+msgstr ""
+
+msgid "200"
+msgstr ""
+
+msgid "300"
+msgstr ""
+
+msgid "400"
+msgstr ""
+
+msgid "500"
+msgstr ""
+
+msgid "600"
+msgstr ""
+
+msgid "700"
+msgstr ""
+
+msgid "800"
+msgstr ""
+
+msgid "900"
+msgstr ""
+
+msgid "1000"
+msgstr ""
+
+msgid "2000"
+msgstr ""
+
+msgid "3000"
+msgstr ""
+
+msgid "4000"
+msgstr ""
+
+msgid "5000"
+msgstr ""
+
+msgid "6000"
+msgstr ""
+
+msgid "7000"
+msgstr ""
+
+msgid "8000"
+msgstr ""
+
+msgid "9000"
+msgstr ""
+
+msgid "10000"
+msgstr ""
+
+msgid "11000"
+msgstr ""
+
+msgid "12000"
+msgstr ""
+
+msgid "13000"
+msgstr ""
+
+msgid "14000"
+msgstr ""
+
+msgid "15000"
+msgstr ""
+
+msgid "16000"
+msgstr ""
+
+msgid "17000"
+msgstr ""
+
+msgid "18000"
+msgstr ""
+
+msgid "19000"
+msgstr ""
+
+msgid "20000"
+msgstr ""
+
+msgid "21000"
+msgstr ""
+
+msgid "22000"
+msgstr ""
+
+msgid "23000"
+msgstr ""
+
+msgid "24000"
+msgstr ""
+
+msgid "25000"
+msgstr ""
+
+msgid "26000"
+msgstr ""
+
+msgid "27000"
+msgstr ""
+
+msgid "28000"
+msgstr ""
+
+msgid "29000"
+msgstr ""
+
+msgid "30000"
+msgstr ""
+
+msgid "31000"
+msgstr ""
+
+msgid "32000"
+msgstr ""
+
+msgid "33000"
+msgstr ""
+
+msgid "34000"
+msgstr ""
+
+msgid "35000"
+msgstr ""
+
+msgid "36000"
+msgstr ""
+
+msgid "37000"
+msgstr ""
+
+msgid "38000"
+msgstr ""
+
+msgid "39000"
+msgstr ""
+
+msgid "40000"
+msgstr ""
+
+msgid "41000"
+msgstr ""
+
+msgid "42000"
+msgstr ""
+
+msgid "43000"
+msgstr ""
+
+msgid "44000"
+msgstr ""
+
+msgid "45000"
+msgstr ""
+
+msgid "46000"
+msgstr ""
+
+msgid "47000"
+msgstr ""
+
+msgid "48000"
+msgstr ""
+
+msgid "49000"
+msgstr ""
+
+msgid "50000"
+msgstr ""
+
+msgid "51000"
+msgstr ""
+
+msgid "52000"
+msgstr ""
+
+msgid "53000"
+msgstr ""
+
+msgid "54000"
+msgstr ""
+
+msgid "55000"
+msgstr ""
+
+msgid "56000"
+msgstr ""
+
+msgid "57000"
+msgstr ""
+
+msgid "58000"
+msgstr ""
+
+msgid "59000"
+msgstr ""
+
+msgid "60000"
+msgstr ""
+
+msgid "61000"
+msgstr ""
+
+msgid "62000"
+msgstr ""
+
+msgid "63000"
+msgstr ""
+
+msgid "64000"
+msgstr ""
+
+msgid "65000"
+msgstr ""
+
+msgid "66000"
+msgstr ""
+
+msgid "67000"
+msgstr ""
+
+msgid "68000"
+msgstr ""
+
+msgid "69000"
+msgstr ""
+
+msgid "70000"
+msgstr ""
+
+msgid "71000"
+msgstr ""
+
+msgid "72000"
+msgstr ""
+
+msgid "73000"
+msgstr ""
+
+msgid "74000"
+msgstr ""
+
+msgid "75000"
+msgstr ""
+
+msgid "76000"
+msgstr ""
+
+msgid "77000"
+msgstr ""
+
+msgid "78000"
+msgstr ""
+
+msgid "79000"
+msgstr ""
+
+msgid "80000"
+msgstr ""
+
+msgid "81000"
+msgstr ""
+
+msgid "82000"
+msgstr ""
+
+msgid "83000"
+msgstr ""
+
+msgid "84000"
+msgstr ""
+
+msgid "85000"
+msgstr ""
+
+msgid "86000"
+msgstr ""
+
+msgid "87000"
+msgstr ""
+
+msgid "88000"
+msgstr ""
+
+msgid "89000"
+msgstr ""
+
+msgid "90000"
+msgstr ""
+
+msgid "91000"
+msgstr ""
+
+msgid "92000"
+msgstr ""
+
+msgid "93000"
+msgstr ""
+
+msgid "94000"
+msgstr ""
+
+msgid "95000"
+msgstr ""
+
+msgid "96000"
+msgstr ""
+
+msgid "97000"
+msgstr ""
+
+msgid "98000"
+msgstr ""
+
+msgid "99000"
+msgstr ""
+
+msgid "100000"
+msgstr ""
+
+msgid "1000000"
+msgstr ""
+
+msgid "2000000"
+msgstr ""
+
+msgid "3000000"
+msgstr ""
+
+msgid "4000000"
+msgstr ""
+
+msgid "5000000"
+msgstr ""
+
+msgid "6000000"
+msgstr ""
+
+msgid "7000000"
+msgstr ""
+
+msgid "8000000"
+msgstr ""
+
+msgid "9000000"
+msgstr ""
+
+msgid "10000000"
+msgstr ""
+
+msgid "1000000000"
+msgstr ""

@@ -75,7 +75,7 @@ ALGIC_LANGUAGES: Dict[str, Dict[str, Any]] = {
     "kic": {"name": "Kickapoo",         "branch": "Central", "priority": True},
     "pot": {"name": "Potawatomi",       "branch": "Central", "priority": True},
     "sac": {"name": "Meskwaki (Fox)",   "branch": "Central", "priority": True},
-    "sha": {"name": "Shawnee",          "branch": "Central"},
+    "sjw": {"name": "Shawnee",          "branch": "Central"},
     "men": {"name": "Menominee",        "branch": "Central"},
     "cre": {"name": "Cree",             "branch": "Central"},
     "csw": {"name": "Swampy Cree",      "branch": "Central"},
@@ -928,7 +928,7 @@ def export_dmlex(lang: str, min_conf: float, db_path: str) -> str:
 def build_app(db_path: str, ollama_url: str) -> FastAPI:
     app = FastAPI(
         title="Algic Etymology Comparator",
-        description="Central Algonquian corpus server — mia / kic / pot / sac / sha and family",
+        description="Central Algonquian corpus server — mia / kic / pot / sac / sjw and family",
         version="2.0",
     )
 

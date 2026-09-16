@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AllomorphGenerators xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" dbVersion="6" applyTo="-1">
+  <Operations>
+    <Operation active="true">
+      <Name>new operation</Name>
+      <Description />
+      <Pattern>
+        <Matcher>
+          <Type>Anywhere</Type>
+          <Pattern />
+          <MatchCase>false</MatchCase>
+          <MatchDiacritics>false</MatchDiacritics>
+        </Matcher>
+        <MorphTypes>
+          <MorphType active="true" guid="d7f713e4-e8cf-11d3-9764-00c04f186933">
+            <Name>bound root</Name>
+          </MorphType>
+          <MorphType active="true" guid="d7f713e7-e8cf-11d3-9764-00c04f186933">
+            <Name>bound stem</Name>
+          </MorphType>
+          <MorphType active="true" guid="d7f713e5-e8cf-11d3-9764-00c04f186933">
+            <Name>root</Name>
+          </MorphType>
+          <MorphType active="true" guid="d7f713e8-e8cf-11d3-9764-00c04f186933">
+            <Name>stem</Name>
+          </MorphType>
+        </MorphTypes>
+        <Category active="true" guid="">
+          <Name />
+        </Category>
+      </Pattern>
+      <Action>
+        <ReplaceOpRefs>
+          <string>ad6021dd-c934-4e4a-bf46-9802f43cd581</string>
+        </ReplaceOpRefs>
+        <Environments />
+        <StemName active="true" guid="">
+          <Name />
+        </StemName>
+        <VariantTypes />
+        <ShowMinorEntry>true</ShowMinorEntry>
+        <PublishEntryInItems />
+      </Action>
+    </Operation>
+  </Operations>
+  <ReplaceOperations>
+    <Replace active="true" guid="ad6021dd-c934-4e4a-bf46-9802f43cd581" mode="false">
+      <Name />
+      <From />
+      <To />
+      <WritingSystemRefs>
+        <string>Mia</string>
+      </WritingSystemRefs>
+      <Description />
+    </Replace>
+  </ReplaceOperations>
+  <WritingSystems>
+    <WritingSystem>
+      <Name>Mia</Name>
+      <Handle>999000002</Handle>
+    </WritingSystem>
+  </WritingSystems>
+</AllomorphGenerators>

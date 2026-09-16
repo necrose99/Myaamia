@@ -1,0 +1,23 @@
+C:\Users\black\Dropbox\PC (2)\Documents\GitHub\Myaamia\node_modules
+# .gitignore
+/node_modules/
+/.repositories/
+/corpus_media/
+/webcorpus/
+*.mp3
+*.pyc
+<<<<<<< HEAD
+=======
+/webcorpus
+*.pt
+*.onnx_data
+/models/Ministral-3B-Instruct/onnx
+*.onnx
+*.pt
+*.argosmodel
+*.pyc
+*.safetensors
+*.bin
+*.pt
+
+>>>>>>> c604213886565a6c08954b011b25fb595ad9e994

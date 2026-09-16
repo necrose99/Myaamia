@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage{breqn}
+\parskip 0pt
+\parindent 0pt
+\oddsidemargin 0cm
+\textwidth 19cm
+\begin{document}
+
+\subsection*{Classes}
+
+\subsubsection*{w3.orgConcept}
+
+\subsubsection*{w3.orgLanguage}
+
+\subsubsection*{w3.orgLexicon}
+
+\section*{Object properties}\section*{Data properties}\section*{Individuals}\subsubsection*{example.orgAlgic}
+
+example.orgAlgic~:~w3.orgConcept
+
+\subsubsection*{example.orgAlgonquian}
+
+example.orgAlgonquian~:~w3.orgConcept
+
+\subsubsection*{example.orgCentralAlgonquian}
+
+example.orgCentralAlgonquian~:~w3.orgConcept
+
+\subsubsection*{miamioh.edulanguage}
+
+miamioh.edulanguage~:~w3.orgLanguage
+
+\subsubsection*{miamioh.edulexicon}
+
+miamioh.edulexicon~:~w3.orgLexicon
+
+\section*{Datatypes}\subsubsection*{PlainLiteral}
+
+\subsubsection*{boolean}
+
+\subsubsection*{string}
+
+\subsubsection*{w3.orginteger}
+
+\end{document}

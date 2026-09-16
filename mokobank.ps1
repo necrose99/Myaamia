@@ -10,7 +10,7 @@ $mappings = @{
 }
 
 # Get all relevant files recursively
-$files = Get-ChildItem -Path "." -Recurse -Include *.csv, *.json, *.tmx, *.eaf , *.sfm
+$files = Get-ChildItem -Path "." -Recurse -Include *.csv, *.json, *.tmx, *.eaf , *.sfm , *.lift
 
 foreach ($file in $files) {
     Write-Host "🧼 Cleaning: $($file.FullName)"

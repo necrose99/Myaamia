@@ -9,7 +9,7 @@ algic_array = [
     # Central Branch (Great Lakes / Shield)
     "men", "cre", "csw", "crj", "atj", "nsk", "moos", "crm", 
     "pot", "oji", "otw", "ciw", "alq", "ojb", "ojg", "ojs", 
-    "mia", "sac", "kic_us", kic_mx","sha",
+    "mia", "sac", "kic_us", kic_mx","sjw",
     
     # Eastern Branch (Maritime / New England / Atlantic)
     "mic", "abe", "aaq", "mal", "moo", "mua", "unm", "wamp",

@@ -1,4 +1,4 @@
-﻿// -*- Coding: UTF-8; -*-;
+// -*- Coding: UTF-8; -*-;
 //
 // Loco icu export: ICU Resource (Source)
 // Project: Myaamia
@@ -76,7 +76,7 @@ en-US{
     // Corn the Food the plant etc.. 
     corn { "corn" } 
     // Scientific Name:  Fagus grandifolia Ehrh. "shashecomise, beech tree" 
-    // "beech, sha-sha-com-mindj" https://mc.miamioh.edu/mahkihkiwa/species/4589 
+    // "beech, sjw-sjw-com-mindj" https://mc.miamioh.edu/mahkihkiwa/species/4589 
     beech tree { "beech tree" } 
     // American false pennyroyal / Hedeoma pulegioides (L.) Purs. / 
     // https://mc.miamioh.edu/mahkihkiwa/species?entry_type=Species 

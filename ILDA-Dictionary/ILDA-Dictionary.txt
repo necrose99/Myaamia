@@ -1,15 +1,18 @@
-﻿
-Miami-Illinois 
-
-
-* Search 
-* Browse 
-* Request 
-* Log In 
-a b c d e f g h i j k l m n o p q r s t u v w x y z Å¡ 
+﻿Myaamia Illinois 
+ 
+    • Search 
+    • Browse 
+    • Request 
+    • Archive 
+    • Log In 
+a b c d e f g h i j k l m n o p q r s t u v w x y z š 
 a 
 aacim- 
 Talk about him, say things about him 
+aacimoh- 
+tell about him 
+aacimolihs- 
+announce to him, report to him 
 aacimon- 
 Speaker, presenter 
 aacimoon- 
@@ -24,8 +27,8 @@ aacimweekaan-
 Council House 
 aacimwi- 
 Hold council, have a council meeting, relate a story 
-aacimwihtaw- 
-Advise him, speak to him about it 
+aahkapakilee- 
+Sunfish, bluegill (Centrarchidae spp.) 
 aahkohkaa- 
 Exercise 
 aahkohkeelintam- 
@@ -38,10 +41,14 @@ aahkohkinki-
 Boss, supervisor 
 aahkohkinkii- 
 Be in charge 
+aahkohsee- 
+To hike 
 aahkol- 
 Smoke 
-aahkoleeki Å¡oohkwaakan- 
+aahkoleeki šoohkwaakan- 
 Train 
+aahkoleenam- 
+make it smoke 
 aahkom- 
 Speak angrily to him, speak to him in an angry voice 
 aahkonkii- 
@@ -64,17 +71,23 @@ aahkwaapawaal-
 Dream of him 
 aahkwat- 
 be important, difficult 
+aahkweelisi- 
+be in labor a long time, have a difficult labor 
 aahkwihsen- 
 it is difficult to use, in a problematic condition 
 aahkwiteeheeyon- 
 Sullenness 
+aahpici 
+Onward, continuing on 
 aahpitesi- 
 Go onward, continue 
 aahpitohsee- 
 Walk on, keep moving along 
 aahsamaalakiinkwee- 
 Look to the side 
-aahsamihÅ¡in- 
+aahsamahan- 
+north wind 
+aahsamihšin- 
 Lie on one's back 
 aahsansi- 
 Bask in the sun, sunbathe 
@@ -86,25 +99,33 @@ aahsanteepakwaapow-
 Wine, grape juice 
 aahtee- 
 It goes out (of a fire or light) 
+aahteeham- 
+extinguish it (a fire) by tool 
+aahteehkam- 
+put it (fire) out with one's feet 
 aahteeleentam- 
 Turn off the light, extinguish it 
-aahÅ¡ih- 
+aahteeyaapawee- 
+it (fire) is put out with water 
+aahših- 
 Set an example 
 aakaawit- 
 Porcupine 
-aakalaahÅ¡im- 
+aakalaahšim- 
 Englishman, British Person 
-aakalaahÅ¡ima paaskoonti- 
+aakalaahšima paaskoonti- 
 Soccer 
-aakalaahÅ¡imaatawee- 
+aakalaahšimaatawee- 
 Speak english 
-aakalaahÅ¡imaataweenk- 
+aakalaahšimaataweenk- 
 English language 
 aakooti- 
 Soft shelled turtle (Apalone spinifera) 
 aakwaahkw- 
 Behind, under, on the other side of 
-aalaahÅ¡ion- 
+aakwaamitee- 
+it is intensely hot (of weather) 
+aalaahšion- 
 Long hunt 
 aalaankwaapanti- 
 Appear tired, look tired 
@@ -120,8 +141,12 @@ aalahkwatw-
 Cloud 
 aalakoontaakan- 
 Ladder, stairway 
+aalakoontawee- 
+he climbs a ladder, staircase 
 aalawinam- 
 Refuse it 
+aalašw- 
+fail to cut him, be unable to cut him 
 aalhsaalakiinkwaakan- 
 Eyeglasses 
 aalhsaalakiinkwee- 
@@ -138,12 +163,16 @@ aalhsoohkaw-
 Tell a winter story to him 
 aalhsoohkii- 
 Tell a winter story 
+aalhšikaan- 
+room, chamber 
 aalim- 
 Must, have to, bound to 
 aalimat- 
 It is difficult 
 aalimesi- 
 Be difficult, be cross, hard to get along with 
+aalimihol- 
+kill him with medicine, with a spell 
 aalimiihtaw- 
 Cook for him 
 aalimiihtoo- 
@@ -154,20 +183,28 @@ aalimiihtwikaan-
 Kitchen 
 aalint- 
 some, part 
+aalohsee- 
+be unable to walk 
 aalohsen- 
 be useless, futile 
+aalolee- 
+the fire fails to burn, does not start 
 aalom- 
 Refuse him, reject him 
-aaloÅ¡am- 
+aalošam- 
 fail to cut it, cannot cut it 
 aalweeli- 
 Fail at doing something, cannot 
-aalwihÅ¡in- 
+aalwihšin- 
 Fail to get hurt 
+aalwinaal- 
+fail to subdue him, fail to work on him 
 aamaawi- 
 Bee 
 aamaawia paankosaakan- 
 Honey 
+aanci 
+changing, differently 
 aancihsah- 
 To make them migrate, relocate, remove them 
 aancihsee- 
@@ -182,6 +219,8 @@ aancikii-
 Change residence, move to a dfferent house 
 aancimotayi- 
 Change one's clothes 
+aancinaakosi- 
+to be changed, appear different 
 aanciniiki- 
 Grow, develop, mature 
 aanciniikin- 
@@ -202,9 +241,11 @@ aankwahaakan-
 Broom 
 aankwaham- 
 Sweep it, Play Broomball 
+aankwahikw- 
+Chicken (Gallus gallus) 
 aankweepi- 
 Be at rest 
-aantaaÅ¡i 
+aantaaši 
 over yonder, in this direction 
 aantapi- 
 Sit elsewhere, change one's seat 
@@ -214,7 +255,7 @@ aapacilaatawi-
 Mockingbird (Mimus polyglottos) 
 aapaciteehee- 
 Undecided, unsure 
-aapahkoÅ¡am- 
+aapahkošam- 
 Cut it off, sever it 
 aapisehkaw- 
 cheer up, revive someone by one's presence 
@@ -222,8 +263,10 @@ aaponam-
 Give it back 
 aapool- 
 Bring him back 
-aapooÅ¡- 
+aapooš- 
 Also, again 
+aapoošihsaa- 
+go again quickly, open quickly 
 aapw- 
 Return, back 
 aapwaalaapi- 
@@ -256,7 +299,7 @@ aayaapootakowi-
 Osprey (Pandion haliaetus) 
 aayaapweeyohsee- 
 Walk and return, take a walk 
-aayaaÅ¡e 
+aayaaše 
 every other 
 aayohoowi- 
 Iowa person 
@@ -264,39 +307,39 @@ aayoonsee-
 Black Walnut (nut) 
 aayoonseekaahkw- 
 Black Walnut Tree (Juglans nigra) 
-aaÅ¡awe 
+aašawe 
 in exchange, reciprocally, across 
-aaÅ¡awee- 
+aašawee- 
 Barter, trade (something) 
-aaÅ¡awi- 
+aašawi- 
 Trader 
-aaÅ¡awil- 
+aašawil- 
 Barter, trade (something) with him 
-aaÅ¡im- 
+aašim- 
 coax him, encourage him, urge him 
-aaÅ¡ipehkw- 
+aašipehkw- 
 Bluff, cliff 
-aaÅ¡ipehkwihsenonki 
-Rock Creek 
-aaÅ¡it- 
+aašipehkwihsen- 
+It is a bluff, cliff 
+aašit- 
 in turn 
-aaÅ¡itehkam- 
+aašitehkam- 
 Meet up with it, come across it 
-aaÅ¡itehkaw- 
+aašitehkaw- 
 Meet him, met him 
-aaÅ¡oohkoon- 
+aašoohkoon- 
 Ice 
-aaÅ¡oohkoonaahkwi 
+aašoohkoonaahkwi 
 hockey stick 
-aaÅ¡oohkoonaapow- 
+aašoohkoonaapow- 
 Ice Water 
-aaÅ¡oohkoonaten- 
+aašoohkoonaten- 
 Glacier, ice mountain 
-aaÅ¡oohkoonawahki- 
+aašoohkoonawahki- 
 It is sleet 
-aaÅ¡oohkooni- 
+aašoohkooni- 
 It is icy 
-aaÅ¡ooÅ¡iwi- 
+aašoošiwi- 
 Nettle (Urtica dioica & Urtica chamaedryoides) 
 acihkw- 
 Stump (of a tree) 
@@ -308,14 +351,32 @@ aciikant-
 Garden hoe, plow 
 aciikisi- 
 to be twins 
+aciinkilee- 
+have sores on one's forehead 
+aciinkileesi- 
+be burned on one's forehead 
+aciinkwee- 
+have sores on one's face 
+aciipayihkanawe 
+Milky way, spirit road 
 aciiphkahkionk- 
 Vincennes, Indiana, Place of Roots 
 aciipihk- 
 Root 
+acikanee- 
+have sores on one's leg 
+acipwaamee- 
+have sores on one's thigh 
 acipwi- 
 Ojibwe person 
+aciton- 
+have sores on one's mouth 
 aciw- 
 Hill, mountain, ridge 
+ahciwi- 
+have upper arm(s) 
+ahciyokaapaawi- 
+It leans over, tilts 
 ahk- 
 Field, garden 
 ahkaapat- 
@@ -326,8 +387,12 @@ ahkalaamwi-
 Drown 
 ahkan- 
 Wheel, tire 
+ahkani- 
+have bones 
 ahkanihkw- 
 Awl (for sewing) 
+ahkanimin- 
+seed, pit (in a fruit) 
 ahkapakintee- 
 It is cheap 
 ahkawaah- 
@@ -336,30 +401,36 @@ ahkawaahtoo-
 Wait for it 
 ahkawaapam- 
 Watch over him, watch out for him, take care of him 
-ahkaÅ¡aakan- 
+ahkašaakan- 
 Horseshoe 
-ahkaÅ¡i- 
+ahkaši- 
 Have nails, claws, hooves 
 ahkic- 
 on top of, on the surface of 
+ahkic- 
+bird tail 
 ahkihkonehs- 
 Small cooking pot 
 ahkihkw- 
 Kettle, bucket, pot, pan (for cooking) 
 ahkihkw- 
 Drum 
-ahkiinÅ¡ikwi- 
+ahkiinšikwi- 
 Have eyes 
 ahkimotay- 
 Bag (for carrying), pocket 
 ahkink- 
 Outside 
-ahkinÅ¡i- 
+ahkinši- 
 Have a forehead 
+ahkipakalamon- 
+blue ochre 
 ahkiwani- 
 Have a nose, beak 
-ahkiyoÅ¡iwi- 
+ahkiyošiwi- 
 Be an old man 
+ahkišinomi- 
+be in pain, in labor 
 ahkoleetaakan- 
 Sheath, Case 
 ahkoow- 
@@ -368,6 +439,8 @@ ahkow-
 Last, at the end 
 ahkwaahkii- 
 Throw so far 
+ahkwaal- 
+sew him 
 ahkwaamaahkwee- 
 Climb a tree 
 ahkwaanteem- 
@@ -390,8 +463,14 @@ ahkweehs-
 Young woman (unmarried) 
 ahkweehsimw- 
 Female animal 
+ahkweetaakan- 
+stitching, as of a moccasin 
 ahpen- 
 Potato 
+ahpenihkii- 
+gather potatoes 
+ahpišaahi 
+finally, at long last 
 ahpwaa- 
 Smoke tobacco 
 ahpwaakan- 
@@ -410,24 +489,38 @@ ahsalat-
 Salad 
 ahsap- 
 Fishnet, spider web, Indian Hemp, dogbane (Apocynum cannabinum) 
+ahsapahw- 
+catch him (fish) in a net 
+ahsapahwee- 
+fish with a net 
 ahsawaankati- 
 Feather, plume 
+ahseehkii- 
+to tan/dress a hide 
 ahseem- 
 Tobacco 
+ahseenihs- 
+worked deerskin, buckskin 
 ahseensi- 
 Have an older brother 
+ahseensim- 
+have him as an older brother 
 ahsen- 
 Stone, rock 
-ahsenaamiÅ¡- 
+ahsenaamiš- 
 Sugar Maple Tree (Acer saccharum) 
-ahsenaamiÅ¡ahk- 
+ahsenaamišahk- 
 Sugar maple grove 
-ahsenaamiÅ¡ipoohkii- 
+ahsenaamišipoohkii- 
 Collect Sap, Go Sugaring 
-ahsenaamiÅ¡ipow- 
+ahsenaamišipow- 
 Maple Sap 
+ahsenaapiikaal- 
+use a slingshot on him 
 ahsenaapiikatoo- 
 Shoot rocks using a slingshot 
+ahsenahkihki- 
+be stony, rocky ground 
 ahsenahkihkw- 
 stone pot, pottery 
 ahseni siipiw- 
@@ -440,12 +533,16 @@ ahsenip-
 Lead (Metal) 
 ahsiimin- 
 Pawpaw fruit (Asimina triloba) 
-ahsiimiÅ¡aahkw- 
+ahsiimišaahkw- 
 pawpaw tree (Asimina triloba) 
+ahtak- 
+Taco 
 ahtawaan- 
 Tree, stick, piece of wood 
 ahtawaanahk- 
 Forest 
+ahtawaanahki- 
+be forested land, wooded land 
 ahtawaanahkisinaakan- 
 Snowshoe 
 ahtawaanihs- 
@@ -468,19 +565,23 @@ ahtem-
 Catch up with him, overtake him 
 ahtoo- 
 Have it, put it 
-ahÅ¡am- 
+ahšale- 
+give out food to people 
+ahšam- 
 Feed him 
-ahÅ¡ikan- 
+ahšiimim- 
+have someone as a younger sibling 
+ahšikan- 
 Largemouth bass (Micropterus salmoides) 
-ahÅ¡ikan- 
+ahšikan- 
 Largemouth bass (Micropterus salmoides) 
-ahÅ¡itahtoo- 
+ahšitahtoo- 
 Attach it 
-ahÅ¡itenam- 
+ahšitenam- 
 Stick it on, fasten it on (by hand) 
-ahÅ¡itesam- 
+ahšitesam- 
 Glue it together 
-ahÅ¡itisaakan- 
+ahšitisaakan- 
 Glue 
 akaaminki 
 across the water 
@@ -488,23 +589,25 @@ akaaw-
 Walleye 
 akaawi- 
 Thorn, briar, porcupine quill 
-akaawi- 
-Thorn, briar, porcupine quill 
-akaawiahkihkiwi- 
+akaawiahki- 
 it is land full of thorns 
-akaawiahkionki 
-Thorntown 
-akaawinÅ¡aahkw- 
+akaawiay- 
+porcupine skin 
+akaawinšaahkw- 
 Honey Locust (Gleditsia triacanthos) 
 akaayomin- 
 Gooseberry 
-akaayomiÅ¡aahkw- 
+akaayomišaahkw- 
 Gooseberry Bush 
+aki- 
+have a mother 
 akim- 
 Chief, leader 
 akimaahkwi- 
 Female chief, leader 
-akimaanhsehkw- 
+akimaans- 
+Junior leader, ambassador 
+akimaansehkw- 
 Young female leader (Tribal Princess) 
 akimaawion- 
 Civic knowledge, chiefdom 
@@ -514,6 +617,8 @@ akincikoon-
 Number, phone number 
 akincikoona 
 numerals, numbers 
+akintam- 
+count it 
 akook- 
 Frog 
 akootaakan- 
@@ -546,14 +651,26 @@ alaak-
 Yesterday 
 alaakan- 
 Plate, bowl, dish (generic) 
+alaakii- 
+put on a feast 
 alaakwi- 
 It is evening 
 alaama 
 llama 
+alaamahkinki 
+underground, hell 
 alaamahw- 
 hit him hard, wound him badly 
+alaamawee- 
+injure people 
+alaami 
+very, very much, intensely, hard 
 alaami- 
 Go fast, hurry 
+alaamicim- 
+hurt him, cause him to fall 
+alaamihaakan- 
+thing with which one prays 
 alaamihpenal- 
 Hurt him, injure him 
 alaamihsen- 
@@ -562,9 +679,9 @@ alaamihtam-
 Believe it 
 alaamihtaw- 
 Believe him 
-alaamihÅ¡ikaateekani- 
+alaamihšikaateekani- 
 To hurt toe, stub toe 
-alaamihÅ¡in- 
+alaamihšin- 
 Hurt oneself 
 alaamilaw- 
 Wound him 
@@ -572,6 +689,8 @@ alaaminaa-
 Pray 
 alaaminaakaan- 
 Church (Building) 
+alaaminaayon- 
+prayer 
 alaaminki 
 beneath, inside, within 
 alaamipiikw- 
@@ -598,8 +717,12 @@ alakiihkwikaan-
 Bark house 
 alam- 
 Put it in the water 
+alamonaahkw- 
+box for ochre, vermillion 
 alamoni 
 Red ocher, paint, vermillion 
+alanteewaalahkwat- 
+there are red clouds 
 aleciimin- 
 Pea 
 aleelii- 
@@ -612,9 +735,9 @@ aleeliikaan-
 Bathroom, restroom (private) 
 aleew- 
 Bull snake (Pituophis catenifer sayi) 
-alehÅ¡aahe 
+alehšaahe 
 customarily 
-alehÅ¡i 
+alehši 
 in vain, for no reason 
 alemontehs- 
 Puppy 
@@ -624,12 +747,18 @@ alemw-
 Dog (Canis lupus familiaris) 
 alemwaapiikw- 
 Dog leash 
+alenasoons- 
+calf 
 alenasw- 
-Buffalo, cow 
+Buffalo, bison, cow 
+alenaswansooy- 
+buffalo tail 
 alenasway- 
 Cowhide 
 alenaswihkanaw- 
 Bison Trace 
+alencihkan- 
+Glove 
 aleni 
 apparently, as though, probably 
 aleni- 
@@ -652,10 +781,14 @@ aloohwiton-
 To point with mouth 
 alool- 
 Hire him 
+aloomin- 
+wheat 
 aloonihs- 
 Bullet (older 'arrow') 
 alotam- 
 Avenge him 
+alwaahtaakii- 
+like to hear 
 alwaahtam- 
 Like to hear it 
 alwaahtaw- 
@@ -664,6 +797,8 @@ alwaamyaakosi-
 Smell good, nice 
 alwaamyaakwan- 
 it smells nice 
+alwaamyaakwikaate- 
+have nice smelling feet, perfumed feet 
 alwaanam- 
 Admire it, think well of it, like to do it 
 alwaanaw- 
@@ -678,12 +813,14 @@ amamwi-
 Be awake, wake up 
 amataahkomi- 
 wear, put on clothes 
-amataahkomi- 
-Be, get dressed 
 amaten- 
 Wake him (by hand) 
 amehkw- 
 Beaver (Castor canadensis), dollar 
+amehkwansooy- 
+beaver tail 
+amehkway- 
+beaver hide 
 amiincipemi- 
 Have corn 
 aminootee- 
@@ -695,7 +832,7 @@ Pick up threads
 ampahwi- 
 Fly 
 ampen- 
-I lift him up 
+Lift him up 
 ampenam- 
 Lift it up 
 ampihciwee- 
@@ -716,6 +853,8 @@ ancamaac-
 Hopefully 
 ancihkwi- 
 Be pregnant 
+ancisi- 
+burn, be burnt 
 aneh- 
 Beat him, defeat him 
 anehiwee- 
@@ -734,6 +873,10 @@ ankihtoo-
 Kill it, suicide 
 ankin- 
 It is destroyed, ruined 
+anoonaakani- 
+have breasts 
+ansaahkwee- 
+talk with others, speak together 
 anseens- 
 Algae 
 anseens- 
@@ -754,6 +897,8 @@ ansiwataakan-
 Seed (for planting) 
 ansiwatoo- 
 Plant it 
+ansiwašiko- 
+do planting 
 ansonam- 
 Gather it together by hand 
 ansoopi- 
@@ -776,7 +921,7 @@ apahkway-
 Cattail (Typha latifolia), mats (for lodge covering) 
 apahkwee- 
 Roof a house 
-apanÅ¡ay- 
+apanšay- 
 Tent pole, lodge pole, rafter 
 apeehkoohsi- 
 Turkey Vulture (Cathartes aura) 
@@ -784,6 +929,12 @@ apeehkw-
 Common Nighthawk (Chordeiles minor) 
 apeehsi- 
 Fawn 
+apeehšohsii- 
+approach, come near (temporal) 
+apehšaalakat- 
+it has a narrow hole, opening 
+apehšešamaw- 
+cut a little of it off him 
 apeleehsiomi- 
 Have a raven, invoke ravens 
 apesam- 
@@ -798,9 +949,11 @@ api-
 Be located, be at a place 
 apihkaal- 
 Braid his/her hair 
+apihkaataakan- 
+corn plait, corn braid 
 apihkii- 
 Braid (one's own) hair, have braids 
-apihÅ¡ihtoo- 
+apihšihtoo- 
 Shorten it, reduce it, make it smaller 
 apiihkani- 
 Groundnut (Apios americana), Hog peanut 
@@ -820,6 +973,8 @@ apili-
 Small, short 
 apiloohs- 
 Child; ginseng 
+apiloohsi- 
+be a child 
 apinay- 
 Bed 
 apineens- 
@@ -840,6 +995,8 @@ apween-
 Roast 
 asaahsi- 
 Have tattoos, get tattooed 
+asaahsi-mootay- 
+painted bag 
 asaahsion- 
 Tattoo 
 asaahsw- 
@@ -860,8 +1017,8 @@ ataawee-
 Sell (something) 
 ataaweekaan- 
 Store, shop, trading house 
-atahkiomi- 
-Have a field, a garden 
+atahkihkiomi- 
+Have land 
 atahkohkan- 
 Bridge 
 atahkohkii- 
@@ -874,6 +1031,8 @@ atamaapam-
 Be busy looking at him 
 atamihwi- 
 Be busy 
+atatihs- 
+gizzard, afterbirth 
 atayi- 
 Have a pet, an animal 
 atayim- 
@@ -884,7 +1043,7 @@ ateehimin-
 Strawberry (Fragaria virginiana) 
 ateehseemin- 
 plum 
-ateehseemiÅ¡aahkw- 
+ateehseemišaahkw- 
 Plum tree (Prunus domestica) 
 atehkon- 
 Knot (on tree) 
@@ -898,6 +1057,8 @@ atekipane
 exclamation upon hearing unpleasant news 
 ateliwaten- 
 the ice is thin, ice is starting to form 
+ateliwi- 
+have shoulder(s) 
 atenamaw- 
 accept, receive from him 
 atoohpoon- 
@@ -922,6 +1083,8 @@ aweehs-
 Wild Animal 
 aweehseens- 
 Bird (larger than sparrow size) 
+aweehseensihkiaakan- 
+bird hat, Missouri-style feather hat 
 aweehseewi- 
 Be an animal 
 aweehsikaan- 
@@ -950,8 +1113,8 @@ awiihkaanintii-
 Be friends with each other 
 awiila 
 Him, her, he, she 
-awiilani- 
-Have a tongue 
+awiilihsi- 
+have head hair 
 awiilwa 
 They, them 
 awiipiti waapahaakan- 
@@ -962,6 +1125,10 @@ awiiwiil-
 Antler, horn, braid 
 awiiwiileehs- 
 Powder Horn 
+awiiyom- 
+have her as a wife, marry her 
+awiiyoohsimi- 
+have flesh, meat 
 awikaakan- 
 Pen, pencil 
 awikaal- 
@@ -970,7 +1137,7 @@ awikaw-
 Write to him, text him, email him 
 awikii- 
 Write 
-awipihÅ¡imwi- 
+awipihšimwi- 
 Dress warmly 
 awipitee- 
 It is warm 
@@ -986,31 +1153,43 @@ ayaapi-
 Buck, Stag 
 ayaapiay- 
 Buck skin 
+ayiihkwaleehsee- 
+die, quit breathing 
+ayiihkwaleehseen- 
+strangle him 
 ayiihkwi- 
 Be hungry 
 ayiilatem- 
 Make him cold 
+ayiileekaapawi- 
+s/he remains standing 
 ayiileepi- 
 Remain sitting, stay behind 
 ayoo- 
 Use it 
 ayoolhka 
 more, most 
-aÅ¡aahÅ¡ikop- 
+ašaahši- 
+It is slimy 
+ašaahšikop- 
 Slippery Elm (Ulmus rubra) 
-aÅ¡ihsay- 
+ašihsay- 
 Nest, hive 
-aÅ¡iihkionam- 
+ašiihkionam- 
 Smear dirt on it 
-aÅ¡iihkiw- 
+ašiihkioonkwee- 
+Have dirt on one's face 
+ašiihkiw- 
 Earth, Land, Dirt, Soil 
-aÅ¡iihkiwi- 
+ašiihkiwi- 
 Be covered with dirt, dirty 
 c 
 -caankw- 
 Brother's wife, sister-in-law (woman speaking) 
 -cihciikama 
 Spirit of the living, soul, shadow 
+-ciihc- 
+sinew, tendon, nerve 
 -ciit- 
 anus 
 caaciilitee- 
@@ -1023,6 +1202,8 @@ caaht-
 Choctaw person 
 camonkaahkaal- 
 Throw him into the water 
+camonkaahkii- 
+throw into the water 
 camonkihsaa- 
 Jump in the water 
 cecaahkw- 
@@ -1033,14 +1214,20 @@ ceekamw-
 Eat all of him 
 ceekantam- 
 Eat it all, Drink it all 
+ceekihtan- 
+all flows 
+ceekisi- 
+he burns up, is all burned 
 ceekonc- 
 On all sides, both sides 
-ceemonkaahkaÅ¡iwi- 
+ceemonkaahkašiwi- 
 Baptist preacher 
 ceenkwihtan- 
 Fall Creek 
-ceenkwihtanonki 
-Indianapolis 
+ciihciikaham- 
+hoe it, scratch it, scrape it (by tool) 
+ciihciipisi- 
+have stabbing pains in one's lower back 
 ciikaahkw- 
 Near, close to 
 ciikaahkwaapantani- 
@@ -1049,6 +1236,8 @@ ciikalaw-
 Plume (feather worn on head) 
 ciikamw- 
 Twins 
+ciikeehw- 
+spear fish 
 ciikiaahkw- 
 Gigging Pole 
 ciikiw- 
@@ -1057,6 +1246,8 @@ ciikwaapiteehwi-
 Pick one's teeth with something 
 ciilahki- 
 It is dense thicket, underbrush 
+ciilakoten- 
+a lot of fruit, nuts, leaves hang on the tree 
 ciilaten- 
 it is very cold 
 ciilaweem- 
@@ -1065,12 +1256,18 @@ ciileelim-
 Like him, think well of him, think highly of him 
 ciileelintam- 
 Like it, think well of it 
+ciileelintioni 
+mutual love 
 ciililaan- 
 It rains very hard 
+ciililawee- 
+make a big, intense fire 
 ciilitee- 
 It is very hot weather 
 ciiliteesi- 
 be hot, from weather 
+ciilwaakan- 
+Microphone 
 ciilwee- 
 Talk loudly 
 ciimaan- 
@@ -1091,17 +1288,17 @@ ciinkwi-
 Thunder being 
 ciinkwia akook- 
 Spring peeper (pseudacris crucifer, frog) 
-ciinkwihtanwi siipiiw- 
-Gauley River (West Virginia) 
+ciinkwihtan- 
+It is a rumbling river 
 ciipaahkamin- 
 Raccoon grape (Ampelopis cordata) 
 ciipay- 
 Corpse, Soul/spirit of the dead 
-ciiÅ¡ihtan- 
+ciišihtan- 
 flow heavily, abundantly 
-ciiÅ¡im- 
+ciišim- 
 speak strongly to, argue with 
-ciiÅ¡inaakosi- 
+ciišinaakosi- 
 He is disagreeable, evil 
 cilalosi- 
 Sweat 
@@ -1120,7 +1317,7 @@ eehkwa
 Still, a while, hold it! 
 eehkwi 
 While, during, before 
-eehpiÅ¡i 
+eehpiši 
 Time, when, ago 
 eehsahsen- 
 Fossil 
@@ -1134,7 +1331,7 @@ eekincikw-
 Cashier 
 eelaakion- 
 Feast 
-eelaalaahÅ¡iwi- 
+eelaalaahšiwi- 
 Monkey 
 eelaamihtaakan- 
 Belief 
@@ -1152,10 +1349,12 @@ eenaahkiikamen-
 Floor 
 eentonamahwi- 
 Hunter 
-eephÅ¡ihki- 
+eephšihki- 
 Person with a small head 
-eephÅ¡ikaateekan- 
+eephšikaateekan- 
 Little toe 
+eepihšwi- 
+Sneeze 
 eesaasaahsikw- 
 Tattoo Artist 
 eeseekiweek- 
@@ -1164,24 +1363,26 @@ eeteehsi-
 War party leader, one who carries the war club 
 eewiyawiki- 
 Writer, author 
-eewiyawiki- 
-Author, Writer 
 eeyeeli- 
 Opossum (Didelphis virginiana) 
-eeyoonsaawikiÅ¡- 
+eeyoonsaawikiš- 
 Eastern redbud (Cercis canadensis) 
-eeyoonseelehÅ¡ia kook- 
+eeyoonseelehšia kook- 
 Gray tree frog (Hyla versicolor) 
-eeÅ¡aahÅ¡ahk- 
+eešaahšahk- 
 Mud 
-eeÅ¡aakan- 
+eešaakan- 
 Hominy block 
-eeÅ¡aakant- 
+eešaakant- 
 Mortar 
-eeÅ¡aakantaahkw- 
+eešaakantaahkw- 
 Pestle (wooden) 
-ehkipeÅ¡am- 
+ehkipešam- 
 Cut it straight 
+ehkipikaneen- 
+pull his legs straight 
+ehkoteeyohkii- 
+make fire, gather fire 
 ehkwaahkosi- 
 Be short 
 ehkwaalawee- 
@@ -1190,6 +1391,8 @@ ehkwihtam-
 Left over from eating 
 ehkwikolee- 
 Have a short nose 
+ehkwikoleešw- 
+cut off his nose 
 ehpenal- 
 Do to him, treat him a certain way 
 ehpenatoo- 
@@ -1197,17 +1400,23 @@ Do something with it, to it
 ehpesi- 
 Be high, tall 
 ehpihsaa- 
-Fly up high 
+Fly upward 
 el- 
 Say to him, call him something 
+elaacimwi- 
+tell so, report so 
 elaahkaatam- 
 Throw it thus 
+elaahkaw- 
+throw him a certain way 
 elaapam- 
 Look at him so 
 elaapiikasi- 
 descend from, ancestor 
 elaatawee- 
 Speak a language 
+elakim- 
+count him a certain way 
 elaw- 
 Resemble him, look like him 
 eleelim- 
@@ -1220,11 +1429,15 @@ elehtam-
 Hear it so 
 elehtaw- 
 Hear him so 
+elenam- 
+do so with one's hands 
 elenanci- 
 Be right-handed 
 eleniwi- 
 Be a man 
-eleÅ¡am- 
+eleniwinaakosi- 
+be like a man, appear to be a man 
+elešam- 
 Cut it thus 
 elini- 
 Be born 
@@ -1234,19 +1447,21 @@ ental-
 Detain him (as a prisoner), have him there 
 etam- 
 Say it, call it 
-eÅ¡ileni- 
+ešileni- 
 Do a certain way 
-eÅ¡im- 
+ešim- 
 Say it to him 
-eÅ¡inaakosi- 
+ešinaakosi- 
 Be a certain way 
-eÅ¡iteehee- 
+ešiteehee- 
 Think, feel a certain way 
-eÅ¡iteeheehpinal- 
+ešiteeheehpinal- 
 Comfort him 
-eÅ¡iteeheelotaw- 
+ešiteeheelotaw- 
 Feel a certain way about him 
-eÅ¡iteeheeyosi- 
+ešiteeheeyohsee- 
+Think while walking 
+ešiteeheeyosi- 
 Intend something, have something in mind 
 h 
 -hciw- 
@@ -1257,13 +1472,15 @@ Foot
 shin 
 -hkan- 
 Leg, bone 
--hkaÅ¡- 
-Nail 
--hkiinÅ¡ikw- 
+-hkaš- 
+Nail, claw 
+-hkic- 
+bird's tail 
+-hkiinšikw- 
 Eye 
 -hkiipiman- 
 breastbone, sternum 
--hkinÅ¡- 
+-hkinš- 
 Forehead 
 -hkitikwi- 
 Knee 
@@ -1281,6 +1498,10 @@ Neck
 chest, breast 
 -hpani 
 Lung 
+-hpehkošikan- 
+lower back, spine 
+-hpehkwan- 
+rib, back 
 -hpikay- 
 rib 
 -hseens- 
@@ -1293,9 +1514,9 @@ The back of one's neck
 Ear 
 -hteekwaan- 
 Neck gland 
--hÅ¡iim- 
+-hšiim- 
 Younger sibling 
--hÅ¡imihs- 
+-hšimihs- 
 Niece (Cross-niece) 
 hoci 
 Hey! (used as an attention getter) 
@@ -1316,8 +1537,6 @@ bellybutton, navel
 Penis 
 -iilan- 
 someone's tongue 
--iilanin- 
-it is someone's (possession) 
 -iilaw- 
 Portion of food, one's food 
 -iilhs- 
@@ -1330,6 +1549,12 @@ arrow
 Tooth 
 -iiyaw- 
 Body, self 
+ihkiinkwee- 
+be raw corn 
+ihkikan- 
+it is green, living (of wood) 
+ihkil- 
+be raw 
 ihkipakaamhkii- 
 It is blue clay 
 ihkipakahkatw- 
@@ -1354,6 +1579,8 @@ ihpahki-
 It is high ground 
 ihpaten- 
 It is steep, a hill, a butte 
+ihpelee- 
+fire rises up, blazes up 
 ihpii- 
 It is tall 
 iihia 
@@ -1368,8 +1595,6 @@ iihkipakaapiikw-
 blue ribbon 
 iihkipakahk- 
 Green land, park 
-iihkipihsinonki 
-Peru, IN 
 iihkisamink- 
 Maple Syrup 
 iihkwakwaat- 
@@ -1382,7 +1607,7 @@ iiniini
 That (out of reach, inanimate) 
 iiyoowe 
 exclamation, be it from fear or in admiration, used only by men 
-iiÅ¡iteehion- 
+iišiteehion- 
 Thought, mentality 
 ilaalaantee- 
 It is colored a certain way 
@@ -1396,7 +1621,7 @@ ilakintam-
 Price it at a certain amount 
 ilakintee- 
 It costs, is priced 
-ileeÅ¡i 
+ileeši 
 But 
 ilekili- 
 Be so big, so large, of a certain size 
@@ -1404,16 +1629,24 @@ iletii-
 Say to each other 
 inko 
 (Future negative) 
+inohk- 
+Illinois person 
 inohka asiipiom- 
 Illinois River 
-iÅ¡ihsen- 
+inohkaatawaakan- 
+Illinois dictionary 
+inohkaatawee- 
+speak Illinois 
+iši 
+thus, so, that way 
+išihsen- 
 It lies a certain way, times are a certain way 
-iÅ¡ihtan- 
+išihtan- 
 It flows thus 
-iÅ¡inaakwat- 
-It is a certain way 
+išinaakwat- 
+It is a certain way, it is so 
 k 
--kohÅ¡im- 
+-kohšim- 
 Cross-sibling, cross-cousin 
 -kontaakan- 
 Throat 
@@ -1425,6 +1658,8 @@ Son
 Mother (mother's sisters), mom 
 kaahkaahki- 
 Katydid (Tettigonia viridissima), Kaskaskia person 
+kaahkaham- 
+clean it, dress it (hide) 
 kaahkahw- 
 Clean him (as of fish, game, etc) 
 kaahkiihkw- 
@@ -1443,10 +1678,10 @@ kaakaathswihsink-
 Hexagon 
 kaakatakilenkwi- 
 Butterfly 
-kaakihÅ¡aahkatw- 
+kaakihšaahkatw- 
 Sycamore (Platanus occidentalis) 
 kaakiihsitaaki- 
-One who preserves things, Tribal Historic Preservation Officer 
+One who preserves things, archivist, Tribal Historic Preservation Officer 
 kaakiihsitaatii- 
 Preserve for each other 
 kaakiihsitoo- 
@@ -1459,7 +1694,7 @@ kaanseenseemin-
 Pecan (Carya illinoinensis) 
 kaanseenseepiiw- 
 Ohio River 
-kaanseepakaaniÅ¡- 
+kaanseepakaaniš- 
 Pecan tree (Carya illinoinensis) 
 kaapi- 
 Assistant to the chief, one who distributes goods 
@@ -1469,29 +1704,35 @@ kaayohsen-
 Sandstone 
 kahcokaalakiinkwee- 
 Have heavy eyes, be sleepy 
-kahkeenÅ¡- 
+kahkaciwee- 
+he climbs a hill 
+kahkeenš- 
 Weed 
-kahkeenÅ¡aahkw- 
+kahkeenšaahkw- 
 Weed stalk 
+kahkicin- 
+have difficulty entering a space, hole, door 
 kahkiiti- 
 American White Pelican (Pelecanus erythrorhynchos) 
 kahkiitiaahkw- 
 American spikenard (Aralia racemosa) 
 kahkiteemin- 
 Mayapple (fruit) 
-kahkiteemiÅ¡aahkw- 
-Mayapple tree (Podophyllum peltatum) 
+kahkiteemišaahkw- 
+Mayapple (plant) (Podophyllum peltatum) 
 kahoki- 
 Cahokia person 
 kahpakahki- 
 Be thick woods 
-kahÅ¡imon- 
+kahšimon- 
 Canvas, linen 
+kakaanwaapitee- 
+have long teeth 
 kakapaac- 
 Variously, in different ways 
 kakapaacinaakosion- 
 Diversity 
-kakiipihÅ¡ii- 
+kakiipihšii- 
 Be deaf 
 kakiipiinkweehol- 
 Blindfold him 
@@ -1501,18 +1742,30 @@ kalaakalaal-
 Downy Woodpecker (Picoides pubescens) 
 kalol- 
 speak to him 
+kalonteenam- 
+kindle it (fire) 
 kaloosi- 
 Speak 
 kaloosion- 
 Word 
 kalootamaw- 
 Speak for him 
+kapeehol- 
+take him across water 
+kapeehsaa- 
+go across, cross a river 
 kapeehsihtoo- 
 Take it across, ferry it across 
-kapeehÅ¡im- 
+kapeehwi- 
+cross in a boat 
+kapeehšim- 
 take him across, ferry him across 
-kapeehÅ¡in- 
+kapeehšin- 
 Go across, cross a river 
+kapeewioni 
+crossing 
+kapehkam- 
+pass it by, omit it, leave it out 
 kapihkam- 
 Pass by it, get in front of it, leave it out 
 kapihkaw- 
@@ -1521,6 +1774,8 @@ kapootwe
 soon, after a while 
 katakakook- 
 Northern leopard frog (Lithobates pipiens), Southern leopard frog (Lithobates sphenocephalus), Pickerel frog (Lithobates palustris) 
+kati 
+future, want to 
 katonkwaam- 
 Be sleepy 
 katoocii- 
@@ -1529,7 +1784,7 @@ katoohw-
 Cherokee person 
 katoohwakimin- 
 Cherry (Domesticated) 
-katoohwakimiÅ¡aahkw- 
+katoohwakimišaahkw- 
 Cherry Tree 
 katoopihkwee- 
 Have to pee, urinate 
@@ -1541,23 +1796,25 @@ kawihsen-
 Be fallen, topple over (as a tree) 
 kayohkam- 
 Blow it down, knock over by body 
-kaÅ¡ihkahw- 
+kašihkahw- 
 Stab him 
-kaÅ¡ihkahwaakan- 
+kašihkahwaakan- 
 dagger 
 keehpakiikinki naapinaakan- 
 Coat (Winter) 
 keekaanahkisinaakan- 
 Boot 
-keekaanohÅ¡i- 
+keekaanohši- 
 Mule (mulus) 
+keekaanohšia 
+Donkey, mule 
 keekaanoloohsi- 
 Rat 
 keekaanoonkwi- 
 Alligator (Alligator mississippiensis) 
 keekaanwikani- 
 Wasp (Bembix oculata) 
-keekaanwikaÅ¡i- 
+keekaanwikaši- 
 Grizzly Bear (Ursus arctos horribilis) 
 keekaanwimin- 
 Banana 
@@ -1569,16 +1826,18 @@ keetweenci
 Why 
 keetwi 
 What, what thing 
-keeÅ¡ihiweens- 
+keešihiweens- 
 Jesus 
-keeÅ¡ihiwi- 
+keešihiwi- 
 Creator, God 
 kihci-papikwan- 
 Cannon 
 kihcihtan- 
 big current, rapids 
+kihcikaan- 
+bean or seed used as playing piece in games 
 kihcikam- 
-Lake Michigan, Big lake, Ocean 
+Big lake, ocean 
 kihcinaakwat- 
 It is important, significant, sacred 
 kihkaapiikah- 
@@ -1593,7 +1852,7 @@ kihkahw-
 Choose him, select him 
 kihkamanhsi- 
 Kingfisher (Megaceryle alcyon) 
-kihkanÅ¡i- 
+kihkanši- 
 It burns intensely, it is a big hot fire 
 kihkatw- 
 Year 
@@ -1601,7 +1860,9 @@ kihkeelim-
 know him 
 kihkeelintam- 
 Know it 
-kihkihkiÅ¡aahkw- 
+kihkihkam- 
+mark one's house, field 
+kihkihkišaahkw- 
 Cutting board, butcher block 
 kihkihsen- 
 It is photographed 
@@ -1611,11 +1872,11 @@ kihkihsetoo-
 Take a picture of it 
 kihkihsitaakan- 
 Camera 
-kihkihÅ¡i- 
+kihkihši- 
 Camp 
-kihkihÅ¡im- 
+kihkihšim- 
 Take a picture of him 
-kihkihÅ¡in- 
+kihkihšin- 
 Be photographed 
 kihkiinkwaakan- 
 A portrait (general) 
@@ -1623,9 +1884,9 @@ kihkiinkwee-
 Make a portrait (general) 
 kihkiinkweeh- 
 Make a portrait of him 
-kihkiinkweehÅ¡im- 
+kihkiinkweehšim- 
 Take his portrait, photograph his face 
-kihkiinkweehÅ¡in- 
+kihkiinkweehšin- 
 Portrait, photograph of one's face 
 kihkincin- 
 Hug him 
@@ -1633,29 +1894,31 @@ kihkintoolaakan-
 Sign, guide, doctrine, observance 
 kihkintooli- 
 Discern, recognize, take note 
-kihkiÅ¡w- 
-Cut him (purposefully) 
 kihseelaakan- 
 Doorflap 
 kihsihsiinkwee- 
 wash one's face 
 kihtaahkw- 
 Tree trunk 
-kihÅ¡osi- 
+kihšosi- 
 Widower 
 kiihci- 
 Male bird, rooster 
+kiihkaalaweešw- 
+cut off his tail 
 kiihkaam- 
 scold him, talk roughly to him 
+kiihkaankweešw- 
+cut his face 
 kiihkaantamaw- 
 Scold him about it 
 kiihkaapiikasi- 
 The rope/thread breaks 
-kiihkaapiikihÅ¡inka mihcalaankw- 
+kiihkaapiikihšinka mihcalaankw- 
 Saturn (planet) 
 kiihkaapiikin- 
 break him (rope/thread) 
-kiihkaapiiÅ¡am- 
+kiihkaapiišam- 
 Border, boundary, allotment 
 kiihkaham- 
 Break it open, cut it (by tool) 
@@ -1667,28 +1930,40 @@ kiihkihkaa-
 It breaks, is broken 
 kiihkihkam- 
 Break it by foot, kicking 
-kiihkiihkiÅ¡w- 
+kiihkihkaw- 
+break him with my foot or kicking 
+kiihkiihkišw- 
 Chop him up (repeatedly) 
 kiihkiihkw- 
 Peregrine falcon (Falco peregrinus) 
-kiihkikaateeÅ¡w- 
+kiihkikaateešw- 
 Cut off, amputate his foot 
 kiihkikanee- 
 Have a broken leg 
+kiihkikaneehšin- 
+lie with a broken leg 
 kiihkinam- 
 Break it apart by hand 
+kiihkinehkiišw- 
+cut off his hand 
+kiihkinehkiišw- 
+cut his hand off (by knife) 
 kiihkitoneen- 
 Choke him 
-kiihkiÅ¡ahki- 
+kiihkišahki- 
 Cut grass, weeds 
-kiihkiÅ¡am- 
+kiihkišam- 
 Cut it 
-kiihkiÅ¡amaw- 
+kiihkišamaw- 
 Cut it off of him 
+kiihkišw- 
+cut him off, apart 
 kiihkoneehs- 
 Fish 
 kiihkoneehsihkii- 
 Go fishing (with a hand net or commercial fishing) 
+kiihkoneehsiins- 
+little fish 
 kiihpat- 
 It is dirty 
 kiihpeekin- 
@@ -1703,6 +1978,8 @@ kiihpoopii-
 Have enough to drink 
 kiihsaa- 
 Be few in numbers 
+kiihsakonakahke 
+in a few days, not many days 
 kiihsinsw- 
 A little (of something) 
 kiihtilaam- 
@@ -1711,11 +1988,13 @@ kiihtilaamat-
 it is prestigious, held in high regard 
 kiikaapw- 
 Kickapoo person 
+kiikii- 
+be alive, live 
 kiikiihsaa- 
 Recover quickly, come back to life quickly 
 kiikiihtan- 
 It flows with life 
-kiikilehÅ¡iwi- 
+kiikilehšiwi- 
 Stallion 
 kiikion- 
 Captive, prisoner 
@@ -1731,8 +2010,6 @@ kiilihsw-
 Sun, Moon, Month, Clock 
 kiilihswaakan- 
 Calendar 
-kiilohkim- 
-Doubt him, contradict him 
 kiilohkim- 
 Doubt him, contradict him 
 kiilohkiwee- 
@@ -1759,16 +2036,20 @@ kiinaakwapi-
 Be at ease, contented, happy 
 kiinaakwapih- 
 Make him contented, at ease, happy 
+kiinaakwi 
+at ease, happily, contentedly 
 kiinak- 
 Damn, dammit 
-kiinoÅ¡iÅ¡- 
+kiinošiš- 
 Butternut, White Walnut (Juglans cinerea) 
 kiint- 
 just, also, recently, wait, hold on! 
 kiintaawee- 
 It is sharp 
-kiintawikolee- 
+kiintaawikolee- 
 It has a sharp tip, point, nose 
+kiinte 
+just, recently, young, wait! 
 kiinteelintaakaanhs- 
 Small computer, laptop, ipad, tablet 
 kiinteelintaakan- 
@@ -1777,9 +2058,9 @@ kiintoo-
 Sharpen it 
 kiinwaahkoohsi- 
 Sweet Potato (Ipomoea batata) 
-kiinÅ¡iw- 
+kiinšiw- 
 Buffalo bull, cow bull 
-kiinÅ¡iwa siipiiw- 
+kiinšiwa siipiiw- 
 Bull Creek (Kansas) 
 kiipahooteekaan- 
 Jail 
@@ -1797,49 +2078,59 @@ kiiweeli-
 Laugh 
 kiiweeliinkwee- 
 Smile 
-kiiweeÅ¡inaw- 
+kiiweešinaw- 
 Laugh at him 
+kiiwikawi- 
+Go visiting 
 kiiwikawilotaw- 
 Visit him 
+kiiwiteeheem- 
+distract him, bother him 
+kiiyaahkwee- 
+do wrong, sin, be wicked 
 kiiyaahkweepii- 
 Be drunk, get drunk 
 kiiyaahkweeyon- 
 wickedness, foolishness 
 kiiyapahtoo- 
 Run around, run about 
-kiiÅ¡aakosi- 
+kiišaakosi- 
 Growing, getting larger, wax (as of the moon) 
-kiiÅ¡aan- 
+kiišaan- 
 Bag, sack 
-kiiÅ¡aanaahkw- 
+kiišaanaahkw- 
 Leather bag 
-kiiÅ¡ih- 
+kiiših- 
 Make him, create him, finish him 
-kiiÅ¡ihtoo- 
+kiišihtoo- 
 Make it, create it, finish it 
-kiiÅ¡iinkwee- 
+kiišiikikoleehw- 
+tickle him on the nose; metaphorically, I get it from him with pain, difficulty 
+kiišiinkwee- 
 Be ripe, mature corn 
-kiiÅ¡iinkwi- 
+kiišiinkwi- 
 Ironweed (Vernonia spp.), Green Corn 
-kiiÅ¡ikat- 
+kiišikat- 
 It is such a day 
-kiiÅ¡ikw- 
-Bead 
-kiiÅ¡ikw- 
+kiišikw- 
 Sky, heaven, day 
-kiiÅ¡iniiki- 
+kiišikw- 
+Bead 
+kiišiniiki- 
 Grow up, come of age 
-kiiÅ¡iniikihtoo- 
+kiišiniikihtoo- 
 Grow it 
-kiiÅ¡iniikin- 
+kiišiniikin- 
 It grows up, comes of age 
-kiiÅ¡isaakan- 
-pan (for cooking) 
-kiiÅ¡isam- 
+kiišisaakan- 
+pan (for cooking), oven 
+kiišisam- 
 Finish cooking it 
-kiiÅ¡isw- 
+kiišisi- 
+be cooked, get cooked 
+kiišisw- 
 Finish cooking him 
-kiiÅ¡itee- 
+kiišitee- 
 It is finished cooking 
 kilaahkii- 
 Tell a lie 
@@ -1867,7 +2158,7 @@ kineepikw-
 Snake (Agkistrodon contortrix) 
 kineepikwameekwa siipiiw- 
 Eel River (Northern Indiana) 
-kinohÅ¡ami- 
+kinohšami- 
 Otter (Lontra canadensis) 
 kinoon- 
 It is deep 
@@ -1897,32 +2188,52 @@ kinwaahkihtoo-
 Make it long 
 kinwaahkosi- 
 Be long 
+kinwaahkwaham- 
+make it (a piece of wood) long (by tool) 
 kinwaakwaan- 
 Coat, overcoat 
+kinwaalawee- 
+have a long tail 
 kinwaapiikat- 
 it is a long string, cord 
 kinwalaniihsi- 
 Sharp shinned hawk (Accipiter striatus), Coopers hawk (Accipiter cooperii) 
+kinwihkicee- 
+have a long tail (of birds) 
 kinwikam- 
 Calumet River 
 kinwikolee- 
 Have a long nose, a long beak 
-kinÅ¡im- 
+kinwikolee- 
+it has a long point (as of a point of land), a long nose 
+kinšim- 
 Soon, swiftly 
 kipahaakan- 
 Lock, padlock 
 kipaham- 
 Shut it, obstruct it by tool 
+kipalehkam- 
+block it (e.g. a door) with one's body 
 kipalwaakan- 
 Lid, cover of a pot 
+kipantikaapaawi- 
+stand blocking a door 
 kipenaakan- 
 Dam 
 kipinhs- 
 Twig 
 kipiteehee- 
 Be uninterested, unfriendly, aloof 
+kipiteeheem- 
+silence him by speech 
+kipohkaa- 
+shut, close up 
+kiposi- 
+Be surrounded by fire, be calm, composed 
 kipwihsaa- 
 It is shut, obstructed 
+kisaapaayahtoo- 
+rinse it, soak it, dunk it in water to wash it 
 kisaapiteehaakan- 
 Toothbrush 
 kisaham- 
@@ -1949,6 +2260,8 @@ kisihsinehkiiyaakan-
 Wash basin 
 kisiiham- 
 Erase it, blot it out 
+kisiinkweehaakaanihs- 
+Napkin, paper towel 
 kisimitiwee- 
 Wipe one's butt 
 kisimitiweehaakan- 
@@ -1961,8 +2274,6 @@ kitahsaakan-
 Parched Corn 
 kitahw- 
 Dig him up, take him out 
-kiteephkwanonki 
-Prophetstown (Village at the confluence of the Tippecanoe and Wabash Rivers) 
 kiteepihkwana siipiiw- 
 Tippecanoe River (Indiana) 
 kiteepihkwanw- 
@@ -1977,37 +2288,47 @@ kito-
 Sound, make the call of one's species (sound of an animal) 
 kiyaahkw- 
 Gull (Larus spp.) 
-kiyoÅ¡i- 
+kiyoši- 
 Old Man 
-kiÅ¡aapihkaahkosaakan- 
+kišaapihkaahkosaakan- 
 Stove, oven 
-kiÅ¡aapihkaahkotee- 
+kišaapihkaahkotee- 
 It is hot 
-kiÅ¡aapihkam- 
+kišaapihkam- 
 Hot Water 
-kiÅ¡aapihkamii- 
+kišaapihkamii- 
 It is hot water 
-kiÅ¡aapihkili- 
+kišaapihkili- 
 Be hot, have a fever 
-kiÅ¡aapihkisam- 
+kišaapihkisam- 
 Heat it, make it hot 
-kiÅ¡aapihkitee- 
+kišaapihkitee- 
 It is hot 
-kiÅ¡aawaahki- 
-It is hot weather 
-kiÅ¡aham- 
+kišaawaahki- 
+It is hot, warm inside the house 
+kišaham- 
 heat it up (by tool) 
-kiÅ¡iikin- 
+kišesam- 
+Bake it 
+kišesw- 
+Bake him 
+kišeswi- 
+Be baked 
+kišetee- 
+it bakes, is baked 
+kišiikin- 
 Tickle him 
-kiÅ¡iinkweehaakan- 
+kišiinkweehaakan- 
 Towel 
-kiÅ¡iipitonisi- 
+kišiipikaatee- 
+have one's foot/feet itch 
+kišiipitonisi- 
 Wild grape (Vitis aestivalis) 
-kiÅ¡ikileehsee- 
+kišikileehsee- 
 Cough 
-kiÅ¡im- 
+kišim- 
 make him angry by speech, words 
-kiÅ¡in- 
+kišin- 
 It hurts 
 kocihtam- 
 Take a test 
@@ -2031,6 +2352,8 @@ kociihsasiip-
 St. Joseph River (Indiana) 
 kocim- 
 Ask him 
+kocimen- 
+test something by drinking it, test the taste of a liquid 
 kocimol- 
 Ask him for 
 kociween- 
@@ -2049,15 +2372,17 @@ kohsetam-
 Show respect to it, honor it 
 kohsetaw- 
 Show respect to him 
-koohkooÅ¡- 
+kohsinkwat- 
+Be frightening, horrible 
+koohkooš- 
 Pig 
-koohkooÅ¡- 
+koohkooš- 
 Bacon 
-koohkooÅ¡a awiilaw- 
+koohkooša awiilaw- 
 Purslane (Portulaca oleracea) 
-koohkooÅ¡ihkinaahkw- 
+koohkoošihkinaahkw- 
 Armadillo 
-koohkooÅ¡ikaan- 
+koohkoošikaan- 
 Hog Pen 
 koohsi- 
 Mouse (Peromyscus maniculatus) 
@@ -2067,6 +2392,8 @@ kookaanihs-
 Teaspoon 
 kookii- 
 To dive, submerge into a body of water 
+kookimih- 
+Trap him 
 koolawahtoo- 
 Add to it 
 koonapi- 
@@ -2087,6 +2414,8 @@ kotahtee-
 Practice shooting 
 kotak- 
 other, another 
+kotakim- 
+say otherwise to him, say something else to him 
 kotakinaakosi- 
 He is entirely different 
 kotakinaakwat- 
@@ -2109,28 +2438,42 @@ koteewaapow-
 Liquor 
 koteewikaan- 
 Fireplace 
+koteeyohkaakan- 
+Lighter 
 kwaahkw- 
 Pileated woodpecker (Hylatomus pileatus) 
 kwaahkwaanhsi- 
 Grasshopper (Caelifera) 
-kwaahkwaanÅ¡i- 
+kwaahkwaanši- 
 Leech (Hirudinea) 
+kwaanti- 
+Climb down 
 kwaantihtan- 
 Waterfall 
+kwaantinaakan- 
+portage 
+kwaapantel- 
+Make him drink it, as medicine 
 kweehsi- 
 Female bird, hen 
 kweehsiaanikop- 
 Bitternut Hickory (Carya cordiformis) 
-kweehsitaatiinki 
-Respecting, christmas 
+kweetaapiikinaakan- 
+measuring tape 
+kwiihkwiihši- 
+Whistle 
 kwiilam- 
 Lose him 
 kwiilotam- 
 Lose it 
+kwiincipiikiihkaa- 
+Splash in water 
 kwiiw- 
 Young man (unmarried) 
 kwiiwihs- 
 Young boy 
+kyaacimwi- 
+hide one's thoughts in one's speech 
 kyaal- 
 Hide him 
 kyaalom- 
@@ -2150,12 +2493,14 @@ Be jealous of him
 l 
 -lakahkw- 
 palate, the roof of one's mouth 
--lakiÅ¡- 
+-lakiš- 
 Guts, entrails 
--lehÅ¡i- 
+-lehši- 
 Testicle 
 -lencihkan- 
 Glove 
+-lenkw- 
+armpit 
 -lenkwal- 
 Son-in-law 
 -lenkwalehs- 
@@ -2164,27 +2509,29 @@ Nephew (Cross-nephew)
 Wing 
 -lookan- 
 hip, lap 
+-lookay- 
+skin 
 leekawihtanwi siipiiw- 
 Guyandotte River (West Virginia) 
 lenanconci 
-Right, to the right 
+Right, from the right 
 lenimahwi- 
 Coyote (Canis latrans) 
-leninÅ¡- 
+leninš- 
 Milkweed (Asclepias syriaca) 
-lenipinÅ¡i- 
+lenipinši- 
 Underwater panther, Whale (cetaceans), water being 
-linkitee- 
-It melts, it thaws 
-lookweeÅ¡- 
+lookweeš- 
 Buckle 
 m 
 -mataahkom- 
 Piece of clothing, garment 
 -mehkom- 
 Vein, pulse 
--mehÅ¡oom- 
+-mehšoom- 
 Grandfather, grandpa 
+-mehšoomaky- 
+man's father-in-law, wife's father 
 -mihs- 
 Elder sister, older sister 
 -mintikom- 
@@ -2231,20 +2578,24 @@ maamaayohkaa-
 Have a cramp, cramps 
 maamahkatiaahkatw- 
 Black oak (Quercus velutina), northern red oak (Quercus rubra) 
+maamankipakat- 
+Catalpa tree, cigar tree (Catalpa speciosa) 
 maamawi 
 Together 
-maamihÅ¡ihk- 
+maamihšihka 
 Almost, nearly 
 maamiikaahki- 
 Warrior 
 maamilaniwiaahkwi- 
 Pokeweed (Phytolacca americana) 
-maamiÅ¡aahkwaahee- 
+maamišaahkwaahee- 
 Practice shooting lacrosse 
-maamiÅ¡imiÅ¡- 
+maamišimiš- 
 American Chestnut (Castanea dentata) 
 maankw- 
 Common Loon (Gavia immer) 
+maankwe 
+Acquaintance, friend (used as addressing form only) 
 maati- 
 A lazy person, idler 
 maaw- 
@@ -2255,9 +2606,17 @@ maawaham-
 Rake it 
 maawatonki- 
 Commander, officer, general 
-maawihÅ¡in- 
+maawatoo- 
+gather it together, put it together 
+maaweeli- 
+leave for winter hunt / go on fall hunt 
+maaweeli- 
+time of leaving for winter camp, fall hunt 
+maaweelih- 
+take someone on winter camp / fall hunt 
+maawihšin- 
 Head of a band or hunting party 
-maawihÅ¡inaakan- 
+maawihšinaakan- 
 band, hunting party 
 maawikim- 
 Principal chief, council chief 
@@ -2277,8 +2636,6 @@ maci-
 Bad, evil, mean 
 maci-alemw- 
 Mean Dog 
-maci-manetoow- 
-Mean Spirit 
 macileni- 
 Bad man 
 mahamaa- 
@@ -2293,22 +2650,36 @@ mahkateeleni-
 African American 
 mahkateemihkw- 
 Chimney swift (Chaetura pelagica), Black swift (Cypseloides niger) 
-mahkateemihÅ¡iiwi- 
+mahkateemihšiiwi- 
 Moose (Alces alces) 
+mahkateesw- 
+make black/dark by heat 
+mahkateetee- 
+be painted black 
 mahkateew- 
 Charcoal, Gunpowder 
+mahkateewaalakiinkwee- 
+have black eyes 
 mahkateewaapiikw- 
 black ribbon 
+mahkateewaapitee- 
+have black teeth 
 mahkateewee- 
 It is black 
 mahkateeweekin- 
 It is black cloth, paper 
+mahkateewi- 
+put charcoal on oneself 
 mahkateewihtoo- 
 Make it black 
+mahkateeyaankwee- 
+it is black corn 
 mahkateeyonam- 
 Make it black by hand 
 mahkateeyosi- 
 Be black 
+mahkatiaankani- 
+Have black feathers, plumes 
 mahkihkiw- 
 Herb medicine 
 mahkiikw- 
@@ -2317,7 +2688,7 @@ mahkisen-
 Shoe, moccasin 
 mahkisinaakan- 
 Moccasin top (with ribbonwork) 
-mahkomiÅ¡- 
+mahkomiš- 
 Staghorn sumac (Rhus typhina) 
 mahkonkwee- 
 it is dull, blunt 
@@ -2329,8 +2700,10 @@ mahkoteew-
 Prairie 
 mahkw- 
 American Black Bear (Ursus americanus) 
-mahkwa wiiloomiÅ¡- 
+mahkwa wiiloomiš- 
 Cherry Tree (wild) (Prunus serotina) 
+mahkwahsapihkii- 
+make bearskin garters 
 mahsakahkw- 
 Badger (Taxidea taxus) 
 mahsenaham- 
@@ -2347,18 +2720,22 @@ mahtohkatoopow-
 Cracked hominy soup 
 mahtohkatw- 
 Cracked corn, hominy 
-mahtohkiÅ¡am- 
+mahtohkišam- 
 Chop it up, cut it up 
-mahtohkiÅ¡w- 
+mahtohkišw- 
 Chop him up, cut him up 
 mahweew- 
 Wolf (Canis lupus) 
 mahweeyaahkw- 
 Burning Bush, Wahoo (Euonymus atropurpureus) 
+makiinkwee- 
+be corn with big grains 
 makiinkweemin- 
 Blackberry (Rubus allegheniensis) 
 makil- 
 Bark at him 
+makišiwee- 
+Bark (like a dog) 
 mal- 
 Have sexual intercourse with him/her 
 maleehpihtam- 
@@ -2385,6 +2762,10 @@ maleewee-
 Talk badly, blaspheme 
 maleeweekan- 
 Bad language 
+maleeweeyon- 
+bad speaking 
+maleewikolayikaa- 
+be badly dressed for dancing 
 maleewinaakat- 
 it is dangerous 
 maleewiniikin- 
@@ -2395,7 +2776,7 @@ maleewiteeheelotaw-
 have a bad heart towards him, antipathy towards him 
 maleewiton- 
 speak badly, have a bad mouth 
-maleewiÅ¡ileni- 
+maleewišileni- 
 Do bad, evil 
 maleeyom- 
 Speak badly of him, to him 
@@ -2405,6 +2786,12 @@ maleeyosi-
 He is ugly, bad, evil 
 malotakaham- 
 play the straw game 
+malotesi- 
+be small, little 
+mam- 
+Take him, buy him 
+mam- 
+Take him, buy him 
 mamahkiihsi- 
 toad 
 mamaw- 
@@ -2433,23 +2820,33 @@ manetawion-
 Spirituality 
 manetoow- 
 Manitou 
+manetoowi- 
+It has supernatural power, is a manitou 
 manetw- 
 Snow 
+mankaahkweemihsee- 
+cut big pieces of firewood 
 mankaalakiinkweemin- 
 Dewberry 
+mankaalakiinkweemiš- 
+Dewberry bush (Rubus flagellaris) 
 mankahsenahki- 
 Lake Maxinkuckee, Big Stone Lake 
-mankiiÅ¡- 
+mankiiš- 
 Medicine 
-mankiiÅ¡aahkw- 
+mankiišaahkw- 
 Sassafras (Sassafras albidum), Ague tree 
-mankiiÅ¡aahkwaapow- 
+mankiišaahkwaapow- 
 Sassafras Tea 
-mankiiÅ¡aapow- 
+mankiišaapow- 
 Liquid Medicine 
+mankikili- 
+be big, large 
 mankilaan- 
 It is a great rain, heavy rain, flood 
-mankiÅ¡am- 
+mankilenkwan- 
+have big wings 
+mankišam- 
 Cut something big 
 mantepway- 
 Lodge frame (without mats) 
@@ -2463,22 +2860,30 @@ masaanaapiikw-
 Rope 
 masaanihkii- 
 make thread, cord, hemp 
+matotam- 
+heat with stones, cook with stones 
+matotaw- 
+heat him with stones, cook him with stones 
 mayaaw- 
 Really, very, actually (used as an intensifier) 
 mayaawaapam- 
 Look directly at him 
 mayaawaapan- 
 It is the crack of dawn, first light 
+mayaawahan- 
+the wind blows straight (to a place) 
 mayaawikaan- 
 A center (general) 
 meehc- 
 After, finish 
+meehcaakamii- 
+Creek, stream 
 meehcaakamiins- 
 Small stream, creek 
 meehceelintam- 
 Decide it, finish thinking of it 
 meehcih- 
-Finish making him 
+Finish making him, harm him 
 meehcihpenatoo- 
 Be finished with it 
 meehcihtoo- 
@@ -2497,11 +2902,13 @@ meehtaham-
 Finish it, make it 
 meehtantam- 
 Finish eating it 
-meehtikooÅ¡i- 
+meehtikooši- 
 French 
+meehtisi- 
+he is done cooking, finishes melting 
 meehtitee- 
 It is finished cooking 
-meehÅ¡aapantaakan- 
+meehšaapantaakan- 
 Microscope 
 meekwaak- 
 Turnip (Brassica rapa) 
@@ -2509,7 +2916,7 @@ meelanotank-
 Lawyer, one who argues 
 meeleewaatawi- 
 German 
-meemeehÅ¡ihki- 
+meemeehšihki- 
 Dragonfly 
 meemeekwa 
 Maybe, perhaps 
@@ -2521,19 +2928,17 @@ meemihkwihkici-
 Red-tailed hawk 
 meemiihkimi- 
 Workman, worker, employee 
-meemileehÅ¡i- 
+meemileehši- 
 Groundhog (Marmota monax) 
-meemileehÅ¡i- 
+meemileehši- 
 Groundhog (Marmota monax) 
 meenankweepiak- 
 Pleiades (constellation) 
-meenkaalakiinkweemiÅ¡- 
-Dewberry bush (Rubus flagellaris) 
 meetaathsoopi- 
 Congress, President of the United States 
 meetaathsoopionk- 
 Washington D.C. 
-meeÅ¡imeelwi- 
+meešimeelwi- 
 Great Horned Owl (Bubo virginianus) 
 mehceeli- 
 Value, high esteem 
@@ -2559,15 +2964,17 @@ mehtohseeniwi-
 Live 
 mehtohseeniwih- 
 Make him live, make him human 
-mehÅ¡ihtoo- 
+mehtohseeniwiteehee- 
+have the heart of a human 
+mehšihtoo- 
 Enlarge it, increase it 
-mehÅ¡iili- 
+mehšiili- 
 Be abundant, numerous 
-mehÅ¡iisihtoo- 
+mehšiisihtoo- 
 Have a lot of it, be wealthy 
-mehÅ¡ilaakii- 
+mehšilaakii- 
 Make a goal 
-mehÅ¡iÅ¡aaki- 
+mehšišaaki- 
 be naked 
 melaam- 
 Smell it 
@@ -2595,6 +3002,8 @@ melonweem-
 To hold a meeting with him 
 meloonim- 
 slander him 
+meloonitam- 
+Slander it, ridicule it 
 memekwii- 
 Run 
 memekwiihsah- 
@@ -2609,7 +3018,7 @@ menahiwee-
 Give people something to drink 
 menapi- 
 Sit separate from others, community 
-mencihÅ¡in- 
+mencihšin- 
 Stumble 
 menehkwaakan- 
 Cup 
@@ -2621,18 +3030,30 @@ mentitohkaal-
 Honor him, admire him, welcome (formal) 
 mentokisi- 
 To be proud 
+meteehkweewi- 
+be a female medicine person 
+meteewi- 
+perform the miteewioni 
+meteewih- 
+induct him into the miteewioni 
+meteewihtoo- 
+use it in the miteewioni 
 metem- 
 Follow his trail 
 metemohs- 
 woman 
-meÅ¡aham- 
+mešaham- 
 Spear it 
-meÅ¡otam- 
+mešotam- 
 Shoot at and hit it 
-meÅ¡w- 
+mešowee- 
+wound people, shoot people 
+mešw- 
 Shoot and hit him 
 mihcaahkwat- 
 be a big tree 
+mihcaalakat- 
+it has a big hole, opening 
 mihcalaankw- 
 Morning Star, Planet 
 mihkintaakan- 
@@ -2647,6 +3068,8 @@ mihsool-
 Boat, canoe 
 mihsoolatenw- 
 Mount Joliet, Canoe hill 
+mihswaahkwahki- 
+it is land of dead trees, dry wood 
 mihswi- 
 it is a dead tree, dry wood 
 mihtahk- 
@@ -2657,65 +3080,71 @@ mihtam-
 First, earlier 
 mihtekamin- 
 Acorn 
-mihtekamiÅ¡- 
+mihtekamiš- 
 Oak tree (generic) 
+mihtekoop- 
+bow 
 mihtekoopaahkw- 
 Bow wood 
 mihtekowalaakan- 
 Wooden box, thousand dollars 
 mihtekwaapimin- 
 Mulberry 
-mihtekwaapimiÅ¡aahkw- 
+mihtekwaapimišaahkw- 
 Mulberry tree (Morus rubra) 
 mihtohseenion- 
 Life 
-mihÅ¡aa- 
+mihšaa- 
 it is big 
-mihÅ¡ahkwat- 
+mihšahkwat- 
 It is a clear sky 
-mihÅ¡i- 
+mihšakon- 
+several days, many days 
+mihši- 
 yet (used with negative) 
-mihÅ¡i-maalhs- 
+mihši-kinohšami- 
+Sea otter (Enhydra lutris) 
+mihši-maalhs- 
 American 
-mihÅ¡i-maalhseens- 
+mihši-maalhseens- 
 American boy 
-mihÅ¡i-maalhsehkwi- 
+mihši-maalhsehkwi- 
 American woman 
-mihÅ¡i-nipwaantiikaan- 
+mihši-nipwaantiikaan- 
 University, college 
-mihÅ¡ihkatw- 
+mihšihkatw- 
 War 
-mihÅ¡ihkinaahkw- 
+mihšihkinaahkw- 
 Painted terrapin turtle (Chrysemys spp.) 
-mihÅ¡iimin- 
+mihšiimin- 
 Apple 
-mihÅ¡iiminaapow- 
+mihšiiminaapow- 
 Apple Cider, Apple Juice 
-mihÅ¡iimiÅ¡aahkw- 
+mihšiimišaahkw- 
 Apple tree 
-mihÅ¡iinkweemiÅ¡- 
+mihšiinkweemiš- 
 Bur Oak (Quercus macrocarpa) 
-mihÅ¡iinkweemiÅ¡ahk- 
+mihšiinkweemišahk- 
 Bur Oak Grove 
-mihÅ¡iiwi- 
+mihšiiwi- 
 Elk (Cervus canadensis) 
-mihÅ¡iiwiateehi siipiiw- 
+mihšiiwiateehi siipiiw- 
 Elkhart River 
-mihÅ¡iiwiay- 
+mihšiiwiay- 
 Elk hide 
-mihÅ¡ikaateekan- 
+mihšikaateekan- 
 Big toe 
-mihÅ¡ilaakan- 
+mihšilaakan- 
 Lacrosse goal 
-mihÅ¡ipakw- 
+mihšipakw- 
 Leaf 
-mihÅ¡ipakw- 
+mihšipakw- 
 Page (of a book or newspaper) 
-mihÅ¡ipakwaapow- 
+mihšipakwaapow- 
 Tea 
-mihÅ¡ipakwahkihkw- 
+mihšipakwahkihkw- 
 Tea kettle, teapot 
-mihÅ¡itamiÅ¡- 
+mihšitamiš- 
 Pin Oak (Quercus palustris) 
 miicaahkoons- 
 Lunch box 
@@ -2753,7 +3182,7 @@ miihsilookiaakan-
 Body Hair 
 miihsitonaakan- 
 Moustache, beard 
-miihÅ¡iinkway- 
+miihšiinkway- 
 Eyelid, eyelash 
 miikaahkii- 
 Fight 
@@ -2761,12 +3190,14 @@ miikaal-
 Fight him 
 miikaalition- 
 Battle 
+miiki- 
+Give away, give gifts 
 miil- 
 Give to him 
 miilosihkwaakan- 
 A joke 
 miimi- 
-Mourning dove (Zenaida marcroura) 
+Mourning dove (Zenaida marcroura) (originally passenger pigeon) 
 miinawa 
 Either, or 
 miincip- 
@@ -2775,6 +3206,8 @@ miincipaahkw-
 Corn stalk 
 miincipahk- 
 Corn field 
+miincipankiš- 
+corn husk 
 miincipehkii- 
 Pick corn, harvest corn 
 miincipikaan- 
@@ -2791,13 +3224,13 @@ miisiikaan-
 Outhouse 
 miiw- 
 Trail, road 
-miiÅ¡aakan- 
+miišaakan- 
 leather 
-miiÅ¡imaah- 
+miišimaah- 
 Long ago, a long time ago 
-miiÅ¡iminaakosi- 
+miišiminaakosi- 
 be accustomed to 
-miiÅ¡imitaakan- 
+miišimitaakan- 
 Stocking, sock 
 mikici- 
 Bald Eagle (Haliaeetus leucocephalus) 
@@ -2806,7 +3239,7 @@ Eagle feather
 mikihkw- 
 Elder woman, old woman 
 milantaakan- 
-Vomit 
+Vomit, emetic 
 milatee- 
 be burnt or stuck to the pot, as soup etc. 
 milemaawi- 
@@ -2819,14 +3252,14 @@ miloohkami-
 It is spring 
 minahanw- 
 Island, continent 
+minahk- 
+grove of trees on a prairie 
 minayon- 
 Beverage, drink 
 minohsay- 
 Painted hide 
 minooteen- 
 Town, village 
-minooteenhs- 
-Small town 
 minooteenhs- 
 Little village, small town 
 mintaakan- 
@@ -2842,10 +3275,12 @@ Everywhere, whole, entire
 misihkw- 
 Hail 
 miteehkw- 
-Medicine Woman 
+Female Medicine Person 
 miteew- 
 Medicine Person 
-miÅ¡waakan- 
+miteewileni- 
+medicine person 
+mišwaakan- 
 Wound, scar 
 moohci 
 No, not 
@@ -2855,13 +3290,17 @@ moohkihsen-
 It is flooded 
 moohkii- 
 Surface, emerge (from water) 
+moohkin- 
+reveal him, expose him (by hand) 
 moohkinatoo- 
 Fill it 
+moohkineet- 
+It is full 
 moohsi- 
 Bug, Worm 
-moohsohkiiÅ¡ikomin- 
+moohsohkiišikomin- 
 buckeye nut 
-moohsohkiiÅ¡ikomiÅ¡- 
+moohsohkiišikomiš- 
 Ohio Buckeye tree (Aesculus glabra), Yellow Buckeye tree (Aesculus flava) 
 moohsw- 
 White-tail deer (Odocoileus virginianus) 
@@ -2869,7 +3308,7 @@ moohswalw-
 Buckshot 
 moohsway- 
 Deer skin 
-moohÅ¡ihtoo- 
+moohšihtoo- 
 Sense it, feel apprehensive about it, suspicious of it 
 mooleelim- 
 Hope, wish for him 
@@ -2881,10 +3320,16 @@ moonaapitee-
 Be toothless 
 moonahaakan- 
 Plow (tool) 
+moonahaakii- 
+farm, cultivate 
 moonaham- 
 Farm it, plow it 
 moonahiko- 
 Farming, plowing 
+moonahkawee- 
+have no feathers/fur, be plucked 
+moonahw- 
+dig him, cultivate him 
 moonawahki- 
 It is denuded land, land stripped bare 
 mootaakan- 
@@ -2897,26 +3342,28 @@ mooyaakan-
 Manure 
 mooyiinkweena siipiiw- 
 Des Moines River (Iowa), La Moine River (Illinois) 
-mooÅ¡akan- 
+moošakan- 
 Be good, beautiful weather 
-mooÅ¡aki 
+moošaki 
 always 
-mooÅ¡am- 
+moošam- 
 To cut it (hair) 
-mooÅ¡ihtoo- 
+moošihtoo- 
 Sense it, suspect it, feel apprehensive about it 
-mooÅ¡iko- 
+moošiko- 
 To mow 
-mooÅ¡inam- 
+moošinam- 
 Sense it, perceive it 
-mooÅ¡oon- 
+moošoon- 
 topknot, hair roach 
-mooÅ¡w- 
+moošw- 
 Cut his hair 
-mooÅ¡waakan- 
+moošwaakan- 
 Lawn mower, scythe, sickle 
-mooÅ¡waakant- 
+moošwaakant- 
 Scissors 
+myaalaahkosi- 
+be gaunt, emaciated 
 myaalaahkwiihsini- 
 To diet 
 myaalahkihki- 
@@ -2931,7 +3378,7 @@ myaaleelimwi-
 Sad, distressed 
 myaalisi- 
 Be dangerously ill 
-myaalwamiÅ¡- 
+myaalwamiš- 
 Ironwood/American Hophornbeam (Ostrya virginiana), American Hornbeam (Carpinus caroliniana), Musclewood 
 myaalweehk- 
 Walnut tree (Generic) 
@@ -2942,15 +3389,17 @@ Myaamia community web
 myaamia nipwaayonikaan- 
 Myaamia Center 
 myaamiaatawee- 
-Speak miami 
+Speak the Miami language 
 myaamiihkwi- 
 Miami woman 
 myaamiinaakosi- 
 Appear myaamia 
 myaamiiwi- 
 Be miami 
-myaaÅ¡ikinoonÅ¡i- 
+myaašikinoonši- 
 Muskellunge (Esox masquinongy) 
+myaašiteehee- 
+be a coward, afraid to fight 
 n 
 -naapeem- 
 Husband 
@@ -2974,8 +3423,12 @@ Tail
 Brain 
 -ntepikan- 
 Head 
+naacimiincipaa- 
+Go get corn 
 naahkiipion- 
 Chair 
+naahpa 
+but, instead 
 naahsaloonam- 
 Open it, unfold it 
 naaka 
@@ -2988,23 +3441,31 @@ naalimpi-
 Cottonmouth, water moccasin snake (Agkistrodon piscivorus) 
 naaminohtan- 
 Flow downward 
+naanaahkaakan- 
+stick for inviting someone to a feast 
+naanaahsaapi 
+the same, equally 
 naanaamaahsin- 
 It is shaken by the wind 
 naanaamaamihki- 
 the ground shakes, there is an earthquake 
+naanaamahan- 
+be shaky ground full of water 
 naanaamikaapaawi- 
 It stands shaking 
 naanahaantawi- 
 Black rat snake (Elaphe obsoleta obsoleta) 
-naanahamiÅ¡aahkw- 
+naanahamišaahkw- 
 Eastern White Pine, Weeping White Pine (Pinus strobus) 
+naaninkoti 
+one by one 
 naanipi- 
 Water snake 
 naankicii- 
 To be light weight 
 naanoohkakooti- 
 Soft-shell turtle 
-naanoohkilaakiimiÅ¡- 
+naanoohkilaakiimiš- 
 Chinkapin Oak (Quercus muehlenbergii) 
 naanoohkite 
 More and more 
@@ -3028,10 +3489,12 @@ naapinamoh-
 Dress him 
 naapiwiinswi- 
 Take a replacement name 
-naapiÅ¡i 
+naapiši 
 Likewise, also, too 
 naataw- 
 Fetch it for him, get it for him 
+naataweel- 
+fetch him by boat 
 naate- 
 Fetch it, go get it 
 naatoowia siipiiw- 
@@ -3042,10 +3505,12 @@ naaw-
 Almost, nearly 
 naayohkaa- 
 It is broken, cracked 
-naayohÅ¡im- 
+naayohšim- 
 Break him, crush him 
 naayonam- 
 Break it, crush it by hand 
+naayosi- 
+be broken, split 
 nah- 
 Well, proper, good 
 nahaapantam- 
@@ -3062,8 +3527,14 @@ nahamamwi-
 Wake up well, easily 
 nahat- 
 It is well (salutation) 
-naheÅ¡am- 
+naheelim- 
+esteem him, think highly of him 
+naheelintam- 
+esteem it, think it appropriate 
+nahešam- 
 Cut it well 
+nahihkanawee- 
+He takes a good path 
 nahihsen- 
 It is correct, it lies well 
 nahihtoo- 
@@ -3088,13 +3559,15 @@ nahiteehion-
 Have a proper heart, proper spirit, be wise, prudent, honor 
 nahiyohkaw- 
 Deal with him well 
+nahišileni- 
+be clever, cunning 
 nahkom- 
 Answer him, give one's consent 
 nahohsee- 
 Walk well 
 nahsihkicee- 
 Tree swallow (Tachycineta bicolor) 
-nahsihÅ¡in- 
+nahsihšin- 
 Lie down and relax 
 nahwee- 
 Speak well, proper 
@@ -3116,11 +3589,13 @@ nakatamaw-
 Leave something of his 
 nakin- 
 separate him, keep him from fighting, stop him 
+nakiniwee- 
+separate (people) who are fighting 
 nalaawahki lenasw- 
 Buffalo, bison (Bison bison) 
 nalaawahki pileew- 
 Wild turkey (Meleagris gallopavo) 
-nalaawahki pinÅ¡iw- 
+nalaawahki pinšiw- 
 Bobcat (Lynx rufus) 
 nalaawahki waapinkopakat- 
 Lamb's quarters (Chenopodium spp.), goosefoot 
@@ -3136,24 +3611,34 @@ nameewa siipiiw-
 St. Mary's River (Indiana) 
 namehk- 
 A short time 
+namehka 
+shortly, in/for a little while, soon 
 napaholw- 
 Green Ash (Fraxinus pennsylvanica), White Ash (Fraxinus americana) 
 napaleeteemin- 
 Black Raspberry (Rubus occidentalis) 
 napaliahkonci 
 On one side 
+napehkaakan- 
+moccasin liner, foot wrapping 
+napehkam- 
+put on moccasin liners, foot wraps 
+napehkamoh- 
+put footwraps/moccasin liners on him 
+napesaakan- 
+seasoning, something put in cooking 
+napesam- 
+Season with it, put it in as seasoning 
+napesw- 
+Season with him, put him in as seasoning 
 napil- 
 Common Sucker fish (Catostomus spp.) 
 natawaapam- 
 Look for him 
 natawaapantam- 
-Look for it 
-nataweelim- 
-Want him 
+Look, search for it 
 nataweelintam- 
-Expect it, demand it 
-nataweelintam- 
-Want it 
+Expect it, want it 
 nataweewi- 
 Timber rattlesnake (Crotalus horridus) 
 natonamahwi- 
@@ -3174,6 +3659,10 @@ naweeyohsaa-
 Go first, go ahead 
 nawi 
 For that purpose, go and 
+nawiikihw- 
+pick a fight with him 
+nawiikihwee- 
+look for a quarrel, pick a fight 
 nawinaal- 
 Chase him 
 nay- 
@@ -3203,11 +3692,13 @@ Red-bellied Woodpecker (Melanerpes carolinus)
 neehsee- 
 Breathe 
 neehseehpinee- 
-Breathing, lung disease or illness 
+Have a breathing disease, lung disease or illness 
 neehswihsenk- 
 Triangle 
 neehtawi 
 Only, exclusively, solely, always 
+neehtiaapint- 
+bowstring 
 neehtohkaa- 
 Go alone, march alone 
 neehtoopi- 
@@ -3216,9 +3707,9 @@ neehtwapi-
 Sit alone 
 neehtwiiki- 
 Live alone 
-neekatikaÅ¡i- 
+neekatikaši- 
 Horse (Equus caballus) 
-neekatikaÅ¡ikaan- 
+neekatikašikaan- 
 Horse stable 
 neekaw- 
 Sand 
@@ -3242,7 +3733,7 @@ neepihki-
 Doctor 
 neepwaanki- 
 Teacher 
-neesÌwakamiik- 
+neešwakamiik- 
 Double Creek (Oklahoma) 
 neew- 
 See him 
@@ -3250,10 +3741,18 @@ neewe
 Thank you 
 neewikolee- 
 Fork 
+neeyopakat- 
+4-leaf clover 
 nehs- 
 Capture him 
+nehsikonantee- 
+be gone three days 
+nehsonam- 
+count it as three 
 nehtoo- 
 Capture it, kill it 
+nekahol- 
+Untie him 
 nematoo- 
 Stand it up, set it up 
 nenaankweem- 
@@ -3262,6 +3761,12 @@ nenam-
 Recognize it 
 nenaw- 
 Recognize him 
+nenkatwaalakiinkwee- 
+have one eye 
+nenkisi- 
+melt 
+nenkotokaapaawi- 
+It stands alone, singly 
 nenohpetam- 
 recognize the taste of it 
 nep- 
@@ -3270,12 +3775,18 @@ nepaa-
 Sleep, fall asleep 
 nepe- 
 Die, be dead 
+nepeew- 
+Sleep at his/her house 
 nepihkii- 
 He doctors 
 nepil- 
 Doctor him 
+nepiswi- 
+medicate, doctor oneself 
 nepohsee- 
 Move slow, walk slow 
+nepol- 
+poison him 
 nepopahtoo- 
 Run slow 
 nepwaa- 
@@ -3293,21 +3804,27 @@ Teach
 nepwaantii- 
 Learn from each other, teach each other 
 nepwaci- 
-Be slowed down by cold 
+Be slowed down by cold, die of cold 
 nepwee- 
 Say it slowly, speak slowly 
+nepwi- 
+be poisoned, eat something that makes one sick 
 nepwih- 
 Make him slow down 
+nepwihseehki- 
+Collect firewood slowly 
 nepwihtan- 
 flow slowly 
 nepwim- 
 Speak slowly to him 
 nepwinehkiiwaci- 
-Have cold hands 
-nepwinehkiiwaci- 
 Have numb hands from the cold 
+nihkan- 
+It is dusk, almost night 
 nihsepikaakan- 
 Whip 
+nihsokone 
+three days 
 nihsopakat- 
 clover, white clover 
 nihswaapahee- 
@@ -3316,18 +3833,28 @@ niihpiil-
 Bring him there, arrive with him 
 niihpikaapiikw- 
 red ribbon 
+niihpikahtee- 
+It has red spots 
 niihpikan- 
 It is red 
+niihpikanowee- 
+have red cheeks 
 niihpikanw- 
 Blood 
 niihpikiciipihki- 
-It is a red root, Beet (Beta vulgaris) 
-niihpikiciipihki- 
-It is a red root, Beet (Beta vulgaris) 
+It is a red root, beet (Beta vulgaris) 
+niihpikihkii- 
+paint one's head red 
 niihpikiikin- 
 It is red cloth, paper 
 niihpikiinkwee- 
 Blush, have a red face 
+niihpikiinkwee- 
+be red corn 
+niihpikiinkweemin- 
+red corn 
+niihpikikanee- 
+have a bloody leg, a red leg 
 niihpikili- 
 Be red, bleed 
 niihpikilooki- 
@@ -3340,6 +3867,8 @@ niihpyaa-
 Arrive there 
 niihsapi- 
 Afternoon 
+niihsihkaa- 
+break from falling down 
 niila 
 I, me 
 niilaahkaal- 
@@ -3350,10 +3879,14 @@ niilaahtoo-
 Abandon it, refrain from it 
 niiloona 
 We, us (exclusive) 
+niilwi 
+Until, up to a time 
 niim- 
 Carry him aloft (in hand) 
 niimaakan- 
 Flag 
+niimantam- 
+carry it by mouth 
 niime- 
 Carry it aloft (in hand) 
 niimi- 
@@ -3362,7 +3895,7 @@ niimih-
 Make him dance 
 niimihk- 
 Fort 
-niimihkikantaakan- 
+niimihkihkantaakan- 
 Fence 
 niimiihkam- 
 Dance for it 
@@ -3384,26 +3917,46 @@ niiyaaha
 There about (less specific) 
 niiyaalotaw- 
 go to him there 
-niiÅ¡akone 
+niiyahkwe 
+since that time, up to that time 
+niiyohsen- 
+Square 
+niišakone 
 Two days 
-niiÅ¡anwi 
+niišanwi 
 Twice 
-niiÅ¡ohkoteewi- 
+niišin- 
+There are two of them, a pair 
+niišinaakwat- 
+it is that way 
+niišohkoteewi- 
 Have two fires, two households 
-niiÅ¡onaminki akim- 
+niišonaminki akim- 
 Second chief 
+niišonehk- 
+two handfuls 
+niišookaapaawi- 
+stand as two, two stand 
 nimacihsin- 
 It lies on a slope, Mississinewa River 
 nimatee- 
 It stands upright, is placed upright 
+ninkihši- 
+it is thawed wood 
+ninkitee- 
+It melts, it thaws 
 ninkotinki 
 Evenly, throughout, uniformly, consistently 
+ninkotonehk- 
+one handful 
 nipaakaan- 
 Bedroom, dorm 
 nipan- 
 It is cold weather 
-nipeewinÅ¡ii- 
+nipeewinšii- 
 There is moonlight 
+nipeeyoweekaan- 
+hotel, motel 
 nipihkahki- 
 It is wet, swampy ground 
 nipihs- 
@@ -3426,18 +3979,32 @@ noohkahkisinaakan-
 Slipper 
 noohkan- 
 it is soft 
-noohkapiÅ¡aakan- 
+noohkapišaakan- 
 Disk (tool for softening ground) 
-noohkapiÅ¡am- 
+noohkapišam- 
 Disk it (soften it, the ground) 
-noohkapiÅ¡iko- 
+noohkapišiko- 
 Softening the ground (disking) 
+noohkawee- 
+have soft fur 
 noohkiinkwee- 
 Be soft corn, unripe corn 
 noohkiinkweemin- 
 Soft Corn 
 noohkimin- 
 Flour 
+noohkiniiki- 
+be soft, tender, as a child 
+noohkipiiwee- 
+have soft fur / feathers 
+noohkisam- 
+cook it till it is soft, tender 
+noohkisw- 
+cook him till he is soft, tender 
+noohkitee- 
+It is cooked tender 
+noolaahkinet- 
+It fails to fill it 
 noolinti- 
 lye hominy, boiled hominy 
 noolintiohkii- 
@@ -3468,6 +4035,10 @@ noontaahkwantam-
 make a noise with it by mouth, play a flute 
 noontaahkwee- 
 Shout, make a noise 
+noontaahkwee- 
+it makes noise 
+noontaahkweenaakii- 
+make oneself heard while singing 
 noontam- 
 Hear it, understand it 
 noontaw- 
@@ -3482,7 +4053,7 @@ noontiohsee-
 Leave, get out, exit 
 noosikaan- 
 Sweat Lodge 
-nooÅ¡onke siipiiw- 
+noošonke siipiiw- 
 Neosho River 
 o 
 -oohkom- 
@@ -3497,6 +4068,12 @@ oociaapow-
 Rice soup 
 oociins- 
 gnat, little fly 
+oohsi- 
+have a father 
+oohsim- 
+have him as a father 
+ool- 
+refrain from eating him, hate the taste of him 
 oolwee- 
 Howl 
 oonaana 
@@ -3505,27 +4082,35 @@ ooniini
 This (in reach, inanimate) 
 oonsaaciipihk- 
 Carrot 
+oonsaahsw- 
+tan him, cure him (as of a hide) 
+oonsaahtee- 
+it is tanned 
 oonsaalamon- 
 Bloodroot (Sanguinaria canadensis), yellow ocher 
 oonsaalamoni siipiiw- 
 Salamonie River (Indiana) 
 oonsaanikw- 
 Fox Squirrel (Sciurus niger) 
+oonsaankweemin- 
+yellow corn 
 oonsaapeehkatee- 
 Jerusalem artichoke (Helianthus tuberosus) 
 oonsaasiip- 
 Lamoine River 
 oonsaawaahkw- 
 Osage orange tree (Maclura pomifera) 
-oonsaawaahÅ¡ii- 
+oonsaawaahšii- 
 Have a yellow metallic shine, copper 
+oonsaawaalahkwat- 
+it is a yellow cloud 
 oonsaawaapiikw- 
 yellow ribbon 
 oonsaawee- 
 It is yellow 
 oonsaaweekin- 
 It is yellow cloth, paper 
-oonsaawi-Å¡ool- 
+oonsaawi-šool- 
 Gold 
 oonsaawicaahkw- 
 Brass 
@@ -3533,12 +4118,16 @@ oonsaawihkihkw-
 Brass Kettle 
 oonsaawihkii- 
 Have blond hair 
+oonsaawilawee- 
+have bile 
 oonsaawimin- 
 Lemon 
 oonsaawiminaapoohkii- 
 Make lemonade 
 oonsaawiminaapow- 
 Lemonade 
+oonsaayaankwee- 
+be yellow corn 
 oonsaayaankweemin- 
 Yellow corn 
 oonsaayopakat- 
@@ -3555,9 +4144,9 @@ ootoo-
 Refuse to eat it, refrain from eating it 
 oowaah- 
 Here, located 
-oowiÅ¡- 
+oowiš- 
 In this direction, this way 
-ooÅ¡ihsaa- 
+oošihsaa- 
 Fall down 
 p 
 -pahkaam 
@@ -3594,13 +4183,17 @@ paahsam-
 dry it (by heat) 
 paahsatoowaakan- 
 Giant puffball (Calvatia spp. Fries) 
+paahsatoowee- 
+have edema 
 paahsw- 
 Dry him 
 paahtee- 
 It is dried (by heat or sun), dried meat 
-paakiÅ¡iinkwee- 
+paakilaapi- 
+Sit still, be quiet 
+paakišiinkwee- 
 Be still, at rest 
-paakiÅ¡iinkweepi- 
+paakišiinkweepi- 
 Sit still, be at rest 
 paakocii- 
 Be full from eating 
@@ -3623,8 +4216,8 @@ It is dry land
 paapaahsi- 
 Red-headed Woodpecker (Melanerpes erythrocephalus) 
 paapahsaahk- 
-Center, (in the) middle (reduplicated) 
-paapahsaahkimiÅ¡- 
+Center, (in the) middle 
+paapahsaahkimiš- 
 Pignut hickory (Carya glabra) 
 paapakimin- 
 Hackberry 
@@ -3632,7 +4225,7 @@ paapankamw-
 Fox (Vulpes vulpes) 
 paapiicihkinaahkw- 
 Eastern musk turtle, Stinkpot (Sternotherus odoratus) 
-paapiicihÅ¡i- 
+paapiicihši- 
 Goat (Capra aegagrus hircus) 
 paapincin- 
 Fall down 
@@ -3642,46 +4235,68 @@ paaskoontiahaakan-
 Baseball Bat 
 paaskoontiahwaa- 
 Play ball 
+pahkihteehkaw- 
+kill or collapse him by bodily action 
+pahkihteewaši- 
+collapse under a load, a pack 
 pahkiihteenihsaahkw- 
 American hazelnut bush (Corylus americana) 
 pahkiihteens- 
 Hazelnut 
-pahkiÅ¡am- 
+pahkišam- 
 Cut a piece from it (detach) 
-pahkiÅ¡w- 
+pahkišw- 
 Cut him up (as tobacco) 
-pahkohkwaniÅ¡- 
+pahkohkwan- 
+container made of bark, barrel 
+pahkohkwaniš- 
 American Elm (Ulmus americana) 
 pahkonaakan- 
 Extracting tool 
-pahkoÅ¡am- 
+pahkošam- 
 Cut a piece from it (extract) 
-pahkoÅ¡w- 
+pahkošw- 
 Cut a piece from him, cut it off him 
+pahkwahkiimin- 
+Meskwaki person 
+pahkwalee- 
+the fire blazes, it is on fire 
 pahkwaleenaakan- 
 Kindling wood 
-pahkweeÅ¡ikan- 
+pahkweelintam- 
+blow on it (fire) 
+pahkweešikan- 
 Bread 
 pahsaahkaahkanka 
 Solstice 
 pahsahaakan- 
 Wedge 
+pahsešw- 
+split him, cut him lengthwise 
 pahsiikani- 
 Wyandot person 
-pahÅ¡ikon- 
+pahšakiinkweeham- 
+hull corn with lye 
+pahšakiinkweesam- 
+soak corn in lye 
+pahšikon- 
 Drop him, let him fall 
-pahÅ¡ikonam- 
+pahšikonam- 
 Drop it, let it fall 
 pakaan- 
 Nut 
 pakaani siipiiw- 
 Elk River (West Virginia) 
-pakaaniÅ¡aahkw- 
+pakaanišaahkw- 
 hickory tree (generic) 
+pakaham- 
+strike it (by tool), knock on it (door) 
 pakam- 
 Strike him, hit him 
-pakamaakaniÅ¡- 
+pakamaakaniš- 
 Hackberry tree (Celtis occidentalis) 
+pakankii- 
+hit (people), strike (people) 
 pakanoweehw- 
 Slap him on the cheek 
 pakantaakan- 
@@ -3700,44 +4315,64 @@ pakitam-
 Throw it away, discard it 
 pakitaw- 
 Throw something at him 
-pakiteehÅ¡im- 
+pakiteehšim- 
 throw him down 
+pakiših- 
+crack nuts for him 
 pakwaahkon- 
 Lacrosse ball 
 pakwanteehwi- 
 Put on/wear a belt, cinch one's clothing 
 pakwantion- 
 Belt 
+palaanihsen- 
+Octagon 
+palaham- 
+miss it, fail to hit it (by instrument) 
 palakin- 
 Peel him, husk him 
 palehkaamee- 
 Be brave 
 palehtaw- 
 mishear him 
-pankihkwaaÅ¡iko- 
+pankihkaa- 
+It is brittle 
+pankihkwaal- 
+catch him (fish) with a hook and line 
+pankihkwaataakan- 
+Fish hook 
+pankihkwaatam- 
+fish for it with a hook and line 
+pankihkwaašiko- 
 Go fishing, be fishing (with a line and pole) 
-pankihkwaÅ¡ikw- 
+pankihkwašikw- 
 Angler 
 pankihtamw- 
 Parakeet (Conuropsis carolinensis), parrot 
-pankihÅ¡in- 
+pankihšin- 
 West, sunset 
 pankitee- 
 It bursts from heat, explodes, pops 
+pant- 
+singe him on a fire 
+papaahkwat- 
+it is polished, smooth 
 papaakanti- 
 Sunfish (Centrarchidae) 
 papakimin- 
 Blackhaw (fruit) 
-papakimiÅ¡aahkw- 
+papakimišaahkw- 
 Blackhaw tree (Viburnum prunifolium) 
 papampahtoo- 
 Jog, run 
-papankihÅ¡in- 
+papankihšin- 
 It is thin and flat, pancake 
-papankiÅ¡aapiikat- 
+papankišaapiikat- 
 Flat threads, flat strings, ribbons 
 papantion- 
 Lightning 
+papanši- 
+it burns dazzlingly, brilliantly 
 papikwan- 
 Gun 
 pasakwaapow- 
@@ -3752,6 +4387,12 @@ patahkaham-
 print it 
 patahkin- 
 Hold him down by hand 
+payosam- 
+shake it (out) over the fire 
+payosw- 
+shake him out over the fire 
+pašihsee- 
+fall or spill by mistake, unintentionally 
 peehkaamihki- 
 it is good soil, fertile land 
 peehkahki- 
@@ -3782,18 +4423,26 @@ peehkihtam-
 Like to hear it 
 peehkiihs- 
 Brant, farm goose 
+peehkiihsaankan- 
+goose feather 
 peehkikalol- 
 say good words to him, speak pleasingly to him 
 peehkikwaatam- 
 Sew it nicely, prettily 
 peehkikwaatee- 
 Be sewn prettily 
+peehkikwalee- 
+eat good food 
+peehkikwaših- 
+feed him good food 
 peehkinaakosi- 
 Be generous, kind 
 peehkisam- 
 Cook it well 
 peehkisi- 
 Pretty, beautiful, cute 
+peehkisiko- 
+be a good cook, cook well 
 peehkitaw- 
 Make it nice for him 
 peehkitee- 
@@ -3804,14 +4453,12 @@ peehkiteeheelotaw-
 Be fond of him, well disposed towards him 
 peehkitoo- 
 adorn it, make it nice 
-peehkiÅ¡inaakosi- 
+peehkišinaakosi- 
 Be good-natured, of good manners, courteous 
 peekamiiki siipiiw- 
 Missouri River 
 peekihtanki siipiiw- 
 Pecatonica River (Illinois) 
-peekitamink- 
-Trash, discard it, throw it away 
 peekiti- 
 Fart 
 peemak- 
@@ -3824,19 +4471,19 @@ peepakihki-
 Jew, Jewish person 
 peepakikoli- 
 Paddlefish (Polyodon spathula) 
-peepankihÅ¡ileeta ahsen- 
+peepankihšileeta ahsen- 
 Shale 
-peepanÅ¡iinkwi- 
+peepanšiinkwi- 
 White bass (Morone chrysops), White perch (Morone americana) 
 peepeehkwaahki- 
 It is land of mounds 
-peepicikoleehÅ¡i- 
+peepicikoleehši- 
 Rose-breasted Grosbeak (Pheucticus ludovicianus) 
 peepicinehki- 
 Mole 
 peepincihs- 
 Spark 
-peepookanteehÅ¡i- 
+peepookanteehši- 
 Wren (genus Troglodytes) 
 peesakwaan- 
 Wax 
@@ -3846,20 +4493,20 @@ peewaali-
 Peoria person 
 peewaaliaatawee- 
 Speak the Peoria language 
-peewaalionki 
-Peoria lands; Paola, Kansas 
+peeweeyocaahkw- 
+Peach tree (Prunus persica) 
 peeweeyoci- 
 Peach 
 peeweeyocita moohsi- 
 Caterpillar 
-peewiiyocaahkw- 
-Peach tree (Prunus persica) 
-peeyankihÅ¡i- 
+peeyankihši- 
 Piankashaw person 
-peeÅ¡iaanikop- 
+peešiaanikop- 
 Hickory (generic) 
 pehcihtoo- 
 Mistake it for something else 
+pehciinkwee- 
+see incorrectly, be mistaken in what one sees 
 pehcikwaatam- 
 Sew it wrongly 
 pehcim- 
@@ -3868,18 +4515,26 @@ pehcinaw-
 Mistake him for someone else 
 pehcipowi- 
 Drink the wrong thing, drink mistakenly 
-pehciÅ¡ileni- 
+pehcišileni- 
 Make a mistake, act in error 
 pehki- 
 Be a stranger, outsider, foreigner 
+pehkonehkam- 
+go around at night, walk at night 
+pehkonteeteehee- 
+have a dark heart, be depressed, sad 
 pehkwaatam- 
 Belch, burp 
+pehsehkam- 
+Wear shoes, put on shoes 
 pehtahotoo- 
 tie it wrongly 
 pehtahw- 
 Hit him by mistake 
 pehtahwi- 
 Hit oneself by mistake 
+pehtakim- 
+count him wrong 
 pehtakintam- 
 Count it wrong 
 pehtantam- 
@@ -3892,9 +4547,9 @@ pehtehtam-
 Hear it wrongly 
 pehtehtaw- 
 hear him wrongly 
-pehteÅ¡wi- 
+pehtešwi- 
 Cut oneself by mistake 
-pehtiÅ¡w- 
+pehtišw- 
 Accidentally cut him, mistakenly cut him 
 pehtwee- 
 Say the wrong thing, make an error in speaking 
@@ -3916,6 +4571,8 @@ pemeelintam-
 Respect it, heed it 
 pemehkawee- 
 Leave footprints, track of one's species 
+pemelešiham- 
+chase after it, keep (a promise) 
 pemicimee- 
 Swim along 
 pemihkanawee- 
@@ -3948,10 +4605,12 @@ peni-
 Give birth 
 pepoonwee- 
 I am old, of a certain age, winters 
-pepyaahÅ¡in- 
+pepyaahšin- 
 Lie alongside 
-pesehkam- 
-Wear shoes, put on shoes 
+pepyaapi- 
+sit alongside, near 
+pesentaakan- 
+Speaker 
 pesentam- 
 Listen to it, obey it 
 pesentaw- 
@@ -3972,14 +4631,18 @@ pihkontee-kiilhsw-
 Moon 
 pihkonteehki- 
 It is dark land, a dark place 
+pihkonteeteehion- 
+depression 
 pihkwaahk- 
 Mound 
-pihÅ¡aahkalw- 
+pihšaahkalw- 
 Flute, cane 
 piici- 
 Stink 
 piicihsakat- 
-Peppermint (Mentha Ã piperita), sweet everlasting (Pseudognaphalium obtusifolium), pennyroyal (Hedeoma pulegioides) 
+Peppermint (Mentha × piperita), sweet everlasting (Pseudognaphalium obtusifolium), pennyroyal (Hedeoma pulegioides) 
+piicihseehki- 
+come carrying firewood 
 piicihsin- 
 It stinks 
 piicileehsee- 
@@ -3994,6 +4657,8 @@ piikamihtanwi siipiiw-
 Great Kanahwa River (West Virginia) 
 piil- 
 Bring him 
+piimihkaasiko- 
+Weave 
 piimihkociihsi- 
 Cocoon 
 piiminahkwee- 
@@ -4012,14 +4677,20 @@ piintikii-
 Enter (a room or building) 
 piintikii- 
 it enters 
+piintikilee- 
+It goes in the fire 
 piipahtoo- 
 Come running 
 piit- 
 pizza 
+piitaacimwi- 
+bring news, arrive reporting 
 piitaahkaw- 
 throw to/at him 
 piitaamwi- 
 Flee in this direction 
+piitatee- 
+daytime comes 
 piitaw- 
 Bring it for him, to him 
 piitilaan- 
@@ -4034,11 +4705,13 @@ piiwaham-
 brush it, brush it off 
 piiwahw- 
 Brush him 
+piiweew- 
+fur 
 piiwi- 
 feather (generic), small feather 
 pikolakitimin- 
 Wild rose hip, prairie rose, climbing rose (Rosa setigera) 
-pikolakitimiÅ¡- 
+pikolakitimiš- 
 Wild rose bush, prairie rose, climbing rose (Rosa setigera) 
 pilaanti- 
 Baby bird 
@@ -4046,8 +4719,6 @@ pilakiihiweekaan-
 Hospital 
 pilakiihiwi- 
 Nurse, doctor, medical professional 
-pilakiihiwi- 
-Nurse, healer 
 pilakion- 
 Health 
 pileehsi- 
@@ -4058,7 +4729,7 @@ pileens-
 Chick, baby chicken 
 pileew- 
 Chicken (general term) 
-pileewa akiiÅ¡ikom- 
+pileewa akiišikom- 
 Turkey Day (Thanksgiving) 
 pileewaankan- 
 Turkey Feather 
@@ -4072,8 +4743,6 @@ pilow-
 Far away 
 pilowi- 
 It is far away 
-pilwi 
-Far away 
 pim- 
 Oil, Grease, Lard, Tallow, Butter 
 pimaamihkihsen- 
@@ -4088,32 +4757,40 @@ pinahkwaan-
 Comb 
 pinepakat- 
 Leaves are falling 
+pinipakahke 
+at the time when leaves fall 
+pinipakat- 
+leaves fall 
 pinkomin- 
 Blueberry (Vaccinium sp.), huckleberry (Gaylussacia baccata) 
 pinkw- 
 Ash 
+pinkwaahkat- 
+It is dusty 
 pinkwaapow- 
 Lye 
 pinkwaawileni- 
 person of the ashes, person of Pickawillany 
 pinkwahkiw- 
 Dust 
-pinkwapiw- 
+pinkwapi- 
 Powder 
-pinÅ¡iw- 
+pinšiw- 
 Cat, bobcat (Lynx rufus) 
-pinÅ¡iwa amootayi siipiiw- 
+pinšiwa amootayi siipiiw- 
 Wildcat Creek 
 pipoon- 
 It is winter 
-pipoonahkionki 
-North 
+pipoonahki- 
+it is north 
 pipoonw- 
 Year, winter 
 pipyaaw- 
 Alongside, by 
-piÅ¡insikw- 
+pišinsikw- 
 Merganser (genus Mergus) 
+poocihsen- 
+the wind blows into (the house) 
 poohkaanam- 
 Sift it, winnow it 
 poohkahaakan- 
@@ -4121,21 +4798,35 @@ Chisel
 poohkaham- 
 Make a hole in it by tool 
 poohkat- 
-It has a hole, keyhole 
-poohkihÅ¡iikoliaakan- 
+It has a hole 
+poohkihtan- 
+flow through a hole 
+poohkihšii- 
+One who has a pierced ear 
+poohkihšiikoliaakan- 
 Nose ring 
-poohkihÅ¡ikoli- 
+poohkihšikoleehw- 
+cut off his nose 
+poohkihšikoli- 
 yoncopin, water chinquapin, American lotus (nelumbo lutea) 
+poohkiinkwee- 
+be blind in one eye, one-eyed 
 poohkikoleehw- 
 Pierce his nose 
-poohkiÅ¡aakan- 
+poohkikoleehwi- 
+have a pierced nose 
+poohkisi- 
+he is pierced, has a hole in him 
+poohkišaakan- 
 Window 
-poohkiÅ¡am- 
+poohkišam- 
 Cut a hole in it 
 poohkohkaa- 
 it is pierced, it gets a hole in it 
 poohkohsiihsi- 
 Bobwhite (Colinus virginianus) 
+poohkopehkwan- 
+have a hump on one's back 
 poonaahkii- 
 Stop throwing, stop playing lacrosse 
 poonam- 
@@ -4148,7 +4839,7 @@ pooneelintam-
 Stop thinking of it, forget it 
 pooni- 
 Stop, cease 
-pooni-kiiÅ¡ikat- 
+pooni-kiišikat- 
 Day of the week 
 poonihsen- 
 The wind stops 
@@ -4157,9 +4848,11 @@ It stops flowing
 pooniihkaw- 
 Leave him alone, quit dealing with him 
 poonikaa- 
-Stop dancing 
+Stop dancing, quit dancing 
 poonikitelotaw- 
 Forgive him 
+poonileehsee- 
+quit breathing, die 
 poonipii- 
 Stop drinking 
 pooniteeheelotaw- 
@@ -4172,6 +4865,8 @@ pootaataakan-
 Blow Pipe 
 pootaatam- 
 Blow on it 
+pootawaw- 
+make a fire for him 
 pootawee- 
 Start a fire 
 pwaawikamisiip- 
@@ -4182,7 +4877,7 @@ pyaa-
 It comes 
 pyaakimin- 
 Persimmon berry 
-pyaakimiÅ¡aahkw- 
+pyaakimišaahkw- 
 american persimmon tree (Diospyros virginiana) 
 pyaalotaw- 
 approach him 
@@ -4217,12 +4912,22 @@ saapiinkwion-
 vision, foresight 
 saasakiiniwi- 
 Policeman 
+sahkaham- 
+light it, set it on fire 
+sahkasi- 
+have one's house burn down 
+sahkatee- 
+it is lit, burns 
 sakaahkwee- 
 Grab hold 
 sakahaakan- 
-Nail (metal) 
+Nail (metal), screw 
+sakahol- 
+I tie him on, fasten him 
 sakahotoo- 
 Tie it on, fasten it 
+sakam- 
+hold him in one's mouth 
 sakantam- 
 Hold it in the mouth 
 sakiin- 
@@ -4233,6 +4938,10 @@ sakiinam-
 Hold it, grasp it 
 sakikansi- 
 Blue Ash (Fraxinus quadrangulata) 
+sakikoleehpw- 
+bite him on the nose (and hold on) 
+sakikoleen- 
+grab him by the nose 
 sakimi- 
 Mosquito (Culiseta longiareolata) 
 sakinteenhs- 
@@ -4243,6 +4952,8 @@ sakipitee-
 It is tied fast 
 seehkwee- 
 weep, cry 
+seehseekwaci- 
+cry out from cold 
 seekatehkw- 
 Tick 
 seekih- 
@@ -4289,14 +5000,20 @@ siikinam-
 Pour it (into or out of) 
 siilipiinkwee- 
 have one's eyes water 
+siilipiinkweewaci- 
+have one's eyes water from the cold 
 siinipiikinam- 
 Wring it out, squeeze the liquid out of it 
 siinitikolee- 
 Blow/wipe one's nose 
 siinitikoleen- 
 Blow / wipe his nose 
+siinkikolee- 
+it is a point of land 
 siipiiw- 
 River 
+siipiomeekw- 
+Aspen, quaking aspen (Populus tremuloides) 
 soonkaci- 
 To freeze 
 soonkan- 
@@ -4305,12 +5022,18 @@ soonkatehki-
 the ground is frozen solid 
 soonkaten- 
 It freezes, is frozen 
+soonkiinkwee- 
+be firm corn 
 soonkikaatee- 
 Have hard, firm feet 
 soonkin- 
 Hold him strongly, firmly 
+soonkinam- 
+hold it strongly, grip it: harden it 
 soonkinetii- 
 Hold firmly to each other, grab each other 
+soonkiteeheem- 
+encourage him 
 soopaakisi- 
 Misbehave 
 soopalohpw- 
@@ -4352,16 +5075,20 @@ taahsonki
 On this side 
 taahtaankw- 
 Spotted skunk (Spilogale putorius), civet cat 
-taahtakiihÅ¡im- 
+taahtakiihšim- 
 lay him down 
-taahtakiihÅ¡in- 
+taahtakiihšin- 
 Lay down 
 taanaaha 
 Where about, when 
+taani 
+how, what, where 
 taaninhswi 
 How many, how much, how far, a quantity of place or objects, time 
-taaniÅ¡i 
+taaniši 
 How, where to, when 
+taanišokone 
+How many days? 
 taanonci 
 From where 
 taapihs- 
@@ -4370,9 +5097,11 @@ taapimaawe
 exclamation, be it from fear or in admiration, used only by women 
 taapinam- 
 Raise it up by hand 
+taatohkaa- 
+it is torn open, ripped open 
 taatohkam- 
 He tears it open, bursts it 
-taatoÅ¡am- 
+taatošam- 
 cut it open 
 taawaaw- 
 Ottawa person 
@@ -4382,15 +5111,19 @@ tahkaahsin-
 It is a cold wind 
 tahkaahsitaakan- 
 (electric) fan 
+tahkahaakaani 
+Refrigerator 
 tahkaham- 
 cool it (by tool) 
+tahkahseni- 
+be cold, of stone or metal 
 tahkan- 
 It is cool weather 
 tahkihsen- 
 It is cold to the touch, cooled off 
 tahkihsetoo- 
 Cool it 
-tahkihÅ¡im- 
+tahkihšim- 
 Cool him off 
 tahkili- 
 Be cold to the touch 
@@ -4416,10 +5149,20 @@ takwaahkat-
 There is frost 
 takwaaki- 
 It is autumn/fall 
+takwaakike 
+during fall, autumn 
+takwaakonki 
+last autumn, fall 
 takwaham- 
 Grind it 
+takwahiko- 
+grind corn 
+talion- 
+Goods, riches, wealth, possessions 
 tapaahsi- 
 Canada Goose (Branta canadensis) 
+tapaahsiaankan- 
+Canada goose feather 
 tapaal- 
 Love him, have affection for him 
 tapaalintion- 
@@ -4438,7 +5181,7 @@ teehsoon-
 Scaffold, sleeping platform, shelf 
 teehtaw- 
 kind, type 
-teehÅ¡- 
+teehš- 
 Instead of, only, rather than, except for 
 teekinaahkw- 
 Grackle (Quiscalus quiscula) 
@@ -4468,6 +5211,10 @@ tehtepihsaapi-
 Ride a bike 
 tekweeh- 
 Make him ashamed 
+tekweehkaw- 
+shame him by one's actions 
+tekweem- 
+shame him by speech, words 
 tekweesi- 
 Be ashamed 
 tekweesihtam- 
@@ -4478,6 +5225,8 @@ tepahw-
 Pay him 
 tepeelinkii- 
 Govern, run things 
+tepeelintam- 
+deliberate on it, act deliberately; govern/control it 
 tepehkii- 
 It is night 
 tepilaweesi- 
@@ -4492,6 +5241,8 @@ tikweeyon-
 Shame 
 tipahaakaanihs- 
 Minute 
+tipahaakan- 
+measure, payment 
 tipeelinkiikaan- 
 Tribal Office, Headquarters 
 tipeelinkion- 
@@ -4503,7 +5254,9 @@ Good, pleasing, gladly
 tipehki kiilhsw- 
 Moon 
 tipilawe 
-of oneâs own effort, oneâs own family 
+actual, itself, inherently 
+toohkam- 
+follow it 
 toohkaw- 
 Follow him 
 toohkii- 
@@ -4526,13 +5279,17 @@ toopeeli-
 accomplish, succeed, finish 
 toopihsen- 
 It is effective, works well 
-toopihÅ¡in- 
+toopihšin- 
 Hurt oneself falling down 
 toopim- 
 have someone's consent 
-toopiÅ¡am- 
+toopinaal- 
+overcome him, master him 
+toopiteehee- 
+feel accomplished, successful 
+toopišam- 
 Manage to cut it 
-toopiÅ¡w- 
+toopišw- 
 Manage to cut him 
 toopwee- 
 Accomplish (by speech), persuade 
@@ -4543,6 +5300,8 @@ Name, clan
 Wife 
 waaciinkweeh- 
 Annoy him 
+waaciinkwiteehee- 
+Be troubled, worried 
 waahkamiinkwee- 
 Have a clean, clear face 
 waahkw- 
@@ -4551,20 +5310,40 @@ waahoonah-
 Potawatomi person 
 waahpyaa- 
 Arrive here 
+waahsaakanehkii- 
+make torches for night fishing 
 waahsaaphtee- 
 It is overripe 
 waahsee- 
 It is daylight 
 waahsee-kiilhsw- 
 Sun 
+waahsipikihkii- 
+To be bald 
+waahswaa- 
+fish by torchlight 
+waahswaam- 
+catch him (fish) by torchlight 
+waahtinam- 
+sacrifice it, offer it 
+waahtinamaw- 
+make a sacrifice to him 
+waakal- 
+It is oval-shaped 
 waakihsah- 
 Cause him to go in a circle 
-waakiÅ¡am- 
+waakikaatee- 
+have a bent, crooked foot 
+waakikanee- 
+have a crooked leg 
+waakišam- 
 Cut it crookedly 
 waakohsee- 
 Walk in a circle, meander 
 waal- 
 Cave, Hole in the ground 
+waalahki- 
+be a valley, hollow, depression 
 waalantaakanisiip- 
 Coal River (West Virginia) 
 waalihkii- 
@@ -4575,18 +5354,18 @@ waalihtan-
 It is a ditch, a gully 
 waalinaakan- 
 Well (for water) 
-waanantakihÅ¡in- 
+waanantakihšin- 
 Lay quietly 
 waanapi- 
 Eat something up 
-waapaahkoonseenti- 
-Eastern cottonwood tree (Populus deltoides) 
-waapaahÅ¡iki siipiiw- 
+waapaahšiki siipiiw- 
 Wabash River (northern Indiana) 
 waapaapiikw- 
 white ribbon 
 waapahaakan- 
 Soap 
+waapahamaw- 
+make it white for him (by tool) 
 waapahsen- 
 Limestone 
 waapam- 
@@ -4595,18 +5374,24 @@ waapamoon-
 Mirror, glass 
 waapan- 
 It is dawn, light 
+waapanaahk- 
+medicine bag, warrior's bundle 
 waapanahki- 
 Delaware person 
 waapanekaa- 
 Dance all night 
 waapanelaan- 
 It rains all night 
+waapani 
+all night long 
 waapank- 
 Tomorrow 
 waapanki- 
 Swan 
 waapankiaakamii- 
 Marais des Cygnes River (Kansas) 
+waapankiaankan- 
+swan feather 
 waapankii- 
 Observe, Look on, watch 
 waapanohsee- 
@@ -4617,6 +5402,8 @@ waapansw-
 Rabbit 
 waapantam- 
 Look at it 
+waapantee- 
+it (fire, lamp) gives off light, there is fire light 
 waapantel- 
 Show something to him 
 waapantenaakan- 
@@ -4627,6 +5414,8 @@ waapantw-
 Mushroom (generic) 
 waapeehs- 
 Mussel (Unio pictorum) 
+waapeehsisiip- 
+shell creek, fossil creek 
 waapeekin- 
 It is white cloth, paper 
 waapi- 
@@ -4649,20 +5438,34 @@ waapicahkihkw-
 shaker can 
 waapihki-moohsi- 
 Grub worm, borer larvae 
+waapihkii- 
+have a white head, white hair 
 waapihkilooki- 
 White Man 
+waapihkolay- 
+white garment, white robe 
 waapihkw- 
 Louse ( Fahrenholzia pinnata) 
 waapihkwee- 
 Have white hair, grey hair 
 waapihtank- 
 White Creek (Oklahoma) 
+waapiinkwee- 
+be white corn 
+waapiinkwee- 
+have a white face 
+waapiinkweemin- 
+white corn 
 waapikamii- 
 It is clear water, white water; White River West Fork 
 waapikoonahki- 
 There is hoarfrost 
+waapikweekan- 
+person with a white neck, a white collar 
 waapimotay- 
 Blanket 
+waapinam- 
+make it white by hand, whiten it 
 waapinkolaan- 
 light rain, sprinkle, drizzle 
 waapinkopakat- 
@@ -4693,10 +5496,12 @@ waawanihwi-
 Fool around, joke around 
 waawiihkapimin- 
 Pear 
-waawiikapimiÅ¡aahkw- 
+waawiikapimišaahkw- 
 Glossy Hawthorn (Crataegus nititda), Green Hawthorn (Crataegus virdidis), Red haw (Crataegus sp.) 
 waawiinaakan- 
 Biscuit, bread, muffin 
+waawiinkwee- 
+be round-faced 
 waawiipihkaa- 
 Do it in a hurry, go in a hurry 
 waawiipihseehki- 
@@ -4705,18 +5510,26 @@ waawiipinkwat-
 Fox grape (Vitis labrusca) 
 waawiipisi- 
 Hurry, be in a hurry 
+waawiipiton- 
+To eat fast 
 waawiyaa- 
 it is round 
 waawiyaak- 
 Circle 
+waawiyaakwee- 
+Talk a lot, for a long time 
 waawiyiisi- 
 Be round 
-waayaahkooÅ¡i- 
+waayaahkooši- 
 Millipede (Diplopoda) 
 waayaahtanw- 
 Wea person 
 waayol- 
 Bewilder him, confuse him 
+wanankohsee- 
+walk separately, scatter 
+wanehkam- 
+spread it, scatter it by walking 
 wanihtam- 
 Misunderstand something heard 
 wanihtaw- 
@@ -4729,7 +5542,7 @@ wanipilaakii-
 Forget 
 wayaakaham- 
 Stir it 
-waÅ¡oon- 
+wašoon- 
 Otoe person 
 weehki-kihkatw- 
 New Year 
@@ -4741,10 +5554,14 @@ weekiyosi-
 be careful, be slow 
 weelihpiki atoohpoon- 
 Coffee table 
-weelolaahkoÅ¡ikw- 
+weelolaahkošikw- 
 Carpenter 
 weepin- 
 throw him to the ground 
+weeponaakan- 
+Medical wrap 
+weewahosion- 
+Wrapping, bandage, tape 
 weeweehsion- 
 Fan 
 weeweepaham- 
@@ -4761,6 +5578,8 @@ wehkaapantani-
 It looks new 
 wehkiili- 
 To innovate, have a new thought 
+welaahkisi- 
+he is short, a dwarf 
 welaahkonam- 
 Fold it, as clothing or skins 
 welaalaansam- 
@@ -4783,7 +5602,9 @@ welenaahkii-
 To spread something out, smooth something out 
 welenam- 
 shape it by hand 
-weleÅ¡am- 
+welesi- 
+be well adorned, well made up, well dressed 
+welešam- 
 Cut it into shape 
 welikaa- 
 Begin to dance 
@@ -4791,13 +5612,13 @@ wensam-
 Boil it 
 wensw- 
 Boil him 
-weÅ¡ih- 
+weših- 
 make him 
-weÅ¡ihtoo- 
+wešihtoo- 
 Make it; deal it (as in cards) 
-weÅ¡ihÅ¡in- 
+wešihšin- 
 Go to bed 
-weÅ¡ikii- 
+wešikii- 
 Build a house, pitch a tent 
 wihkiikin- 
 be new clothing 
@@ -4805,8 +5626,16 @@ wihkiinaakwat-
 It is new 
 wihkweeliihsi- 
 Bat (animal) 
+wiicihsaam- 
+have him/her as a sibling 
 wiicihsaantion- 
 brothers and sisters, children of the same parents 
+wiicihsaantioni 
+brotherhood 
+wiicihseehki- 
+collect firewood with someone 
+wiicihseehkim- 
+collect firewood with him 
 wiiciilam- 
 help him 
 wiiciilantii- 
@@ -4823,6 +5652,8 @@ wiicikiim-
 Live with him, dwell with him 
 wiicimiihkimom- 
 Work with him, collaborate 
+wiicinaakii- 
+Sing together, sing along 
 wiicinaakosi- 
 Be together 
 wiicinaakosion- 
@@ -4835,7 +5666,9 @@ wiiciwiiyaakiteeheem-
 have one's heart be happy with someone, congratulate someone 
 wiihkam- 
 Summon him, call him 
-wiihkapaahkwaakaniÅ¡- 
+wiihkankii- 
+call people, summon people 
+wiihkapaahkwaakaniš- 
 Silver maple, Soft maple (Acer saccharinum) 
 wiihkapaakan- 
 Salt 
@@ -4857,6 +5690,10 @@ wiihkoowi-
 Whippoorwill 
 wiihkway- 
 Fur cap 
+wiihkweehol- 
+put a poultice on him, swaddle him 
+wiihkween- 
+wrap him by hand 
 wiihkweetii- 
 Put on, wear pants 
 wiihkweetion- 
@@ -4869,13 +5706,25 @@ wiihs-
 many, much 
 wiihsakaakan- 
 Pepper 
+wiihsakaalakiinkwee- 
+have one's eyes hurt 
+wiihsakaalakiinkweesi- 
+have one's eyes hurt from smoke 
 wiihsakaapowee- 
 it is bitter liquid 
 wiihsakacaakwa 
+wiihsakakaaci- 
+have one's feet be painfully cold 
 wiihsakan- 
 it is bitter, sour 
-wiihsakihÅ¡in- 
+wiihsakihtawaci- 
+have one's ears hurt from cold 
+wiihsakihšin- 
 Be in great pain 
+wiihsakiinkweewaci- 
+have one's face hurt from the cold 
+wiihsakim- 
+speak bitterly to him, shock him with words 
 wiihsakinihkiiwaci- 
 Have one's hands hurt from cold 
 wiihsat- 
@@ -4886,11 +5735,17 @@ wiihsini-
 Eat 
 wiihsinikaan- 
 Dining room, dining hall, restaurant 
+wiihsopiikolee- 
+have a lot of water in one's nose 
 wiihswaalakat- 
 It has many holes in it 
 wiihswakintee- 
 It is expensive, high priced 
-wiikapimiÅ¡- 
+wiikap- 
+basswood inner bark 
+wiikapehkii- 
+gather basswood bark 
+wiikapimiš- 
 Basswood/American Linden (Tilia americana) 
 wiiki- 
 dwell, stay 
@@ -4904,12 +5759,14 @@ wiikintii-
 Marry each other 
 wiikway- 
 Glue (Made from deer horn) 
-wiikweehsimiÅ¡- 
+wiikweehsimiš- 
 Paper Birch (Betula spp.), River Birch (Betula nigra), Gray Birch (Betula populifolia), Canoe Birch tree 
 wiilinw- 
 Fat 
 wiilinwahsen- 
 Quartzite, granite 
+wiilinwi- 
+be fat 
 wiilinwiihsi- 
 Meadowlark (Sturnella neglecta) 
 wiimp- 
@@ -4920,6 +5777,8 @@ wiinaahkatw-
 Spicebush (Lindera benzoin) 
 wiinaahkatwaapow- 
 Spicebush Tea 
+wiinahamaw- 
+crack nuts for him (by tool) 
 wiincinaakosi- 
 Belong to a certain tribe 
 wiini- 
@@ -4950,6 +5809,10 @@ wiinkwaal-
 Respect him 
 wiinkweelim- 
 Trust him 
+wiinkwi- 
+sleep, be able to sleep 
+wiinsoon- 
+clan totem 
 wiinswi- 
 Be named 
 wiint- 
@@ -4962,17 +5825,19 @@ wiintaakanikaan-
 library 
 wiintam- 
 Call it, read it, name it 
+wiintamaakii- 
+tell people, declare, report 
 wiintamaakion- 
 notification, announcement 
 wiintamaw- 
 Tell it to him, instruct him 
 wiipic- 
 Flint 
-wiipicahkionkI 
-Huntington, IN 
+wiipicahki- 
+The land of arrowheads 
 wiipicahsen- 
 Flint nodule 
-wiipihÅ¡alw- 
+wiipihšalw- 
 Elderberry (Sambucus Canadensis) 
 wiipinkosi- 
 Be gray 
@@ -4984,10 +5849,16 @@ wiipinkwee-
 It is gray 
 wiipinkweekin- 
 It is gray cloth, paper 
+wiitaatwee- 
+speak in agreement 
+wiitahoko- 
+go along by boat, swim with 
 wiitahokom- 
 Go in a boat with, swim with 
 wiitapim- 
 Sit by him, ride with him 
+wiitapintam- 
+be or sit next to it, with it 
 wiitee- 
 Accompany, go together, go along with 
 wiiteem- 
@@ -4998,12 +5869,14 @@ wiiwahol-
 wrap him, bandage him, apply medicine to him 
 wiiwahosi- 
 Be wrapped, bandaged, swaddled 
-wiiwaÅ¡- 
+wiiwaš- 
 Saddle, pack 
-wiiwiikihÅ¡im- 
+wiiwiikihšim- 
 Wrap him up 
 wiiyaahki- 
 Stay, be at, dwell 
+wiiyaakat- 
+it is pleasant, enlivening 
 wiiyaakiteehee- 
 Happy, rejoice 
 wiiyaakiteeheem- 
@@ -5014,14 +5887,16 @@ wiiyoohsaapitaakan-
 Gums (Mouth) 
 wiiyoonkonci 
 Because 
-wiiÅ¡aapahtoo- 
+wiišaapahtoo- 
 Run fast 
-wiiÅ¡ih- 
+wiiših- 
 Paint on his face 
-wiiÅ¡ihwi- 
+wiišihwi- 
 Paint on one's own face 
-wiiÅ¡iinkweeh- 
+wiišiinkweeh- 
 Draw, paint an image of his face 
+wiišk- 
+Whiskey 
 wilaahkwahaakan- 
 Broad axe 
 wilenaahkihtaakan- 
@@ -5033,179 +5908,199 @@ It boils
 y 
 yaalanwihsink- 
 Pentagon 
-Å¡ 
--Å¡ihs- 
+š 
+-šihs- 
 Uncle (mother's brothers) 
--Å¡iikan- 
+-šiikan- 
 Butt, buttocks 
--Å¡iipit- 
+-šiipit- 
 Earring, ear pendant 
-Å¡aah- 
+šaah- 
 Sioux, Lakota person 
-Å¡aahkweehsi- 
+šaahkweehsi- 
 Yellow-bellied Sapsucker (Sphyrapicus varius) 
-Å¡aahtee- 
+šaahtee- 
 It is wilted, withered (of plants) 
-Å¡aahÅ¡aakweehsi- 
+šaahšaakweehsi- 
 garter snake 
-Å¡aakonam- 
+šaakohkiiwaci- 
+have one's head be cold 
+šaakonam- 
 crack it by hand 
-Å¡aakosam- 
+šaakopakitee- 
+leaves wither, burn from heat 
+šaakosam- 
 Burn it 
-Å¡aakwaci- 
+šaakosi- 
+burn, be burnt 
+šaakwaci- 
 Be cold 
-Å¡aakwalet- 
+šaakwalet- 
 it rots, decays 
-Å¡aakwiteehee- 
+šaakwikoleehšin- 
+fall and crush one's nose 
+šaakwiteehee- 
 Have a broken heart 
-Å¡aakwiteeheehpinal- 
+šaakwiteeheehpinal- 
 Cause him to be mournful, break his heart 
-Å¡aankomehkw- 
+šaankomehkw- 
 Purple Martin (Progne subis) 
-Å¡aaponaakan- 
+šaaponaakan- 
 Needle, pin 
-Å¡aapontiohsee- 
+šaapontiohsee- 
 it is a laxative 
-Å¡aapwaahkwihtaw- 
+šaapwaahkwihtaw- 
 Hear him through something 
-Å¡aawanw- 
+šaapwaalakisaakan- 
+pancake fried in a pan, bannock 
+šaawanw- 
 Shawnee person 
-Å¡aawe 
+šaawe 
 immediately, right away 
-Å¡aaweekonci 
+šaaweekonci 
 From the beginning, from the start 
-Å¡aay- 
+šaay- 
 Already, come to pass, goodbye 
-Å¡aaÅ¡aaÅ¡hkweekaan- 
+šaašaašhkweekaan- 
 Court house 
-Å¡aaÅ¡aaÅ¡hkwi- 
+šaašaašhkwi- 
 Judge 
-Å¡aaÅ¡ihkaapantani- 
+šaašihkaapantani- 
 It appears correct, it looks good 
-Å¡aaÅ¡ihkwee- 
+šaašihkiteeheem- 
+judge his heart 
+šaašihkwee- 
 Judge, decide 
-Å¡ahkamoolition- 
+šahkamoolition- 
 Communion 
-Å¡akwapawee- 
+šakwapawee- 
 be wet, damp 
-Å¡ayiipaaw- 
+šayiipaaw- 
 Morning 
-Å¡eeÅ¡aakamiÅ¡- 
+šeešaakamiš- 
 american beech tree (Fagus grandifolia) 
-Å¡iihÅ¡ahw- 
+šiihšahw- 
 Sting him 
-Å¡iihÅ¡iikimeewinÅ¡- 
+šiihšiikimeewinš- 
 Red Maple (Acer rubrum) 
-Å¡iihÅ¡iikwan- 
+šiihšiikwan- 
 Rattle 
-Å¡iihÅ¡iikweekihs- 
+šiihšiikweekihs- 
 Box Elder tree (Acer negundo) 
-Å¡iihÅ¡iikwi- 
-Massasauga (Sistrurus catenatus) 
-Å¡iihÅ¡iikwia 
+šiihšiikwi- 
 Eastern massasauga rattlesnake (Sisturus catenatus) 
-Å¡iihÅ¡iip- 
+šiihšiip- 
 Duck 
-Å¡iihÅ¡iipalw- 
+šiihšiipaankan- 
+duck feather 
+šiihšiipalw- 
 Duck Shot 
-Å¡iinkilaweelintam- 
+šiinkilaweeh- 
+be hateful to, hated by 
+šiinkilaweelintam- 
 Hate it 
-Å¡iinÅ¡iilawee- 
+šiinšiilawee- 
 Be strong 
-Å¡iinÅ¡iilaweetoo- 
+šiinšiilaweetoo- 
 Strengthen it 
-Å¡iinÅ¡iiwahwi- 
+šiinšiiwahwi- 
 Paddle strongly 
-Å¡iipantee- 
+šiinšiiwiteehee- 
+have a strong heart, be strong-hearted 
+šiipantee- 
 Be late, gone for a long time 
-Å¡iipeekaakanaahkw- 
+šiipeekaakanaahkw- 
 Tent peg 
-Å¡iipii- 
+šiipii- 
 Stretch oneself 
-Å¡iipilaan- 
+šiipilaan- 
 Rain for a long time 
-Å¡iipisam- 
+šiipisam- 
 Cook it for a long time 
-Å¡iipohsee- 
+šiipohsee- 
 Walk for a long time 
-Å¡iiÅ¡iipii- 
+šiišiipii- 
 Do stretching exercises 
-Å¡iiÅ¡onam- 
+šiišonam- 
 Rub it in, anoint it 
-Å¡iiÅ¡onamaw- 
+šiišonamaw- 
 Smear it on him 
-Å¡iiÅ¡wahaakan- 
+šiišonehkii- 
+anoint one's hands, have grease on one's hands 
+šiišwahaakan- 
 Paint brush 
-Å¡ikaakonki 
-Chicago 
-Å¡ikaakw- 
+šiišwikateen- 
+grease his feet by hand 
+šiišwinkileen- 
+rub oil or grease on his forehead 
+šikaakw- 
 Skunk (Mephitis mephitis), Garlic (Allium spp.), Wild Ramp 
-Å¡ikaakwa siipiiw- 
+šikaakwa siipiiw- 
 Des Plaines River (Illinois) 
-Å¡ikaakwinÅ¡- 
+šikaakway- 
+skunk hide, skunk fur 
+šikaakwinš- 
 Skunk cabbage (Symplocarpus foetidus L. Nutt.) 
-Å¡iki- 
+šiki- 
 Urinate, pee 
-Å¡ikikaan- 
+šikikaan- 
 Bathroom, restroom (public) 
-Å¡ikinay- 
+šikinay- 
 Urine 
-Å¡ikwalalaanti- 
+šikwalalaanti- 
 Tadpole 
-Å¡imaakan- 
+šimaakan- 
 Lance, Spear 
-Å¡imaakanehsi- 
+šimaakanehsi- 
 Soldier 
-Å¡inkilaakan- 
+šinkilaakan- 
 Plate, platter 
-Å¡inkiphs- 
+šinkiphs- 
 American Coot (Fulica americana), Pied-billed grebe (Podilymbus podiceps) 
-Å¡inkohs- 
+šinkohs- 
 American Mink (Neovison vison) 
-Å¡inkw- 
+šinkw- 
 Gum, Resin, Wax 
-Å¡inkwaahkw- 
+šinkwaahkw- 
 Eastern red cedar (Juniperus virginiana) 
-Å¡oohkaham- 
+šišaweecin- 
+enter sideways 
+šišwic- 
+river bank, edge 
+šoohkaham- 
 Drag it 
-Å¡oohkwaahkaakan- 
+šoohkwaahkaakan- 
 Snowsnake (object) 
-Å¡oohkwaahkii- 
+šoohkwaahkii- 
 Play snowsnake 
-Å¡oohkwaakan- 
+šoohkwaakan- 
 Sled, Wagon 
-Å¡oohkwaakan- 
+šoohkwaakan- 
 Car 
-Å¡oohkwaakanapi- 
+šoohkwaakanapi- 
 Ride in a car, travel by car 
-Å¡ool- 
+šool- 
 Money 
-Å¡ooli mootay- 
+šooli mootay- 
 Wallet, purse 
-Å¡oolikaan- 
+šoolikaan- 
 Bank 
-Å¡oowikontaakan- 
+šoowikontaakan- 
 Have a sore throat 
-Å¡oowilakiÅ¡i- 
+šoowilakiši- 
 Have a bellyache, stomach ache 
-Å¡oowintepikan- 
+šoowintepikan- 
 Have a headache 
-Å¡oowiteehee- 
+šoowiteehee- 
 Worry, have an aching heart 
-Å¡oowiyosi- 
+šoowiyosi- 
 Be sore, ache 
-Å¡ooÅ¡ookwalalaakan- 
+šoošookwalalaakan- 
 Kentucky Coffee Tree bean 
-Å¡ooÅ¡ookwalalaakaniÅ¡aahkw- 
+šoošookwalalaakanišaahkw- 
 kentucky coffee tree (Gymnocladus diocus) 
-Å¡owaapinam- 
+šowaapinam- 
 there is a tornado, a big wind 
-Â(c) ILDA Software Suite, Miami Tribe of Oklahoma | P.O. Box 1326 | Miami, OK 74355
-Language Content Â(c) Miami Tribe of Oklahoma
+© ILDA Software Suite, Miami Tribe of Oklahoma | P.O. Box 1326 | Miami, OK 74355
+Content © Miami Tribe of Oklahoma
 ILDA Software Suite has been made possible in part by the National Endowment for the Humanities, Andrew W. Mellon Foundation, Miami Tribe of Oklahoma, and the Myaamia Center. 
-
-Original text
-Rate this translation
-Your feedback will be used to help improve Google Translate
-Top of Form
-

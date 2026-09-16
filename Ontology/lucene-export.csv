@@ -1,0 +1,5 @@
+Entity,Type,Superclass(es),alg:animacy,alg:glottocode,alg:ildaId,alg:ildaLetter,alg:languageFamily,alg:speakerRestriction,alg:unresolvedGloss,lexinfo:partOfSpeech,dcterms:description,dcterms:source,dcterms:title,ontolex:broader,ontolex:canonicalForm,ontolex:comment,ontolex:entry,ontolex:isDefinedBy,ontolex:isSenseOf,ontolex:iso639P3PCode,ontolex:label,ontolex:language,ontolex:prefLabel,ontolex:seeAlso,ontolex:type,ontolex:writtenRep,
+owl:Thing,Class,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+
+Export of entity selection

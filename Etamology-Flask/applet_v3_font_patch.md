@@ -57,7 +57,7 @@ Create `./static/` directory and place:
 | Noto Sans CA    | U+1400–167F (UCAS fallback)  | all syllabic         |
 | Catrinity       | U+E480–E49F (GLAS PUA)       | pot, sac, kic legacy |
 | Catrinity       | U+0250–02AF (IPA)            | all (tooltip IPA)   |
-| IM Fell English | Latin                        | mia, kic, sha, mia  |
+| IM Fell English | Latin                        | mia, kic, sjw, mia  |
 
 ## 6. Initialise in template (end of `<body>`)
 

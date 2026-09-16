@@ -60,7 +60,7 @@ ALGIC: Dict[str, Dict] = {
     "kic": {"name": "Kickapoo",          "branch": "Central", "script": "roman",    "priority": True},
     "pot": {"name": "Potawatomi",        "branch": "Central", "script": "roman",    "priority": True},
     "sac": {"name": "Meskwaki (Fox)",    "branch": "Central", "script": "roman",    "priority": True},
-    "sha": {"name": "Shawnee",           "branch": "Central", "script": "roman"},
+    "sjw": {"name": "Shawnee",           "branch": "Central", "script": "roman"},
     "men": {"name": "Menominee",         "branch": "Central", "script": "roman"},
     "oji": {"name": "Ojibwe",            "branch": "Central", "script": "roman"},
     "cre": {"name": "Plains/Woods Cree", "branch": "Central", "script": "syllabics","priority": True},
@@ -1109,7 +1109,7 @@ const KIC = {{ kic_json | safe }};
 // Miami-Illinois Myaamia Roman — digraphs first (Leonard / Costa revised)
 const MIA = {{ mia_json | safe }};
 
-// Shared Algonquian (Pot, Sac, Men, Sha, Oji)
+// Shared Algonquian (Pot, Sac, Men, sjw, Oji)
 const ALGO = {{ alg_json | safe }};
 
 const LANG_TABLE = {{ lang_table_json | safe }};
@@ -1422,7 +1422,7 @@ LANG_TABLE_JSON = json.dumps({
     "cre":"syllabics","csw":"syllabics",
     "mia":"mia","kic":"kic",
     "pot":"algonquian","sac":"algonquian","men":"algonquian",
-    "sha":"algonquian","oji":"algonquian","mic":"algonquian","abe":"algonquian","alg":"mia",
+    "sjw":"algonquian","oji":"algonquian","mic":"algonquian","abe":"algonquian","alg":"mia",
 })
 
 
