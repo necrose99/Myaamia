@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling", "hatch-cython", "setuptools", "cx_Freeze"]
+build-backend = "hatchling.build"
+
+[project]
+name = "algic-etamology-flask"
+version = "3.0.0"
+description = "High-performance full-stack Flask server for the Algonquian language corpus"
+requires-python = ">=3.11"
+dependencies = [
+    "flask",
+    "gunicorn",
+    "pyglossary",
+    "translate-toolkit",
+    "ety",
+    "pysqlite3-binary",
+    "zstandard",
+    "rdflib",
+    "requests",
+    "lxml",
+    "beautifulsoup4",
+    "fonttools[woff2]",
+    "saxonche",
+    "sqlite-zstd"
+]
+
+[tool.hatch.build.targets.wheel.hooks.cython]
+dependencies = ["hatch-cython"]
+
+[tool.hatch.build.targets.wheel.hooks.cython.options]
+directives = { boundscheck = false, wraparound = false, language_level = "3" }
+compile_args = ["-O3"] # Max execution optimization compiler flag
+
+[tool.hatch.envs.default]
+dependencies = [
+    "cx_Freeze>=7.0.0"
+]
