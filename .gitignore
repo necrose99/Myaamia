@@ -1,8 +1,0 @@
-C:\Users\black\Dropbox\PC (2)\Documents\GitHub\Myaamia\node_modules
-# .gitignore
-/node_modules/
-/.repositories/
-/corpus_media/
-/webcorpus/
-*.mp3
-*.pyc
