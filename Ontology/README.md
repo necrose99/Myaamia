@@ -1,21 +1,22 @@
-***![]() **   
-  
+\*\*\* \*\*
+
 [https://lemon-model.net/index.html](https://lemon-model.net/index.html)
 
 [https://www.w3.org/TR/rdf-sparql-query/](https://www.w3.org/TR/rdf-sparql-query/) subset of rdf ttl or rdf xml [https://github.com/necrose99/Myaamia/XSLT](https://github.com/necrose99/Myaamia/XSLT)... area has xslt to transmogrification of formats...
 
 [https://github.com/necrose99/Myaamia/](https://github.com/necrose99/Myaamia/) tmx ttl
 
-[https://protege.stanford.edu/](https://protege.stanford.edu/) gui for newer language tools web or desktop   
+[https://protege.stanford.edu/](https://protege.stanford.edu/) gui for newer language tools web or desktop  
 [https://protege.stanford.edu/software/\#desktop-protege](https://protege.stanford.edu/software/#desktop-protege)
 
-[https://vocbench.uniroma2.it/](https://vocbench.uniroma2.it/)  gui for.ttl files also…
+[https://vocbench.uniroma2.it/](https://vocbench.uniroma2.it/)  gui for.ttl files also…  
+run open : [http://localhost:1979/vocbench3](http://localhost:1979/vocbench3)  
+  
+
 
 [https://github.com/pwin/turtle-editor-viewer](https://github.com/pwin/turtle-editor-viewer)
 
-[https://dotnetrdf.org/](https://dotnetrdf.org/)  
-  
-
+[https://dotnetrdf.org/](https://dotnetrdf.org/)
 
 these support Ttl turtle files made from TMX and upstream  ilda-myaamia dictionary... online in html...  html to tmx xillf etc...
 
@@ -23,15 +24,13 @@ these contain  verbs etc ... in ttl format... eventually morphines ie single pl
 
 and nls models... createation... grows more and more accurate with better formatting and tagging ttl or lift formats are definitely for linguists and or datascince or ai modeling..
 
-thiers an official ILDA app... but NLS Models like libretranslate Argos Firefox Google Microsoft uses some simular... if they could bake smaller models into android or IOS iihia.... ok powerful....  voice recognition in Myaamia or English searches... or improve your pronunciation…  
-  
-better instruction or adaptive instruction potentially with llm ai tools…   
-  
-but word need classification verbs  nouns etc etc  else any models procured for Myamia could be of lesser quality   
-  
-Side benefit is linguistic researchers get ready to user or improve files   
-  
+thiers an official ILDA app... but NLS Models like libretranslate Argos Firefox Google Microsoft uses some simular... if they could bake smaller models into android or IOS iihia.... ok powerful....  voice recognition in Myaamia or English searches... or improve your pronunciation…
 
+better instruction or adaptive instruction potentially with llm ai tools…
+
+but word need classification verbs  nouns etc etc  else any models procured for Myamia could be of lesser quality
+
+Side benefit is linguistic researchers get ready to user or improve files
 
 some of SIL tools are older....  serviceable ... if not slightly challenging sometimes cumbersome to use...
 

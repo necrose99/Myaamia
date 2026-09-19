@@ -7,3 +7,6 @@
 [submodule "windows_algic_ime"]
 	path = windows_algic_ime
 	url = https://github.com/necrose99/windows_algic_ime
+[submodule "Algic-Etamology-Flask"]
+	path = Algic-Etamology-Flask
+	url = https://github.com/necrose99/Algic-Etamology-Flask.git

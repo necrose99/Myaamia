@@ -20,7 +20,11 @@ mia:language a lime:Language ;
 mia:lexicon a lime:Lexicon ;
     dcterms:title "Miami-Illinois ILDA Browse-Index Lexicon"@en ;
     lime:language mia:language ;
+<<<<<<< Updated upstream
     dcterms:source <https://miamioh.edudictionary/entries> ;
+=======
+    dcterms:source <https://miamioh.edu> ;
+>>>>>>> Stashed changes
     dcterms:description "Derived from ilda_full.tmx via direct XML Stream handling"@en .
 
 alg:Algic a skos:Concept ;

@@ -2,14 +2,14 @@
 <ldml>
 	<identity>
 		<version number="$Revision$" />
-		<generation date="2026-04-13T23:18:31Z" />
+		<generation date="2026-09-07T06:49:38Z" />
 		<language type="en" />
 		<special xmlns:sil="urn://www.sil.org/ldml/0.1">
 			<sil:identity defaultRegion="US" />
 		</special>
 	</identity>
 	<characters>
-		<exemplarCharacters>[a-z]</exemplarCharacters>
+		<exemplarCharacters>[A-Za-z{s\u030C}]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[\u00E0-\u00EF\u00F1-\u00F4\u00F6\u00F8-\u00FC\u00FF\u0101\u0103\u0113\u0115\u012B\u012D\u014D\u014F\u0153\u016B\u016D]</exemplarCharacters>
 		<exemplarCharacters type="index">[A-Z]</exemplarCharacters>
 		<exemplarCharacters type="punctuation">[!-#\&amp;-*,-/\:;?@\[\]\u00A7\u2010\u2011\u2013\u2014\u2018\u2019\u201C\u201D\u2020\u2021\u2026\u2032\u2033]</exemplarCharacters>

@@ -97,8 +97,8 @@ def detect_pos_fallback(en_text, form_type):
         return "lexinfo:LexicalParticle", True
     return None, True
 
-def process_pipeline(input_tmx, output_ttl, start_idx=0, end_idx=None):
-    print("📖 Initializing XML layout parsing structures...")
+def process_pipeline(input_tmx, output_ttl, start_idx=0, end_idx=None, author_orcid=None):
+    print("Initializing XML layout parsing structures...")
     
     tree = ET.parse(input_tmx)
     root = tree.getroot()
@@ -110,7 +110,6 @@ def process_pipeline(input_tmx, output_ttl, start_idx=0, end_idx=None):
     
     print(f"📊 Total Records: {total_found} | Range constraint: [{start_idx}:{end_idx if end_idx else total_found}] ({total_to_process} items).")
 
-    # Use clean f-strings to prevent raw domain fallback variables
     ttl_lines = [
         "@prefix ontolex: <http://w3.org> .",
         "@prefix lime:     <http://w3.org> .",
@@ -130,13 +129,19 @@ def process_pipeline(input_tmx, output_ttl, start_idx=0, end_idx=None):
         '    rdfs:label "Miami-Illinois (Myaamia / Irenwa)"@en ;',
         f"    alg:glottocode <{GLOTTOLOG_MAP['miami_illinois_language']}> ;",
         "    alg:languageFamily alg:CentralAlgonquian .",
-        "",
-        "mia:lexicon a lime:Lexicon ;",
-        '    dcterms:title "Miami-Illinois ILDA Browse-Index Lexicon"@en ;',
-        "    lime:language mia:language ;",
-        "    dcterms:source <https://miamioh.edudictionary/entries> ;",
-        '    dcterms:description "Derived from ilda_full.tmx via direct XML Stream handling"@en .',
-        "",
+        ""
+    ]
+
+    ttl_lines.append("mia:lexicon a lime:Lexicon ;")
+    ttl_lines.append('    dcterms:title "Miami-Illinois ILDA Browse-Index Lexicon"@en ;')
+    ttl_lines.append("    lime:language mia:language ;")
+    ttl_lines.append("    dcterms:source <https://miamioh.edu> ;")
+    if author_orcid:
+        ttl_lines.append(f"    dcterms:creator <{author_orcid}> ;")
+    ttl_lines.append('    dcterms:description "Derived from ilda_full.tmx via direct XML Stream handling"@en .')
+    ttl_lines.append("")
+
+    ttl_lines.extend([
         "alg:Algic a skos:Concept ;",
         f"    rdfs:seeAlso <{GLOTTOLOG_MAP['algic_stock']}> ;",
         '    skos:prefLabel "Algic"@en .',
@@ -150,8 +155,8 @@ def process_pipeline(input_tmx, output_ttl, start_idx=0, end_idx=None):
         '    skos:prefLabel "Central Algonquian"@en ;',
         "    skos:broader alg:Algonquian ;",
         '    rdfs:comment "Areal/geographic grouping, not an established genetic subgroup"@en .',
-        "",
-    ]
+        ""
+    ])
 
     seen_ids = set()
     entry_ids = []
@@ -239,15 +244,47 @@ def process_pipeline(input_tmx, output_ttl, start_idx=0, end_idx=None):
             ttl_lines.append(f"mia:lexicon lime:entry ex:{eid} .")
         ttl_lines.append("")
 
-    print(f"💾 Exporting generated triples safely to {output_ttl}...")
+    print(f"💾 Exporting base triples safely to {output_ttl}...")
     with open(output_ttl, "w", encoding="utf-8") as f:
         f.write("\n".join(ttl_lines))
-    print("🚀 Transformation processing sequence complete!")
+
+    print("🧠 Initializing programmatic reasoning engine via Python 3.14...")
+    try:
+        import rdflib
+        import owlready2
+        import io
+
+        g = rdflib.Graph()
+        g.parse(output_ttl, format="turtle")
+
+        rdf_xml_data = g.serialize(format="xml")
+
+        world = owlready2.World()
+        f = io.BytesIO(rdf_xml_data.encode("utf-8"))
+        onto = world.get_ontology("http://example.org/mia_ilda_lexicon.owl").load(fileobj=f)
+
+        print("⚡ Materializing hidden logic & implied relationships via HermiT...")
+        owlready2.sync_reasoner(world)
+
+        inferred_owl = output_ttl.replace(".ttl", "_inferred.owl")
+        world.as_rdflib_graph().serialize(destination=inferred_owl, format="xml")
+        print(f"✨ Materialization complete. Reasoned graph output -> {inferred_owl}")
+
+    except ImportError as e:
+        print(f"⚠️ Missing dependency ({e.name}). Install with 'pip install rdflib owlready2'. Skipping reasoning step.", file=sys.stderr)
+    except Exception as e:
+        print(f"⚠️ Reasoning step skipped/failed: {e}", file=sys.stderr)
+
 
 if __name__ == "__main__":
-    INPUT_FILE  = "ilda_full.tmx"
-    OUTPUT_FILE = "mia_ilda_lexicon_full.ttl"
-    START_VALUE = 0
-    END_VALUE   = None  # Processes all entries instantly
-    
-    process_pipeline(INPUT_FILE, OUTPUT_FILE, start_idx=START_VALUE, end_idx=END_VALUE)
+    if len(sys.argv) < 3:
+        print("Usage: python tmx_to_ontolex.py <input.tmx> <output.ttl> [start_idx] [end_idx] [author_orcid]")
+        sys.exit(1)
+
+    in_file = sys.argv[1]
+    out_file = sys.argv[2]
+    s_idx = int(sys.argv[3]) if len(sys.argv) > 3 else 0
+    e_idx = int(sys.argv[4]) if len(sys.argv) > 4 else None
+    orcid = sys.argv[5] if len(sys.argv) > 5 else None
+
+    process_pipeline(in_file, out_file, start_idx=s_idx, end_idx=e_idx, author_orcid=orcid)
