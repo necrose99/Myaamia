@@ -2,562 +2,737 @@
 """
 potawatomi_lex_ttl.py
 
-Convert:
+Convert Potawatomi TMX lexical data into OntoLex-Lemon RDF/Turtle.
 
+Input:
     potawatomi_full.tmx
-            |
-            v
+
+Output:
     potawatomi_full.ttl
 
-TMX language pair:
+Design:
+    TMX
+      |
+      +-- OntoLex-Lemon lexical entry/form/sense
+      |
+      +-- LexInfo POS when known
+      |
+      +-- Algic/Potawatomi linguistic metadata
+            - Animate / Inanimate
+            - Verb
+            - Noun
+            - VAI / VII / VTI / VTA
+            - morphology metadata when explicitly supplied
+      |
+      +-- Glottolog language/family references
+      +-- source URL / audio / provenance
 
-    pot -> en
+Important:
+    Do NOT infer Potawatomi grammatical category from the English gloss alone.
 
-RDF vocabulary:
+    Example:
+        English "red"
+        does NOT imply English adjective == Potawatomi adjective.
 
-    OntoLex-Lemon
-    LexInfo
-    Dublin Core Terms
-    SKOS
-    PROV-O
-    Glottolog
-
-Language:
-
-    Potawatomi
-    ISO 639-3: pot
-    Glottocode: pota1247
-    Family: Algic
-
-This is intentionally a conservative TMX -> RDF conversion.
-
-English translations are initially represented as lexical sense
-definitions rather than asserting that the English gloss is a
-confirmed ontology concept/cognate.
-
-That distinction is important for later Miami-Illinois /
-Potawatomi comparison.
+    Citizen Potawatomi Nation documentation explicitly describes
+    VII verbs whose English translations may be adjectives such as
+    "red", "big", and "long".
 """
 
-from pathlib import Path
+from __future__ import annotations
+
+import argparse
 import hashlib
 import re
+import unicodedata
+from pathlib import Path
+from urllib.parse import quote
 import xml.etree.ElementTree as ET
 
 from rdflib import Graph, Literal, Namespace, URIRef
-from rdflib.namespace import DCTERMS, RDF, RDFS, SKOS, XSD
+from rdflib.namespace import DCTERMS, OWL, RDF, RDFS, SKOS, XSD
 
 
 # ---------------------------------------------------------------------------
-# Files
+# Namespaces
 # ---------------------------------------------------------------------------
 
-TMX_FILE = Path("potawatomi_full.tmx")
-TTL_FILE = Path("potawatomi_full.ttl")
+ONTOLEX = Namespace("http://www.w3.org/ns/lemon/ontolex#")
+LEXINFO = Namespace("http://www.lexinfo.net/ontology/3.0/lexinfo#")
 
-
-# ---------------------------------------------------------------------------
-# Base URI
-#
-# Change this later to the permanent URI for your Etamology-Flask dataset.
-# ---------------------------------------------------------------------------
-
-BASE = "https://wiwkwebthegen.com/rdf/potawatomi/"
-
-LEXICON_URI = URIRef(BASE + "lexicon")
-
-
-# ---------------------------------------------------------------------------
-# Ontologies
-# ---------------------------------------------------------------------------
-
-ONTOLEX = Namespace(
-    "http://www.w3.org/ns/lemon/ontolex#"
+# Shared ontology for the user's Algic / Etamology project.
+ALGIC = Namespace(
+    "https://github.com/necrose99/Myaamia/ontology/algic#"
 )
 
-LEXINFO = Namespace(
-    "http://www.lexinfo.net/ontology/3.0/lexinfo#"
+# Potawatomi-specific namespace.
+POT = Namespace(
+    "https://github.com/necrose99/Myaamia/ontology/potawatomi#"
 )
 
-LIME = Namespace(
-    "http://www.w3.org/ns/lemon/lime#"
+# Lexvo language identifier.
+LEXVO = Namespace("http://lexvo.org/id/iso639-3/")
+
+# Glottolog.
+GLOTTOLOG = Namespace(
+    "https://glottolog.org/resource/languoid/id/"
 )
 
-PROV = Namespace(
-    "http://www.w3.org/ns/prov#"
-)
-
-LEXVO = Namespace(
-    "http://lexvo.org/id/iso639-3/"
-)
-
-# Glottolog language URI
-GLOTTOLOG_POT = URIRef(
-    "https://glottolog.org/resource/languoid/id/pota1247"
-)
-
-# Glottolog Algic URI supplied for the project
-GLOTTOLOG_ALGIC = URIRef(
-    "https://glottolog.org/resource/languoid/id/algi1248"
-)
-
-# Potawatomi Lexvo/ISO identifier
-LEXVO_POT = URIRef(
-    "http://lexvo.org/id/iso639-3/pot"
+# Source vocabulary.
+WIWK = Namespace(
+    "https://wiwkwebthegen.com/"
 )
 
 
 # ---------------------------------------------------------------------------
-# Dataset metadata
+# Constants
 # ---------------------------------------------------------------------------
 
-DATASET_TITLE = (
-    "Potawatomi Lexicon — Wiwkwébthëgen"
-)
+LANGUAGE = "pot"
 
-DATASET_DESCRIPTION = (
-    "Potawatomi lexical data converted from TMX into "
-    "OntoLex-Lemon RDF."
-)
+GLOTTOLOG_POTAWATOMI = GLOTTOLOG.pota1247
+GLOTTOLOG_ALGIC = GLOTTOLOG.algi1248
 
-SOURCE_NAME = "Wiwkwébthëgen"
-
-SOURCE_URL = URIRef(
+SOURCE_DICTIONARY = URIRef(
     "https://wiwkwebthegen.com/dictionary"
 )
 
+SOURCE_DOMAIN = "https://wiwkwebthegen.com"
+
+DEFAULT_INPUT = Path("potawatomi_full.tmx")
+DEFAULT_OUTPUT = Path("potawatomi_full.ttl")
+
 
 # ---------------------------------------------------------------------------
-# XML helpers
+# Utility functions
 # ---------------------------------------------------------------------------
 
-def local_name(tag):
-    """
-    Remove XML namespace from an element name.
-    """
-
-    if "}" in tag:
-        return tag.rsplit("}", 1)[1]
-
-    return tag
-
-
-def normalize_text(value):
-    if value is None:
+def clean_text(value: str | None) -> str:
+    """Normalize whitespace while preserving Unicode."""
+    if not value:
         return ""
 
-    value = re.sub(
-        r"\s+",
-        " ",
-        value,
+    value = unicodedata.normalize("NFC", value)
+    return re.sub(r"\s+", " ", value).strip()
+
+
+def slugify(value: str) -> str:
+    """
+    Unicode-safe-ish URI slug.
+
+    Keep letters/numbers where possible, replace everything else.
+    """
+    value = clean_text(value)
+
+    value = unicodedata.normalize("NFKD", value)
+    value = "".join(
+        ch for ch in value
+        if not unicodedata.combining(ch)
     )
 
-    return value.strip()
+    value = re.sub(r"[^A-Za-z0-9]+", "-", value)
+    value = value.strip("-").lower()
+
+    return value or "entry"
 
 
-def find_tuv(tu, language):
+def stable_id(*parts: str) -> str:
+    """Stable short SHA256 identifier."""
+    raw = "\x1f".join(clean_text(p) for p in parts)
+    return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:16]
+
+
+def first_text(element: ET.Element | None) -> str:
+    if element is None:
+        return ""
+
+    return clean_text(
+        "".join(element.itertext())
+    )
+
+
+# ---------------------------------------------------------------------------
+# TMX helpers
+# ---------------------------------------------------------------------------
+
+def get_prop(tu: ET.Element, names: set[str]) -> str:
     """
-    Find a TMX tuv matching an ISO language code.
+    Find a TMX <prop> by property name.
+
+    Handles:
+        <prop type="audio">...</prop>
+        <prop type="source_url">...</prop>
+        etc.
     """
-
-    for child in tu:
-
-        if local_name(child.tag) != "tuv":
-            continue
-
-        lang = (
-            child.attrib.get(
-                "{http://www.w3.org/XML/1998/namespace}lang"
-            )
-            or child.attrib.get("lang")
+    for prop in tu.findall(".//prop"):
+        prop_type = (
+            prop.attrib.get("type")
+            or prop.attrib.get("name")
             or ""
-        )
+        ).strip().lower()
 
-        if lang.lower() == language.lower():
-            seg = next(
-                (
-                    x
-                    for x in child
-                    if local_name(x.tag) == "seg"
-                ),
-                None,
-            )
-
-            if seg is not None:
-                return normalize_text(
-                    "".join(seg.itertext())
-                )
+        if prop_type in names:
+            return clean_text(first_text(prop))
 
     return ""
 
 
-def get_props(tu):
+def get_all_props(tu: ET.Element) -> dict[str, str]:
     props = {}
 
-    for child in tu:
+    for prop in tu.findall(".//prop"):
+        key = (
+            prop.attrib.get("type")
+            or prop.attrib.get("name")
+            or ""
+        ).strip().lower()
 
-        if local_name(child.tag) != "prop":
-            continue
+        value = clean_text(first_text(prop))
 
-        key = child.attrib.get("type")
-
-        if not key:
-            continue
-
-        value = normalize_text(
-            "".join(child.itertext())
-        )
-
-        props.setdefault(
-            key,
-            [],
-        ).append(value)
+        if key:
+            props[key] = value
 
     return props
 
 
-# ---------------------------------------------------------------------------
-# Stable URI generation
-# ---------------------------------------------------------------------------
-
-def slugify(value):
-    value = normalize_text(value)
-
-    value = value.lower()
-
-    value = re.sub(
-        r"\s+",
-        "-",
-        value,
-    )
-
-    value = re.sub(
-        r"[^a-z0-9\u0080-\uffff_-]",
-        "",
-        value,
-    )
-
-    return value[:120]
-
-
-def lexical_entry_uri(headword, tuid=None):
+def get_tuv_text(tuv: ET.Element) -> str:
     """
-    Generate a stable URI.
+    Extract TMX <seg> text.
+    """
+    seg = tuv.find("./seg")
 
-    Prefer the TMX tuid when available, but retain the readable headword.
+    if seg is not None:
+        return clean_text(first_text(seg))
+
+    return clean_text(first_text(tuv))
+
+
+def get_language(tuv: ET.Element) -> str:
+    return (
+        tuv.attrib.get("{http://www.w3.org/XML/1998/namespace}lang")
+        or tuv.attrib.get("lang")
+        or tuv.attrib.get("xml:lang")
+        or ""
+    ).lower()
+
+
+def extract_tuvs(tu: ET.Element) -> dict[str, list[str]]:
+    """
+    Return:
+        {
+            "pot": [...],
+            "en": [...]
+        }
+
+    Supports multiple TUVs for a language.
+    """
+    result: dict[str, list[str]] = {}
+
+    for tuv in tu.findall(".//tuv"):
+        lang = get_language(tuv)
+
+        if not lang:
+            continue
+
+        # Accept things such as:
+        # pot
+        # pot-US
+        # en
+        # en-US
+        lang = lang.split("-")[0]
+
+        value = get_tuv_text(tuv)
+
+        if value:
+            result.setdefault(lang, []).append(value)
+
+    return result
+
+
+# ---------------------------------------------------------------------------
+# Potawatomi linguistic classification
+# ---------------------------------------------------------------------------
+
+def normalize_category(value: str) -> str:
+    value = clean_text(value).lower()
+
+    # Normalize common punctuation.
+    value = value.replace("_", " ")
+    value = value.replace("-", " ")
+
+    return value
+
+
+VERB_CLASSES = {
+    "vai": ALGIC.VAI,
+    "v ai": ALGIC.VAI,
+    "animate intransitive": ALGIC.VAI,
+    "animate intransitive verb": ALGIC.VAI,
+
+    "vii": ALGIC.VII,
+    "v ii": ALGIC.VII,
+    "inanimate intransitive": ALGIC.VII,
+    "inanimate intransitive verb": ALGIC.VII,
+
+    "vti": ALGIC.VTI,
+    "v ti": ALGIC.VTI,
+    "transitive inanimate": ALGIC.VTI,
+    "transitive inanimate verb": ALGIC.VTI,
+
+    "vta": ALGIC.VTA,
+    "v ta": ALGIC.VTA,
+    "transitive animate": ALGIC.VTA,
+    "transitive animate verb": ALGIC.VTA,
+}
+
+
+POS_MAP = {
+    "verb": LEXINFO.verb,
+    "v": LEXINFO.verb,
+
+    "noun": LEXINFO.noun,
+    "n": LEXINFO.noun,
+
+    "adverb": LEXINFO.adverb,
+    "adv": LEXINFO.adverb,
+
+    "adjective": LEXINFO.adjective,
+    "adj": LEXINFO.adjective,
+
+    "particle": LEXINFO.particle,
+}
+
+
+def classify_entry(props: dict[str, str]) -> tuple[URIRef | None, URIRef | None]:
+    """
+    Return:
+        (lexinfo POS, algic verb class)
+
+    Only use explicit metadata.
+
+    We deliberately DO NOT classify from the English gloss.
     """
 
-    slug = slugify(headword)
+    pos_raw = ""
 
-    if not slug:
-        slug = "entry"
+    for key in (
+        "pos",
+        "part_of_speech",
+        "part-of-speech",
+        "word_class",
+        "word-class",
+        "category",
+        "grammatical_category",
+        "grammatical-category",
+    ):
+        if props.get(key):
+            pos_raw = props[key]
+            break
 
-    if tuid:
-        digest = hashlib.sha1(
-            tuid.encode("utf-8")
-        ).hexdigest()[:8]
+    verb_raw = ""
 
-        return URIRef(
-            BASE + "entry/" + slug + "-" + digest
-        )
+    for key in (
+        "verb_class",
+        "verb-class",
+        "verbclass",
+        "class",
+    ):
+        if props.get(key):
+            verb_raw = props[key]
+            break
 
-    return URIRef(
-        BASE + "entry/" + slug
+    pos = POS_MAP.get(
+        normalize_category(pos_raw)
     )
 
-
-def sense_uri(entry_uri):
-    return URIRef(
-        str(entry_uri) + "/sense"
+    verb_class = VERB_CLASSES.get(
+        normalize_category(verb_raw)
     )
 
+    # If explicit VAI/VII/VTI/VTA exists, it is inherently a verb.
+    if verb_class:
+        pos = LEXINFO.verb
 
-def form_uri(entry_uri):
-    return URIRef(
-        str(entry_uri) + "/form"
-    )
+    return pos, verb_class
+
+
+def get_animacy(props: dict[str, str]) -> URIRef | None:
+    """
+    Extract explicit animacy only.
+
+    Do not infer animacy merely from an English translation.
+    """
+    for key in (
+        "animacy",
+        "animate",
+        "noun_class",
+        "gender",
+    ):
+        value = normalize_category(props.get(key, ""))
+
+        if value in {
+            "animate",
+            "anim",
+            "a",
+        }:
+            return ALGIC.Animate
+
+        if value in {
+            "inanimate",
+            "inan",
+            "i",
+        }:
+            return ALGIC.Inanimate
+
+    return None
 
 
 # ---------------------------------------------------------------------------
-# RDF initialization
+# RDF setup
 # ---------------------------------------------------------------------------
 
-def create_graph():
-    graph = Graph()
+def bind_namespaces(graph: Graph) -> None:
+    graph.bind("ontolex", ONTOLEX)
+    graph.bind("lexinfo", LEXINFO)
 
-    graph.bind(
-        "ontolex",
-        ONTOLEX,
-    )
+    graph.bind("algic", ALGIC)
+    graph.bind("pot", POT)
 
-    graph.bind(
-        "lexinfo",
-        LEXINFO,
-    )
+    graph.bind("lexvo", LEXVO)
+    graph.bind("glottolog", GLOTTOLOG)
 
-    graph.bind(
-        "lime",
-        LIME,
-    )
+    graph.bind("dcterms", DCTERMS)
+    graph.bind("skos", SKOS)
 
-    graph.bind(
-        "lexvo",
-        LEXVO,
-    )
-
-    graph.bind(
-        "dct",
-        DCTERMS,
-    )
-
-    graph.bind(
-        "skos",
-        SKOS,
-    )
-
-    graph.bind(
-        "prov",
-        PROV,
-    )
-
-    graph.bind(
-        "rdfs",
-        RDFS,
-    )
-
-    return graph
+    graph.bind("rdf", RDF)
+    graph.bind("rdfs", RDFS)
+    graph.bind("owl", OWL)
+    graph.bind("xsd", XSD)
 
 
 # ---------------------------------------------------------------------------
-# Lexicon metadata
+# Ontology declarations
 # ---------------------------------------------------------------------------
 
-def add_lexicon_metadata(graph):
-    lexicon = LEXICON_URI
+def add_ontology_metadata(graph: Graph) -> None:
+    """
+    Minimal local vocabulary declarations.
+
+    These can later move to algic.ttl / potawatomi.ttl.
+    """
+
+    algic_ontology = URIRef(
+        "https://github.com/necrose99/Myaamia/ontology/algic"
+    )
+
+    pot_ontology = URIRef(
+        "https://github.com/necrose99/Myaamia/ontology/potawatomi"
+    )
+
+    graph.add(
+        (algic_ontology, RDF.type, OWL.Ontology)
+    )
 
     graph.add(
         (
-            lexicon,
-            RDF.type,
-            ONTOLEX.Lexicon,
-        )
-    )
-
-    graph.add(
-        (
-            lexicon,
-            DCTERMS.title,
+            algic_ontology,
+            RDFS.label,
             Literal(
-                DATASET_TITLE,
+                "Shared Algic linguistic vocabulary",
                 lang="en",
             ),
         )
     )
 
     graph.add(
+        (pot_ontology, RDF.type, OWL.Ontology)
+    )
+
+    graph.add(
         (
-            lexicon,
-            DCTERMS.description,
+            pot_ontology,
+            RDFS.label,
             Literal(
-                DATASET_DESCRIPTION,
+                "Potawatomi linguistic vocabulary",
                 lang="en",
             ),
         )
+    )
+
+    # ------------------------------------------------------------------
+    # Animacy
+    # ------------------------------------------------------------------
+
+    for cls, label in (
+        (ALGIC.Animate, "Animate"),
+        (ALGIC.Inanimate, "Inanimate"),
+        (ALGIC.Verb, "Verb"),
+        (ALGIC.Noun, "Noun"),
+        (ALGIC.Modifier, "Modifier"),
+        (ALGIC.Adverb, "Adverb"),
+        (ALGIC.Particle, "Particle"),
+        (ALGIC.LexiconStatistics, "Lexicon statistics"),
+        (ALGIC.Initial, "Initial"),
+        (ALGIC.Medial, "Medial"),
+        (ALGIC.Final, "Final"),
+    ):
+        graph.add((cls, RDF.type, OWL.Class))
+        graph.add(
+            (
+                cls,
+                RDFS.label,
+                Literal(label, lang="en"),
+            )
+        )
+
+    # ------------------------------------------------------------------
+    # Potawatomi verb classes
+    # ------------------------------------------------------------------
+
+    verb_classes = {
+        ALGIC.VAI: "VAI — animate intransitive verb",
+        ALGIC.VII: "VII — inanimate intransitive verb",
+        ALGIC.VTI: "VTI — transitive inanimate verb",
+        ALGIC.VTA: "VTA — transitive animate verb",
+    }
+
+    for cls, label in verb_classes.items():
+        graph.add((cls, RDF.type, OWL.Class))
+        graph.add(
+            (
+                cls,
+                RDFS.subClassOf,
+                ALGIC.Verb,
+            )
+        )
+        graph.add(
+            (
+                cls,
+                RDFS.label,
+                Literal(label, lang="en"),
+            )
+        )
+
+    # ------------------------------------------------------------------
+    # Properties
+    # ------------------------------------------------------------------
+
+    properties = {
+        ALGIC.verbClass: "verb class",
+        ALGIC.animacy: "animacy",
+        ALGIC.hasInitial: "has initial",
+        ALGIC.hasMedial: "has medial",
+        ALGIC.hasFinal: "has final",
+        ALGIC.classificationSource: "classification source",
+        ALGIC.analysisConfidence: "analysis confidence",
+    }
+
+    for prop, label in properties.items():
+        graph.add((prop, RDF.type, OWL.ObjectProperty))
+        graph.add(
+            (
+                prop,
+                RDFS.label,
+                Literal(label, lang="en"),
+            )
+        )
+
+
+# ---------------------------------------------------------------------------
+# Lexicon
+# ---------------------------------------------------------------------------
+
+def create_lexicon(graph: Graph) -> URIRef:
+    lexicon = URIRef(
+        "https://github.com/necrose99/Myaamia/lexicon/potawatomi"
+    )
+
+    graph.add(
+        (lexicon, RDF.type, ONTOLEX.Lexicon)
     )
 
     graph.add(
         (
             lexicon,
             DCTERMS.language,
-            Literal(
-                "pot",
-            ),
+            LEXVO.pot,
         )
     )
 
-    # Link language to Lexvo/ISO 639-3.
-    graph.add(
-        (
-            lexicon,
-            LIME.language,
-            Literal("pot"),
-        )
-    )
-
-    graph.add(
-        (
-            lexicon,
-            DCTERMS.language,
-            LEXVO_POT,
-        )
-    )
-
-    # Glottolog identity.
-    graph.add(
-        (
-            lexicon,
-            SKOS.broader,
-            GLOTTOLOG_POT,
-        )
-    )
-
-    graph.add(
-        (
-            GLOTTOLOG_POT,
-            RDF.type,
-            SKOS.Concept,
-        )
-    )
-
-    graph.add(
-        (
-            GLOTTOLOG_POT,
-            SKOS.prefLabel,
-            Literal(
-                "Potawatomi",
-                lang="en",
-            ),
-        )
-    )
-
-    graph.add(
-        (
-            GLOTTOLOG_POT,
-            SKOS.broader,
-            GLOTTOLOG_ALGIC,
-        )
-    )
-
-    graph.add(
-        (
-            GLOTTOLOG_ALGIC,
-            RDF.type,
-            SKOS.Concept,
-        )
-    )
-
-    graph.add(
-        (
-            GLOTTOLOG_ALGIC,
-            SKOS.prefLabel,
-            Literal(
-                "Algic",
-                lang="en",
-            ),
-        )
-    )
-
-    # Source.
     graph.add(
         (
             lexicon,
             DCTERMS.source,
-            SOURCE_URL,
+            SOURCE_DICTIONARY,
         )
     )
 
     graph.add(
         (
             lexicon,
-            DCTERMS.publisher,
+            DCTERMS.references,
+            GLOTTOLOG_POTAWATOMI,
+        )
+    )
+
+    graph.add(
+        (
+            lexicon,
+            DCTERMS.references,
+            GLOTTOLOG_ALGIC,
+        )
+    )
+
+    graph.add(
+        (
+            lexicon,
+            SKOS.note,
             Literal(
-                SOURCE_NAME,
+                "Potawatomi lexical data converted from TMX.",
                 lang="en",
             ),
         )
     )
 
+    return lexicon
+
 
 # ---------------------------------------------------------------------------
-# Lexical entry
+# Entry URI
 # ---------------------------------------------------------------------------
 
-def add_entry(
-    graph,
-    headword,
-    english,
-    tuid=None,
-    props=None,
-):
-    """
-    Add:
+def make_entry_uri(
+    headword: str,
+    tuid: str,
+    source_url: str,
+) -> URIRef:
 
-        LexicalEntry
-            |
-            +-- canonicalForm
-            |
-            +-- sense
-                    |
-                    +-- definition
-    """
+    if source_url:
+        digest = stable_id(source_url)
+    elif tuid:
+        digest = stable_id(tuid, headword)
+    else:
+        digest = stable_id(headword)
 
-    props = props or {}
+    slug = slugify(headword)
 
-    entry = lexical_entry_uri(
-        headword,
-        tuid,
+    return URIRef(
+        f"https://github.com/necrose99/Myaamia/lexicon/potawatomi/"
+        f"{slug}-{digest}"
     )
 
-    form = form_uri(entry)
 
-    sense = sense_uri(entry)
+# ---------------------------------------------------------------------------
+# Individual TMX entry
+# ---------------------------------------------------------------------------
+
+def convert_tu(
+    graph: Graph,
+    lexicon: URIRef,
+    tu: ET.Element,
+    index: int,
+) -> bool:
+
+    tuid = clean_text(tu.attrib.get("tuid", ""))
+
+    tuvs = extract_tuvs(tu)
+
+    pot_forms = tuvs.get("pot", [])
+    en_glosses = tuvs.get("en", [])
+
+    if not pot_forms:
+        return False
+
+    headword = pot_forms[0]
+    english_gloss = en_glosses[0] if en_glosses else ""
+
+    props = get_all_props(tu)
+
+    source_url = (
+        props.get("source_url")
+        or props.get("source")
+        or props.get("url")
+        or ""
+    )
+
+    audio_url = (
+        props.get("audio")
+        or props.get("audio_url")
+        or props.get("audio-url")
+        or ""
+    )
+
+    # If crawler stored the dictionary URL as a prop.
+    if (
+        not source_url
+        and props.get("dictionary_url")
+    ):
+        source_url = props["dictionary_url"]
+
+    # Fallback.
+    if not source_url:
+        source_url = (
+            f"{SOURCE_DOMAIN}/dictionary-word/"
+            f"{quote(headword, safe='')}"
+        )
+
+    entry = make_entry_uri(
+        headword,
+        tuid,
+        source_url,
+    )
 
     # ---------------------------------------------------------------
     # Entry
     # ---------------------------------------------------------------
 
     graph.add(
-        (
-            entry,
-            RDF.type,
-            ONTOLEX.LexicalEntry,
-        )
+        (entry, RDF.type, ONTOLEX.LexicalEntry)
     )
 
     graph.add(
-        (
-            LEXICON_URI,
-            ONTOLEX.entry,
-            entry,
-        )
+        (entry, DCTERMS.language, LEXVO.pot)
     )
 
     graph.add(
-        (
-            entry,
-            DCTERMS.language,
-            LEXVO_POT,
-        )
+        (entry, DCTERMS.source, URIRef(source_url))
+    )
+
+    graph.add(
+        (entry, DCTERMS.references, GLOTTOLOG_POTAWATOMI)
+    )
+
+    graph.add(
+        (entry, DCTERMS.references, GLOTTOLOG_ALGIC)
     )
 
     # ---------------------------------------------------------------
-    # Form
+    # Canonical form
     # ---------------------------------------------------------------
 
-    graph.add(
-        (
-            entry,
-            ONTOLEX.canonicalForm,
-            form,
-        )
+    form_id = stable_id(
+        str(entry),
+        "canonical",
+        headword,
+    )
+
+    form = URIRef(
+        f"{entry}/form/{form_id}"
     )
 
     graph.add(
-        (
-            form,
-            RDF.type,
-            ONTOLEX.Form,
-        )
+        (entry, ONTOLEX.canonicalForm, form)
+    )
+
+    graph.add(
+        (form, RDF.type, ONTOLEX.Form)
     )
 
     graph.add(
         (
             form,
             ONTOLEX.writtenRep,
-            Literal(
-                headword,
-                lang="pot",
-            ),
+            Literal(headword, lang="pot"),
         )
     )
 
@@ -565,63 +740,172 @@ def add_entry(
     # Sense
     # ---------------------------------------------------------------
 
-    graph.add(
-        (
-            entry,
-            ONTOLEX.sense,
-            sense,
-        )
+    sense = URIRef(
+        f"{entry}/sense/{stable_id(str(entry), english_gloss)}"
     )
 
     graph.add(
-        (
-            sense,
-            RDF.type,
-            ONTOLEX.LexicalSense,
-        )
+        (entry, ONTOLEX.sense, sense)
     )
 
-    if english:
+    graph.add(
+        (sense, RDF.type, ONTOLEX.LexicalSense)
+    )
 
+    if english_gloss:
         graph.add(
             (
                 sense,
                 SKOS.definition,
                 Literal(
-                    english,
+                    english_gloss,
                     lang="en",
                 ),
             )
         )
 
+    # ---------------------------------------------------------------
+    # Part of speech / verb class
+    # ---------------------------------------------------------------
+
+    pos, verb_class = classify_entry(props)
+
+    if pos:
         graph.add(
             (
-                sense,
-                RDFS.comment,
-                Literal(
-                    english,
-                    lang="en",
-                ),
+                entry,
+                LEXINFO.partOfSpeech,
+                pos,
             )
         )
 
-    # ---------------------------------------------------------------
-    # Source metadata
-    # ---------------------------------------------------------------
-
-    source_url = (
-        props.get("source_url", [""])[0]
-        if props.get("source_url")
-        else ""
-    )
-
-    if source_url:
+    if verb_class:
+        graph.add(
+            (
+                entry,
+                ALGIC.verbClass,
+                verb_class,
+            )
+        )
 
         graph.add(
             (
                 entry,
-                DCTERMS.source,
+                ALGIC.classificationSource,
                 URIRef(source_url),
+            )
+        )
+
+        graph.add(
+            (
+                entry,
+                RDF.type,
+                ALGIC.Verb,
+            )
+        )
+
+    # ---------------------------------------------------------------
+    # Animacy
+    # ---------------------------------------------------------------
+
+    animacy = get_animacy(props)
+
+    if animacy:
+        graph.add(
+            (
+                entry,
+                ALGIC.animacy,
+                animacy,
+            )
+        )
+
+    # ---------------------------------------------------------------
+    # Morphology
+    #
+    # Only emit what the source explicitly supplied.
+    # ---------------------------------------------------------------
+
+    initial = (
+        props.get("initial")
+        or props.get("morph_initial")
+        or props.get("morph-initial")
+    )
+
+    medial = (
+        props.get("medial")
+        or props.get("morph_medial")
+        or props.get("morph-medial")
+    )
+
+    final = (
+        props.get("final")
+        or props.get("morph_final")
+        or props.get("morph-final")
+    )
+
+    if initial:
+        initial_uri = URIRef(
+            f"{entry}/morph/initial/"
+            f"{stable_id(initial)}"
+        )
+
+        graph.add(
+            (entry, ALGIC.hasInitial, initial_uri)
+        )
+
+        graph.add(
+            (initial_uri, RDF.type, ALGIC.Initial)
+        )
+
+        graph.add(
+            (
+                initial_uri,
+                RDFS.label,
+                Literal(initial, lang="pot"),
+            )
+        )
+
+    if medial:
+        medial_uri = URIRef(
+            f"{entry}/morph/medial/"
+            f"{stable_id(medial)}"
+        )
+
+        graph.add(
+            (entry, ALGIC.hasMedial, medial_uri)
+        )
+
+        graph.add(
+            (medial_uri, RDF.type, ALGIC.Medial)
+        )
+
+        graph.add(
+            (
+                medial_uri,
+                RDFS.label,
+                Literal(medial, lang="pot"),
+            )
+        )
+
+    if final:
+        final_uri = URIRef(
+            f"{entry}/morph/final/"
+            f"{stable_id(final)}"
+        )
+
+        graph.add(
+            (entry, ALGIC.hasFinal, final_uri)
+        )
+
+        graph.add(
+            (final_uri, RDF.type, ALGIC.Final)
+        )
+
+        graph.add(
+            (
+                final_uri,
+                RDFS.label,
+                Literal(final, lang="pot"),
             )
         )
 
@@ -629,11 +913,7 @@ def add_entry(
     # Audio
     # ---------------------------------------------------------------
 
-    for audio_url in props.get(
-        "audio_url",
-        [],
-    ):
-
+    if audio_url:
         graph.add(
             (
                 entry,
@@ -643,99 +923,131 @@ def add_entry(
         )
 
     # ---------------------------------------------------------------
-    # Entry type
+    # Crawler metadata
     # ---------------------------------------------------------------
 
-    if "morpheme" in (
-        props.get("entry_type", [])
-    ):
+    if tuid:
+        graph.add(
+            (
+                entry,
+                POT.tmxId,
+                Literal(tuid),
+            )
+        )
+
+    graph.add(
+        (
+            entry,
+            POT.dictionaryEntry,
+            URIRef(source_url),
+        )
+    )
+
+    # ---------------------------------------------------------------
+    # Add all Potawatomi variants from TMX.
+    # ---------------------------------------------------------------
+
+    for n, variant in enumerate(pot_forms):
+        if variant == headword:
+            continue
+
+        variant_form = URIRef(
+            f"{entry}/form/{stable_id(str(entry), variant)}"
+        )
 
         graph.add(
             (
                 entry,
-                LEXINFO.morphologicalPattern,
-                Literal("morpheme"),
+                ONTOLEX.otherForm,
+                variant_form,
             )
         )
 
-    return entry
+        graph.add(
+            (
+                variant_form,
+                RDF.type,
+                ONTOLEX.Form,
+            )
+        )
+
+        graph.add(
+            (
+                variant_form,
+                ONTOLEX.writtenRep,
+                Literal(variant, lang="pot"),
+            )
+        )
+
+    graph.add(
+        (
+            lexicon,
+            ONTOLEX.entry,
+            entry,
+        )
+    )
+
+    return True
 
 
 # ---------------------------------------------------------------------------
-# TMX conversion
+# Statistics
 # ---------------------------------------------------------------------------
 
-def convert():
-    if not TMX_FILE.exists():
-        raise FileNotFoundError(
-            f"Missing input file: {TMX_FILE}"
-        )
+def add_source_estimate(graph: Graph) -> None:
+    """
+    Store the approximate 70% source claim separately from
+    computed dictionary statistics.
 
-    tree = ET.parse(
-        TMX_FILE
+    This is intentionally NOT applied to individual entries.
+    """
+
+    stats = POT.WIWKSourceEstimate
+
+    graph.add(
+        (stats, RDF.type, ALGIC.LexiconStatistics)
     )
 
-    root = tree.getroot()
-
-    graph = create_graph()
-
-    add_lexicon_metadata(
-        graph
+    graph.add(
+        (
+            stats,
+            RDFS.label,
+            Literal(
+                "WIWK / Potawatomi verb proportion estimate",
+                lang="en",
+            ),
+        )
     )
 
-    count = 0
-
-    for tu in root.iter():
-
-        if local_name(tu.tag) != "tu":
-            continue
-
-        pot = find_tuv(
-            tu,
-            "pot",
+    graph.add(
+        (
+            stats,
+            POT.estimatedVerbProportion,
+            Literal(
+                "0.70",
+                datatype=XSD.decimal,
+            ),
         )
-
-        english = find_tuv(
-            tu,
-            "en",
-        )
-
-        if not pot:
-            continue
-
-        tuid = tu.attrib.get(
-            "tuid"
-        )
-
-        props = get_props(
-            tu
-        )
-
-        add_entry(
-            graph,
-            pot,
-            english,
-            tuid=tuid,
-            props=props,
-        )
-
-        count += 1
-
-    graph.serialize(
-        destination=str(TTL_FILE),
-        format="turtle",
     )
 
-    print(
-        f"Converted {count} Potawatomi entries."
+    graph.add(
+        (
+            stats,
+            POT.estimateQualifier,
+            Literal(
+                "Approximate source-reported/educational estimate; "
+                "not a computed proportion of this TMX dataset.",
+                lang="en",
+            ),
+        )
     )
 
-    print(
-        f"Input : {TMX_FILE}"
-    )
-
-    print(
-        f"Output: {TTL_FILE}"
+    graph.add(
+        (
+            stats,
+            DCTERMS.source,
+            SOURCE_DICTIONARY,
+        )
     )
 
 
@@ -743,5 +1055,102 @@ def convert():
 # Main
 # ---------------------------------------------------------------------------
 
+def main() -> int:
+
+    parser = argparse.ArgumentParser(
+        description="Convert Potawatomi TMX to OntoLex-Lemon Turtle."
+    )
+
+    parser.add_argument(
+        "-i",
+        "--input",
+        type=Path,
+        default=DEFAULT_INPUT,
+        help=f"Input TMX (default: {DEFAULT_INPUT})",
+    )
+
+    parser.add_argument(
+        "-o",
+        "--output",
+        type=Path,
+        default=DEFAULT_OUTPUT,
+        help=f"Output TTL (default: {DEFAULT_OUTPUT})",
+    )
+
+    parser.add_argument(
+        "--no-source-estimate",
+        action="store_true",
+        help="Do not include the approximate 70%% source statistic.",
+    )
+
+    args = parser.parse_args()
+
+    if not args.input.exists():
+        raise SystemExit(
+            f"ERROR: TMX file not found: {args.input}"
+        )
+
+    graph = Graph()
+    bind_namespaces(graph)
+
+    add_ontology_metadata(graph)
+
+    lexicon = create_lexicon(graph)
+
+    if not args.no_source_estimate:
+        add_source_estimate(graph)
+
+    tree = ET.parse(args.input)
+    root = tree.getroot()
+
+    tus = root.findall(".//tu")
+
+    converted = 0
+    skipped = 0
+
+    for index, tu in enumerate(tus, start=1):
+
+        try:
+            if convert_tu(
+                graph,
+                lexicon,
+                tu,
+                index,
+            ):
+                converted += 1
+            else:
+                skipped += 1
+
+        except Exception as exc:
+            skipped += 1
+
+            print(
+                f"WARNING: entry {index} failed: {exc}"
+            )
+
+    args.output.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    graph.serialize(
+        destination=str(args.output),
+        format="turtle",
+    )
+
+    print()
+    print("Potawatomi TMX → RDF complete")
+    print("--------------------------------")
+    print(f"Input:      {args.input}")
+    print(f"Output:     {args.output}")
+    print(f"TMX entries: {len(tus)}")
+    print(f"Converted:  {converted}")
+    print(f"Skipped:    {skipped}")
+    print(f"RDF triples:{len(graph)}")
+    print()
+
+    return 0
+
+
 if __name__ == "__main__":
-    convert()
+    raise SystemExit(main())
