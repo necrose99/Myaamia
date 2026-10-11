@@ -17,9 +17,9 @@ from bs4 import BeautifulSoup
 
 # --- Upstream Authority Mappings for Algic / Algonquian Lineages ---
 GLOTTOLOG_MAP = {
-    "algic_stock": "https://glottolog.org",
-    "algonquian_subgroup": "https://glottolog.org",
-    "miami_illinois_language": "https://glottolog.org",
+    "algic_stock": "https://glottolog.org/resource/languoid/id/algi1248.ttl",
+    "algonquian_subgroup": "https://glottolog.org/resource/languoid/id/algo1257.ttl",
+    "miami_illinois_language": "https://glottolog.org/resource/languoid/id/miam1252.ttl",
 }
 
 SPEAKER_PATTERNS = [
