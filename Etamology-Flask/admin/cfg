@@ -1,0 +1,21 @@
+from flask import Blueprint, request, jsonify
+from helpers.db_factory import get_db_wrangler
+
+admin_bp = Blueprint("admin", __name__, url_prefix="/admin")
+
+@admin_bp.route("/cfg/db", methods=["POST"])
+def update_db_config():
+    """Allows hot-swapping DB configuration (e.g. migrating from SQLite to MySQL or Postgres)."""
+    data = request.get_json() or {}
+    wrangler = get_db_wrangler()
+    
+    # Example payload: {"DB_TYPE": "postgresql", "POSTGRES_URI": "postgresql+psycopg2://usr:pwd@localhost/algic_db"}
+    try:
+        wrangler.reconfigure(data)
+        return jsonify({
+            "status": "success",
+            "message": "Database config updated dynamically",
+            "active_db_type": wrangler.app.config.get("DB_TYPE")
+        })
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500

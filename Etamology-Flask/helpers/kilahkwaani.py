@@ -1,154 +1,69 @@
-#!/bin/python3 
-##scripts/kilahkwaani.py
-
+# helpers/kilahkwaani.py
 import json
-import sqlite3
-import sqlite-zstd
-import re
-import lxml.etree as ET
-from pathlib import Path
+from helpers.db_factory import DatabaseFactory
 
-# --- "Makišiweelo" Cultural Guardrails & G2P ---
-gender_rules = {
-    "iihia": "male", 
-    "iiia": "male", 
+# Cultural Guardrails
+GENDER_RULES = {
+    "iihia": "male",
+    "iiia": "male",
     "naaka": "female"
 }
 
-def myaamia_to_ipa(text):
-    mapping = [
-        ('Å¡', 'š'), ('aa', 'aː'), ('ee', 'ɛː'), ('ii', 'iː'), ('oo', 'oː'),
-        ('ay', 'aj'), ('aw', 'aw'), ('hk', 'ʰk'), ('ht', 'ʰt'), ('hp', 'ʰp'),
-        ('hc', 'ʰtʃ'), ('š', 'ʃ'), ('č', 'tʃ'), ('c', 'tʃ')
-    ]
+# Phonetic sequence mappings
+G2P_MAPPING = [
+    ('Å¡', 'š'), ('aa', 'aː'), ('ee', 'ɛː'), ('ii', 'iː'), ('oo', 'oː'),
+    ('ay', 'aj'), ('aw', 'aw'), ('hk', 'ʰk'), ('ht', 'ʰt'), ('hp', 'ʰp'),
+    ('hc', 'ʰtʃ'), ('š', 'ʃ'), ('č', 'tʃ'), ('c', 'tʃ')
+]
+
+IPA_TO_JS_TTS = {
+    "aː": "aa", "ɛː": "eh", "iː": "ee", "oː": "oh",
+    "aj": "eye", "aw": "ow", "ʰk": "hk", "ʰt": "ht",
+    "ʰp": "hp", "ʰtʃ": "h-ch", "ʃ": "sh", "tʃ": "ch"
+}
+
+def myaamia_to_ipa(text: str) -> str:
+    """Converts orthography to IPA."""
+    if not text:
+        return ""
     ipa = text.lower().strip('-')
-    for orth, phon in mapping:
+    for orth, phon in G2P_MAPPING:
         ipa = ipa.replace(orth, phon)
     return f"/{ipa}/"
 
-def get_voice_profile(myaamia_word):
-    return gender_rules.get(myaamia_word.lower().strip('-'), "neutral")
+def get_voice_profile(word: str) -> str:
+    """Returns voice profile gender based on cultural rules."""
+    clean = word.lower().strip('-')
+    return GENDER_RULES.get(clean, "neutral")
 
-# --- 2. Database Enrichment (TMX -> SQLite) ---
-def enrich_from_tmx(db_path, tmx_file):
-    conn = sqlite3.connect(db_path)
-    cur = conn.cursor()
-    
-    # Ensure columns exist in the lexical_items table from your OLAC harvest
-    try:
-        cur.execute("ALTER TABLE lexical_items ADD COLUMN ipa TEXT")
-        cur.execute("ALTER TABLE lexical_items ADD COLUMN ilda_id TEXT")
-    except sqlite3.OperationalError:
-        pass # Columns already exist
+def ipa_to_tts_hint(ipa_str: str) -> str:
+    """Provides Web Speech API phonetic hints for browser speech synthesis."""
+    clean = ipa_str.strip('/')
+    for ipa, approx in IPA_TO_JS_TTS.items():
+        clean = clean.replace(ipa, approx)
+    return clean
 
-    print(f"[*] Enforcing TMX properties from {tmx_file}...")
-    tree = ET.parse(tmx_file)
-    
-    for tu in tree.xpath("//tu"):
-        ilda_id = tu.findtext(".//prop[@type='x-ilda-id']")
-        myaamia_raw = tu.xpath(".//tuv[@xml:lang='mia']/seg")[0].text or ""
-        myaamia_clean = myaamia_raw.replace('Å¡', 'š')
-        ipa_val = myaamia_to_ipa(myaamia_clean)
-
-        cur.execute('''
-            UPDATE lexical_items 
-            SET ipa = ?, ilda_id = ? 
-            WHERE word = ? AND language_code = 'mia'
-        ''', (ipa_val, ilda_id, myaamia_clean))
-
-    conn.commit()
-    conn.close()
-
-# --- 3. Production Manifest Generation ---
-def generate_web_manifest(db_path, output_json):
+def build_speech_manifest(db_factory: DatabaseFactory) -> dict:
+    """Constructs the runtime JS-ready speech dictionary."""
+    rows = db_factory.get_lexical_entries()
     manifest = {}
-    conn = sqlite3.connect(db_path)
-    conn.row_factory = sqlite3.Row
-    cur = conn.cursor()
-
-    # Pulling enriched data (including the new ilda_id and ipa)
-    cur.execute("SELECT id, word, ipa, ilda_id FROM lexical_items WHERE language_code='mia'")
     
-    for row in cur.fetchall():
+    for row in rows:
         word = row['word']
         clean_key = word.strip('-').lower()
+        ipa_val = row['ipa'] or myaamia_to_ipa(word)
+        voice = row['voice_gender'] or get_voice_profile(clean_key)
         
         manifest[clean_key] = {
             "id": row['id'],
             "ilda_id": row['ilda_id'],
             "orthography": word,
-            "ipa": row['ipa'],
-            "allophones": list(row['ipa'].strip('/')) if row['ipa'] else [],
-            "voice_profile": get_voice_profile(clean_key),
-            "has_recording": False,
-            "sample_gender": "male"
+            "lang": row['language_code'] or "mia",
+            "ipa": ipa_val,
+            "tts_hint": ipa_to_tts_hint(ipa_val),
+            "voice": voice,
+            "audio_url": row['audio_url'] or "",
+            "has_recording": bool(row['audio_url']),
+            "type": "gendered" if voice != "neutral" else "standard"
         }
-
-    with open(output_json, 'w', encoding='utf-8') as jf:
-        json.dump(manifest, jf, indent=2, ensure_ascii=False)
-    
-    conn.close()
-    print(f"[!] Makišiweelo! Web Manifest created at {output_json}")
-
-if __name__ == "__main__":
-    DB = 'data/olac_data.db'
-    TMX = 'ilda_full.tmx'
-    JSON_OUT = 'myaamia_assets.json'
-    
-    enrich_from_tmx(DB, TMX)
-    generate_web_manifest(DB, JSON_OUT)
-import json
-import sqlite3
-import os
-
-# Cultural Guardrails
-gender_rules = {
-    "iihia": "male", 
-    "iiia": "male", 
-    "naaka": "female"
-}
-
-def init_tables(conn):
-    """Generates SQLite tables if they do not exist."""
-    cur = conn.cursor()
-    cur.execute('''CREATE TABLE IF NOT EXISTS lexicon (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        term TEXT UNIQUE,
-        ipa TEXT,
-        voice_profile TEXT DEFAULT 'neutral'
-    )''')
-    conn.commit()
-
-def get_voice_profile(word):
-    clean = word.lower().strip('-')
-    return gender_rules.get(clean, "neutral")
-
-def generate_assets(db_path, output_json):
-    conn = sqlite3.connect(db_path)
-    init_tables(conn)
-    cur = conn.cursor()
-
-    # Step 1: Ensure existing terms have correct voice profiles
-    cur.execute("SELECT id, term FROM lexicon")
-    for row_id, term in cur.fetchall():
-        profile = get_voice_profile(term)
-        cur.execute("UPDATE lexicon SET voice_profile = ? WHERE id = ?", (profile, row_id))
-    conn.commit()
-
-    # Step 2: Build the JS-ready manifest
-    manifest = {}
-    cur.execute("SELECT term, ipa, voice_profile FROM lexicon")
-    for term, ipa, profile in cur.fetchall():
-        manifest[term.lower()] = {
-            "orthography": term,
-            "ipa": ipa or "",
-            "voice": profile,
-            "type": "gendered" if profile != "neutral" else "standard"
-        }
-
-    with open(output_json, 'w', encoding='utf-8') as f:
-        json.dump(manifest, f, indent=2, ensure_ascii=False)
-    conn.close()
-
-if __name__ == "__main__":
-    generate_assets('myaamia_relational.db', 'kilahkwaani_assets.json')
+    return manifest

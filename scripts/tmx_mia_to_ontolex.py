@@ -79,7 +79,9 @@ def extract_gloss_annotations(en_text):
     clean = re.sub(r"\s{2,}", " ", clean)
     clean = re.sub(r"\s+,", ",", clean)
     clean = re.sub(r",\s*,", ",", clean)
-    return clean.strip(" ,")
+
+    # Explicitly return 4 values to match line 187 unpacking
+    return clean.strip(" ,"), speaker, animacy, matched
 
 
 def detect_pos_fallback(en_text, form_type):

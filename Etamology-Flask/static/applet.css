@@ -1,16 +1,188 @@
+/* static/applet.css */
+
+/* ==========================================================================
+   1. Font Face Stack Orchestration (Local Subsets + True CDN Fallbacks)
+   ========================================================================== */
+
+/* ── A. Great Lakes Algonquian Syllabics (GLAS) ── */
+@font-face {
+    font-family: 'Catrinity GLAS';
+    src: url('/static/Catrinity-GLAS.woff2') format('woff2'),
+         url('https://catrinity-font.de/downloads/Catrinity.otf') format('opentype');
+    font-weight: 400;
+    font-display: swap;
+}
+
+/* ── B. Unified Canadian Aboriginal Syllabics (Cree) ── */
+@font-face {
+    font-family: 'BJCree Web';
+    src: url('/static/BJCree-Regular.woff2') format('woff2'),
+         url('https://gstatic.com') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BJCree Web';
+    src: url('/static/BJCree-Bold.woff2') format('woff2'),
+         url('https://gstatic.com') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+}
+
+/* ── C. Cherokee Syllabic Font Family Weight Mapping Framework ── */
+@font-face {
+    font-family: 'Noto Cherokee Web';
+    src: url('/static/NotoSansCherokee-Regular.woff2') format('woff2'),
+         url('https://gstatic.com') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Noto Cherokee Web';
+    src: url('/static/NotoSansCherokee-Bold.woff2') format('woff2'),
+         url('https://gstatic.com') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+}
+
+/* ── D. OpenDyslexic Accessibility Fonts ── */
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url('https://jsdelivr.net') format('opentype');
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+} 
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url('https://jsdelivr.net') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+} 
+
+/* ==========================================================================
+   2. Global Presentation Layout Structural Styling
+   ========================================================================== */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eee;
+    margin: 0;
+    padding: 20px;
+    color: #191A42;
+    line-height: 1.6;
+}
+
+/* Accessibility Mode: Safely updates fallback text without breaking language nodes */
+body.accessibility-dyslexic {
+    font-family: 'OpenDyslexic', sans-serif !important;
+}
+body.accessibility-dyslexic p, 
+body.accessibility-dyslexic span:not(.cree):not(.glas):not(.cherokee) {
+    font-size: 20px;
+    line-height: 2.0;
+}
+
 .script-comparison {
     display: flex;
     gap: 1rem;
-    background: #fdf6e3; /* Parchment color */
-    padding: 5px;
+    background: #fdf6e3; /* Parchment color paradigm */
+    padding: 10px;
     border-radius: 4px;
-    margin-top: 5px;
+    margin-top: 10px;
+    border-left: 4px solid #5d4037;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
 }
+
+.mode {
+    display: flex;
+    flex-direction: column;
+}
+
 .mode span:first-child {
     display: block;
-    font-size: 0.6em;
+    font-size: 0.65em;
     color: #b58900;
     font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
 }
-.cree { font-family: 'Noto Sans Canadian Aboriginal', sans-serif; font-size: 1.2em; }
-.glas { font-family: 'Catrinity', serif; font-size: 1.2em; color: #5d4037; }
+
+/* ==========================================================================
+   3. Linguistic Orthography Selectors
+   ========================================================================== */
+
+.cree { 
+    font-family: 'BJCree Web', 'Noto Sans Canadian Aboriginal', sans-serif !important; 
+    font-size: 1.3em; 
+    color: #0d47a1; 
+}
+
+.glas { 
+    font-family: 'Catrinity GLAS', serif !important; 
+    font-size: 1.3em; 
+    color: #5d4037; 
+}
+
+.cherokee {
+    font-family: 'Noto Cherokee Web', 'Noto Sans Cherokee', sans-serif !important;
+    font-size: 1.3em;
+    color: #2e7d32;
+}
+
+.hw { font-weight: bold; font-size: 1.4rem; }
+
+/* ==========================================================================
+   4. Accessibility Sizing Axis & Themes Matrix Additions
+   ========================================================================== */
+
+/* ── Text Sizing Axis Framework ── */
+body.size-large {
+    font-size: 22px;
+}
+body.size-large p,
+body.size-large span:not(.cree):not(.glas):not(.cherokee) {
+    font-size: 24px !important;
+}
+body.size-large .hw {
+    font-size: 2.2rem !important;
+}
+body.size-large .cree,
+body.size-large .glas,
+body.size-large .cherokee {
+    font-size: 2rem !important; /* Scale indigenous glyph vectors proportionally */
+}
+body.size-large .etymology-workspace {
+    height: 700px; /* Expand canvas bounding boxes to prevent clipping */
+}
+
+/* ── High Contrast Theme Matrix ── */
+body.theme-high-contrast {
+    background-color: #050505 !important;
+    color: #ffffff !important;
+}
+body.theme-high-contrast .word-card,
+body.theme-high-contrast .graph-sidebar {
+    background-color: #121212 !important;
+    border: 2px solid #ffffff !important;
+    color: #ffffff !important;
+}
+body.theme-high-contrast .script-comparison {
+    background-color: #1a1a1a !important;
+    border-left: 5px solid #00e676 !important; /* High visibility neon green break */
+    box-shadow: none !important;
+}
+body.theme-high-contrast .mode span:first-child {
+    color: #ffeb3b !important; /* High-fidelity yellow label text contrast */
+}
+body.theme-high-contrast .cree {
+    color: #29b6f6 !important; /* Vivid electric blue for readability */
+}
+body.theme-high-contrast .glas {
+    color: #ffffff !important;
+}
+body.theme-high-contrast .cherokee {
+    color: #66bb6a !important; /* High contrast green fallback */
+}

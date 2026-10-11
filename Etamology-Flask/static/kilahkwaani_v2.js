@@ -1,5 +1,6 @@
 /**
  * kilahkwaani_v2.js
+ * https://mc.miamioh.edu/ilda-myaamia/dictionary/entries/6183  Mia: kilahkwaani	en:Speech
  * =================
  * Font loading, GLAS/UCAS script rendering, and speech synthesis
  * for the Algic Etymology Applet (algic_ety_applet_v3.py).
@@ -30,7 +31,24 @@
  * Or inline the entire file between <script>…</script> tags.
  */
 
+// Update the AUDIOLOGICAL_PROFILES definition array inside static/kilahkwaani_v2.js
+
 'use strict';
+
+// Expanded 6-character structural audiological profiles matrix
+const AUDIOLOGICAL_PROFILES = {
+  balanced_neutral: { lang: 'it-IT', pitch: 0.95, rate: 0.85, filterType: 'none' },
+  bill_bass:        { lang: 'it-IT', pitch: 0.55, rate: 0.80, filterType: 'lowpass', cutoff: 750 },
+  gregory_mid:      { lang: 'it-IT', pitch: 0.85, rate: 0.83, filterType: 'peaking', cutoff: 1000, boost: 4 },
+  mitch_middle:     { lang: 'it-IT', pitch: 1.00, rate: 0.85, filterType: 'none' },
+  sally_treble:     { lang: 'it-IT', pitch: 1.45, rate: 0.82, filterType: 'highpass', cutoff: 2300 },
+  susan_alto:       { lang: 'it-IT', pitch: 1.15, rate: 0.85, filterType: 'none' },
+  grovel_slow:      { lang: 'it-IT', pitch: 0.70, rate: 0.58, filterType: 'peaking', cutoff: 500, boost: 2 }
+};
+
+// Note: The rest of your kilahkwaani_v2.js web audio routing connections 
+// (playFilteredAudio, executeSpeechFallback) read these keys dynamically!
+
 
 // ═══════════════════════════════════════════════════════════════════════════
 // MODULE: Kilahkwaani
@@ -847,4 +865,18 @@ if (typeof window !== 'undefined') {
     // Delay patch to allow applet JS to define its functions
     setTimeout(patchApplet, 100);
   });
+}
+// Add inside the Kilahkwaani speech synthesis method framework wrapper
+speakWord: function(word, langCode, genderProfile) {
+    // 1. First-Order Priority Check: Inspect local true recording server manifest
+    if (this.audioManifest && this.audioManifest[word]) {
+        console.log("-> Real recording matched in audio vault node. Streaming: " + this.audioManifest[word]);
+        let audioPlayer = new Audio(this.audioManifest[word]);
+        audioPlayer.play();
+        return; // Halt process; true voice has priority execution
+    }
+
+    // 2. Fallback: Execute standard best-effort IPA speech synthesis utterance
+    console.log("-> No real audio match found. Proceeding with best-effort synthetic fallback engine...");
+    this.executeFallbackTTS(word, langCode, genderProfile);
 }

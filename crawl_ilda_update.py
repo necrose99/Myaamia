@@ -8,7 +8,7 @@ import xml.etree.ElementTree as ET
 
 TMX_FILE = "ilda_full.tmx"
 WORK_JSON = "./tmp/work.json"
-LOOKAHEAD_LIMIT = 50
+LOOKAHEAD_LIMIT = 50000
 
 # Regex pattern for Latin scientific names (e.g., Acer rubrum, Canis lupus)
 LATIN_PATTERN = re.compile(r'\b([A-Z][a-z]+ [a-z]+)\b')
@@ -39,45 +39,76 @@ def load_tmx_ids(file_path):
 def parse_and_build_tu(entry_id, html_content):
     soup = BeautifulSoup(html_content, 'html.parser')
     
+    # 1. Primary Stem & Gloss
     mya_elem = soup.select_one(".entry-headword, .headword, h1")
     eng_elem = soup.select_one(".definition, .gloss, .translation")
     
-    mya_text = mya_elem.get_text(strip=True) if mya_elem else ""
-    eng_text = eng_elem.get_text(strip=True) if eng_elem else ""
-    
-    if not mya_text or not eng_text:
+    if not mya_elem or not eng_elem:
         return None, None
 
-    # Determine structural type (stem/prefix vs leaf)
+    mya_text = mya_elem.get_text(strip=True)
+    eng_text = eng_elem.get_text(strip=True)
     is_morpheme = mya_text.endswith('-') or mya_text.startswith('-')
-    
-    # Construct TMX Entry
+
     tu = ET.Element("tu", {"tuid": str(entry_id)})
     
-    # Add morpheme property if applicable
+    # Metadata & Properties
     if is_morpheme:
-        prop_type = ET.SubElement(tu, "prop", {"type": "entry_type"})
-        prop_type.text = "morpheme"
-    
-    # Extract Latin scientific names via Regex and inject into TMX <prop>
+        ET.SubElement(tu, "prop", {"type": "entry_type"}).text = "morpheme"
+        
+    url_prop = ET.SubElement(tu, "prop", {"type": "url"})
+    url_prop.text = f"https://mc.miamioh.edu/ilda-myaamia/dictionary/entries/{entry_id}"
+
+    # Scientific Name Extraction
     latin_matches = LATIN_PATTERN.findall(eng_text)
     for latin in latin_matches:
-        prop_latin = ET.SubElement(tu, "prop", {"type": "scientific_name"})
-        prop_latin.text = latin
+        ET.SubElement(tu, "prop", {"type": "scientific_name"}).text = latin
 
-    # Add Language Units
+    # Base Headword Pair
     tuv_mya = ET.SubElement(tu, "tuv", {"xml:lang": "mia"})
     ET.SubElement(tuv_mya, "seg").text = mya_text
     
     tuv_eng = ET.SubElement(tu, "tuv", {"xml:lang": "en"})
     ET.SubElement(tuv_eng, "seg").text = eng_text
+
+    # 2. Extract Child Segments (Inflections, Commands, Sentences)
+    child_segments = []
     
+    # Parse tables or list rows inside entry body
+    for row in soup.select("table tr, .paradigm-row, .sentence-row"):
+        cols = row.find_all(["td", "th"])
+        if len(cols) >= 2:
+            mya_child = cols[0].get_text(strip=True)
+            eng_child = cols[1].get_text(strip=True)
+            
+            # Filter out table header rows
+            if mya_child and eng_child and mya_child.lower() != "myaamia":
+                # Determine child segment category
+                parent_section = row.find_parent(["div", "section"])
+                section_name = "child_segment"
+                if parent_section:
+                    header = parent_section.find(["h2", "h3", "span"])
+                    if header:
+                        section_name = header.get_text(strip=True).lower().replace(" ", "_")
+
+                # Attach as TMX <prop> tag
+                child_prop = ET.SubElement(tu, "prop", {"type": section_name})
+                child_prop.text = f"{mya_child} = {eng_child}"
+                
+                child_segments.append({
+                    "category": section_name,
+                    "mia": mya_child,
+                    "en": eng_child
+                })
+
+    # Record for work.json state/resume log
     record = {
         "id": entry_id,
         "mia": mya_text,
         "en": eng_text,
         "is_morpheme": is_morpheme,
-        "latin_names": latin_matches
+        "latin_names": latin_matches,
+        "child_segments": child_segments
     }
     
     return tu, record

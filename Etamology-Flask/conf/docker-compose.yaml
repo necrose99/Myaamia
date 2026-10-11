@@ -3,7 +3,11 @@ version: '3.8'
 services:
   etamology-app:
     build:
+<<<<<<< Updated upstream
       context: ./Algic-Etamology-Flask  # Target your split git submodule directory path
+=======
+      context: .
+>>>>>>> Stashed changes
       dockerfile: conf/Dockerfile
     container_name: etamology_stack
     restart: unless-stopped
@@ -11,6 +15,7 @@ services:
       - "80:80"
       - "443:443"
     environment:
+<<<<<<< Updated upstream
       - MY_DOMAIN=${MY_DOMAIN:-localhost}
       - CERTBOT_EMAIL=${CERTBOT_EMAIL:-admin@localhost.local}
     volumes:
@@ -23,6 +28,16 @@ services:
       
       # 2. Mounts your custom utilities directory side-by-side so transmog.py can use them
       - ./scripts:/var/www/Etamology/scripts:ro
+=======
+      - MY_DOMAIN=${MY_DOMAIN}
+      - CERTBOT_EMAIL=${CERTBOT_EMAIL}
+      - ADMIN_USER=${ADMIN_USER}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD}
+      - FLASK_ENV=${FLASK_ENV}
+    volumes:
+      - etamology_data:/var/www/Etamology/data
+      - letsencrypt_certs:/etc/letsencrypt
+>>>>>>> Stashed changes
 
 volumes:
   etamology_data:
