@@ -10,3 +10,6 @@
 [submodule "Algic-Etamology-Flask"]
 	path = Algic-Etamology-Flask
 	url = https://github.com/necrose99/Algic-Etamology-Flask.git
+[submodule "ModFr-Norm"]
+	path = ModFr-Norm
+	url = https://github.com/rbawden/ModFr-Norm.git
