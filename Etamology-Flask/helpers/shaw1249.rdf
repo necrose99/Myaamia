@@ -1,0 +1,76 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:void="http://rdfs.org/ns/void#"
+xmlns:foaf="http://xmlns.com/foaf/0.1/"
+xmlns:frbr="http://purl.org/vocab/frbr/core#"
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:dctype="http://purl.org/dc/dcmitype/"
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+xmlns:isbd="http://iflastandards.info/ns/isbd/elements/"
+xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:gold="http://purl.org/linguistics/gold/"
+xmlns:lexvo="http://lexvo.org/ontology#"
+xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
+xmlns:bibo="http://purl.org/ontology/bibo/"
+xmlns:owl="http://www.w3.org/2002/07/owl#"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+    <rdf:Description rdf:about="https://glottolog.org/resource/languoid/id/shaw1249">
+        <void:inDataset rdf:resource="https://glottolog.org/"/>
+        <rdfs:label xml:lang="en">Shawnee</rdfs:label>
+        <skos:prefLabel xml:lang="en">Shawnee</skos:prefLabel>
+            <skos:scopeNote xml:lang="x-clld">language</skos:scopeNote>
+        <skos:altLabel xml:lang="x-clld">shaw1249</skos:altLabel>
+        <dcterms:title xml:lang="en">Shawnee</dcterms:title>
+        
+    <geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-83.0</geo:long>
+    <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">40.0</geo:lat>
+    <rdf:type rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>
+    <skos:altLabel xml:lang="en">Chavanés</skos:altLabel>
+    <skos:altLabel xml:lang="ia">Lingua shawnee</skos:altLabel>
+    <skos:altLabel xml:lang="en">Shawnee language</skos:altLabel>
+    <skos:altLabel xml:lang="ru">Шони</skos:altLabel>
+    <dcterms:description rdf:resource="https://glottolog.org/resource/reference/id/669906"/>
+    <dcterms:description rdf:resource="https://glottolog.org/resource/reference/id/669958"/>
+    <dcterms:description rdf:resource="https://glottolog.org/resource/reference/id/143752"/>
+    <dcterms:description rdf:resource="https://glottolog.org/resource/reference/id/143756"/>
+    <dcterms:description rdf:resource="https://glottolog.org/resource/reference/id/671534"/>
+    <dcterms:description rdf:resource="https://glottolog.org/resource/reference/id/59681"/>
+    <dcterms:description rdf:resource="https://glottolog.org/resource/reference/id/671974"/>
+    <dcterms:description rdf:resource="https://glottolog.org/resource/reference/id/133978"/>
+    <dcterms:description rdf:resource="https://glottolog.org/resource/reference/id/475013"/>
+    <dcterms:description rdf:resource="https://glottolog.org/resource/reference/id/673389"/>
+    <dcterms:description rdf:resource="https://glottolog.org/resource/reference/id/673396"/>
+    <dcterms:description rdf:resource="https://glottolog.org/resource/reference/id/19675"/>
+    <dcterms:description rdf:resource="https://glottolog.org/resource/reference/id/674430"/>
+    <dcterms:description rdf:resource="https://glottolog.org/resource/reference/id/546245"/>
+    <dcterms:description rdf:resource="https://glottolog.org/resource/reference/id/181128"/>
+    <dcterms:description rdf:resource="https://glottolog.org/resource/reference/id/30771"/>
+    <dcterms:description rdf:resource="https://glottolog.org/resource/reference/id/564532"/>
+    <dcterms:description rdf:resource="https://glottolog.org/resource/reference/id/79261"/>
+    <dcterms:description rdf:resource="https://glottolog.org/resource/reference/id/681443"/>
+    <dcterms:description rdf:resource="https://glottolog.org/resource/reference/id/36877"/>
+    <dcterms:description rdf:resource="https://glottolog.org/resource/reference/id/566326"/>
+    <dcterms:description rdf:resource="https://glottolog.org/resource/reference/id/96137"/>
+    <dcterms:description rdf:resource="https://glottolog.org/resource/reference/id/185005"/>
+    <dcterms:description rdf:resource="https://glottolog.org/resource/reference/id/684317"/>
+    <dcterms:description rdf:resource="https://glottolog.org/resource/reference/id/566993"/>
+    <dcterms:description rdf:resource="https://glottolog.org/resource/reference/id/687472"/>
+    <dcterms:description rdf:resource="https://glottolog.org/resource/reference/id/687928"/>
+    <dcterms:description rdf:resource="https://glottolog.org/resource/reference/id/699485"/>
+    <lexvo:iso639P3PCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sjw</lexvo:iso639P3PCode>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/ISO_639:sjw"/>
+    <dcterms:isReferencedBy rdf:resource="https://glottolog.org/valuesets/macroarea-shaw1249"/>
+    <dcterms:isReferencedBy rdf:resource="https://glottolog.org/valuesets/country-shaw1249"/>
+    <dcterms:isReferencedBy rdf:resource="https://glottolog.org/valuesets/aes-shaw1249"/>
+    <dcterms:isReferencedBy rdf:resource="https://glottolog.org/valuesets/ltype-shaw1249"/>
+    <dcterms:isReferencedBy rdf:resource="https://glottolog.org/valuesets/sc-shaw1249"/>
+    <dcterms:isReferencedBy rdf:resource="https://glottolog.org/valuesets/med-shaw1249"/>
+
+            <rdf:type rdf:resource="http://purl.org/linguistics/gold/Language"/>
+    <skos:broaderTransitive rdf:resource="https://glottolog.org/resource/languoid/id/algi1248"/>
+    <skos:broader rdf:resource="https://glottolog.org/resource/languoid/id/east2765"/>
+    <dcterms:spatial>North America</dcterms:spatial>
+    </rdf:Description>
+    
+</rdf:RDF>

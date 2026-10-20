@@ -1,5 +1,15 @@
 import re
 from bs4 import BeautifulSoup
+from rdflib import Graph
+
+# Create an empty RDF graph
+g = Graph()
+
+# Parse your local Turtle file
+g.parse("mia_ilda_lexicon.ttl", format="ttl")
+# Local Configuration Mappings
+INPUT_TMX = "ilda_full.tmx"
+OUTPUT_TTL = "mia_ilda_lexicon.ttl"
 
 # ---------------------------------------------------------------------------
 # ilda_full.tmx structure (confirmed against the real file):
@@ -27,20 +37,91 @@ SPEAKER_PATTERNS = [
     (re.compile(r"used only by women", re.I), "alg:FemaleSpeaker"),
     (re.compile(r"\(men only\)", re.I), "alg:MaleSpeaker"),
     (re.compile(r"used only by men", re.I), "alg:MaleSpeaker"),
+    # Direct match for entry 6763 mixed-register codes
+    (re.compile(r"\bmsp/gsp\b", re.I), "alg:GenderNeutralParticle"),
 ]
+
+KNOWN_POS_LABELS = {
+    # =========================================================================
+    # SPEAKER GENDER MATRICES & REGISTER INTERJECTIONS
+    # =========================================================================
+    "fsp": "alg:FemaleSpeakerParticle",        # e.g., naaka (women only)
+    "msp": "alg:MaleSpeakerParticle",          # e.g., iihia (men only)
+    "gsp": "alg:GenderNeutralParticle",        # e.g., iihia (unmarked / msp / gsp)
+    
+    # Text fallbacks for parsing gloss string layers
+    "women only": "alg:FemaleSpeakerParticle",
+    "men only": "alg:MaleSpeakerParticle",
+    "msp/gsp": "alg:GenderNeutralParticle",
+    "either men or women": "alg:GenderNeutralParticle",
+    "generic": "alg:GenderNeutralParticle",
+    "interjectiv": "lexinfo:Interjection",
+    "affirmation": "lexinfo:Interjection",
+    "yes": "lexinfo:Interjection",               # Catches and groups validation definitions
+
 
 ANIMACY_PATTERNS = [
     (re.compile(r"\binanimate\b", re.I), "alg:Inanimate"),
     (re.compile(r"\banimate\b", re.I), "alg:Animate"),
 ]
 
+# =========================================================================
+# COMPREHENSIVE ALGIC PART OF SPEECH & MORPHOLOGICAL MATRIX
+# =========================================================================
 KNOWN_POS_LABELS = {
+    # 1. CORE ALGIC VERB MAINFRAME (Valency + Animacy Matrix)
+    "vai": "alg:VerbAnimateIntransitive",
+    "vii": "alg:VerbInanimateIntransitive",
+    "vta": "alg:VerbTransitiveAnimate",
+    "vti": "alg:VerbTransitiveInanimate",
     "no-object verb": "alg:NoObjectVerb",
     "object verb": "alg:ObjectVerb",
-    "common noun": "lexinfo:CommonNoun",
-    "interjection": "lexinfo:Interjection",
-    "transitive verb": "lexinfo:TransitiveVerb",
     "intransitive verb": "lexinfo:IntransitiveVerb",
+    "transitive verb": "lexinfo:TransitiveVerb",
+    
+    # 2. NOUN ANIMACY & PARADIGM SPLITS
+    "na": "alg:AnimateNoun",
+    "ni": "alg:InanimateNoun",
+    "common noun": "lexinfo:CommonNoun",
+    "proper noun": "lexinfo:ProperNoun",
+    "proximate": "alg:ProximateNoun",
+    "obviative": "alg:ObviativeNoun",
+    "4s": "alg:ObviativeSingular",
+    "4p": "alg:ObviativePlural",
+    "dem": "lexinfo:DemonstrativePronoun",
+    
+    # 3. COMMANDS, PARTICLES, & CONTEXTUAL WORDS
+    "cmd": "lexinfo:ImperativeVerb",
+    "command": "lexinfo:ImperativeVerb",
+    "intj": "lexinfo:Interjection",
+    "interjection": "lexinfo:Interjection",
+    "particle": "alg:Particle",
+    "num": "lexinfo:Numeral",
+    "number": "lexinfo:Numeral",
+    
+    # 4. SPEAKER GENDER MATRICES
+    "fsp": "alg:FemaleSpeakerParticle",
+    "msp": "alg:MaleSpeakerParticle",
+    "gsp": "alg:GenderNeutralParticle",
+    "women only": "alg:FemaleSpeakerParticle",
+    "men only": "alg:MaleSpeakerParticle",
+    "either men or women": "alg:GenderNeutralParticle",
+    
+    # 5. MORPHOLOGICAL INSTRUMENTALS (Suffix Matrix)
+    "inst_mouth": "alg:InstrumentalByMouth",
+    "inst_hand": "alg:InstrumentalByHand",
+    "inst_heat": "alg:InstrumentalByHeat",
+    "inst_mech": "alg:InstrumentalByMechanical",
+    "inst_proj": "alg:InstrumentalByProjectile",
+    "inst_vocal": "alg:InstrumentalByVocalNoise",
+    "inst_foot_loc": "alg:InstrumentalByFootLoco",
+    "inst_foot_agt": "alg:InstrumentalByFootAgent",
+    "inst_leg": "alg:InstrumentalByLegs",
+    
+    # 6. ADVANCED MORPHOLOGY EXTRACTIONS
+    "pv": "alg:Preverb",
+    "loc": "lexinfo:Locative",
+    "dim": "lexinfo:DiminutiveNoun",
 }
 
 
@@ -80,18 +161,35 @@ def extract_gloss_annotations(en_text):
     clean = re.sub(r"\s+,", ",", clean)
     clean = re.sub(r",\s*,", ",", clean)
 
-    # Explicitly return 4 values to match line 187 unpacking
     return clean.strip(" ,"), speaker, animacy, matched
 
 
-def detect_pos_fallback(en_text, form_type):
+def detect_pos_fallback(en_text, form_type, explicit_prop_pos=None):
+    """
+    Determines Part-of-Speech using explicit schema mappings first,
+    then evaluates morphological features and regex heuristics.
+    """
+    # Route 1: Validate explicit layout parameter tags if extracted from the entry
+    if explicit_prop_pos:
+        norm_prop = explicit_prop_pos.strip().lower()
+        if norm_prop in KNOWN_POS_LABELS:
+            return KNOWN_POS_LABELS[norm_prop], False
+
     lowered = en_text.lower()
     tokens = lowered.split()
 
-    for label, uri in KNOWN_POS_LABELS.items():
-        if label in lowered:
-            return uri, False  
+    # Route 2: Sort by string length descending to guarantee multi-word strings match before single words
+    sorted_labels = sorted(KNOWN_POS_LABELS.keys(), key=len, reverse=True)
+    for label in sorted_labels:
+        # Enforce boundary checking for short acronym codes (e.g. 'na', 'ni', 'vai')
+        if len(label) <= 4:
+            pattern = rf"\b{re.escape(label)}\b"
+            if re.search(pattern, lowered):
+                return KNOWN_POS_LABELS[label], False
+        elif label in lowered:
+            return KNOWN_POS_LABELS[label], False
 
+    # Route 3: Deep NLP Heuristics
     if re.search(r"^\d+$", en_text) or any(w in tokens for w in ["one", "two", "three", "four", "five"]):
         return "lexinfo:Numeral", True
 
@@ -118,7 +216,7 @@ def parse_tmx_to_ontolex(tmx_content):
         "@prefix lime:     <http://w3.org> .",
         "@prefix lexinfo:  <http://lexinfo.net> .",
         "@prefix morph:    <http://w3.org> .",
-        "@prefix alg:      <http://example.org> .",
+        "@prefix alg:      <http://algic-linguistics.org> .",
         "@prefix rdfs:     <http://w3.org> .",
         "@prefix rdf:      <http://w3.org> .",
         "@prefix xsd:      <http://w3.org> .",
@@ -137,7 +235,7 @@ def parse_tmx_to_ontolex(tmx_content):
         "mia:lexicon a lime:Lexicon ;",
         '    dcterms:title "Miami-Illinois ILDA Browse-Index Lexicon"@en ;',
         "    lime:language mia:language ;",
-        "    dcterms:source <https://miamioh.edudictionary/entries> ;",
+        "    dcterms:source <https://mc.miamioh.edu/ilda-myaamia/dictionary/entries> ;",
         '    dcterms:description "Derived from ilda_full.tmx, a browse-index snapshot (headwords + glosses only)"@en .',
         "",
         "# --- Language family classification (SKOS broader chain with Upstream URIs) ---",
@@ -166,6 +264,7 @@ def parse_tmx_to_ontolex(tmx_content):
         ilda_url = props.get("x-ilda-url")
         letter = props.get("x-letter")
         form_type = props.get("x-form-type")  
+        explicit_pos = props.get("x-pos")  # Captures any pre-mapped properties if available
 
         tuv_mia = tu.find("tuv", {"xml:lang": "mia"})
         tuv_en = tu.find("tuv", {"xml:lang": "en-US"})
@@ -177,7 +276,7 @@ def parse_tmx_to_ontolex(tmx_content):
         if not mia_text:
             continue
 
-        base_id = f"ilda_{ilda_id}" if ilda_id else safe_local_name(mia_text, None)
+        base_id = f"ilda_{ilda_id}" if ilda_id else safe_local_name(mia_text, "entry")
         safe_id = base_id
         n = 1
         while safe_id in seen_ids:
@@ -187,7 +286,7 @@ def parse_tmx_to_ontolex(tmx_content):
         entry_ids.append(safe_id)
 
         clean_gloss, speaker, animacy, matched = extract_gloss_annotations(en_text)
-        pos_uri, pos_is_heuristic = detect_pos_fallback(clean_gloss, form_type)
+        pos_uri, pos_is_heuristic = detect_pos_fallback(clean_gloss, form_type, explicit_pos)
 
         # --- LexicalEntry ---
         ttl_lines.append(f"ex:{safe_id} rdf:type ontolex:LexicalEntry ;")
@@ -196,47 +295,4 @@ def parse_tmx_to_ontolex(tmx_content):
             ttl_lines.append(f"    lexinfo:partOfSpeech {pos_uri} ;")
             if pos_is_heuristic:
                 ttl_lines.append('    alg:heuristicSource "gloss-keyword-guess:no-per-entry-pos" ;')
-        else:
-            ttl_lines.append('    alg:posUnresolved true ;')
-        if animacy:
-            ttl_lines.append(f"    alg:animacy {animacy} ;")
-            ttl_lines.append('    alg:heuristicSource "gloss-text-pattern:animacy" ;')
-        if letter:
-            ttl_lines.append(f'    alg:ildaLetter "{letter}" ;')
-        ttl_lines.append(f"    ontolex:canonicalForm ex:{safe_id}_form .")
-
-        # --- Form ---
-        ttl_lines.append(f"ex:{safe_id}_form rdf:type ontolex:Form ;")
-        if form_type == "stem":
-            ttl_lines.append("    rdf:type morph:Stem ;")
-        ttl_lines.append(f'    ontolex:writtenRep "{escape_ttl_literal(mia_text)}"@mia .')
-
-        # --- Sense ---
-        ttl_lines.append(f"ex:{safe_id}_sense rdf:type ontolex:LexicalSense ;")
-        ttl_lines.append(f"    ontolex:isSenseOf ex:{safe_id} ;")
-        ttl_lines.append(f'    rdfs:comment "{escape_ttl_literal(clean_gloss)}"@en ;')
-        if speaker:
-            ttl_lines.append(f"    alg:speakerRestriction {speaker} ;")
-            ttl_lines.append('    alg:heuristicSource "gloss-text-pattern:speaker-restriction" ;')
-        if ilda_id:
-            ttl_lines.append(f'    alg:ildaId "{ilda_id}"^^xsd:integer ;')
-        if ilda_url:
-            ttl_lines.append(f"    rdfs:seeAlso <{ilda_url}> ;")
-        ttl_lines.append("    rdfs:isDefinedBy <http://myaamiadictionary.org> .")
-        ttl_lines.append("")
-
-    if entry_ids:
-        ttl_lines.append("# --- Lexicon -> entry links (lime:entry) ---")
-        for eid in entry_ids:
-            ttl_lines.append(f"mia:lexicon lime:entry ex:{eid} .")
-        ttl_lines.append("")
-
-    return "\n".join(ttl_lines)
-
-
-if __name__ == "__main__":
-    import sys
-    # Enforce standard UTF-8 encoding across Windows/Linux file streams
-    with open(sys.argv[1], encoding="utf-8") as f:
-        content = f.read()
-    print(parse_tmx_to_ontolex(content))
+            else:
