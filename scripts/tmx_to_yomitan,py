@@ -1,0 +1,564 @@
+
+#!/usr/bin/env python3
+"""Convert TMX translation pairs and optional RDF/Turtle TTL into a Yomitan ZIP."""
+import argparse
+import json
+import re
+import zipfile
+import xml.etree.ElementTree as ET
+from pathlib import Path
+from html import unescape
+from collections import defaultdict
+
+XML_LANG = "{http://www.w3.org/XML/1998/namespace}lang"
+
+
+def clean(text):
+    text = unescape(str(text or "")).strip()
+    return re.sub(r"\$$", "", text).strip()
+
+
+def norm(text):
+    return re.sub(r"\s+", " ", clean(text)).casefold()
+
+
+def local_name(uri):
+    return re.split(r"[#/:]", str(uri).rstrip("/"))[-1].lower()
+
+
+def lang_of(value):
+    return (getattr(value, "language", None) or "").lower()
+
+
+def read_tmx(path, source_lang, target_lang):
+    records = []
+    root = ET.parse(path).getroot()
+
+    for tu in root.iter():
+        if local_name(tu.tag) != "tu":
+            continue
+
+        props, variants = {}, {}
+        tuid = tu.attrib.get("tuid", "")
+
+        for child in tu:
+            tag = local_name(child.tag)
+
+            if tag == "prop":
+                key = child.attrib.get("type", "").strip().lower()
+                value = clean(" ".join(child.itertext()))
+                if key and value:
+                    props[key] = value
+
+            elif tag == "tuv":
+                lang = (
+                    child.attrib.get(XML_LANG)
+                    or child.attrib.get("lang")
+                    or child.attrib.get("xml:lang")
+                    or ""
+                ).lower()
+
+                segs = [
+                    " ".join(elem.itertext())
+                    for elem in child.iter()
+                    if local_name(elem.tag) == "seg"
+                ]
+                value = clean(" ".join(segs))
+
+                if lang and value:
+                    variants[lang] = value
+
+        source = variants.get(source_lang.lower())
+        target = variants.get(target_lang.lower())
+
+        if not source or not target:
+            continue
+
+        records.append({
+            "source": source,
+            "target": target,
+            "id": props.get("x-ilda-id") or tuid,
+            "uri": props.get("x-ilda-url", ""),
+            "ipa": props.get("x-ipa-mia", ""),
+            "pos": props.get("x-pos", ""),
+            "form_type": props.get("x-form-type", ""),
+            "letter": props.get("x-letter", ""),
+            "props": props,
+            "provenance": ["TMX"],
+            "conflicts": []
+        })
+
+    return records
+
+
+def read_ttl(path, source_lang, target_lang):
+    """Read OntoLex-Lemon entries and senses with common RDF fallbacks.
+
+    Expected pattern:
+      entry ontolex:canonicalForm form ;
+            ontolex:sense sense .
+      form ontolex:writtenRep "headword"@mia .
+      sense skos:definition "English gloss"@en .
+    """
+    try:
+        from rdflib import Graph, Literal, URIRef
+    except ImportError as exc:
+        raise SystemExit(
+            "TTL support requires rdflib: "
+            "python -m pip install rdflib"
+        ) from exc
+
+    graph = Graph()
+    graph.parse(str(path), format="turtle")
+
+    by_subject = defaultdict(list)
+
+    for subject, predicate, obj in graph:
+        by_subject[subject].append(
+            (local_name(predicate), predicate, obj)
+        )
+
+    def triples(subject):
+        return by_subject.get(subject, [])
+
+    def objects(subject, names):
+        wanted = {name.lower() for name in names}
+        return [
+            obj for name, _predicate, obj in triples(subject)
+            if name in wanted
+        ]
+
+    def first_literal(items, languages=()):
+        literals = [
+            item for item in items
+            if isinstance(item, Literal) and clean(item)
+        ]
+
+        for wanted in languages:
+            wanted = wanted.lower()
+
+            for item in literals:
+                if lang_of(item) == wanted:
+                    return clean(item)
+
+            for item in literals:
+                if lang_of(item).startswith(wanted + "-"):
+                    return clean(item)
+
+        return clean(literals[0]) if literals else ""
+
+    def resource_label(items):
+        value = first_literal(items)
+        if value:
+            return value
+
+        for item in items:
+            if isinstance(item, URIRef):
+                label = local_name(item)
+                if label and label not in {"partofspeech", "pos"}:
+                    return label
+
+        return ""
+
+    entry_subjects = set()
+
+    # Identify standard OntoLex entries.
+    for subject, rows in by_subject.items():
+        names = {name for name, _predicate, _obj in rows}
+
+        if names.intersection({
+            "canonicalform", "otherform", "lexicalform"
+        }):
+            entry_subjects.add(subject)
+
+        if any(
+            name == "type"
+            and local_name(obj) in {
+                "lexicalentry", "word", "lexeme", "lexicalconcept"
+            }
+            for name, _predicate, obj in rows
+        ):
+            entry_subjects.add(subject)
+
+    # Also support simple dictionaries with direct labels.
+    for subject, rows in by_subject.items():
+        names = {name for name, _predicate, _obj in rows}
+
+        if names.intersection({"writtenrep", "preflabel", "label"}):
+            entry_subjects.add(subject)
+
+    form_links = {"canonicalform", "otherform", "lexicalform"}
+    records = []
+
+    for subject in entry_subjects:
+        form_values = []
+
+        for form_node in objects(subject, form_links):
+            form_values.extend(
+                objects(form_node, {"writtenrep", "value", "label"})
+            )
+
+            if isinstance(form_node, Literal):
+                form_values.append(form_node)
+
+        form = first_literal(
+            form_values, (target_lang, "mia", "mia-mi")
+        )
+
+        if not form:
+            form = first_literal(
+                objects(subject, {"writtenrep", "preflabel", "label"}),
+                (target_lang, "mia", "mia-mi")
+            )
+
+        if not form:
+            continue
+
+        # Gather English glosses from the entry, senses, and concepts.
+        gloss_values = objects(
+            subject,
+            {"definition", "gloss", "description", "comment", "preflabel"}
+        )
+
+        sense_nodes = objects(subject, {"sense"})
+
+        for sense in sense_nodes:
+            gloss_values.extend(
+                objects(
+                    sense,
+                    {
+                        "definition", "gloss", "description",
+                        "comment", "preflabel", "label"
+                    }
+                )
+            )
+
+            for concept in objects(
+                sense, {"reference", "isreferenceof", "concept"}
+            ):
+                gloss_values.extend(
+                    objects(
+                        concept,
+                        {
+                            "definition", "gloss", "description",
+                            "comment", "preflabel", "label"
+                        }
+                    )
+                )
+
+        gloss = first_literal(
+            gloss_values, (source_lang, "en", "en-us")
+        )
+
+        stable_id = first_literal(
+            objects(
+                subject,
+                {"identifier", "id", "ilda-id", "x-ilda-id", "notation"}
+            )
+        )
+
+        uri = str(subject)
+
+        if not stable_id:
+            match = re.search(
+                r"(?:entries/|ilda[-_/])([0-9]+)(?:\D|$)",
+                uri,
+                re.I
+            )
+            if match:
+                stable_id = match.group(1)
+
+        pos_values = objects(
+            subject, {"partofspeech", "pos", "x-pos"}
+        )
+
+        if not pos_values:
+            for sense in sense_nodes:
+                pos_values.extend(
+                    objects(sense, {"partofspeech", "pos", "x-pos"})
+                )
+
+        pos = resource_label(pos_values)
+
+        records.append({
+            "source": gloss,
+            "target": form,
+            "id": stable_id,
+            "uri": uri,
+            "ipa": first_literal(
+                objects(
+                    subject,
+                    {
+                        "ipa", "phoneticform",
+                        "pronunciation", "phoneticrepresentation"
+                    }
+                )
+            ),
+            "pos": pos,
+            "form_type": first_literal(
+                objects(subject, {"formtype", "x-form-type"})
+            ),
+            "letter": first_literal(
+                objects(subject, {"letter", "x-letter"})
+            ),
+            "props": {},
+            "provenance": ["TTL"],
+            "conflicts": []
+        })
+
+    return records
+
+
+def merge_records(tmx_records, ttl_records):
+    """Merge by ID or URI, then unambiguous normalized headword."""
+    merged = list(tmx_records)
+
+    by_id = defaultdict(list)
+    by_uri = defaultdict(list)
+    by_target = defaultdict(list)
+
+    for i, rec in enumerate(merged):
+        if rec.get("id"):
+            by_id[str(rec["id"])].append(i)
+
+        if rec.get("uri"):
+            by_uri[rec["uri"]].append(i)
+
+        if rec.get("target"):
+            by_target[norm(rec["target"])].append(i)
+
+    for incoming in ttl_records:
+        candidates = (
+            by_id.get(str(incoming["id"]), [])
+            if incoming.get("id") else []
+        )
+
+        if not candidates and incoming.get("uri"):
+            candidates = by_uri.get(incoming["uri"], [])
+
+        if not candidates and incoming.get("target"):
+            matches = by_target.get(norm(incoming["target"]), [])
+            if len(matches) == 1:
+                candidates = matches
+
+        if len(candidates) != 1:
+            merged.append(incoming)
+            idx = len(merged) - 1
+
+            if incoming.get("id"):
+                by_id[str(incoming["id"])].append(idx)
+
+            if incoming.get("uri"):
+                by_uri[incoming["uri"]].append(idx)
+
+            if incoming.get("target"):
+                by_target[norm(incoming["target"])].append(idx)
+
+            continue
+
+        current = merged[candidates[0]]
+
+        for field in (
+            "source", "target", "id", "uri",
+            "ipa", "pos", "form_type", "letter"
+        ):
+            old = clean(current.get(field))
+            new = clean(incoming.get(field))
+
+            if not old and new:
+                current[field] = incoming[field]
+
+            elif old and new and norm(old) != norm(new):
+                current["conflicts"].append({
+                    "field": field,
+                    "existing": old,
+                    "incoming": new
+                })
+
+        current["provenance"] = sorted(
+            set(current["provenance"])
+            | set(incoming["provenance"])
+        )
+
+    return merged
+
+
+def main():
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument("input", help="Input .tmx file")
+    parser.add_argument("-o", "--output", default="tmx-yomitan.zip")
+    parser.add_argument(
+        "--ttl", help="Optional RDF/Turtle .ttl file to merge"
+    )
+    parser.add_argument(
+        "--source", default="en",
+        help="Source language code, e.g. en"
+    )
+    parser.add_argument(
+        "--target", default="mia",
+        help="Target language code, e.g. mia"
+    )
+    parser.add_argument("--name", default="TMX + TTL Dictionary")
+    parser.add_argument(
+        "--conflicts", default="",
+        help="Optional JSON conflict-report path"
+    )
+
+    args = parser.parse_args()
+
+    records = read_tmx(args.input, args.source, args.target)
+    tmx_count = len(records)
+
+    if args.ttl:
+        ttl_records = read_ttl(
+            args.ttl, args.source, args.target
+        )
+        records = merge_records(records, ttl_records)
+
+    # Deduplicate translation pairs after merging the sources.
+    deduped = []
+    seen = {}
+
+    for rec in records:
+        key = (
+            norm(rec.get("source", "")),
+            norm(rec.get("target", ""))
+        )
+
+        if not all(key):
+            continue
+
+        if key not in seen:
+            seen[key] = len(deduped)
+            deduped.append(rec)
+        else:
+            current = deduped[seen[key]]
+
+            for field in (
+                "id", "uri", "ipa", "pos", "form_type", "letter"
+            ):
+                if not current.get(field) and rec.get(field):
+                    current[field] = rec[field]
+
+                elif (
+                    current.get(field)
+                    and rec.get(field)
+                    and norm(current[field]) != norm(rec[field])
+                ):
+                    current["conflicts"].append({
+                        "field": field,
+                        "existing": current[field],
+                        "incoming": rec[field]
+                    })
+
+            current["provenance"] = sorted(
+                set(current["provenance"])
+                | set(rec["provenance"])
+            )
+            current["conflicts"].extend(rec.get("conflicts", []))
+
+    entries = []
+    conflict_report = []
+
+    for rec in deduped:
+        tags = []
+
+        if rec.get("pos"):
+            tags.append(
+                "pos:" + rec["pos"].replace(" ", "_")
+            )
+
+        if rec.get("form_type"):
+            tags.append(
+                "form:" + rec["form_type"].replace(" ", "_")
+            )
+
+        definition = rec["target"]
+
+        if rec.get("uri"):
+            safe_uri = (
+                rec["uri"]
+                .replace("&", "&amp;")
+                .replace('"', "&quot;")
+                .replace("<", "&lt;")
+                .replace(">", "&gt;")
+            )
+            definition += (
+                f'<br><small><a href="{safe_uri}">Source</a></small>'
+            )
+
+        if rec.get("ipa"):
+            definition += (
+                f'<br><small>IPA: {rec["ipa"]}</small>'
+            )
+
+        # Yomitan term-bank v3:
+        # expression, reading, tags, rules, score,
+        # definitions, sequence, term tags
+        entries.append([
+            rec["source"],
+            "",
+            " ".join(tags),
+            "",
+            0,
+            [definition],
+            len(entries),
+            ""
+        ])
+
+        if rec.get("conflicts"):
+            conflict_report.append({
+                "id": rec.get("id", ""),
+                "source": rec["source"],
+                "target": rec["target"],
+                "conflicts": rec["conflicts"]
+            })
+
+    index = {
+        "title": args.name,
+        "format": 3,
+        "revision": "1",
+        "sequenced": False,
+        "author": "TMX + TTL converter",
+        "url": "",
+        "description": (
+            f"Converted from TMX"
+            f"{' + TTL' if args.ttl else ''}; "
+            f"source={args.source}, target={args.target}. "
+            f"{len(entries)} entries."
+        ),
+        "attribution": "",
+        "isUpdatable": False
+    }
+
+    with zipfile.ZipFile(
+        args.output, "w", compression=zipfile.ZIP_DEFLATED
+    ) as zf:
+        zf.writestr(
+            "index.json",
+            json.dumps(index, ensure_ascii=False, indent=2)
+        )
+        zf.writestr(
+            "term_bank_1.json",
+            json.dumps(
+                entries, ensure_ascii=False, separators=(",", ":")
+            )
+        )
+
+    if args.conflicts:
+        Path(args.conflicts).write_text(
+            json.dumps(conflict_report, ensure_ascii=False, indent=2),
+            encoding="utf-8"
+        )
+
+    print(
+        f"Created {args.output}: {len(entries)} entries "
+        f"(TMX input: {tmx_count}; "
+        f"TTL: {'yes' if args.ttl else 'no'}; "
+        f"conflicts: {len(conflict_report)})"
+    )
+
+
+if __name__ == "__main__":
+    main()
