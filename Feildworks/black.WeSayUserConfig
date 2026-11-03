@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration
+	version="2">
+	<backupPlan />
+	<uiOptions>
+		<language>en</language>
+		<labelFontName>Segoe UI</labelFontName>
+		<labelFontSizeInPoints>9</labelFontSizeInPoints>
+	</uiOptions>
+	<keyboards />
+</configuration>

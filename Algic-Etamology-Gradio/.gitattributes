@@ -1,0 +1,60 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto eol=lf
+
+# Explicitly declare text files you want to always be normalized and converted
+# to native line endings on checkout.
+*.c text
+*.h text
+
+# ==============================================================================
+# Master Git Attributes Configuration Matrix — Automated LF Enforcement
+# ==============================================================================
+
+# 1. Set default behavior to handle all text files with normalization 
+* text=auto
+
+# 2. Force strict LF line endings for all execution and code scripts
+*.py text eol=lf
+*.sh text eol=lf
+*.ps1 text eol=lf
+*.justfile text eol=lf
+justfile text eol=lf
+
+# 3. Force strict LF line endings for configurations and templates
+*.toml text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.conf text eol=lf
+*.json text eol=lf
+Dockerfile* text eol=lf
+
+# 4. Web asset and markup layers line normalization
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+
+# 5. Linguistic dictionary data resources normalization (prevents matrix parsing breaks)
+*.csv text eol=lf
+*.md text eol=lf
+*.tmx text eol=lf
+*.xliff text eol=lf
+*.lift text eol=lf
+*.xml text eol=lf
+*.xsl text eol=lf
+*.ttl text eol=lf
+
+# 6. Explicitly preserve binary tracking formats (tells Git never to touch these strings)
+*.db binary
+*.otf binary
+*.ttf binary
+*.woff2 binary
+*.zip binary
+*.xz binary
+*.ztar binary
+###### Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary

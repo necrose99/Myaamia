@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WritingSystemChangeLog
+	Version="1">
+	<Changes>
+		<Add
+			Producer="WeSay.App"
+			ProducerVersion="Version 1.6.10 (apparent build date: 06-Feb-2019)"
+			TimeStamp="2026-11-01T01:51:17Z">
+			<Id>qaa-x-spec</Id>
+		</Add>
+		<Add
+			Producer="WeSay.App"
+			ProducerVersion="Version 1.6.10 (apparent build date: 06-Feb-2019)"
+			TimeStamp="2026-11-01T01:51:18Z">
+			<Id>qaa-x-qaa</Id>
+		</Add>
+		<Delete
+			Producer="WeSay.App"
+			ProducerVersion="Version 1.6.10 (apparent build date: 06-Feb-2019)"
+			TimeStamp="2026-11-01T01:51:25Z">
+			<Id>qaa-x-qaa</Id>
+		</Delete>
+	</Changes>
+</WritingSystemChangeLog>

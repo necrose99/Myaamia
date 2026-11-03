@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LIFT 0.13 XSD — synthesised from sillsdev/lift-standard specification -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="unqualified">
+
+  <!-- Root element -->
+  <xs:element name="lift">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="entry" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="version"  type="xs:string" use="required"/>
+      <xs:attribute name="producer" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="entry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="lexical-unit"  minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="citation"      minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="pronunciation" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="variant"       minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="sense"         minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="note"          minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="relation"      minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="etymology"     minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="field"         minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="id"           type="xs:string" use="required"/>
+      <xs:attribute name="dateCreated"  type="xs:string"/>
+      <xs:attribute name="dateModified" type="xs:string"/>
+      <xs:attribute name="morph-type"   type="xs:string"/>
+      <xs:attribute name="guid"         type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="lexical-unit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="form" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="citation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="form" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="pronunciation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="form" maxOccurs="unbounded"/>
+        <xs:element ref="media" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="field" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="sense">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="grammatical-info" minOccurs="0"/>
+        <xs:element ref="gloss"            minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="definition"       minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="relation"         minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="note"             minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="example"          minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="reversal"         minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="illustration"     minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="subsense"         minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="semantic-domain"  minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="field"            minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="id"     type="xs:string"/>
+      <xs:attribute name="order"  type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="grammatical-info">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="trait" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="name"  type="xs:string" use="required"/>
+            <xs:attribute name="value" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="value" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="gloss">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="text" minOccurs="0"/>
+        <xs:element ref="form" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="lang" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="definition">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="form" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="example">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="form"        maxOccurs="unbounded"/>
+        <xs:element ref="translation" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="note"        minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="field"       minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="source" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="translation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="form" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="type" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="relation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="field" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="type"  type="xs:string" use="required"/>
+      <xs:attribute name="ref"   type="xs:string" use="required"/>
+      <xs:attribute name="order" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="etymology">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="form"    minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="gloss"   minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="field"   minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="type"   type="xs:string" use="required"/>
+      <xs:attribute name="source" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="note">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="form" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="type" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="field">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="form" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="type" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="form">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="text" minOccurs="0"/>
+        <xs:element ref="annotation" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="lang" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="text" type="xs:string"/>
+
+  <xs:element name="annotation">
+    <xs:complexType>
+      <xs:attribute name="name"    type="xs:string" use="required"/>
+      <xs:attribute name="value"   type="xs:string" use="required"/>
+      <xs:attribute name="who"     type="xs:string"/>
+      <xs:attribute name="when"    type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="semantic-domain">
+    <xs:complexType>
+      <xs:attribute name="name" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="reversal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="form"     maxOccurs="unbounded"/>
+        <xs:element ref="main"     minOccurs="0"/>
+        <xs:element ref="grammatical-info" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="type"  type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="main">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="form" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="href" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="illustration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="label" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="href" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="label">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="form" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="subsense">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="grammatical-info" minOccurs="0"/>
+        <xs:element ref="gloss"   minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="definition" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="note"    minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="example" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="field"   minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="id"    type="xs:string"/>
+      <xs:attribute name="order" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="variant">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="form" maxOccurs="unbounded"/>
+        <xs:element ref="relation" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="pronunciation" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="ref"  type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="media">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="label" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="href" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

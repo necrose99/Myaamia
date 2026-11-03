@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TMX 1.4b minimal XSD — hand-crafted from the LISA specification -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+  <xs:element name="tmx">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="header"/>
+        <xs:element ref="body"/>
+      </xs:sequence>
+      <xs:attribute name="version" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="header">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="note"    minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="prop"    minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="ude"     minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="creationtool"        type="xs:string" use="required"/>
+      <xs:attribute name="creationtoolversion" type="xs:string" use="required"/>
+      <xs:attribute name="datatype"            type="xs:string" use="required"/>
+      <xs:attribute name="segtype"             type="xs:string" use="required"/>
+      <xs:attribute name="adminlang"           type="xs:string" use="required"/>
+      <xs:attribute name="srclang"             type="xs:string" use="required"/>
+      <xs:attribute name="creationdate"        type="xs:string"/>
+      <xs:attribute name="changedate"          type="xs:string"/>
+      <xs:attribute name="creationid"          type="xs:string"/>
+      <xs:attribute name="changeid"            type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="body">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tu" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="note" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="prop" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="tuv"  minOccurs="2" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="tuid"         type="xs:string"/>
+      <xs:attribute name="datatype"     type="xs:string"/>
+      <xs:attribute name="usagecount"   type="xs:integer"/>
+      <xs:attribute name="lastusagedate" type="xs:string"/>
+      <xs:attribute name="creationtool" type="xs:string"/>
+      <xs:attribute name="creationtoolversion" type="xs:string"/>
+      <xs:attribute name="creationdate" type="xs:string"/>
+      <xs:attribute name="creationid"   type="xs:string"/>
+      <xs:attribute name="changedate"   type="xs:string"/>
+      <xs:attribute name="segtype"      type="xs:string"/>
+      <xs:attribute name="changeid"     type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tuv">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="note" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="prop" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="seg"/>
+      </xs:sequence>
+      <xs:anyAttribute namespace="##any" processContents="lax"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="seg" type="xs:string"/>
+  <xs:element name="note">
+    <xs:complexType mixed="true">
+      <xs:anyAttribute namespace="##any" processContents="lax"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="prop">
+    <xs:complexType mixed="true">
+      <xs:attribute name="type" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ude">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="map" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="unicode" type="xs:string" use="required"/>
+            <xs:attribute name="code"    type="xs:string"/>
+            <xs:attribute name="ent"     type="xs:string"/>
+            <xs:attribute name="subst"   type="xs:string"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="name"    type="xs:string" use="required"/>
+      <xs:attribute name="base"    type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

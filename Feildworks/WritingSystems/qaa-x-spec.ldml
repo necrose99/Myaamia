@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ldml>
+	<identity>
+		<version
+			number="" />
+		<generation
+			date="0001-01-01T00:00:00" />
+		<language
+			type="qaa" />
+		<variant
+			type="x-spec" />
+	</identity>
+	<collations />
+	<special xmlns:palaso="urn://palaso.org/ldmlExtensions/v1">
+		<palaso:abbreviation
+			value="spec" />
+		<palaso:languageName
+			value="Language Not Listed" />
+		<palaso:version
+			value="2" />
+	</special>
+</ldml>

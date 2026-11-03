@@ -1,0 +1,62 @@
+# ==============================================================================
+# Continuous Integration Security Scan & Quality Guard Matrix
+# ==============================================================================
+name: Security Audit
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - '**.py'
+      - 'pyproject.toml'
+  pull_request:
+    branches: [ main, master ]
+    paths:
+      - '**.py'
+      - 'pyproject.toml'
+  schedule:
+    # Automated out-of-band deep security scan scheduled daily at 2:00 AM UTC
+    - cron: '0 2 * * *'
+
+permissions:
+  contents: read
+
+jobs:
+  security-scan:
+    name: Code & Dependency Security Audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      # 1. Pull down the target repository codebase context
+      - name: Checkout Code Repository
+        uses: actions/checkout@v4
+
+      # 2. Build out localized virtual Python execution bounds
+      - name: Set up Python Environment
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      # 3. Code Security Scan (Bandit)
+      - name: Run Bandit Static Code Scan
+        run: |
+          pip install bandit
+          # -r: recursive, -ll: high/medium severity issues, -ii: high/medium confidence
+          bandit -r . -ll -ii --exclude ./build,./dist,./old
+
+      # 4. Dependency Vulnerability Audit (pip-audit via OSV Database)
+      - name: Run pip-audit Dependency Scan
+        run: |
+          pip install pip-audit
+          # Parse project pyproject.toml dependencies vectors directly 
+          pip install .
+          pip-audit --strict --vulnerability-service osv
+
+      # 5. Static Code Quality & Lint Hygiene Check (Ruff)
+      - name: Run Ruff Code Quality Scan
+        run: |
+          pip install ruff
+          # Enforces strict syntax quality parameters and reports anomalies
+          ruff check . --exclude build,dist,old

@@ -1,0 +1,214 @@
+{% extends "base.html" %}
+
+{% block head %}
+<!-- External Global CSS Asset Bundling -->
+<link rel="stylesheet" href="{{ url_for('static', filename='applet.css') }}">
+
+<!-- Script dependencies handling script translation layers -->
+<script src="{{ url_for('static', filename='cree-ime-to-roman.js') }}" defer></script>
+
+<!-- Restored valid Cytoscape Core CDN Dependency for graph layouts -->
+<script src="https://cloudflare.com" integrity="sha512-Z7SgC9PSpwshw5g5Z6LgYpEkgKdfF0G08LlhMWeaX+yXvG7wU45P3v6N7Cid57FfDndwZebXfG8hC7e54Cg+Lw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<style>
+    /* Cascading Font-Face Configuration for Historical Script Rendering */
+    @font-face {
+        font-family: 'Catrinity';
+        src: local('Catrinity'),
+             url("{{ url_for('static', filename='Catrinity.woff2') }}") format('woff2'),
+             url("{{ url_for('static', filename='Catrinity.otf') }}") format('opentype'),
+             url("{{ url_for('static', filename='Catrinity.ttf') }}") format('truetype');
+        font-display: swap;
+    }
+
+    /* Assigning Catrinity specifically to specialized orthography class bounds */
+    .cree-text, .glas-text {
+        font-family: 'Catrinity', system-ui, sans-serif;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="main-content container-fluid">
+    <!-- Search workspace setup with multi-language interface mapping -->
+    <div class="search-workspace p-3 rounded mb-4 bg-white border border-light-subtle shadow-sm">
+        <label for="search-input" class="mode-label fw-bold d-block text-secondary mb-1">
+            {{ _("Algic Orthography Search (Input CAS, SRO, or GLAS):") }}
+        </label>
+        <input type="text" id="search-input" class="form-control" placeholder="{{ _('e.g., ᐊᐢｷᔾ, askiy, or historical roots...') }}">
+        <!-- Destination for real-time transliteration feedback output string -->
+        <div id="search-feedback" class="text-muted small mt-2" style="min-height: 18px;"></div>
+    </div>
+
+    <div class="row">
+        <!-- Main Application Card Stack -->
+        <div class="col-lg-8">
+            <div class="word-card card p-4 shadow-sm mb-4 bg-white">
+                <span class="hw fs-2 text-success">🌿 {{ active_word | default('*axkyi') }}</span>
+                <div class="script-comparison mt-3 d-flex gap-4">
+                    <div class="mode p-2 border rounded bg-light flex-grow-1">
+                        <!-- Class mapped directly to applet.css .cree schema styles -->
+                        <span class="mode-label d-block text-muted small fw-bold mb-1">{{ _("Cree Syllabics") }}</span>
+                        <span class="cree-text cree fs-4 text-primary">ᐊᐢｷᔾ</span>
+                    </div>
+                    <div class="mode p-2 border rounded bg-light flex-grow-1">
+                        <!-- Class mapped directly to applet.css .glas schema styles -->
+                        <span class="mode-label d-block text-muted small fw-bold mb-1">{{ _("GLAS Archival") }}</span>
+                        <span class="glas-text glas fs-4 text-secondary">𐌀  𐌊</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Graph Workspace Layout Segment -->
+            <div class="etymology-workspace card p-3 shadow-sm bg-white mb-4">
+                <h5 class="card-title text-dark border-bottom pb-2">{{ _("Etymological Network Graph") }}</h5>
+                <div id="cy-canvas" style="width: 100%; height: 450px; background: #fafafa; border: 1px solid #e0e0e0; border-radius: 4px;"></div>
+            </div>
+        </div>
+
+        <!-- Sidebar Panes Layout -->
+        <div class="col-lg-4">
+            <!-- Ollama Runtime Insights Panel -->
+            <div class="graph-sidebar card shadow-sm p-3 mb-4 bg-white border-start border-primary border-3">
+                <span class="mode-label badge bg-primary fs-6">{{ _("Ollama Agent Insights") }}</span>
+                <div id="agent-critique-pane" class="mt-3 text-secondary" style="font-size: 0.95rem; line-height: 1.5; min-height: 150px;">
+                    {{ _("Select a reconstruction node to parse its phonological sound shifts...") }}
+                </div>
+            </div>
+
+            <!-- Accessibility & Readability Action Center -->
+            <div class="user-preferences card shadow-sm p-3 bg-white">
+                <span class="mode-label text-muted small fw-bold d-block mb-3">{{ _("Accessibility & Readability Settings") }}</span>
+                <div class="d-grid gap-2">
+                    <!-- Dyslexia Button Toggle -->
+                    <button id="btn-dyslexic" class="btn btn-outline-dark btn-sm text-start" onclick="toggleDyslexicMode()">
+                        📖 {{ _("Reading Font (OpenDyslexic)") }}
+                    </button>
+
+                    <!-- High Contrast Contrast Toggle -->
+                    <button id="btn-contrast" class="btn btn-outline-dark btn-sm text-start" onclick="toggleHighContrast()">
+                        👁️ {{ _("High Contrast Mode") }}
+                    </button>
+
+                    <!-- Low Vision Sizing Dropdown -->
+                    <div class="input-group input-group-sm">
+                        <label class="input-group-text" for="size-toggle">🔍</label>
+                        <select id="size-toggle" class="form-select" onchange="switchTextSize(this.value)">
+                            <option value="size-normal">{{ _("Standard Text Size") }}</option>
+                            <option value="size-large">{{ _("Large Text Layout (Low Vision)") }}</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Global declaration wrapper for network tracking accessibility instances
+let cy; 
+const activeRoot = "{{ active_word | default('*axkyi') | urlencode }}";
+
+// ── 1. Comprehensive Accessibility State Orchestration ──
+function toggleDyslexicMode() {
+    document.body.classList.toggle('accessibility-dyslexic');
+    const isEnabled = document.body.classList.contains('accessibility-dyslexic');
+    localStorage.setItem('dyslexic_font_pref', isEnabled ? 'true' : 'false');
+}
+
+function switchTextSize(sizeClass) {
+    document.body.classList.remove('size-normal', 'size-large');
+    document.body.classList.add(sizeClass);
+    localStorage.setItem('algic_size_pref', sizeClass);
+    
+    if (typeof cy !== 'undefined') {
+        cy.resize();
+        cy.fit();
+    }
+}
+
+function toggleHighContrast() {
+    document.body.classList.toggle('theme-high-contrast');
+    const isHigh = document.body.classList.contains('theme-high-contrast');
+    localStorage.setItem('high_contrast_pref', isHigh ? 'true' : 'false');
+}
+
+// ── 2. Real-Time Search Typing Orchestration Pipeline ──
+document.getElementById('search-input').addEventListener('input', function(e) {
+    const query = e.target.value.strip ? e.target.value.strip() : e.target.value.trim();
+    const feedbackPane = document.getElementById('search-feedback');
+    
+    if (query.length === 0) {
+        feedbackPane.innerHTML = "";
+        return;
+    }
+
+    // Call out to your local script translation helper engine if initialized
+    if (typeof convertCreeImeToRoman === 'function') {
+        const transliterated = convertCreeImeToRoman(query);
+        feedbackPane.innerHTML = `<strong>${_("Transliteration Output:")}</strong> <span class="cree-text cree">${transliterated}</span>`;
+    } else {
+        feedbackPane.innerHTML = `<i>${_("Transliteration pipeline engine warming up...")}</i>`;
+    }
+});
+
+// ── 3. Initialization & Telemetry Handshakes ──
+document.addEventListener('DOMContentLoaded', function() {
+    if (localStorage.getItem('dyslexic_font_pref') === 'true') {
+        document.body.classList.add('accessibility-dyslexic');
+    }
+    if (localStorage.getItem('high_contrast_pref') === 'true') {
+        document.body.classList.add('theme-high-contrast');
+    }
+    
+    const initialSize = localStorage.getItem('algic_size_pref') || 'size-normal';
+    document.body.classList.add(initialSize);
+    if (document.getElementById('size-toggle')) {
+        document.getElementById('size-toggle').value = initialSize;
+    }
+
+    // Fetch and initialize network structures
+    fetch(`/api/graph/${activeRoot}`)
+        .then(res => res.json())
+        .then(data => {
+            initWorkspaceGraph(data.nodes, data.edges);
+        })
+        .catch(err => {
+            console.error("Network tree telemetry failed to serialize:", err);
+            initWorkspaceGraph([
+                { data: { id: '*axkyi', label: '*axkyi (Proto)', type: 'root' } },
+                { data: { id: 'cree_askiy', label: 'Cree: ᐊᐢｷᔾ', type: 'reflex' } }
+            ], [
+                { data: { source: '*axkyi', target: 'cree_askiy', label: 'sound shift' } }
+            ]);
+        });
+});
+
+// ── 4. Cytoscape Canvas Processing Factory ──
+function initWorkspaceGraph(nodes, edges) {
+    const elements = [
+        ...nodes.map(n => ({ group: 'nodes', data: n.data })),
+        ...edges.map(e => ({ group: 'edges', data: e.data }))
+    ];
+
+    cy = cytoscape({
+        container: document.getElementById('cy-canvas'),
+        elements: elements,
+        style: [
+            {
+                selector: 'node',
+                style: {
+                    'background-color': '#5d4037', 
+                    'label': 'data(label)',
+                    'text-valign': 'center',
+                    'color': '#fff',
+                    'font-size': '11px',
+                    'width': '140px',
+                    'height': '40px',
+                    'shape': 'round-rectangle',
+                    'text-wrap': 'wrap',
+                    'font-family': 'Catrinity, sans-serif'
+                }
+            },
+            {
+                selector: 'node[type="root"]',

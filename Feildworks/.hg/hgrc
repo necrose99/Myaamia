@@ -1,0 +1,12 @@
+[ui]
+merge = chorusmerge
+username = black
+[merge-tools]
+chorusmerge.premerge = False
+chorusmerge.executable = C:\Program Files (x86)\WeSay\ChorusMerge.exe
+[format]
+[extensions]
+eol = 
+hgext.graphlog = 
+convert = 
+fixutf8 = C:\Program Files (x86)\WeSay\MercurialExtensions\fixutf8\fixutf8.py

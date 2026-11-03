@@ -1,9 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ldml>
 	<identity>
-		<version number="" />
-		<generation date="2026-09-07T06:49:38Z" />
-		<language type="mia" />
+		<version
+			number="" />
+		<generation
+			date="2026-10-31T20:51:16" />
+		<language
+			type="mia" />
 	</identity>
 	<characters>
 		<exemplarCharacters>[AEHIL-PSTWYacehik-pstwy{S\u030C}{s\u030C}]</exemplarCharacters>
@@ -15,11 +18,22 @@
 	</layout>
 	<collations>
 		<defaultCollation>standard</defaultCollation>
-		<collation type="standard" />
+		<collation
+			type="standard" />
 	</collations>
+	<special xmlns:palaso="urn://palaso.org/ldmlExtensions/v1">
+		<palaso:abbreviation
+			value="mia" />
+		<palaso:languageName
+			value="Miami" />
+		<palaso:version
+			value="2" />
+	</special>
 	<special xmlns:sil="urn://www.sil.org/ldml/0.1">
 		<sil:external-resources>
-			<sil:font name="Charis SIL" types="default" />
+			<sil:font
+				name="Charis SIL"
+				types="default" />
 		</sil:external-resources>
 	</special>
 </ldml>

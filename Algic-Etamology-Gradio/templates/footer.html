@@ -1,0 +1,46 @@
+<!-- footer.html -->
+<footer class="footer-branding text-center text-muted" style="margin-top: 50px; padding: 20px; border-top: 1px solid #e2e8f0; font-size: 0.85em; background-color: #f8f9fa;">
+    <!-- Localized string parsing for core etymology engine references -->
+    <p>{{ _("Algic Etymology Applet v3 | Historical GLAS & UCAS Rendering Engine") }}</p>
+    <p>{{ _("Powered by Kilahkwaani v2 & Flask") }}</p>
+</footer>
+
+<!-- Combined Script Engine Configuration Execution Stack -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Ensure Kilahkwaani is initialized with your specific localized paths
+        if (typeof Kilahkwaani !== 'undefined') {
+            Kilahkwaani.init({
+                // Generates absolute route parameters safely matching app assets
+                catrinityPath: "{{ url_for('static', filename='Catrinity.otf') }}",
+                googleFontsEnabled: true
+                // The patch logic inside bridge.js automatically hooks 
+                // into Kilahkwaani events once this engine initializes.
+            });
+            
+            console.log("✅ Kilahkwaani Engine Initialized");
+        } else {
+            console.error("❌ Kilahkwaani v2.js not found. Check build concatenation order.");
+        }
+
+        // Handles structural media queries cleanly via JavaScript for fallback styling layouts
+        function adjustScriptComparisonGrids() {
+            const grids = document.querySelectorAll('.script-comparison');
+            grids.forEach(g => {
+                if (window.innerWidth < 600) {
+                    g.style.flexDirection = 'column';
+                } else {
+                    g.style.flexDirection = 'row';
+                }
+            });
+        }
+
+        // Fire once on load to lock down initial viewport structures
+        adjustScriptComparisonGrids();
+        
+        // Final UI cleanup for mobile Canada tribes / Archive researchers
+        window.addEventListener('resize', adjustScriptComparisonGrids);
+    });
+</script>
+</body>
+</html>

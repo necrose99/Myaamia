@@ -1,10 +1,10 @@
 # Plains
-bft:Blackfoot
+bla:Blackfoot
 arp:Arapaho
 ats:Gros Ventre
 chy:Cheyenne
-# Central
-men:Menominee
+# Central # /  Eastern Great Lakes Algonquian (13)
+mez:Menominee
 cre:Cree
 csw:Swampy Cree
 crj:Southern East Cree
@@ -15,28 +15,36 @@ otw:Ottawa
 ciw:Chippewa
 mia:Miami-Illinois
 sac:Meskwaki (Fox)
-kic:Kickapoo
-#sha:Shawnee was , now Shall-Zwall 
+kic:Kickapoo 
+kic-US:Kickapoo
+kic-MX:Kickapoo 
+#sha:Shawnee was , now Shall-Zwall
 sjw:Shawnee
-# Eastern
+# Eastern / Eastern Algonquian (
+pim:Powhatan (Virginia Algonkian)
+crr:Lumbee (Croatan, Pamlico) # crr Carolina Algonquian
+qyp:Naugatuck/Quiripi/Unquachog # unqu1234
 mic:Mi'kmaq
 abe:Western Abenaki
 aaq:Eastern Abnaki
-mal:Maliseet-Passamaquoddy
-moo:Mohegan-Pequot
-mua:Munsee
+pqm:Maliseet-Passamaquoddy
+xpq:Mohegan-Pequot
+umu:Munsee
 unm:Unami
+xlb:Loup B
 # Proto-Language
-alg-x-proto:Proto-Algonquian
-# western 
-yur:yurok
+alg-pro:Proto-Algonquian , alias alg-x-pro
+# Western
+yur:Yurok
 wiy:Wiyot
 #### Lost/Unattested/Uncertain Algonquian Remnant Languages:
-bue:Beothuk
-etc:Etchemin
-xloLoup A #  Mots loups 
-xlb:Loup B
-crr: Lumbee (Croatan, Pamlico)
-pim:Powhatan (Virginia Algonkian)
-qyp: Naugatuck/Quiripi/Unquachog
+bue:Beothuk  
+#beot1247.ttl
+# https://en.wikipedia.org/wiki/Beothuk_language
+http://www.language-archives.org/language/bue
+https://www.wikidata.org/entity/Q56234
+https://wals.info/languoid/lect/wals_code_beo
+Coordinates  WGS84
 
+etc:Etchemin
+#xlo:Loup A # Mots Loups
